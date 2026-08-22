@@ -75,5 +75,25 @@ class LocaleTests(unittest.TestCase):
         )
 
 
+class ComposeNameTests(unittest.TestCase):
+    def test_dots_are_removed_from_compose_project_names(self):
+        self.assertEqual(
+            convert_wisdomsky.normalize_compose_name(
+                "linuxserver-changedetection.io"
+            ),
+            "linuxserver-changedetection-io",
+        )
+
+    def test_existing_valid_compose_project_name_is_preserved(self):
+        self.assertEqual(
+            convert_wisdomsky.normalize_compose_name("linuxserver-jellyfin"),
+            "linuxserver-jellyfin",
+        )
+
+    def test_missing_compose_project_name_is_rejected(self):
+        with self.assertRaises(ValueError):
+            convert_wisdomsky.normalize_compose_name(None)
+
+
 if __name__ == "__main__":
     unittest.main()

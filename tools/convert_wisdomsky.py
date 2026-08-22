@@ -196,6 +196,19 @@ def slugify(value):
     return value.strip("-_")
 
 
+def normalize_compose_name(value):
+    """Normalize the top-level Docker Compose project name."""
+    if not isinstance(value, str):
+        raise ValueError("Missing or invalid top-level Compose name")
+
+    normalized = slugify(value)
+
+    if not normalized:
+        raise ValueError("Top-level Compose name is empty after normalization")
+
+    return normalized
+
+
 def extract_version(compose):
     """Get the Docker image tag without inventing a fake version."""
     services = compose.get("services", {})
@@ -395,6 +408,7 @@ def convert_app(compose_path):
         raise ValueError("Invalid YAML root")
 
     compose = normalize_locale_keys(compose)
+    compose["name"] = normalize_compose_name(compose.get("name"))
 
     metadata = compose.setdefault("x-casaos", {})
 
