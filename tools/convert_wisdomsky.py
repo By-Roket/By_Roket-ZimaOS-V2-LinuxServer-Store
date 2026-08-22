@@ -8,6 +8,24 @@ import yaml
 
 APPS_DIR = Path("Apps")
 
+LINUXSERVER_ICON_BASE = (
+    "https://raw.githubusercontent.com/linuxserver/docker-templates/"
+    "master/linuxserver.io/img/"
+)
+
+# WisdomSky still references several deleted or inaccessible external logos.
+# Use maintained LinuxServer assets so the official V2 builder can package them.
+APP_ICON_OVERRIDES = {
+    "feed2toot": "linuxserver-ls-icon.png",
+    "foldingathome": "foldingathome-logo.png",
+    "nano": "linuxserver-ls-icon.png",
+    "nano-wallet": "linuxserver-ls-icon.png",
+    "projectsend": "projectsend-logo.png",
+    "sickgear": "sickgear-logo.png",
+    "thelounge": "linuxserver-ls-icon.png",
+    "xbackbone": "xbackbone-logo.png",
+}
+
 ALLOWED_CATEGORIES = {
     "Media",
     "Productivity",
@@ -207,6 +225,18 @@ def normalize_compose_name(value):
         raise ValueError("Top-level Compose name is empty after normalization")
 
     return normalized
+
+
+def normalize_app_icons(metadata, app_slug):
+    """Replace known broken upstream image links with LinuxServer assets."""
+    replacement_name = APP_ICON_OVERRIDES.get(app_slug)
+
+    if replacement_name is None:
+        return
+
+    replacement_url = f"{LINUXSERVER_ICON_BASE}{replacement_name}"
+    metadata["icon"] = replacement_url
+    metadata["thumbnail"] = replacement_url
 
 
 def extract_version(compose):
@@ -429,6 +459,7 @@ def convert_app(compose_path):
     if metadata["category"] not in ALLOWED_CATEGORIES:
         metadata["category"] = "Others"
 
+    normalize_app_icons(metadata, app_slug)
     ensure_web_entry(compose, metadata, app_slug)
 
     with compose_path.open("w", encoding="utf-8") as file:

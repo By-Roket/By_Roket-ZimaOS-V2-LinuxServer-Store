@@ -95,5 +95,41 @@ class ComposeNameTests(unittest.TestCase):
             convert_wisdomsky.normalize_compose_name(None)
 
 
+class IconTests(unittest.TestCase):
+    def test_known_broken_icon_uses_application_specific_linuxserver_logo(self):
+        metadata = {"icon": "https://broken.example/icon.png"}
+
+        convert_wisdomsky.normalize_app_icons(metadata, "projectsend")
+
+        expected = (
+            f"{convert_wisdomsky.LINUXSERVER_ICON_BASE}projectsend-logo.png"
+        )
+        self.assertEqual(metadata["icon"], expected)
+        self.assertEqual(metadata["thumbnail"], expected)
+
+    def test_generic_linuxserver_logo_is_used_when_no_app_logo_is_available(self):
+        metadata = {"icon": "https://broken.example/icon.png"}
+
+        convert_wisdomsky.normalize_app_icons(metadata, "nano")
+
+        self.assertEqual(
+            metadata["icon"],
+            f"{convert_wisdomsky.LINUXSERVER_ICON_BASE}linuxserver-ls-icon.png",
+        )
+
+    def test_existing_working_icons_are_preserved(self):
+        metadata = {
+            "icon": "https://valid.example/icon.png",
+            "thumbnail": "https://valid.example/thumbnail.png",
+        }
+
+        convert_wisdomsky.normalize_app_icons(metadata, "jellyfin")
+
+        self.assertEqual(metadata["icon"], "https://valid.example/icon.png")
+        self.assertEqual(
+            metadata["thumbnail"], "https://valid.example/thumbnail.png"
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
