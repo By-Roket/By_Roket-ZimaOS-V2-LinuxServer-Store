@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "The Brave browser is a fast, private and secure web browser for PC, Mac and mobile.",
+  "tagline": "A fast, private and secure web browser for PC, Mac and mobile.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.brave/assets/brave-logo.webp",
+  "category": "Others",
+  "title": "Brave",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.brave",
+  "version": "1.93.138",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1198114619,
+    "arm64": 1161400026
+  }
+}

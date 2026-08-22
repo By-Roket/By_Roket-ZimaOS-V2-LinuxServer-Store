@@ -1,0 +1,29 @@
+name: linuxserver-series-troxide
+services:
+  app:
+    image: linuxserver/series-troxide:0.5.1@sha256:74d3abff0d0ddc3c84b15f563271701bafd58b9aa3a62947d5e65417706d9b59
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/series-troxide/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.series-troxide/assets/icon.png
+  title:
+    en_US: Series troxide
+  id: by-roket.linuxserver.series-troxide
+  version: 0.5.1
+  index: /
+  port_map: '3000'

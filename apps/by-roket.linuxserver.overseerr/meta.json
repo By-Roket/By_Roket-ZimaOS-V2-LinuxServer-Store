@@ -1,0 +1,25 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Visit homepage: https://github.com/orgs/linuxserver/packages/container/package/overseerr",
+  "tagline": "A request management and media discovery tool built to work with your existing Plex ecosystem. ",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.overseerr/assets/overseerr.webp",
+  "category": "Media",
+  "project_url": "https://overseerr.dev/",
+  "title": "Overseerr",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.overseerr",
+  "version": "1.33.2",
+  "categories": [
+    "media"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 179058660,
+    "arm64": 177122298
+  }
+}

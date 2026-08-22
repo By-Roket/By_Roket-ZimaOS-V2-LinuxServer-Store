@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Manyfold is an open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.",
+  "tagline": "An open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.manyfold/assets/manyfold-logo.webp",
+  "category": "Others",
+  "title": "Manyfold",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.manyfold",
+  "version": "0.147.2",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 357995878,
+    "arm64": 352179826
+  }
+}

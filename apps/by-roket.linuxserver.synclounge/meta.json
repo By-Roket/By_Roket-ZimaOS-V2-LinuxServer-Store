@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Synclounge is a third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.",
+  "tagline": "A third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.synclounge/assets/synclounge-banner.webp",
+  "category": "Media",
+  "title": "Synclounge",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.synclounge",
+  "version": "5.2.35",
+  "categories": [
+    "media"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 53974414,
+    "arm64": 54673392
+  }
+}

@@ -1,0 +1,29 @@
+name: linuxserver-lollypop
+services:
+  app:
+    image: linuxserver/lollypop:1.4.45
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/lollypop/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lollypop/assets/icon.png
+  title:
+    en_US: Lollypop
+  port_map: '3000'
+  id: by-roket.linuxserver.lollypop
+  version: 1.4.45
+  index: /

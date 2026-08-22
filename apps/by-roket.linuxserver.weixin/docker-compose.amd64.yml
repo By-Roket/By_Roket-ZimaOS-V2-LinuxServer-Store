@@ -1,0 +1,29 @@
+name: linuxserver-weixin
+services:
+  app:
+    image: linuxserver/weixin:version-1bb46de6@sha256:6cc8c836759a029c7cc4af5047f3ac77b64a9186c862fbb026d1c1e7d2ae8dc5
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/weixin/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.weixin/assets/icon.png
+  title:
+    en_US: Weixin
+  port_map: '3000'
+  id: by-roket.linuxserver.weixin
+  version: version-1bb46de6
+  index: /

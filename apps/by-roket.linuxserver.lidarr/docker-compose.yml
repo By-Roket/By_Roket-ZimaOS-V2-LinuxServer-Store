@@ -1,0 +1,32 @@
+name: linuxserver-lidarr
+services:
+  app:
+    image: linuxserver/lidarr:3.1.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 8686
+        published: 8686
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/lidarr/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/lidarr/music
+        target: /music
+      - type: bind
+        source: /DATA/AppData/lidarr/downloads
+        target: /downloads
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lidarr/assets/icon.png
+  title:
+    en_US: Lidarr
+  port_map: '8686'
+  id: by-roket.linuxserver.lidarr
+  version: 3.1.0
+  index: /

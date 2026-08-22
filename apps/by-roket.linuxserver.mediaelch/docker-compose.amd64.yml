@@ -1,0 +1,29 @@
+name: linuxserver-mediaelch
+services:
+  app:
+    image: linuxserver/mediaelch:2.12.0@sha256:85774c5e0fa3a635a8a3b9c96da924b0ac2fa1f01e49e30e068374b9d8e79e72
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/mediaelch/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mediaelch/assets/icon.png
+  title:
+    en_US: Mediaelch
+  port_map: '3000'
+  id: by-roket.linuxserver.mediaelch
+  version: 2.12.0
+  index: /

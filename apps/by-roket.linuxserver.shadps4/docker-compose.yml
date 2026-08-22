@@ -1,0 +1,29 @@
+name: linuxserver-shadps4
+services:
+  app:
+    image: linuxserver/shadps4:version-shadPS4QtLauncher-2026-08-18-a30486c3e0a17460c44cf1caf15559c6f3331e57
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/shadps4/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.shadps4/assets/icon.png
+  title:
+    en_US: Shadps4
+  port_map: '3000'
+  id: by-roket.linuxserver.shadps4
+  version: version-shadPS4QtLauncher-2026-08-18-a30486c3e0a17460c44cf1caf15559c6f3331e57
+  index: /

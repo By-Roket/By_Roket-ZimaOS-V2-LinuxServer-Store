@@ -1,0 +1,31 @@
+name: linuxserver-kometa
+services:
+  app:
+    image: linuxserver/kometa:2.4.8@sha256:1c0921413e16c6c31bf75a842a520543743a5786007016bd3db65956401702e4
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      KOMETA_CONFIG: ''
+      KOMETA_TIMES: ''
+      KOMETA_RUN: ''
+      KOMETA_TESTS: ''
+      KOMETA_NO_MISSING: ''
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/kometa/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kometa/assets/icon.png
+  title:
+    en_US: Kometa
+  port_map: '80'
+  id: by-roket.linuxserver.kometa
+  version: 2.4.8
+  index: /

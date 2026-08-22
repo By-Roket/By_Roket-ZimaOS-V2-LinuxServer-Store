@@ -1,0 +1,46 @@
+name: linuxserver-swag
+services:
+  app:
+    image: linuxserver/swag:5.7.0@sha256:f7ec106992e2e1c09af5a20a20fe16edf14a80d3c0cd7c6120fad7a854b39913
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      URL: ''
+      VALIDATION: ''
+      SUBDOMAINS: ''
+      CERTPROVIDER: ''
+      CERT_PROFILE: ''
+      DNSPLUGIN: ''
+      PROPAGATION: ''
+      EMAIL: ''
+      ONLY_SUBDOMAINS: ''
+      EXTRA_DOMAINS: ''
+      STAGING: ''
+      DISABLE_F2B: ''
+      SWAG_AUTORELOAD: ''
+      SWAG_AUTORELOAD_WATCHLIST: ''
+    ports:
+      - target: 443
+        published: 443
+        protocol: tcp
+      - target: 80
+        published: 80
+        protocol: tcp
+      - target: 443
+        published: 443
+        protocol: udp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/swag/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.swag/assets/icon.gif
+  title:
+    en_US: Swag
+  port_map: '80'
+  id: by-roket.linuxserver.swag
+  version: 5.7.0
+  index: /

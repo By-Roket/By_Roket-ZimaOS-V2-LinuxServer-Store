@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "amd64"
+  ],
+  "description": "shadPS4 is an early PlayStation 4 emulator for Windows, Linux and macOS written in C++.",
+  "tagline": "An early PlayStation 4 emulator for Windows, Linux and macOS written in C++.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.shadps4/assets/shadps4-logo.webp",
+  "category": "Others",
+  "title": "Shadps4",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.shadps4",
+  "version": "version-shadPS4QtLauncher-2026-08-18-a30486c3e0a17460c44cf1caf15559c6f3331e57",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1056893279
+  }
+}

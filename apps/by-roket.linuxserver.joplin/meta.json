@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "amd64"
+  ],
+  "description": "Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks.",
+  "tagline": "A free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.joplin/assets/joplin-logo.webp",
+  "category": "Productivity",
+  "title": "Joplin",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.joplin",
+  "version": "3.6.16",
+  "categories": [
+    "productivity"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1151503265
+  }
+}

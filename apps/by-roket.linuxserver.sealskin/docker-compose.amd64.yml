@@ -1,0 +1,36 @@
+name: linuxserver-sealskin
+services:
+  app:
+    image: linuxserver/sealskin:0.1.39@sha256:d44fb5e3407148d2c16354a18135a91e8a6cc4445cc6a9538c471e47b7a0ac30
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      HOST_URL: ''
+    ports:
+      - target: 8443
+        published: 8443
+        protocol: tcp
+      - target: 8000
+        published: 8000
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/sealskin/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/sealskin/storage
+        target: /storage
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sealskin/assets/icon.png
+  title:
+    en_US: Sealskin
+  port_map: '8000'
+  id: by-roket.linuxserver.sealskin
+  version: 0.1.39
+  index: /

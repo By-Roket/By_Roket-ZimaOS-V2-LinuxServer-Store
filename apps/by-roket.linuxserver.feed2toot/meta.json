@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Feed2toot automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network.",
+  "tagline": "Automatically parses rss feeds, identifies new posts and posts them on the Mastodon social network. ",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.feed2toot/assets/linuxserver-ls-icon.webp",
+  "category": "Networking",
+  "title": "Feed2toot",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.feed2toot",
+  "version": "0.17.20250110",
+  "categories": [
+    "networking"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 36807001,
+    "arm64": 37690237
+  }
+}

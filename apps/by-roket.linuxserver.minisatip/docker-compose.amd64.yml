@@ -1,0 +1,33 @@
+name: linuxserver-minisatip
+services:
+  app:
+    image: linuxserver/minisatip:2.0.93@sha256:f597552d80e7357357d3ca654b672a13d343b6cd22b1cfe4749e542f98acf7a2
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      RUN_OPTS: ''
+    ports:
+      - target: 8875
+        published: 8875
+        protocol: tcp
+      - target: 554
+        published: 554
+        protocol: tcp
+      - target: 1900
+        published: 1900
+        protocol: udp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/minisatip/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.minisatip/assets/icon.png
+  title:
+    en_US: Minisatip
+  id: by-roket.linuxserver.minisatip
+  version: 2.0.93
+  index: /
+  port_map: '8875'

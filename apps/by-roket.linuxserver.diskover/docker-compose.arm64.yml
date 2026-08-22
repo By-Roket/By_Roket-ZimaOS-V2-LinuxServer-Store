@@ -1,0 +1,31 @@
+name: linuxserver-diskover
+services:
+  app:
+    image: linuxserver/diskover:2.3.5@sha256:350935a976cf08d4e658c76c3afdb39219641a3de5048936758210d2c73ebd3a
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      ES_HOST: ''
+      ES_PORT: ''
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/diskover/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/diskover/data
+        target: /data
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.diskover/assets/icon.png
+  title:
+    en_US: Diskover
+  port_map: '80'
+  id: by-roket.linuxserver.diskover
+  version: 2.3.5
+  index: /

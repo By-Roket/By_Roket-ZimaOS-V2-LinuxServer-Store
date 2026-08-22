@@ -1,0 +1,26 @@
+name: linuxserver-ddclient
+services:
+  app:
+    image: linuxserver/ddclient:4.0.0@sha256:97bd81f58a396a5fcda7a7964156c4100536aed8e75ed58c0609dbd9dde7153e
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/ddclient/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ddclient/assets/icon.png
+  title:
+    en_US: Ddclient
+  port_map: '80'
+  id: by-roket.linuxserver.ddclient
+  version: 4.0.0
+  index: /

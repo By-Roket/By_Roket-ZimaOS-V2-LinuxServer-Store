@@ -1,0 +1,29 @@
+name: linuxserver-filezilla
+services:
+  app:
+    image: linuxserver/filezilla:3.69.6@sha256:324b54917154c67af8fc1b2308ff4a1933db65398dfdf61d9fc3cfd89383dfd8
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/filezilla/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.filezilla/assets/icon.png
+  title:
+    en_US: Filezilla
+  port_map: '3000'
+  id: by-roket.linuxserver.filezilla
+  version: 3.69.6
+  index: /

@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Github Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React.",
+  "tagline": "An open source Electron-based GitHub app. It is written in TypeScript and uses React.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.github-desktop/assets/github-desktop-icon.webp",
+  "category": "Others",
+  "title": "Github desktop",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.github-desktop",
+  "version": "3.4.13",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1633635722,
+    "arm64": 1557192107
+  }
+}

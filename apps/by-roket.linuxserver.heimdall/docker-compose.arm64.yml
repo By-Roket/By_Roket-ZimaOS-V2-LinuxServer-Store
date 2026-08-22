@@ -1,0 +1,30 @@
+name: linuxserver-heimdall
+services:
+  app:
+    image: linuxserver/heimdall:2.8.2@sha256:182fcc86ce3c6a3921b90c4d71e8e92d11895dd551445600f5e5a2081e321fa4
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      ALLOW_INTERNAL_REQUESTS: ''
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+      - target: 443
+        published: 443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/heimdall/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.heimdall/assets/icon.png
+  title:
+    en_US: Heimdall
+  port_map: '80'
+  id: by-roket.linuxserver.heimdall
+  version: 2.8.2
+  index: /

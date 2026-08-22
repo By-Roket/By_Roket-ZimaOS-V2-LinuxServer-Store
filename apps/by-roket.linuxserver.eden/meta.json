@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "amd64"
+  ],
+  "description": "Eden is an experimental open-source emulator for the Nintendo Switch, built with performance and stability in mind.",
+  "tagline": "An experimental open-source emulator for the Nintendo Switch, built with performance and stability in mind.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.eden/assets/eden-logo.webp",
+  "category": "Others",
+  "title": "Eden",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.eden",
+  "version": "0.2.1",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1217283234
+  }
+}

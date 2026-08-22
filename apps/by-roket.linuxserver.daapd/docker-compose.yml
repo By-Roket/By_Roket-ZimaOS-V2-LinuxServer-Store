@@ -1,0 +1,29 @@
+name: linuxserver-daapd
+services:
+  app:
+    image: linuxserver/daapd:28.10.20250108
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/daapd/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/daapd/music
+        target: /music
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.daapd/assets/icon.png
+  title:
+    en_US: Daapd
+  port_map: '3689'
+  id: by-roket.linuxserver.daapd
+  version: 28.10.20250108
+  index: /

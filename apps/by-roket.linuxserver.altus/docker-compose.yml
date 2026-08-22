@@ -1,0 +1,29 @@
+name: linuxserver-altus
+services:
+  app:
+    image: linuxserver/altus:5.8.1
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/altus/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.altus/assets/icon.png
+  title:
+    en_US: Altus
+  port_map: '3000'
+  id: by-roket.linuxserver.altus
+  version: 5.8.1
+  index: /

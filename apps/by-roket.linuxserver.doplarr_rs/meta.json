@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Doplarr_rs is a Discord bot for requesting media through *arr backends, written in Rust.",
+  "tagline": "A Discord bot for requesting media through *arr backends, written in Rust.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.doplarr_rs/assets/doplarr_rs-logo.webp",
+  "category": "Media",
+  "title": "Doplarr_rs",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.doplarr_rs",
+  "version": "4.6.0",
+  "categories": [
+    "media"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 19892351,
+    "arm64": 20736485
+  }
+}

@@ -1,0 +1,29 @@
+name: linuxserver-zotero
+services:
+  app:
+    image: linuxserver/zotero:10.0.20260821
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/zotero/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.zotero/assets/icon.png
+  title:
+    en_US: Zotero
+  port_map: '3000'
+  id: by-roket.linuxserver.zotero
+  version: 10.0.20260821
+  index: /

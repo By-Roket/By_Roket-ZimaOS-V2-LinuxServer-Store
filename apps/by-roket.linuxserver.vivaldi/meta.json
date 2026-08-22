@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Vivaldi is a Norwegian freeware, cross-platform web browser with a built-in email client developed by Vivaldi Technologies.",
+  "tagline": "A Norwegian freeware, cross-platform web browser with a built-in email client developed by Vivaldi Technologies.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.vivaldi/assets/vivaldi-logo.webp",
+  "category": "Others",
+  "title": "Vivaldi",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.vivaldi",
+  "version": "8.1.4087",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1186962637,
+    "arm64": 1153341269
+  }
+}

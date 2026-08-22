@@ -1,0 +1,35 @@
+name: linuxserver-duplicati
+services:
+  app:
+    image: linuxserver/duplicati:2.3.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      SETTINGS_ENCRYPTION_KEY: ''
+      CLI_ARGS: ''
+      DUPLICATI__WEBSERVICE_PASSWORD: ''
+    ports:
+      - target: 8200
+        published: 8200
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/duplicati/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/duplicati/backups
+        target: /backups
+      - type: bind
+        source: /DATA/AppData/duplicati/source
+        target: /source
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.duplicati/assets/icon.png
+  title:
+    en_US: Duplicati
+  port_map: '8200'
+  id: by-roket.linuxserver.duplicati
+  version: 2.3.0
+  index: /

@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "RawTherapee is a free, cross-platform raw image processing program!",
+  "tagline": "A free, cross-platform raw image processing program.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.rawtherapee/assets/rawtherapee-logo.webp",
+  "category": "Others",
+  "title": "Rawtherapee",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.rawtherapee",
+  "version": "5.13.20260816",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1132122105,
+    "arm64": 1090921798
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Changedetection.io provides free, open-source web page monitoring, notification and change detection.",
+  "tagline": "Provides free, open-source web page monitoring, notification and change detection.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.changedetection-io/assets/changedetection-icon.webp",
+  "category": "Others",
+  "title": "Changedetection. Io",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.changedetection-io",
+  "version": "0.55.8",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 246225721,
+    "arm64": 240666077
+  }
+}

@@ -1,0 +1,24 @@
+name: linuxserver-synclounge
+services:
+  app:
+    image: linuxserver/synclounge:5.2.35@sha256:b9a12d7e51a7943ae8fede7828e4380b69370a8f4f3aa6e0d592dbca876c4811
+    restart: unless-stopped
+    environment:
+      AUTH_LIST: ''
+    ports:
+      - target: 8088
+        published: 8088
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/synclounge/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.synclounge/assets/icon.png
+  title:
+    en_US: Synclounge
+  port_map: '8088'
+  id: by-roket.linuxserver.synclounge
+  version: 5.2.35
+  index: /

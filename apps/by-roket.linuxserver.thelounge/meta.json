@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Thelounge (a fork of shoutIRC) is a web IRC client that you host on your own server.",
+  "tagline": "(a fork of shoutIRC) is a web IRC client that you host on your own server.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.thelounge/assets/linuxserver-ls-icon.webp",
+  "category": "Others",
+  "title": "Thelounge",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.thelounge",
+  "version": "4.5.2",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 186004049,
+    "arm64": 181484340
+  }
+}

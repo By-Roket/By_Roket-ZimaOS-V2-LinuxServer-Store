@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "DuckStation is a PS1 Emulator aiming for the best accuracy and game support.",
+  "tagline": "A PS1 Emulator aiming for the best accuracy and game support.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.duckstation/assets/duckstation-logo.webp",
+  "category": "Others",
+  "title": "Duckstation",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.duckstation",
+  "version": "version-latest",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1090408281,
+    "arm64": 1043680305
+  }
+}

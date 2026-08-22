@@ -1,0 +1,30 @@
+name: linuxserver-chrome
+services:
+  app:
+    image: linuxserver/chrome:151.0.7922
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      CHROME_CLI: ''
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/chrome/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.chrome/assets/icon.png
+  title:
+    en_US: Chrome
+  port_map: '3000'
+  id: by-roket.linuxserver.chrome
+  version: 151.0.7922
+  index: /

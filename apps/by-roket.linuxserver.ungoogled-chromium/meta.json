@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Ungoogled Chromium is Google Chromium, sans dependency on Google web services.",
+  "tagline": "Google Chromium, sans dependency on Google web services.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.ungoogled-chromium/assets/ungoogled-chromium-logo.webp",
+  "category": "Others",
+  "title": "Ungoogled chromium",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.ungoogled-chromium",
+  "version": "151.0.7922",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1336293573,
+    "arm64": 1285924714
+  }
+}

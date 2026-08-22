@@ -1,0 +1,32 @@
+name: linuxserver-sabnzbd
+services:
+  app:
+    image: linuxserver/sabnzbd:5.1.1@sha256:8779c4697d1f93e48742fd957ede422584969744c02056a3a61497d9e37a5861
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 8080
+        published: 8080
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/sabnzbd/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/sabnzbd/incomplete-downloads
+        target: /incomplete-downloads
+      - type: bind
+        source: /DATA/AppData/sabnzbd/downloads
+        target: /downloads
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sabnzbd/assets/icon.png
+  title:
+    en_US: Sabnzbd
+  port_map: '8080'
+  id: by-roket.linuxserver.sabnzbd
+  version: 5.1.1
+  index: /

@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "amd64"
+  ],
+  "description": "Webstation is a web native emulation focused LXQt desktop based on Ubuntu.",
+  "tagline": "A web native emulation focused LXQt desktop based on Ubuntu.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.webstation/assets/webstation-logo.webp",
+  "category": "Others",
+  "title": "Webstation",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.webstation",
+  "version": "0.5.0-romm",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 2976754497
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Mastodon is a free, open-source social network server based on ActivityPub where users can follow friends and discover new ones..",
+  "tagline": "A free, open-source social network server based on ActivityPub where users can follow friends and discover new ones. .",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.mastodon/assets/mastodon-banner.webp",
+  "category": "Networking",
+  "title": "Mastodon",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.mastodon",
+  "version": "4.7.0",
+  "categories": [
+    "networking"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 252653719,
+    "arm64": 248993531
+  }
+}

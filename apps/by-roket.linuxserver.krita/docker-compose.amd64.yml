@@ -1,0 +1,29 @@
+name: linuxserver-krita
+services:
+  app:
+    image: linuxserver/krita:5.3.3@sha256:1319d57cd6042179d054e8a0af9fe9ed70729e7103e836ce80942aff1d8e8de8
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/krita/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.krita/assets/icon.png
+  title:
+    en_US: Krita
+  port_map: '3000'
+  id: by-roket.linuxserver.krita
+  version: 5.3.3
+  index: /

@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Bitcoin Knots can be used as a desktop client for regular payments or as a full node server utility for merchants and other payment services.",
+  "tagline": "Can be used as a desktop client for regular payments or as a full node server utility for merchants and other payment services.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.bitcoin-knots/assets/bitcoin-knots-logo.webp",
+  "category": "Others",
+  "title": "Bitcoin knots",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.bitcoin-knots",
+  "version": "version-29.4.knots20260508-noble1",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 993505046,
+    "arm64": 963440284
+  }
+}

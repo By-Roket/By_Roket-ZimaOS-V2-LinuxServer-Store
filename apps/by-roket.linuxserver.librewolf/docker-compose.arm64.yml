@@ -1,0 +1,30 @@
+name: linuxserver-librewolf
+services:
+  app:
+    image: linuxserver/librewolf:153.0.4@sha256:c21028453e17ea9587bf142c68ecf669333a090fc909048cf8d276f1b7ec2179
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      LIBREWOLF_CLI: ''
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/librewolf/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.librewolf/assets/icon.png
+  title:
+    en_US: Librewolf
+  port_map: '3000'
+  id: by-roket.linuxserver.librewolf
+  version: 153.0.4
+  index: /

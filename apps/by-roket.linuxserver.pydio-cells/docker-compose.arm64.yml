@@ -1,0 +1,28 @@
+name: linuxserver-pydio-cells
+services:
+  app:
+    image: linuxserver/pydio-cells:5.0.2@sha256:37a4960bd2803bc4a389e9bdb5713257138d26a15542b19e3ec733a6bc03be36
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      EXTERNALURL: ''
+      SERVER_IP: ''
+    ports:
+      - target: 8080
+        published: 8080
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/pydio-cells/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pydio-cells/assets/icon.png
+  title:
+    en_US: Pydio cells
+  port_map: '8080'
+  id: by-roket.linuxserver.pydio-cells
+  version: 5.0.2
+  index: /

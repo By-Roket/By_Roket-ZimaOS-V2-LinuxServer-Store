@@ -1,0 +1,32 @@
+name: linuxserver-smokeping
+services:
+  app:
+    image: linuxserver/smokeping:2.9.0@sha256:b8af268f4726926a3ae7434ff9a2df2da0a2813e498a90b6fce12c43bb623594
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      MASTER_URL: ''
+      SHARED_SECRET: ''
+      CACHE_DIR: ''
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/smokeping/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/smokeping/data
+        target: /data
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.smokeping/assets/icon.png
+  title:
+    en_US: Smokeping
+  port_map: '80'
+  id: by-roket.linuxserver.smokeping
+  version: 2.9.0
+  index: /

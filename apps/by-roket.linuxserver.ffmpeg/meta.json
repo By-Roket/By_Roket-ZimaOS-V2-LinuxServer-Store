@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/ffmpeg for details.",
+  "tagline": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/ffmpeg for details.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.ffmpeg/assets/ffmpeg.webp",
+  "category": "Developer",
+  "title": "Ffmpeg",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.ffmpeg",
+  "version": "8.1.2",
+  "categories": [
+    "developer"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 251002693,
+    "arm64": 163374092
+  }
+}

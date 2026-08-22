@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Smokeping keeps track of your network latency. For a full example of what this application is capable of visit UCDavis.",
+  "tagline": "Keeps track of your network latency. For a full example of what this application is capable of visit UCDavis.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.smokeping/assets/smokeping-logo.webp",
+  "category": "Networking",
+  "title": "Smokeping",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.smokeping",
+  "version": "2.9.0",
+  "categories": [
+    "networking"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 123093617,
+    "arm64": 124068535
+  }
+}

@@ -1,0 +1,26 @@
+name: linuxserver-tautulli
+services:
+  app:
+    image: linuxserver/tautulli:2.17.2
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 8181
+        published: 8181
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/tautulli/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.tautulli/assets/icon.png
+  title:
+    en_US: Tautulli
+  port_map: '8181'
+  id: by-roket.linuxserver.tautulli
+  version: 2.17.2
+  index: /

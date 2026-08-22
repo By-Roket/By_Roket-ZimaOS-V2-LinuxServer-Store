@@ -1,0 +1,33 @@
+name: linuxserver-code-server
+services:
+  app:
+    image: linuxserver/code-server:4.133.0@sha256:ea5c79b596eb2766066e518b81209c371c644ae532dfae4733c529b21416df2d
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      PASSWORD: ''
+      HASHED_PASSWORD: ''
+      SUDO_PASSWORD: ''
+      SUDO_PASSWORD_HASH: ''
+      PROXY_DOMAIN: ''
+      DEFAULT_WORKSPACE: ''
+      PWA_APPNAME: ''
+    ports:
+      - target: 8443
+        published: 8443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/code-server/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.code-server/assets/icon.png
+  title:
+    en_US: Code server
+  port_map: '8443'
+  id: by-roket.linuxserver.code-server
+  version: 4.133.0
+  index: /

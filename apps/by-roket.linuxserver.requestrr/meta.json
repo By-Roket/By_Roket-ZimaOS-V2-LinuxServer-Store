@@ -1,0 +1,27 @@
+{
+  "architectures": [
+    "amd64",
+    "arm",
+    "arm64"
+  ],
+  "description": "Visit homepage: https://github.com/orgs/linuxserver/packages/container/package/requestrr",
+  "tagline": "A chatbot used to simplify using services like Sonarr/Radarr/Ombi via the use of chat.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.requestrr/assets/requestrr_discord_Icon_512.webp",
+  "category": "Media",
+  "project_url": "https://github.com/darkalfx/requestrr",
+  "title": "Requestrr",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.requestrr",
+  "version": "2.1.2",
+  "categories": [
+    "media"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 114234892,
+    "arm": 107311713,
+    "arm64": 112102870
+  }
+}

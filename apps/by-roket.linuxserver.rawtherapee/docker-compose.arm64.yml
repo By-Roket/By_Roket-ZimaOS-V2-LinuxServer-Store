@@ -1,0 +1,29 @@
+name: linuxserver-rawtherapee
+services:
+  app:
+    image: linuxserver/rawtherapee:5.13.20260816@sha256:a7041e8f4976c1eb2c4c768495a562b7b5b194127801b8104e37d070cc75aac1
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/rawtherapee/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.rawtherapee/assets/icon.png
+  title:
+    en_US: Rawtherapee
+  port_map: '3000'
+  id: by-roket.linuxserver.rawtherapee
+  version: 5.13.20260816
+  index: /

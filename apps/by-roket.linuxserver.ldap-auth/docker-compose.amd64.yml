@@ -1,0 +1,32 @@
+name: linuxserver-ldap-auth
+services:
+  app:
+    image: linuxserver/ldap-auth:3.4.7@sha256:c75f44aa175c84bc286e50c5c24f56f060a442250a5372374899c64d5bfd8a34
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      FERNETKEY: ''
+      CERTFILE: ''
+      KEYFILE: ''
+    ports:
+      - target: 8888
+        published: 8888
+        protocol: tcp
+      - target: 9000
+        published: 9000
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/ldap-auth/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ldap-auth/assets/icon.png
+  title:
+    en_US: Ldap auth
+  id: by-roket.linuxserver.ldap-auth
+  version: 3.4.7
+  index: /
+  port_map: '8888'

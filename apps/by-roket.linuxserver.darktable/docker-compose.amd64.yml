@@ -1,0 +1,29 @@
+name: linuxserver-darktable
+services:
+  app:
+    image: linuxserver/darktable:25.6.0@sha256:e43bac5fea9f81a9fd32961298de10ac1cae8dce2fd67d195d415dc1ca88471a
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/darktable/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.darktable/assets/icon.png
+  title:
+    en_US: Darktable
+  port_map: '3000'
+  id: by-roket.linuxserver.darktable
+  version: 25.6.0
+  index: /

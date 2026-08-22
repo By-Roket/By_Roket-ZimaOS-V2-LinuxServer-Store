@@ -1,0 +1,25 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Visit homepage: https://hub.docker.com/r/linuxserver/snapdrop/",
+  "tagline": "A local file sharing in your browser. Inspired by Apple's Airdrop. ",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.snapdrop/assets/logo_transparent_512x512.webp",
+  "category": "Developer",
+  "project_url": "https://github.com/RobinLinus/snapdrop",
+  "title": "Snapdrop",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.snapdrop",
+  "version": "version-f88d46ed",
+  "categories": [
+    "developer"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 48738596,
+    "arm64": 50014770
+  }
+}

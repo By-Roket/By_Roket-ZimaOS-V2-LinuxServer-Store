@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Freshrss is a free, self-hostable aggregator for rss feeds.",
+  "tagline": "A free, self-hostable aggregator for rss feeds.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.freshrss/assets/freshrss-banner.webp",
+  "category": "Productivity",
+  "title": "Freshrss",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.freshrss",
+  "version": "1.29.1",
+  "categories": [
+    "productivity"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 40634931,
+    "arm64": 41345834
+  }
+}

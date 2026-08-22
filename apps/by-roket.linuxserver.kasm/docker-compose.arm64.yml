@@ -1,0 +1,39 @@
+name: linuxserver-kasm
+services:
+  app:
+    image: linuxserver/kasm:1.19.0@sha256:a1ccbf7580fe17163b699fb5ad1001c2b29402f01a6298166e0ecdb9f3085595
+    restart: unless-stopped
+    environment:
+      KASM_PORT: ''
+      DOCKER_HUB_USERNAME: ''
+      DOCKER_HUB_PASSWORD: ''
+      DOCKER_MTU: ''
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 443
+        published: 443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/kasm/opt
+        target: /opt
+      - type: bind
+        source: /DATA/AppData/kasm/profiles
+        target: /profiles
+      - type: bind
+        source: /dev/input
+        target: /dev/input
+      - type: bind
+        source: /run/udev/data
+        target: /run/udev/data
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kasm/assets/icon.png
+  title:
+    en_US: Kasm
+  port_map: '3000'
+  id: by-roket.linuxserver.kasm
+  version: 1.19.0
+  index: /

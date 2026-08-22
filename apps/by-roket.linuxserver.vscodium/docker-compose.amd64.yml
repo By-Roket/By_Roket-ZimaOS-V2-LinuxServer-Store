@@ -1,0 +1,29 @@
+name: linuxserver-vscodium
+services:
+  app:
+    image: linuxserver/vscodium:1.126.04524@sha256:224afce970c0cf17db7c5b20eaf8868fa8f02d12d02b3b6bf76b00c55a5bfd0e
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/vscodium/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.vscodium/assets/icon.png
+  title:
+    en_US: Vscodium
+  port_map: '3000'
+  id: by-roket.linuxserver.vscodium
+  version: 1.126.04524
+  index: /

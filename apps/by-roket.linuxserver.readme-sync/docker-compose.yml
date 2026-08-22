@@ -1,0 +1,26 @@
+name: linuxserver-readme-sync
+services:
+  app:
+    image: linuxserver/readme-sync:84f2d0c3-ls27
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/readme-sync/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.readme-sync/assets/icon.png
+  title:
+    en_US: Readme sync
+  port_map: '80'
+  id: by-roket.linuxserver.readme-sync
+  version: 84f2d0c3-ls27
+  index: /

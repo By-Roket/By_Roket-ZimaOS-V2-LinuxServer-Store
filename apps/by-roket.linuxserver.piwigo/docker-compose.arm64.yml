@@ -1,0 +1,29 @@
+name: linuxserver-piwigo
+services:
+  app:
+    image: linuxserver/piwigo:16.4.0@sha256:2210b4fcddf28db8f34ea17af3115c5b3c27a24cfbed5f174d619fa2cf438b13
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/piwigo/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/piwigo/gallery
+        target: /gallery
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.piwigo/assets/icon.png
+  title:
+    en_US: Piwigo
+  port_map: '80'
+  id: by-roket.linuxserver.piwigo
+  version: 16.4.0
+  index: /

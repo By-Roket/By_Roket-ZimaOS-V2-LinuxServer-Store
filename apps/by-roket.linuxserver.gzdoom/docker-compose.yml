@@ -1,0 +1,29 @@
+name: linuxserver-gzdoom
+services:
+  app:
+    image: linuxserver/gzdoom:4.14.2
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/gzdoom/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.gzdoom/assets/icon.png
+  title:
+    en_US: Gzdoom
+  port_map: '3000'
+  id: by-roket.linuxserver.gzdoom
+  version: 4.14.2
+  index: /

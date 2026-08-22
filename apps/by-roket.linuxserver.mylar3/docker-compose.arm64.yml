@@ -1,0 +1,32 @@
+name: linuxserver-mylar3
+services:
+  app:
+    image: linuxserver/mylar3:0.11.0@sha256:ae836ec3383e814ea30b33042317b262e0c2c5d34002f5c250b12dbe606ee892
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 8090
+        published: 8090
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/mylar3/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/mylar3/comics
+        target: /comics
+      - type: bind
+        source: /DATA/AppData/mylar3/downloads
+        target: /downloads
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mylar3/assets/icon.png
+  title:
+    en_US: Mylar3
+  port_map: '8090'
+  id: by-roket.linuxserver.mylar3
+  version: 0.11.0
+  index: /

@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "melonDS aims at providing fast and accurate Nintendo DS emulation.",
+  "tagline": "Aims at providing fast and accurate Nintendo DS emulation.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.melonds/assets/melonds-logo.webp",
+  "category": "Others",
+  "title": "Melonds",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.melonds",
+  "version": "1.1.20260816",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 975799213,
+    "arm64": 946748435
+  }
+}

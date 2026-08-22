@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "This container needs special attention. Please check https://hub.docker.com/r/linuxserver/socket-proxy for details.",
+  "tagline": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/socket-proxy for details.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.socket-proxy/assets/docker-logo.webp",
+  "category": "Networking",
+  "title": "Socket proxy",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.socket-proxy",
+  "version": "3.4.3",
+  "categories": [
+    "networking"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 7041302,
+    "arm64": 7313253
+  }
+}

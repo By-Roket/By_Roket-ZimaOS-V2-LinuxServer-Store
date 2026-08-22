@@ -1,0 +1,29 @@
+name: linuxserver-vscode
+services:
+  app:
+    image: linuxserver/vscode:1.133.0@sha256:bfec54f15ff8737d41034498366667c4d9fd43511b1973d88fd054044daa68a6
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/vscode/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.vscode/assets/icon.png
+  title:
+    en_US: Vscode
+  port_map: '3000'
+  id: by-roket.linuxserver.vscode
+  version: 1.133.0
+  index: /

@@ -1,0 +1,29 @@
+name: linuxserver-ardour
+services:
+  app:
+    image: linuxserver/ardour:version-2026-06-19
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/ardour/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ardour/assets/icon.png
+  title:
+    en_US: Ardour
+  port_map: '3000'
+  id: by-roket.linuxserver.ardour
+  version: version-2026-06-19
+  index: /

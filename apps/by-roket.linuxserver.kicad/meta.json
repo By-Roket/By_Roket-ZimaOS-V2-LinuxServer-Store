@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "KiCad - A Cross Platform and Open Source Electronics Design Automation Suite.",
+  "tagline": "A Cross Platform and Open Source Electronics Design Automation Suite.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.kicad/assets/kicad-logo.webp",
+  "category": "Home",
+  "title": "Kicad",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.kicad",
+  "version": "10.0.3",
+  "categories": [
+    "home"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1606447830,
+    "arm64": 1541671926
+  }
+}

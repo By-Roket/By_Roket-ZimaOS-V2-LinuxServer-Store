@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Nzbget is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.",
+  "tagline": "A usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.nzbget/assets/nzbget-banner.webp",
+  "category": "Others",
+  "title": "Nzbget",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.nzbget",
+  "version": "26.2.20260821",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 48917224,
+    "arm64": 49519335
+  }
+}

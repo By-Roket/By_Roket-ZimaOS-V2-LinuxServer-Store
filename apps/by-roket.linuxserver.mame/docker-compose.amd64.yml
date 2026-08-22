@@ -1,0 +1,32 @@
+name: linuxserver-mame
+services:
+  app:
+    image: linuxserver/mame:version-0.289dfsg1-0@sha256:845c16c492b343b84b25ca9aaf673d83bf7c59c752454e8e8a54b027e4dd1823
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/mame/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/mame/mame:ro
+        target: /mame:ro
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mame/assets/icon.png
+  title:
+    en_US: Mame
+  port_map: '3000'
+  id: by-roket.linuxserver.mame
+  version: version-0.289dfsg1-0
+  index: /

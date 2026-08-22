@@ -1,0 +1,26 @@
+name: linuxserver-htpcmanager
+services:
+  app:
+    image: linuxserver/htpcmanager:version-26a641bf
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 8085
+        published: 8085
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/htpcmanager/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.htpcmanager/assets/icon.png
+  title:
+    en_US: Htpcmanager
+  port_map: '8085'
+  id: by-roket.linuxserver.htpcmanager
+  version: version-26a641bf
+  index: /

@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Speedtest-tracker is a self-hosted internet performance tracking application that runs speedtest checks against Ookla's Speedtest service.",
+  "tagline": "A self-hosted internet performance tracking application that runs speedtest checks against Ookla's Speedtest service.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.speedtest-tracker/assets/speedtest-tracker-logo.webp",
+  "category": "Networking",
+  "title": "Speedtest tracker",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.speedtest-tracker",
+  "version": "1.15.0",
+  "categories": [
+    "networking"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 62854608,
+    "arm64": 63414863
+  }
+}

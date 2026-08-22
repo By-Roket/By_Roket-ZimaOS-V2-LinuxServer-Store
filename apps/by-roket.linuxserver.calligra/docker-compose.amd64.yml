@@ -1,0 +1,29 @@
+name: linuxserver-calligra
+services:
+  app:
+    image: linuxserver/calligra:3.2.1@sha256:010eb6a2ff70c2e7ddd015862d1bea9e73250ba22cea73db2c662eff6181f824
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/calligra/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.calligra/assets/icon.png
+  title:
+    en_US: Calligra
+  port_map: '3000'
+  id: by-roket.linuxserver.calligra
+  version: 3.2.1
+  index: /

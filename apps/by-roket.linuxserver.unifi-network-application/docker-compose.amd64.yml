@@ -1,0 +1,59 @@
+name: linuxserver-unifi-network-application
+services:
+  app:
+    image: linuxserver/unifi-network-application:10.5.67@sha256:64db17216eb24c16a64152a1cdc38b1bd6a5825fc68454ab54526a656946b26e
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      MONGO_USER: ''
+      MONGO_PASS: ''
+      MONGO_HOST: ''
+      MONGO_PORT: ''
+      MONGO_DBNAME: ''
+      MONGO_AUTHSOURCE: ''
+      MEM_LIMIT: ''
+      MEM_STARTUP: ''
+      MONGO_TLS: ''
+    ports:
+      - target: 8443
+        published: 8443
+        protocol: tcp
+      - target: 3478
+        published: 3478
+        protocol: udp
+      - target: 10001
+        published: 10001
+        protocol: udp
+      - target: 8080
+        published: 8080
+        protocol: tcp
+      - target: 1900
+        published: 1900
+        protocol: udp
+      - target: 8843
+        published: 8843
+        protocol: tcp
+      - target: 8880
+        published: 8880
+        protocol: tcp
+      - target: 6789
+        published: 6789
+        protocol: tcp
+      - target: 5514
+        published: 5514
+        protocol: udp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/unifi-network-application/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.unifi-network-application/assets/icon.png
+  title:
+    en_US: Unifi network-application
+  port_map: '8080'
+  id: by-roket.linuxserver.unifi-network-application
+  version: 10.5.67
+  index: /

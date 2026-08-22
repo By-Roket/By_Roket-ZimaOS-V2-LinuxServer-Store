@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Budge is an open source 'budgeting with envelopes' personal finance app.",
+  "tagline": "An open source 'budgeting with envelopes' personal finance app.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "",
+  "category": "Finance",
+  "title": "Budge",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.budge",
+  "version": "0.0.9",
+  "categories": [
+    "finance"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 150606804,
+    "arm64": 169959796
+  }
+}

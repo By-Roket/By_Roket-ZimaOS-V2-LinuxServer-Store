@@ -1,0 +1,26 @@
+name: linuxserver-modmanager
+services:
+  app:
+    image: linuxserver/modmanager:version-b7faeafa@sha256:32e30bdf6dbd03b01ce5eef2ca35bf99e18babac08a044e7320213f7197fde5c
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/modmanager/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.modmanager/assets/icon.png
+  title:
+    en_US: Modmanager
+  port_map: '80'
+  id: by-roket.linuxserver.modmanager
+  version: version-b7faeafa
+  index: /

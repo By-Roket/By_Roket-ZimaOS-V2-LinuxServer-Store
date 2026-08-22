@@ -1,0 +1,36 @@
+name: linuxserver-tvheadend
+services:
+  app:
+    image: linuxserver/tvheadend:version-fcd987f0@sha256:77c10459ef052fedcc624804bb4b35f893b9160452a5cfd1d8c8867b58bafaff
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      RUN_OPTS: ''
+    ports:
+      - target: 9981
+        published: 9981
+        protocol: tcp
+      - target: 9982
+        published: 9982
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/tvheadend/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/tvheadend/recordings
+        target: /recordings
+    devices:
+      - /dev/dri:/dev/dri
+      - /dev/dvb:/dev/dvb
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.tvheadend/assets/icon.png
+  title:
+    en_US: Tvheadend
+  id: by-roket.linuxserver.tvheadend
+  version: version-fcd987f0
+  index: /
+  port_map: '9981'

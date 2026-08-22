@@ -1,0 +1,32 @@
+name: linuxserver-bazarr
+services:
+  app:
+    image: linuxserver/bazarr:1.6.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 6767
+        published: 6767
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/bazarr/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/bazarr/movies
+        target: /movies
+      - type: bind
+        source: /DATA/AppData/bazarr/tv
+        target: /tv
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.bazarr/assets/icon.png
+  title:
+    en_US: Bazarr
+  port_map: '6767'
+  id: by-roket.linuxserver.bazarr
+  version: 1.6.0
+  index: /

@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Radarr - A fork of Sonarr to work with movies à la Couchpotato.",
+  "tagline": "A fork of Sonarr to work with movies à la Couchpotato.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.radarr/assets/radarr.webp",
+  "category": "Media",
+  "title": "Radarr",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.radarr",
+  "version": "6.3.0",
+  "categories": [
+    "media"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 93044851,
+    "arm64": 91439171
+  }
+}

@@ -1,0 +1,32 @@
+name: linuxserver-sonarr
+services:
+  app:
+    image: linuxserver/sonarr:4.0.19@sha256:6b06eac65225627173c12f049d8b5c55c588cdb0b3faa667553559cbb51e1474
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 8989
+        published: 8989
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/sonarr/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/sonarr/tv
+        target: /tv
+      - type: bind
+        source: /DATA/AppData/sonarr/downloads
+        target: /downloads
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sonarr/assets/icon.png
+  title:
+    en_US: Sonarr
+  port_map: '8989'
+  id: by-roket.linuxserver.sonarr
+  version: 4.0.19
+  index: /

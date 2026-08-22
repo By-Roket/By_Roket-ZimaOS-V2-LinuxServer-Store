@@ -1,0 +1,29 @@
+name: linuxserver-pycharm
+services:
+  app:
+    image: linuxserver/pycharm:2026.2.1@sha256:0c1f0fc48d9ab21ca9697e6601769303a4b3f0fbca1b3778e8b03a938d4c4aaa
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/pycharm/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pycharm/assets/icon.png
+  title:
+    en_US: Pycharm
+  port_map: '3000'
+  id: by-roket.linuxserver.pycharm
+  version: 2026.2.1
+  index: /

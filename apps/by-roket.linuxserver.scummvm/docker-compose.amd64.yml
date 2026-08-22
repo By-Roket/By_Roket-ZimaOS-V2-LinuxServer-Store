@@ -1,0 +1,29 @@
+name: linuxserver-scummvm
+services:
+  app:
+    image: linuxserver/scummvm:2026.3.0@sha256:108c18a49554d2fc0972846754df42c845c08e9ce171ead094ef7e041e2c2ed7
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/scummvm/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.scummvm/assets/icon.png
+  title:
+    en_US: Scummvm
+  port_map: '3000'
+  id: by-roket.linuxserver.scummvm
+  version: 2026.3.0
+  index: /

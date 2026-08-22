@@ -1,0 +1,29 @@
+name: linuxserver-github-desktop
+services:
+  app:
+    image: linuxserver/github-desktop:3.4.13@sha256:d619e3f34341ddd9f1313a29f356cdb0fb2a3cf239cbc793823ba174f630441d
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/github-desktop/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.github-desktop/assets/icon.png
+  title:
+    en_US: Github desktop
+  port_map: '3000'
+  id: by-roket.linuxserver.github-desktop
+  version: 3.4.13
+  index: /

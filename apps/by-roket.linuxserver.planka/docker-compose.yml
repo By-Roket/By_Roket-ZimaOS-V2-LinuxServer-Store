@@ -1,0 +1,35 @@
+name: linuxserver-planka
+services:
+  app:
+    image: linuxserver/planka:2.2.1
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      BASE_URL: ''
+      DATABASE_URL: ''
+      DEFAULT_ADMIN_EMAIL: ''
+      DEFAULT_ADMIN_USERNAME: ''
+      DEFAULT_ADMIN_PASSWORD: ''
+      DEFAULT_ADMIN_NAME: ''
+      SECRET_KEY: ''
+      TRUST_PROXY: ''
+      DEFAULT_LANGUAGE: ''
+    ports:
+      - target: 1337
+        published: 1337
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/planka/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.planka/assets/icon.png
+  title:
+    en_US: Planka
+  port_map: '1337'
+  id: by-roket.linuxserver.planka
+  version: 2.2.1
+  index: /

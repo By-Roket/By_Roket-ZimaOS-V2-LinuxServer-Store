@@ -1,0 +1,41 @@
+name: linuxserver-syncthing
+services:
+  app:
+    image: linuxserver/syncthing:2.1.3@sha256:cd2ab1acc1f686695cd777f72f6686c86e9a57785aee10d9e23c3082a921db11
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 8384
+        published: 8384
+        protocol: tcp
+      - target: 22000
+        published: 22000
+        protocol: tcp
+      - target: 22000
+        published: 22000
+        protocol: udp
+      - target: 21027
+        published: 21027
+        protocol: udp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/syncthing/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/syncthing/data1
+        target: /data1
+      - type: bind
+        source: /DATA/AppData/syncthing/data2
+        target: /data2
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.syncthing/assets/icon.png
+  title:
+    en_US: Syncthing
+  id: by-roket.linuxserver.syncthing
+  version: 2.1.3
+  index: /
+  port_map: '8384'

@@ -1,0 +1,26 @@
+name: linuxserver-yq
+services:
+  app:
+    image: linuxserver/yq:3.4.3
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/yq/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.yq/assets/icon.png
+  title:
+    en_US: Yq
+  port_map: '80'
+  id: by-roket.linuxserver.yq
+  version: 3.4.3
+  index: /

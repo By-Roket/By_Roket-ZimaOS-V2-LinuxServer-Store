@@ -1,0 +1,33 @@
+name: linuxserver-quassel-web
+services:
+  app:
+    image: linuxserver/quassel-web:version-019bfdc1@sha256:1b602780f727bfae30b6fcdee3c781c39ebb60b51cb4f0b6f32c5583bacbcc29
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      QUASSEL_CORE: ''
+      QUASSEL_PORT: ''
+      QUASSEL_HTTPS: ''
+      URL_BASE: ''
+    ports:
+      - target: 64080
+        published: 64080
+        protocol: tcp
+      - target: 64443
+        published: 64443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/quassel-web/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.quassel-web/assets/icon.png
+  title:
+    en_US: Quassel web
+  port_map: '64080'
+  id: by-roket.linuxserver.quassel-web
+  version: version-019bfdc1
+  index: /

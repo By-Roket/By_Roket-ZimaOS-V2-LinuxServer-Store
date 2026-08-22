@@ -1,0 +1,48 @@
+name: linuxserver-netbox
+services:
+  app:
+    image: linuxserver/netbox:4.6.8@sha256:83590770cef224fc43114d9ec80ebad4356fa9762f9d04909ec07ce285c96b04
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      SUPERUSER_EMAIL: ''
+      SUPERUSER_PASSWORD: ''
+      ALLOWED_HOST: ''
+      DB_NAME: ''
+      DB_USER: ''
+      DB_PASSWORD: ''
+      DB_HOST: ''
+      DB_PORT: ''
+      REDIS_HOST: ''
+      REDIS_PORT: ''
+      REDIS_USERNAME: ''
+      REDIS_PASSWORD: ''
+      REDIS_DB_TASK: ''
+      REDIS_DB_CACHE: ''
+      BASE_PATH: ''
+      CSRF_TRUSTED_ORIGINS: ''
+      REMOTE_AUTH_ENABLED: ''
+      REMOTE_AUTH_BACKEND: ''
+      REMOTE_AUTH_HEADER: ''
+      REMOTE_AUTH_AUTO_CREATE_USER: ''
+      REMOTE_AUTH_DEFAULT_GROUPS: ''
+      REMOTE_AUTH_DEFAULT_PERMISSIONS: ''
+    ports:
+      - target: 8000
+        published: 8000
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/netbox/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.netbox/assets/icon.png
+  title:
+    en_US: Netbox
+  port_map: '8000'
+  id: by-roket.linuxserver.netbox
+  version: 4.6.8
+  index: /

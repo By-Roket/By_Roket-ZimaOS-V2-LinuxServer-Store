@@ -1,0 +1,32 @@
+name: linuxserver-qdirstat
+services:
+  app:
+    image: linuxserver/qdirstat:2.0.20260816
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/qdirstat/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/qdirstat/data
+        target: /data
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.qdirstat/assets/icon.png
+  title:
+    en_US: Qdirstat
+  port_map: '3000'
+  id: by-roket.linuxserver.qdirstat
+  version: 2.0.20260816
+  index: /

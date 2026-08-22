@@ -1,0 +1,30 @@
+name: linuxserver-boinc
+services:
+  app:
+    image: linuxserver/boinc:8.2.8@sha256:4333ec6afa8b862762d637caf35af69c9252e108a2bc705757f8a37931e1c9aa
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      PASSWORD: ''
+    ports:
+      - target: 8080
+        published: 8080
+        protocol: tcp
+      - target: 8181
+        published: 8181
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/boinc/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.boinc/assets/icon.jpg
+  title:
+    en_US: Boinc
+  port_map: '8080'
+  id: by-roket.linuxserver.boinc
+  version: 8.2.8
+  index: /

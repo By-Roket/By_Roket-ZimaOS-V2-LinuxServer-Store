@@ -1,0 +1,26 @@
+name: linuxserver-prowlarr
+services:
+  app:
+    image: linuxserver/prowlarr:2.5.2@sha256:be8f981bd856596bb6c8a0c25a6445658292457ece08c565037492459adcae6e
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 9696
+        published: 9696
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/prowlarr/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.prowlarr/assets/icon.png
+  title:
+    en_US: Prowlarr
+  port_map: '9696'
+  id: by-roket.linuxserver.prowlarr
+  version: 2.5.2
+  index: /

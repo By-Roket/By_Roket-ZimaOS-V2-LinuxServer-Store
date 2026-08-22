@@ -1,0 +1,26 @@
+name: linuxserver-oscam
+services:
+  app:
+    image: linuxserver/oscam:version-11966@sha256:a23994d6b04a6154a922bd2f2ac30268375574c14da8d3a0ee77014e352032b8
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 8888
+        published: 8888
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/oscam/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.oscam/assets/icon.png
+  title:
+    en_US: Oscam
+  port_map: '8888'
+  id: by-roket.linuxserver.oscam
+  version: version-11966
+  index: /

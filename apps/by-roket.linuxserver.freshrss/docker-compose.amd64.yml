@@ -1,0 +1,26 @@
+name: linuxserver-freshrss
+services:
+  app:
+    image: linuxserver/freshrss:1.29.1@sha256:b1e0fbc7543a10a20f5ce3f3b1529ced473536eb756f5d53bdc0fa4a0da4d3d0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/freshrss/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.freshrss/assets/icon.png
+  title:
+    en_US: Freshrss
+  port_map: '80'
+  id: by-roket.linuxserver.freshrss
+  version: 1.29.1
+  index: /

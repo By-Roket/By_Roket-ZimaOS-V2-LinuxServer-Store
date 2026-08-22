@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "store_id": "by-roket.zimaos.linuxserver",
+  "name": "By Roket LinuxServer Store",
+  "description": "LinuxServer.io applications adapted for ZimaOS V2.",
+  "maintainer": "By-Roket",
+  "url": "https://github.com/By-Roket/By_Roket-ZimaOS-V2-LinuxServer-Store"
+}

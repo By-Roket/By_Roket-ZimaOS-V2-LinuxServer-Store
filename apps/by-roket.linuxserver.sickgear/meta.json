@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "SickGear provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.. For more information on SickGear visit their website and check it out: https://github.com/SickGear/SickGear",
+  "tagline": "Provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more. . For more information on SickGear visit their website and check it out: https://github. Com/SickGear/SickGear",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.sickgear/assets/sickgear-logo.webp",
+  "category": "Media",
+  "title": "Sickgear",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.sickgear",
+  "version": "3.36.0",
+  "categories": [
+    "media"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 71840186,
+    "arm64": 70719016
+  }
+}

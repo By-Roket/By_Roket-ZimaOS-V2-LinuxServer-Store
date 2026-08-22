@@ -1,0 +1,33 @@
+name: linuxserver-openvscode-server
+services:
+  app:
+    image: linuxserver/openvscode-server:1.109.5
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      CONNECTION_TOKEN: ''
+      CONNECTION_SECRET: ''
+      SUDO_PASSWORD: ''
+      SUDO_PASSWORD_HASH: ''
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/openvscode-server/config
+        target: /config
+      - type: bind
+        source: /
+        target: /casaos
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.openvscode-server/assets/icon.png
+  title:
+    en_US: Openvscode server
+  port_map: '3000'
+  id: by-roket.linuxserver.openvscode-server
+  version: 1.109.5
+  index: /

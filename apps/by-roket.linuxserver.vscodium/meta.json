@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "VSCodium is a community-driven, freely-licensed binary distribution of Microsoft’s editor VS Code.",
+  "tagline": "A community-driven, freely-licensed binary distribution of Microsoft’s editor VS Code.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.vscodium/assets/vscodium-icon.webp",
+  "category": "Developer",
+  "title": "Vscodium",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.vscodium",
+  "version": "1.126.04524",
+  "categories": [
+    "developer"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1427329933,
+    "arm64": 1389597285
+  }
+}

@@ -1,0 +1,29 @@
+name: linuxserver-libreoffice
+services:
+  app:
+    image: linuxserver/libreoffice:25.8.7@sha256:e44ffe7f27c40285b1100c636a637b0b7feb1b2af5ed85db108043bc895744ff
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/libreoffice/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.libreoffice/assets/icon.png
+  title:
+    en_US: Libreoffice
+  port_map: '3000'
+  id: by-roket.linuxserver.libreoffice
+  version: 25.8.7
+  index: /

@@ -1,0 +1,35 @@
+name: linuxserver-resilio-sync
+services:
+  app:
+    image: linuxserver/resilio-sync:3.1.2@sha256:7268ddd80afa44666225dcd7fd8856055838b064903318f53c294ed8208f4c24
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 8888
+        published: 8888
+        protocol: tcp
+      - target: 55555
+        published: 55555
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/resilio-sync/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/resilio-sync/downloads
+        target: /downloads
+      - type: bind
+        source: /DATA/AppData/resilio-sync/sync
+        target: /sync
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.resilio-sync/assets/icon.png
+  title:
+    en_US: Resilio sync
+  id: by-roket.linuxserver.resilio-sync
+  version: 3.1.2
+  index: /
+  port_map: '8888'

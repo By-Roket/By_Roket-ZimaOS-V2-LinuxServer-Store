@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Mariadb is one of the most popular database servers. Made by the original developers of MySQL.",
+  "tagline": "One of the most popular database servers. Made by the original developers of MySQL.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.mariadb/assets/mariadb-git.webp",
+  "category": "Developer",
+  "title": "Mariadb",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.mariadb",
+  "version": "11.8.8",
+  "categories": [
+    "developer"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 110427981,
+    "arm64": 108327946
+  }
+}

@@ -1,0 +1,29 @@
+name: linuxserver-orcaslicer
+services:
+  app:
+    image: linuxserver/orcaslicer:2.4.2@sha256:af926fd83eda9a45bce2c519de0d7ff57556a6ff2203b8412a72d4b4e05ef809
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/orcaslicer/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.orcaslicer/assets/icon.png
+  title:
+    en_US: Orcaslicer
+  port_map: '3000'
+  id: by-roket.linuxserver.orcaslicer
+  version: 2.4.2
+  index: /

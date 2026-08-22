@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Ardour is an open source, collaborative effort of a worldwide team including musicians, programmers, and professional recording engineers.",
+  "tagline": "An open source, collaborative effort of a worldwide team including musicians, programmers, and professional recording engineers.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.ardour/assets/ardour-logo.webp",
+  "category": "Others",
+  "title": "Ardour",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.ardour",
+  "version": "version-2026-06-19",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1360456249,
+    "arm64": 1371759428
+  }
+}

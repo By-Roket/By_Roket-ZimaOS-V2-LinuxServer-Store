@@ -1,0 +1,33 @@
+name: linuxserver-flexget
+services:
+  app:
+    image: linuxserver/flexget:3.20.6@sha256:e82920df9f8be38df54a768e8e54539f8912ba737b2c1aaf638fe2b88b672536
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      FG_LOG_LEVEL: ''
+      FG_LOG_FILE: ''
+      FG_CONFIG_FILE: ''
+      FG_WEBUI_PASSWORD: ''
+    ports:
+      - target: 5050
+        published: 5050
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/flexget/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/flexget/data
+        target: /data
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.flexget/assets/icon.png
+  title:
+    en_US: Flexget
+  port_map: '5050'
+  id: by-roket.linuxserver.flexget
+  version: 3.20.6
+  index: /

@@ -1,0 +1,26 @@
+name: linuxserver-doplarr_rs
+services:
+  app:
+    image: linuxserver/doplarr_rs:4.6.0@sha256:16ce821f92665bfc177e4fc32a517b9cfa407f5c5475536360b0955a69b63130
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/doplarr_rs/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.doplarr_rs/assets/icon.png
+  title:
+    en_US: Doplarr_rs
+  port_map: '80'
+  id: by-roket.linuxserver.doplarr_rs
+  version: 4.6.0
+  index: /

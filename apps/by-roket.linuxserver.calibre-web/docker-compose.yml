@@ -1,0 +1,31 @@
+name: linuxserver-calibre-web
+services:
+  app:
+    image: linuxserver/calibre-web:0.6.27
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      DOCKER_MODS: ''
+      OAUTHLIB_RELAX_TOKEN_SCOPE: ''
+    ports:
+      - target: 8083
+        published: 8083
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/calibre-web/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/calibre-web/books
+        target: /books
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.calibre-web/assets/icon.png
+  title:
+    en_US: Calibre web
+  port_map: '8083'
+  id: by-roket.linuxserver.calibre-web
+  version: 0.6.27
+  index: /

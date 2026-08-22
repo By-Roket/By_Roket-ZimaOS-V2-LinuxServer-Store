@@ -1,0 +1,31 @@
+name: linuxserver-nginx
+services:
+  app:
+    image: linuxserver/nginx:1.30.4
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      NGINX_AUTORELOAD: ''
+      NGINX_AUTORELOAD_WATCHLIST: ''
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+      - target: 443
+        published: 443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/nginx/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nginx/assets/icon.png
+  title:
+    en_US: Nginx
+  port_map: '80'
+  id: by-roket.linuxserver.nginx
+  version: 1.30.4
+  index: /

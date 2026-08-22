@@ -1,0 +1,26 @@
+name: linuxserver-jenkins-builder
+services:
+  app:
+    image: linuxserver/jenkins-builder:version-4f81ddbe@sha256:513af1de5573bd744ec30da6a7c3ccf79b04ae748d137f11cfc3331061d06637
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/jenkins-builder/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.jenkins-builder/assets/icon.png
+  title:
+    en_US: Jenkins builder
+  port_map: '80'
+  id: by-roket.linuxserver.jenkins-builder
+  version: version-4f81ddbe
+  index: /

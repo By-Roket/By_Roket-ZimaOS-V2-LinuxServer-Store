@@ -1,0 +1,30 @@
+name: linuxserver-pairdrop
+services:
+  app:
+    image: linuxserver/pairdrop:1.11.2@sha256:ab104ed76aae9b4e57e2b1b0a8304c0836c9ca34ba95f8959a228e8dc248f3ea
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      RATE_LIMIT: ''
+      WS_FALLBACK: ''
+      RTC_CONFIG: ''
+      DEBUG_MODE: ''
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/pairdrop/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pairdrop/assets/icon.png
+  title:
+    en_US: Pairdrop
+  port_map: '3000'
+  id: by-roket.linuxserver.pairdrop
+  version: 1.11.2
+  index: /

@@ -1,0 +1,36 @@
+name: linuxserver-mullvad-browser
+services:
+  app:
+    image: linuxserver/mullvad-browser:15.0.20@sha256:dd572173455528a905b35682c735a913d231b0ac499362c297133944233f0ab1
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      LOCAL_NET: ''
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/mullvad-browser/config
+        target: /config
+      - type: bind
+        source: /DATA/Downloads
+        target: /config/Downloads
+    cap_add:
+      - NET_ADMIN
+    shm_size: 1gb
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mullvad-browser/assets/icon.png
+  title:
+    en_US: Mullvad browser
+  port_map: '3000'
+  id: by-roket.linuxserver.mullvad-browser
+  version: 15.0.20
+  index: /

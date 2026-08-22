@@ -1,0 +1,26 @@
+name: linuxserver-znc
+services:
+  app:
+    image: linuxserver/znc:1.10.2@sha256:77eeee2aef90f084215301c665d8a3d3d3c24173d67b7765d904a6611d9217e7
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 6501
+        published: 6501
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/znc/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.znc/assets/icon.png
+  title:
+    en_US: Znc
+  port_map: '6501'
+  id: by-roket.linuxserver.znc
+  version: 1.10.2
+  index: /

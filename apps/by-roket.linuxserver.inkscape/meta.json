@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Inkscape is professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers.",
+  "tagline": "Professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.inkscape/assets/inkscape-logo.webp",
+  "category": "Others",
+  "title": "Inkscape",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.inkscape",
+  "version": "1.4.2",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 650523900,
+    "arm64": 603934267
+  }
+}

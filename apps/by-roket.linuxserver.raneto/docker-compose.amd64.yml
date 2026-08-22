@@ -1,0 +1,26 @@
+name: linuxserver-raneto
+services:
+  app:
+    image: linuxserver/raneto:0.18.1@sha256:c58aa57375bc6f7c8b2104e4a8813aa58c2698ec5c6c78ba73dfaac822cc67bf
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/raneto/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.raneto/assets/icon.png
+  title:
+    en_US: Raneto
+  port_map: '3000'
+  id: by-roket.linuxserver.raneto
+  version: 0.18.1
+  index: /

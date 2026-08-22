@@ -1,0 +1,26 @@
+name: linuxserver-grav
+services:
+  app:
+    image: linuxserver/grav:2.0.21@sha256:c135de481cccec6751c70ba02da464090f95c4c149a9691644db787e9aa8bfd6
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/grav/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.grav/assets/icon.png
+  title:
+    en_US: Grav
+  port_map: '80'
+  id: by-roket.linuxserver.grav
+  version: 2.0.21
+  index: /

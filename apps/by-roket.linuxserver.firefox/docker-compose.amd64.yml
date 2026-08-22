@@ -1,0 +1,30 @@
+name: linuxserver-firefox
+services:
+  app:
+    image: linuxserver/firefox:1.2404.1@sha256:6509932ae07501ccb2ec037c8699b06682d8673307a3194331f1b2c59147526f
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      FIREFOX_CLI: ''
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/firefox/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.firefox/assets/icon.png
+  title:
+    en_US: Firefox
+  port_map: '3000'
+  id: by-roket.linuxserver.firefox
+  version: 1.2404.1
+  index: /

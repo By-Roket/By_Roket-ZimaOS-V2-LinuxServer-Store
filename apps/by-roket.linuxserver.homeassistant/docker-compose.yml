@@ -1,0 +1,26 @@
+name: linuxserver-homeassistant
+services:
+  app:
+    image: linuxserver/homeassistant:2026.8.3
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 8123
+        published: 8123
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/homeassistant/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.homeassistant/assets/icon.png
+  title:
+    en_US: Homeassistant
+  port_map: '8123'
+  id: by-roket.linuxserver.homeassistant
+  version: 2026.8.3
+  index: /

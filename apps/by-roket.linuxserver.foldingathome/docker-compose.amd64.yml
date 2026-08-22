@@ -1,0 +1,32 @@
+name: linuxserver-foldingathome
+services:
+  app:
+    image: linuxserver/foldingathome:8.5.6@sha256:7c2ce87600dff7ddcc435957cb01c9c040f779790a3d8af61097f9fd7714d3e6
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      ACCOUNT_TOKEN: ''
+      MACHINE_NAME: ''
+      CLI_ARGS: ''
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+      - target: 7396
+        published: 7396
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/foldingathome/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.foldingathome/assets/icon.png
+  title:
+    en_US: Foldingathome
+  port_map: '80'
+  id: by-roket.linuxserver.foldingathome
+  version: 8.5.6
+  index: /

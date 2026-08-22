@@ -1,0 +1,39 @@
+name: linuxserver-ubooquity
+services:
+  app:
+    image: linuxserver/ubooquity:3.1.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      MAXMEM: ''
+    ports:
+      - target: 2202
+        published: 2202
+        protocol: tcp
+      - target: 2203
+        published: 2203
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/ubooquity/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/ubooquity/books
+        target: /books
+      - type: bind
+        source: /DATA/AppData/ubooquity/comics
+        target: /comics
+      - type: bind
+        source: /DATA/AppData/ubooquity/files
+        target: /files
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ubooquity/assets/icon.png
+  title:
+    en_US: Ubooquity
+  id: by-roket.linuxserver.ubooquity
+  version: 3.1.0
+  index: /
+  port_map: '2202'

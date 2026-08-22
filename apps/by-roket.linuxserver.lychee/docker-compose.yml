@@ -1,0 +1,38 @@
+name: linuxserver-lychee
+services:
+  app:
+    image: linuxserver/lychee:7.7.4
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      DB_CONNECTION: ''
+      DB_HOST: ''
+      DB_PORT: ''
+      DB_USERNAME: ''
+      DB_PASSWORD: ''
+      DB_DATABASE: ''
+      APP_NAME: ''
+      APP_URL: ''
+      TRUSTED_PROXIES: ''
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/lychee/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/lychee/pictures
+        target: /pictures
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lychee/assets/icon.png
+  title:
+    en_US: Lychee
+  port_map: '80'
+  id: by-roket.linuxserver.lychee
+  version: 7.7.4
+  index: /

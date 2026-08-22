@@ -1,0 +1,29 @@
+name: linuxserver-dokuwiki
+services:
+  app:
+    image: linuxserver/dokuwiki:version-2026-07-14b@sha256:839445c50f9f0e7abb4ca8bbdf97b89c5a7adece2e54048a1c5f7f6036a175ee
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+      - target: 443
+        published: 443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/dokuwiki/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.dokuwiki/assets/icon.png
+  title:
+    en_US: Dokuwiki
+  port_map: '80'
+  id: by-roket.linuxserver.dokuwiki
+  version: version-2026-07-14b
+  index: /

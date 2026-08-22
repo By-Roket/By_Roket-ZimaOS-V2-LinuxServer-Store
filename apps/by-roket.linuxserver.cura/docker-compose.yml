@@ -1,0 +1,29 @@
+name: linuxserver-cura
+services:
+  app:
+    image: linuxserver/cura:5.13.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/cura/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.cura/assets/icon.png
+  title:
+    en_US: Cura
+  port_map: '3000'
+  id: by-roket.linuxserver.cura
+  version: 5.13.0
+  index: /

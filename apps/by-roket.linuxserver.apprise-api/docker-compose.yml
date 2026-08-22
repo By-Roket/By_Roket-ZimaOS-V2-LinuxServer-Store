@@ -1,0 +1,30 @@
+name: linuxserver-apprise-api
+services:
+  app:
+    image: linuxserver/apprise-api:1.5.2
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      APPRISE_ATTACH_SIZE: ''
+    ports:
+      - target: 8000
+        published: 8000
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/apprise-api/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/apprise-api/attachments
+        target: /attachments
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.apprise-api/assets/icon.png
+  title:
+    en_US: Apprise api
+  port_map: '8000'
+  id: by-roket.linuxserver.apprise-api
+  version: 1.5.2
+  index: /

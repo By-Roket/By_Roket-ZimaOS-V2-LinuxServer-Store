@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Grav is a Fast, Simple, and Flexible, file-based Web-platform.",
+  "tagline": "A Fast, Simple, and Flexible, file-based Web-platform.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.grav/assets/grav-logo.webp",
+  "category": "Others",
+  "title": "Grav",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.grav",
+  "version": "2.0.21",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 61269690,
+    "arm64": 61868509
+  }
+}

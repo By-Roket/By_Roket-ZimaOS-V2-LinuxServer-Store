@@ -1,0 +1,31 @@
+name: linuxserver-nzbget
+services:
+  app:
+    image: linuxserver/nzbget:26.2.20260821@sha256:1ba6144b8726a17dc76bd6f699bb5c43ca92b6f7b9c69bccae4169a328a476e1
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      NZBGET_USER: ''
+      NZBGET_PASS: ''
+    ports:
+      - target: 6789
+        published: 6789
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/nzbget/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/nzbget/downloads
+        target: /downloads
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nzbget/assets/icon.png
+  title:
+    en_US: Nzbget
+  port_map: '6789'
+  id: by-roket.linuxserver.nzbget
+  version: 26.2.20260821
+  index: /

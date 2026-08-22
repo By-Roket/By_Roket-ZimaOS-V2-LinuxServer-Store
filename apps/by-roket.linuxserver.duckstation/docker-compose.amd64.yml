@@ -1,0 +1,29 @@
+name: linuxserver-duckstation
+services:
+  app:
+    image: linuxserver/duckstation:version-latest@sha256:0c3cd2770655760bdb8f540434288ae5b25233f5ec663f131672a211cac6daf3
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/duckstation/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.duckstation/assets/icon.png
+  title:
+    en_US: Duckstation
+  port_map: '3000'
+  id: by-roket.linuxserver.duckstation
+  version: version-latest
+  index: /

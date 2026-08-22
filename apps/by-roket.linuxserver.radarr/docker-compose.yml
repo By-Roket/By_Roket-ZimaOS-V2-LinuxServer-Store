@@ -1,0 +1,32 @@
+name: linuxserver-radarr
+services:
+  app:
+    image: linuxserver/radarr:6.3.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 7878
+        published: 7878
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/radarr/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/radarr/movies
+        target: /movies
+      - type: bind
+        source: /DATA/AppData/radarr/downloads
+        target: /downloads
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.radarr/assets/icon.png
+  title:
+    en_US: Radarr
+  port_map: '7878'
+  id: by-roket.linuxserver.radarr
+  version: 6.3.0
+  index: /

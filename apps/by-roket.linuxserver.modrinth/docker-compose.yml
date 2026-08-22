@@ -1,0 +1,29 @@
+name: linuxserver-modrinth
+services:
+  app:
+    image: linuxserver/modrinth:0.18.2
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/modrinth/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.modrinth/assets/icon.png
+  title:
+    en_US: Modrinth
+  port_map: '3000'
+  id: by-roket.linuxserver.modrinth
+  version: 0.18.2
+  index: /

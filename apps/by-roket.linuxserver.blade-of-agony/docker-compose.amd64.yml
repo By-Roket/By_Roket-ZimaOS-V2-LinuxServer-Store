@@ -1,0 +1,29 @@
+name: linuxserver-blade-of-agony
+services:
+  app:
+    image: linuxserver/blade-of-agony:3.1.20260816@sha256:b30a2cdbef5eb222c7caa41a25b1de032e702a8b0d2a0f1022fef8d00f68848d
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/blade-of-agony/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.blade-of-agony/assets/icon.png
+  title:
+    en_US: Blade of-agony
+  port_map: '3000'
+  id: by-roket.linuxserver.blade-of-agony
+  version: 3.1.20260816
+  index: /

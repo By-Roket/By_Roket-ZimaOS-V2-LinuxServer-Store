@@ -1,0 +1,35 @@
+name: linuxserver-wikijs
+services:
+  app:
+    image: linuxserver/wikijs:2.5.314
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      DB_TYPE: ''
+      DB_HOST: ''
+      DB_PORT: ''
+      DB_NAME: ''
+      DB_USER: ''
+      DB_PASS: ''
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/wikijs/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/wikijs/data
+        target: /data
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.wikijs/assets/icon.svg
+  title:
+    en_US: Wikijs
+  port_map: '3000'
+  id: by-roket.linuxserver.wikijs
+  version: 2.5.314
+  index: /

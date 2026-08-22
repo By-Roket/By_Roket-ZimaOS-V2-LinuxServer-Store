@@ -1,0 +1,32 @@
+name: linuxserver-cops
+services:
+  app:
+    image: linuxserver/cops:4.5.2@sha256:714fe3803567dddb5c61dbfbb4c20bf564532d9fa19b8940dfd724bc71bf035f
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+      - target: 443
+        published: 443
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/cops/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/cops/books
+        target: /books
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.cops/assets/icon.png
+  title:
+    en_US: Cops
+  port_map: '80'
+  id: by-roket.linuxserver.cops
+  version: 4.5.2
+  index: /

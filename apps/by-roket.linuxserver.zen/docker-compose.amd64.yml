@@ -1,0 +1,29 @@
+name: linuxserver-zen
+services:
+  app:
+    image: linuxserver/zen:1.21.15@sha256:630989d9deda1a6fbb3fd89de1d71d85f865ccb346a1e8cbe2ffd4079b818726
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/zen/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.zen/assets/icon.png
+  title:
+    en_US: Zen
+  port_map: '3000'
+  id: by-roket.linuxserver.zen
+  version: 1.21.15
+  index: /

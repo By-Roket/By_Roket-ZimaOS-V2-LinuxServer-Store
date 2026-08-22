@@ -1,0 +1,29 @@
+name: linuxserver-kali-linux
+services:
+  app:
+    image: linuxserver/kali-linux:version-76a3ddda
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/kali-linux/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kali-linux/assets/icon.png
+  title:
+    en_US: Kali linux
+  port_map: '3000'
+  id: by-roket.linuxserver.kali-linux
+  version: version-76a3ddda
+  index: /

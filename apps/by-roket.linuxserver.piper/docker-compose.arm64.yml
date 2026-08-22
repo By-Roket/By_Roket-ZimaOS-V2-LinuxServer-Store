@@ -1,0 +1,33 @@
+name: linuxserver-piper
+services:
+  app:
+    image: linuxserver/piper:2.4.2@sha256:a0440abf58931fa2dbcc7f18a7bebe01afcc39cabec47864005e16df64ca5175
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      PIPER_VOICE: ''
+      LOCAL_ONLY: ''
+      PIPER_LENGTH: ''
+      PIPER_NOISE: ''
+      PIPER_NOISEW: ''
+      PIPER_SPEAKER: ''
+      NO_STREAMING: ''
+    ports:
+      - target: 10200
+        published: 10200
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/piper/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.piper/assets/icon.png
+  title:
+    en_US: Piper
+  port_map: '10200'
+  id: by-roket.linuxserver.piper
+  version: 2.4.2
+  index: /

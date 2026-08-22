@@ -1,0 +1,33 @@
+name: linuxserver-lazylibrarian
+services:
+  app:
+    image: linuxserver/lazylibrarian:version-d6905f7e@sha256:a254050f9354bffee6b6a7a1cfb751a38b9b8b993f787e1bac4b4983707910e1
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      DOCKER_MODS: ''
+    ports:
+      - target: 5299
+        published: 5299
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/lazylibrarian/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/lazylibrarian/downloads
+        target: /downloads
+      - type: bind
+        source: /DATA/AppData/lazylibrarian/books
+        target: /books
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lazylibrarian/assets/icon.png
+  title:
+    en_US: Lazylibrarian
+  port_map: '5299'
+  id: by-roket.linuxserver.lazylibrarian
+  version: version-d6905f7e
+  index: /

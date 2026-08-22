@@ -1,0 +1,29 @@
+name: linuxserver-projectsend
+services:
+  app:
+    image: linuxserver/projectsend:version-r2098@sha256:6b2e568af2ed5f2a435b3a48670b5118a2c91bf4df156125512f7dae556f88e9
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/projectsend/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/projectsend/data
+        target: /data
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.projectsend/assets/icon.png
+  title:
+    en_US: Projectsend
+  port_map: '80'
+  id: by-roket.linuxserver.projectsend
+  version: version-r2098
+  index: /

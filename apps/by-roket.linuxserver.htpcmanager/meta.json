@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Htpcmanager is a front end for many htpc related applications.",
+  "tagline": "A front end for many htpc related applications.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.htpcmanager/assets/htpcmanager-icon.webp",
+  "category": "Others",
+  "title": "Htpcmanager",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.htpcmanager",
+  "version": "version-26a641bf",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 71243703,
+    "arm64": 71583273
+  }
+}

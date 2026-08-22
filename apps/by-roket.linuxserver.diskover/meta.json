@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Diskover is an open source file system indexer that uses Elasticsearch to index and manage data across heterogeneous storage systems.",
+  "tagline": "An open source file system indexer that uses Elasticsearch to index and manage data across heterogeneous storage systems.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.diskover/assets/diskover.webp",
+  "category": "Others",
+  "title": "Diskover",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.diskover",
+  "version": "2.3.5",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 50814032,
+    "arm64": 52268532
+  }
+}

@@ -1,0 +1,28 @@
+name: linuxserver-changedetection-io
+services:
+  app:
+    image: linuxserver/changedetection.io:0.55.8@sha256:ced96dbbae869334452f2fc2f90a878a3a526e833cf1d82187f7185c0ff7a630
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      BASE_URL: ''
+      PLAYWRIGHT_DRIVER_URL: ''
+    ports:
+      - target: 5000
+        published: 5000
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/changedetection.io/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.changedetection-io/assets/icon.png
+  title:
+    en_US: Changedetection. Io
+  port_map: '5000'
+  id: by-roket.linuxserver.changedetection-io
+  version: 0.55.8
+  index: /

@@ -1,0 +1,20 @@
+name: linuxserver-tester
+services:
+  app:
+    image: linuxserver/tester:version-66f677b0
+    restart: unless-stopped
+    environment:
+      URL: ''
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.tester/assets/icon
+  title:
+    en_US: Tester
+  id: by-roket.linuxserver.tester
+  version: version-66f677b0
+  index: /
+  port_map: '3000'

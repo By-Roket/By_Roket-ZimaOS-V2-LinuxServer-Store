@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Planka is an elegant open source project tracking tool.",
+  "tagline": "An elegant open source project tracking tool.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.planka/assets/planka-logo.webp",
+  "category": "Others",
+  "title": "Planka",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.planka",
+  "version": "2.2.1",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 98767588,
+    "arm64": 99691619
+  }
+}

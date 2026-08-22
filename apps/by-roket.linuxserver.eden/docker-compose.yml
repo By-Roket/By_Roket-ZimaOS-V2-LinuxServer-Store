@@ -1,0 +1,29 @@
+name: linuxserver-eden
+services:
+  app:
+    image: linuxserver/eden:0.2.1
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/eden/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.eden/assets/icon.png
+  title:
+    en_US: Eden
+  port_map: '3000'
+  id: by-roket.linuxserver.eden
+  version: 0.2.1
+  index: /

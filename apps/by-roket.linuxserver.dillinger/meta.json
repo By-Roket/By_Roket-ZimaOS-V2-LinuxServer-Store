@@ -1,0 +1,25 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Visit homepage: https://hub.docker.com/r/linuxserver/dillinger/",
+  "tagline": "A cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.dillinger/assets/dillinger.webp",
+  "category": "Developer",
+  "project_url": "https://dillinger.io/",
+  "title": "Dillinger",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.dillinger",
+  "version": "3.39.1",
+  "categories": [
+    "developer"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 301104870,
+    "arm64": 294566015
+  }
+}

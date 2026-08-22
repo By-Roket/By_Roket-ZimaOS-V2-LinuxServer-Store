@@ -1,0 +1,32 @@
+name: linuxserver-rdesktop
+services:
+  app:
+    image: linuxserver/rdesktop:arch-kde-version-arch-2025-01-10
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3389
+        published: 3389
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/rdesktop/config
+        target: /config
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
+      - type: bind
+        source: /DATA/AppData/rdesktop/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.rdesktop/assets/icon.png
+  title:
+    en_US: Rdesktop
+  id: by-roket.linuxserver.rdesktop
+  version: arch-kde-version-arch-2025-01-10
+  index: /
+  port_map: '3389'

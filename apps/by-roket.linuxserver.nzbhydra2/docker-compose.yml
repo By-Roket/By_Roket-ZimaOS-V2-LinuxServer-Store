@@ -1,0 +1,29 @@
+name: linuxserver-nzbhydra2
+services:
+  app:
+    image: linuxserver/nzbhydra2:8.9.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 5076
+        published: 5076
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/nzbhydra2/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/nzbhydra2/downloads
+        target: /downloads
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nzbhydra2/assets/icon.png
+  title:
+    en_US: Nzbhydra2
+  port_map: '5076'
+  id: by-roket.linuxserver.nzbhydra2
+  version: 8.9.0
+  index: /

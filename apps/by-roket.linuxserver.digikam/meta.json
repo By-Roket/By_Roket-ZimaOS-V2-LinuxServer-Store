@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "amd64"
+  ],
+  "description": "digiKam: Professional Photo Management with the Power of Open Source",
+  "tagline": "digiKam: Professional Photo Management with the Power of Open Source",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.digikam/assets/digikam.webp",
+  "category": "Media",
+  "title": "Digikam",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.digikam",
+  "version": "9.1.0",
+  "categories": [
+    "media"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1584569536
+  }
+}

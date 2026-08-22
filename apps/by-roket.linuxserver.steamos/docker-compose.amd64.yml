@@ -1,0 +1,39 @@
+name: linuxserver-steamos
+services:
+  app:
+    image: linuxserver/steamos:version-2024-12-20@sha256:232c757d12067302223e8c53afdcc43f4938c6c3d969fcd4a406b0fc089c8188
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      DRINODE: ''
+      HOST_IP: ''
+      STARTUP: ''
+      RESOLUTION: ''
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/steamos/config
+        target: /config
+      - type: bind
+        source: /dev/input
+        target: /dev/input
+      - type: bind
+        source: /run/udev/data
+        target: /run/udev/data
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.steamos/assets/icon.png
+  title:
+    en_US: Steamos
+  id: by-roket.linuxserver.steamos
+  version: version-2024-12-20
+  index: /
+  port_map: '3000'

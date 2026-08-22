@@ -1,0 +1,29 @@
+name: linuxserver-melonds
+services:
+  app:
+    image: linuxserver/melonds:1.1.20260816@sha256:d1ea3750231f8d07cf86f1d90b44268c1cf197d1e4f1cff2c629026189cec523
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/melonds/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.melonds/assets/icon.png
+  title:
+    en_US: Melonds
+  port_map: '3000'
+  id: by-roket.linuxserver.melonds
+  version: 1.1.20260816
+  index: /

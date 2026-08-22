@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Chrome is the official web browser from Google, built to be fast, secure, and customizable.",
+  "tagline": "The official web browser from Google, built to be fast, secure, and customizable.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.chrome/assets/chrome-logo.webp",
+  "category": "Others",
+  "title": "Chrome",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.chrome",
+  "version": "151.0.7922",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1196349368,
+    "arm64": 1160102669
+  }
+}

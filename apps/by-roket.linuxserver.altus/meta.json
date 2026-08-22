@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Altus is an Electron-based WhatsApp client with themes and multiple account support.",
+  "tagline": "An Electron-based WhatsApp client with themes and multiple account support.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.altus/assets/altus-logo.webp",
+  "category": "Others",
+  "title": "Altus",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.altus",
+  "version": "5.8.1",
+  "categories": [
+    "others"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1107587589,
+    "arm64": 1070619440
+  }
+}

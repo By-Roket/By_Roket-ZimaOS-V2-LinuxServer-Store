@@ -1,0 +1,32 @@
+name: linuxserver-pylon
+services:
+  app:
+    image: linuxserver/pylon:2.10.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      GITURL: ''
+      PYUSER: ''
+      PYPASS: ''
+    ports:
+      - target: 3131
+        published: 3131
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/pylon/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/pylon/code
+        target: /code
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pylon/assets/icon.png
+  title:
+    en_US: Pylon
+  port_map: '3131'
+  id: by-roket.linuxserver.pylon
+  version: 2.10.0
+  index: /

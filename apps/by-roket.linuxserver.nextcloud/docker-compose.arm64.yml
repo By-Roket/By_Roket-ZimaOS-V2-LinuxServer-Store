@@ -1,0 +1,32 @@
+name: linuxserver-nextcloud
+services:
+  app:
+    image: linuxserver/nextcloud:34.0.3@sha256:79a3a93f927aacd941a042c05cd6ef0dfda25c2a369583576f2fb91bf9ba9f19
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 443
+        published: 443
+        protocol: tcp
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/nextcloud/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/nextcloud/data
+        target: /data
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nextcloud/assets/icon.png
+  title:
+    en_US: Nextcloud
+  port_map: '80'
+  id: by-roket.linuxserver.nextcloud
+  version: 34.0.3
+  index: /

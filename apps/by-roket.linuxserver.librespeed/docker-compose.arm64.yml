@@ -1,0 +1,35 @@
+name: linuxserver-librespeed
+services:
+  app:
+    image: linuxserver/librespeed:6.2.1@sha256:9ba90c7c8da7d7fd0d24b1fa38cd7188cdb3a94d3b69110fc996be766dbdb071
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      PASSWORD: ''
+      CUSTOM_RESULTS: ''
+      DB_TYPE: ''
+      DB_NAME: ''
+      DB_HOSTNAME: ''
+      DB_USERNAME: ''
+      DB_PASSWORD: ''
+      DB_PORT: ''
+      IPINFO_APIKEY: ''
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/librespeed/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.librespeed/assets/icon.png
+  title:
+    en_US: Librespeed
+  port_map: '80'
+  id: by-roket.linuxserver.librespeed
+  version: 6.2.1
+  index: /

@@ -1,0 +1,27 @@
+name: linuxserver-pwndrop
+services:
+  app:
+    image: linuxserver/pwndrop:1.0.1@sha256:8e924728a7bf4538a69a789821aa9afc77d4009f016341c4d926798c60936a05
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      SECRET_PATH: ''
+    ports:
+      - target: 8080
+        published: 8080
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/pwndrop/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pwndrop/assets/icon.png
+  title:
+    en_US: Pwndrop
+  port_map: '8080'
+  id: by-roket.linuxserver.pwndrop
+  version: 1.0.1
+  index: /

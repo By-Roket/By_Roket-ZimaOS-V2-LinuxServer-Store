@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Telegram is a cloud-based mobile and desktop messaging app.",
+  "tagline": "A cloud-based mobile and desktop messaging app.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.telegram/assets/telegram-logo.webp",
+  "category": "Productivity",
+  "title": "Telegram",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.telegram",
+  "version": "7.0.9",
+  "categories": [
+    "productivity"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1737624878,
+    "arm64": 1765324525
+  }
+}

@@ -1,0 +1,32 @@
+name: linuxserver-medusa
+services:
+  app:
+    image: linuxserver/medusa:1.0.26
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 8081
+        published: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/medusa/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/medusa/downloads
+        target: /downloads
+      - type: bind
+        source: /DATA/AppData/medusa/tv
+        target: /tv
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.medusa/assets/icon.png
+  title:
+    en_US: Medusa
+  port_map: '8081'
+  id: by-roket.linuxserver.medusa
+  version: 1.0.26
+  index: /

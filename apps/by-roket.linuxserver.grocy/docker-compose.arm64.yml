@@ -1,0 +1,26 @@
+name: linuxserver-grocy
+services:
+  app:
+    image: linuxserver/grocy:4.6.0@sha256:c900b38ca803ee6492da76ce1fdf47fc963df3917a9ce7e6e2a70778c78437f9
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 9283
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/grocy/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.grocy/assets/icon.png
+  title:
+    en_US: Grocy
+  port_map: '80'
+  id: by-roket.linuxserver.grocy
+  version: 4.6.0
+  index: /

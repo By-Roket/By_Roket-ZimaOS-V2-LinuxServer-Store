@@ -1,0 +1,31 @@
+name: linuxserver-phpmyadmin
+services:
+  app:
+    image: linuxserver/phpmyadmin:5.2.3
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      PMA_ARBITRARY: ''
+      PMA_ABSOLUTE_URI: ''
+      PMA_HOST: 172.17.0.1
+      PMA_USER: casaos
+      PMA_PASSWORD: casaos
+    ports:
+      - target: 8081
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/phpmyadmin/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.phpmyadmin/assets/icon.png
+  title:
+    en_US: Phpmyadmin
+  port_map: '8081'
+  id: by-roket.linuxserver.phpmyadmin
+  version: 5.2.3
+  index: /

@@ -1,0 +1,29 @@
+name: linuxserver-retroarch
+services:
+  app:
+    image: linuxserver/retroarch:1.22.2@sha256:0808019ead567716eb0ea71b33a6ef3712481bf39cc7b2c54af6e2d8b59c84f4
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/retroarch/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.retroarch/assets/icon.png
+  title:
+    en_US: Retroarch
+  port_map: '3000'
+  id: by-roket.linuxserver.retroarch
+  version: 1.22.2
+  index: /

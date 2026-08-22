@@ -1,0 +1,34 @@
+name: linuxserver-plex
+services:
+  app:
+    image: linuxserver/plex:1.43.3@sha256:a920088f759288ec7ba35c27c4141dc45935832f764674da774b87d3b98af17d
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      VERSION: ''
+      PLEX_CLAIM: ''
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/plex/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/plex/tv
+        target: /tv
+      - type: bind
+        source: /DATA/AppData/plex/movies
+        target: /movies
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.plex/assets/icon.png
+  title:
+    en_US: Plex
+  port_map: '80'
+  id: by-roket.linuxserver.plex
+  version: 1.43.3
+  index: /

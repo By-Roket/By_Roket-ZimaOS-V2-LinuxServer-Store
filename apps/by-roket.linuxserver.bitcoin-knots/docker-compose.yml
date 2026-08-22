@@ -1,0 +1,32 @@
+name: linuxserver-bitcoin-knots
+services:
+  app:
+    image: linuxserver/bitcoin-knots:version-29.4.knots20260508-noble1
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+      - target: 8333
+        published: 8333
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/bitcoin-knots/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.bitcoin-knots/assets/icon.png
+  title:
+    en_US: Bitcoin knots
+  port_map: '3000'
+  id: by-roket.linuxserver.bitcoin-knots
+  version: version-29.4.knots20260508-noble1
+  index: /

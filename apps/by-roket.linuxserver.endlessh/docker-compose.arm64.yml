@@ -1,0 +1,34 @@
+name: linuxserver-endlessh
+services:
+  app:
+    image: linuxserver/endlessh:version-dfe44eb2@sha256:cb4a78bd9500244ed7d5440aea176dd766006f73d27fb2a22c75ca0c36338899
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      MSDELAY: ''
+      MAXLINES: ''
+      MAXCLIENTS: ''
+      LOGFILE: ''
+      BINDFAMILY: ''
+    ports:
+      - target: 22
+        published: 2222
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/endlessh/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/endlessh/config
+        target: /config
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.endlessh/assets/icon.png
+  title:
+    en_US: Endlessh
+  port_map: '8080'
+  id: by-roket.linuxserver.endlessh
+  version: version-dfe44eb2
+  index: /

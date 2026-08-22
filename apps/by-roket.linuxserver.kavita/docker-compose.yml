@@ -1,0 +1,29 @@
+name: linuxserver-kavita
+services:
+  app:
+    image: linuxserver/kavita:0.9.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 5000
+        published: 5000
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/kavita/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/kavita/data
+        target: /data
+x-casaos:
+  main: app
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kavita/assets/icon.png
+  title:
+    en_US: Kavita
+  port_map: '5000'
+  id: by-roket.linuxserver.kavita
+  version: 0.9.0
+  index: /

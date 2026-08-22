@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Lollypop is a lightweight modern music player designed to work excellently on the GNOME desktop environment.",
+  "tagline": "A lightweight modern music player designed to work excellently on the GNOME desktop environment.",
+  "developer": "LinuxServer.io",
+  "author": "WisdomSky",
+  "thumbnail": "/apps/by-roket.linuxserver.lollypop/assets/lollypop-icon.webp",
+  "category": "Media",
+  "title": "Lollypop",
+  "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
+  "id": "by-roket.linuxserver.lollypop",
+  "version": "1.4.45",
+  "categories": [
+    "media"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 655825912,
+    "arm64": 608809741
+  }
+}
