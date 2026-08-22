@@ -21,6 +21,32 @@ ALLOWED_CATEGORIES = {
 }
 
 
+# Port interne de l'interface Web pour les applications ambiguës.
+# None signifie que l'application n'expose volontairement aucune interface Web.
+WEB_UI_TARGET_PORTS = {
+    "citron": "3000",
+    "deluge": "8112",
+    "emby": "8096",
+    "feed2toot": None,
+    "freetube": "3000",
+    "jellyfin": "8096",
+    "ldap-auth": "8888",
+    "minetest": None,
+    "minisatip": "8875",
+    "nano": "8075",
+    "plex-meta-manager": None,
+    "quassel-core": None,
+    "resilio-sync": "8888",
+    "series-troxide": "3000",
+    "steamos": "3000",
+    "syncthing": "8384",
+    "syslog-ng": None,
+    "transmission": "9091",
+    "tvheadend": "9981",
+    "ubooquity": "2202",
+}
+
+
 # Priorité aux applications que nous connaissons précisément.
 EXACT_CATEGORIES = {
     # Media
@@ -259,24 +285,50 @@ def choose_category(app_name, metadata):
 
     return "Others"
 
-def ensure_web_entry(compose, metadata):
-    """Ensure required ZimaOS V2 web entry fields exist."""
+def published_tcp_ports(service):
+    """Return (target, published) pairs for published TCP ports."""
+    result = []
 
-    # ZimaOS expects a web entry path.
+    for port in service.get("ports", []):
+        if isinstance(port, dict):
+            protocol = str(port.get("protocol", "tcp")).lower()
+
+            if protocol != "tcp":
+                continue
+
+            target = port.get("target")
+            published = port.get("published")
+
+            if target is not None and published is not None:
+                result.append((str(target), str(published)))
+
+        elif isinstance(port, str):
+            value = port.strip()
+
+            if value.endswith("/udp"):
+                continue
+
+            value = value.removesuffix("/tcp")
+            parts = value.rsplit(":", 2)
+
+            if len(parts) >= 2:
+                result.append((parts[-1], parts[-2]))
+
+    return result
+
+
+def ensure_web_entry(compose, metadata, app_slug):
+    """Ensure required ZimaOS V2 web entry fields exist."""
     index = metadata.get("index")
 
     if not isinstance(index, str) or not index.strip():
         metadata["index"] = "/"
 
-    # WisdomSky already provides port_map for many apps.
-    # Preserve it whenever possible and normalize it as a string.
-    port_map = metadata.get("port_map")
-
-    if port_map is not None and str(port_map).strip():
-        metadata["port_map"] = str(port_map)
+    # Preserve an explicit value, including an empty headless marker.
+    if "port_map" in metadata and metadata["port_map"] is not None:
+        metadata["port_map"] = str(metadata["port_map"])
         return
 
-    # Only auto-detect when there is ONE unambiguous published TCP port.
     main_service = metadata.get("main")
     services = compose.get("services", {})
 
@@ -290,46 +342,47 @@ def ensure_web_entry(compose, metadata):
             f"Main service '{main_service}' not found"
         )
 
-    candidates = []
+    ports = published_tcp_ports(service)
 
-    for port in service.get("ports", []):
-        if isinstance(port, dict):
-            protocol = str(port.get("protocol", "tcp")).lower()
+    if app_slug in WEB_UI_TARGET_PORTS:
+        target = WEB_UI_TARGET_PORTS[app_slug]
 
-            if protocol != "tcp":
-                continue
+        if target is None:
+            metadata["port_map"] = ""
+            return
 
-            published = port.get("published")
+        candidates = [
+            published
+            for container_port, published in ports
+            if container_port == target
+        ]
+        candidates = list(dict.fromkeys(candidates))
 
-            if published is not None:
-                candidates.append(str(published))
+        if len(candidates) == 1:
+            metadata["port_map"] = candidates[0]
+            return
 
-        elif isinstance(port, str):
-            value = port.strip()
+        raise ValueError(
+            f"Expected one published TCP port for Web UI target "
+            f"{target}, found {len(candidates)}"
+        )
 
-            if value.endswith("/udp"):
-                continue
-
-            value = value.removesuffix("/tcp")
-            parts = value.split(":")
-
-            # HOST:CONTAINER
-            if len(parts) == 2:
-                candidates.append(parts[0])
-
-            # IP:HOST:CONTAINER
-            elif len(parts) >= 3:
-                candidates.append(parts[-2])
-
-    candidates = list(dict.fromkeys(candidates))
+    candidates = list(dict.fromkeys(
+        published
+        for _, published in ports
+    ))
 
     if len(candidates) == 1:
         metadata["port_map"] = candidates[0]
         return
 
+    if not candidates:
+        metadata["port_map"] = ""
+        return
+
     raise ValueError(
-        "Missing x-casaos.port_map and no single "
-        "unambiguous published TCP port was found"
+        "Missing x-casaos.port_map and multiple published "
+        "TCP ports make Web UI detection ambiguous"
     )
 
 def convert_app(compose_path):
@@ -362,7 +415,7 @@ def convert_app(compose_path):
     if metadata["category"] not in ALLOWED_CATEGORIES:
         metadata["category"] = "Others"
 
-    ensure_web_entry(compose, metadata)
+    ensure_web_entry(compose, metadata, app_slug)
 
     with compose_path.open("w", encoding="utf-8") as file:
         yaml.safe_dump(
