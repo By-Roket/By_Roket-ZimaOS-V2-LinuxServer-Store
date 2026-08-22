@@ -229,6 +229,78 @@ def choose_category(app_name, metadata):
 
     return "Others"
 
+def ensure_web_entry(compose, metadata):
+    """Ensure required ZimaOS V2 web entry fields exist."""
+
+    # ZimaOS expects a web entry path.
+    index = metadata.get("index")
+
+    if not isinstance(index, str) or not index.strip():
+        metadata["index"] = "/"
+
+    # WisdomSky already provides port_map for many apps.
+    # Preserve it whenever possible and normalize it as a string.
+    port_map = metadata.get("port_map")
+
+    if port_map is not None and str(port_map).strip():
+        metadata["port_map"] = str(port_map)
+        return
+
+    # Only auto-detect when there is ONE unambiguous published TCP port.
+    main_service = metadata.get("main")
+    services = compose.get("services", {})
+
+    if not isinstance(services, dict):
+        raise ValueError("Invalid services section")
+
+    service = services.get(main_service)
+
+    if not isinstance(service, dict):
+        raise ValueError(
+            f"Main service '{main_service}' not found"
+        )
+
+    candidates = []
+
+    for port in service.get("ports", []):
+        if isinstance(port, dict):
+            protocol = str(port.get("protocol", "tcp")).lower()
+
+            if protocol != "tcp":
+                continue
+
+            published = port.get("published")
+
+            if published is not None:
+                candidates.append(str(published))
+
+        elif isinstance(port, str):
+            value = port.strip()
+
+            if value.endswith("/udp"):
+                continue
+
+            value = value.removesuffix("/tcp")
+            parts = value.split(":")
+
+            # HOST:CONTAINER
+            if len(parts) == 2:
+                candidates.append(parts[0])
+
+            # IP:HOST:CONTAINER
+            elif len(parts) >= 3:
+                candidates.append(parts[-2])
+
+    candidates = list(dict.fromkeys(candidates))
+
+    if len(candidates) == 1:
+        metadata["port_map"] = candidates[0]
+        return
+
+    raise ValueError(
+        "Missing x-casaos.port_map and no single "
+        "unambiguous published TCP port was found"
+    )
 
 def convert_app(compose_path):
     app_name = compose_path.parent.name
@@ -259,6 +331,8 @@ def convert_app(compose_path):
 
     if metadata["category"] not in ALLOWED_CATEGORIES:
         metadata["category"] = "Others"
+
+    ensure_web_entry(compose, metadata)
 
     with compose_path.open("w", encoding="utf-8") as file:
         yaml.safe_dump(
