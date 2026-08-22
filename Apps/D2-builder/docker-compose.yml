@@ -1,0 +1,50 @@
+name: linuxserver-d2-builder
+services:
+  app:
+    image: linuxserver/d2-builder:0.6.8
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: for UserID
+      - container: PGID
+        description:
+          en_US: for GroupID
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/d2-builder/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/d2-builder
+      for details.
+  tagline:
+    en_US: 'This container needs special attention. Please check https://hub. Docker.
+      Com/r/linuxserver/d2-builder for details. '
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: ''
+  thumbnail: ''
+  title:
+    en_US: D2 builder
+  category: Developer
+  port_map: '80'
+  id: by-roket.linuxserver.d2-builder
+  version: 0.6.8
+  index: /

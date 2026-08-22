@@ -1,0 +1,55 @@
+name: linuxserver-keepassxc
+services:
+  app:
+    image: linuxserver/keepassxc:2.7.12
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/keepassxc/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: KeePassXC is a free and open-source password manager. It started as a community
+      fork of KeePassX (itself a cross-platform port of KeePass).
+  tagline:
+    en_US: A free and open-source password manager. It started as a community fork
+      of KeePassX (itself a cross-platform port of KeePass).
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/keepassxc-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/keepassxc-logo.png
+  title:
+    en_US: Keepassxc
+  category: Others
+  port_map: '3000'
+  id: by-roket.linuxserver.keepassxc
+  version: 2.7.12
+  index: /

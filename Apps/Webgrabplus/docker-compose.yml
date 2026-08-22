@@ -1,0 +1,55 @@
+name: linuxserver-webgrabplus
+services:
+  app:
+    image: linuxserver/webgrabplus:5.6.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/webgrabplus/config
+      target: /config
+    - type: bind
+      source: /DATA/AppData/webgrabplus/data
+      target: /data
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Webgrabplus is a multi-site incremental xmltv epg grabber. It collects
+      tv-program guide data from selected tvguide sites for your favourite channels.
+  tagline:
+    en_US: A multi-site incremental xmltv epg grabber. It collects tv-program guide
+      data from selected tvguide sites for your favourite channels.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://www.webgrabplus.com/sites/default/themes/WgTheme/images/slideshows/EPG_fading.jpg
+  thumbnail: https://www.webgrabplus.com/sites/default/themes/WgTheme/images/slideshows/EPG_fading.jpg
+  title:
+    en_US: Webgrabplus
+  category: Media
+  port_map: '80'
+  id: by-roket.linuxserver.webgrabplus
+  version: 5.6.0
+  index: /

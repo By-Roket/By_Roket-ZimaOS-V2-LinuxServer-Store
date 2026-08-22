@@ -1,0 +1,54 @@
+name: linuxserver-kicad
+services:
+  app:
+    image: linuxserver/kicad:10.0.3
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/kicad/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: KiCad - A Cross Platform and Open Source Electronics Design Automation
+      Suite.
+  tagline:
+    en_US: A Cross Platform and Open Source Electronics Design Automation Suite.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kicad-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kicad-logo.png
+  title:
+    en_US: Kicad
+  category: Home
+  port_map: '3000'
+  id: by-roket.linuxserver.kicad
+  version: 10.0.3
+  index: /

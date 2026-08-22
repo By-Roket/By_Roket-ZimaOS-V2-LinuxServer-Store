@@ -1,0 +1,55 @@
+name: linuxserver-weixin
+services:
+  app:
+    image: linuxserver/weixin:version-1bb46de6
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/weixin/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Weixin (WeChat) is an instant messaging, social media, and mobile payment
+      app developed by Tencent.
+  tagline:
+    en_US: (WeChat) is an instant messaging, social media, and mobile payment app
+      developed by Tencent.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/weixin-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/weixin-logo.png
+  title:
+    en_US: Weixin
+  category: Media
+  port_map: '3000'
+  id: by-roket.linuxserver.weixin
+  version: version-1bb46de6
+  index: /

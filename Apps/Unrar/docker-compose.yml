@@ -1,0 +1,50 @@
+name: linuxserver-unrar
+services:
+  app:
+    image: linuxserver/unrar:7.0.9
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: for UserID
+      - container: PGID
+        description:
+          en_US: for GroupID
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/unrar/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/unrar
+      for details.
+  tagline:
+    en_US: 'This container needs special attention. Please check https://hub. Docker.
+      Com/r/linuxserver/unrar for details. '
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: ''
+  thumbnail: ''
+  title:
+    en_US: Unrar
+  category: Developer
+  port_map: '80'
+  id: by-roket.linuxserver.unrar
+  version: 7.0.9
+  index: /

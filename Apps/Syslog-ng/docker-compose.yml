@@ -1,0 +1,68 @@
+name: linuxserver-syslog-ng
+services:
+  app:
+    image: linuxserver/syslog-ng:4.11.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      LOG_TO_STDOUT: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: LOG_TO_STDOUT
+        description:
+          en_US: If set to true container will log to stdout, otherwise will log to
+            /config/log/. [OPTIONAL]
+    ports:
+    - target: 514
+      published: 5514
+      protocol: udp
+    - target: 601
+      published: 6601
+      protocol: tcp
+    - target: 6514
+      published: 6514
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/syslog-ng/config
+      target: /config
+    - type: bind
+      source: /var/log
+      target: /var/log
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: syslog-ng allows you to flexibly collect, parse, classify, rewrite and
+      correlate logs from across your infrastructure and store or route them to log
+      analysis tools.
+  tagline:
+    en_US: Allows you to flexibly collect, parse, classify, rewrite and correlate
+      logs from across your infrastructure and store or route them to log analysis
+      tools.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syslog-ng-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syslog-ng-logo.png
+  title:
+    en_US: Syslog ng
+  category: Others
+  id: by-roket.linuxserver.syslog-ng
+  version: 4.11.0
+  index: /
+  port_map: ''

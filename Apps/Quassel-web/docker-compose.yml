@@ -1,0 +1,78 @@
+name: linuxserver-quassel-web
+services:
+  app:
+    image: linuxserver/quassel-web:version-019bfdc1
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      QUASSEL_CORE: ''
+      QUASSEL_PORT: ''
+      QUASSEL_HTTPS: ''
+      URL_BASE: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: for UserID
+      - container: PGID
+        description:
+          en_US: for GroupID
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: QUASSEL_CORE
+        description:
+          en_US: specify the URL or IP address of your Quassel Core instance
+      - container: QUASSEL_PORT
+        description:
+          en_US: specify the port of your Quassel Core instance
+      - container: QUASSEL_HTTPS
+        description:
+          en_US: Set to true to have Quassel web serve over https on port 64443 instead
+            of http on port 64080.
+      - container: URL_BASE
+        description:
+          en_US: Specify a url-base in reverse proxy setups ie. /quassel
+      volumes:
+      - container: /config
+        description:
+          en_US: Appdata
+      ports:
+      - container: '64080'
+        description:
+          en_US: http port
+    ports:
+    - target: 64080
+      published: 64080
+      protocol: tcp
+    - target: 64443
+      published: 64443
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/quassel-web/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/quassel-web/'
+  tagline:
+    en_US: A web client for Quassel. Note that a Quassel-Core instance is required,
+      we have a container available here.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-web-icon.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/quassel-web-banner.png
+  title:
+    en_US: Quassel web
+  category: Developer
+  project_url: https://github.com/magne4000/quassel-webserver
+  port_map: '64080'
+  id: by-roket.linuxserver.quassel-web
+  version: version-019bfdc1
+  index: /

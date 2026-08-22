@@ -1,0 +1,109 @@
+name: linuxserver-unifi-controller
+services:
+  app:
+    image: linuxserver/unifi-controller:8.0.24
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      MEM_LIMIT: ''
+      MEM_STARTUP: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: for UserID
+      - container: PGID
+        description:
+          en_US: for GroupID
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: MEM_LIMIT
+        description:
+          en_US: Optionally change the Java memory limit (in Megabytes). Set to default
+            to reset to default
+      - container: MEM_STARTUP
+        description:
+          en_US: Optionally change the Java initial/minimum memory (in Megabytes).
+            Set to default to reset to default
+      volumes:
+      - container: /config
+        description:
+          en_US: 'Container Path: /config'
+      ports:
+      - container: '8443'
+        description:
+          en_US: Port used for controller GUI/API as seen in a web browser
+      - container: '3478'
+        description:
+          en_US: Port used for STUN.
+      - container: '10001'
+        description:
+          en_US: Port used for AP discovery
+      - container: '8080'
+        description:
+          en_US: Port used for device and controller communication.
+      - container: '8843'
+        description:
+          en_US: '8843'
+      - container: '8880'
+        description:
+          en_US: Port used for HTTP portal redirection.
+    ports:
+    - target: 8443
+      published: 8443
+      protocol: tcp
+    - target: 3478
+      published: 3478
+      protocol: udp
+    - target: 10001
+      published: 10001
+      protocol: udp
+    - target: 8080
+      published: 8080
+      protocol: tcp
+    - target: 1900
+      published: 1900
+      protocol: udp
+    - target: 8843
+      published: 8843
+      protocol: tcp
+    - target: 8880
+      published: 8880
+      protocol: tcp
+    - target: 6789
+      published: 6789
+      protocol: tcp
+    - target: 5514
+      published: 5514
+      protocol: udp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/unifi-controller/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/unifi-controller/'
+  tagline:
+    en_US: The Unifi-controller software is a powerful, enterprise wireless software
+      engine ideal for high-density client deployments requiring low latency and high
+      uptime performance.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-controller-icon.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png
+  title:
+    en_US: Unifi controller
+  category: Developer
+  project_url: https://www.ui.com/software/
+  port_map: '8443'
+  scheme: https
+  id: by-roket.linuxserver.unifi-controller
+  version: 8.0.24
+  index: /

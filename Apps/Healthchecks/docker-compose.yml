@@ -1,0 +1,141 @@
+name: linuxserver-healthchecks
+services:
+  app:
+    image: linuxserver/healthchecks:4.3.20260816
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      SECRET_KEY: ''
+      SITE_ROOT: ''
+      SITE_NAME: ''
+      SUPERUSER_EMAIL: ''
+      SUPERUSER_PASSWORD: ''
+      ALLOWED_HOSTS: ''
+      APPRISE_ENABLED: ''
+      CSRF_TRUSTED_ORIGINS: ''
+      DEBUG: ''
+      DEFAULT_FROM_EMAIL: ''
+      EMAIL_HOST: ''
+      EMAIL_PORT: ''
+      EMAIL_HOST_USER: ''
+      EMAIL_HOST_PASSWORD: ''
+      EMAIL_USE_TLS: ''
+      INTEGRATIONS_ALLOW_PRIVATE_IPS: ''
+      PING_EMAIL_DOMAIN: ''
+      RP_ID: ''
+      SITE_LOGO_URL: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: SECRET_KEY
+        description:
+          en_US: A secret key used for cryptographic signing. Will generate a random
+            value if one is not supplied and save it to /config/local_settings.py.
+      - container: SITE_ROOT
+        description:
+          en_US: The site's top-level URL and the port it listens to if different
+            than 80 or 443 (e.g., https://healthchecks.example.com:8000).
+      - container: SITE_NAME
+        description:
+          en_US: The site's name (e.g., 'Example Corp HealthChecks').
+      - container: SUPERUSER_EMAIL
+        description:
+          en_US: Superuser email.
+      - container: SUPERUSER_PASSWORD
+        description:
+          en_US: Superuser password.
+      - container: ALLOWED_HOSTS
+        description:
+          en_US: A comma-separated list of valid hostnames for the server. Default
+            is the domain portion of SITE_ROOT. [OPTIONAL]
+      - container: APPRISE_ENABLED
+        description:
+          en_US: Set to True to enable the Apprise integration (https://github.com/caronc/apprise).
+            [OPTIONAL]
+      - container: CSRF_TRUSTED_ORIGINS
+        description:
+          en_US: A list of trusted origins for unsafe requests (e.g. POST). Defaults
+            to the value of SITE_ROOT. [OPTIONAL]
+      - container: DEBUG
+        description:
+          en_US: Set to False to disable. Debug mode relaxes CSRF protections and
+            increases logging verbosity but should be disabled for production instances
+            as it will impact performance and security. [OPTIONAL]
+      - container: DEFAULT_FROM_EMAIL
+        description:
+          en_US: From email for alerts. [OPTIONAL]
+      - container: EMAIL_HOST
+        description:
+          en_US: SMTP host. [OPTIONAL]
+      - container: EMAIL_PORT
+        description:
+          en_US: SMTP port. [OPTIONAL]
+      - container: EMAIL_HOST_USER
+        description:
+          en_US: SMTP user. [OPTIONAL]
+      - container: EMAIL_HOST_PASSWORD
+        description:
+          en_US: SMTP password. [OPTIONAL]
+      - container: EMAIL_USE_TLS
+        description:
+          en_US: Use TLS for SMTP (True or False). [OPTIONAL]
+      - container: INTEGRATIONS_ALLOW_PRIVATE_IPS
+        description:
+          en_US: Defaults to False. Set to True to allow integrations to connect to
+            private IP addresses. [OPTIONAL]
+      - container: PING_EMAIL_DOMAIN
+        description:
+          en_US: The domain to use for generating ping email addresses. Defaults to
+            localhost. [OPTIONAL]
+      - container: RP_ID
+        description:
+          en_US: If using webauthn for 2FA set this to match your Healthchecks domain.
+            Webauthn will only work over https. [OPTIONAL]
+      - container: SITE_LOGO_URL
+        description:
+          en_US: Full URL to custom site logo. [OPTIONAL]
+    ports:
+    - target: 8000
+      published: 8000
+      protocol: tcp
+    - target: 2525
+      published: 2525
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/healthchecks/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Healthchecks is a watchdog for your cron jobs. It's a web server that listens
+      for pings from your cron jobs, plus a web interface.
+  tagline:
+    en_US: A watchdog for your cron jobs. It's a web server that listens for pings
+      from your cron jobs, plus a web interface.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/healthchecks-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/healthchecks-logo.png
+  title:
+    en_US: Healthchecks
+  category: Others
+  port_map: '8000'
+  id: by-roket.linuxserver.healthchecks
+  version: 4.3.20260816
+  index: /

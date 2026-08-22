@@ -1,0 +1,57 @@
+name: linuxserver-libreoffice
+services:
+  app:
+    image: linuxserver/libreoffice:25.8.7
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/libreoffice/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: LibreOffice is a free and powerful office suite, and a successor to OpenOffice.org
+      (commonly known as OpenOffice). Its clean interface and feature-rich tools help
+      you unleash your creativity and enhance your productivity.
+  tagline:
+    en_US: A free and powerful office suite, and a successor to OpenOffice. Org (commonly
+      known as OpenOffice). Its clean interface and feature-rich tools help you unleash
+      your creativity and enhance your productivity.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/libreoffice-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/libreoffice-logo.png
+  title:
+    en_US: Libreoffice
+  category: Productivity
+  port_map: '3000'
+  id: by-roket.linuxserver.libreoffice
+  version: 25.8.7
+  index: /

@@ -1,0 +1,55 @@
+name: linuxserver-github-desktop
+services:
+  app:
+    image: linuxserver/github-desktop:3.4.13
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/github-desktop/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Github Desktop is an open source Electron-based GitHub app. It is written
+      in TypeScript and uses React.
+  tagline:
+    en_US: An open source Electron-based GitHub app. It is written in TypeScript and
+      uses React.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/github-desktop-icon.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/github-desktop-icon.png
+  title:
+    en_US: Github desktop
+  category: Others
+  port_map: '3000'
+  id: by-roket.linuxserver.github-desktop
+  version: 3.4.13
+  index: /

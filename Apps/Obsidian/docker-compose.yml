@@ -1,0 +1,59 @@
+name: linuxserver-obsidian
+services:
+  app:
+    image: linuxserver/obsidian:1.13.7
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/obsidian/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Obsidian is a note-taking app that lets you create, link, and organize
+      your notes on your device, with hundreds of plugins and themes to customize
+      your workflow. You can also publish your notes online, access them offline,
+      and sync them securely with end-to-end encryption.
+  tagline:
+    en_US: A note-taking app that lets you create, link, and organize your notes on
+      your device, with hundreds of plugins and themes to customize your workflow.
+      You can also publish your notes online, access them offline, and sync them securely
+      with end-to-end encryption.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/obsidian-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/obsidian-logo.png
+  title:
+    en_US: Obsidian
+  category: Productivity
+  port_map: '3000'
+  id: by-roket.linuxserver.obsidian
+  version: 1.13.7
+  index: /

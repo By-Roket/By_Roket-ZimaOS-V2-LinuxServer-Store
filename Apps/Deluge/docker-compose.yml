@@ -1,0 +1,69 @@
+name: linuxserver-deluge
+services:
+  app:
+    image: linuxserver/deluge:2.2.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      DELUGE_LOGLEVEL: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: DELUGE_LOGLEVEL
+        description:
+          en_US: set the loglevel output when running Deluge, default is info for
+            deluged and warning for delgued-web [OPTIONAL]
+    ports:
+    - target: 8112
+      published: 8112
+      protocol: tcp
+    - target: 6881
+      published: 6881
+      protocol: tcp
+    - target: 6881
+      published: 6881
+      protocol: udp
+    - target: 58846
+      published: 58846
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/deluge/config
+      target: /config
+    - type: bind
+      source: /DATA/AppData/deluge/downloads
+      target: /downloads
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Deluge is a lightweight, Free Software, cross-platform BitTorrent client.
+      * Full Encryption * WebUI * Plugin System * Much more...
+  tagline:
+    en_US: A lightweight, Free Software, cross-platform BitTorrent client. * Full
+      Encryption * WebUI * Plugin System * Much more. . .
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-logo.png
+  title:
+    en_US: Deluge
+  category: Others
+  id: by-roket.linuxserver.deluge
+  version: 2.2.0
+  index: /
+  port_map: '8112'

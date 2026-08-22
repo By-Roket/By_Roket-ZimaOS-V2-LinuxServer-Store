@@ -1,0 +1,55 @@
+name: linuxserver-gzdoom
+services:
+  app:
+    image: linuxserver/gzdoom:4.14.2
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/gzdoom/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: GZDoom is a feature centric port for all Doom engine games, based on ZDoom,
+      adding an OpenGL renderer and powerful scripting capabilities.
+  tagline:
+    en_US: A feature centric port for all Doom engine games, based on ZDoom, adding
+      an OpenGL renderer and powerful scripting capabilities.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gzdoom-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gzdoom-logo.png
+  title:
+    en_US: Gzdoom
+  category: Others
+  port_map: '3000'
+  id: by-roket.linuxserver.gzdoom
+  version: 4.14.2
+  index: /

@@ -1,0 +1,52 @@
+name: linuxserver-oscam
+services:
+  app:
+    image: linuxserver/oscam:version-11966
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 8888
+      published: 8888
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/oscam/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Oscam is an Open Source Conditional Access Module software used for descrambling
+      DVB transmissions using smart cards. It's both a server and a client.
+  tagline:
+    en_US: An Open Source Conditional Access Module software used for descrambling
+      DVB transmissions using smart cards. It's both a server and a client.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/oscam-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/oscam-logo.png
+  title:
+    en_US: Oscam
+  category: Others
+  port_map: '8888'
+  id: by-roket.linuxserver.oscam
+  version: version-11966
+  index: /

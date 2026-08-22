@@ -1,0 +1,78 @@
+name: linuxserver-foldingathome
+services:
+  app:
+    image: linuxserver/foldingathome:8.5.6
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      ACCOUNT_TOKEN: ''
+      MACHINE_NAME: ''
+      CLI_ARGS: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: ACCOUNT_TOKEN
+        description:
+          en_US: Register for an account on https://app.foldingathome.org and retrieve
+            account token in settings. Required on first start.
+      - container: MACHINE_NAME
+        description:
+          en_US: Assign a friendly name to this instance (no spaces). Required on
+            first start.
+      - container: CLI_ARGS
+        description:
+          en_US: Optionally pass additional cli arguments to fah-client on container
+            start. [OPTIONAL]
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    - target: 7396
+      published: 7396
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/foldingathome/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Folding@home is a distributed computing project for simulating protein
+      dynamics, including the process of protein folding and the movements of proteins
+      implicated in a variety of diseases. It brings together citizen scientists who
+      volunteer to run simulations of protein dynamics on their personal computers.
+      Insights from this data are helping scientists to better understand biology,
+      and providing new opportunities for developing therapeutics.
+  tagline:
+    en_US: A distributed computing project for simulating protein dynamics, including
+      the process of protein folding and the movements of proteins implicated in a
+      variety of diseases. It brings together citizen scientists who volunteer to
+      run simulations of protein dynamics on their personal computers. Insights from
+      this data are helping scientists to better understand biology, and providing
+      new opportunities for developing therapeutics.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/foldingathome-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/foldingathome-logo.png
+  title:
+    en_US: Foldingathome
+  category: Others
+  port_map: '80'
+  id: by-roket.linuxserver.foldingathome
+  version: 8.5.6
+  index: /

@@ -1,0 +1,54 @@
+name: linuxserver-winegui
+services:
+  app:
+    image: linuxserver/winegui:4.3.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/winegui/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  main: app
+  description:
+    en_US: WineGUI is a user-interface friendly Wine manager that provides a graphical
+      frontend for creating and managing Wine bottles.
+  tagline:
+    en_US: A user-interface friendly Wine manager that provides a graphical frontend
+      for creating and managing Wine bottles.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/winegui-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/winegui-logo.png
+  title:
+    en_US: Winegui
+  category: Others
+  port_map: '3000'
+  id: by-roket.linuxserver.winegui
+  version: 4.3.0
+  index: /

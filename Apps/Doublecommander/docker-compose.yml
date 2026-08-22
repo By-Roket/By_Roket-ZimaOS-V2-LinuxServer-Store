@@ -1,0 +1,59 @@
+name: linuxserver-doublecommander
+services:
+  app:
+    image: linuxserver/doublecommander:version-c52510d6
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/doublecommander/config
+      target: /config
+    - type: bind
+      source: /DATA/AppData/doublecommander/data
+      target: /data
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Double Commander is a free cross platform open source file manager with
+      two panels side by side. It is inspired by Total Commander and features some
+      new ideas.
+  tagline:
+    en_US: A free cross platform open source file manager with two panels side by
+      side. It is inspired by Total Commander and features some new ideas.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-icon.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-icon.png
+  title:
+    en_US: Doublecommander
+  category: Others
+  port_map: '3000'
+  id: by-roket.linuxserver.doublecommander
+  version: version-c52510d6
+  index: /

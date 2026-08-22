@@ -1,0 +1,58 @@
+name: linuxserver-overseerr
+services:
+  app:
+    image: linuxserver/overseerr:1.33.2
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: for UserID
+      - container: PGID
+        description:
+          en_US: for GroupID
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      volumes:
+      - container: /config
+        description:
+          en_US: Contains all relevant configuration files.
+      ports:
+      - container: '5055'
+        description:
+          en_US: Port for Overseerr's web interface.
+    ports:
+    - target: 5055
+      published: 5055
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/overseerr/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: 'Visit homepage: https://github.com/orgs/linuxserver/packages/container/package/overseerr'
+  tagline:
+    en_US: 'A request management and media discovery tool built to work with your
+      existing Plex ecosystem. '
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/overseerr.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/overseerr.png
+  title:
+    en_US: Overseerr
+  category: Media
+  project_url: https://overseerr.dev/
+  port_map: '5055'
+  id: by-roket.linuxserver.overseerr
+  version: 1.33.2
+  index: /

@@ -1,0 +1,59 @@
+name: linuxserver-gimp
+services:
+  app:
+    image: linuxserver/gimp:version-22638545
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/gimp/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: GIMP is a free and open-source raster graphics editor used for image manipulation
+      (retouching) and image editing, free-form drawing, transcoding between different
+      image file formats, and more specialized tasks. It is extensible by means of
+      plugins, and scriptable.
+  tagline:
+    en_US: A free and open-source raster graphics editor used for image manipulation
+      (retouching) and image editing, free-form drawing, transcoding between different
+      image file formats, and more specialized tasks. It is extensible by means of
+      plugins, and scriptable.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gimp-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gimp-logo.png
+  title:
+    en_US: Gimp
+  category: Others
+  port_map: '3000'
+  id: by-roket.linuxserver.gimp
+  version: version-22638545
+  index: /

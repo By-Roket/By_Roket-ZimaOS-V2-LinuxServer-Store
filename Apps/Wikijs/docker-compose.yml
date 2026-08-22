@@ -1,0 +1,78 @@
+name: linuxserver-wikijs
+services:
+  app:
+    image: linuxserver/wikijs:2.5.314
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      DB_TYPE: ''
+      DB_HOST: ''
+      DB_PORT: ''
+      DB_NAME: ''
+      DB_USER: ''
+      DB_PASS: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: DB_TYPE
+        description:
+          en_US: Set to sqlite (default) or postgres depending on the database engine
+            you wish to use [OPTIONAL]
+      - container: DB_HOST
+        description:
+          en_US: DB hostname (postgres only) [OPTIONAL]
+      - container: DB_PORT
+        description:
+          en_US: DB port (postgres only) [OPTIONAL]
+      - container: DB_NAME
+        description:
+          en_US: DB name (postgres only) [OPTIONAL]
+      - container: DB_USER
+        description:
+          en_US: DB username (postgres only) [OPTIONAL]
+      - container: DB_PASS
+        description:
+          en_US: DB password (postgres only) [OPTIONAL]
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/wikijs/config
+      target: /config
+    - type: bind
+      source: /DATA/AppData/wikijs/data
+      target: /data
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Wikijs A modern, lightweight and powerful wiki app built on NodeJS.
+  tagline:
+    en_US: A modern, lightweight and powerful wiki app built on NodeJS.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://static.requarks.io/logo/wikijs-full.svg
+  thumbnail: https://static.requarks.io/logo/wikijs-full.svg
+  title:
+    en_US: Wikijs
+  category: Productivity
+  port_map: '3000'
+  id: by-roket.linuxserver.wikijs
+  version: 2.5.314
+  index: /

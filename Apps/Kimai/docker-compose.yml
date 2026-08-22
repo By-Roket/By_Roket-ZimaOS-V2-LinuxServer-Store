@@ -1,0 +1,88 @@
+name: linuxserver-kimai
+services:
+  app:
+    image: linuxserver/kimai:2.65.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      APP_SECRET: ''
+      DATABASE_URL: ''
+      TRUSTED_HOSTS: ''
+      TRUSTED_PROXIES: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: APP_SECRET
+        description:
+          en_US: Random string used for session encryption. Generate using e.g. openssl
+            rand -hex 32.
+      - container: DATABASE_URL
+        description:
+          en_US: Configure your database connection, see Application Setup instructions.
+      - container: TRUSTED_HOSTS
+        description:
+          en_US: Domain or IP you will be using to access Kimai. Can be a regex like
+            localhost|127.0.0.1|kimai.example.com
+      - container: TRUSTED_PROXIES
+        description:
+          en_US: If behind a reverse proxy set this to its IP or network CIDR so that
+            Kimai trusts its headers. [OPTIONAL]
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    - target: 443
+      published: 443
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/kimai/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: 'Kimai is a professional grade time-tracking application, free and open-source.
+      It handles use-cases of freelancers as well as companies with dozens or hundreds
+      of users. Kimai was build to track your project times and ships with many advanced
+      features, including but not limited to: JSON API, invoicing, data exports, multi-timer
+      and punch-in punch-out mode, tagging, multi-user - multi-timezones - multi-language
+      (over 30 translations existing!), authentication via SAML/LDAP/Database, two-factor
+      authentication (2FA) with TOTP, customizable role and team permissions, responsive
+      design, user/customer/project specific rates, advanced search & filtering, money
+      and time budgets, advanced reporting, support for plugins and so much more.'
+  tagline:
+    en_US: 'A professional grade time-tracking application, free and open-source.
+      It handles use-cases of freelancers as well as companies with dozens or hundreds
+      of users. Kimai was build to track your project times and ships with many advanced
+      features, including but not limited to: JSON API, invoicing, data exports, multi-timer
+      and punch-in punch-out mode, tagging, multi-user - multi-timezones - multi-language
+      (over 30 translations existing. ), authentication via SAML/LDAP/Database, two-factor
+      authentication (2FA) with TOTP, customizable role and team permissions, responsive
+      design, user/customer/project specific rates, advanced search & filtering, money
+      and time budgets, advanced reporting, support for plugins and so much more.'
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kimai-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kimai-logo.png
+  title:
+    en_US: Kimai
+  category: Developer
+  port_map: '80'
+  id: by-roket.linuxserver.kimai
+  version: 2.65.0
+  index: /

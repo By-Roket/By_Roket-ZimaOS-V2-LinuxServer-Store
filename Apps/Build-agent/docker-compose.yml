@@ -1,0 +1,50 @@
+name: linuxserver-build-agent
+services:
+  app:
+    image: linuxserver/build-agent:version-0296acb5
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: for UserID
+      - container: PGID
+        description:
+          en_US: for GroupID
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/build-agent/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/build-agent
+      for details.
+  tagline:
+    en_US: 'This container needs special attention. Please check https://hub. Docker.
+      Com/r/linuxserver/build-agent for details. '
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: ''
+  thumbnail: ''
+  title:
+    en_US: Build agent
+  category: Developer
+  port_map: '80'
+  id: by-roket.linuxserver.build-agent
+  version: version-0296acb5
+  index: /

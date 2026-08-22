@@ -1,0 +1,84 @@
+name: linuxserver-your_spotify
+services:
+  app:
+    image: linuxserver/your_spotify:1.20.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      APP_URL: ''
+      SPOTIFY_PUBLIC: ''
+      SPOTIFY_SECRET: ''
+      SPOTIFY_API_DELAY_MS: ''
+      CORS: ''
+      MONGO_ENDPOINT: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: APP_URL
+        description:
+          en_US: The protocol and hostname where the app will be accessed.
+      - container: SPOTIFY_PUBLIC
+        description:
+          en_US: Your Spotify application client ID.
+      - container: SPOTIFY_SECRET
+        description:
+          en_US: Your Spotify application secret.
+      - container: SPOTIFY_API_DELAY_MS
+        description:
+          en_US: Minimum delay in milliseconds between each spotify request. Can help
+            with hitting 429 when importing data.
+      - container: CORS
+        description:
+          en_US: Allowed CORS sources, set to all to allow any source.
+      - container: MONGO_ENDPOINT
+        description:
+          en_US: Set mongodb endpoint address/port.
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    - target: 443
+      published: 443
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/your_spotify/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Your_spotify is a self-hosted application that tracks what you listen and
+      offers you a dashboard to explore statistics about it! It's composed of a web
+      server which polls the Spotify API every now and then and a web application
+      on which you can explore your statistics.
+  tagline:
+    en_US: A self-hosted application that tracks what you listen and offers you a
+      dashboard to explore statistics about it. It's composed of a web server which
+      polls the Spotify API every now and then and a web application on which you
+      can explore your statistics.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/your_spotify-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/your_spotify-logo.png
+  title:
+    en_US: Your_spotify
+  category: Others
+  port_map: '80'
+  id: by-roket.linuxserver.your_spotify
+  version: 1.20.0
+  index: /

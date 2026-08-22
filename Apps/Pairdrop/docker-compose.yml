@@ -1,0 +1,74 @@
+name: linuxserver-pairdrop
+services:
+  app:
+    image: linuxserver/pairdrop:1.11.2
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      RATE_LIMIT: ''
+      WS_FALLBACK: ''
+      RTC_CONFIG: ''
+      DEBUG_MODE: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: RATE_LIMIT
+        description:
+          en_US: Set to true to limit clients to 100 requests per 5 min [OPTIONAL]
+      - container: WS_FALLBACK
+        description:
+          en_US: Set to true to enable websocket fallback if the peer to peer WebRTC
+            connection is not available to the client (see App Setup notes). [OPTIONAL]
+      - container: RTC_CONFIG
+        description:
+          en_US: Path to a json file containing custom STUN/TURN config (see App Setup
+            notes) [OPTIONAL]
+      - container: DEBUG_MODE
+        description:
+          en_US: Set to true to debug the http server configuration by logging clients
+            IP addresses used by PairDrop to STDOUT. See here for more info. Do not
+            use in production! [OPTIONAL]
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/pairdrop/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: PairDrop is a sublime alternative to AirDrop that works on all platforms.
+      Send images, documents or text via peer to peer connection to devices in the
+      same local network/Wi-Fi or to paired devices.
+  tagline:
+    en_US: A sublime alternative to AirDrop that works on all platforms. Send images,
+      documents or text via peer to peer connection to devices in the same local network/Wi-Fi
+      or to paired devices.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/schlagmichdoch/PairDrop/master/public/images/android-chrome-512x512.png
+  thumbnail: https://raw.githubusercontent.com/schlagmichdoch/PairDrop/master/public/images/android-chrome-512x512.png
+  title:
+    en_US: Pairdrop
+  category: Networking
+  port_map: '3000'
+  id: by-roket.linuxserver.pairdrop
+  version: 1.11.2
+  index: /

@@ -1,0 +1,65 @@
+name: linuxserver-habridge
+services:
+  app:
+    image: linuxserver/habridge:5.4.1
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      SEC_KEY: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: SEC_KEY
+        description:
+          en_US: Key used to secure communication.
+    ports:
+    - target: 8080
+      published: 8080
+      protocol: tcp
+    - target: 50000
+      published: 50000
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/habridge/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Habridge emulates Philips Hue API to other home automation gateways such
+      as an Amazon Echo/Dot Gen 1 (gen 2 has issues discovering ha-bridge) or other
+      systems that support Philips Hue. The Bridge handles basic commands such as
+      On, Off and brightness commands of the hue protocol. This bridge can control
+      most devices that have a distinct API.
+  tagline:
+    en_US: Emulates Philips Hue API to other home automation gateways such as an Amazon
+      Echo/Dot Gen 1 (gen 2 has issues discovering ha-bridge) or other systems that
+      support Philips Hue. The Bridge handles basic commands such as On, Off and brightness
+      commands of the hue protocol. This bridge can control most devices that have
+      a distinct API.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/habridge-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/habridge-logo.png
+  title:
+    en_US: Habridge
+  category: Home
+  port_map: '8080'
+  id: by-roket.linuxserver.habridge
+  version: 5.4.1
+  index: /

@@ -1,0 +1,54 @@
+name: linuxserver-handbrake
+services:
+  app:
+    image: linuxserver/handbrake:1.11.2
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/handbrake/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  main: app
+  description:
+    en_US: HandBrake is an open-source tool, built by volunteers, for converting video
+      from nearly any format to a selection of modern, widely supported codecs.
+  tagline:
+    en_US: An open-source tool, built by volunteers, for converting video from nearly
+      any format to a selection of modern, widely supported codecs.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/handbrake-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/handbrake-logo.png
+  title:
+    en_US: Handbrake
+  category: Media
+  port_map: '3000'
+  id: by-roket.linuxserver.handbrake
+  version: 1.11.2
+  index: /

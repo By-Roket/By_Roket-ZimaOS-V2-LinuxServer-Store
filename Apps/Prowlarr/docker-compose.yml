@@ -1,0 +1,58 @@
+name: linuxserver-prowlarr
+services:
+  app:
+    image: linuxserver/prowlarr:2.5.2
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 9696
+      published: 9696
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/prowlarr/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps. Prowlarr supports both Torrent
+      Trackers and Usenet Indexers. It integrates seamlessly with Sonarr, Radarr,
+      Lidarr, and Readarr offering complete management of your indexers with no per
+      app Indexer setup required (we do it all).
+  tagline:
+    en_US: A indexer manager/proxy built on the popular arr. Net/reactjs base stack
+      to integrate with your various PVR apps. Prowlarr supports both Torrent Trackers
+      and Usenet Indexers. It integrates seamlessly with Sonarr, Radarr, Lidarr, and
+      Readarr offering complete management of your indexers with no per app Indexer
+      setup required (we do it all).
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-banner.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-banner.png
+  title:
+    en_US: Prowlarr
+  category: Media
+  port_map: '9696'
+  id: by-roket.linuxserver.prowlarr
+  version: 2.5.2
+  index: /

@@ -1,0 +1,78 @@
+name: linuxserver-duplicati
+services:
+  app:
+    image: linuxserver/duplicati:2.3.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      SETTINGS_ENCRYPTION_KEY: ''
+      CLI_ARGS: ''
+      DUPLICATI__WEBSERVICE_PASSWORD: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: SETTINGS_ENCRYPTION_KEY
+        description:
+          en_US: Encryption key for settings database. Minimum 8 characters, alphanumeric.
+      - container: CLI_ARGS
+        description:
+          en_US: Optionally specify any CLI variables you want to launch the app with
+            [OPTIONAL]
+      - container: DUPLICATI__WEBSERVICE_PASSWORD
+        description:
+          en_US: Password for the webui. If left unset will default to changeme and
+            can be changed from the webui settings. [OPTIONAL]
+    ports:
+    - target: 8200
+      published: 8200
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/duplicati/config
+      target: /config
+    - type: bind
+      source: /DATA/AppData/duplicati/backups
+      target: /backups
+    - type: bind
+      source: /DATA/AppData/duplicati/source
+      target: /source
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Duplicati is a backup client that securely stores encrypted, incremental,
+      compressed backups on local storage, cloud storage services and remote file
+      servers. It works with standard protocols like FTP, SSH, WebDAV as well as popular
+      services like Microsoft OneDrive, Amazon S3, Google Drive, box.com, Mega, B2,
+      and many others.
+  tagline:
+    en_US: A backup client that securely stores encrypted, incremental, compressed
+      backups on local storage, cloud storage services and remote file servers. It
+      works with standard protocols like FTP, SSH, WebDAV as well as popular services
+      like Microsoft OneDrive, Amazon S3, Google Drive, box. Com, Mega, B2, and many
+      others.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/duplicati-icon.png
+  thumbnail: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/duplicati-icon.png
+  title:
+    en_US: Duplicati
+  category: Networking
+  port_map: '8200'
+  id: by-roket.linuxserver.duplicati
+  version: 2.3.0
+  index: /

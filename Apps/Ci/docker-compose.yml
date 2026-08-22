@@ -1,0 +1,49 @@
+name: linuxserver-ci
+services:
+  app:
+    image: linuxserver/ci:b1ca9f98-ls65
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: for UserID
+      - container: PGID
+        description:
+          en_US: for GroupID
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/ci/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  main: app
+  description:
+    en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/ci
+      for details.
+  tagline:
+    en_US: 'This container needs special attention. Please check https://hub. Docker.
+      Com/r/linuxserver/ci for details. '
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: ''
+  thumbnail: ''
+  title:
+    en_US: Ci
+  category: Developer
+  port_map: '80'
+  id: by-roket.linuxserver.ci
+  version: b1ca9f98-ls65
+  index: /

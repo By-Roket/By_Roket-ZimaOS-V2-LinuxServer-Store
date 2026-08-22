@@ -1,0 +1,63 @@
+name: linuxserver-snapdrop
+services:
+  app:
+    image: linuxserver/snapdrop:version-f88d46ed
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: for UserID
+      - container: PGID
+        description:
+          en_US: for GroupID
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      volumes:
+      - container: /config
+        description:
+          en_US: Appdata
+      ports:
+      - container: '80'
+        description:
+          en_US: 'Container Port: 80'
+      - container: '443'
+        description:
+          en_US: 'Container Port: 443'
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    - target: 443
+      published: 443
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/snapdrop/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/snapdrop/'
+  tagline:
+    en_US: 'A local file sharing in your browser. Inspired by Apple''s Airdrop. '
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/snapdrop-icon.png
+  thumbnail: https://raw.githubusercontent.com/snapdrop/snapdrop/master/client/images/logo_transparent_512x512.png
+  title:
+    en_US: Snapdrop
+  category: Developer
+  project_url: https://github.com/RobinLinus/snapdrop
+  port_map: '80'
+  id: by-roket.linuxserver.snapdrop
+  version: version-f88d46ed
+  index: /

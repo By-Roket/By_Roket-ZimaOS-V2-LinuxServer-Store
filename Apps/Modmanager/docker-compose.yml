@@ -1,0 +1,52 @@
+name: linuxserver-modmanager
+services:
+  app:
+    image: linuxserver/modmanager:version-b7faeafa
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/modmanager/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/modmanager
+      for details.
+  tagline:
+    en_US: This container needs special attention. Please check https://hub. Docker.
+      Com/r/linuxserver/modmanager for details.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-logo.png
+  title:
+    en_US: Modmanager
+  category: Developer
+  port_map: '80'
+  id: by-roket.linuxserver.modmanager
+  version: version-b7faeafa
+  index: /

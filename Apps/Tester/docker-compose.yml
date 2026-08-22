@@ -1,0 +1,38 @@
+name: linuxserver-tester
+services:
+  app:
+    image: linuxserver/tester:version-66f677b0
+    restart: unless-stopped
+    environment:
+      URL: ''
+    x-casaos:
+      envs:
+      - container: URL
+        description:
+          en_US: Specify an endpoint, the container will automatically determine the
+            correct protocol and program to use
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+x-casaos:
+  architectures:
+  - amd64
+  main: app
+  description:
+    en_US: This internal tool is used as a desktop sandbox in our CI process to grab
+      a screenshot of a hopefully functional endpoint
+  tagline:
+    en_US: This internal tool is used as a desktop sandbox in our CI process to grab
+      a screenshot of a hopefully functional endpoint
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://avatars3.githubusercontent.com/u/12324908?s=200&v=4
+  thumbnail: https://avatars3.githubusercontent.com/u/12324908?s=200&v=4
+  title:
+    en_US: Tester
+  category: Others
+  id: by-roket.linuxserver.tester
+  version: version-66f677b0
+  index: /
+  port_map: '3000'

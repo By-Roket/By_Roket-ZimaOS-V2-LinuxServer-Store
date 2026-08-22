@@ -1,0 +1,59 @@
+name: linuxserver-chrome
+services:
+  app:
+    image: linuxserver/chrome:151.0.7922
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      CHROME_CLI: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: CHROME_CLI
+        description:
+          en_US: Specify one or multiple Chrome CLI flags, this string will be passed
+            to the application in full. [OPTIONAL]
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/chrome/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Chrome is the official web browser from Google, built to be fast, secure,
+      and customizable.
+  tagline:
+    en_US: The official web browser from Google, built to be fast, secure, and customizable.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chrome-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chrome-logo.png
+  title:
+    en_US: Chrome
+  category: Others
+  port_map: '3000'
+  id: by-roket.linuxserver.chrome
+  version: 151.0.7922
+  index: /

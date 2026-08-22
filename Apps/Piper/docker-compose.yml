@@ -1,0 +1,87 @@
+name: linuxserver-piper
+services:
+  app:
+    image: linuxserver/piper:2.4.2
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      PIPER_VOICE: ''
+      LOCAL_ONLY: ''
+      PIPER_LENGTH: ''
+      PIPER_NOISE: ''
+      PIPER_NOISEW: ''
+      PIPER_SPEAKER: ''
+      NO_STREAMING: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: PIPER_VOICE
+        description:
+          en_US: The Piper voice to use, in the format --
+      - container: LOCAL_ONLY
+        description:
+          en_US: If set to true, or any other value, the container will not attempt
+            to download models from HuggingFace and will only use locally-provided
+            models. [OPTIONAL]
+      - container: PIPER_LENGTH
+        description:
+          en_US: Voice speaking rate, 1.0 is default with  1.0 being slower. [OPTIONAL]
+      - container: PIPER_NOISE
+        description:
+          en_US: Controls the variability of the voice by adding noise. Values above
+            1 will start to degrade audio. [OPTIONAL]
+      - container: PIPER_NOISEW
+        description:
+          en_US: Controls the variability of speaking cadence. Values above 1 produce
+            extreme stutters and pauses. [OPTIONAL]
+      - container: PIPER_SPEAKER
+        description:
+          en_US: Speaker number to use if the voice supports multiple speakers. [OPTIONAL]
+      - container: NO_STREAMING
+        description:
+          en_US: Setting to true, or any other value, will disable support for streaming
+            audio on sentence boundaries. [OPTIONAL]
+    ports:
+    - target: 10200
+      published: 10200
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/piper/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Piper is a fast, local neural text to speech system that sounds great and
+      is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol
+      server for Piper.
+  tagline:
+    en_US: A fast, local neural text to speech system that sounds great and is optimized
+      for the Raspberry Pi 4. This container provides a Wyoming protocol server for
+      Piper.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piper-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piper-logo.png
+  title:
+    en_US: Piper
+  category: Others
+  port_map: '10200'
+  id: by-roket.linuxserver.piper
+  version: 2.4.2
+  index: /

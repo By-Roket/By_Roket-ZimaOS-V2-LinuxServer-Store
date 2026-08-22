@@ -1,0 +1,69 @@
+name: linuxserver-qbittorrent
+services:
+  app:
+    image: linuxserver/qbittorrent:5.2.3
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      WEBUI_PORT: ''
+      TORRENTING_PORT: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: WEBUI_PORT
+        description:
+          en_US: for changing the port of the web UI, see below for explanation
+      - container: TORRENTING_PORT
+        description:
+          en_US: for changing the port of tcp/udp connection, see below for explanation
+    ports:
+    - target: 8080
+      published: 8080
+      protocol: tcp
+    - target: 6881
+      published: 6881
+      protocol: tcp
+    - target: 6881
+      published: 6881
+      protocol: udp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/qbittorrent/config
+      target: /config
+    - type: bind
+      source: /DATA/AppData/qbittorrent/downloads
+      target: /downloads
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: The Qbittorrent is a bittorrent client programmed in C++ / Qt that uses
+      libtorrent (sometimes called libtorrent-rasterbar) by Arvid Norberg.
+  tagline:
+    en_US: The Qbittorrent is a bittorrent client programmed in C++ / Qt that uses
+      libtorrent (sometimes called libtorrent-rasterbar) by Arvid Norberg.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/qbittorrent-icon.png
+  thumbnail: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/qbittorrent-icon.png
+  title:
+    en_US: Qbittorrent
+  category: Others
+  port_map: '8080'
+  id: by-roket.linuxserver.qbittorrent
+  version: 5.2.3
+  index: /

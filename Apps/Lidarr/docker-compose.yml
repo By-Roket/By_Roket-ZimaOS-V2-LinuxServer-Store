@@ -1,0 +1,63 @@
+name: linuxserver-lidarr
+services:
+  app:
+    image: linuxserver/lidarr:3.1.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 8686
+      published: 8686
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/lidarr/config
+      target: /config
+    - type: bind
+      source: /DATA/AppData/lidarr/music
+      target: /music
+    - type: bind
+      source: /DATA/AppData/lidarr/downloads
+      target: /downloads
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Lidarr is a music collection manager for Usenet and BitTorrent users. It
+      can monitor multiple RSS feeds for new tracks from your favorite artists and
+      will grab, sort and rename them. It can also be configured to automatically
+      upgrade the quality of files already downloaded when a better quality format
+      becomes available.
+  tagline:
+    en_US: A music collection manager for Usenet and BitTorrent users. It can monitor
+      multiple RSS feeds for new tracks from your favorite artists and will grab,
+      sort and rename them. It can also be configured to automatically upgrade the
+      quality of files already downloaded when a better quality format becomes available.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://github.com/lidarr/Lidarr/raw/develop/Logo/400.png
+  thumbnail: https://github.com/lidarr/Lidarr/raw/develop/Logo/400.png
+  title:
+    en_US: Lidarr
+  category: Media
+  port_map: '8686'
+  id: by-roket.linuxserver.lidarr
+  version: 3.1.0
+  index: /

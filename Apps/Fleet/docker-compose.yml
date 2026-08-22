@@ -1,0 +1,71 @@
+name: linuxserver-fleet
+services:
+  app:
+    image: linuxserver/fleet:2.3.3
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      fleet_admin_authentication_type: ''
+      fleet_database_url: ''
+      fleet_database_username: ''
+      fleet_database_password: ''
+      fleet_admin_secret: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: for UserID
+      - container: PGID
+        description:
+          en_US: for GroupID
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: fleet_admin_authentication_type
+        description:
+          en_US: A switch to define how Fleet manages user logins. If set to DATABASE,
+            see the related optional params. Can be set to either DATABASE or PROPERTIES.
+      - container: fleet_database_url
+        description:
+          en_US: The full JDBC connection string to the Fleet database
+      - container: fleet_database_username
+        description:
+          en_US: The username with the relevant GRANT permissions for the database
+      - container: fleet_database_password
+        description:
+          en_US: The database user's password.
+      - container: fleet_admin_secret
+        description:
+          en_US: A string used as part of the password key derivation process.
+    ports:
+    - target: 8080
+      published: 8080
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/fleet/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Fleet provides an online web interface which displays a set of maintained
+      images from one or more owned repositories.
+  tagline:
+    en_US: 'Provides an online web interface which displays a set of maintained images
+      from one or more owned repositories. '
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: ''
+  thumbnail: ''
+  title:
+    en_US: Fleet
+  category: Others
+  port_map: '8080'
+  id: by-roket.linuxserver.fleet
+  version: 2.3.3
+  index: /

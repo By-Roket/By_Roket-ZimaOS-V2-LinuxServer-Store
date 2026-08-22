@@ -1,0 +1,71 @@
+name: linuxserver-mullvad-browser
+services:
+  app:
+    image: linuxserver/mullvad-browser:15.0.20
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      LOCAL_NET: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: LOCAL_NET
+        description:
+          en_US: If using a VPN, set this to your local LAN IP range using CIDR notation.
+            Without it you will be unable to access the web interface. If you have
+            multiple ranges or a complex LAN setup you will need to manage this yourself
+            in the wg0.conf, see the App Setup section for details. [OPTIONAL]
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/mullvad-browser/config
+      target: /config
+    - type: bind
+      source: /DATA/Downloads
+      target: /config/Downloads
+    cap_add:
+    - NET_ADMIN
+    shm_size: 1gb
+x-casaos:
+  architectures:
+  - amd64
+  main: app
+  description:
+    en_US: The Mullvad Browser is a privacy-focused web browser developed in a collaboration
+      between Mullvad VPN and the Tor Project. It’s designed to minimize tracking
+      and fingerprinting. You could say it’s a Tor Browser to use without the Tor
+      Network. Instead, you can use it with a trustworthy VPN.
+  tagline:
+    en_US: The Mullvad Browser is a privacy-focused web browser developed in a collaboration
+      between Mullvad VPN and the Tor Project. It’s designed to minimize tracking
+      and fingerprinting. You could say it’s a Tor Browser to use without the Tor
+      Network. Instead, you can use it with a trustworthy VPN.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mullvad-browser-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mullvad-browser-logo.png
+  title:
+    en_US: Mullvad browser
+  category: Networking
+  port_map: '3000'
+  id: by-roket.linuxserver.mullvad-browser
+  version: 15.0.20
+  index: /

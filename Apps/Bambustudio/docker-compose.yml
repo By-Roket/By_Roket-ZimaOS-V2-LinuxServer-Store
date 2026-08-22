@@ -1,0 +1,62 @@
+name: linuxserver-bambustudio
+services:
+  app:
+    image: linuxserver/bambustudio:02.08.02
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      DARK_MODE: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: DARK_MODE
+        description:
+          en_US: Set this to true to enable dark mode for Bambu Studio. [OPTIONAL]
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/bambustudio/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  main: app
+  description:
+    en_US: Bambu Studio is an open-source, cutting-edge, feature-rich slicing software.
+      It contains project-based workflows, systematically optimized slicing algorithms,
+      and an easy-to-use graphical interface, bringing users an incredibly smooth
+      printing experience.
+  tagline:
+    en_US: An open-source, cutting-edge, feature-rich slicing software. It contains
+      project-based workflows, systematically optimized slicing algorithms, and an
+      easy-to-use graphical interface, bringing users an incredibly smooth printing
+      experience.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bambustudio-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bambustudio-logo.png
+  title:
+    en_US: Bambustudio
+  category: Others
+  port_map: '3000'
+  id: by-roket.linuxserver.bambustudio
+  version: 02.08.02
+  index: /

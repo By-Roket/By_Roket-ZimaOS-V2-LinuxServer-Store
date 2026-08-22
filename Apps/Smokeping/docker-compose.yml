@@ -1,0 +1,69 @@
+name: linuxserver-smokeping
+services:
+  app:
+    image: linuxserver/smokeping:2.9.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      MASTER_URL: ''
+      SHARED_SECRET: ''
+      CACHE_DIR: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: MASTER_URL
+        description:
+          en_US: Specify the master url to connect to. Used when in slave mode. [OPTIONAL]
+      - container: SHARED_SECRET
+        description:
+          en_US: Specify the master shared secret for this host. Used when in slave
+            mode. [OPTIONAL]
+      - container: CACHE_DIR
+        description:
+          en_US: Specify the cache directory for this host. Used when in slave mode.
+            [OPTIONAL]
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/smokeping/config
+      target: /config
+    - type: bind
+      source: /DATA/AppData/smokeping/data
+      target: /data
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Smokeping keeps track of your network latency. For a full example of what
+      this application is capable of visit UCDavis.
+  tagline:
+    en_US: Keeps track of your network latency. For a full example of what this application
+      is capable of visit UCDavis.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/smokeping-logo.png
+  thumbnail: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/smokeping-logo.png
+  title:
+    en_US: Smokeping
+  category: Networking
+  port_map: '80'
+  id: by-roket.linuxserver.smokeping
+  version: 2.9.0
+  index: /

@@ -1,0 +1,70 @@
+name: linuxserver-manyfold
+services:
+  app:
+    image: linuxserver/manyfold:0.147.2
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      DATABASE_URL: ''
+      REDIS_URL: ''
+      SECRET_KEY_BASE: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: DATABASE_URL
+        description:
+          en_US: Database connection URL. For sqlite use sqlite3:/config/manyfold.sqlite3.
+            For postgres or mariadb use ://:@:/ where ` is postgresql or mysql2`.
+            Special characters in username/password must be URL encoded.
+      - container: REDIS_URL
+        description:
+          en_US: Redis/Valkey database URL in redis://:/ format.
+      - container: SECRET_KEY_BASE
+        description:
+          en_US: Browser session and database encryption key. If unset a random one
+            will be generated on init, the database is locked to this key.
+    ports:
+    - target: 3214
+      published: 3214
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/manyfold/config
+      target: /config
+    - type: bind
+      source: /DATA/AppData/manyfold/libraries
+      target: /libraries
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Manyfold is an open source, self-hosted web application for managing a
+      collection of 3D models, particularly focused on 3D printing.
+  tagline:
+    en_US: An open source, self-hosted web application for managing a collection of
+      3D models, particularly focused on 3D printing.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/manyfold-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/manyfold-logo.png
+  title:
+    en_US: Manyfold
+  category: Others
+  port_map: '3214'
+  id: by-roket.linuxserver.manyfold
+  version: 0.147.2
+  index: /

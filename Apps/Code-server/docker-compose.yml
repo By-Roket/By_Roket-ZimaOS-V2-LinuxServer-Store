@@ -1,0 +1,96 @@
+name: linuxserver-code-server
+services:
+  app:
+    image: linuxserver/code-server:4.133.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      PASSWORD: ''
+      HASHED_PASSWORD: ''
+      SUDO_PASSWORD: ''
+      SUDO_PASSWORD_HASH: ''
+      PROXY_DOMAIN: ''
+      DEFAULT_WORKSPACE: ''
+      PWA_APPNAME: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: PASSWORD
+        description:
+          en_US: Optional web gui password, if PASSWORD or HASHED_PASSWORD is not
+            provided, there will be no auth. [OPTIONAL]
+      - container: HASHED_PASSWORD
+        description:
+          en_US: Optional web gui password, overrides PASSWORD, instructions on how
+            to create it is below. [OPTIONAL]
+      - container: SUDO_PASSWORD
+        description:
+          en_US: If this optional variable is set, user will have sudo access in the
+            code-server terminal with the specified password. [OPTIONAL]
+      - container: SUDO_PASSWORD_HASH
+        description:
+          en_US: Optionally set sudo password via hash (takes priority over SUDO_PASSWORD
+            var). Format is $type$salt$hashed. [OPTIONAL]
+      - container: PROXY_DOMAIN
+        description:
+          en_US: If this optional variable is set, this domain will be proxied for
+            subdomain proxying. See Documentation [OPTIONAL]
+      - container: DEFAULT_WORKSPACE
+        description:
+          en_US: If this optional variable is set, code-server will open this directory
+            by default [OPTIONAL]
+      - container: PWA_APPNAME
+        description:
+          en_US: If this optional variable is set, the PWA app will the specified
+            name. [OPTIONAL]
+    ports:
+    - target: 8443
+      published: 8443
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/code-server/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Code-server is VS Code running on a remote server, accessible through the
+      browser. - Code on your Chromebook, tablet, and laptop with a consistent dev
+      environment. - If you have a Windows or Mac workstation, more easily develop
+      for Linux. - Take advantage of large cloud servers to speed up tests, compilations,
+      downloads, and more. - Preserve battery life when you're on the go. - All intensive
+      computation runs on your server. - You're no longer running excess instances
+      of Chrome.
+  tagline:
+    en_US: VS Code running on a remote server, accessible through the browser. - Code
+      on your Chromebook, tablet, and laptop with a consistent dev environment. -
+      If you have a Windows or Mac workstation, more easily develop for Linux. - Take
+      advantage of large cloud servers to speed up tests, compilations, downloads,
+      and more. - Preserve battery life when you're on the go. - All intensive computation
+      runs on your server. - You're no longer running excess instances of Chrome.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-banner.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-banner.png
+  title:
+    en_US: Code server
+  category: Developer
+  port_map: '8443'
+  id: by-roket.linuxserver.code-server
+  version: 4.133.0
+  index: /

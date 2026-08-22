@@ -1,0 +1,96 @@
+name: linuxserver-transmission
+services:
+  app:
+    image: linuxserver/transmission:4.1.3
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      TRANSMISSION_WEB_HOME: ''
+      USER: ''
+      PASS: ''
+      WHITELIST: ''
+      PEERPORT: ''
+      HOST_WHITELIST: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: TRANSMISSION_WEB_HOME
+        description:
+          en_US: Specify the path to an alternative UI folder. [OPTIONAL]
+      - container: USER
+        description:
+          en_US: Specify an optional username for the interface [OPTIONAL]
+      - container: PASS
+        description:
+          en_US: Specify an optional password for the interface [OPTIONAL]
+      - container: WHITELIST
+        description:
+          en_US: Specify an optional list of comma separated ip whitelist. Fills rpc-whitelist
+            setting. [OPTIONAL]
+      - container: PEERPORT
+        description:
+          en_US: Specify an optional port for torrent TCP/UDP connections. Fills peer-port
+            setting. [OPTIONAL]
+      - container: HOST_WHITELIST
+        description:
+          en_US: Specify an optional list of comma separated dns name whitelist. Fills
+            rpc-host-whitelist setting. [OPTIONAL]
+    ports:
+    - target: 9091
+      published: 9091
+      protocol: tcp
+    - target: 51413
+      published: 51413
+      protocol: tcp
+    - target: 51413
+      published: 51413
+      protocol: udp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/transmission/config
+      target: /config
+    - type: bind
+      source: /DATA/AppData/transmission/downloads
+      target: /downloads
+    - type: bind
+      source: /DATA/AppData/transmission/watch
+      target: /watch
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: 'Transmission is designed for easy, powerful use. Transmission has the
+      features you want from a BitTorrent client: encryption, a web interface, peer
+      exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed
+      support, watch directories, tracker editing, global and per-torrent speed limits,
+      and more.'
+  tagline:
+    en_US: 'Designed for easy, powerful use. Transmission has the features you want
+      from a BitTorrent client: encryption, a web interface, peer exchange, magnet
+      links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories,
+      tracker editing, global and per-torrent speed limits, and more.'
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission.png
+  title:
+    en_US: Transmission
+  category: Media
+  id: by-roket.linuxserver.transmission
+  version: 4.1.3
+  index: /
+  port_map: '9091'

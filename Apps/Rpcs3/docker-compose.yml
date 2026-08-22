@@ -1,0 +1,55 @@
+name: linuxserver-rpcs3
+services:
+  app:
+    image: linuxserver/rpcs3:version-build-3aac7d776dfe91596dccd7b3c6fa2419b5044611
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
+    - target: 3001
+      published: 3001
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/rpcs3/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: RPCS3 is a multi-platform open-source Sony PlayStation 3 emulator and debugger
+      written in C++ for Windows, Linux, macOS and FreeBSD.
+  tagline:
+    en_US: A multi-platform open-source Sony PlayStation 3 emulator and debugger written
+      in C++ for Windows, Linux, macOS and FreeBSD.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rpcs3-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rpcs3-logo.png
+  title:
+    en_US: Rpcs3
+  category: Others
+  port_map: '3000'
+  id: by-roket.linuxserver.rpcs3
+  version: version-build-3aac7d776dfe91596dccd7b3c6fa2419b5044611
+  index: /

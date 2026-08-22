@@ -1,0 +1,59 @@
+name: linuxserver-babybuddy
+services:
+  app:
+    image: linuxserver/babybuddy:2.10.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+      CSRF_TRUSTED_ORIGINS: ''
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+      - container: CSRF_TRUSTED_ORIGINS
+        description:
+          en_US: Add any address you'd like to access babybuddy at (comma separated,
+            no spaces)
+    ports:
+    - target: 8000
+      published: 8000
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/babybuddy/config
+      target: /config
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: Babybuddy is a buddy for babies! Helps caregivers track sleep, feedings,
+      diaper changes, tummy time and more to learn about and predict baby's needs
+      without (as much) guess work.
+  tagline:
+    en_US: A buddy for babies. Helps caregivers track sleep, feedings, diaper changes,
+      tummy time and more to learn about and predict baby's needs without (as much)
+      guess work.
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/babybuddy-logo.png
+  thumbnail: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/babybuddy-logo.png
+  title:
+    en_US: Babybuddy
+  category: Others
+  port_map: '8000'
+  id: by-roket.linuxserver.babybuddy
+  version: 2.10.0
+  index: /

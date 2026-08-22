@@ -1,0 +1,60 @@
+name: linuxserver-sickgear
+services:
+  app:
+    image: linuxserver/sickgear:3.36.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    x-casaos:
+      envs:
+      - container: PUID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the UID to use here.
+      - container: PGID
+        description:
+          en_US: Run 'id [USER]' for the owner of the host volume directories to get
+            the GID to use here.
+      - container: TZ
+        description:
+          en_US: specify a timezone to use, see this list.
+    ports:
+    - target: 8081
+      published: 8081
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/sickgear/config
+      target: /config
+    - type: bind
+      source: /DATA/AppData/sickgear/tv
+      target: /tv
+    - type: bind
+      source: /DATA/AppData/sickgear/downloads
+      target: /downloads
+x-casaos:
+  architectures:
+  - amd64
+  - arm64
+  main: app
+  description:
+    en_US: 'SickGear provides management of TV shows and/or Anime, it detects new
+      episodes, links downloader apps, and more.. For more information on SickGear
+      visit their website and check it out: https://github.com/SickGear/SickGear'
+  tagline:
+    en_US: 'Provides management of TV shows and/or Anime, it detects new episodes,
+      links downloader apps, and more. . For more information on SickGear visit their
+      website and check it out: https://github. Com/SickGear/SickGear'
+  developer: LinuxServer.io
+  author: WisdomSky
+  icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickgear-logo.png
+  thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickgear-logo.png
+  title:
+    en_US: Sickgear
+  category: Media
+  port_map: '8081'
+  id: by-roket.linuxserver.sickgear
+  version: 3.36.0
+  index: /
