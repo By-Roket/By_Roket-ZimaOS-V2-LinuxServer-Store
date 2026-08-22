@@ -250,12 +250,14 @@ def choose_category(app_name, metadata):
 
     searchable = " ".join(searchable_parts).lower()
 
-    for category, keywords in KEYWORD_CATEGORIES:
+        for category, keywords in KEYWORD_CATEGORIES:
         if any(
-    keyword_matches(searchable, keyword)
-    for keyword in keywords
-):
-    return category
+            keyword_matches(searchable, keyword)
+            for keyword in keywords
+        ):
+            return category
+
+    return "Others"
 
 def ensure_web_entry(compose, metadata):
     """Ensure required ZimaOS V2 web entry fields exist."""
