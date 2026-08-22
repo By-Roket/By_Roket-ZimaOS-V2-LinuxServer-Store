@@ -1,0 +1,7 @@
+_upstream/
+dist/
+out/
+.cache/
+conversion-report.txt
+__pycache__/
+*.py[cod]

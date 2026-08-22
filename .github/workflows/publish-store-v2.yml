@@ -1,0 +1,208 @@
+name: Synchronize and publish ZimaOS V2 store
+
+"on":
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish-store-v2.yml"
+      - "Apps/**"
+      - "store-config.json"
+      - "supported-languages.json"
+      - "tests/**"
+      - "tools/**"
+
+permissions:
+  contents: write
+  statuses: write
+
+concurrency:
+  group: zimaos-v2-store-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Validate, build and publish the V2 store
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      STORE_BASE_URL: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store
+      PUID: "1000"
+      PGID: "1000"
+      TZ: Europe/Paris
+
+    steps:
+      - name: Mark publication as running
+        continue-on-error: true
+        uses: actions/github-script@v9
+        with:
+          script: |
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: context.sha,
+              state: 'pending',
+              context: 'zimaos-v2/store-publication',
+              description: 'Official validation and build are running',
+              target_url: `${process.env.GITHUB_SERVER_URL}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
+            });
+
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Install converter dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install PyYAML
+
+      - name: Run repository regression tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Download the current WisdomSky store
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --depth 1 \
+            https://github.com/WisdomSky/CasaOS-LinuxServer-AppStore.git \
+            "$RUNNER_TEMP/wisdomsky-store"
+          echo "WisdomSky source commit:"
+          git -C "$RUNNER_TEMP/wisdomsky-store" rev-parse HEAD
+
+      - name: Synchronize Apps source directory
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p Apps
+          rsync -a --delete "$RUNNER_TEMP/wisdomsky-store/Apps/" Apps/
+          echo "Imported application directories:"
+          find Apps -mindepth 1 -maxdepth 1 -type d | wc -l
+
+      - name: Convert applications to ZimaOS V2
+        id: conversion
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/convert_wisdomsky.py | tee conversion-report.txt
+
+      - name: Validate compose files with the official validator
+        id: validation
+        uses: IceWhaleTech/CasaOS-AppStore/.github/actions/validate-compose@main
+        with:
+          report-json: out/validation-report.json
+
+      - name: Restore official builder caches
+        uses: actions/cache@v5
+        with:
+          path: |
+            .cache/build_appstore/image-size-cache.json
+            .cache/build_appstore/image-digest-cache.json
+          key: zimaos-v2-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            zimaos-v2-${{ runner.os }}-
+
+      - name: Build official ZimaOS V2 distribution
+        id: build
+        uses: IceWhaleTech/build-appstore-action@v1
+        with:
+          source: .
+          output: dist
+          base-url: ${{ env.STORE_BASE_URL }}
+          cache-file: .cache/build_appstore/image-size-cache.json
+          digest-cache-file: .cache/build_appstore/image-digest-cache.json
+          report-json: out/build-v2-report.json
+          report-title: By Roket ZimaOS V2 Store Build
+
+      - name: Verify the generated V2 store structure
+        run: |
+          python tools/verify_dist.py \
+            --source . \
+            --dist dist \
+            --base-url "$STORE_BASE_URL"
+
+      - name: Upload conversion and validation reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: zimaos-v2-reports-${{ github.run_id }}
+          path: |
+            conversion-report.txt
+            out/validation-report.json
+            out/build-v2-report.json
+          if-no-files-found: warn
+
+      - name: Upload generated V2 store
+        uses: actions/upload-artifact@v7
+        with:
+          name: zimaos-v2-dist-${{ github.run_id }}
+          path: dist
+          if-no-files-found: error
+
+      - name: Save converted Apps in the source repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add --all Apps
+
+          if git diff --cached --quiet; then
+            echo "Converted applications are already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: synchronize converted LinuxServer applications"
+          git push origin HEAD:main
+
+      - name: Publish generated store on gh-pages
+        id: deployment
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./dist
+
+      - name: Write publication summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## By Roket ZimaOS V2 store"
+            echo
+            echo "- Source: WisdomSky LinuxServer AppStore"
+            echo "- Store URL: $STORE_BASE_URL/store.json"
+            echo "- Index URL: $STORE_BASE_URL/index.json"
+            echo "- Languages: en_US and fr_FR"
+            echo "- Conversion: ${{ steps.conversion.outcome }}"
+            echo "- Official validation: ${{ steps.validation.outcome }}"
+            echo "- Official build: ${{ steps.build.outcome }}"
+            echo "- Deployment: ${{ steps.deployment.outcome }}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish the final commit status
+        if: always()
+        continue-on-error: true
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const state = '${{ job.status }}' === 'success' ? 'success' : 'failure';
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: context.sha,
+              state,
+              context: 'zimaos-v2/store-publication',
+              description: state === 'success'
+                ? 'Store validated, built and published'
+                : 'Store validation, build or publication failed',
+              target_url: `${process.env.GITHUB_SERVER_URL}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
+            });
