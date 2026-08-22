@@ -112,12 +112,17 @@ KEYWORD_CATEGORIES = [
         ),
     ),
     (
-        "AI",
-        (
-            "ai", "llm", "ollama",
-            "machine-learning",
-        ),
+    "AI",
+    (
+        "llm",
+        "ollama",
+        "machine-learning",
+        "machine learning",
+        "whisper",
+        "stable-diffusion",
+        "stable diffusion",
     ),
+),
     (
         "Finance",
         (
@@ -192,6 +197,28 @@ def extract_version(compose):
     # "latest" is preferable to inventing a false numeric version.
     return "latest"
 
+def keyword_matches(text, keyword):
+    """Match complete words or phrases instead of arbitrary substrings."""
+    normalized_text = re.sub(
+        r"[^a-z0-9]+",
+        " ",
+        text.lower()
+    ).strip()
+
+    normalized_keyword = re.sub(
+        r"[^a-z0-9]+",
+        " ",
+        keyword.lower()
+    ).strip()
+
+    if not normalized_keyword:
+        return False
+
+    return (
+        f" {normalized_keyword} "
+        in f" {normalized_text} "
+    )
+
 
 def choose_category(app_name, metadata):
     """Choose the nearest official ZimaOS V2 category."""
@@ -224,10 +251,11 @@ def choose_category(app_name, metadata):
     searchable = " ".join(searchable_parts).lower()
 
     for category, keywords in KEYWORD_CATEGORIES:
-        if any(keyword in searchable for keyword in keywords):
-            return category
-
-    return "Others"
+        if any(
+    keyword_matches(searchable, keyword)
+    for keyword in keywords
+):
+    return category
 
 def ensure_web_entry(compose, metadata):
     """Ensure required ZimaOS V2 web entry fields exist."""
