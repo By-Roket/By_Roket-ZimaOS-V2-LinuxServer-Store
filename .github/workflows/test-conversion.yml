@@ -1,0 +1,74 @@
+name: Test WisdomSky conversion
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-conversion:
+    name: Test WisdomSky to ZimaOS V2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout our repository
+        uses: actions/checkout@v7
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Install converter dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyYAML
+
+      - name: Download latest WisdomSky store
+        run: |
+          git clone --depth 1 \
+            https://github.com/WisdomSky/CasaOS-LinuxServer-AppStore.git \
+            upstream
+
+          echo "WisdomSky source commit:"
+          git -C upstream rev-parse HEAD
+
+      - name: Import WisdomSky Apps
+        run: |
+          rm -rf Apps
+          cp -a upstream/Apps ./Apps
+
+          echo "Applications imported:"
+          find Apps -mindepth 1 -maxdepth 1 -type d | wc -l
+
+      - name: Run ZimaOS V2 converter
+        id: conversion
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          python tools/convert_wisdomsky.py | tee conversion-report.txt
+
+      - name: Show converted Jellyfin sample
+        if: always()
+        run: |
+          if [ -f Apps/Jellyfin/docker-compose.yml ]; then
+            echo "===== Jellyfin converted manifest ====="
+            sed -n '/^x-casaos:/,$p' Apps/Jellyfin/docker-compose.yml
+          else
+            echo "Jellyfin manifest not found."
+          fi
+
+      - name: Upload conversion report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: wisdomsky-conversion-report
+          path: conversion-report.txt
+          if-no-files-found: warn
+
+      - name: Conversion result
+        if: always()
+        run: |
+          echo "Converter result: ${{ steps.conversion.outcome }}"
