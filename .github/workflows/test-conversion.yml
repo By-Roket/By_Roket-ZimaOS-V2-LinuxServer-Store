@@ -71,4 +71,10 @@ jobs:
       - name: Conversion result
         if: always()
         run: |
-          echo "Converter result: ${{ steps.conversion.outcome }}"
+          outcome="${{ steps.conversion.outcome }}"
+          echo "Converter result: $outcome"
+
+          if [ "$outcome" != "success" ]; then
+            echo "::error::ZimaOS V2 conversion failed"
+            exit 1
+          fi
