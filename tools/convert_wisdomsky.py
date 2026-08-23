@@ -258,6 +258,52 @@ def normalize_main_service(compose, metadata, app_slug):
     metadata["main"] = app_slug
 
 
+def normalize_main_container(compose, metadata, app_slug):
+    """Give the primary container a recognizable, store-specific name."""
+    main_service = metadata["main"]
+    compose["services"][main_service]["container_name"] = (
+        f"{app_slug}-by-roket"
+    )
+
+
+def normalize_appdata_volumes(compose, app_name, app_slug):
+    """Use ZimaOS's application-instance variable for app-owned data."""
+    prefix = "/DATA/AppData/"
+    source_directories = {app_name.lower(), app_slug}
+
+    def normalize_source(source):
+        if not isinstance(source, str) or not source.startswith(prefix):
+            return source
+
+        directory, separator, remainder = source[len(prefix):].partition("/")
+
+        if directory not in source_directories:
+            return source
+
+        return f"{prefix}$AppID{separator}{remainder}"
+
+    for service in compose["services"].values():
+        if not isinstance(service, dict):
+            continue
+
+        volumes = service.get("volumes", [])
+
+        if not isinstance(volumes, list):
+            continue
+
+        for index, volume in enumerate(volumes):
+            if isinstance(volume, dict):
+                if "source" in volume:
+                    volume["source"] = normalize_source(volume["source"])
+            elif isinstance(volume, str):
+                source, separator, remainder = volume.partition(":")
+
+                if separator:
+                    volumes[index] = (
+                        f"{normalize_source(source)}{separator}{remainder}"
+                    )
+
+
 def normalize_app_icons(metadata, app_slug):
     """Replace known broken upstream image links with LinuxServer assets."""
     replacement_name = APP_ICON_OVERRIDES.get(app_slug)
@@ -478,6 +524,8 @@ def convert_app(compose_path):
 
     app_slug = slugify(app_name)
     normalize_main_service(compose, metadata, app_slug)
+    normalize_main_container(compose, metadata, app_slug)
+    normalize_appdata_volumes(compose, app_name, app_slug)
 
     # Stable ID: do not derive it from a Docker version.
     metadata["id"] = f"by-roket.linuxserver.{app_slug}"

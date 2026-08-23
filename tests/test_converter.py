@@ -154,9 +154,17 @@ class MainServiceTests(unittest.TestCase):
                 "services:\n"
                 "  app:\n"
                 "    image: linuxserver/freetube:latest\n"
+                "    environment:\n"
+                "      PUID: $PUID\n"
+                "      PGID: $PGID\n"
+                "      TZ: $TZ\n"
                 "    ports:\n"
                 "      - target: 3000\n"
                 "        published: 3000\n"
+                "    volumes:\n"
+                "      - type: bind\n"
+                "        source: /DATA/AppData/freetube/config\n"
+                "        target: /config\n"
                 "x-casaos:\n"
                 "  main: app\n",
                 encoding="utf-8",
@@ -170,6 +178,137 @@ class MainServiceTests(unittest.TestCase):
         self.assertEqual(list(converted["services"]), ["freetube"])
         self.assertEqual(converted["x-casaos"]["main"], "freetube")
         self.assertEqual(converted["x-casaos"]["port_map"], "3000")
+        self.assertEqual(
+            converted["services"]["freetube"]["container_name"],
+            "freetube-by-roket",
+        )
+        self.assertEqual(
+            converted["services"]["freetube"]["volumes"][0]["source"],
+            "/DATA/AppData/$AppID/config",
+        )
+        self.assertEqual(
+            converted["services"]["freetube"]["environment"],
+            {"PUID": "$PUID", "PGID": "$PGID", "TZ": "$TZ"},
+        )
+
+
+class MainContainerTests(unittest.TestCase):
+    def test_container_name_uses_application_name_before_store_suffix(self):
+        compose = {"services": {"freetube": {}}}
+        metadata = {"main": "freetube"}
+
+        convert_wisdomsky.normalize_main_container(
+            compose, metadata, "freetube"
+        )
+
+        self.assertEqual(
+            compose["services"]["freetube"]["container_name"],
+            "freetube-by-roket",
+        )
+
+    def test_other_container_names_are_not_changed(self):
+        compose = {
+            "services": {
+                "freetube": {},
+                "database": {"container_name": "existing-database"},
+            }
+        }
+
+        convert_wisdomsky.normalize_main_container(
+            compose, {"main": "freetube"}, "freetube"
+        )
+
+        self.assertEqual(
+            compose["services"]["database"]["container_name"],
+            "existing-database",
+        )
+
+
+class AppDataVolumeTests(unittest.TestCase):
+    def test_application_data_uses_dynamic_application_identifier(self):
+        compose = {
+            "services": {
+                "freetube": {
+                    "volumes": [{
+                        "type": "bind",
+                        "source": "/DATA/AppData/freetube/config",
+                        "target": "/config",
+                    }]
+                }
+            }
+        }
+
+        convert_wisdomsky.normalize_appdata_volumes(
+            compose, "Freetube", "freetube"
+        )
+
+        self.assertEqual(
+            compose["services"]["freetube"]["volumes"][0]["source"],
+            "/DATA/AppData/$AppID/config",
+        )
+
+    def test_original_directory_with_dots_is_supported(self):
+        compose = {
+            "services": {
+                "changedetection-io": {
+                    "volumes": [{
+                        "source": "/DATA/AppData/changedetection.io/config"
+                    }]
+                }
+            }
+        }
+
+        convert_wisdomsky.normalize_appdata_volumes(
+            compose, "Changedetection.io", "changedetection-io"
+        )
+
+        self.assertEqual(
+            compose["services"]["changedetection-io"]["volumes"][0][
+                "source"
+            ],
+            "/DATA/AppData/$AppID/config",
+        )
+
+    def test_unrelated_and_already_dynamic_paths_are_preserved(self):
+        volumes = [
+            {"source": "/DATA/Media"},
+            {"source": "/DATA/AppData/shared/config"},
+            {"source": "/DATA/AppData/$AppID/config"},
+        ]
+        compose = {"services": {"freetube": {"volumes": volumes}}}
+
+        convert_wisdomsky.normalize_appdata_volumes(
+            compose, "Freetube", "freetube"
+        )
+
+        self.assertEqual(
+            [volume["source"] for volume in volumes],
+            [
+                "/DATA/Media",
+                "/DATA/AppData/shared/config",
+                "/DATA/AppData/$AppID/config",
+            ],
+        )
+
+    def test_short_volume_syntax_is_supported(self):
+        compose = {
+            "services": {
+                "freetube": {
+                    "volumes": [
+                        "/DATA/AppData/freetube/config:/config:ro"
+                    ]
+                }
+            }
+        }
+
+        convert_wisdomsky.normalize_appdata_volumes(
+            compose, "Freetube", "freetube"
+        )
+
+        self.assertEqual(
+            compose["services"]["freetube"]["volumes"],
+            ["/DATA/AppData/$AppID/config:/config:ro"],
+        )
 
 
 class IconTests(unittest.TestCase):
