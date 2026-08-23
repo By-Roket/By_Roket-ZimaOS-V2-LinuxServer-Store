@@ -1,6 +1,6 @@
 name: linuxserver-ombi
 services:
-  app:
+  ombi:
     image: linuxserver/ombi:4.53.10
     restart: unless-stopped
     environment:
@@ -39,7 +39,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: ombi
   description:
     en_US: Ombi allows you to host your own Plex Request and user management system.
       If you are sharing your Plex server with other users, allow them to request

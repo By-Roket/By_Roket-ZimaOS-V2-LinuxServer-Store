@@ -1,6 +1,6 @@
 name: linuxserver-snapdrop
 services:
-  app:
+  snapdrop:
     image: linuxserver/snapdrop:version-f88d46ed
     restart: unless-stopped
     environment:
@@ -44,7 +44,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: snapdrop
   description:
     en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/snapdrop/'
   tagline:

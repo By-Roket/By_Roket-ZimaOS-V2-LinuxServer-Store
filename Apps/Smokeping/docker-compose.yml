@@ -1,6 +1,6 @@
 name: linuxserver-smokeping
 services:
-  app:
+  smokeping:
     image: linuxserver/smokeping:2.9.0
     restart: unless-stopped
     environment:
@@ -49,7 +49,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: smokeping
   description:
     en_US: Smokeping keeps track of your network latency. For a full example of what
       this application is capable of visit UCDavis.

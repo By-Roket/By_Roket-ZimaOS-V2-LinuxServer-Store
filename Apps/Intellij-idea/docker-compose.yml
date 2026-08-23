@@ -1,6 +1,6 @@
 name: linuxserver-intellij-idea
 services:
-  app:
+  intellij-idea:
     image: linuxserver/intellij-idea:42026.2.0
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: intellij-idea
   description:
     en_US: IntelliJ IDEA helps you write code faster with tools that eliminate tedious
       tasks and let you focus on what matters – building great software.

@@ -1,6 +1,6 @@
 name: linuxserver-webgrabplus
 services:
-  app:
+  webgrabplus:
     image: linuxserver/webgrabplus:5.6.0
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: webgrabplus
   description:
     en_US: Webgrabplus is a multi-site incremental xmltv epg grabber. It collects
       tv-program guide data from selected tvguide sites for your favourite channels.

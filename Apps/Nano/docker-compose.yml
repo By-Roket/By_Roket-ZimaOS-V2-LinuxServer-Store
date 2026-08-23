@@ -1,6 +1,6 @@
 name: linuxserver-nano
 services:
-  app:
+  nano:
     image: linuxserver/nano:21.2.20220522
     restart: unless-stopped
     environment:
@@ -67,7 +67,7 @@ x-casaos:
   - amd64
   - arm
   - arm64
-  main: app
+  main: nano
   description:
     en_US: Nano is a digital payment protocol designed to be accessible and lightweight,
       with a focus on removing inefficiencies present in other cryptocurrencies. With

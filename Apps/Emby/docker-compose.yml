@@ -1,6 +1,6 @@
 name: linuxserver-emby
 services:
-  app:
+  emby:
     image: linuxserver/emby:4.9.5
     restart: unless-stopped
     environment:
@@ -44,7 +44,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: emby
   description:
     en_US: Emby organizes video, music, live TV, and photos from personal media libraries
       and streams them to smart TVs, streaming boxes and mobile devices. This container

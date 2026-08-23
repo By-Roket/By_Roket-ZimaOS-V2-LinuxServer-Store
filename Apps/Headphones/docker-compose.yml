@@ -1,6 +1,6 @@
 name: linuxserver-headphones
 services:
-  app:
+  headphones:
     image: linuxserver/headphones:version-a78f38c1
     restart: unless-stopped
     environment:
@@ -36,7 +36,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: headphones
   description:
     en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/headphones/'
   tagline:

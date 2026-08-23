@@ -1,6 +1,6 @@
 name: linuxserver-mediaelch
 services:
-  app:
+  mediaelch:
     image: linuxserver/mediaelch:2.12.0
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: mediaelch
   description:
     en_US: MediaElch is a MediaManager for Kodi. Information about Movies, TV Shows,
       Concerts and Music are stored as nfo files. Fanarts are downloaded automatically

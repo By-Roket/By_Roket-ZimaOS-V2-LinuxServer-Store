@@ -1,6 +1,6 @@
 name: linuxserver-syslog-ng
 services:
-  app:
+  syslog-ng:
     image: linuxserver/syslog-ng:4.11.0
     restart: unless-stopped
     environment:
@@ -46,7 +46,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: syslog-ng
   description:
     en_US: syslog-ng allows you to flexibly collect, parse, classify, rewrite and
       correlate logs from across your infrastructure and store or route them to log

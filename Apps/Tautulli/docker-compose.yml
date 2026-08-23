@@ -1,6 +1,6 @@
 name: linuxserver-tautulli
 services:
-  app:
+  tautulli:
     image: linuxserver/tautulli:2.17.2
     restart: unless-stopped
     environment:
@@ -32,7 +32,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: tautulli
   description:
     en_US: Tautulli is a python based web application for monitoring, analytics and
       notifications for Plex Media Server.

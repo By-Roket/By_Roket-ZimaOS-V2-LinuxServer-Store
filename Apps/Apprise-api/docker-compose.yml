@@ -1,6 +1,6 @@
 name: linuxserver-apprise-api
 services:
-  app:
+  apprise-api:
     image: linuxserver/apprise-api:1.5.2
     restart: unless-stopped
     environment:
@@ -40,7 +40,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: apprise-api
   description:
     en_US: Apprise-api Takes advantage of Apprise through your network with a user-friendly
       API. * Send notifications to more than 100 services. * An incredibly lightweight

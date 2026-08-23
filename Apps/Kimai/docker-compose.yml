@@ -1,6 +1,6 @@
 name: linuxserver-kimai
 services:
-  app:
+  kimai:
     image: linuxserver/kimai:2.65.0
     restart: unless-stopped
     environment:
@@ -54,7 +54,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: kimai
   description:
     en_US: 'Kimai is a professional grade time-tracking application, free and open-source.
       It handles use-cases of freelancers as well as companies with dozens or hundreds

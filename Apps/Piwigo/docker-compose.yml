@@ -1,6 +1,6 @@
 name: linuxserver-piwigo
 services:
-  app:
+  piwigo:
     image: linuxserver/piwigo:16.4.0
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: piwigo
   description:
     en_US: Piwigo is a photo gallery software for the web that comes with powerful
       features to publish and manage your collection of pictures.

@@ -1,6 +1,6 @@
 name: linuxserver-monica
 services:
-  app:
+  monica:
     image: linuxserver/monica:4.1.2
     restart: unless-stopped
     environment:
@@ -75,7 +75,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: monica
   description:
     en_US: Monica is an open source personal relationship management system, that
       lets you document your life.

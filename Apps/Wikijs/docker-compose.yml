@@ -1,6 +1,6 @@
 name: linuxserver-wikijs
 services:
-  app:
+  wikijs:
     image: linuxserver/wikijs:2.5.314
     restart: unless-stopped
     environment:
@@ -60,7 +60,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: wikijs
   description:
     en_US: Wikijs A modern, lightweight and powerful wiki app built on NodeJS.
   tagline:

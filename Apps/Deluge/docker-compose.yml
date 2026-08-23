@@ -1,6 +1,6 @@
 name: linuxserver-deluge
 services:
-  app:
+  deluge:
     image: linuxserver/deluge:2.2.0
     restart: unless-stopped
     environment:
@@ -49,7 +49,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: deluge
   description:
     en_US: Deluge is a lightweight, Free Software, cross-platform BitTorrent client.
       * Full Encryption * WebUI * Plugin System * Much more...

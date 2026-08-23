@@ -1,6 +1,6 @@
 name: linuxserver-daapd
 services:
-  app:
+  daapd:
     image: linuxserver/daapd:28.10.20250108
     restart: unless-stopped
     environment:
@@ -33,7 +33,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: daapd
   description:
     en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/daapd/'
   tagline:

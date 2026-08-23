@@ -1,6 +1,6 @@
 name: linuxserver-boinc
 services:
-  app:
+  boinc:
     image: linuxserver/boinc:8.2.8
     restart: unless-stopped
     environment:
@@ -39,7 +39,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: boinc
   description:
     en_US: BOINC is a platform for high-throughput computing on a large scale (thousands
       or millions of computers). It can be used for volunteer computing (using consumer

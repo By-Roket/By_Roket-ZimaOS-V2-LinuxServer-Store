@@ -1,6 +1,6 @@
 name: linuxserver-python
 services:
-  app:
+  python:
     image: linuxserver/python:3.13.1
     restart: unless-stopped
     environment:
@@ -30,7 +30,7 @@ x-casaos:
   architectures:
   - arm64
   - amd64
-  main: app
+  main: python
   description:
     en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/python
       for details.

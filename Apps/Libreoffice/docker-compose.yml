@@ -1,6 +1,6 @@
 name: linuxserver-libreoffice
 services:
-  app:
+  libreoffice:
     image: linuxserver/libreoffice:25.8.7
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: libreoffice
   description:
     en_US: LibreOffice is a free and powerful office suite, and a successor to OpenOffice.org
       (commonly known as OpenOffice). Its clean interface and feature-rich tools help

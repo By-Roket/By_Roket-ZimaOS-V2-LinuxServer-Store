@@ -1,6 +1,6 @@
 name: linuxserver-orcaslicer
 services:
-  app:
+  orcaslicer:
     image: linuxserver/orcaslicer:2.4.2
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: orcaslicer
   description:
     en_US: Orca Slicer is an open source slicer for FDM printers. OrcaSlicer is fork
       of Bambu Studio, it was previously known as BambuStudio-SoftFever, Bambu Studio

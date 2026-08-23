@@ -1,6 +1,6 @@
 name: linuxserver-babybuddy
 services:
-  app:
+  babybuddy:
     image: linuxserver/babybuddy:2.10.0
     restart: unless-stopped
     environment:
@@ -37,7 +37,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: babybuddy
   description:
     en_US: Babybuddy is a buddy for babies! Helps caregivers track sleep, feedings,
       diaper changes, tummy time and more to learn about and predict baby's needs

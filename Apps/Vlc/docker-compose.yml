@@ -1,6 +1,6 @@
 name: linuxserver-vlc
 services:
-  app:
+  vlc:
     image: linuxserver/vlc:3.0.23
     restart: unless-stopped
     environment:
@@ -40,7 +40,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: vlc
   description:
     en_US: VLC Media Player is a free and open source cross-platform multimedia player
       and framework that delivers dependable performance across multiple devices.

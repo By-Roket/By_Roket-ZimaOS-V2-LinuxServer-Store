@@ -1,6 +1,6 @@
 name: linuxserver-phpmyadmin
 services:
-  app:
+  phpmyadmin:
     image: linuxserver/phpmyadmin:5.2.3
     restart: unless-stopped
     environment:
@@ -44,7 +44,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: phpmyadmin
   description:
     en_US: Phpmyadmin is a free software tool written in PHP, intended to handle the
       administration of MySQL over the Web. phpMyAdmin supports a wide range of operations

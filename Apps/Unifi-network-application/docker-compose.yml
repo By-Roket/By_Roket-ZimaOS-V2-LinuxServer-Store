@@ -1,6 +1,6 @@
 name: linuxserver-unifi-network-application
 services:
-  app:
+  unifi-network-application:
     image: linuxserver/unifi-network-application:10.5.67
     restart: unless-stopped
     environment:
@@ -98,7 +98,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: unifi-network-application
   description:
     en_US: The Unifi-network-application software is a powerful, enterprise wireless
       software engine ideal for high-density client deployments requiring low latency

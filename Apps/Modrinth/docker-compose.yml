@@ -1,6 +1,6 @@
 name: linuxserver-modrinth
 services:
-  app:
+  modrinth:
     image: linuxserver/modrinth:0.18.2
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: modrinth
   description:
     en_US: Modrinth App is a unique, open source launcher that allows you to play
       your favorite mods, and keep them up to date, all in one neat little package.

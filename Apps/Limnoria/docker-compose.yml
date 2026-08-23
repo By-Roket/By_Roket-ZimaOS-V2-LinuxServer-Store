@@ -1,6 +1,6 @@
 name: linuxserver-limnoria
 services:
-  app:
+  limnoria:
     image: linuxserver/limnoria:2026.5.8
     restart: unless-stopped
     environment:
@@ -32,7 +32,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: limnoria
   description:
     en_US: Limnoria A robust, full-featured, and user/programmer-friendly Python IRC
       bot, with many existing plugins. Successor of the well-known Supybot.

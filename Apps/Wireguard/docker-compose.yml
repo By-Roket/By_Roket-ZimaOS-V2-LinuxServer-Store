@@ -1,6 +1,6 @@
 name: linuxserver-wireguard
 services:
-  app:
+  wireguard:
     image: linuxserver/wireguard:1.0.20260223
     restart: unless-stopped
     environment:
@@ -81,7 +81,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: wireguard
   description:
     en_US: WireGuard® is an extremely simple yet fast and modern VPN that utilizes
       state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more

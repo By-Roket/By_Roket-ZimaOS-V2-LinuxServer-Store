@@ -1,6 +1,6 @@
 name: linuxserver-webtop
 services:
-  app:
+  webtop:
     image: linuxserver/webtop:arch-kde-version-2025-07-12
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: webtop
   description:
     en_US: Webtop - Alpine, Ubuntu, Fedora, and Arch based containers containing full
       desktop environments in officially supported flavors accessible via any modern

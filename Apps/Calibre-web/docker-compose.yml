@@ -1,6 +1,6 @@
 name: linuxserver-calibre-web
 services:
-  app:
+  calibre-web:
     image: linuxserver/calibre-web:0.6.27
     restart: unless-stopped
     environment:
@@ -44,7 +44,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: calibre-web
   description:
     en_US: Calibre-web is a web app providing a clean interface for browsing, reading
       and downloading eBooks using an existing Calibre database. It is also possible

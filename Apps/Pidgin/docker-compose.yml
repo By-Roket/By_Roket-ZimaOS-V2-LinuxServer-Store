@@ -1,6 +1,6 @@
 name: linuxserver-pidgin
 services:
-  app:
+  pidgin:
     image: linuxserver/pidgin:2.14.14
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: pidgin
   description:
     en_US: Pidgin is a chat program which lets you log into accounts on multiple chat
       networks simultaneously. This means that you can be chatting with friends on

@@ -1,6 +1,6 @@
 name: linuxserver-joplin
 services:
-  app:
+  joplin:
     image: linuxserver/joplin:3.6.16
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: joplin
   description:
     en_US: Joplin is a free, open source note taking and to-do application, which
       can handle a large number of notes organised into notebooks.

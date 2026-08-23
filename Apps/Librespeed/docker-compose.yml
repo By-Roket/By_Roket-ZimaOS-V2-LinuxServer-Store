@@ -1,6 +1,6 @@
 name: linuxserver-librespeed
 services:
-  app:
+  librespeed:
     image: linuxserver/librespeed:6.2.1
     restart: unless-stopped
     environment:
@@ -70,7 +70,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: librespeed
   description:
     en_US: Librespeed is a very lightweight Speedtest implemented in Javascript, using
       XMLHttpRequest and Web Workers. No Flash, No Java, No Websocket, No Bullshit.

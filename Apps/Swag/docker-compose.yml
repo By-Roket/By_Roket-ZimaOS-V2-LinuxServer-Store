@@ -1,6 +1,6 @@
 name: linuxserver-swag
 services:
-  app:
+  swag:
     image: linuxserver/swag:5.7.0
     restart: unless-stopped
     environment:
@@ -120,7 +120,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: swag
   description:
     en_US: SWAG - Secure Web Application Gateway (formerly known as letsencrypt, no
       relation to Let's Encrypt™) sets up an Nginx webserver and reverse proxy with

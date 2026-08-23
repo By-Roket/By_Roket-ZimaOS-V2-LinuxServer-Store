@@ -1,6 +1,6 @@
 name: linuxserver-ci
 services:
-  app:
+  ci:
     image: linuxserver/ci:b1ca9f98-ls65
     restart: unless-stopped
     environment:
@@ -29,7 +29,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: ci
   description:
     en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/ci
       for details.

@@ -1,6 +1,6 @@
 name: linuxserver-kavita
 services:
-  app:
+  kavita:
     image: linuxserver/kavita:0.9.0
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: kavita
   description:
     en_US: Kavita is a fast, feature rich, cross platform reading server. Built with
       a focus for being a full solution for all your reading needs. Setup your own

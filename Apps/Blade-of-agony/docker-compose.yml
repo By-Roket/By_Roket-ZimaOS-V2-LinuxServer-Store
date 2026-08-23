@@ -1,6 +1,6 @@
 name: linuxserver-blade-of-agony
 services:
-  app:
+  blade-of-agony:
     image: linuxserver/blade-of-agony:3.1.20260816
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: blade-of-agony
   description:
     en_US: 'Wolfenstein: Blade of Agony is a story-driven WWII shooter inspired by
       Wolfenstein and Doom.'

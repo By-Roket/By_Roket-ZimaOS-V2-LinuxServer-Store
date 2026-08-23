@@ -1,6 +1,6 @@
 name: linuxserver-code-server
 services:
-  app:
+  code-server:
     image: linuxserver/code-server:4.133.0
     restart: unless-stopped
     environment:
@@ -67,7 +67,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: code-server
   description:
     en_US: Code-server is VS Code running on a remote server, accessible through the
       browser. - Code on your Chromebook, tablet, and laptop with a consistent dev

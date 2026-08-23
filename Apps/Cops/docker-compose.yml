@@ -1,6 +1,6 @@
 name: linuxserver-cops
 services:
-  app:
+  cops:
     image: linuxserver/cops:4.5.2
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: cops
   description:
     en_US: 'Cops by Sébastien Lucas, now maintained by MikesPub, stands for Calibre
       OPDS (and HTML) Php Server. COPS links to your Calibre library database and

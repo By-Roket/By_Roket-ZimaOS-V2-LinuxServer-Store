@@ -1,6 +1,6 @@
 name: linuxserver-altus
 services:
-  app:
+  altus:
     image: linuxserver/altus:5.8.1
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: altus
   description:
     en_US: Altus is an Electron-based WhatsApp client with themes and multiple account
       support.

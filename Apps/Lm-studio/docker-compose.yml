@@ -1,6 +1,6 @@
 name: linuxserver-lm-studio
 services:
-  app:
+  lm-studio:
     image: linuxserver/lm-studio:2026-08-21-ls22
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: lm-studio
   description:
     en_US: LM Studio can run local AI models like gpt-oss, Llama, Gemma, Qwen, and
       DeepSeek privately on your computer.

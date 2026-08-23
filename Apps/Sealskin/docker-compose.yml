@@ -1,6 +1,6 @@
 name: linuxserver-sealskin
 services:
-  app:
+  sealskin:
     image: linuxserver/sealskin:0.1.39
     restart: unless-stopped
     environment:
@@ -47,7 +47,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: sealskin
   description:
     en_US: Sealskin is a self-hosted, client-server platform that enables users to
       run powerful, containerized desktop applications streamed directly to a web

@@ -1,6 +1,6 @@
 name: linuxserver-fail2ban
 services:
-  app:
+  fail2ban:
     image: linuxserver/fail2ban:1.1.0
     restart: unless-stopped
     environment:
@@ -91,7 +91,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: fail2ban
   description:
     en_US: Fail2ban is a daemon to ban hosts that cause multiple authentication errors.
   tagline:

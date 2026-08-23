@@ -1,6 +1,6 @@
 name: linuxserver-chrome
 services:
-  app:
+  chrome:
     image: linuxserver/chrome:151.0.7922
     restart: unless-stopped
     environment:
@@ -40,7 +40,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: chrome
   description:
     en_US: Chrome is the official web browser from Google, built to be fast, secure,
       and customizable.

@@ -1,6 +1,6 @@
 name: linuxserver-bitcoin-knots
 services:
-  app:
+  bitcoin-knots:
     image: linuxserver/bitcoin-knots:version-29.4.knots20260508-noble1
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: bitcoin-knots
   description:
     en_US: Bitcoin Knots can be used as a desktop client for regular payments or as
       a full node server utility for merchants and other payment services.

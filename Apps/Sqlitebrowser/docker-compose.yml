@@ -1,6 +1,6 @@
 name: linuxserver-sqlitebrowser
 services:
-  app:
+  sqlitebrowser:
     image: linuxserver/sqlitebrowser:3.13.1
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: sqlitebrowser
   description:
     en_US: DB Browser for SQLite is a high quality, visual, open source tool to create,
       design, and edit database files compatible with SQLite.

@@ -1,6 +1,6 @@
 name: linuxserver-habridge
 services:
-  app:
+  habridge:
     image: linuxserver/habridge:5.4.1
     restart: unless-stopped
     environment:
@@ -39,7 +39,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: habridge
   description:
     en_US: Habridge emulates Philips Hue API to other home automation gateways such
       as an Amazon Echo/Dot Gen 1 (gen 2 has issues discovering ha-bridge) or other

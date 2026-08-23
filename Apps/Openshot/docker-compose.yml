@@ -1,6 +1,6 @@
 name: linuxserver-openshot
 services:
-  app:
+  openshot:
     image: linuxserver/openshot:3.5.1
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: openshot
   description:
     en_US: OpenShot Video Editor is an award-winning free and open-source video editor
       for Linux, Mac, and Windows, and is dedicated to delivering high quality video

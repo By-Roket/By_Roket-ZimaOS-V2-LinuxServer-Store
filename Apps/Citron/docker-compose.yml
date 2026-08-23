@@ -1,6 +1,6 @@
 name: linuxserver-citron
 services:
-  app:
+  citron:
     image: linuxserver/citron:2026.02.1
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: citron
   description:
     en_US: Citron is a feature rich Switch 1 emulator for homebrew.
   tagline:

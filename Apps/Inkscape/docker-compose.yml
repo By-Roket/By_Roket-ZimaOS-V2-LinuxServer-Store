@@ -1,6 +1,6 @@
 name: linuxserver-inkscape
 services:
-  app:
+  inkscape:
     image: linuxserver/inkscape:1.4.2
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: inkscape
   description:
     en_US: Inkscape is professional quality vector graphics software which runs on
       Linux, Mac OS X and Windows desktop computers.

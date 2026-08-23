@@ -1,6 +1,6 @@
 name: linuxserver-luanti
 services:
-  app:
+  luanti:
     image: linuxserver/luanti:5.17.0
     restart: unless-stopped
     environment:
@@ -37,7 +37,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: luanti
   description:
     en_US: Luanti (formerly Minetest) is an open source voxel game-creation platform
       with easy modding and game creation

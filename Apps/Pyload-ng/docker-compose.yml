@@ -1,6 +1,6 @@
 name: linuxserver-pyload-ng
 services:
-  app:
+  pyload-ng:
     image: linuxserver/pyload-ng:0.5.0
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: pyload-ng
   description:
     en_US: pyLoad is a Free and Open Source download manager written in Python and
       designed to be extremely lightweight, easily extensible and fully manageable

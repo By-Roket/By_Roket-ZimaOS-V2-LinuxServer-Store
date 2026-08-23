@@ -1,6 +1,6 @@
 name: linuxserver-ungoogled-chromium
 services:
-  app:
+  ungoogled-chromium:
     image: linuxserver/ungoogled-chromium:151.0.7922
     restart: unless-stopped
     environment:
@@ -40,7 +40,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: ungoogled-chromium
   description:
     en_US: Ungoogled Chromium is Google Chromium, sans dependency on Google web services.
   tagline:

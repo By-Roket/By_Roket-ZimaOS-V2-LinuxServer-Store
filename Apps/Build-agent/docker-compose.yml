@@ -1,6 +1,6 @@
 name: linuxserver-build-agent
 services:
-  app:
+  build-agent:
     image: linuxserver/build-agent:version-0296acb5
     restart: unless-stopped
     environment:
@@ -30,7 +30,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: build-agent
   description:
     en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/build-agent
       for details.

@@ -1,6 +1,6 @@
 name: linuxserver-davos
 services:
-  app:
+  davos:
     image: linuxserver/davos:2.2.2
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: davos
   description:
     en_US: Davos is an FTP automation tool that periodically scans given host locations
       for new files. It can be configured for various purposes, including listening

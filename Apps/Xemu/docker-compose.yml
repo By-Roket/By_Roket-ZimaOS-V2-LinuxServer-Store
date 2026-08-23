@@ -1,6 +1,6 @@
 name: linuxserver-xemu
 services:
-  app:
+  xemu:
     image: linuxserver/xemu:0.8.134
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: xemu
   description:
     en_US: xemu is a free and open-source application that emulates the original Microsoft
       Xbox game console, enabling people to play their original Xbox games on Windows,

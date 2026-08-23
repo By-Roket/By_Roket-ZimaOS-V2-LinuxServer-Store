@@ -1,6 +1,6 @@
 name: linuxserver-ci-debug
 services:
-  app:
+  ci-debug:
     image: linuxserver/ci-debug:933e2702-ls1
     restart: unless-stopped
     environment:
@@ -31,7 +31,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: ci-debug
   description:
     en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/ci-debug
       for details.

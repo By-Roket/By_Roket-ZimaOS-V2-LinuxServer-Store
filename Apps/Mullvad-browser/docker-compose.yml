@@ -1,6 +1,6 @@
 name: linuxserver-mullvad-browser
 services:
-  app:
+  mullvad-browser:
     image: linuxserver/mullvad-browser:15.0.20
     restart: unless-stopped
     environment:
@@ -47,7 +47,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: mullvad-browser
   description:
     en_US: The Mullvad Browser is a privacy-focused web browser developed in a collaboration
       between Mullvad VPN and the Tor Project. It’s designed to minimize tracking

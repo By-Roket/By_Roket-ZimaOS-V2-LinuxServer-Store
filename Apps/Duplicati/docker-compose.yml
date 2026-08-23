@@ -1,6 +1,6 @@
 name: linuxserver-duplicati
 services:
-  app:
+  duplicati:
     image: linuxserver/duplicati:2.3.0
     restart: unless-stopped
     environment:
@@ -52,7 +52,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: duplicati
   description:
     en_US: Duplicati is a backup client that securely stores encrypted, incremental,
       compressed backups on local storage, cloud storage services and remote file

@@ -1,6 +1,6 @@
 name: linuxserver-nzbget
 services:
-  app:
+  nzbget:
     image: linuxserver/nzbget:26.2.20260821
     restart: unless-stopped
     environment:
@@ -43,7 +43,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: nzbget
   description:
     en_US: Nzbget is a usenet downloader, written in C++ and designed with performance
       in mind to achieve maximum download speed by using very little system resources.

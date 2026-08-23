@@ -1,6 +1,6 @@
 name: linuxserver-github-desktop
 services:
-  app:
+  github-desktop:
     image: linuxserver/github-desktop:3.4.13
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: github-desktop
   description:
     en_US: Github Desktop is an open source Electron-based GitHub app. It is written
       in TypeScript and uses React.

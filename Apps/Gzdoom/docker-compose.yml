@@ -1,6 +1,6 @@
 name: linuxserver-gzdoom
 services:
-  app:
+  gzdoom:
     image: linuxserver/gzdoom:4.14.2
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: gzdoom
   description:
     en_US: GZDoom is a feature centric port for all Doom engine games, based on ZDoom,
       adding an OpenGL renderer and powerful scripting capabilities.

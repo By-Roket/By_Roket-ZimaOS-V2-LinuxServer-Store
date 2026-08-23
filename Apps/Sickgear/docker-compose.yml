@@ -1,6 +1,6 @@
 name: linuxserver-sickgear
 services:
-  app:
+  sickgear:
     image: linuxserver/sickgear:3.36.0
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: sickgear
   description:
     en_US: 'SickGear provides management of TV shows and/or Anime, it detects new
       episodes, links downloader apps, and more.. For more information on SickGear

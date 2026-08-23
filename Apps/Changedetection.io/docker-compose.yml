@@ -1,6 +1,6 @@
 name: linuxserver-changedetection-io
 services:
-  app:
+  changedetection-io:
     image: linuxserver/changedetection.io:0.55.8
     restart: unless-stopped
     environment:
@@ -42,7 +42,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: changedetection-io
   description:
     en_US: Changedetection.io provides free, open-source web page monitoring, notification
       and change detection.

@@ -1,6 +1,6 @@
 name: linuxserver-dogwalk
 services:
-  app:
+  dogwalk:
     image: linuxserver/dogwalk:cb661a4d-ls51
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: dogwalk
   description:
     en_US: DOGWALK is Blender Studio's long awaited second game project, focused on
       creating a bite-sized interactive storytelling playground. Play as a big adorable

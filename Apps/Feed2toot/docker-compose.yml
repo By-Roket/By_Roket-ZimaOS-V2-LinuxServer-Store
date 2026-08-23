@@ -1,6 +1,6 @@
 name: linuxserver-feed2toot
 services:
-  app:
+  feed2toot:
     image: linuxserver/feed2toot:0.17.20250110
     restart: unless-stopped
     environment:
@@ -30,7 +30,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: feed2toot
   description:
     en_US: Feed2toot automatically parses rss feeds, identifies new posts and posts
       them on the Mastodon social network.

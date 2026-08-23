@@ -1,6 +1,6 @@
 name: linuxserver-zen
 services:
-  app:
+  zen:
     image: linuxserver/zen:1.21.15
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: zen
   description:
     en_US: Zen Browser is a free and open-source fork of Mozilla Firefox with a focus
       on privacy, customizability and design.

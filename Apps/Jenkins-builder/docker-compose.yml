@@ -1,6 +1,6 @@
 name: linuxserver-jenkins-builder
 services:
-  app:
+  jenkins-builder:
     image: linuxserver/jenkins-builder:version-4f81ddbe
     restart: unless-stopped
     environment:
@@ -30,7 +30,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: jenkins-builder
   description:
     en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/jenkins-builder
       for details.

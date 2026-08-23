@@ -1,6 +1,6 @@
 name: linuxserver-vscode
 services:
-  app:
+  vscode:
     image: linuxserver/vscode:1.133.0
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: vscode
   description:
     en_US: VS Code is an integrated development environment developed by Microsoft.
       This container runs the full desktop application, for a web native version see

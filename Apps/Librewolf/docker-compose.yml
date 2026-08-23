@@ -1,6 +1,6 @@
 name: linuxserver-librewolf
 services:
-  app:
+  librewolf:
     image: linuxserver/librewolf:153.0.4
     restart: unless-stopped
     environment:
@@ -40,7 +40,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: librewolf
   description:
     en_US: LibreWolf is a custom and independent version of Firefox, with the primary
       goals of privacy, security and user freedom. LibreWolf also aims to remove all

@@ -1,6 +1,6 @@
 name: linuxserver-wps-office
 services:
-  app:
+  wps-office:
     image: linuxserver/wps-office:11.1.0
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: wps-office
   description:
     en_US: WPS Office is a lightweight, feature-rich comprehensive office suite with
       high compatibility. As a handy and professional office software, WPS Office

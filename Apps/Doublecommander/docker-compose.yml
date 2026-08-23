@@ -1,6 +1,6 @@
 name: linuxserver-doublecommander
 services:
-  app:
+  doublecommander:
     image: linuxserver/doublecommander:version-c52510d6
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: doublecommander
   description:
     en_US: Double Commander is a free cross platform open source file manager with
       two panels side by side. It is inspired by Total Commander and features some

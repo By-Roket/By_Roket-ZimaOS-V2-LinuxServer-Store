@@ -1,6 +1,6 @@
 name: linuxserver-qemu-static
 services:
-  app:
+  qemu-static:
     image: linuxserver/qemu-static:10.0.2
     restart: unless-stopped
     environment:
@@ -32,7 +32,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: qemu-static
   description:
     en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/qemu-static
       for details.

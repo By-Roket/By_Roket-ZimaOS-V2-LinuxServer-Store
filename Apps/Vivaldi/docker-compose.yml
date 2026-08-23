@@ -1,6 +1,6 @@
 name: linuxserver-vivaldi
 services:
-  app:
+  vivaldi:
     image: linuxserver/vivaldi:8.1.4087
     restart: unless-stopped
     environment:
@@ -40,7 +40,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: vivaldi
   description:
     en_US: Vivaldi is a Norwegian freeware, cross-platform web browser with a built-in
       email client developed by Vivaldi Technologies.

@@ -1,6 +1,6 @@
 name: linuxserver-steamos
 services:
-  app:
+  steamos:
     image: linuxserver/steamos:version-2024-12-20
     restart: unless-stopped
     environment:
@@ -55,7 +55,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: steamos
   description:
     en_US: SteamOS is an Arch based Linux distribution made by Valve Software. This
       container is a vanilla Arch install with Steam repositories added for software

@@ -1,6 +1,6 @@
 name: linuxserver-readme-sync
 services:
-  app:
+  readme-sync:
     image: linuxserver/readme-sync:84f2d0c3-ls27
     restart: unless-stopped
     environment:
@@ -30,7 +30,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: readme-sync
   description:
     en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/readme-sync
       for details.

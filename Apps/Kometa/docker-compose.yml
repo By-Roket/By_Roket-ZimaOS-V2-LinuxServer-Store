@@ -1,6 +1,6 @@
 name: linuxserver-kometa
 services:
-  app:
+  kometa:
     image: linuxserver/kometa:2.4.8
     restart: unless-stopped
     environment:
@@ -55,7 +55,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: kometa
   description:
     en_US: Kometa is a powerful tool designed to give you complete control over your
       media libraries. With Kometa, you can take your customization to the next level,

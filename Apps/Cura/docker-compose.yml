@@ -1,6 +1,6 @@
 name: linuxserver-cura
 services:
-  app:
+  cura:
     image: linuxserver/cura:5.13.0
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: cura
   description:
     en_US: UltiMaker Cura is free, easy-to-use 3D printing software trusted by millions
       of users. Fine-tune your 3D model with 400+ settings for the best slicing and

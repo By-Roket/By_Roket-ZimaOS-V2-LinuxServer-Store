@@ -1,6 +1,6 @@
 name: linuxserver-faster-whisper
 services:
-  app:
+  faster-whisper:
     image: linuxserver/faster-whisper:3.6.0
     restart: unless-stopped
     environment:
@@ -57,7 +57,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: faster-whisper
   description:
     en_US: Faster-whisper is a reimplementation of OpenAI's Whisper model using CTranslate2,
       which is a fast inference engine for Transformer models. This container provides

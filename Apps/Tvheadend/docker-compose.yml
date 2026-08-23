@@ -1,6 +1,6 @@
 name: linuxserver-tvheadend
 services:
-  app:
+  tvheadend:
     image: linuxserver/tvheadend:version-fcd987f0
     restart: unless-stopped
     environment:
@@ -46,7 +46,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: tvheadend
   description:
     en_US: 'Tvheadend works as a proxy server: is a TV streaming server and recorder
       for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC,

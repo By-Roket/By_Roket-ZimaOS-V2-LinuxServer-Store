@@ -1,6 +1,6 @@
 name: linuxserver-spotube
 services:
-  app:
+  spotube:
     image: linuxserver/spotube:5.1.2
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: spotube
   description:
     en_US: Spotube is an open source, cross-platform Spotify client compatible across
       multiple platforms utilizing Spotify's data API and YouTube, Piped.video or

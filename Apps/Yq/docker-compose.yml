@@ -1,6 +1,6 @@
 name: linuxserver-yq
 services:
-  app:
+  yq:
     image: linuxserver/yq:3.4.3
     restart: unless-stopped
     environment:
@@ -30,7 +30,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: yq
   description:
     en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/yq
       for details.

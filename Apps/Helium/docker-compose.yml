@@ -1,6 +1,6 @@
 name: linuxserver-helium
 services:
-  app:
+  helium:
     image: linuxserver/helium:0.15.6
     restart: unless-stopped
     environment:
@@ -40,7 +40,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: helium
   description:
     en_US: Helium is a Chromium-based web browser made for people, with love. Privacy-first
       with unbiased ad-blocking.

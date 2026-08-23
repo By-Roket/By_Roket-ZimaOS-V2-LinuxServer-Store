@@ -1,6 +1,6 @@
 name: linuxserver-d2-builder
 services:
-  app:
+  d2-builder:
     image: linuxserver/d2-builder:0.6.8
     restart: unless-stopped
     environment:
@@ -30,7 +30,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: d2-builder
   description:
     en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/d2-builder
       for details.

@@ -1,6 +1,6 @@
 name: linuxserver-webcord
 services:
-  app:
+  webcord:
     image: linuxserver/webcord:4.14.0
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: webcord
   description:
     en_US: WebCord can be summarized as a pack of security and privacy hardenings,
       Discord features reimplementations, Electron / Chromium / Discord bugs workarounds,

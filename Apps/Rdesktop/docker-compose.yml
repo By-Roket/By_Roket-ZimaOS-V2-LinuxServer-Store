@@ -1,6 +1,6 @@
 name: linuxserver-rdesktop
 services:
-  app:
+  rdesktop:
     image: linuxserver/rdesktop:arch-kde-version-arch-2025-01-10
     restart: unless-stopped
     environment:
@@ -36,7 +36,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: rdesktop
   description:
     en_US: Rdesktop - Containers containing full desktop environments in many popular
       flavors for Alpine, Ubuntu, Arch, and Fedora accessible via RDP.

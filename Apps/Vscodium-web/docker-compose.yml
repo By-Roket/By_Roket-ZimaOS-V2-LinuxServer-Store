@@ -1,6 +1,6 @@
 name: linuxserver-vscodium-web
 services:
-  app:
+  vscodium-web:
     image: linuxserver/vscodium-web:1.126.04524
     restart: unless-stopped
     environment:
@@ -57,7 +57,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: vscodium-web
   description:
     en_US: Vscodium-web is a community-driven, freely-licensed binary distribution
       of the remote host web component of Microsoft's editor VS Code.

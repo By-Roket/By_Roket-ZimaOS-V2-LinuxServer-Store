@@ -1,6 +1,6 @@
 name: linuxserver-budge
 services:
-  app:
+  budge:
     image: linuxserver/budge:0.0.9
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: budge
   description:
     en_US: Budge is an open source 'budgeting with envelopes' personal finance app.
   tagline:

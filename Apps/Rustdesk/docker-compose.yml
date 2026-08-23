@@ -1,6 +1,6 @@
 name: linuxserver-rustdesk
 services:
-  app:
+  rustdesk:
     image: linuxserver/rustdesk:1.4.9
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: rustdesk
   description:
     en_US: RustDesk is a full-featured open source remote control alternative for
       self-hosting and security with minimal configuration.

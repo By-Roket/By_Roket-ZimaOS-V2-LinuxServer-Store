@@ -1,6 +1,6 @@
 name: linuxserver-lsio-api
 services:
-  app:
+  lsio-api:
     image: linuxserver/lsio-api:version-9eda67ec
     restart: unless-stopped
     environment:
@@ -29,7 +29,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: lsio-api
   description:
     en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/lsio-api
       for details.

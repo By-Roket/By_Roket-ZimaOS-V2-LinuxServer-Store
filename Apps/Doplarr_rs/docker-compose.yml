@@ -1,6 +1,6 @@
 name: linuxserver-doplarr_rs
 services:
-  app:
+  doplarr_rs:
     image: linuxserver/doplarr_rs:4.6.0
     restart: unless-stopped
     environment:
@@ -32,7 +32,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: doplarr_rs
   description:
     en_US: Doplarr_rs is a Discord bot for requesting media through *arr backends,
       written in Rust.

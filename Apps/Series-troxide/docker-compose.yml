@@ -1,6 +1,6 @@
 name: linuxserver-series-troxide
 services:
-  app:
+  series-troxide:
     image: linuxserver/series-troxide:0.5.1
     restart: unless-stopped
     environment:
@@ -33,7 +33,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: series-troxide
   description:
     en_US: Series Troxide a Simple and Modern Series Tracker
   tagline:

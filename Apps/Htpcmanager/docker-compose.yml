@@ -1,6 +1,6 @@
 name: linuxserver-htpcmanager
 services:
-  app:
+  htpcmanager:
     image: linuxserver/htpcmanager:version-26a641bf
     restart: unless-stopped
     environment:
@@ -32,7 +32,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: htpcmanager
   description:
     en_US: Htpcmanager is a front end for many htpc related applications.
   tagline:

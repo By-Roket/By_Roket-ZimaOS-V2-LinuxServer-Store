@@ -1,6 +1,6 @@
 name: linuxserver-heimdall
 services:
-  app:
+  heimdall:
     image: linuxserver/heimdall:2.8.2
     restart: unless-stopped
     environment:
@@ -42,7 +42,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: heimdall
   description:
     en_US: Heimdall is a way to organise all those links to your most used web sites
       and web applications in a simple way. Simplicity is the key to Heimdall. Why

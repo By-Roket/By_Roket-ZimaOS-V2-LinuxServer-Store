@@ -1,6 +1,6 @@
 name: linuxserver-flexget
 services:
-  app:
+  flexget:
     image: linuxserver/flexget:3.20.6
     restart: unless-stopped
     environment:
@@ -52,7 +52,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: flexget
   description:
     en_US: Flexget is a multipurpose automation tool for all of your media.
   tagline:

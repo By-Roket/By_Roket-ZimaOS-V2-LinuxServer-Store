@@ -1,6 +1,6 @@
 name: linuxserver-booksonic-air
 services:
-  app:
+  booksonic-air:
     image: linuxserver/booksonic-air:2201.1.0
     restart: unless-stopped
     environment:
@@ -51,7 +51,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: booksonic-air
   description:
     en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/booksonic-air/'
   tagline:

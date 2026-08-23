@@ -1,6 +1,6 @@
 name: linuxserver-obsidian
 services:
-  app:
+  obsidian:
     image: linuxserver/obsidian:1.13.7
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: obsidian
   description:
     en_US: Obsidian is a note-taking app that lets you create, link, and organize
       your notes on your device, with hundreds of plugins and themes to customize

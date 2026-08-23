@@ -1,6 +1,6 @@
 name: linuxserver-steam
 services:
-  app:
+  steam:
     image: linuxserver/steam:version-abe938da
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: steam
   description:
     en_US: Steam is the ultimate destination for playing, discussing, and creating
       games.

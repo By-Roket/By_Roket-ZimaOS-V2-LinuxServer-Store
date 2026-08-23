@@ -1,6 +1,6 @@
 name: linuxserver-mstream
 services:
-  app:
+  mstream:
     image: linuxserver/mstream:6.22.0
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: mstream
   description:
     en_US: Mstream is a personal music streaming server. You can use mStream to stream
       your music from your home computer to any device, anywhere. There are mobile

@@ -1,6 +1,6 @@
 name: linuxserver-endlessh
 services:
-  app:
+  endlessh:
     image: linuxserver/endlessh:version-dfe44eb2
     restart: unless-stopped
     environment:
@@ -72,7 +72,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: endlessh
   description:
     en_US: 'Visit homepage: https://github.com/orgs/linuxserver/packages/container/package/endlessh'
   tagline:

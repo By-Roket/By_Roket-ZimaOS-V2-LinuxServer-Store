@@ -1,6 +1,6 @@
 name: linuxserver-radarr
 services:
-  app:
+  radarr:
     image: linuxserver/radarr:6.3.0
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: radarr
   description:
     en_US: Radarr - A fork of Sonarr to work with movies à la Couchpotato.
   tagline:

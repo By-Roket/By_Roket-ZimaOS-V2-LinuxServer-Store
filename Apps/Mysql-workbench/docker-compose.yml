@@ -1,6 +1,6 @@
 name: linuxserver-mysql-workbench
 services:
-  app:
+  mysql-workbench:
     image: linuxserver/mysql-workbench:8.0.47
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: mysql-workbench
   description:
     en_US: MySQL Workbench is a unified visual tool for database architects, developers,
       and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive

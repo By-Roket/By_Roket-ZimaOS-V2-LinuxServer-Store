@@ -1,6 +1,6 @@
 name: linuxserver-hedgedoc
 services:
-  app:
+  hedgedoc:
     image: linuxserver/hedgedoc:1.12.0
     restart: unless-stopped
     environment:
@@ -79,7 +79,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: hedgedoc
   description:
     en_US: HedgeDoc gives you access to all your files wherever you are. HedgeDoc
       is a real-time, multi-platform collaborative markdown note editor. This means

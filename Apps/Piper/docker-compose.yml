@@ -1,6 +1,6 @@
 name: linuxserver-piper
 services:
-  app:
+  piper:
     image: linuxserver/piper:2.4.2
     restart: unless-stopped
     environment:
@@ -65,7 +65,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: piper
   description:
     en_US: Piper is a fast, local neural text to speech system that sounds great and
       is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol

@@ -1,6 +1,6 @@
 name: linuxserver-airsonic-advanced
 services:
-  app:
+  airsonic-advanced:
     image: linuxserver/airsonic-advanced:11.1.4
     restart: unless-stopped
     environment:
@@ -52,7 +52,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: airsonic-advanced
   description:
     en_US: Airsonic-advanced is a free, web-based media streamer, providing ubiquitious
       access to your music. Use it to share your music with friends, or to listen

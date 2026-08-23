@@ -1,6 +1,6 @@
 name: linuxserver-synclounge
 services:
-  app:
+  synclounge:
     image: linuxserver/synclounge:5.2.35
     restart: unless-stopped
     environment:
@@ -24,7 +24,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: synclounge
   description:
     en_US: Synclounge is a third party tool that allows you to watch Plex in sync
       with your friends/family, wherever you are.

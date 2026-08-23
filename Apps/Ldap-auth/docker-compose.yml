@@ -1,6 +1,6 @@
 name: linuxserver-ldap-auth
 services:
-  app:
+  ldap-auth:
     image: linuxserver/ldap-auth:3.4.7
     restart: unless-stopped
     environment:
@@ -51,7 +51,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: ldap-auth
   description:
     en_US: Ldap-auth software is for authenticating users who request protected resources
       from servers proxied by nginx. It includes a daemon (ldap-auth) that communicates

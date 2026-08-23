@@ -1,6 +1,6 @@
 name: linuxserver-nzbhydra2
 services:
-  app:
+  nzbhydra2:
     image: linuxserver/nzbhydra2:8.9.0
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: nzbhydra2
   description:
     en_US: Nzbhydra2 is a meta search application for NZB indexers, the spiritual
       successor to NZBmegasearcH, and an evolution of the original application NZBHydra.

@@ -1,6 +1,6 @@
 name: linuxserver-bazarr
 services:
-  app:
+  bazarr:
     image: linuxserver/bazarr:1.6.0
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: bazarr
   description:
     en_US: Bazarr is a companion application to Sonarr and Radarr. It can manage and
       download subtitles based on your requirements. You define your preferences by

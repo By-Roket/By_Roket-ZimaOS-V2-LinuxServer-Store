@@ -1,6 +1,6 @@
 name: linuxserver-handbrake
 services:
-  app:
+  handbrake:
     image: linuxserver/handbrake:1.11.2
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: handbrake
   description:
     en_US: HandBrake is an open-source tool, built by volunteers, for converting video
       from nearly any format to a selection of modern, widely supported codecs.

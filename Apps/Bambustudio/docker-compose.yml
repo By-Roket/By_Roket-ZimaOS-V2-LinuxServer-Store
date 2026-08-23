@@ -1,6 +1,6 @@
 name: linuxserver-bambustudio
 services:
-  app:
+  bambustudio:
     image: linuxserver/bambustudio:02.08.02
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: bambustudio
   description:
     en_US: Bambu Studio is an open-source, cutting-edge, feature-rich slicing software.
       It contains project-based workflows, systematically optimized slicing algorithms,

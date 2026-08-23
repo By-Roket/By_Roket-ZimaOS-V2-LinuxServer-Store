@@ -1,6 +1,6 @@
 name: linuxserver-opera
 services:
-  app:
+  opera:
     image: linuxserver/opera:135.0.5973
     restart: unless-stopped
     environment:
@@ -39,7 +39,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: opera
   description:
     en_US: Opera is a multi-platform web browser developed by its namesake company
       Opera. The browser is based on Chromium, but distinguishes itself from other

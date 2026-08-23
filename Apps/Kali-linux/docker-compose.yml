@@ -1,6 +1,6 @@
 name: linuxserver-kali-linux
 services:
-  app:
+  kali-linux:
     image: linuxserver/kali-linux:version-76a3ddda
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: kali-linux
   description:
     en_US: Kali-linux - is an Advanced Penetration Testing Linux distribution used
       for Penetration Testing, Ethical Hacking and network security assessments. KALI

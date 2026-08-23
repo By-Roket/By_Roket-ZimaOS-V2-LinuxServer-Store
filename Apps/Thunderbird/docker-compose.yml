@@ -1,6 +1,6 @@
 name: linuxserver-thunderbird
 services:
-  app:
+  thunderbird:
     image: linuxserver/thunderbird:1140.13.0
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: thunderbird
   description:
     en_US: Thunderbird is a free and open-source personal information manager primarily
       used as an e-mail client with a calendar and contactbook, as well as an RSS

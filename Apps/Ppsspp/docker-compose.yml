@@ -1,6 +1,6 @@
 name: linuxserver-ppsspp
 services:
-  app:
+  ppsspp:
     image: linuxserver/ppsspp:1.20.4
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: ppsspp
   description:
     en_US: PPSSPP is a free and open-source PSP emulator for Windows, macOS, Linux,
       iOS, Android, Nintendo Wii U, Nintendo Switch, BlackBerry 10, MeeGo, Pandora,

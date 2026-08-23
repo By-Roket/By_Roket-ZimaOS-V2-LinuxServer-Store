@@ -1,6 +1,6 @@
 name: linuxserver-lollypop
 services:
-  app:
+  lollypop:
     image: linuxserver/lollypop:1.4.45
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: lollypop
   description:
     en_US: Lollypop is a lightweight modern music player designed to work excellently
       on the GNOME desktop environment.

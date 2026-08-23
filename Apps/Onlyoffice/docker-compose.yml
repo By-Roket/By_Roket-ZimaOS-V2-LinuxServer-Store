@@ -1,6 +1,6 @@
 name: linuxserver-onlyoffice
 services:
-  app:
+  onlyoffice:
     image: linuxserver/onlyoffice:9.4.0
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: onlyoffice
   description:
     en_US: ONLYOFFICE provides a full range of tools to create, edit and collaborate
       on text documents, spreadsheets, presentations, PDF forms and regular PDF files

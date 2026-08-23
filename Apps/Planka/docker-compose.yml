@@ -1,6 +1,6 @@
 name: linuxserver-planka
 services:
-  app:
+  planka:
     image: linuxserver/planka:2.2.1
     restart: unless-stopped
     environment:
@@ -70,7 +70,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: planka
   description:
     en_US: Planka is an elegant open source project tracking tool.
   tagline:

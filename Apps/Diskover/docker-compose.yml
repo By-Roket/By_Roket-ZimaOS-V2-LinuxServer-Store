@@ -1,6 +1,6 @@
 name: linuxserver-diskover
 services:
-  app:
+  diskover:
     image: linuxserver/diskover:2.3.5
     restart: unless-stopped
     environment:
@@ -43,7 +43,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: diskover
   description:
     en_US: Diskover is an open source file system indexer that uses Elasticsearch
       to index and manage data across heterogeneous storage systems.

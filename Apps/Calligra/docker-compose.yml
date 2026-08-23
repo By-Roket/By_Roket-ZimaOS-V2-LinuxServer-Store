@@ -1,6 +1,6 @@
 name: linuxserver-calligra
 services:
-  app:
+  calligra:
     image: linuxserver/calligra:3.2.1
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: calligra
   description:
     en_US: Calligra is an office and graphic art suite by KDE. It is available for
       desktop PCs, tablet computers, and smartphones. It contains applications for

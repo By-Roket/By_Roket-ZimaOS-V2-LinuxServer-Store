@@ -1,6 +1,6 @@
 name: linuxserver-dillinger
 services:
-  app:
+  dillinger:
     image: linuxserver/dillinger:3.39.1
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: dillinger
   description:
     en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/dillinger/'
   tagline:

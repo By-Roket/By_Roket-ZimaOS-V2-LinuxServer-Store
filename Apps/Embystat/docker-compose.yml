@@ -1,6 +1,6 @@
 name: linuxserver-embystat
 services:
-  app:
+  embystat:
     image: linuxserver/embystat:0.2.0
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: embystat
   description:
     en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/embystat/'
   tagline:

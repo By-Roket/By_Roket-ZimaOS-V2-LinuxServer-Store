@@ -1,6 +1,6 @@
 name: linuxserver-beets
 services:
-  app:
+  beets:
     image: linuxserver/beets:2.13.1
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: beets
   description:
     en_US: Beets is a music library manager and not, for the most part, a music player.
       It does include a simple player plugin and an experimental Web-based player,

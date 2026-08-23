@@ -1,6 +1,6 @@
 name: linuxserver-weixin
 services:
-  app:
+  weixin:
     image: linuxserver/weixin:version-1bb46de6
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: weixin
   description:
     en_US: Weixin (WeChat) is an instant messaging, social media, and mobile payment
       app developed by Tencent.

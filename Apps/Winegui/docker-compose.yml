@@ -1,6 +1,6 @@
 name: linuxserver-winegui
 services:
-  app:
+  winegui:
     image: linuxserver/winegui:4.3.0
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: winegui
   description:
     en_US: WineGUI is a user-interface friendly Wine manager that provides a graphical
       frontend for creating and managing Wine bottles.

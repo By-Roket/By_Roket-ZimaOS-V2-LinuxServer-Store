@@ -1,6 +1,6 @@
 name: linuxserver-retroarch
 services:
-  app:
+  retroarch:
     image: linuxserver/retroarch:1.22.2
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: retroarch
   description:
     en_US: RetroArch is a frontend for emulators, game engines and media players.
       It enables you to run classic games on a wide range of computers and consoles

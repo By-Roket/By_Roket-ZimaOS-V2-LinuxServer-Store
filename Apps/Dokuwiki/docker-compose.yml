@@ -1,6 +1,6 @@
 name: linuxserver-dokuwiki
 services:
-  app:
+  dokuwiki:
     image: linuxserver/dokuwiki:version-2026-07-14b
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: dokuwiki
   description:
     en_US: Dokuwiki is a simple to use and highly versatile Open Source wiki software
       that doesn't require a database. It is loved by users for its clean and readable

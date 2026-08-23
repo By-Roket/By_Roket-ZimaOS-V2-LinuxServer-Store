@@ -1,6 +1,6 @@
 name: linuxserver-minetest
 services:
-  app:
+  minetest:
     image: linuxserver/minetest:5.10.0
     restart: unless-stopped
     environment:
@@ -42,7 +42,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: minetest
   description:
     en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/minetest/'
   tagline:

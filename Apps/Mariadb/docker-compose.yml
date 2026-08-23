@@ -1,6 +1,6 @@
 name: linuxserver-mariadb
 services:
-  app:
+  mariadb:
     image: linuxserver/mariadb:11.8.8
     restart: unless-stopped
     environment:
@@ -64,7 +64,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: mariadb
   description:
     en_US: Mariadb is one of the most popular database servers. Made by the original
       developers of MySQL.

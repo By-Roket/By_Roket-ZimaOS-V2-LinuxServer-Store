@@ -1,6 +1,6 @@
 name: linuxserver-plex-meta-manager
 services:
-  app:
+  plex-meta-manager:
     image: linuxserver/plex-meta-manager:1.21.1
     restart: unless-stopped
     environment:
@@ -47,7 +47,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: plex-meta-manager
   description:
     en_US: Plex-meta-manager is a Python 3 script that can be continuously run using
       YAML configuration files to update on a schedule the metadata of the movies,

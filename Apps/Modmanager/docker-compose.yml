@@ -1,6 +1,6 @@
 name: linuxserver-modmanager
 services:
-  app:
+  modmanager:
     image: linuxserver/modmanager:version-b7faeafa
     restart: unless-stopped
     environment:
@@ -32,7 +32,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: modmanager
   description:
     en_US: This container needs special attention. Please check https://hub.docker.com/r/linuxserver/modmanager
       for details.

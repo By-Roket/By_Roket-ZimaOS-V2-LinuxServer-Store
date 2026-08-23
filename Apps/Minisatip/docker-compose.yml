@@ -1,6 +1,6 @@
 name: linuxserver-minisatip
 services:
-  app:
+  minisatip:
     image: linuxserver/minisatip:2.0.93
     restart: unless-stopped
     environment:
@@ -42,7 +42,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: minisatip
   description:
     en_US: Minisatip is a multi-threaded satip server version 1.2 that runs under
       Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC

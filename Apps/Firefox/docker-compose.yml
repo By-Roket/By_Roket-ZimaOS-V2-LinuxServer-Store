@@ -1,6 +1,6 @@
 name: linuxserver-firefox
 services:
-  app:
+  firefox:
     image: linuxserver/firefox:1.2404.1
     restart: unless-stopped
     environment:
@@ -40,7 +40,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: firefox
   description:
     en_US: Firefox Browser, also known as Mozilla Firefox or simply Firefox, is a
       free and open-source web browser developed by the Mozilla Foundation and its

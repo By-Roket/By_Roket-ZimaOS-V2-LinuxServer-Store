@@ -1,6 +1,6 @@
 name: linuxserver-pelorus
 services:
-  app:
+  pelorus:
     image: linuxserver/pelorus:0.2.3
     restart: unless-stopped
     environment:
@@ -31,7 +31,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: pelorus
   description:
     en_US: Pelorus is an AI navigator for Selkies-powered Linux desktops. Pelorus
       runs a FastAPI server that gives an LLM agent (Ollama, OpenAI-compatible, or

@@ -1,6 +1,6 @@
 name: linuxserver-freetube
 services:
-  app:
+  freetube:
     image: linuxserver/freetube:version-190523148
     restart: unless-stopped
     environment:
@@ -33,7 +33,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: freetube
   description:
     en_US: FreeTube is a feature-rich and user-friendly YouTube client with a focus
       on privacy.

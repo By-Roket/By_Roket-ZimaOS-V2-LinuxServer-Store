@@ -1,6 +1,6 @@
 name: linuxserver-foldingathome
 services:
-  app:
+  foldingathome:
     image: linuxserver/foldingathome:8.5.6
     restart: unless-stopped
     environment:
@@ -50,7 +50,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: foldingathome
   description:
     en_US: Folding@home is a distributed computing project for simulating protein
       dynamics, including the process of protein folding and the movements of proteins

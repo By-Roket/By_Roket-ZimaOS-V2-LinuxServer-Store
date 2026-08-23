@@ -1,6 +1,6 @@
 name: linuxserver-duckstation
 services:
-  app:
+  duckstation:
     image: linuxserver/duckstation:version-latest
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: duckstation
   description:
     en_US: DuckStation is a PS1 Emulator aiming for the best accuracy and game support.
   tagline:

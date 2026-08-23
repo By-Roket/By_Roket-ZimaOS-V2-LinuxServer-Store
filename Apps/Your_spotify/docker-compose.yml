@@ -1,6 +1,6 @@
 name: linuxserver-your_spotify
 services:
-  app:
+  your_spotify:
     image: linuxserver/your_spotify:1.20.0
     restart: unless-stopped
     environment:
@@ -60,7 +60,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: your_spotify
   description:
     en_US: Your_spotify is a self-hosted application that tracks what you listen and
       offers you a dashboard to explore statistics about it! It's composed of a web

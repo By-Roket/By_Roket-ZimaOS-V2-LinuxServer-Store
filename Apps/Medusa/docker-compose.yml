@@ -1,6 +1,6 @@
 name: linuxserver-medusa
 services:
-  app:
+  medusa:
     image: linuxserver/medusa:1.0.26
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: medusa
   description:
     en_US: Medusa is an automatic Video Library Manager for TV Shows. It watches for
       new episodes of your favorite shows, and when they are posted it does its magic.

@@ -1,6 +1,6 @@
 name: linuxserver-openvscode-server
 services:
-  app:
+  openvscode-server:
     image: linuxserver/openvscode-server:1.109.5
     restart: unless-stopped
     environment:
@@ -56,7 +56,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: openvscode-server
   description:
     en_US: Openvscode-server provides a version of VS Code that runs a server on a
       remote machine and allows access through a modern web browser.

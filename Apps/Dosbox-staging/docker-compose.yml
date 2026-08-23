@@ -1,6 +1,6 @@
 name: linuxserver-dosbox-staging
 services:
-  app:
+  dosbox-staging:
     image: linuxserver/dosbox-staging:0.82.2
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: dosbox-staging
   description:
     en_US: DOSBox Staging is a modern continuation of DOSBox a free and open-source
       emulator that enables the execution of MS-DOS software, especially video games.

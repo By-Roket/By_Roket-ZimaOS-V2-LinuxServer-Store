@@ -1,6 +1,6 @@
 name: linuxserver-ngircd
 services:
-  app:
+  ngircd:
     image: linuxserver/ngircd:version-27-r1
     restart: unless-stopped
     environment:
@@ -32,7 +32,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: ngircd
   description:
     en_US: Ngircd is a free, portable and lightweight Internet Relay Chat server for
       small or private networks, developed under the GNU General Public License (GPL).

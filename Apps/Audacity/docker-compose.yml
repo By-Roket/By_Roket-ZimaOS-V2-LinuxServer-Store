@@ -1,6 +1,6 @@
 name: linuxserver-audacity
 services:
-  app:
+  audacity:
     image: linuxserver/audacity:3.7.8
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: audacity
   description:
     en_US: Audacity is an easy-to-use, multi-track audio editor and recorder. Developed
       by a group of volunteers as open source.

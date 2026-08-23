@@ -1,6 +1,6 @@
 name: linuxserver-xbackbone
 services:
-  app:
+  xbackbone:
     image: linuxserver/xbackbone:3.8.2
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: xbackbone
   description:
     en_US: Xbackbone is a simple, self-hosted, lightweight PHP file manager that support
       the instant sharing tool ShareX and *NIX systems. It supports uploading and

@@ -1,6 +1,6 @@
 name: linuxserver-rpcs3
 services:
-  app:
+  rpcs3:
     image: linuxserver/rpcs3:version-build-3aac7d776dfe91596dccd7b3c6fa2419b5044611
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: rpcs3
   description:
     en_US: RPCS3 is a multi-platform open-source Sony PlayStation 3 emulator and debugger
       written in C++ for Windows, Linux, macOS and FreeBSD.

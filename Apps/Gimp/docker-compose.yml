@@ -1,6 +1,6 @@
 name: linuxserver-gimp
 services:
-  app:
+  gimp:
     image: linuxserver/gimp:version-22638545
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: gimp
   description:
     en_US: GIMP is a free and open-source raster graphics editor used for image manipulation
       (retouching) and image editing, free-form drawing, transcoding between different

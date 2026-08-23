@@ -1,6 +1,6 @@
 name: linuxserver-manyfold
 services:
-  app:
+  manyfold:
     image: linuxserver/manyfold:0.147.2
     restart: unless-stopped
     environment:
@@ -50,7 +50,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: manyfold
   description:
     en_US: Manyfold is an open source, self-hosted web application for managing a
       collection of 3D models, particularly focused on 3D printing.

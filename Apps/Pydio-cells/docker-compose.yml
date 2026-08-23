@@ -1,6 +1,6 @@
 name: linuxserver-pydio-cells
 services:
-  app:
+  pydio-cells:
     image: linuxserver/pydio-cells:5.0.2
     restart: unless-stopped
     environment:
@@ -43,7 +43,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: pydio-cells
   description:
     en_US: Pydio-cells is the nextgen file sharing platform for organizations. It
       is a full rewrite of the Pydio project using the Go language following a micro-service

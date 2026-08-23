@@ -1,6 +1,6 @@
 name: linuxserver-sabnzbd
 services:
-  app:
+  sabnzbd:
     image: linuxserver/sabnzbd:5.1.1
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: sabnzbd
   description:
     en_US: Sabnzbd makes Usenet as simple and streamlined as possible by automating
       everything we can. All you have to do is add an .nzb. SABnzbd takes over from

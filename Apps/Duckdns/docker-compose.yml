@@ -1,6 +1,6 @@
 name: linuxserver-duckdns
 services:
-  app:
+  duckdns:
     image: linuxserver/duckdns:version-af6dcae5
     restart: unless-stopped
     environment:
@@ -55,7 +55,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: duckdns
   description:
     en_US: Duckdns is a free service which will point a DNS (sub domains of duckdns.org)
       to an IP of your choice. The service is completely free, and doesn't require

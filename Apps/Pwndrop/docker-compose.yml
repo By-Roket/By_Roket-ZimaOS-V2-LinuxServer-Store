@@ -1,6 +1,6 @@
 name: linuxserver-pwndrop
 services:
-  app:
+  pwndrop:
     image: linuxserver/pwndrop:1.0.1
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: pwndrop
   description:
     en_US: Pwndrop is a self-deployable file hosting service for sending out red teaming
       payloads or securely sharing your private files over HTTP and WebDAV.

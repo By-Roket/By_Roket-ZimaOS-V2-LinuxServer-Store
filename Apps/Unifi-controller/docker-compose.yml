@@ -1,6 +1,6 @@
 name: linuxserver-unifi-controller
 services:
-  app:
+  unifi-controller:
     image: linuxserver/unifi-controller:8.0.24
     restart: unless-stopped
     environment:
@@ -87,7 +87,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: unifi-controller
   description:
     en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/unifi-controller/'
   tagline:

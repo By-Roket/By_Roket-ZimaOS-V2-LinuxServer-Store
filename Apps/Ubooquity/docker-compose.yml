@@ -1,6 +1,6 @@
 name: linuxserver-ubooquity
 services:
-  app:
+  ubooquity:
     image: linuxserver/ubooquity:3.1.0
     restart: unless-stopped
     environment:
@@ -48,7 +48,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: ubooquity
   description:
     en_US: Ubooquity is a free, lightweight and easy-to-use home server for your comics
       and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader,

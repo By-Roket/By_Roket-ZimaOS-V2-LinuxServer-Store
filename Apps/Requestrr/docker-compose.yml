@@ -1,6 +1,6 @@
 name: linuxserver-requestrr
 services:
-  app:
+  requestrr:
     image: linuxserver/requestrr:2.1.2
     restart: unless-stopped
     environment:
@@ -39,7 +39,7 @@ x-casaos:
   - amd64
   - arm
   - arm64
-  main: app
+  main: requestrr
   description:
     en_US: 'Visit homepage: https://github.com/orgs/linuxserver/packages/container/package/requestrr'
   tagline:

@@ -1,6 +1,6 @@
 name: linuxserver-wireshark
 services:
-  app:
+  wireshark:
     image: linuxserver/wireshark:4.6.6
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: wireshark
   description:
     en_US: Wireshark is the world’s foremost and widely-used network protocol analyzer.
       It lets you see what’s happening on your network at a microscopic level and

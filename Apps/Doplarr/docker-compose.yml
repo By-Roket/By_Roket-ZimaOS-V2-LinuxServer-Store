@@ -1,6 +1,6 @@
 name: linuxserver-doplarr
 services:
-  app:
+  doplarr:
     image: linuxserver/doplarr:3.8.0
     restart: unless-stopped
     environment:
@@ -107,7 +107,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: doplarr
   description:
     en_US: Doplarr is an *arr request bot for Discord.'
   tagline:

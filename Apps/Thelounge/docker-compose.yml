@@ -1,6 +1,6 @@
 name: linuxserver-thelounge
 services:
-  app:
+  thelounge:
     image: linuxserver/thelounge:4.5.2
     restart: unless-stopped
     environment:
@@ -32,7 +32,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: thelounge
   description:
     en_US: Thelounge (a fork of shoutIRC) is a web IRC client that you host on your
       own server.

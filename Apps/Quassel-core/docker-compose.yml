@@ -1,6 +1,6 @@
 name: linuxserver-quassel-core
 services:
-  app:
+  quassel-core:
     image: linuxserver/quassel-core:0.14.0
     restart: unless-stopped
     environment:
@@ -37,7 +37,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: quassel-core
   description:
     en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/quassel-core/'
   tagline:

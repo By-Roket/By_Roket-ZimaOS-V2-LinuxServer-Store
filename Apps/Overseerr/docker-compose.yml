@@ -1,6 +1,6 @@
 name: linuxserver-overseerr
 services:
-  app:
+  overseerr:
     image: linuxserver/overseerr:1.33.2
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: overseerr
   description:
     en_US: 'Visit homepage: https://github.com/orgs/linuxserver/packages/container/package/overseerr'
   tagline:

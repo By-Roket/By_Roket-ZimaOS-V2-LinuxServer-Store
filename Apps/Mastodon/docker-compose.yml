@@ -1,6 +1,6 @@
 name: linuxserver-mastodon
 services:
-  app:
+  mastodon:
     image: linuxserver/mastodon:4.7.0
     restart: unless-stopped
     environment:
@@ -204,7 +204,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: mastodon
   description:
     en_US: Mastodon is a free, open-source social network server based on ActivityPub
       where users can follow friends and discover new ones..

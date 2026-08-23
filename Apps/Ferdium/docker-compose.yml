@@ -1,6 +1,6 @@
 name: linuxserver-ferdium
 services:
-  app:
+  ferdium:
     image: linuxserver/ferdium:7.2.1
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: ferdium
   description:
     en_US: Ferdium is a desktop app that helps you organize how you use your favourite
       apps by combining them into one application.

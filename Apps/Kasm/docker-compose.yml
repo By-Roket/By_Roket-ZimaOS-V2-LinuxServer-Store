@@ -1,6 +1,6 @@
 name: linuxserver-kasm
 services:
-  app:
+  kasm:
     image: linuxserver/kasm:1.19.0
     restart: unless-stopped
     environment:
@@ -46,7 +46,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: kasm
   description:
     en_US: Kasm Workspaces is a docker container streaming platform for delivering
       browser-based access to desktops, applications, and web services. Kasm uses

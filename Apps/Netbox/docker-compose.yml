@@ -1,6 +1,6 @@
 name: linuxserver-netbox
 services:
-  app:
+  netbox:
     image: linuxserver/netbox:4.6.8
     restart: unless-stopped
     environment:
@@ -128,7 +128,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: netbox
   description:
     en_US: Netbox is an IP address management (IPAM) and data center infrastructure
       management (DCIM) tool. Initially conceived by the network engineering team

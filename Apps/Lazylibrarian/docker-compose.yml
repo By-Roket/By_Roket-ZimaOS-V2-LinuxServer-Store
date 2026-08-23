@@ -1,6 +1,6 @@
 name: linuxserver-lazylibrarian
 services:
-  app:
+  lazylibrarian:
     image: linuxserver/lazylibrarian:version-d6905f7e
     restart: unless-stopped
     environment:
@@ -43,7 +43,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: lazylibrarian
   description:
     en_US: Lazylibrarian is a program to follow authors and grab metadata for all
       your digital reading needs. It uses a combination of Goodreads Librarything

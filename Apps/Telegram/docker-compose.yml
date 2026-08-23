@@ -1,6 +1,6 @@
 name: linuxserver-telegram
 services:
-  app:
+  telegram:
     image: linuxserver/telegram:7.0.9
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: telegram
   description:
     en_US: Telegram is a cloud-based mobile and desktop messaging app.
   tagline:

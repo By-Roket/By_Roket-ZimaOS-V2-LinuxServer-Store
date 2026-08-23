@@ -1,6 +1,6 @@
 name: linuxserver-blender
 services:
-  app:
+  blender:
     image: linuxserver/blender:5.2.0
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: blender
   description:
     en_US: Blender is a free and open-source 3D computer graphics software toolset
       used for creating animated films, visual effects, art, 3D printed models, motion

@@ -1,6 +1,6 @@
 name: linuxserver-speedtest-tracker
 services:
-  app:
+  speedtest-tracker:
     image: linuxserver/speedtest-tracker:1.15.0
     restart: unless-stopped
     environment:
@@ -84,7 +84,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: speedtest-tracker
   description:
     en_US: Speedtest-tracker is a self-hosted internet performance tracking application
       that runs speedtest checks against Ookla's Speedtest service.

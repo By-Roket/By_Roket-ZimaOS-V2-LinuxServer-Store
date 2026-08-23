@@ -1,6 +1,6 @@
 name: linuxserver-digikam
 services:
-  app:
+  digikam:
     image: linuxserver/digikam:9.1.0
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: digikam
   description:
     en_US: 'digiKam: Professional Photo Management with the Power of Open Source'
   tagline:

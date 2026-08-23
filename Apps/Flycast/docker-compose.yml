@@ -1,6 +1,6 @@
 name: linuxserver-flycast
 services:
-  app:
+  flycast:
     image: linuxserver/flycast:2.7.20260819
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: flycast
   description:
     en_US: Flycast is a multi-platform Sega Dreamcast, Naomi, Naomi 2, and Atomiswave
       emulator derived from reicast.

@@ -1,6 +1,6 @@
 name: linuxserver-lychee
 services:
-  app:
+  lychee:
     image: linuxserver/lychee:7.7.4
     restart: unless-stopped
     environment:
@@ -74,7 +74,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: lychee
   description:
     en_US: Lychee is a free photo-management tool, which runs on your server or web-space.
       Installing is a matter of seconds. Upload, manage and share photos like from

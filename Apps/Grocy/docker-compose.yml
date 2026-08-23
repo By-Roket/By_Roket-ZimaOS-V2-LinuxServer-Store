@@ -1,6 +1,6 @@
 name: linuxserver-grocy
 services:
-  app:
+  grocy:
     image: linuxserver/grocy:4.6.0
     restart: unless-stopped
     environment:
@@ -32,7 +32,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: grocy
   description:
     en_US: 'Grocy is an ERP system for your kitchen! Cut down on food waste, and manage
       your chores with this brilliant utility. Keep track of your purchases, how much

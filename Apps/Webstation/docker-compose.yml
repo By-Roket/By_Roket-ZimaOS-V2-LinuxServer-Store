@@ -1,6 +1,6 @@
 name: linuxserver-webstation
 services:
-  app:
+  webstation:
     image: linuxserver/webstation:0.5.0-romm
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: webstation
   description:
     en_US: Webstation is a web native emulation focused LXQt desktop based on Ubuntu.
   tagline:

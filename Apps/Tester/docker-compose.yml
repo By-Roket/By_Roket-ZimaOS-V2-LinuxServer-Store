@@ -1,6 +1,6 @@
 name: linuxserver-tester
 services:
-  app:
+  tester:
     image: linuxserver/tester:version-66f677b0
     restart: unless-stopped
     environment:
@@ -18,7 +18,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: tester
   description:
     en_US: This internal tool is used as a desktop sandbox in our CI process to grab
       a screenshot of a hopefully functional endpoint

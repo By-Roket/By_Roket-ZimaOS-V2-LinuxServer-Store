@@ -1,6 +1,6 @@
 name: linuxserver-brave
 services:
-  app:
+  brave:
     image: linuxserver/brave:1.93.138
     restart: unless-stopped
     environment:
@@ -35,7 +35,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: brave
   description:
     en_US: The Brave browser is a fast, private and secure web browser for PC, Mac
       and mobile.

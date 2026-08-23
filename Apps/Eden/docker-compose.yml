@@ -1,6 +1,6 @@
 name: linuxserver-eden
 services:
-  app:
+  eden:
     image: linuxserver/eden:0.2.1
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: eden
   description:
     en_US: Eden is an experimental open-source emulator for the Nintendo Switch, built
       with performance and stability in mind.

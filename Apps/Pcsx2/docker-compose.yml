@@ -1,6 +1,6 @@
 name: linuxserver-pcsx2
 services:
-  app:
+  pcsx2:
     image: linuxserver/pcsx2:2.6.3
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
 x-casaos:
   architectures:
   - amd64
-  main: app
+  main: pcsx2
   description:
     en_US: PCSX2 is an open source PS2 Emulator.
   tagline:

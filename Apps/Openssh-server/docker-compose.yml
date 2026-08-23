@@ -1,6 +1,6 @@
 name: linuxserver-openssh-server
 services:
-  app:
+  openssh-server:
     image: linuxserver/openssh-server:version-10.3_p1-r0
     restart: unless-stopped
     environment:
@@ -80,7 +80,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: openssh-server
   description:
     en_US: Openssh-server is a sandboxed environment that allows ssh access without
       giving keys to the entire server. Giving ssh access via private key often means

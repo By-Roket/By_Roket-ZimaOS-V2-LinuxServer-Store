@@ -1,6 +1,6 @@
 name: linuxserver-hishtory-server
 services:
-  app:
+  hishtory-server:
     image: linuxserver/hishtory-server:0.335.20260821
     restart: unless-stopped
     environment:
@@ -42,7 +42,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: hishtory-server
   description:
     en_US: hiSHtory is a better shell history. It stores your shell history in context
       (what directory you ran the command in, whether it succeeded or failed, how

@@ -1,6 +1,6 @@
 name: linuxserver-rsnapshot
 services:
-  app:
+  rsnapshot:
     image: linuxserver/rsnapshot:1.4.5
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: rsnapshot
   description:
     en_US: Rsnapshot is a filesystem snapshot utility based on rsync. rsnapshot makes
       it easy to make periodic snapshots of local machines, and remote machines over

@@ -1,6 +1,6 @@
 name: linuxserver-netbootxyz
 services:
-  app:
+  netbootxyz:
     image: linuxserver/netbootxyz:0.7.3
     restart: unless-stopped
     environment:
@@ -77,7 +77,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: netbootxyz
   description:
     en_US: 'Visit homepage: https://hub.docker.com/r/linuxserver/netbootxyz/'
   tagline:

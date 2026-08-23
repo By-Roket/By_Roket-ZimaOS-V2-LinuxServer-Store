@@ -1,6 +1,6 @@
 name: linuxserver-nginx
 services:
-  app:
+  nginx:
     image: linuxserver/nginx:1.30.4
     restart: unless-stopped
     environment:
@@ -46,7 +46,7 @@ x-casaos:
   architectures:
   - amd64
   - arm64
-  main: app
+  main: nginx
   description:
     en_US: Nginx is an HTTP web server, reverse proxy, content cache, load balancer,
       TCP/UDP proxy server, and mail proxy server.
