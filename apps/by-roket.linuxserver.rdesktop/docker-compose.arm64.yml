@@ -13,14 +13,15 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/rdesktop/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
         source: /var/run/docker.sock
         target: /var/run/docker.sock
       - type: bind
-        source: /DATA/AppData/rdesktop/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: rdesktop-by-roket
 x-casaos:
   main: rdesktop
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.rdesktop/assets/icon.png

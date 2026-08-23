@@ -16,11 +16,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/manyfold/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/manyfold/libraries
+        source: /DATA/AppData/$AppID/libraries
         target: /libraries
+    container_name: manyfold-by-roket
 x-casaos:
   main: manyfold
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.manyfold/assets/icon.png

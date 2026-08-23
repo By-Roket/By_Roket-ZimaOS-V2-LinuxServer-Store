@@ -16,8 +16,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/melonds/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: melonds-by-roket
 x-casaos:
   main: melonds
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.melonds/assets/icon.png

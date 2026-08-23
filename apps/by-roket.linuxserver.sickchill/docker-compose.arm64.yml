@@ -13,14 +13,15 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/sickchill/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/sickchill/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
       - type: bind
-        source: /DATA/AppData/sickchill/tv
+        source: /DATA/AppData/$AppID/tv
         target: /tv
+    container_name: sickchill-by-roket
 x-casaos:
   main: sickchill
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sickchill/assets/icon.png

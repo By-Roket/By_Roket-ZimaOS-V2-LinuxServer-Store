@@ -13,11 +13,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/projectsend/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/projectsend/data
+        source: /DATA/AppData/$AppID/data
         target: /data
+    container_name: projectsend-by-roket
 x-casaos:
   main: projectsend
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.projectsend/assets/icon.png

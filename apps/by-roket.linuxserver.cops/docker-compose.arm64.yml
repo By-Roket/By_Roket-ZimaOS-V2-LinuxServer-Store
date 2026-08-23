@@ -16,11 +16,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/cops/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/cops/books
+        source: /DATA/AppData/$AppID/books
         target: /books
+    container_name: cops-by-roket
 x-casaos:
   main: cops
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.cops/assets/icon.png

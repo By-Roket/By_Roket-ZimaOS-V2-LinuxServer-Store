@@ -13,14 +13,15 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/lidarr/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/lidarr/music
+        source: /DATA/AppData/$AppID/music
         target: /music
       - type: bind
-        source: /DATA/AppData/lidarr/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
+    container_name: lidarr-by-roket
 x-casaos:
   main: lidarr
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lidarr/assets/icon.png

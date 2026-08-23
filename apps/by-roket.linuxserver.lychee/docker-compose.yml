@@ -22,11 +22,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/lychee/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/lychee/pictures
+        source: /DATA/AppData/$AppID/pictures
         target: /pictures
+    container_name: lychee-by-roket
 x-casaos:
   main: lychee
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lychee/assets/icon.png

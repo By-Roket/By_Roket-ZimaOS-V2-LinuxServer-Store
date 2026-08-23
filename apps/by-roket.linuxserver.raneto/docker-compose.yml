@@ -13,8 +13,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/raneto/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: raneto-by-roket
 x-casaos:
   main: raneto
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.raneto/assets/icon.png

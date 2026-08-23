@@ -14,8 +14,9 @@ services:
         protocol: udp
     volumes:
       - type: bind
-        source: /DATA/AppData/luanti/config/.minetest
+        source: /DATA/AppData/$AppID/config/.minetest
         target: /config/.minetest
+    container_name: luanti-by-roket
 x-casaos:
   main: luanti
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.luanti/assets/icon.png

@@ -14,14 +14,15 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/lazylibrarian/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/lazylibrarian/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
       - type: bind
-        source: /DATA/AppData/lazylibrarian/books
+        source: /DATA/AppData/$AppID/books
         target: /books
+    container_name: lazylibrarian-by-roket
 x-casaos:
   main: lazylibrarian
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lazylibrarian/assets/icon.png

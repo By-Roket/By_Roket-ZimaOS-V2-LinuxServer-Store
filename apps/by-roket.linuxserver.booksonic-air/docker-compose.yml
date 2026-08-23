@@ -14,17 +14,18 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/booksonic-air/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/booksonic-air/audiobooks
+        source: /DATA/AppData/$AppID/audiobooks
         target: /audiobooks
       - type: bind
-        source: /DATA/AppData/booksonic-air/podcasts
+        source: /DATA/AppData/$AppID/podcasts
         target: /podcasts
       - type: bind
-        source: /DATA/AppData/booksonic-air/othermedia
+        source: /DATA/AppData/$AppID/othermedia
         target: /othermedia
+    container_name: booksonic-air-by-roket
 x-casaos:
   main: booksonic-air
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.booksonic-air/assets/icon.png

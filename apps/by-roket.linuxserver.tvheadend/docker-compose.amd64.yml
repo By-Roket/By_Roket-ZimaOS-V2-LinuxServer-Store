@@ -17,14 +17,15 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/tvheadend/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/tvheadend/recordings
+        source: /DATA/AppData/$AppID/recordings
         target: /recordings
     devices:
       - /dev/dri:/dev/dri
       - /dev/dvb:/dev/dvb
+    container_name: tvheadend-by-roket
 x-casaos:
   main: tvheadend
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.tvheadend/assets/icon.png

@@ -16,11 +16,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/doublecommander/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/doublecommander/data
+        source: /DATA/AppData/$AppID/data
         target: /data
+    container_name: doublecommander-by-roket
 x-casaos:
   main: doublecommander
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.doublecommander/assets/icon.png

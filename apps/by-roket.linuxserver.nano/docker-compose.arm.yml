@@ -26,8 +26,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/nano/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: nano-by-roket
 x-casaos:
   main: nano
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nano/assets/icon.png

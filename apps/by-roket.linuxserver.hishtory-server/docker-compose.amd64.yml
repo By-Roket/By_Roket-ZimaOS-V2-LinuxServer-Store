@@ -15,8 +15,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/hishtory-server/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: hishtory-server-by-roket
 x-casaos:
   main: hishtory-server
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.hishtory-server/assets/icon.png

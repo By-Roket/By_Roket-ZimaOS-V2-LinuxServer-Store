@@ -16,11 +16,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/pylon/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/pylon/code
+        source: /DATA/AppData/$AppID/code
         target: /code
+    container_name: pylon-by-roket
 x-casaos:
   main: pylon
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pylon/assets/icon.png

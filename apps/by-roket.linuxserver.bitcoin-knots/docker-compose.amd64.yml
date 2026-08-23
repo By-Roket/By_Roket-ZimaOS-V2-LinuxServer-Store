@@ -19,8 +19,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/bitcoin-knots/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: bitcoin-knots-by-roket
 x-casaos:
   main: bitcoin-knots
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.bitcoin-knots/assets/icon.png

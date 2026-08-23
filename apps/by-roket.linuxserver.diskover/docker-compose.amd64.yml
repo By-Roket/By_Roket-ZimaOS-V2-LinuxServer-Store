@@ -15,11 +15,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/diskover/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/diskover/data
+        source: /DATA/AppData/$AppID/data
         target: /data
+    container_name: diskover-by-roket
 x-casaos:
   main: diskover
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.diskover/assets/icon.png

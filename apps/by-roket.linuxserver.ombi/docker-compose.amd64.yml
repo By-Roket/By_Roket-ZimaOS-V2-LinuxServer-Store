@@ -14,8 +14,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/ombi/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: ombi-by-roket
 x-casaos:
   main: ombi
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ombi/assets/icon.png

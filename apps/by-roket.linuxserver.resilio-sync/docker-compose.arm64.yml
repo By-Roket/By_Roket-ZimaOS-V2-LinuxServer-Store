@@ -16,14 +16,15 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/resilio-sync/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/resilio-sync/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
       - type: bind
-        source: /DATA/AppData/resilio-sync/sync
+        source: /DATA/AppData/$AppID/sync
         target: /sync
+    container_name: resilio-sync-by-roket
 x-casaos:
   main: resilio-sync
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.resilio-sync/assets/icon.png

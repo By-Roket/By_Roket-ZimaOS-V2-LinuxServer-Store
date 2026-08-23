@@ -14,8 +14,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/pwndrop/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: pwndrop-by-roket
 x-casaos:
   main: pwndrop
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pwndrop/assets/icon.png

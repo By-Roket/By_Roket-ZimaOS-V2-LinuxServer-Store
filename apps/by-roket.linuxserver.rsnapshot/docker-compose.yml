@@ -13,14 +13,15 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/rsnapshot/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/rsnapshot/.snapshots
+        source: /DATA/AppData/$AppID/.snapshots
         target: /.snapshots
       - type: bind
-        source: /DATA/AppData/rsnapshot/data
+        source: /DATA/AppData/$AppID/data
         target: /data
+    container_name: rsnapshot-by-roket
 x-casaos:
   main: rsnapshot
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.rsnapshot/assets/icon.png

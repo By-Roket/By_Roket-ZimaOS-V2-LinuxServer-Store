@@ -13,14 +13,15 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/sickgear/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/sickgear/tv
+        source: /DATA/AppData/$AppID/tv
         target: /tv
       - type: bind
-        source: /DATA/AppData/sickgear/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
+    container_name: sickgear-by-roket
 x-casaos:
   main: sickgear
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sickgear/assets/icon.png

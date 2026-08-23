@@ -15,11 +15,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/nzbget/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/nzbget/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
+    container_name: nzbget-by-roket
 x-casaos:
   main: nzbget
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nzbget/assets/icon.png

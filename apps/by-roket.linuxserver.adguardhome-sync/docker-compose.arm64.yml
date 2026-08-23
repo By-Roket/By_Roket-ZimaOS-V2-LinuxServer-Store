@@ -14,8 +14,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/adguardhome-sync/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: adguardhome-sync-by-roket
 x-casaos:
   main: adguardhome-sync
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.adguardhome-sync/assets/icon.png

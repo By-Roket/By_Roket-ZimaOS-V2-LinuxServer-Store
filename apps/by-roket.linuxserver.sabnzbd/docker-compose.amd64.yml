@@ -13,14 +13,15 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/sabnzbd/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/sabnzbd/incomplete-downloads
+        source: /DATA/AppData/$AppID/incomplete-downloads
         target: /incomplete-downloads
       - type: bind
-        source: /DATA/AppData/sabnzbd/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
+    container_name: sabnzbd-by-roket
 x-casaos:
   main: sabnzbd
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sabnzbd/assets/icon.png

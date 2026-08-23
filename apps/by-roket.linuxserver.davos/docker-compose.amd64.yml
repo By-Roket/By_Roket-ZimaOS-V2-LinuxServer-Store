@@ -13,11 +13,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/davos/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/davos/download
+        source: /DATA/AppData/$AppID/download
         target: /download
+    container_name: davos-by-roket
 x-casaos:
   main: davos
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.davos/assets/icon.png

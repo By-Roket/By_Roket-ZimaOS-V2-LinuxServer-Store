@@ -9,6 +9,7 @@ services:
       - target: 3000
         published: 3000
         protocol: tcp
+    container_name: tester-by-roket
 x-casaos:
   main: tester
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.tester/assets/icon

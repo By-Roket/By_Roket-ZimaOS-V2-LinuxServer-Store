@@ -18,8 +18,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/fleet/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: fleet-by-roket
 x-casaos:
   main: fleet
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.fleet/assets/icon.png

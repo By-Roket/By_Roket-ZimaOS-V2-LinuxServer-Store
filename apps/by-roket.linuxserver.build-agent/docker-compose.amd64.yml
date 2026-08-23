@@ -13,8 +13,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/build-agent/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: build-agent-by-roket
 x-casaos:
   main: build-agent
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.build-agent/assets/icon.png

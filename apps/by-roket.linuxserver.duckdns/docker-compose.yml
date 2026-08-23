@@ -17,11 +17,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/duckdns/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/duckdns/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: duckdns-by-roket
 x-casaos:
   main: duckdns
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.duckdns/assets/icon.png

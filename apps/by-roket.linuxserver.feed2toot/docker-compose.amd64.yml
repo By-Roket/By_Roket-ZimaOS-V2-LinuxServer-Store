@@ -10,8 +10,9 @@ services:
       FEED_LIMIT: ''
     volumes:
       - type: bind
-        source: /DATA/AppData/feed2toot/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: feed2toot-by-roket
 x-casaos:
   main: feed2toot
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.feed2toot/assets/icon.png

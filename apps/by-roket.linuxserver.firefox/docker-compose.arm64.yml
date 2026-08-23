@@ -17,8 +17,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/firefox/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: firefox-by-roket
 x-casaos:
   main: firefox
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.firefox/assets/icon.png

@@ -14,11 +14,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/apprise-api/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/apprise-api/attachments
+        source: /DATA/AppData/$AppID/attachments
         target: /attachments
+    container_name: apprise-api-by-roket
 x-casaos:
   main: apprise-api
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.apprise-api/assets/icon.png

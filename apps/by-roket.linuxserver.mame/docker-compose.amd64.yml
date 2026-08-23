@@ -16,11 +16,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/mame/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/mame/mame:ro
+        source: /DATA/AppData/$AppID/mame:ro
         target: /mame:ro
+    container_name: mame-by-roket
 x-casaos:
   main: mame
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mame/assets/icon.png

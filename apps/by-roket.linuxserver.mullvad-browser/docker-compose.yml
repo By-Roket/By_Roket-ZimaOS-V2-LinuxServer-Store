@@ -17,7 +17,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/mullvad-browser/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
         source: /DATA/Downloads
@@ -25,6 +25,7 @@ services:
     cap_add:
       - NET_ADMIN
     shm_size: 1gb
+    container_name: mullvad-browser-by-roket
 x-casaos:
   main: mullvad-browser
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mullvad-browser/assets/icon.png

@@ -17,11 +17,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/openvscode-server/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
         source: /
         target: /casaos
+    container_name: openvscode-server-by-roket
 x-casaos:
   main: openvscode-server
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.openvscode-server/assets/icon.png

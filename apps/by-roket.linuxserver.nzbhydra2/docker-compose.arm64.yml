@@ -13,11 +13,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/nzbhydra2/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/nzbhydra2/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
+    container_name: nzbhydra2-by-roket
 x-casaos:
   main: nzbhydra2
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nzbhydra2/assets/icon.png

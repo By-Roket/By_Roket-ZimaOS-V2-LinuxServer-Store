@@ -21,11 +21,12 @@ services:
         protocol: udp
     volumes:
       - type: bind
-        source: /DATA/AppData/qbittorrent/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/qbittorrent/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
+    container_name: qbittorrent-by-roket
 x-casaos:
   main: qbittorrent
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.qbittorrent/assets/icon.png

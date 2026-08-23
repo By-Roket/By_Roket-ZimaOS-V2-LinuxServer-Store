@@ -13,14 +13,15 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/headphones/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/headphones/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
       - type: bind
-        source: /DATA/AppData/headphones/music
+        source: /DATA/AppData/$AppID/music
         target: /music
+    container_name: headphones-by-roket
 x-casaos:
   main: headphones
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.headphones/assets/icon.png

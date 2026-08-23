@@ -13,11 +13,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/webgrabplus/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/webgrabplus/data
+        source: /DATA/AppData/$AppID/data
         target: /data
+    container_name: webgrabplus-by-roket
 x-casaos:
   main: webgrabplus
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.webgrabplus/assets/icon.jpg

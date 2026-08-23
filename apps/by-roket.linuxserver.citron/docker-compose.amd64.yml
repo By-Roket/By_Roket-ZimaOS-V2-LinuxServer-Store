@@ -18,6 +18,7 @@ services:
       - type: bind
         source: /srv/lsio/citron/config
         target: /config
+    container_name: citron-by-roket
 x-casaos:
   main: citron
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.citron/assets/icon.png

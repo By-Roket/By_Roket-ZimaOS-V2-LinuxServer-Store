@@ -14,8 +14,9 @@ services:
       PMM_NO_MISSING: ''
     volumes:
       - type: bind
-        source: /DATA/AppData/plex-meta-manager/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: plex-meta-manager-by-roket
 x-casaos:
   main: plex-meta-manager
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.plex-meta-manager/assets/icon.png

@@ -16,8 +16,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/lm-studio/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: lm-studio-by-roket
 x-casaos:
   main: lm-studio
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lm-studio/assets/icon.png

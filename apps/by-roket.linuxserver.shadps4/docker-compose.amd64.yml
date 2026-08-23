@@ -16,8 +16,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/shadps4/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: shadps4-by-roket
 x-casaos:
   main: shadps4
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.shadps4/assets/icon.png

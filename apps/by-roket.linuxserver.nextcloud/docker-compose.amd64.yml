@@ -16,11 +16,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/nextcloud/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/nextcloud/data
+        source: /DATA/AppData/$AppID/data
         target: /data
+    container_name: nextcloud-by-roket
 x-casaos:
   main: nextcloud
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nextcloud/assets/icon.png

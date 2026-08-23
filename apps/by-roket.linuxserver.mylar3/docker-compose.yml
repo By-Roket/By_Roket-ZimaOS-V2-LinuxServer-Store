@@ -13,14 +13,15 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/mylar3/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/mylar3/comics
+        source: /DATA/AppData/$AppID/comics
         target: /comics
       - type: bind
-        source: /DATA/AppData/mylar3/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
+    container_name: mylar3-by-roket
 x-casaos:
   main: mylar3
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mylar3/assets/icon.png

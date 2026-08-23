@@ -13,8 +13,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/tautulli/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: tautulli-by-roket
 x-casaos:
   main: tautulli
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.tautulli/assets/icon.png

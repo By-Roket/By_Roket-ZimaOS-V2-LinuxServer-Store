@@ -46,8 +46,9 @@ services:
         protocol: udp
     volumes:
       - type: bind
-        source: /DATA/AppData/unifi-network-application/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: unifi-network-application-by-roket
 x-casaos:
   main: unifi-network-application
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.unifi-network-application/assets/icon.png

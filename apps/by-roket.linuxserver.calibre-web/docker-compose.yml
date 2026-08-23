@@ -15,11 +15,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/calibre-web/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/calibre-web/books
+        source: /DATA/AppData/$AppID/books
         target: /books
+    container_name: calibre-web-by-roket
 x-casaos:
   main: calibre-web
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.calibre-web/assets/icon.png

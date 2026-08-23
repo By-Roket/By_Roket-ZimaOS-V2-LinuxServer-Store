@@ -16,11 +16,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/smokeping/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/smokeping/data
+        source: /DATA/AppData/$AppID/data
         target: /data
+    container_name: smokeping-by-roket
 x-casaos:
   main: smokeping
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.smokeping/assets/icon.png

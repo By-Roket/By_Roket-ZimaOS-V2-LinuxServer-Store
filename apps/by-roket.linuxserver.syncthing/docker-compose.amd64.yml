@@ -22,14 +22,15 @@ services:
         protocol: udp
     volumes:
       - type: bind
-        source: /DATA/AppData/syncthing/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/syncthing/data1
+        source: /DATA/AppData/$AppID/data1
         target: /data1
       - type: bind
-        source: /DATA/AppData/syncthing/data2
+        source: /DATA/AppData/$AppID/data2
         target: /data2
+    container_name: syncthing-by-roket
 x-casaos:
   main: syncthing
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.syncthing/assets/icon.png

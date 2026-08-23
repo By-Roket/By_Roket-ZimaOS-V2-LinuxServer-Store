@@ -18,11 +18,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/endlessh/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/endlessh/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: endlessh-by-roket
 x-casaos:
   main: endlessh
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.endlessh/assets/icon.png

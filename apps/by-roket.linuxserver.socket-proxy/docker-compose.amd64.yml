@@ -13,8 +13,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/socket-proxy/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: socket-proxy-by-roket
 x-casaos:
   main: socket-proxy
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.socket-proxy/assets/icon.png

@@ -8,6 +8,7 @@ services:
       - target: 80
         published: 80
         protocol: tcp
+    container_name: nano-wallet-by-roket
 x-casaos:
   main: nano-wallet
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nano-wallet/assets/icon.png

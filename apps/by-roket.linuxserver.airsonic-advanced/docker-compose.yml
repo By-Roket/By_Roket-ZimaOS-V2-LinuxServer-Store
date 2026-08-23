@@ -15,20 +15,21 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/airsonic-advanced/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/airsonic-advanced/music
+        source: /DATA/AppData/$AppID/music
         target: /music
       - type: bind
-        source: /DATA/AppData/airsonic-advanced/playlists
+        source: /DATA/AppData/$AppID/playlists
         target: /playlists
       - type: bind
-        source: /DATA/AppData/airsonic-advanced/podcasts
+        source: /DATA/AppData/$AppID/podcasts
         target: /podcasts
       - type: bind
-        source: /DATA/AppData/airsonic-advanced/media
+        source: /DATA/AppData/$AppID/media
         target: /media
+    container_name: airsonic-advanced-by-roket
 x-casaos:
   main: airsonic-advanced
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.airsonic-advanced/assets/icon.png

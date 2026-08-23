@@ -13,14 +13,15 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/beets/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/beets/music
+        source: /DATA/AppData/$AppID/music
         target: /music
       - type: bind
-        source: /DATA/AppData/beets/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
+    container_name: beets-by-roket
 x-casaos:
   main: beets
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.beets/assets/icon.png

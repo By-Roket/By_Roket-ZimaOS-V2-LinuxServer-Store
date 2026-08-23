@@ -13,11 +13,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/piwigo/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/piwigo/gallery
+        source: /DATA/AppData/$AppID/gallery
         target: /gallery
+    container_name: piwigo-by-roket
 x-casaos:
   main: piwigo
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.piwigo/assets/icon.png

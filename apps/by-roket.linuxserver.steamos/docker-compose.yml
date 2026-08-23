@@ -20,7 +20,7 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/steamos/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
         source: /dev/input
@@ -28,6 +28,7 @@ services:
       - type: bind
         source: /run/udev/data
         target: /run/udev/data
+    container_name: steamos-by-roket
 x-casaos:
   main: steamos
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.steamos/assets/icon.png

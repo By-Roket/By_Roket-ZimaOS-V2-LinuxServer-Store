@@ -16,8 +16,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/gitqlient/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: gitqlient-by-roket
 x-casaos:
   main: gitqlient
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.gitqlient/assets/icon.png

@@ -13,8 +13,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/modmanager/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: modmanager-by-roket
 x-casaos:
   main: modmanager
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.modmanager/assets/icon.png

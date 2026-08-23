@@ -13,8 +13,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/ci-debug/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: ci-debug-by-roket
 x-casaos:
   main: ci-debug
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ci-debug/assets/icon.png

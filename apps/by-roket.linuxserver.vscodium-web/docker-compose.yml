@@ -18,8 +18,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/vscodium-web/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: vscodium-web-by-roket
 x-casaos:
   main: vscodium-web
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.vscodium-web/assets/icon.png

@@ -16,11 +16,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/pyload-ng/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/pyload-ng/downloads
+        source: /DATA/AppData/$AppID/downloads
         target: /downloads
+    container_name: pyload-ng-by-roket
 x-casaos:
   main: pyload-ng
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pyload-ng/assets/icon.png

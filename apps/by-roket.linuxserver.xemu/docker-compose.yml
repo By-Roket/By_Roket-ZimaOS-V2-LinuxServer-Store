@@ -16,8 +16,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/xemu/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: xemu-by-roket
 x-casaos:
   main: xemu
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.xemu/assets/icon.png

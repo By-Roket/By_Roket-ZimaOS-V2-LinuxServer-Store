@@ -14,62 +14,63 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/fail2ban/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/fail2ban/var/log:ro
+        source: /DATA/AppData/$AppID/var/log:ro
         target: /var/log:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/airsonic:ro
+        source: /DATA/AppData/$AppID/remotelogs/airsonic:ro
         target: /remotelogs/airsonic:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/apache2:ro
+        source: /DATA/AppData/$AppID/remotelogs/apache2:ro
         target: /remotelogs/apache2:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/authelia:ro
+        source: /DATA/AppData/$AppID/remotelogs/authelia:ro
         target: /remotelogs/authelia:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/emby:ro
+        source: /DATA/AppData/$AppID/remotelogs/emby:ro
         target: /remotelogs/emby:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/filebrowser:ro
+        source: /DATA/AppData/$AppID/remotelogs/filebrowser:ro
         target: /remotelogs/filebrowser:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/homeassistant:ro
+        source: /DATA/AppData/$AppID/remotelogs/homeassistant:ro
         target: /remotelogs/homeassistant:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/lighttpd:ro
+        source: /DATA/AppData/$AppID/remotelogs/lighttpd:ro
         target: /remotelogs/lighttpd:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/nextcloud:ro
+        source: /DATA/AppData/$AppID/remotelogs/nextcloud:ro
         target: /remotelogs/nextcloud:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/nginx:ro
+        source: /DATA/AppData/$AppID/remotelogs/nginx:ro
         target: /remotelogs/nginx:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/nzbget:ro
+        source: /DATA/AppData/$AppID/remotelogs/nzbget:ro
         target: /remotelogs/nzbget:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/overseerr:ro
+        source: /DATA/AppData/$AppID/remotelogs/overseerr:ro
         target: /remotelogs/overseerr:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/prowlarr:ro
+        source: /DATA/AppData/$AppID/remotelogs/prowlarr:ro
         target: /remotelogs/prowlarr:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/radarr:ro
+        source: /DATA/AppData/$AppID/remotelogs/radarr:ro
         target: /remotelogs/radarr:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/sabnzbd:ro
+        source: /DATA/AppData/$AppID/remotelogs/sabnzbd:ro
         target: /remotelogs/sabnzbd:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/sonarr:ro
+        source: /DATA/AppData/$AppID/remotelogs/sonarr:ro
         target: /remotelogs/sonarr:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/unificontroller:ro
+        source: /DATA/AppData/$AppID/remotelogs/unificontroller:ro
         target: /remotelogs/unificontroller:ro
       - type: bind
-        source: /DATA/AppData/fail2ban/remotelogs/vaultwarden:ro
+        source: /DATA/AppData/$AppID/remotelogs/vaultwarden:ro
         target: /remotelogs/vaultwarden:ro
+    container_name: fail2ban-by-roket
 x-casaos:
   main: fail2ban
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.fail2ban/assets/icon.png

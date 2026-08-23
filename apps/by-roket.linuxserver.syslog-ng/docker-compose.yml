@@ -20,11 +20,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/syslog-ng/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
         source: /var/log
         target: /var/log
+    container_name: syslog-ng-by-roket
 x-casaos:
   main: syslog-ng
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.syslog-ng/assets/icon.png

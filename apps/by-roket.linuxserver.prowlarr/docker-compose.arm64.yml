@@ -13,8 +13,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/prowlarr/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: prowlarr-by-roket
 x-casaos:
   main: prowlarr
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.prowlarr/assets/icon.png

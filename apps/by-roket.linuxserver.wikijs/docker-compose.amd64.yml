@@ -19,11 +19,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/wikijs/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/wikijs/data
+        source: /DATA/AppData/$AppID/data
         target: /data
+    container_name: wikijs-by-roket
 x-casaos:
   main: wikijs
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.wikijs/assets/icon.svg

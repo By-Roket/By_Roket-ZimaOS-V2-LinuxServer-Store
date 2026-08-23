@@ -16,8 +16,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/openshot/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: openshot-by-roket
 x-casaos:
   main: openshot
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.openshot/assets/icon.png

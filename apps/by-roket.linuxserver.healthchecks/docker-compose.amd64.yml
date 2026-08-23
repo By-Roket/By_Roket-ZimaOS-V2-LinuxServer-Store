@@ -35,8 +35,9 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/healthchecks/config
+        source: /DATA/AppData/$AppID/config
         target: /config
+    container_name: healthchecks-by-roket
 x-casaos:
   main: healthchecks
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.healthchecks/assets/icon.png

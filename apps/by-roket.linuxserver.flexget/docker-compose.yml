@@ -17,11 +17,12 @@ services:
         protocol: tcp
     volumes:
       - type: bind
-        source: /DATA/AppData/flexget/config
+        source: /DATA/AppData/$AppID/config
         target: /config
       - type: bind
-        source: /DATA/AppData/flexget/data
+        source: /DATA/AppData/$AppID/data
         target: /data
+    container_name: flexget-by-roket
 x-casaos:
   main: flexget
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.flexget/assets/icon.png
