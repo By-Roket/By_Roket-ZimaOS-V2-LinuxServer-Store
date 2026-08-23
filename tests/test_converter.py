@@ -2,6 +2,7 @@
 
 from pathlib import Path
 import sys
+from tempfile import TemporaryDirectory
 import unittest
 
 
@@ -93,6 +94,82 @@ class ComposeNameTests(unittest.TestCase):
     def test_missing_compose_project_name_is_rejected(self):
         with self.assertRaises(ValueError):
             convert_wisdomsky.normalize_compose_name(None)
+
+
+class MainServiceTests(unittest.TestCase):
+    def test_generic_main_service_uses_application_name(self):
+        service = {"image": "linuxserver/freetube:latest"}
+        compose = {"services": {"app": service}}
+        metadata = {"main": "app"}
+
+        convert_wisdomsky.normalize_main_service(compose, metadata, "freetube")
+
+        self.assertEqual(compose["services"], {"freetube": service})
+        self.assertEqual(metadata["main"], "freetube")
+
+    def test_existing_application_service_name_is_preserved(self):
+        service = {"image": "linuxserver/freetube:latest"}
+        compose = {"services": {"freetube": service}}
+        metadata = {"main": "freetube"}
+
+        convert_wisdomsky.normalize_main_service(compose, metadata, "freetube")
+
+        self.assertEqual(compose["services"], {"freetube": service})
+        self.assertEqual(metadata["main"], "freetube")
+
+    def test_other_services_are_preserved_in_their_original_order(self):
+        compose = {"services": {"app": {}, "database": {}}}
+        metadata = {"main": "app"}
+
+        convert_wisdomsky.normalize_main_service(compose, metadata, "freetube")
+
+        self.assertEqual(list(compose["services"]), ["freetube", "database"])
+        self.assertEqual(metadata["main"], "freetube")
+
+    def test_existing_service_name_collision_is_rejected(self):
+        compose = {"services": {"app": {}, "freetube": {}}}
+        metadata = {"main": "app"}
+
+        with self.assertRaisesRegex(ValueError, "already exists"):
+            convert_wisdomsky.normalize_main_service(
+                compose, metadata, "freetube"
+            )
+
+    def test_missing_main_service_is_rejected(self):
+        compose = {"services": {"app": {}}}
+        metadata = {"main": "missing"}
+
+        with self.assertRaisesRegex(ValueError, "not found"):
+            convert_wisdomsky.normalize_main_service(
+                compose, metadata, "freetube"
+            )
+
+    def test_full_conversion_renames_service_and_updates_web_entry(self):
+        with TemporaryDirectory() as directory:
+            app_directory = Path(directory) / "Freetube"
+            app_directory.mkdir()
+            compose_path = app_directory / "docker-compose.yml"
+            compose_path.write_text(
+                "name: linuxserver-freetube\n"
+                "services:\n"
+                "  app:\n"
+                "    image: linuxserver/freetube:latest\n"
+                "    ports:\n"
+                "      - target: 3000\n"
+                "        published: 3000\n"
+                "x-casaos:\n"
+                "  main: app\n",
+                encoding="utf-8",
+            )
+
+            convert_wisdomsky.convert_app(compose_path)
+
+            with compose_path.open("r", encoding="utf-8") as file:
+                converted = convert_wisdomsky.yaml.safe_load(file)
+
+        self.assertEqual(list(converted["services"]), ["freetube"])
+        self.assertEqual(converted["x-casaos"]["main"], "freetube")
+        self.assertEqual(converted["x-casaos"]["port_map"], "3000")
 
 
 class IconTests(unittest.TestCase):

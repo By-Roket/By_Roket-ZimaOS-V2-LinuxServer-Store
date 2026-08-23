@@ -227,6 +227,37 @@ def normalize_compose_name(value):
     return normalized
 
 
+def normalize_main_service(compose, metadata, app_slug):
+    """Name the main Compose service after its ZimaOS application."""
+    services = compose.get("services")
+
+    if not isinstance(services, dict) or not services:
+        raise ValueError("Missing or invalid services section")
+
+    main_service = metadata.get("main")
+
+    if not isinstance(main_service, str) or main_service not in services:
+        raise ValueError(f"Main service '{main_service}' not found")
+
+    if not isinstance(services[main_service], dict):
+        raise ValueError(f"Main service '{main_service}' must be a mapping")
+
+    if main_service == app_slug:
+        return
+
+    if app_slug in services:
+        raise ValueError(
+            f"Cannot rename main service '{main_service}' to "
+            f"'{app_slug}': that service already exists"
+        )
+
+    compose["services"] = {
+        app_slug if service_name == main_service else service_name: service
+        for service_name, service in services.items()
+    }
+    metadata["main"] = app_slug
+
+
 def normalize_app_icons(metadata, app_slug):
     """Replace known broken upstream image links with LinuxServer assets."""
     replacement_name = APP_ICON_OVERRIDES.get(app_slug)
@@ -446,6 +477,7 @@ def convert_app(compose_path):
         raise ValueError("Top-level x-casaos must be a mapping")
 
     app_slug = slugify(app_name)
+    normalize_main_service(compose, metadata, app_slug)
 
     # Stable ID: do not derive it from a Docker version.
     metadata["id"] = f"by-roket.linuxserver.{app_slug}"
