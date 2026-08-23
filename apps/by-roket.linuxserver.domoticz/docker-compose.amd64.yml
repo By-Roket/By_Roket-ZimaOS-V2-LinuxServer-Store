@@ -1,6 +1,6 @@
 name: linuxserver-domoticz
 services:
-  app:
+  domoticz:
     image: linuxserver/domoticz:2023.2.20231129@sha256:29eeac689439899f4d3521273a8bb7cf434de2f3b8300e2abfd368555a099a8f
     restart: unless-stopped
     environment:
@@ -24,7 +24,7 @@ services:
         source: /DATA/AppData/domoticz/config
         target: /config
 x-casaos:
-  main: app
+  main: domoticz
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.domoticz/assets/icon.png
   title:
     en_US: Domoticz

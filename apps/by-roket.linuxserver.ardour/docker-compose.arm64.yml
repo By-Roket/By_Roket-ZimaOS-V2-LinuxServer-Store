@@ -1,6 +1,6 @@
 name: linuxserver-ardour
 services:
-  app:
+  ardour:
     image: linuxserver/ardour:version-2026-06-19@sha256:881a87dfc3cb590c4d2317bb3af919072bf981a36a9e56b331f6f14b1bc46754
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/ardour/config
         target: /config
 x-casaos:
-  main: app
+  main: ardour
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ardour/assets/icon.png
   title:
     en_US: Ardour

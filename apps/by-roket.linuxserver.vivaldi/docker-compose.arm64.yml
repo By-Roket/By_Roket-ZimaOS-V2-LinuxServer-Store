@@ -1,6 +1,6 @@
 name: linuxserver-vivaldi
 services:
-  app:
+  vivaldi:
     image: linuxserver/vivaldi:8.1.4087@sha256:afcf095d15d498ea80b5788fe0cb05595672f2bb4fc42b2fd10a508776fcf161
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/vivaldi/config
         target: /config
 x-casaos:
-  main: app
+  main: vivaldi
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.vivaldi/assets/icon.png
   title:
     en_US: Vivaldi

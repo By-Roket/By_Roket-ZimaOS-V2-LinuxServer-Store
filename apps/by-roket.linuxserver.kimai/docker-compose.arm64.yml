@@ -1,6 +1,6 @@
 name: linuxserver-kimai
 services:
-  app:
+  kimai:
     image: linuxserver/kimai:2.65.0@sha256:beb26ee62914cc340c4b54a9839dcaf50c9b8accc2e11982a2def07c8efa8b2c
     restart: unless-stopped
     environment:
@@ -23,7 +23,7 @@ services:
         source: /DATA/AppData/kimai/config
         target: /config
 x-casaos:
-  main: app
+  main: kimai
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kimai/assets/icon.png
   title:
     en_US: Kimai

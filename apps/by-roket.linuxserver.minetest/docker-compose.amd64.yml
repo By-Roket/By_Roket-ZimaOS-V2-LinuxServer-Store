@@ -1,6 +1,6 @@
 name: linuxserver-minetest
 services:
-  app:
+  minetest:
     image: linuxserver/minetest:5.10.0@sha256:85bb5acc2b000b1a86fb7ec427e5ab8c221ec2d62f6c9c858d01bc886f1a9ab1
     restart: unless-stopped
     environment:
@@ -17,7 +17,7 @@ services:
         source: /DATA/AppData/minetest/config/.minetest
         target: /config/.minetest
 x-casaos:
-  main: app
+  main: minetest
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.minetest/assets/icon.png
   title:
     en_US: Minetest

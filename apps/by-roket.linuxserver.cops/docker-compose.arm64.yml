@@ -1,6 +1,6 @@
 name: linuxserver-cops
 services:
-  app:
+  cops:
     image: linuxserver/cops:4.5.2@sha256:714fe3803567dddb5c61dbfbb4c20bf564532d9fa19b8940dfd724bc71bf035f
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/cops/books
         target: /books
 x-casaos:
-  main: app
+  main: cops
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.cops/assets/icon.png
   title:
     en_US: Cops

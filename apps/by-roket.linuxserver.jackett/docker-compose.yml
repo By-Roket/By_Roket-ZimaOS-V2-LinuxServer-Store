@@ -1,6 +1,6 @@
 name: linuxserver-jackett
 services:
-  app:
+  jackett:
     image: linuxserver/jackett:0.24.2440
     restart: unless-stopped
     environment:
@@ -21,7 +21,7 @@ services:
         source: /DATA/AppData/jackett/downloads
         target: /downloads
 x-casaos:
-  main: app
+  main: jackett
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.jackett/assets/icon.png
   title:
     en_US: Jackett

@@ -1,6 +1,6 @@
 name: linuxserver-kdenlive
 services:
-  app:
+  kdenlive:
     image: linuxserver/kdenlive:26.08.0@sha256:411e08e1e2717fbec2ae38d5239469a7de7714813576171576eec12d66506333
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/kdenlive/config
         target: /config
 x-casaos:
-  main: app
+  main: kdenlive
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kdenlive/assets/icon.png
   title:
     en_US: Kdenlive

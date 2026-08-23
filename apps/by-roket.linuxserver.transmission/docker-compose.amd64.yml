@@ -1,6 +1,6 @@
 name: linuxserver-transmission
 services:
-  app:
+  transmission:
     image: linuxserver/transmission:4.1.3@sha256:5d851a61371e8120b9e1dbe338b4f21802a24c5565598f7e8dd896b9b6a70874
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
         source: /DATA/AppData/transmission/watch
         target: /watch
 x-casaos:
-  main: app
+  main: transmission
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.transmission/assets/icon.png
   title:
     en_US: Transmission

@@ -1,6 +1,6 @@
 name: linuxserver-openvscode-server
 services:
-  app:
+  openvscode-server:
     image: linuxserver/openvscode-server:1.109.5
     restart: unless-stopped
     environment:
@@ -23,7 +23,7 @@ services:
         source: /
         target: /casaos
 x-casaos:
-  main: app
+  main: openvscode-server
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.openvscode-server/assets/icon.png
   title:
     en_US: Openvscode server

@@ -1,6 +1,6 @@
 name: linuxserver-resilio-sync
 services:
-  app:
+  resilio-sync:
     image: linuxserver/resilio-sync:3.1.2
     restart: unless-stopped
     environment:
@@ -25,7 +25,7 @@ services:
         source: /DATA/AppData/resilio-sync/sync
         target: /sync
 x-casaos:
-  main: app
+  main: resilio-sync
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.resilio-sync/assets/icon.png
   title:
     en_US: Resilio sync

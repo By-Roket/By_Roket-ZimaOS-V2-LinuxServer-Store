@@ -1,6 +1,6 @@
 name: linuxserver-ppsspp
 services:
-  app:
+  ppsspp:
     image: linuxserver/ppsspp:1.20.4@sha256:6a99045d9b1641783f41c55fac47b6bca6faf022591289c39fa4522bad8113e8
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/ppsspp/config
         target: /config
 x-casaos:
-  main: app
+  main: ppsspp
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ppsspp/assets/icon.png
   title:
     en_US: Ppsspp

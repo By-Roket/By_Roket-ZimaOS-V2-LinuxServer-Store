@@ -1,6 +1,6 @@
 name: linuxserver-audacity
 services:
-  app:
+  audacity:
     image: linuxserver/audacity:3.7.8@sha256:a79494c2954a73637b21fc72697a0a9d7e299d6b6b079623b2a352b33824f20b
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/audacity/config
         target: /config
 x-casaos:
-  main: app
+  main: audacity
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.audacity/assets/icon.png
   title:
     en_US: Audacity

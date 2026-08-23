@@ -1,6 +1,6 @@
 name: linuxserver-unifi-controller
 services:
-  app:
+  unifi-controller:
     image: linuxserver/unifi-controller:8.0.24@sha256:fcd5d8b13a77a588c79c1b49e5fc9ad08115aa3bb1a3576c589c64908a68845f
     restart: unless-stopped
     environment:
@@ -42,7 +42,7 @@ services:
         source: /DATA/AppData/unifi-controller/config
         target: /config
 x-casaos:
-  main: app
+  main: unifi-controller
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.unifi-controller/assets/icon.png
   title:
     en_US: Unifi controller

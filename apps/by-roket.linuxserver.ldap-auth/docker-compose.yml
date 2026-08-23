@@ -1,6 +1,6 @@
 name: linuxserver-ldap-auth
 services:
-  app:
+  ldap-auth:
     image: linuxserver/ldap-auth:3.4.7
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/ldap-auth/config
         target: /config
 x-casaos:
-  main: app
+  main: ldap-auth
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ldap-auth/assets/icon.png
   title:
     en_US: Ldap auth

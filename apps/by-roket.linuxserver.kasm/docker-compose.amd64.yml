@@ -1,6 +1,6 @@
 name: linuxserver-kasm
 services:
-  app:
+  kasm:
     image: linuxserver/kasm:1.19.0@sha256:66b9f3077804154d353b16a65bb78eb8f045b12e836d81930c874d283d0dfd90
     restart: unless-stopped
     environment:
@@ -29,7 +29,7 @@ services:
         source: /run/udev/data
         target: /run/udev/data
 x-casaos:
-  main: app
+  main: kasm
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kasm/assets/icon.png
   title:
     en_US: Kasm

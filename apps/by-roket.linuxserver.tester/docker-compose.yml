@@ -1,6 +1,6 @@
 name: linuxserver-tester
 services:
-  app:
+  tester:
     image: linuxserver/tester:version-66f677b0
     restart: unless-stopped
     environment:
@@ -10,7 +10,7 @@ services:
         published: 3000
         protocol: tcp
 x-casaos:
-  main: app
+  main: tester
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.tester/assets/icon
   title:
     en_US: Tester

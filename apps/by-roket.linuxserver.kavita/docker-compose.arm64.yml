@@ -1,6 +1,6 @@
 name: linuxserver-kavita
 services:
-  app:
+  kavita:
     image: linuxserver/kavita:0.9.0@sha256:30e6dbb7037283f980244b05deb0bec8f75d6042c641ad78328666d96303d862
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/kavita/data
         target: /data
 x-casaos:
-  main: app
+  main: kavita
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kavita/assets/icon.png
   title:
     en_US: Kavita

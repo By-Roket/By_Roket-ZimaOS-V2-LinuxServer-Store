@@ -1,6 +1,6 @@
 name: linuxserver-gzdoom
 services:
-  app:
+  gzdoom:
     image: linuxserver/gzdoom:4.14.2@sha256:39021e27dd22690269cecf9471863ecb7a5b5ad3568efb227d954eee1affc736
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/gzdoom/config
         target: /config
 x-casaos:
-  main: app
+  main: gzdoom
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.gzdoom/assets/icon.png
   title:
     en_US: Gzdoom

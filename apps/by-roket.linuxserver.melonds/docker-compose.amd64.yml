@@ -1,6 +1,6 @@
 name: linuxserver-melonds
 services:
-  app:
+  melonds:
     image: linuxserver/melonds:1.1.20260816@sha256:2436933cf5cca5ffd05130f0e3b828ec381e41a4c2dc5e074d1c33954a923b70
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/melonds/config
         target: /config
 x-casaos:
-  main: app
+  main: melonds
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.melonds/assets/icon.png
   title:
     en_US: Melonds

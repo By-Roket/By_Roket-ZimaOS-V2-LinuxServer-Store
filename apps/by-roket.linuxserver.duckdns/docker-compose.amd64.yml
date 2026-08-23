@@ -1,6 +1,6 @@
 name: linuxserver-duckdns
 services:
-  app:
+  duckdns:
     image: linuxserver/duckdns:version-af6dcae5@sha256:ecb7fb57396c33f5c8dfb3b4017324922bf02b046b4e5b455ca975c2801d8170
     restart: unless-stopped
     environment:
@@ -23,7 +23,7 @@ services:
         source: /DATA/AppData/duckdns/config
         target: /config
 x-casaos:
-  main: app
+  main: duckdns
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.duckdns/assets/icon.png
   title:
     en_US: Duckdns

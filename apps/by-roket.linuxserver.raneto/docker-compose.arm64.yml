@@ -1,6 +1,6 @@
 name: linuxserver-raneto
 services:
-  app:
+  raneto:
     image: linuxserver/raneto:0.18.1@sha256:95b46845bb942dd6b80596e6a3d83fbf4989f2ace2fe83bfa9a5a9429c22c0e1
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/raneto/config
         target: /config
 x-casaos:
-  main: app
+  main: raneto
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.raneto/assets/icon.png
   title:
     en_US: Raneto

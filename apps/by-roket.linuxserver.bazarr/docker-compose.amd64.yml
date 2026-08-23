@@ -1,6 +1,6 @@
 name: linuxserver-bazarr
 services:
-  app:
+  bazarr:
     image: linuxserver/bazarr:1.6.0@sha256:e2c621e525d6356f34032cddd7deb3978cbaafc4f537e995efe64b5baf3c7548
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/bazarr/tv
         target: /tv
 x-casaos:
-  main: app
+  main: bazarr
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.bazarr/assets/icon.png
   title:
     en_US: Bazarr

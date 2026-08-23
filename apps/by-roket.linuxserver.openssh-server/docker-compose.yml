@@ -1,6 +1,6 @@
 name: linuxserver-openssh-server
 services:
-  app:
+  openssh-server:
     image: linuxserver/openssh-server:version-10.3_p1-r0
     restart: unless-stopped
     environment:
@@ -26,7 +26,7 @@ services:
         source: /DATA/AppData/openssh-server/config
         target: /config
 x-casaos:
-  main: app
+  main: openssh-server
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.openssh-server/assets/icon.png
   title:
     en_US: Openssh server

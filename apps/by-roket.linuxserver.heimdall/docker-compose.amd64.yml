@@ -1,6 +1,6 @@
 name: linuxserver-heimdall
 services:
-  app:
+  heimdall:
     image: linuxserver/heimdall:2.8.2@sha256:dc10227f04c9e6afa49ef305ef87d905481659ce2b3059d51c5e2719d982d292
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/heimdall/config
         target: /config
 x-casaos:
-  main: app
+  main: heimdall
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.heimdall/assets/icon.png
   title:
     en_US: Heimdall

@@ -1,6 +1,6 @@
 name: linuxserver-homeassistant
 services:
-  app:
+  homeassistant:
     image: linuxserver/homeassistant:2026.8.3@sha256:ee635ba757829abe3061b3fb77cf76fa92368d726393ac201c85d5391180fe0d
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/homeassistant/config
         target: /config
 x-casaos:
-  main: app
+  main: homeassistant
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.homeassistant/assets/icon.png
   title:
     en_US: Homeassistant

@@ -1,6 +1,6 @@
 name: linuxserver-pwndrop
 services:
-  app:
+  pwndrop:
     image: linuxserver/pwndrop:1.0.1
     restart: unless-stopped
     environment:
@@ -17,7 +17,7 @@ services:
         source: /DATA/AppData/pwndrop/config
         target: /config
 x-casaos:
-  main: app
+  main: pwndrop
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pwndrop/assets/icon.png
   title:
     en_US: Pwndrop

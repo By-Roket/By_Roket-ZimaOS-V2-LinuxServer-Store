@@ -1,6 +1,6 @@
 name: linuxserver-grocy
 services:
-  app:
+  grocy:
     image: linuxserver/grocy:4.6.0@sha256:0a35d507d1f6698fd74f2fb29d2212e0dcd8b81924e66550b3864c99bedec6dd
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/grocy/config
         target: /config
 x-casaos:
-  main: app
+  main: grocy
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.grocy/assets/icon.png
   title:
     en_US: Grocy

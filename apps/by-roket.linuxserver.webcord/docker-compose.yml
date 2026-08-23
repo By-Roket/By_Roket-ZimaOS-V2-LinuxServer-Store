@@ -1,6 +1,6 @@
 name: linuxserver-webcord
 services:
-  app:
+  webcord:
     image: linuxserver/webcord:4.14.0
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/webcord/config
         target: /config
 x-casaos:
-  main: app
+  main: webcord
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.webcord/assets/icon.png
   title:
     en_US: Webcord

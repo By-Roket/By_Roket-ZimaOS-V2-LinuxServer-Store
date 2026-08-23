@@ -1,6 +1,6 @@
 name: linuxserver-darktable
 services:
-  app:
+  darktable:
     image: linuxserver/darktable:25.6.0@sha256:3c3b59d546fd32a0263d2d566733833496d3ff20ce4c6e0f66acd07de6a74c65
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/darktable/config
         target: /config
 x-casaos:
-  main: app
+  main: darktable
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.darktable/assets/icon.png
   title:
     en_US: Darktable

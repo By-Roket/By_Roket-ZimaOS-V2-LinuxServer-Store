@@ -1,6 +1,6 @@
 name: linuxserver-nginx
 services:
-  app:
+  nginx:
     image: linuxserver/nginx:1.30.4@sha256:1ad2084d57e8a6517d662d6ddcc3d8104d1b832497b8c5bf938f6e4b3f4ea640
     restart: unless-stopped
     environment:
@@ -21,7 +21,7 @@ services:
         source: /DATA/AppData/nginx/config
         target: /config
 x-casaos:
-  main: app
+  main: nginx
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nginx/assets/icon.png
   title:
     en_US: Nginx

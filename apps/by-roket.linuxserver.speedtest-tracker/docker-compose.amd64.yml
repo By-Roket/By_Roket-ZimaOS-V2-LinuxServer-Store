@@ -1,6 +1,6 @@
 name: linuxserver-speedtest-tracker
 services:
-  app:
+  speedtest-tracker:
     image: linuxserver/speedtest-tracker:1.15.0@sha256:a655c75b286f5f2928893f1e9591ba10377910872a675b3559f26ef2bff8a69f
     restart: unless-stopped
     environment:
@@ -28,7 +28,7 @@ services:
         source: /DATA/AppData/speedtest-tracker/config
         target: /config
 x-casaos:
-  main: app
+  main: speedtest-tracker
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.speedtest-tracker/assets/icon.png
   title:
     en_US: Speedtest tracker

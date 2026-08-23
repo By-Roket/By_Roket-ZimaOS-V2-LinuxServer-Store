@@ -1,6 +1,6 @@
 name: linuxserver-firefox
 services:
-  app:
+  firefox:
     image: linuxserver/firefox:1.2404.1@sha256:128ca4352f10494c99958a8f4e0a794d0b2eb4bcec23c4bdba48cc06c83cf534
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/firefox/config
         target: /config
 x-casaos:
-  main: app
+  main: firefox
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.firefox/assets/icon.png
   title:
     en_US: Firefox

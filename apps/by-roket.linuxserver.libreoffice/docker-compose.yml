@@ -1,6 +1,6 @@
 name: linuxserver-libreoffice
 services:
-  app:
+  libreoffice:
     image: linuxserver/libreoffice:25.8.7
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/libreoffice/config
         target: /config
 x-casaos:
-  main: app
+  main: libreoffice
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.libreoffice/assets/icon.png
   title:
     en_US: Libreoffice

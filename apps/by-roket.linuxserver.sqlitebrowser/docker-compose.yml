@@ -1,6 +1,6 @@
 name: linuxserver-sqlitebrowser
 services:
-  app:
+  sqlitebrowser:
     image: linuxserver/sqlitebrowser:3.13.1
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/sqlitebrowser/config
         target: /config
 x-casaos:
-  main: app
+  main: sqlitebrowser
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sqlitebrowser/assets/icon.png
   title:
     en_US: Sqlitebrowser

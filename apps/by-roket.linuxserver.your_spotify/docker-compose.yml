@@ -1,6 +1,6 @@
 name: linuxserver-your_spotify
 services:
-  app:
+  your_spotify:
     image: linuxserver/your_spotify:1.20.0
     restart: unless-stopped
     environment:
@@ -25,7 +25,7 @@ services:
         source: /DATA/AppData/your_spotify/config
         target: /config
 x-casaos:
-  main: app
+  main: your_spotify
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.your_spotify/assets/icon.png
   title:
     en_US: Your_spotify

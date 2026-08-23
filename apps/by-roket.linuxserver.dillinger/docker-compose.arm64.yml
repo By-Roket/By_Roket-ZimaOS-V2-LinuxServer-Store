@@ -1,6 +1,6 @@
 name: linuxserver-dillinger
 services:
-  app:
+  dillinger:
     image: linuxserver/dillinger:3.39.1@sha256:55dc1c65baf136cfff9d0fce5db2597296cf3401ead7ce582ac4d8e5fd842fd1
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/dillinger/config
         target: /config
 x-casaos:
-  main: app
+  main: dillinger
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.dillinger/assets/icon.png
   title:
     en_US: Dillinger

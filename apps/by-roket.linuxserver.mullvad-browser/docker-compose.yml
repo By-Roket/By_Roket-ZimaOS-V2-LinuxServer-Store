@@ -1,6 +1,6 @@
 name: linuxserver-mullvad-browser
 services:
-  app:
+  mullvad-browser:
     image: linuxserver/mullvad-browser:15.0.20
     restart: unless-stopped
     environment:
@@ -26,7 +26,7 @@ services:
       - NET_ADMIN
     shm_size: 1gb
 x-casaos:
-  main: app
+  main: mullvad-browser
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mullvad-browser/assets/icon.png
   title:
     en_US: Mullvad browser

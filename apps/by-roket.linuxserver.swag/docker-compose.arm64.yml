@@ -1,6 +1,6 @@
 name: linuxserver-swag
 services:
-  app:
+  swag:
     image: linuxserver/swag:5.7.0@sha256:1f16eb7dd8580530434b446af63d058bcea748fe807e4708bfae118161e9ed73
     restart: unless-stopped
     environment:
@@ -36,7 +36,7 @@ services:
         source: /DATA/AppData/swag/config
         target: /config
 x-casaos:
-  main: app
+  main: swag
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.swag/assets/icon.gif
   title:
     en_US: Swag

@@ -1,6 +1,6 @@
 name: linuxserver-ubooquity
 services:
-  app:
+  ubooquity:
     image: linuxserver/ubooquity:3.1.0@sha256:55fd3e772d5ac7886aefc2c57aa1fdacda74c275670caf0629b7eefbd2745f55
     restart: unless-stopped
     environment:
@@ -29,7 +29,7 @@ services:
         source: /DATA/AppData/ubooquity/files
         target: /files
 x-casaos:
-  main: app
+  main: ubooquity
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ubooquity/assets/icon.png
   title:
     en_US: Ubooquity

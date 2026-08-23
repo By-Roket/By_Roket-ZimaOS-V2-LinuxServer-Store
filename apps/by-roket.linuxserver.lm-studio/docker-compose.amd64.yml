@@ -1,6 +1,6 @@
 name: linuxserver-lm-studio
 services:
-  app:
+  lm-studio:
     image: linuxserver/lm-studio:2026-08-21-ls22@sha256:85597515869076737941f3c6ac42c474b64af3e1a8802df6affe047ec4d7deeb
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/lm-studio/config
         target: /config
 x-casaos:
-  main: app
+  main: lm-studio
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lm-studio/assets/icon.png
   title:
     en_US: Lm studio

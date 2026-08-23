@@ -1,6 +1,6 @@
 name: linuxserver-ci-debug
 services:
-  app:
+  ci-debug:
     image: linuxserver/ci-debug:933e2702-ls1
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/ci-debug/config
         target: /config
 x-casaos:
-  main: app
+  main: ci-debug
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ci-debug/assets/icon.png
   title:
     en_US: Ci debug

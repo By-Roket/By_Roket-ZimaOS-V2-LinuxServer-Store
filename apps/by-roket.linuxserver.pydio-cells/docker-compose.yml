@@ -1,6 +1,6 @@
 name: linuxserver-pydio-cells
 services:
-  app:
+  pydio-cells:
     image: linuxserver/pydio-cells:5.0.2
     restart: unless-stopped
     environment:
@@ -18,7 +18,7 @@ services:
         source: /DATA/AppData/pydio-cells/config
         target: /config
 x-casaos:
-  main: app
+  main: pydio-cells
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pydio-cells/assets/icon.png
   title:
     en_US: Pydio cells

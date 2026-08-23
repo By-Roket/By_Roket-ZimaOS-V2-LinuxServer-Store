@@ -1,6 +1,6 @@
 name: linuxserver-cura
 services:
-  app:
+  cura:
     image: linuxserver/cura:5.13.0@sha256:5357fcadb41b581a8a84df930fcfb1b40dfeb5b8532cf9dd392a15a3005b98f7
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/cura/config
         target: /config
 x-casaos:
-  main: app
+  main: cura
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.cura/assets/icon.png
   title:
     en_US: Cura

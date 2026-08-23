@@ -1,6 +1,6 @@
 name: linuxserver-doplarr_rs
 services:
-  app:
+  doplarr_rs:
     image: linuxserver/doplarr_rs:4.6.0@sha256:16ce821f92665bfc177e4fc32a517b9cfa407f5c5475536360b0955a69b63130
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/doplarr_rs/config
         target: /config
 x-casaos:
-  main: app
+  main: doplarr_rs
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.doplarr_rs/assets/icon.png
   title:
     en_US: Doplarr_rs

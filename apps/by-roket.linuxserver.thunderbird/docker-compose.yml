@@ -1,6 +1,6 @@
 name: linuxserver-thunderbird
 services:
-  app:
+  thunderbird:
     image: linuxserver/thunderbird:1140.13.0
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/thunderbird/config
         target: /config
 x-casaos:
-  main: app
+  main: thunderbird
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.thunderbird/assets/icon.png
   title:
     en_US: Thunderbird

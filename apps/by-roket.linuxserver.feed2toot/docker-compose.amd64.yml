@@ -1,6 +1,6 @@
 name: linuxserver-feed2toot
 services:
-  app:
+  feed2toot:
     image: linuxserver/feed2toot:0.17.20250110@sha256:ffb5c6d52ef42c3ac1ca3293ed07d957338df01a48259af9bf355d998de546e2
     restart: unless-stopped
     environment:
@@ -13,7 +13,7 @@ services:
         source: /DATA/AppData/feed2toot/config
         target: /config
 x-casaos:
-  main: app
+  main: feed2toot
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.feed2toot/assets/icon.png
   title:
     en_US: Feed2toot

@@ -1,6 +1,6 @@
 name: linuxserver-grav
 services:
-  app:
+  grav:
     image: linuxserver/grav:2.0.21@sha256:82c2cfedc5d0634034a26d0ca4c7addd6fea5b2f590a3d01239d3d6f5d1d6aa3
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/grav/config
         target: /config
 x-casaos:
-  main: app
+  main: grav
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.grav/assets/icon.png
   title:
     en_US: Grav

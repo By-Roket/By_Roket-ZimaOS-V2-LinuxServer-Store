@@ -1,6 +1,6 @@
 name: linuxserver-qemu-static
 services:
-  app:
+  qemu-static:
     image: linuxserver/qemu-static:10.0.2
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/qemu-static/config
         target: /config
 x-casaos:
-  main: app
+  main: qemu-static
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.qemu-static/assets/icon.png
   title:
     en_US: Qemu static

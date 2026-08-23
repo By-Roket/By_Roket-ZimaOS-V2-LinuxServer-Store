@@ -1,6 +1,6 @@
 name: linuxserver-snipe-it
 services:
-  app:
+  snipe-it:
     image: linuxserver/snipe-it:7.1.15@sha256:f7dc2811e5f5eb4c8d86a122899a5677da537b3c26c2f94b198d5478d7a65b0b
     restart: unless-stopped
     environment:
@@ -34,7 +34,7 @@ services:
         source: /DATA/AppData/snipe-it/config
         target: /config
 x-casaos:
-  main: app
+  main: snipe-it
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.snipe-it/assets/icon.png
   title:
     en_US: Snipe it

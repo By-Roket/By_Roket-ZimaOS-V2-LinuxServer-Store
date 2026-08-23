@@ -1,6 +1,6 @@
 name: linuxserver-netbox
 services:
-  app:
+  netbox:
     image: linuxserver/netbox:4.6.8
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ services:
         source: /DATA/AppData/netbox/config
         target: /config
 x-casaos:
-  main: app
+  main: netbox
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.netbox/assets/icon.png
   title:
     en_US: Netbox

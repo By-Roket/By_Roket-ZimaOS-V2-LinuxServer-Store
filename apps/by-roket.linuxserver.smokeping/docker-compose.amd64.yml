@@ -1,6 +1,6 @@
 name: linuxserver-smokeping
 services:
-  app:
+  smokeping:
     image: linuxserver/smokeping:2.9.0@sha256:b8af268f4726926a3ae7434ff9a2df2da0a2813e498a90b6fce12c43bb623594
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/smokeping/data
         target: /data
 x-casaos:
-  main: app
+  main: smokeping
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.smokeping/assets/icon.png
   title:
     en_US: Smokeping

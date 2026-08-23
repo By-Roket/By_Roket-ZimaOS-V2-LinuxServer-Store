@@ -1,6 +1,6 @@
 name: linuxserver-htpcmanager
 services:
-  app:
+  htpcmanager:
     image: linuxserver/htpcmanager:version-26a641bf
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/htpcmanager/config
         target: /config
 x-casaos:
-  main: app
+  main: htpcmanager
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.htpcmanager/assets/icon.png
   title:
     en_US: Htpcmanager

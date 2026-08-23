@@ -1,6 +1,6 @@
 name: linuxserver-opera
 services:
-  app:
+  opera:
     image: linuxserver/opera:135.0.5973
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/opera/config
         target: /config
 x-casaos:
-  main: app
+  main: opera
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.opera/assets/icon.png
   title:
     en_US: Opera

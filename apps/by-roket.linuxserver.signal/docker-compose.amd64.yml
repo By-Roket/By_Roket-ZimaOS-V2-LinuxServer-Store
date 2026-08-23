@@ -1,6 +1,6 @@
 name: linuxserver-signal
 services:
-  app:
+  signal:
     image: linuxserver/signal:8.24.1@sha256:172463fe3cc0556bf671585064e6815234fa2aab6eb3fb4df76ff11da367588c
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/signal/config
         target: /config
 x-casaos:
-  main: app
+  main: signal
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.signal/assets/icon.png
   title:
     en_US: Signal

@@ -1,6 +1,6 @@
 name: linuxserver-eden
 services:
-  app:
+  eden:
     image: linuxserver/eden:0.2.1
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/eden/config
         target: /config
 x-casaos:
-  main: app
+  main: eden
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.eden/assets/icon.png
   title:
     en_US: Eden

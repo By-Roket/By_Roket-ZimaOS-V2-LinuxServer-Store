@@ -1,6 +1,6 @@
 name: linuxserver-lazylibrarian
 services:
-  app:
+  lazylibrarian:
     image: linuxserver/lazylibrarian:version-d6905f7e@sha256:a254050f9354bffee6b6a7a1cfb751a38b9b8b993f787e1bac4b4983707910e1
     restart: unless-stopped
     environment:
@@ -23,7 +23,7 @@ services:
         source: /DATA/AppData/lazylibrarian/books
         target: /books
 x-casaos:
-  main: app
+  main: lazylibrarian
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lazylibrarian/assets/icon.png
   title:
     en_US: Lazylibrarian

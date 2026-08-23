@@ -1,6 +1,6 @@
 name: linuxserver-steam
 services:
-  app:
+  steam:
     image: linuxserver/steam:version-abe938da
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/steam/config
         target: /config
 x-casaos:
-  main: app
+  main: steam
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.steam/assets/icon.png
   title:
     en_US: Steam

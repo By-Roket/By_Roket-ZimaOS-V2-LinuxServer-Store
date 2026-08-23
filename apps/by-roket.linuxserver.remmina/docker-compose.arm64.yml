@@ -1,6 +1,6 @@
 name: linuxserver-remmina
 services:
-  app:
+  remmina:
     image: linuxserver/remmina:1.4.40@sha256:7bff14144c3f6cde8ead26a7a9d0eadc250fb54fd1442e97017afebff74afd3e
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/remmina/config
         target: /config
 x-casaos:
-  main: app
+  main: remmina
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.remmina/assets/icon.png
   title:
     en_US: Remmina

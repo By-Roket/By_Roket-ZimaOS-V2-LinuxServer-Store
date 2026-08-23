@@ -1,6 +1,6 @@
 name: linuxserver-adguardhome-sync
 services:
-  app:
+  adguardhome-sync:
     image: linuxserver/adguardhome-sync:0.9.2
     restart: unless-stopped
     environment:
@@ -17,7 +17,7 @@ services:
         source: /DATA/AppData/adguardhome-sync/config
         target: /config
 x-casaos:
-  main: app
+  main: adguardhome-sync
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.adguardhome-sync/assets/icon.png
   title:
     en_US: Adguardhome sync

@@ -1,6 +1,6 @@
 name: linuxserver-requestrr
 services:
-  app:
+  requestrr:
     image: linuxserver/requestrr:2.1.2@sha256:416a163bc400e2d55115217397c69e759f0abeb4ce792b283756e0390de97d43
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/requestrr/config
         target: /config
 x-casaos:
-  main: app
+  main: requestrr
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.requestrr/assets/icon.png
   title:
     en_US: Requestrr

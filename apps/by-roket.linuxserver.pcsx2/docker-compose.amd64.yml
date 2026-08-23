@@ -1,6 +1,6 @@
 name: linuxserver-pcsx2
 services:
-  app:
+  pcsx2:
     image: linuxserver/pcsx2:2.6.3@sha256:aff0feb613332e6779f48eb142948b153fecb4827634143813d52fb91e044b43
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/pcsx2/config
         target: /config
 x-casaos:
-  main: app
+  main: pcsx2
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pcsx2/assets/icon.png
   title:
     en_US: Pcsx2

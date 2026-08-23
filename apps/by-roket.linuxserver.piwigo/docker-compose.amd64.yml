@@ -1,6 +1,6 @@
 name: linuxserver-piwigo
 services:
-  app:
+  piwigo:
     image: linuxserver/piwigo:16.4.0@sha256:0fd537a8ac591e49dea44c024795abfa8c4e7899cca2fca712ccdc7a69c87f7f
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/piwigo/gallery
         target: /gallery
 x-casaos:
-  main: app
+  main: piwigo
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.piwigo/assets/icon.png
   title:
     en_US: Piwigo

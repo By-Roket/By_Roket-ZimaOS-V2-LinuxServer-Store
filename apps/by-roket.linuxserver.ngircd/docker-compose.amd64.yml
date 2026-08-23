@@ -1,6 +1,6 @@
 name: linuxserver-ngircd
 services:
-  app:
+  ngircd:
     image: linuxserver/ngircd:version-27-r1@sha256:25983b264c52d4a8a8c1808c1f4ed5ee636e663051d9032f3b9945b2f4e945fc
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/ngircd/config
         target: /config
 x-casaos:
-  main: app
+  main: ngircd
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ngircd/assets/icon.png
   title:
     en_US: Ngircd

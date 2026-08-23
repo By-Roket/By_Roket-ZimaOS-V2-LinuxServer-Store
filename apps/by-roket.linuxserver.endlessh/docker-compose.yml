@@ -1,6 +1,6 @@
 name: linuxserver-endlessh
 services:
-  app:
+  endlessh:
     image: linuxserver/endlessh:version-dfe44eb2
     restart: unless-stopped
     environment:
@@ -24,7 +24,7 @@ services:
         source: /DATA/AppData/endlessh/config
         target: /config
 x-casaos:
-  main: app
+  main: endlessh
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.endlessh/assets/icon.png
   title:
     en_US: Endlessh

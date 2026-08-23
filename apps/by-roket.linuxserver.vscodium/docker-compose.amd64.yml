@@ -1,6 +1,6 @@
 name: linuxserver-vscodium
 services:
-  app:
+  vscodium:
     image: linuxserver/vscodium:1.126.04524@sha256:224afce970c0cf17db7c5b20eaf8868fa8f02d12d02b3b6bf76b00c55a5bfd0e
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/vscodium/config
         target: /config
 x-casaos:
-  main: app
+  main: vscodium
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.vscodium/assets/icon.png
   title:
     en_US: Vscodium

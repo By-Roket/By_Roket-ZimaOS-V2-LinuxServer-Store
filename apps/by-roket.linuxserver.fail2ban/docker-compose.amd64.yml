@@ -1,6 +1,6 @@
 name: linuxserver-fail2ban
 services:
-  app:
+  fail2ban:
     image: linuxserver/fail2ban:1.1.0@sha256:ae5b876208ec2bc079ae74f28c6cb6405d3f8f33a834d61eb97fe751efdb839d
     restart: unless-stopped
     environment:
@@ -71,7 +71,7 @@ services:
         source: /DATA/AppData/fail2ban/remotelogs/vaultwarden:ro
         target: /remotelogs/vaultwarden:ro
 x-casaos:
-  main: app
+  main: fail2ban
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.fail2ban/assets/icon.png
   title:
     en_US: Fail2ban

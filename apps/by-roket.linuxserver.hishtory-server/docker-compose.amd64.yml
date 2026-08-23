@@ -1,6 +1,6 @@
 name: linuxserver-hishtory-server
 services:
-  app:
+  hishtory-server:
     image: linuxserver/hishtory-server:0.335.20260821@sha256:007a15aa6136de84ad3f485b074d898b4f8e912df0fbb78e0105e488842c270b
     restart: unless-stopped
     environment:
@@ -18,7 +18,7 @@ services:
         source: /DATA/AppData/hishtory-server/config
         target: /config
 x-casaos:
-  main: app
+  main: hishtory-server
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.hishtory-server/assets/icon.png
   title:
     en_US: Hishtory server

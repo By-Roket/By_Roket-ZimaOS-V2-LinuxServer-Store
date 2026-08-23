@@ -1,6 +1,6 @@
 name: linuxserver-wps-office
 services:
-  app:
+  wps-office:
     image: linuxserver/wps-office:11.1.0@sha256:a9f1d2eb4122042ff9dc582b38b699ed6a1a5abc1a7374b1b0fa0f237331b341
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/wps-office/config
         target: /config
 x-casaos:
-  main: app
+  main: wps-office
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.wps-office/assets/icon.png
   title:
     en_US: Wps office

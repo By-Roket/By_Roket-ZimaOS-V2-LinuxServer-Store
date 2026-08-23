@@ -1,6 +1,6 @@
 name: linuxserver-rpcs3
 services:
-  app:
+  rpcs3:
     image: linuxserver/rpcs3:version-build-3aac7d776dfe91596dccd7b3c6fa2419b5044611@sha256:0107d152ebf87101f10cb294b5ed6a2ad792c5bcbce188ce03b26f720cf29999
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/rpcs3/config
         target: /config
 x-casaos:
-  main: app
+  main: rpcs3
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.rpcs3/assets/icon.png
   title:
     en_US: Rpcs3

@@ -1,6 +1,6 @@
 name: linuxserver-mastodon
 services:
-  app:
+  mastodon:
     image: linuxserver/mastodon:4.7.0
     restart: unless-stopped
     environment:
@@ -60,7 +60,7 @@ services:
         source: /DATA/AppData/mastodon/config
         target: /config
 x-casaos:
-  main: app
+  main: mastodon
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mastodon/assets/icon.png
   title:
     en_US: Mastodon

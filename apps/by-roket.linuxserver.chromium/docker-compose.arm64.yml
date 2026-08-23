@@ -1,6 +1,6 @@
 name: linuxserver-chromium
 services:
-  app:
+  chromium:
     image: linuxserver/chromium:version-be140933@sha256:3464d4995b8450d20182222d94ab61e5363347167cc86b3a97d1ce73e5ab5243
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/chromium/config
         target: /config
 x-casaos:
-  main: app
+  main: chromium
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.chromium/assets/icon.png
   title:
     en_US: Chromium

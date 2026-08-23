@@ -1,6 +1,6 @@
 name: linuxserver-snapdrop
 services:
-  app:
+  snapdrop:
     image: linuxserver/snapdrop:version-f88d46ed@sha256:3246c5455902587bf327855cc83784d6dff9122d9ee53c6ec3567368a4bc8d7f
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/snapdrop/config
         target: /config
 x-casaos:
-  main: app
+  main: snapdrop
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.snapdrop/assets/icon.png
   title:
     en_US: Snapdrop

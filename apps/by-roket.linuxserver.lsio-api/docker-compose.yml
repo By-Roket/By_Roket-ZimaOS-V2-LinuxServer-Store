@@ -1,6 +1,6 @@
 name: linuxserver-lsio-api
 services:
-  app:
+  lsio-api:
     image: linuxserver/lsio-api:version-9eda67ec
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/lsio-api/config
         target: /config
 x-casaos:
-  main: app
+  main: lsio-api
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lsio-api/assets/icon.png
   title:
     en_US: Lsio api

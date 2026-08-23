@@ -1,6 +1,6 @@
 name: linuxserver-calligra
 services:
-  app:
+  calligra:
     image: linuxserver/calligra:3.2.1@sha256:010eb6a2ff70c2e7ddd015862d1bea9e73250ba22cea73db2c662eff6181f824
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/calligra/config
         target: /config
 x-casaos:
-  main: app
+  main: calligra
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.calligra/assets/icon.png
   title:
     en_US: Calligra

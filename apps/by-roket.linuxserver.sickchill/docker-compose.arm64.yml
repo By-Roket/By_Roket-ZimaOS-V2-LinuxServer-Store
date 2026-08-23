@@ -1,6 +1,6 @@
 name: linuxserver-sickchill
 services:
-  app:
+  sickchill:
     image: linuxserver/sickchill:2024.3.1@sha256:0b20c54a091efb39a802d555fa928babc3277eebcb973e4f78bad8f329115f7f
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/sickchill/tv
         target: /tv
 x-casaos:
-  main: app
+  main: sickchill
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sickchill/assets/icon.png
   title:
     en_US: Sickchill

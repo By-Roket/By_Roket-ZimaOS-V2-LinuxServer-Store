@@ -1,6 +1,6 @@
 name: linuxserver-mame
 services:
-  app:
+  mame:
     image: linuxserver/mame:version-0.289dfsg1-0@sha256:845c16c492b343b84b25ca9aaf673d83bf7c59c752454e8e8a54b027e4dd1823
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/mame/mame:ro
         target: /mame:ro
 x-casaos:
-  main: app
+  main: mame
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mame/assets/icon.png
   title:
     en_US: Mame

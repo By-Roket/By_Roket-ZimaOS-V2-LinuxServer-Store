@@ -1,6 +1,6 @@
 name: linuxserver-piper
 services:
-  app:
+  piper:
     image: linuxserver/piper:2.4.2@sha256:b278729ffad60c1e9058a55595aa31a58ded871ff37f2b94648eb13ebf1922f0
     restart: unless-stopped
     environment:
@@ -23,7 +23,7 @@ services:
         source: /DATA/AppData/piper/config
         target: /config
 x-casaos:
-  main: app
+  main: piper
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.piper/assets/icon.png
   title:
     en_US: Piper

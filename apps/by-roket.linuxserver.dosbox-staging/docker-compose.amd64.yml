@@ -1,6 +1,6 @@
 name: linuxserver-dosbox-staging
 services:
-  app:
+  dosbox-staging:
     image: linuxserver/dosbox-staging:0.82.2@sha256:d229b661c5f12f3b44cd9c57ea9febb4173d85ea240de2b38d130dd9e162c9ef
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/dosbox-staging/config
         target: /config
 x-casaos:
-  main: app
+  main: dosbox-staging
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.dosbox-staging/assets/icon.png
   title:
     en_US: Dosbox staging

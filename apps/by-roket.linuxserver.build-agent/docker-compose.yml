@@ -1,6 +1,6 @@
 name: linuxserver-build-agent
 services:
-  app:
+  build-agent:
     image: linuxserver/build-agent:version-0296acb5
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/build-agent/config
         target: /config
 x-casaos:
-  main: app
+  main: build-agent
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.build-agent/assets/icon.png
   title:
     en_US: Build agent

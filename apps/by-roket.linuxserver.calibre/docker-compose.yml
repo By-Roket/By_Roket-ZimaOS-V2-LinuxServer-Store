@@ -1,6 +1,6 @@
 name: linuxserver-calibre
 services:
-  app:
+  calibre:
     image: linuxserver/calibre:9.13.0
     restart: unless-stopped
     environment:
@@ -24,7 +24,7 @@ services:
         source: /DATA/AppData/calibre/config
         target: /config
 x-casaos:
-  main: app
+  main: calibre
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.calibre/assets/icon.png
   title:
     en_US: Calibre

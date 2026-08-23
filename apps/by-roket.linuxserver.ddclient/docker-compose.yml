@@ -1,6 +1,6 @@
 name: linuxserver-ddclient
 services:
-  app:
+  ddclient:
     image: linuxserver/ddclient:4.0.0
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/ddclient/config
         target: /config
 x-casaos:
-  main: app
+  main: ddclient
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ddclient/assets/icon.png
   title:
     en_US: Ddclient

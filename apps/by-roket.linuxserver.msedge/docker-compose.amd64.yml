@@ -1,6 +1,6 @@
 name: linuxserver-msedge
 services:
-  app:
+  msedge:
     image: linuxserver/msedge:151.0.4129@sha256:c92be8dd14e572a61b58109bb666ccd2e50376d00434d99ff1fde14a686e0234
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/msedge/config
         target: /config
 x-casaos:
-  main: app
+  main: msedge
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.msedge/assets/icon.png
   title:
     en_US: Msedge

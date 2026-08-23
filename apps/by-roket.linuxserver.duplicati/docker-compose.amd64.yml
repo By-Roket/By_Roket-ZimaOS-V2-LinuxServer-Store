@@ -1,6 +1,6 @@
 name: linuxserver-duplicati
 services:
-  app:
+  duplicati:
     image: linuxserver/duplicati:2.3.0@sha256:a8b607315cfb2b874664f4330f5d11bd5bad0eb2fdf77ac22c655456aa9781a9
     restart: unless-stopped
     environment:
@@ -25,7 +25,7 @@ services:
         source: /DATA/AppData/duplicati/source
         target: /source
 x-casaos:
-  main: app
+  main: duplicati
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.duplicati/assets/icon.png
   title:
     en_US: Duplicati

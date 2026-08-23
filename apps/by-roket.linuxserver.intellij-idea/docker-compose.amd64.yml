@@ -1,6 +1,6 @@
 name: linuxserver-intellij-idea
 services:
-  app:
+  intellij-idea:
     image: linuxserver/intellij-idea:42026.2.0@sha256:73b65d4e93361ec563b7b9eb275061c795cdae99232527f9875e63437b3d3993
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/intellij-idea/config
         target: /config
 x-casaos:
-  main: app
+  main: intellij-idea
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.intellij-idea/assets/icon.png
   title:
     en_US: Intellij idea

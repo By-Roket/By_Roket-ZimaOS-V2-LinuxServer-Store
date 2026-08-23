@@ -1,6 +1,6 @@
 name: linuxserver-emby
 services:
-  app:
+  emby:
     image: linuxserver/emby:4.9.5
     restart: unless-stopped
     environment:
@@ -28,7 +28,7 @@ services:
         source: /opt/vc/lib
         target: /opt/vc/lib
 x-casaos:
-  main: app
+  main: emby
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.emby/assets/icon.png
   title:
     en_US: Emby

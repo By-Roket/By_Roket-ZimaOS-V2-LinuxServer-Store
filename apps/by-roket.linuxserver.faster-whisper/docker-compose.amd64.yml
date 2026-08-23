@@ -1,6 +1,6 @@
 name: linuxserver-faster-whisper
 services:
-  app:
+  faster-whisper:
     image: linuxserver/faster-whisper:3.6.0@sha256:b40242458f28d9b7e4c44054fe773ee6663a23064129518c538f5ac66a66c552
     restart: unless-stopped
     environment:
@@ -21,7 +21,7 @@ services:
         source: /DATA/AppData/faster-whisper/config
         target: /config
 x-casaos:
-  main: app
+  main: faster-whisper
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.faster-whisper/assets/icon.png
   title:
     en_US: Faster whisper

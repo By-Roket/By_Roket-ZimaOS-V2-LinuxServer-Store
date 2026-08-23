@@ -1,6 +1,6 @@
 name: linuxserver-projectsend
 services:
-  app:
+  projectsend:
     image: linuxserver/projectsend:version-r2098
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/projectsend/data
         target: /data
 x-casaos:
-  main: app
+  main: projectsend
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.projectsend/assets/icon.png
   title:
     en_US: Projectsend

@@ -1,6 +1,6 @@
 name: linuxserver-pelorus
 services:
-  app:
+  pelorus:
     image: linuxserver/pelorus:0.2.3@sha256:557fc9d0309b194556ac09fdb840909f43e8f0db21508d01b4fb5c1741291cf9
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/pelorus/config
         target: /config
 x-casaos:
-  main: app
+  main: pelorus
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pelorus/assets/icon.png
   title:
     en_US: Pelorus

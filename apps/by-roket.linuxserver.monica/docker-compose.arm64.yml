@@ -1,6 +1,6 @@
 name: linuxserver-monica
 services:
-  app:
+  monica:
     image: linuxserver/monica:4.1.2@sha256:5ce1a7c6dc411be3e515c7f8409596d57df46a4662ee5551107f8f1694d149a9
     restart: unless-stopped
     environment:
@@ -28,7 +28,7 @@ services:
         source: /DATA/AppData/monica/config
         target: /config
 x-casaos:
-  main: app
+  main: monica
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.monica/assets/icon.png
   title:
     en_US: Monica

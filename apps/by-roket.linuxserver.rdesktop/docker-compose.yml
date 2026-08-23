@@ -1,6 +1,6 @@
 name: linuxserver-rdesktop
 services:
-  app:
+  rdesktop:
     image: linuxserver/rdesktop:arch-kde-version-arch-2025-01-10
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/rdesktop/config
         target: /config
 x-casaos:
-  main: app
+  main: rdesktop
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.rdesktop/assets/icon.png
   title:
     en_US: Rdesktop

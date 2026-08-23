@@ -1,6 +1,6 @@
 name: linuxserver-diskover
 services:
-  app:
+  diskover:
     image: linuxserver/diskover:2.3.5
     restart: unless-stopped
     environment:
@@ -21,7 +21,7 @@ services:
         source: /DATA/AppData/diskover/data
         target: /data
 x-casaos:
-  main: app
+  main: diskover
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.diskover/assets/icon.png
   title:
     en_US: Diskover

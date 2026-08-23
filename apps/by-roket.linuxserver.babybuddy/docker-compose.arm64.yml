@@ -1,6 +1,6 @@
 name: linuxserver-babybuddy
 services:
-  app:
+  babybuddy:
     image: linuxserver/babybuddy:2.10.0@sha256:dba8d4cde86878ec9f06172b00ac72435b5607314d3e956db7813f8e48f4b1fb
     restart: unless-stopped
     environment:
@@ -17,7 +17,7 @@ services:
         source: /DATA/AppData/babybuddy/config
         target: /config
 x-casaos:
-  main: app
+  main: babybuddy
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.babybuddy/assets/icon.png
   title:
     en_US: Babybuddy

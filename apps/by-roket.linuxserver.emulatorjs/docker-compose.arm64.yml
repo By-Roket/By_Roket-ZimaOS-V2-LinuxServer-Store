@@ -1,6 +1,6 @@
 name: linuxserver-emulatorjs
 services:
-  app:
+  emulatorjs:
     image: linuxserver/emulatorjs:1.9.2@sha256:81db557b263e32e57e1df08b786f1fec64f1684799125ec05d212e6450601eb3
     restart: unless-stopped
     environment:
@@ -26,7 +26,7 @@ services:
         source: /DATA/AppData/emulatorjs/data
         target: /data
 x-casaos:
-  main: app
+  main: emulatorjs
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.emulatorjs/assets/icon.png
   title:
     en_US: Emulatorjs

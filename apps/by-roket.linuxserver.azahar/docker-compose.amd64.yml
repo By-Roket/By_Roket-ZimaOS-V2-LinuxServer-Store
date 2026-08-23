@@ -1,6 +1,6 @@
 name: linuxserver-azahar
 services:
-  app:
+  azahar:
     image: linuxserver/azahar:12125.1.3@sha256:b111e066d6b7bf7c78392a221e2cea50640febafd06b32ec02d90406de424a35
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/azahar/config
         target: /config
 x-casaos:
-  main: app
+  main: azahar
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.azahar/assets/icon.png
   title:
     en_US: Azahar

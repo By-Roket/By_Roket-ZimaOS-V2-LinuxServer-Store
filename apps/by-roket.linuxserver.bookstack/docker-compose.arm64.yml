@@ -1,6 +1,6 @@
 name: linuxserver-bookstack
 services:
-  app:
+  bookstack:
     image: linuxserver/bookstack:26.05.3@sha256:4e6a9a819606747e819f843c2f1facde8c9ed3fb8ef9f9c5cd7fee79a0f1a87e
     restart: unless-stopped
     environment:
@@ -24,7 +24,7 @@ services:
         source: /DATA/AppData/bookstack/config
         target: /config
 x-casaos:
-  main: app
+  main: bookstack
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.bookstack/assets/icon.png
   title:
     en_US: Bookstack

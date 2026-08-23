@@ -1,6 +1,6 @@
 name: linuxserver-unifi-network-application
 services:
-  app:
+  unifi-network-application:
     image: linuxserver/unifi-network-application:10.5.67@sha256:b8b6ffdd3bdb7c56987a6f74fca24e87c8d2a0a142503f33183116133f337e7e
     restart: unless-stopped
     environment:
@@ -49,7 +49,7 @@ services:
         source: /DATA/AppData/unifi-network-application/config
         target: /config
 x-casaos:
-  main: app
+  main: unifi-network-application
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.unifi-network-application/assets/icon.png
   title:
     en_US: Unifi network-application

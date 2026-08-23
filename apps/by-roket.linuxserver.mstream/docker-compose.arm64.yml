@@ -1,6 +1,6 @@
 name: linuxserver-mstream
 services:
-  app:
+  mstream:
     image: linuxserver/mstream:6.22.0@sha256:61506d710397765043dc05dee9c5bf541d04fcd0e338132a1678985daef7a7ee
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/mstream/music
         target: /music
 x-casaos:
-  main: app
+  main: mstream
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mstream/assets/icon.png
   title:
     en_US: Mstream

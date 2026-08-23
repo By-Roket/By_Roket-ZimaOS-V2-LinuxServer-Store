@@ -1,6 +1,6 @@
 name: linuxserver-nzbhydra2
 services:
-  app:
+  nzbhydra2:
     image: linuxserver/nzbhydra2:8.9.0@sha256:339100e76cd467f6ecd4c9bea5452c0f33bc48797427dc19677d679aba97dd3d
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/nzbhydra2/downloads
         target: /downloads
 x-casaos:
-  main: app
+  main: nzbhydra2
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nzbhydra2/assets/icon.png
   title:
     en_US: Nzbhydra2

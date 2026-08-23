@@ -1,6 +1,6 @@
 name: linuxserver-inkscape
 services:
-  app:
+  inkscape:
     image: linuxserver/inkscape:1.4.2@sha256:de43cf7c3e7cc68e313a5ea36de170b6dde4fbc0f6b71ac42692ee48eb625fd9
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/inkscape/config
         target: /config
 x-casaos:
-  main: app
+  main: inkscape
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.inkscape/assets/icon.png
   title:
     en_US: Inkscape

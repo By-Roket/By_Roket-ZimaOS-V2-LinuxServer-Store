@@ -1,6 +1,6 @@
 name: linuxserver-ffmpeg
 services:
-  app:
+  ffmpeg:
     image: linuxserver/ffmpeg:8.1.2@sha256:9f7a9511290f8fc432a67bba93306938158f138d2da202445a1fca4103a693d2
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/ffmpeg/config
         target: /config
 x-casaos:
-  main: app
+  main: ffmpeg
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ffmpeg/assets/icon.png
   title:
     en_US: Ffmpeg

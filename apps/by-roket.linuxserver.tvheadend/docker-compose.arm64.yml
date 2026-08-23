@@ -1,6 +1,6 @@
 name: linuxserver-tvheadend
 services:
-  app:
+  tvheadend:
     image: linuxserver/tvheadend:version-fcd987f0@sha256:ea93fce7390df98a17c99f77a3c75d82cefa5e3de6fc2bbb27c1ada99c96ad29
     restart: unless-stopped
     environment:
@@ -26,7 +26,7 @@ services:
       - /dev/dri:/dev/dri
       - /dev/dvb:/dev/dvb
 x-casaos:
-  main: app
+  main: tvheadend
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.tvheadend/assets/icon.png
   title:
     en_US: Tvheadend

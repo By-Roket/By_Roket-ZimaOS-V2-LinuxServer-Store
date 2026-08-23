@@ -1,6 +1,6 @@
 name: linuxserver-scummvm
 services:
-  app:
+  scummvm:
     image: linuxserver/scummvm:2026.3.0@sha256:108c18a49554d2fc0972846754df42c845c08e9ce171ead094ef7e041e2c2ed7
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/scummvm/config
         target: /config
 x-casaos:
-  main: app
+  main: scummvm
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.scummvm/assets/icon.png
   title:
     en_US: Scummvm

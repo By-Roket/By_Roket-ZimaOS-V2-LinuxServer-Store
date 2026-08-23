@@ -1,6 +1,6 @@
 name: linuxserver-ungoogled-chromium
 services:
-  app:
+  ungoogled-chromium:
     image: linuxserver/ungoogled-chromium:151.0.7922@sha256:32bb75525b8c6f97245079fcd4bd293930ec0d58c44d437f29fe3bd25bda6051
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/ungoogled-chromium/config
         target: /config
 x-casaos:
-  main: app
+  main: ungoogled-chromium
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ungoogled-chromium/assets/icon.png
   title:
     en_US: Ungoogled chromium

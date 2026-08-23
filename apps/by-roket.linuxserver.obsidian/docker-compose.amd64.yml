@@ -1,6 +1,6 @@
 name: linuxserver-obsidian
 services:
-  app:
+  obsidian:
     image: linuxserver/obsidian:1.13.7@sha256:12765934732c9e7ed7f8b0901003f1e65ec41a6d6c82645f74d9606fae6c94ed
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/obsidian/config
         target: /config
 x-casaos:
-  main: app
+  main: obsidian
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.obsidian/assets/icon.png
   title:
     en_US: Obsidian

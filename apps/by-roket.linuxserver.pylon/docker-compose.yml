@@ -1,6 +1,6 @@
 name: linuxserver-pylon
 services:
-  app:
+  pylon:
     image: linuxserver/pylon:2.10.0
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/pylon/code
         target: /code
 x-casaos:
-  main: app
+  main: pylon
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pylon/assets/icon.png
   title:
     en_US: Pylon

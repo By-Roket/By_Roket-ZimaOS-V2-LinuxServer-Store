@@ -1,6 +1,6 @@
 name: linuxserver-beets
 services:
-  app:
+  beets:
     image: linuxserver/beets:2.13.1@sha256:a2487fe89dae71e33108d2e6ef8fbbd1eff35cf73972e25abf6a4d92cf23f432
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/beets/downloads
         target: /downloads
 x-casaos:
-  main: app
+  main: beets
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.beets/assets/icon.png
   title:
     en_US: Beets

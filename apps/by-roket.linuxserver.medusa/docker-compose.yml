@@ -1,6 +1,6 @@
 name: linuxserver-medusa
 services:
-  app:
+  medusa:
     image: linuxserver/medusa:1.0.26
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/medusa/tv
         target: /tv
 x-casaos:
-  main: app
+  main: medusa
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.medusa/assets/icon.png
   title:
     en_US: Medusa

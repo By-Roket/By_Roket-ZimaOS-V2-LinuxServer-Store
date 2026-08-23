@@ -1,6 +1,6 @@
 name: linuxserver-ci
 services:
-  app:
+  ci:
     image: linuxserver/ci:b1ca9f98-ls65@sha256:6f85f4ab41a8c78ae5636a594281d3f97ae69fd269aac46017b47ac786a8f2fd
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/ci/config
         target: /config
 x-casaos:
-  main: app
+  main: ci
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ci/assets/icon.png
   title:
     en_US: Ci

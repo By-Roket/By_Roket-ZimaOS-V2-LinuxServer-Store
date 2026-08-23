@@ -1,6 +1,6 @@
 name: linuxserver-blender
 services:
-  app:
+  blender:
     image: linuxserver/blender:5.2.0
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/blender/config
         target: /config
 x-casaos:
-  main: app
+  main: blender
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.blender/assets/icon.png
   title:
     en_US: Blender

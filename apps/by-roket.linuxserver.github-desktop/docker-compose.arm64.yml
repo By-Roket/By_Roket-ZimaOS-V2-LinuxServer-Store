@@ -1,6 +1,6 @@
 name: linuxserver-github-desktop
 services:
-  app:
+  github-desktop:
     image: linuxserver/github-desktop:3.4.13@sha256:88f57d5b82ca758cf9a8fde22a3ee84a7c3ff1ca90a7eabe5255481f02dfc4b9
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/github-desktop/config
         target: /config
 x-casaos:
-  main: app
+  main: github-desktop
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.github-desktop/assets/icon.png
   title:
     en_US: Github desktop

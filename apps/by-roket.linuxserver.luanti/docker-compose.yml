@@ -1,6 +1,6 @@
 name: linuxserver-luanti
 services:
-  app:
+  luanti:
     image: linuxserver/luanti:5.17.0
     restart: unless-stopped
     environment:
@@ -17,7 +17,7 @@ services:
         source: /DATA/AppData/luanti/config/.minetest
         target: /config/.minetest
 x-casaos:
-  main: app
+  main: luanti
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.luanti/assets/icon.png
   title:
     en_US: Luanti

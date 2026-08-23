@@ -1,6 +1,6 @@
 name: linuxserver-python
 services:
-  app:
+  python:
     image: linuxserver/python:3.13.1@sha256:ebbb2f9e61f5af7f60d65f32743c0ac29e88d51a6f504c4e994eba3e29fea36d
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/python/config
         target: /config
 x-casaos:
-  main: app
+  main: python
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.python/assets/icon.png
   title:
     en_US: Python

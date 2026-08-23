@@ -1,6 +1,6 @@
 name: linuxserver-flycast
 services:
-  app:
+  flycast:
     image: linuxserver/flycast:2.7.20260819
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/flycast/config
         target: /config
 x-casaos:
-  main: app
+  main: flycast
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.flycast/assets/icon.png
   title:
     en_US: Flycast

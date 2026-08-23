@@ -1,6 +1,6 @@
 name: linuxserver-budge
 services:
-  app:
+  budge:
     image: linuxserver/budge:0.0.9
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/budge/config
         target: /config
 x-casaos:
-  main: app
+  main: budge
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.budge/assets/icon.png
   title:
     en_US: Budge

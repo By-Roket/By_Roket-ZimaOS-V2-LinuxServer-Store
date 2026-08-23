@@ -1,6 +1,6 @@
 name: linuxserver-dogwalk
 services:
-  app:
+  dogwalk:
     image: linuxserver/dogwalk:cb661a4d-ls51@sha256:b58ed6333d6f6f4b9e8e015cd9663c4ae6023b01961006393c80dd8a87fcad70
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/dogwalk/config
         target: /config
 x-casaos:
-  main: app
+  main: dogwalk
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.dogwalk/assets/icon.png
   title:
     en_US: Dogwalk

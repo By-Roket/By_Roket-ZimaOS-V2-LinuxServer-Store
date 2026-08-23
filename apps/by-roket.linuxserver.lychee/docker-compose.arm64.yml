@@ -1,6 +1,6 @@
 name: linuxserver-lychee
 services:
-  app:
+  lychee:
     image: linuxserver/lychee:7.7.4@sha256:04e4cd155e39d8fe8d61f709a29a72b27d1faaeb9447be5c25ab03a26c992374
     restart: unless-stopped
     environment:
@@ -28,7 +28,7 @@ services:
         source: /DATA/AppData/lychee/pictures
         target: /pictures
 x-casaos:
-  main: app
+  main: lychee
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lychee/assets/icon.png
   title:
     en_US: Lychee

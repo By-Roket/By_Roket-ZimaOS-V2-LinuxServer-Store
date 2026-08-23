@@ -1,6 +1,6 @@
 name: linuxserver-steamos
 services:
-  app:
+  steamos:
     image: linuxserver/steamos:version-2024-12-20
     restart: unless-stopped
     environment:
@@ -29,7 +29,7 @@ services:
         source: /run/udev/data
         target: /run/udev/data
 x-casaos:
-  main: app
+  main: steamos
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.steamos/assets/icon.png
   title:
     en_US: Steamos

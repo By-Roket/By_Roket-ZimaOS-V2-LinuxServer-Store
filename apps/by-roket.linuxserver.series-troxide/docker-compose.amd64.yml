@@ -1,6 +1,6 @@
 name: linuxserver-series-troxide
 services:
-  app:
+  series-troxide:
     image: linuxserver/series-troxide:0.5.1@sha256:6cfd12bdacdd445d89ebb70e0636a6ceff914b17da3a136154f7642ba8e82564
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/series-troxide/config
         target: /config
 x-casaos:
-  main: app
+  main: series-troxide
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.series-troxide/assets/icon.png
   title:
     en_US: Series troxide

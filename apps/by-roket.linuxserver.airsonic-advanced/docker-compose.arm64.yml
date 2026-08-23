@@ -1,6 +1,6 @@
 name: linuxserver-airsonic-advanced
 services:
-  app:
+  airsonic-advanced:
     image: linuxserver/airsonic-advanced:11.1.4@sha256:2ba60bf0fc241f64457362089e5a6d1392b79d1a4646704eae758262869f448c
     restart: unless-stopped
     environment:
@@ -30,7 +30,7 @@ services:
         source: /DATA/AppData/airsonic-advanced/media
         target: /media
 x-casaos:
-  main: app
+  main: airsonic-advanced
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.airsonic-advanced/assets/icon.png
   title:
     en_US: Airsonic advanced

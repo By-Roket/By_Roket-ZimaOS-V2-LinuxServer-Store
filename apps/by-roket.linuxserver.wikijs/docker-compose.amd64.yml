@@ -1,6 +1,6 @@
 name: linuxserver-wikijs
 services:
-  app:
+  wikijs:
     image: linuxserver/wikijs:2.5.314@sha256:87855647deb54eb59ac0c802dee088bb387badc6ae1afd48cfb19c417cce5ca1
     restart: unless-stopped
     environment:
@@ -25,7 +25,7 @@ services:
         source: /DATA/AppData/wikijs/data
         target: /data
 x-casaos:
-  main: app
+  main: wikijs
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.wikijs/assets/icon.svg
   title:
     en_US: Wikijs

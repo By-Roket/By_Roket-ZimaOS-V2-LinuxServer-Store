@@ -1,6 +1,6 @@
 name: linuxserver-brave
 services:
-  app:
+  brave:
     image: linuxserver/brave:1.93.138@sha256:1bf82c243767000514b4623b1279d557f91582e76456ecfa8dad49618890f6dd
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/brave/config
         target: /config
 x-casaos:
-  main: app
+  main: brave
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.brave/assets/icon.png
   title:
     en_US: Brave

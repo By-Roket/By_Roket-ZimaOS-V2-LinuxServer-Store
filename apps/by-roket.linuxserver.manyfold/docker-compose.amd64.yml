@@ -1,6 +1,6 @@
 name: linuxserver-manyfold
 services:
-  app:
+  manyfold:
     image: linuxserver/manyfold:0.147.2@sha256:0e620aeac102c812bbb9d3f4ad04534bda8959f40e0bd6b8526b8215fcddd306
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/manyfold/libraries
         target: /libraries
 x-casaos:
-  main: app
+  main: manyfold
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.manyfold/assets/icon.png
   title:
     en_US: Manyfold

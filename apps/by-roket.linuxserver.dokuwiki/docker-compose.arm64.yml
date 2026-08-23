@@ -1,6 +1,6 @@
 name: linuxserver-dokuwiki
 services:
-  app:
+  dokuwiki:
     image: linuxserver/dokuwiki:version-2026-07-14b@sha256:839445c50f9f0e7abb4ca8bbdf97b89c5a7adece2e54048a1c5f7f6036a175ee
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/dokuwiki/config
         target: /config
 x-casaos:
-  main: app
+  main: dokuwiki
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.dokuwiki/assets/icon.png
   title:
     en_US: Dokuwiki

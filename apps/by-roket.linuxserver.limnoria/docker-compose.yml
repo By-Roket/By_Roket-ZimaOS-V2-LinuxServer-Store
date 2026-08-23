@@ -1,6 +1,6 @@
 name: linuxserver-limnoria
 services:
-  app:
+  limnoria:
     image: linuxserver/limnoria:2026.5.8
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/limnoria/config
         target: /config
 x-casaos:
-  main: app
+  main: limnoria
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.limnoria/assets/icon.png
   title:
     en_US: Limnoria

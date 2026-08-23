@@ -1,6 +1,6 @@
 name: linuxserver-wireshark
 services:
-  app:
+  wireshark:
     image: linuxserver/wireshark:4.6.6@sha256:5b6658d5c9cdb9a53f94f3579583fb2993f3876f2eb4777001ecbd2f592fec43
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/wireshark/config
         target: /config
 x-casaos:
-  main: app
+  main: wireshark
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.wireshark/assets/icon.png
   title:
     en_US: Wireshark

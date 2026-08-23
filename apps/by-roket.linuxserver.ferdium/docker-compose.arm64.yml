@@ -1,6 +1,6 @@
 name: linuxserver-ferdium
 services:
-  app:
+  ferdium:
     image: linuxserver/ferdium:7.2.1@sha256:6539566cf49c0e9b9c24462733c4f7a8e485dec6082754e085120efd9321977f
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/ferdium/config
         target: /config
 x-casaos:
-  main: app
+  main: ferdium
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ferdium/assets/icon.png
   title:
     en_US: Ferdium

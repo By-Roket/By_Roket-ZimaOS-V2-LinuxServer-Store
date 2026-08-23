@@ -1,6 +1,6 @@
 name: linuxserver-prowlarr
 services:
-  app:
+  prowlarr:
     image: linuxserver/prowlarr:2.5.2@sha256:fc10055b0fbda44b7d75a68ba9a336e378cd8dcec49809f24e8a1cad7bb97b49
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/prowlarr/config
         target: /config
 x-casaos:
-  main: app
+  main: prowlarr
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.prowlarr/assets/icon.png
   title:
     en_US: Prowlarr

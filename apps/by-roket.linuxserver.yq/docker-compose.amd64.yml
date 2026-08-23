@@ -1,6 +1,6 @@
 name: linuxserver-yq
 services:
-  app:
+  yq:
     image: linuxserver/yq:3.4.3@sha256:4e0f596a1105dfd058fb9456b4323b0e4b39cc408af0b0444466528901a16260
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/yq/config
         target: /config
 x-casaos:
-  main: app
+  main: yq
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.yq/assets/icon.png
   title:
     en_US: Yq

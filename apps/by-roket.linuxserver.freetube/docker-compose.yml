@@ -1,6 +1,6 @@
 name: linuxserver-freetube
 services:
-  app:
+  freetube:
     image: linuxserver/freetube:version-190523148
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/freetube/config
         target: /config
 x-casaos:
-  main: app
+  main: freetube
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.freetube/assets/icon.png
   title:
     en_US: Freetube

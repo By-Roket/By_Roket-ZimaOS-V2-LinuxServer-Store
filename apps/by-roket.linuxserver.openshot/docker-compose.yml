@@ -1,6 +1,6 @@
 name: linuxserver-openshot
 services:
-  app:
+  openshot:
     image: linuxserver/openshot:3.5.1
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/openshot/config
         target: /config
 x-casaos:
-  main: app
+  main: openshot
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.openshot/assets/icon.png
   title:
     en_US: Openshot

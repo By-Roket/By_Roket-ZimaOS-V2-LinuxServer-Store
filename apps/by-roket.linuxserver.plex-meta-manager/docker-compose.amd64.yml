@@ -1,6 +1,6 @@
 name: linuxserver-plex-meta-manager
 services:
-  app:
+  plex-meta-manager:
     image: linuxserver/plex-meta-manager:1.21.1@sha256:08b6f5058b57296424d703e1af98fd82f87f32bb48bcb6f9df26d3be9702898c
     restart: unless-stopped
     environment:
@@ -17,7 +17,7 @@ services:
         source: /DATA/AppData/plex-meta-manager/config
         target: /config
 x-casaos:
-  main: app
+  main: plex-meta-manager
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.plex-meta-manager/assets/icon.png
   title:
     en_US: Plex meta-manager

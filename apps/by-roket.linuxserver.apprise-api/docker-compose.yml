@@ -1,6 +1,6 @@
 name: linuxserver-apprise-api
 services:
-  app:
+  apprise-api:
     image: linuxserver/apprise-api:1.5.2
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/apprise-api/attachments
         target: /attachments
 x-casaos:
-  main: app
+  main: apprise-api
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.apprise-api/assets/icon.png
   title:
     en_US: Apprise api

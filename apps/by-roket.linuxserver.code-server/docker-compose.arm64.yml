@@ -1,6 +1,6 @@
 name: linuxserver-code-server
 services:
-  app:
+  code-server:
     image: linuxserver/code-server:4.133.0@sha256:280c4cf11bc6fd3d983f494194096993c5400e1c0ecdd8f5986c6a59e9c7191d
     restart: unless-stopped
     environment:
@@ -23,7 +23,7 @@ services:
         source: /DATA/AppData/code-server/config
         target: /config
 x-casaos:
-  main: app
+  main: code-server
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.code-server/assets/icon.png
   title:
     en_US: Code server

@@ -1,6 +1,6 @@
 name: linuxserver-rawtherapee
 services:
-  app:
+  rawtherapee:
     image: linuxserver/rawtherapee:5.13.20260816@sha256:17916a6eaee25131d2f7c42bd48cc1ed048c79b218e4163ef7f2f72da833d054
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/rawtherapee/config
         target: /config
 x-casaos:
-  main: app
+  main: rawtherapee
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.rawtherapee/assets/icon.png
   title:
     en_US: Rawtherapee

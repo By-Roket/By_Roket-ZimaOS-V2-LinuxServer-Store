@@ -1,6 +1,6 @@
 name: linuxserver-readme-sync
 services:
-  app:
+  readme-sync:
     image: linuxserver/readme-sync:84f2d0c3-ls27@sha256:bf90b9ef51a076687982ce26628684dcd7ed08dff6aa7ca5f54b044fb24e7670
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/readme-sync/config
         target: /config
 x-casaos:
-  main: app
+  main: readme-sync
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.readme-sync/assets/icon.png
   title:
     en_US: Readme sync

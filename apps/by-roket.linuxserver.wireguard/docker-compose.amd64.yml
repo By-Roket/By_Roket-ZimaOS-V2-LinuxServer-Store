@@ -1,6 +1,6 @@
 name: linuxserver-wireguard
 services:
-  app:
+  wireguard:
     image: linuxserver/wireguard:1.0.20260223@sha256:917277d4b3f490d96120c56279c3fd2bdd1f8081e631921bb7c3fec02d3a0d1b
     restart: unless-stopped
     environment:
@@ -27,7 +27,7 @@ services:
         source: /lib/modules
         target: /lib/modules
 x-casaos:
-  main: app
+  main: wireguard
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.wireguard/assets/icon.svg
   title:
     en_US: Wireguard

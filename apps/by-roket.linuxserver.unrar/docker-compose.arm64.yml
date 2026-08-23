@@ -1,6 +1,6 @@
 name: linuxserver-unrar
 services:
-  app:
+  unrar:
     image: linuxserver/unrar:7.0.9@sha256:2fcc57717766e4fa7db4b19d5d34462f991a34b187c72c245d7114f4d8430837
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/unrar/config
         target: /config
 x-casaos:
-  main: app
+  main: unrar
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.unrar/assets/icon.png
   title:
     en_US: Unrar

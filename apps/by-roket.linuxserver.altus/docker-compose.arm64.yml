@@ -1,6 +1,6 @@
 name: linuxserver-altus
 services:
-  app:
+  altus:
     image: linuxserver/altus:5.8.1@sha256:c7393de970730025193557ea689c9f6e70a77e15728ea36e88bf7e5e023a1e23
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/altus/config
         target: /config
 x-casaos:
-  main: app
+  main: altus
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.altus/assets/icon.png
   title:
     en_US: Altus

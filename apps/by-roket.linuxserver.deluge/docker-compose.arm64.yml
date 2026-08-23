@@ -1,6 +1,6 @@
 name: linuxserver-deluge
 services:
-  app:
+  deluge:
     image: linuxserver/deluge:2.2.0@sha256:52212f719c1b49d07cd899645c91adb2495334f56d15527c157b539803acc718
     restart: unless-stopped
     environment:
@@ -29,7 +29,7 @@ services:
         source: /DATA/AppData/deluge/downloads
         target: /downloads
 x-casaos:
-  main: app
+  main: deluge
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.deluge/assets/icon.png
   title:
     en_US: Deluge

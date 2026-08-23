@@ -1,6 +1,6 @@
 name: linuxserver-daapd
 services:
-  app:
+  daapd:
     image: linuxserver/daapd:28.10.20250108@sha256:af8db55aa52f5fc46f3364883a3b9d11b2314be8020811e01c8d6cd035a722e3
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/daapd/music
         target: /music
 x-casaos:
-  main: app
+  main: daapd
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.daapd/assets/icon.png
   title:
     en_US: Daapd

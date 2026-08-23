@@ -1,6 +1,6 @@
 name: linuxserver-nntp2nntp
 services:
-  app:
+  nntp2nntp:
     image: linuxserver/nntp2nntp:0.3.20230704
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/nntp2nntp/config
         target: /config
 x-casaos:
-  main: app
+  main: nntp2nntp
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nntp2nntp/assets/icon.png
   title:
     en_US: Nntp2nntp

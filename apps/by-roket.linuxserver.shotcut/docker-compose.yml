@@ -1,6 +1,6 @@
 name: linuxserver-shotcut
 services:
-  app:
+  shotcut:
     image: linuxserver/shotcut:26.8.1
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/shotcut/config
         target: /config
 x-casaos:
-  main: app
+  main: shotcut
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.shotcut/assets/icon.png
   title:
     en_US: Shotcut

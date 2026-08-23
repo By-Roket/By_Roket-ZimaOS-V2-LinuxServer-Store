@@ -1,6 +1,6 @@
 name: linuxserver-qbittorrent
 services:
-  app:
+  qbittorrent:
     image: linuxserver/qbittorrent:5.2.3@sha256:5889d4df956636ea174946efa58921aba7526077a784980d18daf283a310e784
     restart: unless-stopped
     environment:
@@ -27,7 +27,7 @@ services:
         source: /DATA/AppData/qbittorrent/downloads
         target: /downloads
 x-casaos:
-  main: app
+  main: qbittorrent
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.qbittorrent/assets/icon.png
   title:
     en_US: Qbittorrent

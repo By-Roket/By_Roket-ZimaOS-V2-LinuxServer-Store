@@ -1,6 +1,6 @@
 name: linuxserver-quassel-core
 services:
-  app:
+  quassel-core:
     image: linuxserver/quassel-core:0.14.0
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/quassel-core/config
         target: /config
 x-casaos:
-  main: app
+  main: quassel-core
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.quassel-core/assets/icon.png
   title:
     en_US: Quassel core

@@ -1,6 +1,6 @@
 name: linuxserver-headphones
 services:
-  app:
+  headphones:
     image: linuxserver/headphones:version-a78f38c1
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/headphones/music
         target: /music
 x-casaos:
-  main: app
+  main: headphones
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.headphones/assets/icon.png
   title:
     en_US: Headphones

@@ -1,6 +1,6 @@
 name: linuxserver-socket-proxy
 services:
-  app:
+  socket-proxy:
     image: linuxserver/socket-proxy:3.4.3@sha256:cdaca83fb984439542783ec9e89a729e62083839ebae8569c0edaa46a62ee443
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/socket-proxy/config
         target: /config
 x-casaos:
-  main: app
+  main: socket-proxy
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.socket-proxy/assets/icon.png
   title:
     en_US: Socket proxy

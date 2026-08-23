@@ -1,6 +1,6 @@
 name: linuxserver-syncthing
 services:
-  app:
+  syncthing:
     image: linuxserver/syncthing:2.1.3@sha256:cd2ab1acc1f686695cd777f72f6686c86e9a57785aee10d9e23c3082a921db11
     restart: unless-stopped
     environment:
@@ -31,7 +31,7 @@ services:
         source: /DATA/AppData/syncthing/data2
         target: /data2
 x-casaos:
-  main: app
+  main: syncthing
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.syncthing/assets/icon.png
   title:
     en_US: Syncthing

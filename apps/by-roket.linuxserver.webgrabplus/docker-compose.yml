@@ -1,6 +1,6 @@
 name: linuxserver-webgrabplus
 services:
-  app:
+  webgrabplus:
     image: linuxserver/webgrabplus:5.6.0
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/webgrabplus/data
         target: /data
 x-casaos:
-  main: app
+  main: webgrabplus
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.webgrabplus/assets/icon.jpg
   title:
     en_US: Webgrabplus

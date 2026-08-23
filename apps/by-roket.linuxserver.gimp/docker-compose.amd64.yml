@@ -1,6 +1,6 @@
 name: linuxserver-gimp
 services:
-  app:
+  gimp:
     image: linuxserver/gimp:version-22638545@sha256:3eb996a3eef1a61b21b8ce6fe8e0a460a30cf9aa5855f8016184fcb4f75776bf
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/gimp/config
         target: /config
 x-casaos:
-  main: app
+  main: gimp
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.gimp/assets/icon.png
   title:
     en_US: Gimp

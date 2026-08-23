@@ -1,6 +1,6 @@
 name: linuxserver-kicad
 services:
-  app:
+  kicad:
     image: linuxserver/kicad:10.0.3@sha256:72ca3c242668b84d4095a901afd1f473344c2ea8ab932f755993c7ac9c70db27
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/kicad/config
         target: /config
 x-casaos:
-  main: app
+  main: kicad
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kicad/assets/icon.png
   title:
     en_US: Kicad

@@ -1,6 +1,6 @@
 name: linuxserver-keepassxc
 services:
-  app:
+  keepassxc:
     image: linuxserver/keepassxc:2.7.12
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/keepassxc/config
         target: /config
 x-casaos:
-  main: app
+  main: keepassxc
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.keepassxc/assets/icon.png
   title:
     en_US: Keepassxc

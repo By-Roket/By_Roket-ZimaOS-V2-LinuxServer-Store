@@ -1,6 +1,6 @@
 name: linuxserver-onlyoffice
 services:
-  app:
+  onlyoffice:
     image: linuxserver/onlyoffice:9.4.0@sha256:bb0241da8aea5d13fa1649bdc827f8eb02c1db9b69f7445d7bc9cc0ac766a4df
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/onlyoffice/config
         target: /config
 x-casaos:
-  main: app
+  main: onlyoffice
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.onlyoffice/assets/icon.png
   title:
     en_US: Onlyoffice

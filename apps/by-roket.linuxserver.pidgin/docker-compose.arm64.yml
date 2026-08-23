@@ -1,6 +1,6 @@
 name: linuxserver-pidgin
 services:
-  app:
+  pidgin:
     image: linuxserver/pidgin:2.14.14@sha256:3db6005b82107f2a86c3768e8cfce4376cbf3b7fbdb582152bd96ee438db883d
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/pidgin/config
         target: /config
 x-casaos:
-  main: app
+  main: pidgin
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pidgin/assets/icon.png
   title:
     en_US: Pidgin

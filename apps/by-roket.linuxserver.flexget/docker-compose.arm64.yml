@@ -1,6 +1,6 @@
 name: linuxserver-flexget
 services:
-  app:
+  flexget:
     image: linuxserver/flexget:3.20.6@sha256:2d812d6e09c1bb71046f7f5844335b199464ca08f4f8a3b82b9a0ad59297c6d4
     restart: unless-stopped
     environment:
@@ -23,7 +23,7 @@ services:
         source: /DATA/AppData/flexget/data
         target: /data
 x-casaos:
-  main: app
+  main: flexget
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.flexget/assets/icon.png
   title:
     en_US: Flexget

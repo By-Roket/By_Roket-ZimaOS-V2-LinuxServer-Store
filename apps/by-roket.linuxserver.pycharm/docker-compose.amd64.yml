@@ -1,6 +1,6 @@
 name: linuxserver-pycharm
 services:
-  app:
+  pycharm:
     image: linuxserver/pycharm:2026.2.1@sha256:0c1f0fc48d9ab21ca9697e6601769303a4b3f0fbca1b3778e8b03a938d4c4aaa
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/pycharm/config
         target: /config
 x-casaos:
-  main: app
+  main: pycharm
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pycharm/assets/icon.png
   title:
     en_US: Pycharm

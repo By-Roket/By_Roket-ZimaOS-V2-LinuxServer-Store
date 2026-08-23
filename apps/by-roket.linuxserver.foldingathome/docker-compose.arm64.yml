@@ -1,6 +1,6 @@
 name: linuxserver-foldingathome
 services:
-  app:
+  foldingathome:
     image: linuxserver/foldingathome:8.5.6@sha256:a17f19c93a0a96bc8164017661c851d1e3d6b9f4c67b0fe244c8ff6407676b64
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/foldingathome/config
         target: /config
 x-casaos:
-  main: app
+  main: foldingathome
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.foldingathome/assets/icon.png
   title:
     en_US: Foldingathome

@@ -1,6 +1,6 @@
 name: linuxserver-winegui
 services:
-  app:
+  winegui:
     image: linuxserver/winegui:4.3.0@sha256:2d825216073ef1273d64af0bb26e09175c1c57341cd48191b0fc5273ff477081
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/winegui/config
         target: /config
 x-casaos:
-  main: app
+  main: winegui
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.winegui/assets/icon.png
   title:
     en_US: Winegui

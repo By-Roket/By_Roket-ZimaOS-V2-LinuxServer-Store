@@ -1,6 +1,6 @@
 name: linuxserver-calibre-web
 services:
-  app:
+  calibre-web:
     image: linuxserver/calibre-web:0.6.27@sha256:77b8ae07e45c1c88859249eeceda8039e9dff0f0f78f82dacf379b568fda94e3
     restart: unless-stopped
     environment:
@@ -21,7 +21,7 @@ services:
         source: /DATA/AppData/calibre-web/books
         target: /books
 x-casaos:
-  main: app
+  main: calibre-web
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.calibre-web/assets/icon.png
   title:
     en_US: Calibre web

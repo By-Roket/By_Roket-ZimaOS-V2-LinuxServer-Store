@@ -1,6 +1,6 @@
 name: linuxserver-zotero
 services:
-  app:
+  zotero:
     image: linuxserver/zotero:10.0.20260821
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/zotero/config
         target: /config
 x-casaos:
-  main: app
+  main: zotero
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.zotero/assets/icon.png
   title:
     en_US: Zotero

@@ -1,6 +1,6 @@
 name: linuxserver-helium
 services:
-  app:
+  helium:
     image: linuxserver/helium:0.15.6@sha256:ea1c5def038793e351078b4108403c0b256d47f2c70ed34e720c63ecb794e166
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/helium/config
         target: /config
 x-casaos:
-  main: app
+  main: helium
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.helium/assets/icon.png
   title:
     en_US: Helium

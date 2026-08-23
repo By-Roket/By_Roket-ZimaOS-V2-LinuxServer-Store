@@ -1,6 +1,6 @@
 name: linuxserver-bitcoin-knots
 services:
-  app:
+  bitcoin-knots:
     image: linuxserver/bitcoin-knots:version-29.4.knots20260508-noble1@sha256:3b3c04528897075b1fa0d92da7bec91b61013e0880ca6e262a110f11ee770f38
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/bitcoin-knots/config
         target: /config
 x-casaos:
-  main: app
+  main: bitcoin-knots
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.bitcoin-knots/assets/icon.png
   title:
     en_US: Bitcoin knots

@@ -1,6 +1,6 @@
 name: linuxserver-ombi
 services:
-  app:
+  ombi:
     image: linuxserver/ombi:4.53.10@sha256:5309425c906bbbb4837d19a8b59bcbc08941100aaaf8c0b6b565c6325d118c0e
     restart: unless-stopped
     environment:
@@ -17,7 +17,7 @@ services:
         source: /DATA/AppData/ombi/config
         target: /config
 x-casaos:
-  main: app
+  main: ombi
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ombi/assets/icon.png
   title:
     en_US: Ombi

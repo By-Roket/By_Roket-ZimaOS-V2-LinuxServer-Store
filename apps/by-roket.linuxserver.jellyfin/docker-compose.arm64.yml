@@ -1,6 +1,6 @@
 name: linuxserver-jellyfin
 services:
-  app:
+  jellyfin:
     image: linuxserver/jellyfin:10.11.11@sha256:a412f14d2c5b6e967f4e6cc91be0985e62d006503432eff1e4acca509e41d664
     restart: unless-stopped
     environment:
@@ -32,7 +32,7 @@ services:
         source: /DATA/AppData/jellyfin/data/movies
         target: /data/movies
 x-casaos:
-  main: app
+  main: jellyfin
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.jellyfin/assets/icon.png
   title:
     en_US: Jellyfin

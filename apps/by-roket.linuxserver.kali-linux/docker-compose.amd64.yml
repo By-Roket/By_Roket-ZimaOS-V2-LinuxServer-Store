@@ -1,6 +1,6 @@
 name: linuxserver-kali-linux
 services:
-  app:
+  kali-linux:
     image: linuxserver/kali-linux:version-76a3ddda@sha256:0a8380b9406b32948981cf4428555506edb60473edff923dd2bfc5117016386f
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/kali-linux/config
         target: /config
 x-casaos:
-  main: app
+  main: kali-linux
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kali-linux/assets/icon.png
   title:
     en_US: Kali linux

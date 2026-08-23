@@ -1,6 +1,6 @@
 name: linuxserver-librespeed
 services:
-  app:
+  librespeed:
     image: linuxserver/librespeed:6.2.1@sha256:9ba90c7c8da7d7fd0d24b1fa38cd7188cdb3a94d3b69110fc996be766dbdb071
     restart: unless-stopped
     environment:
@@ -25,7 +25,7 @@ services:
         source: /DATA/AppData/librespeed/config
         target: /config
 x-casaos:
-  main: app
+  main: librespeed
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.librespeed/assets/icon.png
   title:
     en_US: Librespeed

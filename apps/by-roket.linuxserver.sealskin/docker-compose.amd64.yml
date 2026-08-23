@@ -1,6 +1,6 @@
 name: linuxserver-sealskin
 services:
-  app:
+  sealskin:
     image: linuxserver/sealskin:0.1.39@sha256:d44fb5e3407148d2c16354a18135a91e8a6cc4445cc6a9538c471e47b7a0ac30
     restart: unless-stopped
     environment:
@@ -26,7 +26,7 @@ services:
         source: /var/run/docker.sock
         target: /var/run/docker.sock
 x-casaos:
-  main: app
+  main: sealskin
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sealskin/assets/icon.png
   title:
     en_US: Sealskin

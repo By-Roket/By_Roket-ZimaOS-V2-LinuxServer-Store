@@ -1,6 +1,6 @@
 name: linuxserver-dolphin
 services:
-  app:
+  dolphin:
     image: linuxserver/dolphin:2606a-ls79
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/dolphin/config
         target: /config
 x-casaos:
-  main: app
+  main: dolphin
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.dolphin/assets/icon.png
   title:
     en_US: Dolphin

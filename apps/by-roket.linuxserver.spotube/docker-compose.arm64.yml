@@ -1,6 +1,6 @@
 name: linuxserver-spotube
 services:
-  app:
+  spotube:
     image: linuxserver/spotube:5.1.2@sha256:252a41ba0639b33810656f4695ea2ae868863901d8d556764833e8d1e17cc728
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/spotube/config
         target: /config
 x-casaos:
-  main: app
+  main: spotube
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.spotube/assets/icon.png
   title:
     en_US: Spotube

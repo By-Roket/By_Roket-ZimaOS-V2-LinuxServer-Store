@@ -1,6 +1,6 @@
 name: linuxserver-librewolf
 services:
-  app:
+  librewolf:
     image: linuxserver/librewolf:153.0.4@sha256:c21028453e17ea9587bf142c68ecf669333a090fc909048cf8d276f1b7ec2179
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/librewolf/config
         target: /config
 x-casaos:
-  main: app
+  main: librewolf
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.librewolf/assets/icon.png
   title:
     en_US: Librewolf

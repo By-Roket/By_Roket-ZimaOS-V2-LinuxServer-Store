@@ -1,6 +1,6 @@
 name: linuxserver-hedgedoc
 services:
-  app:
+  hedgedoc:
     image: linuxserver/hedgedoc:1.12.0@sha256:91112de7cf589ffb193cdaae18b7886763c7acd7f3fca2938c3463e8500ffbf4
     restart: unless-stopped
     environment:
@@ -27,7 +27,7 @@ services:
         source: /DATA/AppData/hedgedoc/config
         target: /config
 x-casaos:
-  main: app
+  main: hedgedoc
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.hedgedoc/assets/icon.png
   title:
     en_US: Hedgedoc

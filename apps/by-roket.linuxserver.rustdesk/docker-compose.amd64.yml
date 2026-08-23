@@ -1,6 +1,6 @@
 name: linuxserver-rustdesk
 services:
-  app:
+  rustdesk:
     image: linuxserver/rustdesk:1.4.9@sha256:38f8983f44d0a9c49d43ddcfd6459ee7ca5885d778050d654b0acc3a4072b7df
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/rustdesk/config
         target: /config
 x-casaos:
-  main: app
+  main: rustdesk
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.rustdesk/assets/icon.png
   title:
     en_US: Rustdesk

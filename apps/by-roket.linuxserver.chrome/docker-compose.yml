@@ -1,6 +1,6 @@
 name: linuxserver-chrome
 services:
-  app:
+  chrome:
     image: linuxserver/chrome:151.0.7922
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/chrome/config
         target: /config
 x-casaos:
-  main: app
+  main: chrome
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.chrome/assets/icon.png
   title:
     en_US: Chrome

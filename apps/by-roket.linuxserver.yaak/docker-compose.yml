@@ -1,6 +1,6 @@
 name: linuxserver-yaak
 services:
-  app:
+  yaak:
     image: linuxserver/yaak:2026.6.0
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/yaak/config
         target: /config
 x-casaos:
-  main: app
+  main: yaak
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.yaak/assets/icon.png
   title:
     en_US: Yaak

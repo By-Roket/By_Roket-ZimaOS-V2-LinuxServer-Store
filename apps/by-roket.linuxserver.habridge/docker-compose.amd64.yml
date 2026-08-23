@@ -1,6 +1,6 @@
 name: linuxserver-habridge
 services:
-  app:
+  habridge:
     image: linuxserver/habridge:5.4.1@sha256:bff25769041c30e109e0f0b616cd3e80bf4022503354c1a0491d340a16acd96f
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/habridge/config
         target: /config
 x-casaos:
-  main: app
+  main: habridge
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.habridge/assets/icon.png
   title:
     en_US: Habridge

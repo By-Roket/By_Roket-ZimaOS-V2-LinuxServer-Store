@@ -1,6 +1,6 @@
 name: linuxserver-webstation
 services:
-  app:
+  webstation:
     image: linuxserver/webstation:0.5.0-romm@sha256:bc75c7d237116306ce3e786763ac1154e43e7ea3e2ecd8311e2114f5c9fe88c2
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/webstation/config
         target: /config
 x-casaos:
-  main: app
+  main: webstation
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.webstation/assets/icon.png
   title:
     en_US: Webstation

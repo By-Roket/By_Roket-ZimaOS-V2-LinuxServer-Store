@@ -1,6 +1,6 @@
 name: linuxserver-healthchecks
 services:
-  app:
+  healthchecks:
     image: linuxserver/healthchecks:4.3.20260816@sha256:e5407f8d333b98b111a686a21fe350b5cdced7f8d713bf7c5776272eb74ccdd9
     restart: unless-stopped
     environment:
@@ -38,7 +38,7 @@ services:
         source: /DATA/AppData/healthchecks/config
         target: /config
 x-casaos:
-  main: app
+  main: healthchecks
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.healthchecks/assets/icon.png
   title:
     en_US: Healthchecks

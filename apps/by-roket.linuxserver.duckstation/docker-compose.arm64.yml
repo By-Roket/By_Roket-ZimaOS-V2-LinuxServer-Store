@@ -1,6 +1,6 @@
 name: linuxserver-duckstation
 services:
-  app:
+  duckstation:
     image: linuxserver/duckstation:version-latest@sha256:98c5861ea4d9281060a6dfb6cddd8fc72090439a38dadd1f7ded7090096334bf
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/duckstation/config
         target: /config
 x-casaos:
-  main: app
+  main: duckstation
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.duckstation/assets/icon.png
   title:
     en_US: Duckstation

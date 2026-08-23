@@ -1,6 +1,6 @@
 name: linuxserver-retroarch
 services:
-  app:
+  retroarch:
     image: linuxserver/retroarch:1.22.2@sha256:3c6845ab66ec0c1dc65172949c53e301d90742bad65397d0b11d52e22f251b66
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/retroarch/config
         target: /config
 x-casaos:
-  main: app
+  main: retroarch
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.retroarch/assets/icon.png
   title:
     en_US: Retroarch

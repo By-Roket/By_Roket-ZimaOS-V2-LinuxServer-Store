@@ -1,6 +1,6 @@
 name: linuxserver-pyload-ng
 services:
-  app:
+  pyload-ng:
     image: linuxserver/pyload-ng:0.5.0@sha256:e539749c9529ed05547f7ac77a7a008d2a8a83c47491786c79741b0403b12244
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/pyload-ng/downloads
         target: /downloads
 x-casaos:
-  main: app
+  main: pyload-ng
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pyload-ng/assets/icon.png
   title:
     en_US: Pyload ng

@@ -1,6 +1,6 @@
 name: linuxserver-radarr
 services:
-  app:
+  radarr:
     image: linuxserver/radarr:6.3.0
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/radarr/downloads
         target: /downloads
 x-casaos:
-  main: app
+  main: radarr
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.radarr/assets/icon.png
   title:
     en_US: Radarr

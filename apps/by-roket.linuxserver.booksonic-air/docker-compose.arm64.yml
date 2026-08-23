@@ -1,6 +1,6 @@
 name: linuxserver-booksonic-air
 services:
-  app:
+  booksonic-air:
     image: linuxserver/booksonic-air:2201.1.0@sha256:f6c2ce4cbb040de8d09c4dbed7740e186e6e0e604e19f201685f7352d9a15bb6
     restart: unless-stopped
     environment:
@@ -26,7 +26,7 @@ services:
         source: /DATA/AppData/booksonic-air/othermedia
         target: /othermedia
 x-casaos:
-  main: app
+  main: booksonic-air
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.booksonic-air/assets/icon.png
   title:
     en_US: Booksonic air

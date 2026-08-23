@@ -1,6 +1,6 @@
 name: linuxserver-mylar3
 services:
-  app:
+  mylar3:
     image: linuxserver/mylar3:0.11.0@sha256:c35326af07ae596f3347b5ad27e84358c294f9bef2f3e06646bb36c9d88fafaa
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/mylar3/downloads
         target: /downloads
 x-casaos:
-  main: app
+  main: mylar3
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mylar3/assets/icon.png
   title:
     en_US: Mylar3

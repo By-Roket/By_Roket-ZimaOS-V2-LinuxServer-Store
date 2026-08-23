@@ -1,6 +1,6 @@
 name: linuxserver-synclounge
 services:
-  app:
+  synclounge:
     image: linuxserver/synclounge:5.2.35
     restart: unless-stopped
     environment:
@@ -14,7 +14,7 @@ services:
         source: /DATA/AppData/synclounge/config
         target: /config
 x-casaos:
-  main: app
+  main: synclounge
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.synclounge/assets/icon.png
   title:
     en_US: Synclounge

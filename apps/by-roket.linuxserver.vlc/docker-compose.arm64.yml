@@ -1,6 +1,6 @@
 name: linuxserver-vlc
 services:
-  app:
+  vlc:
     image: linuxserver/vlc:3.0.23@sha256:cd17e0e87e4f06ab00abddd1eb1e0ea24f4ea7195090f684440c3aaa66cbca4b
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/vlc/config
         target: /config
 x-casaos:
-  main: app
+  main: vlc
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.vlc/assets/icon.png
   title:
     en_US: Vlc

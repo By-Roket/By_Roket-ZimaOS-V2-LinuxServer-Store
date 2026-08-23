@@ -1,6 +1,6 @@
 name: linuxserver-davos
 services:
-  app:
+  davos:
     image: linuxserver/davos:2.2.2@sha256:8e65e3a29b312a91587e9649265f305617712ea74a464eaf6d7590ca9b1efac6
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/davos/download
         target: /download
 x-casaos:
-  main: app
+  main: davos
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.davos/assets/icon.png
   title:
     en_US: Davos

@@ -1,6 +1,6 @@
 name: linuxserver-krita
 services:
-  app:
+  krita:
     image: linuxserver/krita:5.3.3@sha256:1319d57cd6042179d054e8a0af9fe9ed70729e7103e836ce80942aff1d8e8de8
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/krita/config
         target: /config
 x-casaos:
-  main: app
+  main: krita
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.krita/assets/icon.png
   title:
     en_US: Krita

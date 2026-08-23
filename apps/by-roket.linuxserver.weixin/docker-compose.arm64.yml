@@ -1,6 +1,6 @@
 name: linuxserver-weixin
 services:
-  app:
+  weixin:
     image: linuxserver/weixin:version-1bb46de6@sha256:9869b83006bd21ca5e96c9ef9c89f1b267bf6c27ea2d6c04ada9e4ae79926cab
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/weixin/config
         target: /config
 x-casaos:
-  main: app
+  main: weixin
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.weixin/assets/icon.png
   title:
     en_US: Weixin

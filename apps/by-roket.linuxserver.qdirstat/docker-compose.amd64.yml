@@ -1,6 +1,6 @@
 name: linuxserver-qdirstat
 services:
-  app:
+  qdirstat:
     image: linuxserver/qdirstat:2.0.20260816@sha256:d18759b8cbc7bc011d34eaa71bf81a9bd263c28dd3d690ff4867c4f681b2eca3
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/qdirstat/data
         target: /data
 x-casaos:
-  main: app
+  main: qdirstat
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.qdirstat/assets/icon.png
   title:
     en_US: Qdirstat

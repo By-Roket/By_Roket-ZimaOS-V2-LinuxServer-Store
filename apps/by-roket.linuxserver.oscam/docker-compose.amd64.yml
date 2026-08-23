@@ -1,6 +1,6 @@
 name: linuxserver-oscam
 services:
-  app:
+  oscam:
     image: linuxserver/oscam:version-11966@sha256:2d1ee2f4878fb991a7bba42f37cb362da29982b9ad65868a51901a66653ea95a
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
         source: /DATA/AppData/oscam/config
         target: /config
 x-casaos:
-  main: app
+  main: oscam
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.oscam/assets/icon.png
   title:
     en_US: Oscam

@@ -1,6 +1,6 @@
 name: linuxserver-kometa
 services:
-  app:
+  kometa:
     image: linuxserver/kometa:2.4.8@sha256:957fff0ed3067c6df11fc9566b1ff7eefe6b98ee63ed7fc619954203214e510c
     restart: unless-stopped
     environment:
@@ -21,7 +21,7 @@ services:
         source: /DATA/AppData/kometa/config
         target: /config
 x-casaos:
-  main: app
+  main: kometa
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kometa/assets/icon.png
   title:
     en_US: Kometa

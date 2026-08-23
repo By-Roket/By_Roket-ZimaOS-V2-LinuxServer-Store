@@ -1,6 +1,6 @@
 name: linuxserver-changedetection-io
 services:
-  app:
+  changedetection-io:
     image: linuxserver/changedetection.io:0.55.8@sha256:8552ddf5094ab2a693e35eaa8cd23a0774351393cc8c4242b11ddc925408aa5d
     restart: unless-stopped
     environment:
@@ -18,7 +18,7 @@ services:
         source: /DATA/AppData/changedetection.io/config
         target: /config
 x-casaos:
-  main: app
+  main: changedetection-io
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.changedetection-io/assets/icon.png
   title:
     en_US: Changedetection. Io

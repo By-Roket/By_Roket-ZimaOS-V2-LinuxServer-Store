@@ -1,6 +1,6 @@
 name: linuxserver-nano
 services:
-  app:
+  nano:
     image: linuxserver/nano:21.2.20220522@sha256:567d37139784eb7cc08b5c945d08d93a98379b93b108f0fd769bed0e7c8adef4
     restart: unless-stopped
     environment:
@@ -29,7 +29,7 @@ services:
         source: /DATA/AppData/nano/config
         target: /config
 x-casaos:
-  main: app
+  main: nano
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nano/assets/icon.png
   title:
     en_US: Nano

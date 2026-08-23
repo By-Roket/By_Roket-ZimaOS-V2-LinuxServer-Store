@@ -1,6 +1,6 @@
 name: linuxserver-joplin
 services:
-  app:
+  joplin:
     image: linuxserver/joplin:3.6.16@sha256:932237e67c4c73581dc94efb3aa7a3bdaed5bb2e0f41981f7258d0464d158228
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/joplin/config
         target: /config
 x-casaos:
-  main: app
+  main: joplin
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.joplin/assets/icon.png
   title:
     en_US: Joplin

@@ -1,6 +1,6 @@
 name: linuxserver-bambustudio
 services:
-  app:
+  bambustudio:
     image: linuxserver/bambustudio:02.08.02@sha256:f9f74e853333c975ca4ec3503c12bc1961b8261d143e44e08d1e58e5ac2969c4
     restart: unless-stopped
     environment:
@@ -20,7 +20,7 @@ services:
         source: /DATA/AppData/bambustudio/config
         target: /config
 x-casaos:
-  main: app
+  main: bambustudio
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.bambustudio/assets/icon.png
   title:
     en_US: Bambustudio

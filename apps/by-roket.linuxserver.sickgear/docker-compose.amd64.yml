@@ -1,6 +1,6 @@
 name: linuxserver-sickgear
 services:
-  app:
+  sickgear:
     image: linuxserver/sickgear:3.36.0@sha256:e711f4533b4566449b286b3327102cc8e172a998278233dcdfd6f0808867b279
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/sickgear/downloads
         target: /downloads
 x-casaos:
-  main: app
+  main: sickgear
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sickgear/assets/icon.png
   title:
     en_US: Sickgear

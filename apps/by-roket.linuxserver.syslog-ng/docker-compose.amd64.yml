@@ -1,6 +1,6 @@
 name: linuxserver-syslog-ng
 services:
-  app:
+  syslog-ng:
     image: linuxserver/syslog-ng:4.11.0@sha256:b43b887a0d6eba42c170901b04ec5deae1867b7442b862cfdf1838bbf8185c8f
     restart: unless-stopped
     environment:
@@ -26,7 +26,7 @@ services:
         source: /var/log
         target: /var/log
 x-casaos:
-  main: app
+  main: syslog-ng
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.syslog-ng/assets/icon.png
   title:
     en_US: Syslog ng

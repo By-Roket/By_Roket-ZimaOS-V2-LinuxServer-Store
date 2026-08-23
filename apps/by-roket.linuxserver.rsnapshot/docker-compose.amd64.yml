@@ -1,6 +1,6 @@
 name: linuxserver-rsnapshot
 services:
-  app:
+  rsnapshot:
     image: linuxserver/rsnapshot:1.4.5@sha256:5e00cfb9366b7613c0e147dccbb3886f3f806b5b303ea2688fe6ab25ce634265
     restart: unless-stopped
     environment:
@@ -22,7 +22,7 @@ services:
         source: /DATA/AppData/rsnapshot/data
         target: /data
 x-casaos:
-  main: app
+  main: rsnapshot
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.rsnapshot/assets/icon.png
   title:
     en_US: Rsnapshot

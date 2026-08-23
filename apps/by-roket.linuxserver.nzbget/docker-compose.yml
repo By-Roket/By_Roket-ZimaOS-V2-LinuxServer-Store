@@ -1,6 +1,6 @@
 name: linuxserver-nzbget
 services:
-  app:
+  nzbget:
     image: linuxserver/nzbget:26.2.20260821
     restart: unless-stopped
     environment:
@@ -21,7 +21,7 @@ services:
         source: /DATA/AppData/nzbget/downloads
         target: /downloads
 x-casaos:
-  main: app
+  main: nzbget
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nzbget/assets/icon.png
   title:
     en_US: Nzbget

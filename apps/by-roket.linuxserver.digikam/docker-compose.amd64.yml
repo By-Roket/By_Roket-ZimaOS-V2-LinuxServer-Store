@@ -1,6 +1,6 @@
 name: linuxserver-digikam
 services:
-  app:
+  digikam:
     image: linuxserver/digikam:9.1.0@sha256:210922dcebfd56976cb9984cfb2e1882faf9a1837b007acf3e173e44ee97a8d6
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/digikam/config
         target: /config
 x-casaos:
-  main: app
+  main: digikam
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.digikam/assets/icon.png
   title:
     en_US: Digikam

@@ -1,6 +1,6 @@
 name: linuxserver-freecad
 services:
-  app:
+  freecad:
     image: linuxserver/freecad:1.1.3@sha256:cca82b27a6bc7c23ec2704218ec9dccef004ea44b768f5c74e19eced546344ab
     restart: unless-stopped
     environment:
@@ -19,7 +19,7 @@ services:
         source: /DATA/AppData/freecad/config
         target: /config
 x-casaos:
-  main: app
+  main: freecad
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.freecad/assets/icon.png
   title:
     en_US: Freecad
