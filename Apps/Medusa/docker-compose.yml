@@ -26,14 +26,15 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/medusa/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/medusa/downloads
+      source: /DATA/AppData/$AppID/downloads
       target: /downloads
     - type: bind
-      source: /DATA/AppData/medusa/tv
+      source: /DATA/AppData/$AppID/tv
       target: /tv
+    container_name: medusa-by-roket
 x-casaos:
   architectures:
   - amd64

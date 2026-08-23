@@ -30,8 +30,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/adguardhome-sync/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: adguardhome-sync-by-roket
 x-casaos:
   architectures:
   - amd64

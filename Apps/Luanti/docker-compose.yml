@@ -31,8 +31,9 @@ services:
       protocol: udp
     volumes:
     - type: bind
-      source: /DATA/AppData/luanti/config/.minetest
+      source: /DATA/AppData/$AppID/config/.minetest
       target: /config/.minetest
+    container_name: luanti-by-roket
 x-casaos:
   architectures:
   - amd64

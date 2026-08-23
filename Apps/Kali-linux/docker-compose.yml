@@ -29,8 +29,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/kali-linux/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: kali-linux-by-roket
 x-casaos:
   architectures:
   - amd64

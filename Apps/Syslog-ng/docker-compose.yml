@@ -37,11 +37,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/syslog-ng/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
       source: /var/log
       target: /var/log
+    container_name: syslog-ng-by-roket
 x-casaos:
   architectures:
   - amd64

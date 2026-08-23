@@ -34,11 +34,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/diskover/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/diskover/data
+      source: /DATA/AppData/$AppID/data
       target: /data
+    container_name: diskover-by-roket
 x-casaos:
   architectures:
   - amd64

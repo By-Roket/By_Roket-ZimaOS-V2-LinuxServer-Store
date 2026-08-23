@@ -26,11 +26,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/nzbhydra2/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/nzbhydra2/downloads
+      source: /DATA/AppData/$AppID/downloads
       target: /downloads
+    container_name: nzbhydra2-by-roket
 x-casaos:
   architectures:
   - amd64

@@ -59,8 +59,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/piper/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: piper-by-roket
 x-casaos:
   architectures:
   - amd64

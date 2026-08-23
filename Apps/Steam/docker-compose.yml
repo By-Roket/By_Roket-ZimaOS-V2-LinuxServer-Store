@@ -29,8 +29,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/steam/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: steam-by-roket
 x-casaos:
   architectures:
   - amd64

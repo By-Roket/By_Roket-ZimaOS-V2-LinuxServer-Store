@@ -29,11 +29,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/cops/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/cops/books
+      source: /DATA/AppData/$AppID/books
       target: /books
+    container_name: cops-by-roket
 x-casaos:
   architectures:
   - amd64

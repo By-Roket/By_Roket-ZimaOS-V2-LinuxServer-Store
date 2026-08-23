@@ -72,11 +72,12 @@ services:
       protocol: udp
     volumes:
     - type: bind
-      source: /DATA/AppData/wireguard/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
       source: /lib/modules
       target: /lib/modules
+    container_name: wireguard-by-roket
 x-casaos:
   architectures:
   - amd64

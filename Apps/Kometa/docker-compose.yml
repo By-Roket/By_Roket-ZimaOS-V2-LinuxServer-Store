@@ -49,8 +49,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/kometa/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: kometa-by-roket
 x-casaos:
   architectures:
   - amd64

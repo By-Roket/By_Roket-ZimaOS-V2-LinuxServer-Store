@@ -34,11 +34,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/nzbget/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/nzbget/downloads
+      source: /DATA/AppData/$AppID/downloads
       target: /downloads
+    container_name: nzbget-by-roket
 x-casaos:
   architectures:
   - amd64

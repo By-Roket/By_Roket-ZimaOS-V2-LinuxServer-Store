@@ -36,8 +36,9 @@ services:
       protocol: udp
     volumes:
     - type: bind
-      source: /DATA/AppData/minisatip/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: minisatip-by-roket
 x-casaos:
   architectures:
   - amd64

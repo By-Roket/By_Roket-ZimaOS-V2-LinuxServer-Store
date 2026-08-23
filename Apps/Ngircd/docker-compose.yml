@@ -26,8 +26,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/ngircd/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: ngircd-by-roket
 x-casaos:
   architectures:
   - amd64

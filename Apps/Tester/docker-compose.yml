@@ -15,6 +15,7 @@ services:
     - target: 3000
       published: 3000
       protocol: tcp
+    container_name: tester-by-roket
 x-casaos:
   architectures:
   - amd64

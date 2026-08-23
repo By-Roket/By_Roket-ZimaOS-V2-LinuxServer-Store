@@ -36,14 +36,15 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/plex/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/plex/tv
+      source: /DATA/AppData/$AppID/tv
       target: /tv
     - type: bind
-      source: /DATA/AppData/plex/movies
+      source: /DATA/AppData/$AppID/movies
       target: /movies
+    container_name: plex-by-roket
 x-casaos:
   architectures:
   - amd64

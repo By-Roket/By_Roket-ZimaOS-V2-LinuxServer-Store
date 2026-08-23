@@ -38,8 +38,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/snapdrop/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: snapdrop-by-roket
 x-casaos:
   architectures:
   - amd64

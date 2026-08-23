@@ -41,8 +41,9 @@ services:
           en_US: Set to True to run without any of the missing movie/show functions.
     volumes:
     - type: bind
-      source: /DATA/AppData/plex-meta-manager/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: plex-meta-manager-by-roket
 x-casaos:
   architectures:
   - amd64

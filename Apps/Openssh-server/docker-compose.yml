@@ -74,8 +74,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/openssh-server/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: openssh-server-by-roket
 x-casaos:
   architectures:
   - amd64

@@ -31,10 +31,10 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/kasm/opt
+      source: /DATA/AppData/$AppID/opt
       target: /opt
     - type: bind
-      source: /DATA/AppData/kasm/profiles
+      source: /DATA/AppData/$AppID/profiles
       target: /profiles
     - type: bind
       source: /dev/input
@@ -42,6 +42,7 @@ services:
     - type: bind
       source: /run/udev/data
       target: /run/udev/data
+    container_name: kasm-by-roket
 x-casaos:
   architectures:
   - amd64

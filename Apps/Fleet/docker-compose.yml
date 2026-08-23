@@ -45,8 +45,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/fleet/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: fleet-by-roket
 x-casaos:
   architectures:
   - amd64

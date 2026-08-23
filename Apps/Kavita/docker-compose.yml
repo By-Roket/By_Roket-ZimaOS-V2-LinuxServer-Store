@@ -26,11 +26,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/kavita/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/kavita/data
+      source: /DATA/AppData/$AppID/data
       target: /data
+    container_name: kavita-by-roket
 x-casaos:
   architectures:
   - amd64

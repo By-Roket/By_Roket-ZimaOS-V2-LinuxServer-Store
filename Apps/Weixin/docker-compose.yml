@@ -29,8 +29,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/weixin/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: weixin-by-roket
 x-casaos:
   architectures:
   - amd64

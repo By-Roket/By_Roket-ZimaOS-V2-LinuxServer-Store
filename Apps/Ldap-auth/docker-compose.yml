@@ -45,8 +45,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/ldap-auth/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: ldap-auth-by-roket
 x-casaos:
   architectures:
   - amd64

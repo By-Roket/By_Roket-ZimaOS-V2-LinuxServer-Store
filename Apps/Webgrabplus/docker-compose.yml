@@ -26,11 +26,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/webgrabplus/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/webgrabplus/data
+      source: /DATA/AppData/$AppID/data
       target: /data
+    container_name: webgrabplus-by-roket
 x-casaos:
   architectures:
   - amd64

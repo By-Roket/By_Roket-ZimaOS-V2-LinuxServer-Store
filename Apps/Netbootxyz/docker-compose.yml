@@ -68,11 +68,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/netbootxyz/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/netbootxyz/assets
+      source: /DATA/AppData/$AppID/assets
       target: /assets
+    container_name: netbootxyz-by-roket
 x-casaos:
   architectures:
   - amd64

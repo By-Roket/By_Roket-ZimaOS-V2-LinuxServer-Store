@@ -29,8 +29,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/flycast/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: flycast-by-roket
 x-casaos:
   architectures:
   - amd64

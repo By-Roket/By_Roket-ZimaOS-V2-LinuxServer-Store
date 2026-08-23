@@ -24,14 +24,15 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/rdesktop/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
       source: /var/run/docker.sock
       target: /var/run/docker.sock
     - type: bind
-      source: /DATA/AppData/rdesktop/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: rdesktop-by-roket
 x-casaos:
   architectures:
   - amd64

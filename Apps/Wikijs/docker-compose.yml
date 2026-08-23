@@ -51,11 +51,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/wikijs/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/wikijs/data
+      source: /DATA/AppData/$AppID/data
       target: /data
+    container_name: wikijs-by-roket
 x-casaos:
   architectures:
   - amd64

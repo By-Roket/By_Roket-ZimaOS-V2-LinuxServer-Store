@@ -29,8 +29,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/gimp/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: gimp-by-roket
 x-casaos:
   architectures:
   - amd64

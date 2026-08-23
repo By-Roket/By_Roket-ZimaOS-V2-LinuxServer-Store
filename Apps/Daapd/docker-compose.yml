@@ -24,11 +24,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/daapd/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/daapd/music
+      source: /DATA/AppData/$AppID/music
       target: /music
+    container_name: daapd-by-roket
 x-casaos:
   architectures:
   - amd64

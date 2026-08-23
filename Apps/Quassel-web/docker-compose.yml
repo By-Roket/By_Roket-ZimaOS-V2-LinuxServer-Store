@@ -52,8 +52,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/quassel-web/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: quassel-web-by-roket
 x-casaos:
   architectures:
   - amd64

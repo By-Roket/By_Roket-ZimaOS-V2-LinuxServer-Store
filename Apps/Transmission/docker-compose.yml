@@ -59,14 +59,15 @@ services:
       protocol: udp
     volumes:
     - type: bind
-      source: /DATA/AppData/transmission/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/transmission/downloads
+      source: /DATA/AppData/$AppID/downloads
       target: /downloads
     - type: bind
-      source: /DATA/AppData/transmission/watch
+      source: /DATA/AppData/$AppID/watch
       target: /watch
+    container_name: transmission-by-roket
 x-casaos:
   architectures:
   - amd64

@@ -51,8 +51,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/vscodium-web/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: vscodium-web-by-roket
 x-casaos:
   architectures:
   - amd64

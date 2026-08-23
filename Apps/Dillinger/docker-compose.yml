@@ -32,8 +32,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/dillinger/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: dillinger-by-roket
 x-casaos:
   architectures:
   - amd64

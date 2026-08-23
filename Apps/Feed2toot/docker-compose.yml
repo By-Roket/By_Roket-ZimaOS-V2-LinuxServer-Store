@@ -24,8 +24,9 @@ services:
           en_US: Limit number of RSS entries published at each execution.
     volumes:
     - type: bind
-      source: /DATA/AppData/feed2toot/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: feed2toot-by-roket
 x-casaos:
   architectures:
   - amd64

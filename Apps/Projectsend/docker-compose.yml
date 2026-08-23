@@ -26,11 +26,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/projectsend/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/projectsend/data
+      source: /DATA/AppData/$AppID/data
       target: /data
+    container_name: projectsend-by-roket
 x-casaos:
   architectures:
   - amd64

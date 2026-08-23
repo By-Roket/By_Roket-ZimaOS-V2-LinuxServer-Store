@@ -114,8 +114,9 @@ services:
       protocol: udp
     volumes:
     - type: bind
-      source: /DATA/AppData/swag/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: swag-by-roket
 x-casaos:
   architectures:
   - amd64

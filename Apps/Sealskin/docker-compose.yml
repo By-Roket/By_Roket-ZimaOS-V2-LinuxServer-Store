@@ -35,14 +35,15 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/sealskin/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/sealskin/storage
+      source: /DATA/AppData/$AppID/storage
       target: /storage
     - type: bind
       source: /var/run/docker.sock
       target: /var/run/docker.sock
+    container_name: sealskin-by-roket
 x-casaos:
   architectures:
   - amd64

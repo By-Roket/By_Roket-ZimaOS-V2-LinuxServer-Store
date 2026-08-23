@@ -29,8 +29,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/telegram/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: telegram-by-roket
 x-casaos:
   architectures:
   - amd64

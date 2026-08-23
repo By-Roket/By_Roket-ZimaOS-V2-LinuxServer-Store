@@ -26,11 +26,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/mstream/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/mstream/music
+      source: /DATA/AppData/$AppID/music
       target: /music
+    container_name: mstream-by-roket
 x-casaos:
   architectures:
   - amd64

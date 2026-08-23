@@ -26,11 +26,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/piwigo/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/piwigo/gallery
+      source: /DATA/AppData/$AppID/gallery
       target: /gallery
+    container_name: piwigo-by-roket
 x-casaos:
   architectures:
   - amd64

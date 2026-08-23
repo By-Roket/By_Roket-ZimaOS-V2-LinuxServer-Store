@@ -35,11 +35,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/calibre-web/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/calibre-web/books
+      source: /DATA/AppData/$AppID/books
       target: /books
+    container_name: calibre-web-by-roket
 x-casaos:
   architectures:
   - amd64

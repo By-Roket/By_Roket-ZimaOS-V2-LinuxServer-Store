@@ -34,11 +34,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/jackett/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/jackett/downloads
+      source: /DATA/AppData/$AppID/downloads
       target: /downloads
+    container_name: jackett-by-roket
 x-casaos:
   architectures:
   - amd64

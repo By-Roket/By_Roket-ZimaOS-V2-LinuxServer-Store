@@ -47,11 +47,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/openvscode-server/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
       source: /
       target: /casaos
+    container_name: openvscode-server-by-roket
 x-casaos:
   architectures:
   - amd64

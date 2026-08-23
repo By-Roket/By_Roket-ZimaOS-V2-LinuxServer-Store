@@ -26,14 +26,15 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/sonarr/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/sonarr/tv
+      source: /DATA/AppData/$AppID/tv
       target: /tv
     - type: bind
-      source: /DATA/AppData/sonarr/downloads
+      source: /DATA/AppData/$AppID/downloads
       target: /downloads
+    container_name: sonarr-by-roket
 x-casaos:
   architectures:
   - amd64

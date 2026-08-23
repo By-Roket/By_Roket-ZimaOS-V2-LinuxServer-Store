@@ -29,8 +29,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/webtop/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: webtop-by-roket
 x-casaos:
   architectures:
   - amd64

@@ -29,8 +29,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/wps-office/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: wps-office-by-roket
 x-casaos:
   architectures:
   - amd64

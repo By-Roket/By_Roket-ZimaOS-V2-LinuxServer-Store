@@ -32,8 +32,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/wireshark/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: wireshark-by-roket
 x-casaos:
   architectures:
   - amd64

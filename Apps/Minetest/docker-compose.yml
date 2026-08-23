@@ -36,8 +36,9 @@ services:
       protocol: udp
     volumes:
     - type: bind
-      source: /DATA/AppData/minetest/config/.minetest
+      source: /DATA/AppData/$AppID/config/.minetest
       target: /config/.minetest
+    container_name: minetest-by-roket
 x-casaos:
   architectures:
   - amd64

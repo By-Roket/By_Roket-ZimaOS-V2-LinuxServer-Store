@@ -29,8 +29,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/mediaelch/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: mediaelch-by-roket
 x-casaos:
   architectures:
   - amd64

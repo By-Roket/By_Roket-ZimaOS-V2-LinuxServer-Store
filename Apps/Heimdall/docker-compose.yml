@@ -36,8 +36,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/heimdall/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: heimdall-by-roket
 x-casaos:
   architectures:
   - amd64

@@ -26,14 +26,15 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/bazarr/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/bazarr/movies
+      source: /DATA/AppData/$AppID/movies
       target: /movies
     - type: bind
-      source: /DATA/AppData/bazarr/tv
+      source: /DATA/AppData/$AppID/tv
       target: /tv
+    container_name: bazarr-by-roket
 x-casaos:
   architectures:
   - amd64

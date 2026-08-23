@@ -26,11 +26,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/davos/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/davos/download
+      source: /DATA/AppData/$AppID/download
       target: /download
+    container_name: davos-by-roket
 x-casaos:
   architectures:
   - amd64

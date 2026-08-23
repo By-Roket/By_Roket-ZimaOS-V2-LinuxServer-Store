@@ -26,14 +26,15 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/sabnzbd/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/sabnzbd/incomplete-downloads
+      source: /DATA/AppData/$AppID/incomplete-downloads
       target: /incomplete-downloads
     - type: bind
-      source: /DATA/AppData/sabnzbd/downloads
+      source: /DATA/AppData/$AppID/downloads
       target: /downloads
+    container_name: sabnzbd-by-roket
 x-casaos:
   architectures:
   - amd64

@@ -29,11 +29,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/doublecommander/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/doublecommander/data
+      source: /DATA/AppData/$AppID/data
       target: /data
+    container_name: doublecommander-by-roket
 x-casaos:
   architectures:
   - amd64

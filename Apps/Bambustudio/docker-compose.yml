@@ -33,8 +33,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/bambustudio/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: bambustudio-by-roket
 x-casaos:
   architectures:
   - amd64

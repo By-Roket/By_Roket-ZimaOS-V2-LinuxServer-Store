@@ -40,11 +40,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/smokeping/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/smokeping/data
+      source: /DATA/AppData/$AppID/data
       target: /data
+    container_name: smokeping-by-roket
 x-casaos:
   architectures:
   - amd64

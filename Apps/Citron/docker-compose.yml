@@ -31,6 +31,7 @@ services:
     - type: bind
       source: /srv/lsio/citron/config
       target: /config
+    container_name: citron-by-roket
 x-casaos:
   architectures:
   - amd64

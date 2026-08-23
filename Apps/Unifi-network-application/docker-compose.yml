@@ -92,8 +92,9 @@ services:
       protocol: udp
     volumes:
     - type: bind
-      source: /DATA/AppData/unifi-network-application/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: unifi-network-application-by-roket
 x-casaos:
   architectures:
   - amd64

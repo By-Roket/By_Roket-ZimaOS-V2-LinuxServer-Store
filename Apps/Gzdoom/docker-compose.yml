@@ -29,8 +29,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/gzdoom/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: gzdoom-by-roket
 x-casaos:
   architectures:
   - amd64

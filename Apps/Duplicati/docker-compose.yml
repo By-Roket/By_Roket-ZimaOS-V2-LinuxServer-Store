@@ -40,14 +40,15 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/duplicati/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/duplicati/backups
+      source: /DATA/AppData/$AppID/backups
       target: /backups
     - type: bind
-      source: /DATA/AppData/duplicati/source
+      source: /DATA/AppData/$AppID/source
       target: /source
+    container_name: duplicati-by-roket
 x-casaos:
   architectures:
   - amd64

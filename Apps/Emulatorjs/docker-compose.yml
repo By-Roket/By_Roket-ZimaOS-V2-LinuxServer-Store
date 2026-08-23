@@ -34,11 +34,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/emulatorjs/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/emulatorjs/data
+      source: /DATA/AppData/$AppID/data
       target: /data
+    container_name: emulatorjs-by-roket
 x-casaos:
   architectures:
   - amd64

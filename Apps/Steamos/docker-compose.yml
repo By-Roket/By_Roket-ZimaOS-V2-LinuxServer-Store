@@ -44,7 +44,7 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/steamos/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
       source: /dev/input
@@ -52,6 +52,7 @@ services:
     - type: bind
       source: /run/udev/data
       target: /run/udev/data
+    container_name: steamos-by-roket
 x-casaos:
   architectures:
   - amd64

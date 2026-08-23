@@ -37,8 +37,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/pydio-cells/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: pydio-cells-by-roket
 x-casaos:
   architectures:
   - amd64

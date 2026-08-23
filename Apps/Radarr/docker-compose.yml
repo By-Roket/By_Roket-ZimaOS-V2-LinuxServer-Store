@@ -26,14 +26,15 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/radarr/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/radarr/movies
+      source: /DATA/AppData/$AppID/movies
       target: /movies
     - type: bind
-      source: /DATA/AppData/radarr/downloads
+      source: /DATA/AppData/$AppID/downloads
       target: /downloads
+    container_name: radarr-by-roket
 x-casaos:
   architectures:
   - amd64

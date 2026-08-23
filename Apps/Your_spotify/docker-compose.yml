@@ -54,8 +54,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/your_spotify/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: your_spotify-by-roket
 x-casaos:
   architectures:
   - amd64

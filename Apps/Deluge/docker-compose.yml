@@ -40,11 +40,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/deluge/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/deluge/downloads
+      source: /DATA/AppData/$AppID/downloads
       target: /downloads
+    container_name: deluge-by-roket
 x-casaos:
   architectures:
   - amd64

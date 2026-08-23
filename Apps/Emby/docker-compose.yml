@@ -29,17 +29,18 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/emby/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/emby/data/tvshows
+      source: /DATA/AppData/$AppID/data/tvshows
       target: /data/tvshows
     - type: bind
-      source: /DATA/AppData/emby/data/movies
+      source: /DATA/AppData/$AppID/data/movies
       target: /data/movies
     - type: bind
       source: /opt/vc/lib
       target: /opt/vc/lib
+    container_name: emby-by-roket
 x-casaos:
   architectures:
   - amd64

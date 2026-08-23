@@ -46,11 +46,12 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/duckdns/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/duckdns/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: duckdns-by-roket
 x-casaos:
   architectures:
   - amd64

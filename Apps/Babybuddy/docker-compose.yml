@@ -31,8 +31,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/babybuddy/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: babybuddy-by-roket
 x-casaos:
   architectures:
   - amd64

@@ -10,6 +10,7 @@ services:
     - target: 80
       published: 80
       protocol: tcp
+    container_name: nano-wallet-by-roket
 x-casaos:
   architectures:
   - amd64

@@ -38,8 +38,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/phpmyadmin/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: phpmyadmin-by-roket
 x-casaos:
   architectures:
   - amd64

@@ -33,17 +33,18 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/ubooquity/config
+      source: /DATA/AppData/$AppID/config
       target: /config
     - type: bind
-      source: /DATA/AppData/ubooquity/books
+      source: /DATA/AppData/$AppID/books
       target: /books
     - type: bind
-      source: /DATA/AppData/ubooquity/comics
+      source: /DATA/AppData/$AppID/comics
       target: /comics
     - type: bind
-      source: /DATA/AppData/ubooquity/files
+      source: /DATA/AppData/$AppID/files
       target: /files
+    container_name: ubooquity-by-roket
 x-casaos:
   architectures:
   - amd64

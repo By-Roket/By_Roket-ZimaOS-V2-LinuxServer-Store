@@ -26,8 +26,9 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: /DATA/AppData/homeassistant/config
+      source: /DATA/AppData/$AppID/config
       target: /config
+    container_name: homeassistant-by-roket
 x-casaos:
   architectures:
   - amd64
