@@ -11,12 +11,12 @@
   "title": "Dolphin",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.dolphin",
-  "version": "2606a-ls79",
+  "version": "version-2606a",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1070825649
+    "amd64": 1070915480
   }
 }

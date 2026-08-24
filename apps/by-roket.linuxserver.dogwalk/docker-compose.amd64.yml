@@ -1,7 +1,7 @@
 name: linuxserver-dogwalk
 services:
   dogwalk:
-    image: linuxserver/dogwalk:cb661a4d-ls51@sha256:b58ed6333d6f6f4b9e8e015cd9663c4ae6023b01961006393c80dd8a87fcad70
+    image: linuxserver/dogwalk:e47ccf5d-ls52@sha256:e7972ef13e023ce038dc66b15b6a4264efaec59a21122e60046bbaf1244a3c70
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Dogwalk
   port_map: '3000'
   id: by-roket.linuxserver.dogwalk
-  version: cb661a4d-ls51
+  version: e47ccf5d-ls52
   index: /

@@ -1,7 +1,7 @@
 name: linuxserver-rawtherapee
 services:
   rawtherapee:
-    image: linuxserver/rawtherapee:5.13.20260816@sha256:17916a6eaee25131d2f7c42bd48cc1ed048c79b218e4163ef7f2f72da833d054
+    image: linuxserver/rawtherapee:5.13.20260823@sha256:7892aeb58bc94513f07e4b5165a4d0cfff71666fa1caeafe7073a50d07db5a14
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Rawtherapee
   port_map: '3000'
   id: by-roket.linuxserver.rawtherapee
-  version: 5.13.20260816
+  version: 5.13.20260823
   index: /

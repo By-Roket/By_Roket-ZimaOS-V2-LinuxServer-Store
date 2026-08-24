@@ -12,13 +12,13 @@
   "title": "Rawtherapee",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.rawtherapee",
-  "version": "5.13.20260816",
+  "version": "5.13.20260823",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1132122105,
-    "arm64": 1090921798
+    "amd64": 1132197461,
+    "arm64": 1090930600
   }
 }

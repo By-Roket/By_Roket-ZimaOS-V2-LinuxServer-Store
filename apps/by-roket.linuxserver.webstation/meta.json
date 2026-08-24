@@ -11,12 +11,12 @@
   "title": "Webstation",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.webstation",
-  "version": "0.5.0-romm",
+  "version": "version-348c1bd6",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 2976754497
+    "amd64": 2904949812
   }
 }
