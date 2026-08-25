@@ -1,7 +1,7 @@
 name: linuxserver-kali-linux
 services:
   kali-linux:
-    image: linuxserver/kali-linux:version-76a3ddda
+    image: linuxserver/kali-linux:version-b6cbe11b
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -54,5 +54,5 @@ x-casaos:
   category: Networking
   port_map: '3000'
   id: by-roket.linuxserver.kali-linux
-  version: version-76a3ddda
+  version: version-b6cbe11b
   index: /

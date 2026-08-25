@@ -1,7 +1,7 @@
 name: linuxserver-bookstack
 services:
   bookstack:
-    image: linuxserver/bookstack:26.05.3
+    image: linuxserver/bookstack:26.05.4
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -94,5 +94,5 @@ x-casaos:
   category: Productivity
   port_map: '80'
   id: by-roket.linuxserver.bookstack
-  version: 26.05.3
+  version: 26.05.4
   index: /
