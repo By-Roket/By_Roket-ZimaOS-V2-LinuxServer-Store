@@ -1,7 +1,7 @@
 name: linuxserver-healthchecks
 services:
   healthchecks:
-    image: linuxserver/healthchecks:4.3.20260816
+    image: linuxserver/healthchecks:4.3.20260824
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -45,5 +45,5 @@ x-casaos:
     en_US: Healthchecks
   port_map: '8000'
   id: by-roket.linuxserver.healthchecks
-  version: 4.3.20260816
+  version: 4.3.20260824
   index: /

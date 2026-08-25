@@ -1,7 +1,7 @@
 name: linuxserver-flycast
 services:
   flycast:
-    image: linuxserver/flycast:2.7.20260819
+    image: linuxserver/flycast:2.7.20260823
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Flycast
   port_map: '3000'
   id: by-roket.linuxserver.flycast
-  version: 2.7.20260819
+  version: 2.7.20260823
   index: /

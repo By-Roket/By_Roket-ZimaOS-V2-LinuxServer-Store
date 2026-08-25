@@ -11,12 +11,12 @@
   "title": "Flycast",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.flycast",
-  "version": "2.7.20260819",
+  "version": "2.7.20260823",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1011372652
+    "amd64": 1011447835
   }
 }

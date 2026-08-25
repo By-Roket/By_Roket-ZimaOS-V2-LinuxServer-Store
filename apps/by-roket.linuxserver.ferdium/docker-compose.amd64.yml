@@ -1,7 +1,7 @@
 name: linuxserver-ferdium
 services:
   ferdium:
-    image: linuxserver/ferdium:7.2.1@sha256:f3cac8420764a7a79642e34635090842c4ed9c53867e0068ba3ea9fe559ac09f
+    image: linuxserver/ferdium:7.2.2@sha256:9a74e3c28db0b1f68392b270d77efe23fa24d30b890dfd086cb2a4b8611bdacb
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Ferdium
   port_map: '3000'
   id: by-roket.linuxserver.ferdium
-  version: 7.2.1
+  version: 7.2.2
   index: /

@@ -12,13 +12,13 @@
   "title": "Lychee",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.lychee",
-  "version": "7.7.4",
+  "version": "7.7.5",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 147224791,
-    "arm64": 144383814
+    "amd64": 134853175,
+    "arm64": 132000966
   }
 }

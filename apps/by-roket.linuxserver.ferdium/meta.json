@@ -12,13 +12,13 @@
   "title": "Ferdium",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.ferdium",
-  "version": "7.2.1",
+  "version": "7.2.2",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1163900873,
-    "arm64": 1126492696
+    "amd64": 1163976603,
+    "arm64": 1126502855
   }
 }
