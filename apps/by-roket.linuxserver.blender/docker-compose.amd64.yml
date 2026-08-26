@@ -1,7 +1,7 @@
 name: linuxserver-blender
 services:
   blender:
-    image: linuxserver/blender:5.2.0@sha256:4cd8035b6ec05da5790491d268e1e9a446a2fbad07fbe3465d9f5bcb9824da50
+    image: linuxserver/blender:5.2.1@sha256:d1d01373e76c2dc678cb20dd38af4416daaa6ae583fa2458faa54e4f10d0c1b2
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Blender
   port_map: '3000'
   id: by-roket.linuxserver.blender
-  version: 5.2.0
+  version: 5.2.1
   index: /

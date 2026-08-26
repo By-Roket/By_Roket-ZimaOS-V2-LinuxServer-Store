@@ -12,13 +12,13 @@
   "title": "Blender",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.blender",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1479436765,
-    "arm64": 1182447276
+    "amd64": 1480593037,
+    "arm64": 1183720517
   }
 }

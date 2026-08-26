@@ -12,13 +12,13 @@
   "title": "Rpcs3",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.rpcs3",
-  "version": "version-build-3aea3b15dc971a0b0016fc34e7be40d840aa8eda",
+  "version": "version-build-fdcfded8dfd3060af66bda0a3ac4635458980038",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1117825920,
-    "arm64": 1058963485
+    "amd64": 1117885691,
+    "arm64": 1059015525
   }
 }

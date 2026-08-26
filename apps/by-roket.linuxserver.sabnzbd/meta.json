@@ -12,13 +12,13 @@
   "title": "Sabnzbd",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.sabnzbd",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 66205696,
-    "arm64": 65623533
+    "amd64": 66017843,
+    "arm64": 65611813
   }
 }

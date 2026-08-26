@@ -1,7 +1,7 @@
 name: linuxserver-qdirstat
 services:
   qdirstat:
-    image: linuxserver/qdirstat:2.0.20260816
+    image: linuxserver/qdirstat:2.0.20260825
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -29,5 +29,5 @@ x-casaos:
     en_US: Qdirstat
   port_map: '3000'
   id: by-roket.linuxserver.qdirstat
-  version: 2.0.20260816
+  version: 2.0.20260825
   index: /

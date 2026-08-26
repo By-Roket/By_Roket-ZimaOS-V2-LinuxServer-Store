@@ -1,7 +1,7 @@
 name: linuxserver-sickgear
 services:
   sickgear:
-    image: linuxserver/sickgear:3.36.0
+    image: linuxserver/sickgear:3.36.1
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -29,5 +29,5 @@ x-casaos:
     en_US: Sickgear
   port_map: '8081'
   id: by-roket.linuxserver.sickgear
-  version: 3.36.0
+  version: 3.36.1
   index: /
