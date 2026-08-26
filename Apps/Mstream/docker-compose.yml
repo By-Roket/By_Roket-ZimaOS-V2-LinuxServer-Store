@@ -1,7 +1,7 @@
 name: linuxserver-mstream
 services:
   mstream:
-    image: linuxserver/mstream:6.22.0
+    image: linuxserver/mstream:6.23.0
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -54,5 +54,5 @@ x-casaos:
   category: Media
   port_map: '3000'
   id: by-roket.linuxserver.mstream
-  version: 6.22.0
+  version: 6.23.0
   index: /

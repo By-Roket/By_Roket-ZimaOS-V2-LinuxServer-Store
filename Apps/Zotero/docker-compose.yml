@@ -1,7 +1,7 @@
 name: linuxserver-zotero
 services:
   zotero:
-    image: linuxserver/zotero:10.0.20260821
+    image: linuxserver/zotero:10.0.1
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -51,5 +51,5 @@ x-casaos:
   category: Others
   port_map: '3000'
   id: by-roket.linuxserver.zotero
-  version: 10.0.20260821
+  version: 10.0.1
   index: /
