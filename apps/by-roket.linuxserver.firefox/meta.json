@@ -12,13 +12,13 @@
   "title": "Firefox",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.firefox",
-  "version": "1.2404.1",
+  "version": "1154.0.1",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1126758855,
-    "arm64": 1090853787
+    "amd64": 1126775063,
+    "arm64": 1090853793
   }
 }

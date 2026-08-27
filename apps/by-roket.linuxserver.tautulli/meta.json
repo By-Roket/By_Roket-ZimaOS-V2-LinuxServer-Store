@@ -12,13 +12,13 @@
   "title": "Tautulli",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.tautulli",
-  "version": "2.17.2",
+  "version": "2.18.0",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 58352340,
-    "arm64": 59243759
+    "amd64": 58383671,
+    "arm64": 59265539
   }
 }
