@@ -1,7 +1,7 @@
 name: linuxserver-remmina
 services:
   remmina:
-    image: linuxserver/remmina:1.4.40@sha256:988ee9d05c2d88feeee2a0a81e1798ec89f313c6a4fd54f9848a02809e253b92
+    image: linuxserver/remmina:1.4.43@sha256:19a086b1a8c3eecc736064c2351f6cc4b46b77e025387c44c3eb9a99a94e4186
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Remmina
   port_map: '3000'
   id: by-roket.linuxserver.remmina
-  version: 1.4.40
+  version: 1.4.43
   index: /

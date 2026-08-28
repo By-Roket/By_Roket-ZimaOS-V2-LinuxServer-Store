@@ -1,7 +1,7 @@
 name: linuxserver-dosbox-staging
 services:
   dosbox-staging:
-    image: linuxserver/dosbox-staging:0.82.2@sha256:d229b661c5f12f3b44cd9c57ea9febb4173d85ea240de2b38d130dd9e162c9ef
+    image: linuxserver/dosbox-staging:0.83.0@sha256:585828af722121f16c73d25a5f3f2a07bbe9c080a1992d5d1e46e0297a2acf74
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Dosbox staging
   port_map: '3000'
   id: by-roket.linuxserver.dosbox-staging
-  version: 0.82.2
+  version: 0.83.0
   index: /

@@ -12,13 +12,13 @@
   "title": "Librewolf",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.librewolf",
-  "version": "153.0.4",
+  "version": "154.0.1",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1140752799,
-    "arm64": 1098203472
+    "amd64": 1142547464,
+    "arm64": 1100023834
   }
 }

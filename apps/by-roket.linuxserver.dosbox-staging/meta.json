@@ -11,12 +11,12 @@
   "title": "Dosbox staging",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.dosbox-staging",
-  "version": "0.82.2",
+  "version": "0.83.0",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 996582146
+    "amd64": 1025814863
   }
 }

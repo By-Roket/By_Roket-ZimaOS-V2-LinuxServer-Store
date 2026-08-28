@@ -12,13 +12,13 @@
   "title": "Remmina",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.remmina",
-  "version": "1.4.40",
+  "version": "1.4.43",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1147560646,
-    "arm64": 1118833587
+    "amd64": 1126559003,
+    "arm64": 1097219672
   }
 }

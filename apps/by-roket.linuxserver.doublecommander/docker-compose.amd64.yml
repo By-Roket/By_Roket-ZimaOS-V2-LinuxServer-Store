@@ -1,7 +1,7 @@
 name: linuxserver-doublecommander
 services:
   doublecommander:
-    image: linuxserver/doublecommander:version-c52510d6@sha256:78ccc27602b8c11a8928312091248ed5539b906f12ef21724d7f2a53f0b559ec
+    image: linuxserver/doublecommander:version-cb6fb758@sha256:710449b1d2e4976df78fe013346b29d3dd5bf0aeb871641bad7b335ffea5dbc3
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -29,5 +29,5 @@ x-casaos:
     en_US: Doublecommander
   port_map: '3000'
   id: by-roket.linuxserver.doublecommander
-  version: version-c52510d6
+  version: version-cb6fb758
   index: /

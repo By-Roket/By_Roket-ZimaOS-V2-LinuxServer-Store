@@ -1,7 +1,7 @@
 name: linuxserver-rpcs3
 services:
   rpcs3:
-    image: linuxserver/rpcs3:version-build-2416d652625eaed5df2ff8d67063fa145021a883@sha256:95e0d16b474f45af500111a86f1d41dc38692578f510f3e22fef833edc2c3d51
+    image: linuxserver/rpcs3:version-build-6567a5a2f8ab47a89db395d6b47a7b59b23d6960@sha256:318294ceee723f020a4dc0f00e06d9a21cfb65843d4151ecad094743d3be9d2d
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Rpcs3
   port_map: '3000'
   id: by-roket.linuxserver.rpcs3
-  version: version-build-2416d652625eaed5df2ff8d67063fa145021a883
+  version: version-build-6567a5a2f8ab47a89db395d6b47a7b59b23d6960
   index: /
