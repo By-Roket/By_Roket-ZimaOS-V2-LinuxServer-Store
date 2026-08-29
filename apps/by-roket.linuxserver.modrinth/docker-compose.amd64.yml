@@ -1,7 +1,7 @@
 name: linuxserver-modrinth
 services:
   modrinth:
-    image: linuxserver/modrinth:0.18.2@sha256:196f61df4e3f762c4a7016c241d74ba41e82785051b94f5e3a11d5dbf9511d92
+    image: linuxserver/modrinth:0.19.1@sha256:0a9042e61b341830e370a236ad924f8cf7590ad0ae7b9b27aea188c9e167cda2
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Modrinth
   port_map: '3000'
   id: by-roket.linuxserver.modrinth
-  version: 0.18.2
+  version: 0.19.1
   index: /

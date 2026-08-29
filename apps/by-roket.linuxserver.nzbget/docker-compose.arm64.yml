@@ -1,7 +1,7 @@
 name: linuxserver-nzbget
 services:
   nzbget:
-    image: linuxserver/nzbget:26.2.20260821@sha256:2e53b66b6bf79634b9f4517bcd93b0107c1b9210a27aa9d10b118ee4a8fd2f70
+    image: linuxserver/nzbget:26.3.20260827@sha256:1eb1911bf39a090fc8b0ecd34538dbf0c0ff11399abc0b5c32cd9b4884f6c68f
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -28,5 +28,5 @@ x-casaos:
     en_US: Nzbget
   port_map: '6789'
   id: by-roket.linuxserver.nzbget
-  version: 26.2.20260821
+  version: 26.3.20260827
   index: /

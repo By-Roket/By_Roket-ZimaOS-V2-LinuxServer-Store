@@ -1,7 +1,7 @@
 name: linuxserver-code-server
 services:
   code-server:
-    image: linuxserver/code-server:4.134.0@sha256:3cccc6d2593190f602e56578ed8e09e1ac7fe720aef108182f63eb7b44d0e0fd
+    image: linuxserver/code-server:4.135.0@sha256:b4d885e27f380bda0d06243c0312919817ced9fa312aa389b83a595bc9d941ce
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -30,5 +30,5 @@ x-casaos:
     en_US: Code server
   port_map: '8443'
   id: by-roket.linuxserver.code-server
-  version: 4.134.0
+  version: 4.135.0
   index: /

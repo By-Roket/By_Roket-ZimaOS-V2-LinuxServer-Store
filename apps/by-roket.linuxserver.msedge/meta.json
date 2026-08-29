@@ -11,12 +11,12 @@
   "title": "Msedge",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.msedge",
-  "version": "151.0.4129",
+  "version": "152.0.4191",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1274646110
+    "amd64": 1275803048
   }
 }

@@ -11,12 +11,12 @@
   "title": "Signal",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.signal",
-  "version": "8.24.1",
+  "version": "8.25.0",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1554082966
+    "amd64": 1554097878
   }
 }
