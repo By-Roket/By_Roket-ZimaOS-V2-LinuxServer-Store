@@ -1,7 +1,7 @@
 name: linuxserver-signal
 services:
   signal:
-    image: linuxserver/signal:8.24.1
+    image: linuxserver/signal:8.25.0
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
   category: Others
   port_map: '3000'
   id: by-roket.linuxserver.signal
-  version: 8.24.1
+  version: 8.25.0
   index: /
