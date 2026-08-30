@@ -65,9 +65,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plex-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plex-logo.png
   title:
-    en_US: Plex
+    en_US: Plex (LinuxServer.io)
   category: Media
-  port_map: '80'
   id: by-roket.linuxserver.plex
+  port_map: '80'
   version: 1.43.3
   index: /

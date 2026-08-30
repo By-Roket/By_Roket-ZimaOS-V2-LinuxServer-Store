@@ -50,9 +50,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/libreoffice-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/libreoffice-logo.png
   title:
-    en_US: Libreoffice
+    en_US: Libreoffice (LinuxServer.io)
   category: Productivity
-  port_map: '3000'
   id: by-roket.linuxserver.libreoffice
+  port_map: '3000'
   version: 25.8.7
   index: /

@@ -55,9 +55,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rsnapshot.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/rsnapshot.png
   title:
-    en_US: Rsnapshot
+    en_US: Rsnapshot (LinuxServer.io)
   category: Networking
-  port_map: '80'
   id: by-roket.linuxserver.rsnapshot
+  port_map: '80'
   version: 1.4.5
   index: /

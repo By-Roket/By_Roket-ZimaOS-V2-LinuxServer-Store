@@ -50,9 +50,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/thunderbird-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/thunderbird-logo.png
   title:
-    en_US: Thunderbird
+    en_US: Thunderbird (LinuxServer.io)
   category: Productivity
-  port_map: '3000'
   id: by-roket.linuxserver.thunderbird
+  port_map: '3000'
   version: 1140.13.0
   index: /

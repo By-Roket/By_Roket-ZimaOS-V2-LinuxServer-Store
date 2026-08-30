@@ -46,9 +46,9 @@ x-casaos:
   icon: ''
   thumbnail: ''
   title:
-    en_US: Budge
+    en_US: Budge (LinuxServer.io)
   category: Finance
-  port_map: '80'
   id: by-roket.linuxserver.budge
+  port_map: '80'
   version: 0.0.9
   index: /

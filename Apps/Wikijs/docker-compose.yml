@@ -71,9 +71,9 @@ x-casaos:
   icon: https://static.requarks.io/logo/wikijs-full.svg
   thumbnail: https://static.requarks.io/logo/wikijs-full.svg
   title:
-    en_US: Wikijs
+    en_US: Wikijs (LinuxServer.io)
   category: Productivity
-  port_map: '3000'
   id: by-roket.linuxserver.wikijs
+  port_map: '3000'
   version: 2.5.314
   index: /

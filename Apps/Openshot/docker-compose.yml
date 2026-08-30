@@ -49,9 +49,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openshot-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openshot-logo.png
   title:
-    en_US: Openshot
+    en_US: Openshot (LinuxServer.io)
   category: Media
-  port_map: '3000'
   id: by-roket.linuxserver.openshot
+  port_map: '3000'
   version: 3.5.1
   index: /

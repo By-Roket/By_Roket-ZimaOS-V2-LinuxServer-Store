@@ -45,9 +45,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam.png
   title:
-    en_US: Digikam
+    en_US: Digikam (LinuxServer.io)
   category: Media
-  port_map: '3000'
   id: by-roket.linuxserver.digikam
+  port_map: '3000'
   version: 9.1.0
   index: /

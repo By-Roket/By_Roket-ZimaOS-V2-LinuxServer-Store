@@ -45,9 +45,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webstation-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webstation-logo.png
   title:
-    en_US: Webstation
+    en_US: Webstation (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.webstation
+  port_map: '3000'
   version: 0.6.0-romm
   index: /

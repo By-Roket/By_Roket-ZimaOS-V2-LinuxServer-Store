@@ -108,9 +108,9 @@ x-casaos:
   icon: https://www.wireguard.com/img/wireguard.svg
   thumbnail: https://www.wireguard.com/img/wireguard.svg
   title:
-    en_US: Wireguard
+    en_US: Wireguard (LinuxServer.io)
   category: Networking
-  port_map: '51820'
   id: by-roket.linuxserver.wireguard
+  port_map: '51820'
   version: 1.0.20260223
   index: /

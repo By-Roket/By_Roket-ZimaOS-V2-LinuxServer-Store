@@ -63,9 +63,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/manyfold-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/manyfold-logo.png
   title:
-    en_US: Manyfold
+    en_US: Manyfold (LinuxServer.io)
   category: Others
-  port_map: '3214'
   id: by-roket.linuxserver.manyfold
+  port_map: '3214'
   version: 0.148.0
   index: /

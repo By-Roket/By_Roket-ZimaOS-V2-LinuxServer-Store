@@ -49,9 +49,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vscode-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vscode-logo.png
   title:
-    en_US: Vscode
+    en_US: Vscode (LinuxServer.io)
   category: Developer
-  port_map: '3000'
   id: by-roket.linuxserver.vscode
+  port_map: '3000'
   version: 1.134.0
   index: /

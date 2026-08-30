@@ -45,9 +45,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/limnoria-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/limnoria-icon.png
   title:
-    en_US: Limnoria
+    en_US: Limnoria (LinuxServer.io)
   category: Others
-  port_map: '8080'
   id: by-roket.linuxserver.limnoria
+  port_map: '8080'
   version: 2026.5.8
   index: /

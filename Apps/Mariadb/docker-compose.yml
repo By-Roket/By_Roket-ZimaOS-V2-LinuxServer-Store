@@ -77,9 +77,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mariadb-git.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mariadb-git.png
   title:
-    en_US: Mariadb
+    en_US: Mariadb (LinuxServer.io)
   category: Developer
-  port_map: '3306'
   id: by-roket.linuxserver.mariadb
+  port_map: '3306'
   version: 11.8.8
   index: /

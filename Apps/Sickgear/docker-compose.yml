@@ -53,9 +53,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickgear-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickgear-logo.png
   title:
-    en_US: Sickgear
+    en_US: Sickgear (LinuxServer.io)
   category: Media
-  port_map: '8081'
   id: by-roket.linuxserver.sickgear
+  port_map: '8081'
   version: 3.36.1
   index: /

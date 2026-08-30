@@ -47,9 +47,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/eden-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/eden-logo.png
   title:
-    en_US: Eden
+    en_US: Eden (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.eden
+  port_map: '3000'
   version: 0.2.1
   index: /

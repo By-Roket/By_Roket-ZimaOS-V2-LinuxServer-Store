@@ -70,9 +70,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vscodium-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vscodium-icon.png
   title:
-    en_US: Vscodium web
+    en_US: Vscodium web (LinuxServer.io)
   category: Developer
-  port_map: '8000'
   id: by-roket.linuxserver.vscodium-web
+  port_map: '8000'
   version: 1.126.04524
   index: /

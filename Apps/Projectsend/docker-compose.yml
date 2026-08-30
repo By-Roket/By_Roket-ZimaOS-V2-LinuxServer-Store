@@ -50,9 +50,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/projectsend-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/projectsend-logo.png
   title:
-    en_US: Projectsend
+    en_US: Projectsend (LinuxServer.io)
   category: Others
-  port_map: '80'
   id: by-roket.linuxserver.projectsend
+  port_map: '80'
   version: version-r2098
   index: /

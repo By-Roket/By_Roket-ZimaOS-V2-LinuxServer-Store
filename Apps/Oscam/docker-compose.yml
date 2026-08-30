@@ -45,9 +45,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/oscam-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/oscam-logo.png
   title:
-    en_US: Oscam
+    en_US: Oscam (LinuxServer.io)
   category: Others
-  port_map: '8888'
   id: by-roket.linuxserver.oscam
+  port_map: '8888'
   version: version-11966
   index: /

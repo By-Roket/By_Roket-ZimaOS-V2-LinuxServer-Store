@@ -47,9 +47,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/altus-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/altus-logo.png
   title:
-    en_US: Altus
+    en_US: Altus (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.altus
+  port_map: '3000'
   version: 5.8.1
   index: /

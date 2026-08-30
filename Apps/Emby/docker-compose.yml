@@ -59,7 +59,7 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emby-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/emby-logo.png
   title:
-    en_US: Emby
+    en_US: Emby (LinuxServer.io)
   category: Media
   id: by-roket.linuxserver.emby
   version: 4.9.5

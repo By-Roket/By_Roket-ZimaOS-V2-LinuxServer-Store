@@ -58,9 +58,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dokuwiki-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dokuwiki-icon.png
   title:
-    en_US: Dokuwiki
+    en_US: Dokuwiki (LinuxServer.io)
   category: Developer
-  port_map: '80'
   id: by-roket.linuxserver.dokuwiki
+  port_map: '80'
   version: version-2026-07-14b
   index: /

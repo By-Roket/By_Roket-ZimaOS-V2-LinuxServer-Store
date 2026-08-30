@@ -99,9 +99,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openssh-server-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openssh-server-logo.png
   title:
-    en_US: Openssh server
+    en_US: Openssh server (LinuxServer.io)
   category: Networking
-  port_map: '2222'
   id: by-roket.linuxserver.openssh-server
+  port_map: '2222'
   version: version-10.3_p1-r0
   index: /

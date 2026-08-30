@@ -52,9 +52,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chromium-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/chromium-logo.png
   title:
-    en_US: Chromium
+    en_US: Chromium (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.chromium
+  port_map: '3000'
   version: arm64v8-version-fc3ad042
   index: /

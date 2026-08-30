@@ -60,9 +60,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nextcloud-icon.png
   title:
-    en_US: Nextcloud
+    en_US: Nextcloud (LinuxServer.io)
   category: Productivity
-  port_map: '80'
   id: by-roket.linuxserver.nextcloud
+  port_map: '80'
   version: 34.0.3
   index: /

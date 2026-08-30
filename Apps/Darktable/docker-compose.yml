@@ -52,9 +52,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/darktable-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/darktable-logo.png
   title:
-    en_US: Darktable
+    en_US: Darktable (LinuxServer.io)
   category: Developer
-  port_map: '3000'
   id: by-roket.linuxserver.darktable
+  port_map: '3000'
   version: 25.6.0
   index: /

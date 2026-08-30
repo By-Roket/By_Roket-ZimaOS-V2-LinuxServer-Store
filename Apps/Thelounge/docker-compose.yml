@@ -44,9 +44,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver-ls-icon.png
   title:
-    en_US: Thelounge
+    en_US: Thelounge (LinuxServer.io)
   category: Others
-  port_map: '9000'
   id: by-roket.linuxserver.thelounge
+  port_map: '9000'
   version: 4.5.2
   index: /

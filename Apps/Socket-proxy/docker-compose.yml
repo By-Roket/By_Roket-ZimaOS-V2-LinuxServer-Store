@@ -1,7 +1,7 @@
 name: linuxserver-socket-proxy
 services:
   socket-proxy:
-    image: linuxserver/socket-proxy:3.4.3
+    image: linuxserver/socket-proxy:3.4.4
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -45,9 +45,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/docker-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/docker-logo.png
   title:
-    en_US: Socket proxy
+    en_US: Socket proxy (LinuxServer.io)
   category: Networking
-  port_map: '80'
   id: by-roket.linuxserver.socket-proxy
-  version: 3.4.3
+  port_map: '80'
+  version: 3.4.4
   index: /

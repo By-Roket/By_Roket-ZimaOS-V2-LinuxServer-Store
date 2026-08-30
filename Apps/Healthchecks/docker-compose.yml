@@ -134,9 +134,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/healthchecks-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/healthchecks-logo.png
   title:
-    en_US: Healthchecks
+    en_US: Healthchecks (LinuxServer.io)
   category: Others
-  port_map: '8000'
   id: by-roket.linuxserver.healthchecks
+  port_map: '8000'
   version: 4.3.20260824
   index: /

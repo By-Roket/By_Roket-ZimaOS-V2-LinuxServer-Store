@@ -59,9 +59,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hishtory-server-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hishtory-server-icon.png
   title:
-    en_US: Hishtory server
+    en_US: Hishtory server (LinuxServer.io)
   category: Others
-  port_map: '8080'
   id: by-roket.linuxserver.hishtory-server
+  port_map: '8080'
   version: 0.335.20260821
   index: /

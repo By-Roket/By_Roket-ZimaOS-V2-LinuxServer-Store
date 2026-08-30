@@ -50,9 +50,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mysql-workbench-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mysql-workbench-icon.png
   title:
-    en_US: Mysql workbench
+    en_US: Mysql workbench (LinuxServer.io)
   category: Developer
-  port_map: '3000'
   id: by-roket.linuxserver.mysql-workbench
+  port_map: '3000'
   version: 8.0.47
   index: /

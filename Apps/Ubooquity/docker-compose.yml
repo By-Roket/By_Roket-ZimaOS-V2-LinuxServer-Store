@@ -63,7 +63,7 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ubooquity-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ubooquity-banner.png
   title:
-    en_US: Ubooquity
+    en_US: Ubooquity (LinuxServer.io)
   category: Others
   id: by-roket.linuxserver.ubooquity
   version: 3.1.0

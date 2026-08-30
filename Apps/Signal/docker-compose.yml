@@ -48,9 +48,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/signal-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/signal-logo.png
   title:
-    en_US: Signal
+    en_US: Signal (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.signal
+  port_map: '3000'
   version: 8.25.0
   index: /

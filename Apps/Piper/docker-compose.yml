@@ -80,9 +80,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piper-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piper-logo.png
   title:
-    en_US: Piper
+    en_US: Piper (LinuxServer.io)
   category: Others
-  port_map: '10200'
   id: by-roket.linuxserver.piper
+  port_map: '10200'
   version: 2.4.2
   index: /

@@ -49,9 +49,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ddclient-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ddclient-logo.png
   title:
-    en_US: Ddclient
+    en_US: Ddclient (LinuxServer.io)
   category: Networking
-  port_map: '80'
   id: by-roket.linuxserver.ddclient
+  port_map: '80'
   version: 4.0.0
   index: /

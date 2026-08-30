@@ -49,9 +49,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pelorus-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pelorus-logo.png
   title:
-    en_US: Pelorus
+    en_US: Pelorus (LinuxServer.io)
   category: AI
-  port_map: '3001'
   id: by-roket.linuxserver.pelorus
+  port_map: '3001'
   version: 0.2.3
   index: /

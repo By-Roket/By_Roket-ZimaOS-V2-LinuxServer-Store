@@ -97,9 +97,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/speedtest-tracker-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/speedtest-tracker-logo.png
   title:
-    en_US: Speedtest tracker
+    en_US: Speedtest tracker (LinuxServer.io)
   category: Networking
-  port_map: '80'
   id: by-roket.linuxserver.speedtest-tracker
+  port_map: '80'
   version: 1.15.0
   index: /

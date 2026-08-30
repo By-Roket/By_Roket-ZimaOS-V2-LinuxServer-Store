@@ -51,9 +51,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/kgretzky/pwndrop/master/media/pwndrop-logo-512.png
   thumbnail: https://raw.githubusercontent.com/kgretzky/pwndrop/master/media/pwndrop-logo-512.png
   title:
-    en_US: Pwndrop
+    en_US: Pwndrop (LinuxServer.io)
   category: Others
-  port_map: '8080'
   id: by-roket.linuxserver.pwndrop
+  port_map: '8080'
   version: 1.0.1
   index: /

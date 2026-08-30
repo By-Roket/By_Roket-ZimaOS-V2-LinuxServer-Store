@@ -53,9 +53,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vivaldi-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/vivaldi-logo.png
   title:
-    en_US: Vivaldi
+    en_US: Vivaldi (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.vivaldi
+  port_map: '3000'
   version: 8.1.4087
   index: /

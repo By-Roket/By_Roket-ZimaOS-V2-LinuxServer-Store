@@ -75,7 +75,7 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jellyfin-logo.png
   title:
-    en_US: Jellyfin
+    en_US: Jellyfin (LinuxServer.io)
   category: Media
   id: by-roket.linuxserver.jellyfin
   version: 10.11.11

@@ -55,9 +55,9 @@ x-casaos:
   icon: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/changedetection-icon.png
   thumbnail: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/changedetection-icon.png
   title:
-    en_US: Changedetection. Io
+    en_US: Changedetection. Io (LinuxServer.io)
   category: Others
-  port_map: '5000'
   id: by-roket.linuxserver.changedetection-io
+  port_map: '5000'
   version: 0.55.8
   index: /

@@ -49,9 +49,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/radarr.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/radarr.png
   title:
-    en_US: Radarr
+    en_US: Radarr (LinuxServer.io)
   category: Media
-  port_map: '7878'
   id: by-roket.linuxserver.radarr
+  port_map: '7878'
   version: 6.3.0
   index: /

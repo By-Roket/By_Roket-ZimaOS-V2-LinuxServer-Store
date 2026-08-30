@@ -63,9 +63,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/flexget-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/flexget-banner.png
   title:
-    en_US: Flexget
+    en_US: Flexget (LinuxServer.io)
   category: Media
-  port_map: '5050'
   id: by-roket.linuxserver.flexget
+  port_map: '5050'
   version: 3.20.8
   index: /

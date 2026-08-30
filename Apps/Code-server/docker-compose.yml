@@ -89,9 +89,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-banner.png
   title:
-    en_US: Code server
+    en_US: Code server (LinuxServer.io)
   category: Developer
-  port_map: '8443'
   id: by-roket.linuxserver.code-server
+  port_map: '8443'
   version: 4.135.0
   index: /

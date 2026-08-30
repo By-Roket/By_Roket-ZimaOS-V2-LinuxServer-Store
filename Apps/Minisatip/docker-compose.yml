@@ -57,7 +57,7 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minisatip-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minisatip-icon.png
   title:
-    en_US: Minisatip
+    en_US: Minisatip (LinuxServer.io)
   category: Others
   id: by-roket.linuxserver.minisatip
   version: 2.0.99

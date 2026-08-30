@@ -71,9 +71,9 @@ x-casaos:
   icon: https://kasm-ci.s3.amazonaws.com/kasm_wide.png
   thumbnail: https://kasm-ci.s3.amazonaws.com/kasm_wide.png
   title:
-    en_US: Kasm
+    en_US: Kasm (LinuxServer.io)
   category: Developer
-  port_map: '3000'
   id: by-roket.linuxserver.kasm
+  port_map: '3000'
   version: 1.19.0
   index: /

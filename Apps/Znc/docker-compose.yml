@@ -49,9 +49,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/znc-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/znc-logo.png
   title:
-    en_US: Znc
+    en_US: Znc (LinuxServer.io)
   category: Networking
-  port_map: '6501'
   id: by-roket.linuxserver.znc
+  port_map: '6501'
   version: 1.10.2
   index: /

@@ -47,9 +47,9 @@ x-casaos:
   icon: https://github.com/home-assistant/home-assistant.io/raw/next/source/images/favicon-192x192-full.png
   thumbnail: https://github.com/home-assistant/home-assistant.io/raw/next/source/images/favicon-192x192-full.png
   title:
-    en_US: Homeassistant
+    en_US: Homeassistant (LinuxServer.io)
   category: Home
-  port_map: '8123'
   id: by-roket.linuxserver.homeassistant
+  port_map: '8123'
   version: 2026.8.3
   index: /

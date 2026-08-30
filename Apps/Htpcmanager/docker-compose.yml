@@ -43,9 +43,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/htpcmanager-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/htpcmanager-icon.png
   title:
-    en_US: Htpcmanager
+    en_US: Htpcmanager (LinuxServer.io)
   category: Others
-  port_map: '8085'
   id: by-roket.linuxserver.htpcmanager
+  port_map: '8085'
   version: version-26a641bf
   index: /

@@ -57,9 +57,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/librewolf-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/librewolf-logo.png
   title:
-    en_US: Librewolf
+    en_US: Librewolf (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.librewolf
+  port_map: '3000'
   version: 154.0.1
   index: /

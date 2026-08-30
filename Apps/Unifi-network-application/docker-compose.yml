@@ -113,9 +113,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/unifi-banner.png
   title:
-    en_US: Unifi network-application
+    en_US: Unifi network-application (LinuxServer.io)
   category: Networking
-  port_map: '8080'
   id: by-roket.linuxserver.unifi-network-application
+  port_map: '8080'
   version: 10.6.101
   index: /

@@ -45,9 +45,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qemu-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qemu-logo.png
   title:
-    en_US: Qemu static
+    en_US: Qemu static (LinuxServer.io)
   category: Developer
-  port_map: '80'
   id: by-roket.linuxserver.qemu-static
+  port_map: '80'
   version: 10.0.2
   index: /

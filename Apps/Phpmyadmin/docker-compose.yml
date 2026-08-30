@@ -59,9 +59,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png
   title:
-    en_US: Phpmyadmin
+    en_US: Phpmyadmin (LinuxServer.io)
   category: Developer
-  port_map: '8081'
   id: by-roket.linuxserver.phpmyadmin
+  port_map: '8081'
   version: 5.2.3
   index: /

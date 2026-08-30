@@ -51,9 +51,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-banner.png
   title:
-    en_US: Prowlarr
+    en_US: Prowlarr (LinuxServer.io)
   category: Media
-  port_map: '9696'
   id: by-roket.linuxserver.prowlarr
+  port_map: '9696'
   version: 2.5.2
   index: /

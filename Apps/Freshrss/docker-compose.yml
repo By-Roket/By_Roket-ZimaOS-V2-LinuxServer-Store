@@ -43,9 +43,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/freshrss-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/freshrss-banner.png
   title:
-    en_US: Freshrss
+    en_US: Freshrss (LinuxServer.io)
   category: Productivity
-  port_map: '80'
   id: by-roket.linuxserver.freshrss
+  port_map: '80'
   version: 1.29.1
   index: /

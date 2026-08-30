@@ -47,9 +47,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/brave-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/brave-logo.png
   title:
-    en_US: Brave
+    en_US: Brave (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.brave
+  port_map: '3000'
   version: 1.94.117
   index: /

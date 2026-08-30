@@ -47,9 +47,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/joplin-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/joplin-logo.png
   title:
-    en_US: Joplin
+    en_US: Joplin (LinuxServer.io)
   category: Productivity
-  port_map: '3000'
   id: by-roket.linuxserver.joplin
+  port_map: '3000'
   version: 3.6.16
   index: /

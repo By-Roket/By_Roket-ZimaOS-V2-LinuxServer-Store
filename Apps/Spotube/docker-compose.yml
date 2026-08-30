@@ -50,9 +50,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/spotube-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/spotube-logo.png
   title:
-    en_US: Spotube
+    en_US: Spotube (LinuxServer.io)
   category: Media
-  port_map: '3000'
   id: by-roket.linuxserver.spotube
+  port_map: '3000'
   version: 5.1.2
   index: /

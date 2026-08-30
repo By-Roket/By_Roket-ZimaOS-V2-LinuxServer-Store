@@ -45,9 +45,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tautulli-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/tautulli-icon.png
   title:
-    en_US: Tautulli
+    en_US: Tautulli (LinuxServer.io)
   category: Media
-  port_map: '8181'
   id: by-roket.linuxserver.tautulli
+  port_map: '8181'
   version: 2.18.1
   index: /

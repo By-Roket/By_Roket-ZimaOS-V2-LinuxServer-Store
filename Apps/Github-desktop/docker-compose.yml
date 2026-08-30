@@ -48,9 +48,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/github-desktop-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/github-desktop-icon.png
   title:
-    en_US: Github desktop
+    en_US: Github desktop (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.github-desktop
+  port_map: '3000'
   version: 3.4.13
   index: /

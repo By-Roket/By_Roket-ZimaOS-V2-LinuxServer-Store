@@ -50,9 +50,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/retroarch-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/retroarch-logo.png
   title:
-    en_US: Retroarch
+    en_US: Retroarch (LinuxServer.io)
   category: Media
-  port_map: '3000'
   id: by-roket.linuxserver.retroarch
+  port_map: '3000'
   version: 1.22.2
   index: /

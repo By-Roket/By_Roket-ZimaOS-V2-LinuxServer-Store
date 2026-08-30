@@ -55,9 +55,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bambustudio-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/bambustudio-logo.png
   title:
-    en_US: Bambustudio
+    en_US: Bambustudio (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.bambustudio
+  port_map: '3000'
   version: 02.08.02
   index: /

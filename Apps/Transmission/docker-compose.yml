@@ -89,7 +89,7 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission.png
   title:
-    en_US: Transmission
+    en_US: Transmission (LinuxServer.io)
   category: Media
   id: by-roket.linuxserver.transmission
   version: 4.1.3

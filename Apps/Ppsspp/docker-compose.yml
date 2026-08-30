@@ -49,9 +49,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ppsspp-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ppsspp-logo.png
   title:
-    en_US: Ppsspp
+    en_US: Ppsspp (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.ppsspp
+  port_map: '3000'
   version: 1.20.4
   index: /

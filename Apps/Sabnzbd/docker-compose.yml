@@ -55,9 +55,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sabnzbd-banner.png
   title:
-    en_US: Sabnzbd
+    en_US: Sabnzbd (LinuxServer.io)
   category: Others
-  port_map: '8080'
   id: by-roket.linuxserver.sabnzbd
+  port_map: '8080'
   version: 5.1.2
   index: /

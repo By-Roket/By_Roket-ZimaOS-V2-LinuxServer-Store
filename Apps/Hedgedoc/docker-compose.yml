@@ -98,9 +98,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hedgedoc-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hedgedoc-banner.png
   title:
-    en_US: Hedgedoc
+    en_US: Hedgedoc (LinuxServer.io)
   category: Productivity
-  port_map: '3000'
   id: by-roket.linuxserver.hedgedoc
+  port_map: '3000'
   version: 1.12.0
   index: /

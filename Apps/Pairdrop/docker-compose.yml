@@ -67,9 +67,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/schlagmichdoch/PairDrop/master/public/images/android-chrome-512x512.png
   thumbnail: https://raw.githubusercontent.com/schlagmichdoch/PairDrop/master/public/images/android-chrome-512x512.png
   title:
-    en_US: Pairdrop
+    en_US: Pairdrop (LinuxServer.io)
   category: Networking
-  port_map: '3000'
   id: by-roket.linuxserver.pairdrop
+  port_map: '3000'
   version: 1.11.2
   index: /

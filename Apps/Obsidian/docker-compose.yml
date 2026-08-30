@@ -52,9 +52,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/obsidian-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/obsidian-logo.png
   title:
-    en_US: Obsidian
+    en_US: Obsidian (LinuxServer.io)
   category: Productivity
-  port_map: '3000'
   id: by-roket.linuxserver.obsidian
+  port_map: '3000'
   version: 1.13.7
   index: /

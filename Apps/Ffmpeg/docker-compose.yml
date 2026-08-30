@@ -45,9 +45,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ffmpeg.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ffmpeg.png
   title:
-    en_US: Ffmpeg
+    en_US: Ffmpeg (LinuxServer.io)
   category: Developer
-  port_map: '80'
   id: by-roket.linuxserver.ffmpeg
+  port_map: '80'
   version: 8.1.2
   index: /

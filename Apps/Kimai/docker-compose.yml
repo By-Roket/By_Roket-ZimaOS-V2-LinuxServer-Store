@@ -81,9 +81,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kimai-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kimai-logo.png
   title:
-    en_US: Kimai
+    en_US: Kimai (LinuxServer.io)
   category: Developer
-  port_map: '80'
   id: by-roket.linuxserver.kimai
+  port_map: '80'
   version: 2.65.0
   index: /

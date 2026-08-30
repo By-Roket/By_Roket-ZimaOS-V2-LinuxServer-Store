@@ -48,9 +48,9 @@ x-casaos:
   icon: https://www.webgrabplus.com/sites/default/themes/WgTheme/images/slideshows/EPG_fading.jpg
   thumbnail: https://www.webgrabplus.com/sites/default/themes/WgTheme/images/slideshows/EPG_fading.jpg
   title:
-    en_US: Webgrabplus
+    en_US: Webgrabplus (LinuxServer.io)
   category: Media
-  port_map: '80'
   id: by-roket.linuxserver.webgrabplus
+  port_map: '80'
   version: 5.6.0
   index: /

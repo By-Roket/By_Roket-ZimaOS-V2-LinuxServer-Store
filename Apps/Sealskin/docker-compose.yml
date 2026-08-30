@@ -66,9 +66,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/selkies-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/selkies-logo.png
   title:
-    en_US: Sealskin
+    en_US: Sealskin (LinuxServer.io)
   category: Others
-  port_map: '8000'
   id: by-roket.linuxserver.sealskin
+  port_map: '8000'
   version: 0.1.39
   index: /

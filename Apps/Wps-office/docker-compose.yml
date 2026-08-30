@@ -50,9 +50,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wps-office-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wps-office-icon.png
   title:
-    en_US: Wps office
+    en_US: Wps office (LinuxServer.io)
   category: Productivity
-  port_map: '3000'
   id: by-roket.linuxserver.wps-office
+  port_map: '3000'
   version: 11.1.0
   index: /

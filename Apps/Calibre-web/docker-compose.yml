@@ -62,9 +62,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-web-icon.png
   title:
-    en_US: Calibre web
+    en_US: Calibre web (LinuxServer.io)
   category: Media
-  port_map: '8083'
   id: by-roket.linuxserver.calibre-web
+  port_map: '8083'
   version: 0.6.27
   index: /

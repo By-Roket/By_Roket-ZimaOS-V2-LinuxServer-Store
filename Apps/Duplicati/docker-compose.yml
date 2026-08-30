@@ -71,9 +71,9 @@ x-casaos:
   icon: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/duplicati-icon.png
   thumbnail: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/duplicati-icon.png
   title:
-    en_US: Duplicati
+    en_US: Duplicati (LinuxServer.io)
   category: Networking
-  port_map: '8200'
   id: by-roket.linuxserver.duplicati
+  port_map: '8200'
   version: 2.3.0
   index: /

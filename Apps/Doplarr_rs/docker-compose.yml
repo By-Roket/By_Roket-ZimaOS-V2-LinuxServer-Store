@@ -44,9 +44,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doplarr_rs-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doplarr_rs-logo.png
   title:
-    en_US: Doplarr_rs
+    en_US: Doplarr_rs (LinuxServer.io)
   category: Media
-  port_map: '80'
   id: by-roket.linuxserver.doplarr_rs
+  port_map: '80'
   version: 4.6.0
   index: /

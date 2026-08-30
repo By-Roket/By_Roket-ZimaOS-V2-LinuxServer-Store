@@ -47,9 +47,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/flycast-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/flycast-logo.png
   title:
-    en_US: Flycast
+    en_US: Flycast (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.flycast
+  port_map: '3000'
   version: 2.7.20260823
   index: /

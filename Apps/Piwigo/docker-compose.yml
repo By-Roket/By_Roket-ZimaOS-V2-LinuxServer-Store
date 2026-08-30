@@ -48,9 +48,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piwigo-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piwigo-banner.png
   title:
-    en_US: Piwigo
+    en_US: Piwigo (LinuxServer.io)
   category: Media
-  port_map: '80'
   id: by-roket.linuxserver.piwigo
+  port_map: '80'
   version: 16.4.0
   index: /

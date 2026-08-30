@@ -62,9 +62,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ombi.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ombi.png
   title:
-    en_US: Ombi
+    en_US: Ombi (LinuxServer.io)
   category: Media
-  port_map: '3579'
   id: by-roket.linuxserver.ombi
+  port_map: '3579'
   version: 4.53.10
   index: /

@@ -48,9 +48,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/keepassxc-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/keepassxc-logo.png
   title:
-    en_US: Keepassxc
+    en_US: Keepassxc (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.keepassxc
+  port_map: '3000'
   version: 2.7.12
   index: /

@@ -48,9 +48,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/filezilla-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/filezilla-logo.png
   title:
-    en_US: Filezilla
+    en_US: Filezilla (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.filezilla
+  port_map: '3000'
   version: 3.69.6
   index: /

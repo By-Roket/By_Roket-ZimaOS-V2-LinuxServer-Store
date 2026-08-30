@@ -57,9 +57,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/firefox-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/firefox-logo.png
   title:
-    en_US: Firefox
+    en_US: Firefox (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.firefox
+  port_map: '3000'
   version: 1154.0.1
   index: /

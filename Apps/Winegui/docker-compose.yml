@@ -47,9 +47,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/winegui-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/winegui-logo.png
   title:
-    en_US: Winegui
+    en_US: Winegui (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.winegui
+  port_map: '3000'
   version: 4.3.0
   index: /

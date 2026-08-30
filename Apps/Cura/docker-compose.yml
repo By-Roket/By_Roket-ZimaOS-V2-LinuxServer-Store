@@ -48,9 +48,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cura-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cura-logo.png
   title:
-    en_US: Cura
+    en_US: Cura (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.cura
+  port_map: '3000'
   version: 5.13.0
   index: /

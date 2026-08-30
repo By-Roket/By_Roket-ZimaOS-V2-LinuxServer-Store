@@ -53,9 +53,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar-icon.png
   title:
-    en_US: Mylar3
+    en_US: Mylar3 (LinuxServer.io)
   category: Media
-  port_map: '8090'
   id: by-roket.linuxserver.mylar3
+  port_map: '8090'
   version: 0.11.0
   index: /

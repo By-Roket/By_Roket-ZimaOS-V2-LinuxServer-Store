@@ -48,9 +48,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lollypop-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lollypop-icon.png
   title:
-    en_US: Lollypop
+    en_US: Lollypop (LinuxServer.io)
   category: Media
-  port_map: '3000'
   id: by-roket.linuxserver.lollypop
+  port_map: '3000'
   version: 1.4.45
   index: /

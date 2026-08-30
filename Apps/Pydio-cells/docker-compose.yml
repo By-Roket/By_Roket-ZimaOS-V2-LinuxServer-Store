@@ -57,9 +57,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pydio-cells-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pydio-cells-icon.png
   title:
-    en_US: Pydio cells
+    en_US: Pydio cells (LinuxServer.io)
   category: Others
-  port_map: '8080'
   id: by-roket.linuxserver.pydio-cells
+  port_map: '8080'
   version: 5.0.2
   index: /

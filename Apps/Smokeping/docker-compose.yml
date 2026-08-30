@@ -62,9 +62,9 @@ x-casaos:
   icon: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/smokeping-logo.png
   thumbnail: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/smokeping-logo.png
   title:
-    en_US: Smokeping
+    en_US: Smokeping (LinuxServer.io)
   category: Networking
-  port_map: '80'
   id: by-roket.linuxserver.smokeping
+  port_map: '80'
   version: 2.9.0
   index: /

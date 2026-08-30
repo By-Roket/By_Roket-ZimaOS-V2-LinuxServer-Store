@@ -45,9 +45,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/shotcut-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/shotcut-logo.png
   title:
-    en_US: Shotcut
+    en_US: Shotcut (LinuxServer.io)
   category: Media
-  port_map: '3000'
   id: by-roket.linuxserver.shotcut
+  port_map: '3000'
   version: 26.8.1
   index: /

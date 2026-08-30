@@ -51,9 +51,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ngircd-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/ngircd-logo.png
   title:
-    en_US: Ngircd
+    en_US: Ngircd (LinuxServer.io)
   category: Social
-  port_map: '6667'
   id: by-roket.linuxserver.ngircd
+  port_map: '6667'
   version: version-27-r1
   index: /

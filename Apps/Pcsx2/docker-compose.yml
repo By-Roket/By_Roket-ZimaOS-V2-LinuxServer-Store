@@ -45,9 +45,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pcsx2-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pcsx2-logo.png
   title:
-    en_US: Pcsx2
+    en_US: Pcsx2 (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.pcsx2
+  port_map: '3000'
   version: 2.6.3
   index: /

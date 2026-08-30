@@ -59,7 +59,7 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/resilio-sync-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/resilio-sync-logo.png
   title:
-    en_US: Resilio sync
+    en_US: Resilio sync (LinuxServer.io)
   category: Others
   id: by-roket.linuxserver.resilio-sync
   version: 3.1.2

@@ -53,9 +53,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/xbackbone-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/xbackbone-logo.png
   title:
-    en_US: Xbackbone
+    en_US: Xbackbone (LinuxServer.io)
   category: Media
-  port_map: '80'
   id: by-roket.linuxserver.xbackbone
+  port_map: '80'
   version: 3.8.2
   index: /

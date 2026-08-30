@@ -69,9 +69,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/airsonic-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/airsonic-banner.png
   title:
-    en_US: Airsonic advanced
+    en_US: Airsonic advanced (LinuxServer.io)
   category: Media
-  port_map: '4040'
   id: by-roket.linuxserver.airsonic-advanced
+  port_map: '4040'
   version: 11.1.4
   index: /

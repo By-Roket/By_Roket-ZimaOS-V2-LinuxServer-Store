@@ -48,9 +48,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gzdoom-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gzdoom-logo.png
   title:
-    en_US: Gzdoom
+    en_US: Gzdoom (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.gzdoom
+  port_map: '3000'
   version: 4.14.2
   index: /

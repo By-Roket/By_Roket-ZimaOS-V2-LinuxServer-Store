@@ -48,9 +48,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kdenlive-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kdenlive-logo.png
   title:
-    en_US: Kdenlive
+    en_US: Kdenlive (LinuxServer.io)
   category: Media
-  port_map: '3000'
   id: by-roket.linuxserver.kdenlive
+  port_map: '3000'
   version: 26.08.0
   index: /

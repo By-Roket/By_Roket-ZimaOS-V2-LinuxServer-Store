@@ -70,9 +70,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kometa-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kometa-banner.png
   title:
-    en_US: Kometa
+    en_US: Kometa (LinuxServer.io)
   category: Media
-  port_map: '80'
   id: by-roket.linuxserver.kometa
+  port_map: '80'
   version: 2.4.8
   index: /

@@ -50,9 +50,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hydra-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hydra-icon.png
   title:
-    en_US: Nzbhydra2
+    en_US: Nzbhydra2 (LinuxServer.io)
   category: Others
-  port_map: '5076'
   id: by-roket.linuxserver.nzbhydra2
+  port_map: '5076'
   version: 8.9.0
   index: /

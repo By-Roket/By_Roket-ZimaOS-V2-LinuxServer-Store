@@ -51,9 +51,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qdirstat-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qdirstat-logo.png
   title:
-    en_US: Qdirstat
+    en_US: Qdirstat (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.qdirstat
+  port_map: '3000'
   version: 2.0.20260825
   index: /

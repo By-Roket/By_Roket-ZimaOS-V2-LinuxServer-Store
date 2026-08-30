@@ -1,7 +1,7 @@
 name: linuxserver-jackett
 services:
   jackett:
-    image: linuxserver/jackett:0.24.2486
+    image: linuxserver/jackett:0.24.2489
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -64,9 +64,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jackett-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/jackett-banner.png
   title:
-    en_US: Jackett
+    en_US: Jackett (LinuxServer.io)
   category: Media
-  port_map: '9117'
   id: by-roket.linuxserver.jackett
-  version: 0.24.2486
+  port_map: '9117'
+  version: 0.24.2489
   index: /

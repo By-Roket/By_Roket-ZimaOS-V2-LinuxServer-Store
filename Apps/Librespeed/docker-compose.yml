@@ -83,9 +83,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/librespeed/speedtest/master/.logo/logo3.png
   thumbnail: https://raw.githubusercontent.com/librespeed/speedtest/master/.logo/logo3.png
   title:
-    en_US: Librespeed
+    en_US: Librespeed (LinuxServer.io)
   category: Networking
-  port_map: '80'
   id: by-roket.linuxserver.librespeed
+  port_map: '80'
   version: 6.2.1
   index: /

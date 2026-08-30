@@ -47,9 +47,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/audacity-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/audacity-logo.png
   title:
-    en_US: Audacity
+    en_US: Audacity (LinuxServer.io)
   category: Media
-  port_map: '3000'
   id: by-roket.linuxserver.audacity
+  port_map: '3000'
   version: 3.7.8
   index: /

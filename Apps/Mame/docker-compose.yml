@@ -53,9 +53,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mame-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mame-logo.png
   title:
-    en_US: Mame
+    en_US: Mame (LinuxServer.io)
   category: Media
-  port_map: '3000'
   id: by-roket.linuxserver.mame
+  port_map: '3000'
   version: version-0.289dfsg1-0
   index: /

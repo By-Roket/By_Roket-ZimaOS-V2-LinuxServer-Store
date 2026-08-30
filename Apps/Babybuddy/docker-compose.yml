@@ -52,9 +52,9 @@ x-casaos:
   icon: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/babybuddy-logo.png
   thumbnail: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/babybuddy-logo.png
   title:
-    en_US: Babybuddy
+    en_US: Babybuddy (LinuxServer.io)
   category: Others
-  port_map: '8000'
   id: by-roket.linuxserver.babybuddy
+  port_map: '8000'
   version: 2.10.0
   index: /

@@ -48,9 +48,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sqlitebrowser-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sqlitebrowser-banner.png
   title:
-    en_US: Sqlitebrowser
+    en_US: Sqlitebrowser (LinuxServer.io)
   category: Developer
-  port_map: '3000'
   id: by-roket.linuxserver.sqlitebrowser
+  port_map: '3000'
   version: 3.13.1
   index: /

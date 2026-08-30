@@ -79,9 +79,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cops-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cops-icon.png
   title:
-    en_US: Cops
+    en_US: Cops (LinuxServer.io)
   category: Developer
-  port_map: '80'
   id: by-roket.linuxserver.cops
+  port_map: '80'
   version: 4.5.2
   index: /

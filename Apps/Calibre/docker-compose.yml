@@ -63,9 +63,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/calibre-logo.png
   title:
-    en_US: Calibre
+    en_US: Calibre (LinuxServer.io)
   category: Productivity
-  port_map: '8080'
   id: by-roket.linuxserver.calibre
+  port_map: '8080'
   version: 9.14.0
   index: /

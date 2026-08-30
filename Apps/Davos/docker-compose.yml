@@ -54,9 +54,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/davos/master/docs/list.PNG
   thumbnail: https://raw.githubusercontent.com/linuxserver/davos/master/docs/list.PNG
   title:
-    en_US: Davos
+    en_US: Davos (LinuxServer.io)
   category: Home
-  port_map: '8080'
   id: by-roket.linuxserver.davos
+  port_map: '8080'
   version: 2.2.2
   index: /

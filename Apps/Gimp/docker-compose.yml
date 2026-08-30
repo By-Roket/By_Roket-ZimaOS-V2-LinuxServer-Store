@@ -52,9 +52,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gimp-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gimp-logo.png
   title:
-    en_US: Gimp
+    en_US: Gimp (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.gimp
+  port_map: '3000'
   version: version-22638545
   index: /

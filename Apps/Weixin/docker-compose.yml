@@ -48,9 +48,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/weixin-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/weixin-logo.png
   title:
-    en_US: Weixin
+    en_US: Weixin (LinuxServer.io)
   category: Media
-  port_map: '3000'
   id: by-roket.linuxserver.weixin
+  port_map: '3000'
   version: version-93cea97f
   index: /

@@ -45,9 +45,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/raneto-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/raneto-logo.png
   title:
-    en_US: Raneto
+    en_US: Raneto (LinuxServer.io)
   category: Others
-  port_map: '3000'
   id: by-roket.linuxserver.raneto
+  port_map: '3000'
   version: 0.18.1
   index: /

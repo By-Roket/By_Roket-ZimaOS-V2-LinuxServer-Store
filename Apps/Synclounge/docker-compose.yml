@@ -37,9 +37,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/synclounge-banner.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/synclounge-banner.png
   title:
-    en_US: Synclounge
+    en_US: Synclounge (LinuxServer.io)
   category: Media
-  port_map: '8088'
   id: by-roket.linuxserver.synclounge
+  port_map: '8088'
   version: 5.2.35
   index: /

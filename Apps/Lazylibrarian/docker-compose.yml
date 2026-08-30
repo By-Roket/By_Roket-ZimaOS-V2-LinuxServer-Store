@@ -1,7 +1,7 @@
 name: linuxserver-lazylibrarian
 services:
   lazylibrarian:
-    image: linuxserver/lazylibrarian:version-fb291169
+    image: linuxserver/lazylibrarian:version-58e4e3ac
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -60,9 +60,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lazylibrarian-icon.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lazylibrarian-icon.png
   title:
-    en_US: Lazylibrarian
+    en_US: Lazylibrarian (LinuxServer.io)
   category: Productivity
-  port_map: '5299'
   id: by-roket.linuxserver.lazylibrarian
-  version: version-fb291169
+  port_map: '5299'
+  version: version-58e4e3ac
   index: /

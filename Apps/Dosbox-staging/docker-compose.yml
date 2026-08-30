@@ -47,9 +47,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dosbox-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/dosbox-logo.png
   title:
-    en_US: Dosbox staging
+    en_US: Dosbox staging (LinuxServer.io)
   category: Media
-  port_map: '3000'
   id: by-roket.linuxserver.dosbox-staging
+  port_map: '3000'
   version: 0.83.0
   index: /

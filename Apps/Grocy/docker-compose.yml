@@ -1,7 +1,7 @@
 name: linuxserver-grocy
 services:
   grocy:
-    image: linuxserver/grocy:4.6.0
+    image: linuxserver/grocy:4.7.0
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -51,9 +51,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grocy-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grocy-logo.png
   title:
-    en_US: Grocy
+    en_US: Grocy (LinuxServer.io)
   category: Others
-  port_map: '80'
   id: by-roket.linuxserver.grocy
-  version: 4.6.0
+  port_map: '80'
+  version: 4.7.0
   index: /

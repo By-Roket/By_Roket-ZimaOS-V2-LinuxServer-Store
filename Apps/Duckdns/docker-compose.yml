@@ -70,9 +70,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duckdns.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duckdns.png
   title:
-    en_US: Duckdns
+    en_US: Duckdns (LinuxServer.io)
   category: Networking
-  port_map: '80'
   id: by-roket.linuxserver.duckdns
+  port_map: '80'
   version: version-af6dcae5
   index: /

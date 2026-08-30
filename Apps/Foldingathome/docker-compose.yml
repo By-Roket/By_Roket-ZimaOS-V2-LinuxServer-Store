@@ -71,9 +71,9 @@ x-casaos:
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/foldingathome-logo.png
   thumbnail: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/foldingathome-logo.png
   title:
-    en_US: Foldingathome
+    en_US: Foldingathome (LinuxServer.io)
   category: Others
-  port_map: '80'
   id: by-roket.linuxserver.foldingathome
+  port_map: '80'
   version: 8.5.6
   index: /
