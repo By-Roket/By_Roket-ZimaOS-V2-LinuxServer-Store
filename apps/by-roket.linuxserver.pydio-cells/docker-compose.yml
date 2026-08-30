@@ -22,8 +22,8 @@ x-casaos:
   main: pydio-cells
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pydio-cells/assets/icon.png
   title:
-    en_US: Pydio cells
-  port_map: '8080'
+    en_US: Pydio cells (LinuxServer.io)
   id: by-roket.linuxserver.pydio-cells
+  port_map: '8080'
   version: 5.0.2
   index: /

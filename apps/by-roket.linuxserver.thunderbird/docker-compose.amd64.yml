@@ -23,8 +23,8 @@ x-casaos:
   main: thunderbird
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.thunderbird/assets/icon.png
   title:
-    en_US: Thunderbird
-  port_map: '3000'
+    en_US: Thunderbird (LinuxServer.io)
   id: by-roket.linuxserver.thunderbird
+  port_map: '3000'
   version: 1140.13.0
   index: /

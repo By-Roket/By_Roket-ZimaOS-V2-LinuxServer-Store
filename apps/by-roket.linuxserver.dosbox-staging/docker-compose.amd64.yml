@@ -23,8 +23,8 @@ x-casaos:
   main: dosbox-staging
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.dosbox-staging/assets/icon.png
   title:
-    en_US: Dosbox staging
-  port_map: '3000'
+    en_US: Dosbox staging (LinuxServer.io)
   id: by-roket.linuxserver.dosbox-staging
+  port_map: '3000'
   version: 0.83.0
   index: /

@@ -23,8 +23,8 @@ x-casaos:
   main: nzbhydra2
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nzbhydra2/assets/icon.png
   title:
-    en_US: Nzbhydra2
-  port_map: '5076'
+    en_US: Nzbhydra2 (LinuxServer.io)
   id: by-roket.linuxserver.nzbhydra2
+  port_map: '5076'
   version: 8.9.0
   index: /

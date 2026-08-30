@@ -20,8 +20,8 @@ x-casaos:
   main: pelorus
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pelorus/assets/icon.png
   title:
-    en_US: Pelorus
-  port_map: '3001'
+    en_US: Pelorus (LinuxServer.io)
   id: by-roket.linuxserver.pelorus
+  port_map: '3001'
   version: 0.2.3
   index: /

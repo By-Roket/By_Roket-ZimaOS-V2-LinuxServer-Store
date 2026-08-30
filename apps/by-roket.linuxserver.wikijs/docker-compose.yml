@@ -29,8 +29,8 @@ x-casaos:
   main: wikijs
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.wikijs/assets/icon.svg
   title:
-    en_US: Wikijs
-  port_map: '3000'
+    en_US: Wikijs (LinuxServer.io)
   id: by-roket.linuxserver.wikijs
+  port_map: '3000'
   version: 2.5.314
   index: /

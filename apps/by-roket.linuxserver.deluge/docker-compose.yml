@@ -33,7 +33,7 @@ x-casaos:
   main: deluge
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.deluge/assets/icon.png
   title:
-    en_US: Deluge
+    en_US: Deluge (LinuxServer.io)
   id: by-roket.linuxserver.deluge
   version: 2.2.0
   index: /

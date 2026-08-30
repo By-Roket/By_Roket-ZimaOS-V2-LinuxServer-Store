@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "updated_at": "2026-08-29T10:15:01Z",
+  "updated_at": "2026-08-30T09:21:43Z",
   "app_count": 246,
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "apps": [
     {
       "id": "by-roket.linuxserver.adguardhome-sync",
-      "title": "Adguardhome sync",
+      "title": "Adguardhome sync (LinuxServer.io)",
       "tagline": "A tool to synchronize AdGuardHome config to replica instances.",
       "category": "Networking",
       "categories": [
@@ -22,12 +22,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.adguardhome-sync/assets/adguardhomesync-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.adguardhome-sync/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.adguardhome-sync/meta.json",
-      "content_hash": "fae0a6aa",
+      "content_hash": "bec0bcc8",
       "version": "0.9.2"
     },
     {
       "id": "by-roket.linuxserver.airsonic-advanced",
-      "title": "Airsonic advanced",
+      "title": "Airsonic advanced (LinuxServer.io)",
       "tagline": "A free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
       "category": "Media",
       "categories": [
@@ -43,12 +43,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.airsonic-advanced/assets/airsonic-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.airsonic-advanced/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.airsonic-advanced/meta.json",
-      "content_hash": "666abe43",
+      "content_hash": "4b1f815f",
       "version": "11.1.4"
     },
     {
       "id": "by-roket.linuxserver.altus",
-      "title": "Altus",
+      "title": "Altus (LinuxServer.io)",
       "tagline": "An Electron-based WhatsApp client with themes and multiple account support.",
       "category": "Others",
       "categories": [
@@ -64,12 +64,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.altus/assets/altus-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.altus/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.altus/meta.json",
-      "content_hash": "d4e8c9b4",
+      "content_hash": "978d7a24",
       "version": "5.8.1"
     },
     {
       "id": "by-roket.linuxserver.apprise-api",
-      "title": "Apprise api",
+      "title": "Apprise api (LinuxServer.io)",
       "tagline": "Takes advantage of Apprise through your network with a user-friendly API. * Send notifications to more than 100 services. * An incredibly lightweight gateway to Apprise. * A production ready micro-service at your disposal. * A Simple Website to verify and test your configuration with. Apprise API was designed to easily fit into existing (and new) eco-systems that are looking for a simple notification solution.",
       "category": "Networking",
       "categories": [
@@ -85,12 +85,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.apprise-api/assets/logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.apprise-api/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.apprise-api/meta.json",
-      "content_hash": "bdb09ebe",
+      "content_hash": "7a79cf37",
       "version": "1.5.2"
     },
     {
       "id": "by-roket.linuxserver.ardour",
-      "title": "Ardour",
+      "title": "Ardour (LinuxServer.io)",
       "tagline": "An open source, collaborative effort of a worldwide team including musicians, programmers, and professional recording engineers.",
       "category": "Others",
       "categories": [
@@ -106,11 +106,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.ardour/assets/ardour-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.ardour/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.ardour/meta.json",
-      "content_hash": "642f7452"
+      "content_hash": "d2811430"
     },
     {
       "id": "by-roket.linuxserver.audacity",
-      "title": "Audacity",
+      "title": "Audacity (LinuxServer.io)",
       "tagline": "An easy-to-use, multi-track audio editor and recorder. Developed by a group of volunteers as open source.",
       "category": "Media",
       "categories": [
@@ -125,12 +125,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.audacity/assets/audacity-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.audacity/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.audacity/meta.json",
-      "content_hash": "a6985d66",
+      "content_hash": "157f43a4",
       "version": "3.7.8"
     },
     {
       "id": "by-roket.linuxserver.azahar",
-      "title": "Azahar",
+      "title": "Azahar (LinuxServer.io)",
       "tagline": "An open-source 3DS emulator based on Citra.",
       "category": "Others",
       "categories": [
@@ -145,12 +145,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.azahar/assets/azahar-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.azahar/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.azahar/meta.json",
-      "content_hash": "01ae89a8",
+      "content_hash": "f0e32bf8",
       "version": "12125.1.3"
     },
     {
       "id": "by-roket.linuxserver.babybuddy",
-      "title": "Babybuddy",
+      "title": "Babybuddy (LinuxServer.io)",
       "tagline": "A buddy for babies. Helps caregivers track sleep, feedings, diaper changes, tummy time and more to learn about and predict baby's needs without (as much) guess work.",
       "category": "Others",
       "categories": [
@@ -166,12 +166,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.babybuddy/assets/babybuddy-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.babybuddy/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.babybuddy/meta.json",
-      "content_hash": "b6845a67",
+      "content_hash": "381cb07b",
       "version": "2.10.0"
     },
     {
       "id": "by-roket.linuxserver.bambustudio",
-      "title": "Bambustudio",
+      "title": "Bambustudio (LinuxServer.io)",
       "tagline": "An open-source, cutting-edge, feature-rich slicing software. It contains project-based workflows, systematically optimized slicing algorithms, and an easy-to-use graphical interface, bringing users an incredibly smooth printing experience.",
       "category": "Others",
       "categories": [
@@ -186,11 +186,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.bambustudio/assets/bambustudio-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.bambustudio/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.bambustudio/meta.json",
-      "content_hash": "03f130ed"
+      "content_hash": "fd49cba2"
     },
     {
       "id": "by-roket.linuxserver.bazarr",
-      "title": "Bazarr",
+      "title": "Bazarr (LinuxServer.io)",
       "tagline": "A companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
       "category": "Media",
       "categories": [
@@ -206,12 +206,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.bazarr/assets/bazarr.webp",
       "compose_url": "/apps/by-roket.linuxserver.bazarr/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.bazarr/meta.json",
-      "content_hash": "6e15eff5",
+      "content_hash": "1b414abb",
       "version": "1.6.0"
     },
     {
       "id": "by-roket.linuxserver.beets",
-      "title": "Beets",
+      "title": "Beets (LinuxServer.io)",
       "tagline": "A music library manager and not, for the most part, a music player. It does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools.",
       "category": "Media",
       "categories": [
@@ -227,12 +227,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.beets/assets/beets-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.beets/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.beets/meta.json",
-      "content_hash": "a1df1991",
+      "content_hash": "a3a249d4",
       "version": "2.13.1"
     },
     {
       "id": "by-roket.linuxserver.bitcoin-knots",
-      "title": "Bitcoin knots",
+      "title": "Bitcoin knots (LinuxServer.io)",
       "tagline": "Can be used as a desktop client for regular payments or as a full node server utility for merchants and other payment services.",
       "category": "Others",
       "categories": [
@@ -248,11 +248,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.bitcoin-knots/assets/bitcoin-knots-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.bitcoin-knots/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.bitcoin-knots/meta.json",
-      "content_hash": "17878ce5"
+      "content_hash": "d9e9ab99"
     },
     {
       "id": "by-roket.linuxserver.blade-of-agony",
-      "title": "Blade of-agony",
+      "title": "Blade of-agony (LinuxServer.io)",
       "tagline": "A story-driven WWII shooter inspired by Wolfenstein and Doom.",
       "category": "Others",
       "categories": [
@@ -267,12 +267,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.blade-of-agony/assets/boa-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.blade-of-agony/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.blade-of-agony/meta.json",
-      "content_hash": "be5298be",
+      "content_hash": "6455c305",
       "version": "3.1.20260828"
     },
     {
       "id": "by-roket.linuxserver.blender",
-      "title": "Blender",
+      "title": "Blender (LinuxServer.io)",
       "tagline": "A free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games. This image does not support GPU rendering out of the box only accelerated workspace experience",
       "category": "Others",
       "categories": [
@@ -288,12 +288,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.blender/assets/blender-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.blender/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.blender/meta.json",
-      "content_hash": "16ef6987",
+      "content_hash": "0a1f49b6",
       "version": "5.2.1"
     },
     {
       "id": "by-roket.linuxserver.boinc",
-      "title": "Boinc",
+      "title": "Boinc (LinuxServer.io)",
       "tagline": "A platform for high-throughput computing on a large scale (thousands or millions of computers). It can be used for volunteer computing (using consumer devices) or grid computing (using organizational resources). It supports virtualized, parallel, and GPU-based applications.",
       "category": "Others",
       "categories": [
@@ -309,7 +309,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.boinc/assets/boinc_logo_black.webp",
       "compose_url": "/apps/by-roket.linuxserver.boinc/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.boinc/meta.json",
-      "content_hash": "89cb731d",
+      "content_hash": "469068fe",
       "version": "8.2.8"
     },
     {
@@ -335,7 +335,7 @@
     },
     {
       "id": "by-roket.linuxserver.bookstack",
-      "title": "Bookstack",
+      "title": "Bookstack (LinuxServer.io)",
       "tagline": "A free and open source Wiki designed for creating beautiful documentation. Featuring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease. Powered by SQL and including a Markdown editor for those who prefer it, BookStack is geared towards making documentation more of a pleasure than a chore. For more information on BookStack visit their website and check it out: https://www. Bookstackapp. Com",
       "category": "Productivity",
       "categories": [
@@ -351,11 +351,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.bookstack/assets/bookstack-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.bookstack/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.bookstack/meta.json",
-      "content_hash": "d3876eba"
+      "content_hash": "86ba9a2f"
     },
     {
       "id": "by-roket.linuxserver.brave",
-      "title": "Brave",
+      "title": "Brave (LinuxServer.io)",
       "tagline": "A fast, private and secure web browser for PC, Mac and mobile.",
       "category": "Others",
       "categories": [
@@ -371,12 +371,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.brave/assets/brave-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.brave/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.brave/meta.json",
-      "content_hash": "13d3630c",
+      "content_hash": "abacd182",
       "version": "1.94.117"
     },
     {
       "id": "by-roket.linuxserver.budge",
-      "title": "Budge",
+      "title": "Budge (LinuxServer.io)",
       "tagline": "An open source 'budgeting with envelopes' personal finance app.",
       "category": "Finance",
       "categories": [
@@ -392,7 +392,7 @@
       "thumbnail": "",
       "compose_url": "/apps/by-roket.linuxserver.budge/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.budge/meta.json",
-      "content_hash": "0e3eedf0",
+      "content_hash": "a0f30f6f",
       "version": "0.0.9"
     },
     {
@@ -417,7 +417,7 @@
     },
     {
       "id": "by-roket.linuxserver.calibre",
-      "title": "Calibre",
+      "title": "Calibre (LinuxServer.io)",
       "tagline": "A powerful and easy to use e-book manager. Users say it's outstanding and a must-have. It'll allow you to do nearly everything and it takes things a step beyond normal e-book software. It's also completely free and open source and great for both casual users and computer experts.",
       "category": "Productivity",
       "categories": [
@@ -433,12 +433,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.calibre/assets/calibre-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.calibre/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.calibre/meta.json",
-      "content_hash": "b21bc59f",
+      "content_hash": "4c289bd0",
       "version": "9.14.0"
     },
     {
       "id": "by-roket.linuxserver.calibre-web",
-      "title": "Calibre web",
+      "title": "Calibre web (LinuxServer.io)",
       "tagline": "A web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database. It is also possible to integrate google drive and edit metadata and your calibre library through the app itself. This software is a fork of library and licensed under the GPL v3 License.",
       "category": "Media",
       "categories": [
@@ -454,12 +454,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.calibre-web/assets/calibre-web-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.calibre-web/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.calibre-web/meta.json",
-      "content_hash": "9ae0b937",
+      "content_hash": "d651d414",
       "version": "0.6.27"
     },
     {
       "id": "by-roket.linuxserver.calligra",
-      "title": "Calligra",
+      "title": "Calligra (LinuxServer.io)",
       "tagline": "An office and graphic art suite by KDE. It is available for desktop PCs, tablet computers, and smartphones. It contains applications for word processing, spreadsheets, presentation, vector graphics, and editing databases.",
       "category": "Productivity",
       "categories": [
@@ -475,12 +475,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.calligra/assets/calligra-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.calligra/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.calligra/meta.json",
-      "content_hash": "e3c56dae",
+      "content_hash": "d7dbceea",
       "version": "3.2.1"
     },
     {
       "id": "by-roket.linuxserver.changedetection-io",
-      "title": "Changedetection. Io",
+      "title": "Changedetection. Io (LinuxServer.io)",
       "tagline": "Provides free, open-source web page monitoring, notification and change detection.",
       "category": "Others",
       "categories": [
@@ -496,12 +496,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.changedetection-io/assets/changedetection-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.changedetection-io/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.changedetection-io/meta.json",
-      "content_hash": "f0788e18",
+      "content_hash": "74eeb225",
       "version": "0.55.8"
     },
     {
       "id": "by-roket.linuxserver.chrome",
-      "title": "Chrome",
+      "title": "Chrome (LinuxServer.io)",
       "tagline": "The official web browser from Google, built to be fast, secure, and customizable.",
       "category": "Others",
       "categories": [
@@ -517,12 +517,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.chrome/assets/chrome-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.chrome/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.chrome/meta.json",
-      "content_hash": "f83d95ed",
+      "content_hash": "fb68a1d6",
       "version": "152.0.7977"
     },
     {
       "id": "by-roket.linuxserver.chromium",
-      "title": "Chromium",
+      "title": "Chromium (LinuxServer.io)",
       "tagline": "An open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.",
       "category": "Others",
       "categories": [
@@ -537,7 +537,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.chromium/assets/chromium-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.chromium/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.chromium/meta.json",
-      "content_hash": "206baef7"
+      "content_hash": "b15735a5"
     },
     {
       "id": "by-roket.linuxserver.ci",
@@ -598,7 +598,7 @@
     },
     {
       "id": "by-roket.linuxserver.code-server",
-      "title": "Code server",
+      "title": "Code server (LinuxServer.io)",
       "tagline": "VS Code running on a remote server, accessible through the browser. - Code on your Chromebook, tablet, and laptop with a consistent dev environment. - If you have a Windows or Mac workstation, more easily develop for Linux. - Take advantage of large cloud servers to speed up tests, compilations, downloads, and more. - Preserve battery life when you're on the go. - All intensive computation runs on your server. - You're no longer running excess instances of Chrome.",
       "category": "Developer",
       "categories": [
@@ -614,12 +614,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.code-server/assets/code-server-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.code-server/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.code-server/meta.json",
-      "content_hash": "e915a68c",
+      "content_hash": "39031697",
       "version": "4.135.0"
     },
     {
       "id": "by-roket.linuxserver.cops",
-      "title": "Cops",
+      "title": "Cops (LinuxServer.io)",
       "tagline": "By Sébastien Lucas, now maintained by MikesPub, stands for Calibre OPDS (and HTML) Php Server. COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices. Changes in your Calibre library are reflected immediately in your COPS pages. See : COPS's home for more details. Don't forget to check the Wiki. ## Why. (taken from the author's site) In my opinion Calibre is a marvelous tool but is too big and has too much dependencies to be used for its content server. That's the main reason why I coded this OPDS server. I needed a simple tool to be installed on a small server (Seagate Dockstar in my case). I initially thought of Calibre2OPDS but as it generate static file no search was possible. Later I added an simple HTML catalog that should be usable on my Kobo. So COPS's main advantages are : * No need for many dependencies. * No need for a lot of CPU or RAM. * Not much code. * Search is available. * With Dropbox / owncloud it's very easy to have an up to date OPDS server. * It was fun to code. If you want to use the OPDS feed don't forget to specify /feed at the end of your URL.",
       "category": "Developer",
       "categories": [
@@ -635,12 +635,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.cops/assets/cops-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.cops/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.cops/meta.json",
-      "content_hash": "587cac25",
+      "content_hash": "2ac3c0ce",
       "version": "4.5.2"
     },
     {
       "id": "by-roket.linuxserver.cura",
-      "title": "Cura",
+      "title": "Cura (LinuxServer.io)",
       "tagline": "Free, easy-to-use 3D printing software trusted by millions of users. Fine-tune your 3D model with 400+ settings for the best slicing and printing results.",
       "category": "Others",
       "categories": [
@@ -655,7 +655,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.cura/assets/cura-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.cura/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.cura/meta.json",
-      "content_hash": "2c2b127e",
+      "content_hash": "26a14173",
       "version": "5.13.0"
     },
     {
@@ -702,7 +702,7 @@
     },
     {
       "id": "by-roket.linuxserver.darktable",
-      "title": "Darktable",
+      "title": "Darktable (LinuxServer.io)",
       "tagline": "An open source photography workflow application and raw developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.",
       "category": "Developer",
       "categories": [
@@ -718,12 +718,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.darktable/assets/darktable-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.darktable/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.darktable/meta.json",
-      "content_hash": "822a8fd6",
+      "content_hash": "350add3d",
       "version": "25.6.0"
     },
     {
       "id": "by-roket.linuxserver.davos",
-      "title": "Davos",
+      "title": "Davos (LinuxServer.io)",
       "tagline": "An FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.",
       "category": "Home",
       "categories": [
@@ -739,12 +739,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.davos/assets/list.webp",
       "compose_url": "/apps/by-roket.linuxserver.davos/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.davos/meta.json",
-      "content_hash": "c1d4f318",
+      "content_hash": "11feb8b3",
       "version": "2.2.2"
     },
     {
       "id": "by-roket.linuxserver.ddclient",
-      "title": "Ddclient",
+      "title": "Ddclient (LinuxServer.io)",
       "tagline": "A Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.",
       "category": "Networking",
       "categories": [
@@ -760,12 +760,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.ddclient/assets/ddclient-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.ddclient/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.ddclient/meta.json",
-      "content_hash": "0e3c3889",
+      "content_hash": "63435177",
       "version": "4.0.0"
     },
     {
       "id": "by-roket.linuxserver.deluge",
-      "title": "Deluge",
+      "title": "Deluge (LinuxServer.io)",
       "tagline": "A lightweight, Free Software, cross-platform BitTorrent client. * Full Encryption * WebUI * Plugin System * Much more. . .",
       "category": "Others",
       "categories": [
@@ -781,12 +781,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.deluge/assets/deluge-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.deluge/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.deluge/meta.json",
-      "content_hash": "78bf0f8a",
+      "content_hash": "355b6516",
       "version": "2.2.0"
     },
     {
       "id": "by-roket.linuxserver.digikam",
-      "title": "Digikam",
+      "title": "Digikam (LinuxServer.io)",
       "tagline": "digiKam: Professional Photo Management with the Power of Open Source",
       "category": "Media",
       "categories": [
@@ -801,7 +801,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.digikam/assets/digikam.webp",
       "compose_url": "/apps/by-roket.linuxserver.digikam/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.digikam/meta.json",
-      "content_hash": "9c620bd7",
+      "content_hash": "7e41635f",
       "version": "9.1.0"
     },
     {
@@ -827,7 +827,7 @@
     },
     {
       "id": "by-roket.linuxserver.diskover",
-      "title": "Diskover",
+      "title": "Diskover (LinuxServer.io)",
       "tagline": "An open source file system indexer that uses Elasticsearch to index and manage data across heterogeneous storage systems.",
       "category": "Others",
       "categories": [
@@ -843,12 +843,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.diskover/assets/diskover.webp",
       "compose_url": "/apps/by-roket.linuxserver.diskover/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.diskover/meta.json",
-      "content_hash": "2aa281c0",
+      "content_hash": "b477922b",
       "version": "2.3.5"
     },
     {
       "id": "by-roket.linuxserver.dogwalk",
-      "title": "Dogwalk",
+      "title": "Dogwalk (LinuxServer.io)",
       "tagline": "Blender Studio's long awaited second game project, focused on creating a bite-sized interactive storytelling playground. Play as a big adorable dog and explore the winter woods with a little kid.",
       "category": "Others",
       "categories": [
@@ -863,11 +863,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.dogwalk/assets/dogwalk-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.dogwalk/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.dogwalk/meta.json",
-      "content_hash": "5226b785"
+      "content_hash": "833fddb9"
     },
     {
       "id": "by-roket.linuxserver.dokuwiki",
-      "title": "Dokuwiki",
+      "title": "Dokuwiki (LinuxServer.io)",
       "tagline": "A simple to use and highly versatile Open Source wiki software that doesn't require a database. It is loved by users for its clean and readable syntax. The ease of maintenance, backup and integration makes it an administrator's favorite. Built in access controls and authentication connectors make DokuWiki especially useful in the enterprise context and the large number of plugins contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki.",
       "category": "Developer",
       "categories": [
@@ -883,11 +883,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.dokuwiki/assets/dokuwiki-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.dokuwiki/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.dokuwiki/meta.json",
-      "content_hash": "17ee6cee"
+      "content_hash": "7c4efe7d"
     },
     {
       "id": "by-roket.linuxserver.dolphin",
-      "title": "Dolphin",
+      "title": "Dolphin (LinuxServer.io)",
       "tagline": "Lets you play GameCube and Wii games with various graphical enhancements and other features are available to improve your game experience.",
       "category": "Others",
       "categories": [
@@ -902,7 +902,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.dolphin/assets/dolphin-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.dolphin/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.dolphin/meta.json",
-      "content_hash": "8026fd1f"
+      "content_hash": "d84936c6"
     },
     {
       "id": "by-roket.linuxserver.domoticz",
@@ -948,7 +948,7 @@
     },
     {
       "id": "by-roket.linuxserver.doplarr_rs",
-      "title": "Doplarr_rs",
+      "title": "Doplarr_rs (LinuxServer.io)",
       "tagline": "A Discord bot for requesting media through *arr backends, written in Rust.",
       "category": "Media",
       "categories": [
@@ -964,12 +964,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.doplarr_rs/assets/doplarr_rs-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.doplarr_rs/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.doplarr_rs/meta.json",
-      "content_hash": "a58d461b",
+      "content_hash": "5933442e",
       "version": "4.6.0"
     },
     {
       "id": "by-roket.linuxserver.dosbox-staging",
-      "title": "Dosbox staging",
+      "title": "Dosbox staging (LinuxServer.io)",
       "tagline": "A modern continuation of DOSBox a free and open-source emulator that enables the execution of MS-DOS software, especially video games.",
       "category": "Media",
       "categories": [
@@ -984,12 +984,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.dosbox-staging/assets/dosbox-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.dosbox-staging/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.dosbox-staging/meta.json",
-      "content_hash": "e7e48fac",
+      "content_hash": "8f137afd",
       "version": "0.83.0"
     },
     {
       "id": "by-roket.linuxserver.doublecommander",
-      "title": "Doublecommander",
+      "title": "Doublecommander (LinuxServer.io)",
       "tagline": "A free cross platform open source file manager with two panels side by side. It is inspired by Total Commander and features some new ideas.",
       "category": "Others",
       "categories": [
@@ -1005,11 +1005,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.doublecommander/assets/doublecommander-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.doublecommander/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.doublecommander/meta.json",
-      "content_hash": "b083ac23"
+      "content_hash": "ccfda6c0"
     },
     {
       "id": "by-roket.linuxserver.duckdns",
-      "title": "Duckdns",
+      "title": "Duckdns (LinuxServer.io)",
       "tagline": "A free service which will point a DNS (sub domains of duckdns. Org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.",
       "category": "Networking",
       "categories": [
@@ -1025,11 +1025,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.duckdns/assets/duckdns.webp",
       "compose_url": "/apps/by-roket.linuxserver.duckdns/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.duckdns/meta.json",
-      "content_hash": "53b8db02"
+      "content_hash": "66c3bce4"
     },
     {
       "id": "by-roket.linuxserver.duckstation",
-      "title": "Duckstation",
+      "title": "Duckstation (LinuxServer.io)",
       "tagline": "A PS1 Emulator aiming for the best accuracy and game support.",
       "category": "Others",
       "categories": [
@@ -1045,11 +1045,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.duckstation/assets/duckstation-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.duckstation/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.duckstation/meta.json",
-      "content_hash": "c02a7ba4"
+      "content_hash": "216f9c1b"
     },
     {
       "id": "by-roket.linuxserver.duplicati",
-      "title": "Duplicati",
+      "title": "Duplicati (LinuxServer.io)",
       "tagline": "A backup client that securely stores encrypted, incremental, compressed backups on local storage, cloud storage services and remote file servers. It works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon S3, Google Drive, box. Com, Mega, B2, and many others.",
       "category": "Networking",
       "categories": [
@@ -1065,12 +1065,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.duplicati/assets/duplicati-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.duplicati/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.duplicati/meta.json",
-      "content_hash": "e2c1ecf0",
+      "content_hash": "c3bc297d",
       "version": "2.3.0"
     },
     {
       "id": "by-roket.linuxserver.eden",
-      "title": "Eden",
+      "title": "Eden (LinuxServer.io)",
       "tagline": "An experimental open-source emulator for the Nintendo Switch, built with performance and stability in mind.",
       "category": "Others",
       "categories": [
@@ -1085,12 +1085,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.eden/assets/eden-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.eden/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.eden/meta.json",
-      "content_hash": "95991dd3",
+      "content_hash": "c71e5e12",
       "version": "0.2.1"
     },
     {
       "id": "by-roket.linuxserver.emby",
-      "title": "Emby",
+      "title": "Emby (LinuxServer.io)",
       "tagline": "Organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
       "category": "Media",
       "categories": [
@@ -1106,7 +1106,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.emby/assets/emby-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.emby/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.emby/meta.json",
-      "content_hash": "4653cfa6",
+      "content_hash": "4f3b3323",
       "version": "4.9.5"
     },
     {
@@ -1173,7 +1173,7 @@
     },
     {
       "id": "by-roket.linuxserver.fail2ban",
-      "title": "Fail2ban",
+      "title": "Fail2ban (LinuxServer.io)",
       "tagline": "A daemon to ban hosts that cause multiple authentication errors.",
       "category": "Others",
       "categories": [
@@ -1189,12 +1189,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.fail2ban/assets/fail2ban-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.fail2ban/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.fail2ban/meta.json",
-      "content_hash": "450fc192",
+      "content_hash": "ffdc1b6d",
       "version": "1.1.0"
     },
     {
       "id": "by-roket.linuxserver.faster-whisper",
-      "title": "Faster whisper",
+      "title": "Faster whisper (LinuxServer.io)",
       "tagline": "A reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This container provides a Wyoming protocol server for faster-whisper.",
       "category": "AI",
       "categories": [
@@ -1210,7 +1210,7 @@
       "thumbnail": "",
       "compose_url": "/apps/by-roket.linuxserver.faster-whisper/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.faster-whisper/meta.json",
-      "content_hash": "da9e1e6d",
+      "content_hash": "cfcffa1f",
       "version": "3.6.0"
     },
     {
@@ -1236,7 +1236,7 @@
     },
     {
       "id": "by-roket.linuxserver.ferdium",
-      "title": "Ferdium",
+      "title": "Ferdium (LinuxServer.io)",
       "tagline": "A desktop app that helps you organize how you use your favourite apps by combining them into one application.",
       "category": "Others",
       "categories": [
@@ -1252,12 +1252,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.ferdium/assets/ferdium-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.ferdium/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.ferdium/meta.json",
-      "content_hash": "be6cf379",
+      "content_hash": "7cf9e4e3",
       "version": "7.2.2"
     },
     {
       "id": "by-roket.linuxserver.ffmpeg",
-      "title": "Ffmpeg",
+      "title": "Ffmpeg (LinuxServer.io)",
       "tagline": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/ffmpeg for details.",
       "category": "Developer",
       "categories": [
@@ -1273,12 +1273,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.ffmpeg/assets/ffmpeg.webp",
       "compose_url": "/apps/by-roket.linuxserver.ffmpeg/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.ffmpeg/meta.json",
-      "content_hash": "44997089",
+      "content_hash": "126679c9",
       "version": "8.1.2"
     },
     {
       "id": "by-roket.linuxserver.filezilla",
-      "title": "Filezilla",
+      "title": "Filezilla (LinuxServer.io)",
       "tagline": "Client is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.",
       "category": "Others",
       "categories": [
@@ -1294,12 +1294,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.filezilla/assets/filezilla-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.filezilla/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.filezilla/meta.json",
-      "content_hash": "05bdffdc",
+      "content_hash": "a00fe896",
       "version": "3.69.6"
     },
     {
       "id": "by-roket.linuxserver.firefox",
-      "title": "Firefox",
+      "title": "Firefox (LinuxServer.io)",
       "tagline": "Browser, also known as Mozilla Firefox or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards.",
       "category": "Others",
       "categories": [
@@ -1315,7 +1315,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.firefox/assets/firefox-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.firefox/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.firefox/meta.json",
-      "content_hash": "0b8a205e",
+      "content_hash": "827e66c9",
       "version": "1154.0.1"
     },
     {
@@ -1341,7 +1341,7 @@
     },
     {
       "id": "by-roket.linuxserver.flexget",
-      "title": "Flexget",
+      "title": "Flexget (LinuxServer.io)",
       "tagline": "A multipurpose automation tool for all of your media.",
       "category": "Media",
       "categories": [
@@ -1357,12 +1357,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.flexget/assets/flexget-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.flexget/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.flexget/meta.json",
-      "content_hash": "15f026ba",
+      "content_hash": "d5aff993",
       "version": "3.20.8"
     },
     {
       "id": "by-roket.linuxserver.flycast",
-      "title": "Flycast",
+      "title": "Flycast (LinuxServer.io)",
       "tagline": "A multi-platform Sega Dreamcast, Naomi, Naomi 2, and Atomiswave emulator derived from reicast.",
       "category": "Others",
       "categories": [
@@ -1377,12 +1377,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.flycast/assets/flycast-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.flycast/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.flycast/meta.json",
-      "content_hash": "3c460aaf",
+      "content_hash": "8adc968d",
       "version": "2.7.20260823"
     },
     {
       "id": "by-roket.linuxserver.foldingathome",
-      "title": "Foldingathome",
+      "title": "Foldingathome (LinuxServer.io)",
       "tagline": "A distributed computing project for simulating protein dynamics, including the process of protein folding and the movements of proteins implicated in a variety of diseases. It brings together citizen scientists who volunteer to run simulations of protein dynamics on their personal computers. Insights from this data are helping scientists to better understand biology, and providing new opportunities for developing therapeutics.",
       "category": "Others",
       "categories": [
@@ -1398,12 +1398,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.foldingathome/assets/foldingathome-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.foldingathome/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.foldingathome/meta.json",
-      "content_hash": "ad316169",
+      "content_hash": "8dbf952b",
       "version": "8.5.6"
     },
     {
       "id": "by-roket.linuxserver.freecad",
-      "title": "Freecad",
+      "title": "Freecad (LinuxServer.io)",
       "tagline": "A general-purpose parametric 3D computer-aided design (CAD) modeler and a building information modeling (BIM) software application with finite element method (FEM) support.",
       "category": "Others",
       "categories": [
@@ -1419,7 +1419,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.freecad/assets/freecad-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.freecad/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.freecad/meta.json",
-      "content_hash": "2376587c",
+      "content_hash": "b24c5ec3",
       "version": "1.1.3"
     },
     {
@@ -1444,7 +1444,7 @@
     },
     {
       "id": "by-roket.linuxserver.freshrss",
-      "title": "Freshrss",
+      "title": "Freshrss (LinuxServer.io)",
       "tagline": "A free, self-hostable aggregator for rss feeds.",
       "category": "Productivity",
       "categories": [
@@ -1460,12 +1460,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.freshrss/assets/freshrss-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.freshrss/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.freshrss/meta.json",
-      "content_hash": "a2dabca0",
+      "content_hash": "b59d0d49",
       "version": "1.29.1"
     },
     {
       "id": "by-roket.linuxserver.gimp",
-      "title": "Gimp",
+      "title": "Gimp (LinuxServer.io)",
       "tagline": "A free and open-source raster graphics editor used for image manipulation (retouching) and image editing, free-form drawing, transcoding between different image file formats, and more specialized tasks. It is extensible by means of plugins, and scriptable.",
       "category": "Others",
       "categories": [
@@ -1481,11 +1481,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.gimp/assets/gimp-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.gimp/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.gimp/meta.json",
-      "content_hash": "635a08aa"
+      "content_hash": "114194d4"
     },
     {
       "id": "by-roket.linuxserver.github-desktop",
-      "title": "Github desktop",
+      "title": "Github desktop (LinuxServer.io)",
       "tagline": "An open source Electron-based GitHub app. It is written in TypeScript and uses React.",
       "category": "Others",
       "categories": [
@@ -1501,12 +1501,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.github-desktop/assets/github-desktop-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.github-desktop/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.github-desktop/meta.json",
-      "content_hash": "49409e23",
+      "content_hash": "594e32d5",
       "version": "3.4.13"
     },
     {
       "id": "by-roket.linuxserver.gitqlient",
-      "title": "Gitqlient",
+      "title": "Gitqlient (LinuxServer.io)",
       "tagline": "A multi-platform Git client originally forked from QGit. Nowadays it goes beyond of just a fork and adds a lot of new functionality.",
       "category": "Developer",
       "categories": [
@@ -1522,12 +1522,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.gitqlient/assets/gitqlient-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.gitqlient/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.gitqlient/meta.json",
-      "content_hash": "0666f666",
+      "content_hash": "44d711a6",
       "version": "1.6.3"
     },
     {
       "id": "by-roket.linuxserver.grav",
-      "title": "Grav",
+      "title": "Grav (LinuxServer.io)",
       "tagline": "A Fast, Simple, and Flexible, file-based Web-platform.",
       "category": "Others",
       "categories": [
@@ -1543,12 +1543,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.grav/assets/grav-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.grav/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.grav/meta.json",
-      "content_hash": "f0eb0c62",
+      "content_hash": "e49dc88c",
       "version": "2.0.21"
     },
     {
       "id": "by-roket.linuxserver.grocy",
-      "title": "Grocy",
+      "title": "Grocy (LinuxServer.io)",
       "tagline": "An ERP system for your kitchen. Cut down on food waste, and manage your chores with this brilliant utility. Keep track of your purchases, how much food you are wasting, what chores need doing and what batteries need charging with this proudly Open Source tool For more information on grocy visit their website and check it out: https://grocy. Info",
       "category": "Others",
       "categories": [
@@ -1564,12 +1564,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.grocy/assets/grocy-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.grocy/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.grocy/meta.json",
-      "content_hash": "92cec4d5",
-      "version": "4.6.0"
+      "content_hash": "b486084d",
+      "version": "4.7.0"
     },
     {
       "id": "by-roket.linuxserver.gzdoom",
-      "title": "Gzdoom",
+      "title": "Gzdoom (LinuxServer.io)",
       "tagline": "A feature centric port for all Doom engine games, based on ZDoom, adding an OpenGL renderer and powerful scripting capabilities.",
       "category": "Others",
       "categories": [
@@ -1585,12 +1585,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.gzdoom/assets/gzdoom-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.gzdoom/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.gzdoom/meta.json",
-      "content_hash": "4ef3cc1d",
+      "content_hash": "bcbd4c35",
       "version": "4.14.2"
     },
     {
       "id": "by-roket.linuxserver.habridge",
-      "title": "Habridge",
+      "title": "Habridge (LinuxServer.io)",
       "tagline": "Emulates Philips Hue API to other home automation gateways such as an Amazon Echo/Dot Gen 1 (gen 2 has issues discovering ha-bridge) or other systems that support Philips Hue. The Bridge handles basic commands such as On, Off and brightness commands of the hue protocol. This bridge can control most devices that have a distinct API.",
       "category": "Home",
       "categories": [
@@ -1606,12 +1606,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.habridge/assets/habridge-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.habridge/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.habridge/meta.json",
-      "content_hash": "9ae598a9",
+      "content_hash": "943028a0",
       "version": "5.4.1"
     },
     {
       "id": "by-roket.linuxserver.handbrake",
-      "title": "Handbrake",
+      "title": "Handbrake (LinuxServer.io)",
       "tagline": "An open-source tool, built by volunteers, for converting video from nearly any format to a selection of modern, widely supported codecs.",
       "category": "Media",
       "categories": [
@@ -1626,7 +1626,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.handbrake/assets/handbrake-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.handbrake/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.handbrake/meta.json",
-      "content_hash": "e056aa3f",
+      "content_hash": "3053d35e",
       "version": "1.11.2"
     },
     {
@@ -1651,7 +1651,7 @@
     },
     {
       "id": "by-roket.linuxserver.healthchecks",
-      "title": "Healthchecks",
+      "title": "Healthchecks (LinuxServer.io)",
       "tagline": "A watchdog for your cron jobs. It's a web server that listens for pings from your cron jobs, plus a web interface.",
       "category": "Others",
       "categories": [
@@ -1667,12 +1667,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.healthchecks/assets/healthchecks-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.healthchecks/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.healthchecks/meta.json",
-      "content_hash": "d243b3d4",
+      "content_hash": "542897c5",
       "version": "4.3.20260824"
     },
     {
       "id": "by-roket.linuxserver.hedgedoc",
-      "title": "Hedgedoc",
+      "title": "Hedgedoc (LinuxServer.io)",
       "tagline": "Gives you access to all your files wherever you are. HedgeDoc is a real-time, multi-platform collaborative markdown note editor. This means that you can write notes with other people on your desktop, tablet or even on the phone. You can sign-in via multiple auth providers like Facebook, Twitter, GitHub and many more on the homepage.",
       "category": "Productivity",
       "categories": [
@@ -1688,12 +1688,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.hedgedoc/assets/hedgedoc-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.hedgedoc/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.hedgedoc/meta.json",
-      "content_hash": "1f297fea",
+      "content_hash": "aa983e92",
       "version": "1.12.0"
     },
     {
       "id": "by-roket.linuxserver.heimdall",
-      "title": "Heimdall",
+      "title": "Heimdall (LinuxServer.io)",
       "tagline": "A way to organise all those links to your most used web sites and web applications in a simple way. Simplicity is the key to Heimdall. Why not use it as your browser start page. It even has the ability to include a search bar using either Google, Bing or DuckDuckGo.",
       "category": "Others",
       "categories": [
@@ -1709,12 +1709,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.heimdall/assets/heimdall-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.heimdall/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.heimdall/meta.json",
-      "content_hash": "69d8af14",
+      "content_hash": "f2964b09",
       "version": "2.8.2"
     },
     {
       "id": "by-roket.linuxserver.helium",
-      "title": "Helium",
+      "title": "Helium (LinuxServer.io)",
       "tagline": "A Chromium-based web browser made for people, with love. Privacy-first with unbiased ad-blocking.",
       "category": "Others",
       "categories": [
@@ -1730,12 +1730,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.helium/assets/helium-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.helium/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.helium/meta.json",
-      "content_hash": "45b4a5c6",
-      "version": "0.15.7"
+      "content_hash": "501b054b",
+      "version": "0.16.2"
     },
     {
       "id": "by-roket.linuxserver.hishtory-server",
-      "title": "Hishtory server",
+      "title": "Hishtory server (LinuxServer.io)",
       "tagline": "A better shell history. It stores your shell history in context (what directory you ran the command in, whether it succeeded or failed, how long it took, etc). This is all stored locally and end-to-end encrypted for syncing to to all your other computers.",
       "category": "Others",
       "categories": [
@@ -1751,12 +1751,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.hishtory-server/assets/hishtory-server-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.hishtory-server/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.hishtory-server/meta.json",
-      "content_hash": "9ebe99a1",
+      "content_hash": "651da096",
       "version": "0.335.20260821"
     },
     {
       "id": "by-roket.linuxserver.homeassistant",
-      "title": "Homeassistant",
+      "title": "Homeassistant (LinuxServer.io)",
       "tagline": "Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a Raspberry Pi or a local server",
       "category": "Home",
       "categories": [
@@ -1772,12 +1772,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.homeassistant/assets/favicon-192x192-full.webp",
       "compose_url": "/apps/by-roket.linuxserver.homeassistant/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.homeassistant/meta.json",
-      "content_hash": "eb51c88f",
+      "content_hash": "4a6bb5df",
       "version": "2026.8.3"
     },
     {
       "id": "by-roket.linuxserver.htpcmanager",
-      "title": "Htpcmanager",
+      "title": "Htpcmanager (LinuxServer.io)",
       "tagline": "A front end for many htpc related applications.",
       "category": "Others",
       "categories": [
@@ -1793,11 +1793,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.htpcmanager/assets/htpcmanager-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.htpcmanager/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.htpcmanager/meta.json",
-      "content_hash": "c50b5fa1"
+      "content_hash": "6c181e43"
     },
     {
       "id": "by-roket.linuxserver.inkscape",
-      "title": "Inkscape",
+      "title": "Inkscape (LinuxServer.io)",
       "tagline": "Professional quality vector graphics software which runs on Linux, Mac OS X and Windows desktop computers.",
       "category": "Others",
       "categories": [
@@ -1813,12 +1813,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.inkscape/assets/inkscape-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.inkscape/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.inkscape/meta.json",
-      "content_hash": "2aeeac05",
+      "content_hash": "d929bb85",
       "version": "1.4.2"
     },
     {
       "id": "by-roket.linuxserver.intellij-idea",
-      "title": "Intellij idea",
+      "title": "Intellij idea (LinuxServer.io)",
       "tagline": "Helps you write code faster with tools that eliminate tedious tasks and let you focus on what matters – building great software.",
       "category": "Developer",
       "categories": [
@@ -1833,12 +1833,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.intellij-idea/assets/intellij-idea-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.intellij-idea/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.intellij-idea/meta.json",
-      "content_hash": "82b780f6",
+      "content_hash": "c6be38ee",
       "version": "42026.2.0"
     },
     {
       "id": "by-roket.linuxserver.jackett",
-      "title": "Jackett",
+      "title": "Jackett (LinuxServer.io)",
       "tagline": "Works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software. This allows for getting recent uploads (like RSS) and performing searches. Jackett is a single repository of maintained indexer scraping & translation logic - removing the burden from other apps.",
       "category": "Media",
       "categories": [
@@ -1854,12 +1854,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.jackett/assets/jackett-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.jackett/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.jackett/meta.json",
-      "content_hash": "443ced5c",
-      "version": "0.24.2486"
+      "content_hash": "741b331e",
+      "version": "0.24.2489"
     },
     {
       "id": "by-roket.linuxserver.jellyfin",
-      "title": "Jellyfin",
+      "title": "Jellyfin (LinuxServer.io)",
       "tagline": "A Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. Jellyfin is descended from Emby's 3. 5. 2 release and ported to the. NET Core framework to enable full cross-platform support. There are no strings attached, no premium licenses or features, and no hidden agendas: just a team who want to build something better and work together to achieve it.",
       "category": "Media",
       "categories": [
@@ -1875,7 +1875,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.jellyfin/assets/jellyfin-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.jellyfin/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.jellyfin/meta.json",
-      "content_hash": "9adcd9e9",
+      "content_hash": "73cddb5e",
       "version": "10.11.11"
     },
     {
@@ -1900,7 +1900,7 @@
     },
     {
       "id": "by-roket.linuxserver.joplin",
-      "title": "Joplin",
+      "title": "Joplin (LinuxServer.io)",
       "tagline": "A free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks.",
       "category": "Productivity",
       "categories": [
@@ -1915,12 +1915,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.joplin/assets/joplin-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.joplin/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.joplin/meta.json",
-      "content_hash": "b0e926ca",
+      "content_hash": "93e1b66f",
       "version": "3.6.16"
     },
     {
       "id": "by-roket.linuxserver.kali-linux",
-      "title": "Kali linux",
+      "title": "Kali linux (LinuxServer.io)",
       "tagline": "is an Advanced Penetration Testing Linux distribution used for Penetration Testing, Ethical Hacking and network security assessments. KALI LINUX ™ is a trademark of OffSec.",
       "category": "Networking",
       "categories": [
@@ -1936,11 +1936,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.kali-linux/assets/kali-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.kali-linux/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.kali-linux/meta.json",
-      "content_hash": "8e3b7fab"
+      "content_hash": "45825b55"
     },
     {
       "id": "by-roket.linuxserver.kasm",
-      "title": "Kasm",
+      "title": "Kasm (LinuxServer.io)",
       "tagline": "Workspaces is a docker container streaming platform for delivering browser-based access to desktops, applications, and web services. Kasm uses devops-enabled Containerized Desktop Infrastructure (CDI) to create on-demand, disposable, docker containers that are accessible via web browser. Example use-cases include Remote Browser Isolation (RBI), Data Loss Prevention (DLP), Desktop as a Service (DaaS), Secure Remote Access Services (RAS), and Open Source Intelligence (OSINT) collections. The rendering of the graphical-based containers is powered by the open-source project KasmVNC.",
       "category": "Developer",
       "categories": [
@@ -1956,12 +1956,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.kasm/assets/kasm_wide.webp",
       "compose_url": "/apps/by-roket.linuxserver.kasm/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.kasm/meta.json",
-      "content_hash": "793b348b",
+      "content_hash": "fccfb0fe",
       "version": "1.19.0"
     },
     {
       "id": "by-roket.linuxserver.kavita",
-      "title": "Kavita",
+      "title": "Kavita (LinuxServer.io)",
       "tagline": "A fast, feature rich, cross platform reading server. Built with a focus for being a full solution for all your reading needs. Setup your own server and share your reading collection with your friends and family.",
       "category": "Others",
       "categories": [
@@ -1977,12 +1977,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.kavita/assets/kavita-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.kavita/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.kavita/meta.json",
-      "content_hash": "e7b75232",
-      "version": "0.9.0"
+      "content_hash": "6bc72031",
+      "version": "0.9.1"
     },
     {
       "id": "by-roket.linuxserver.kdenlive",
-      "title": "Kdenlive",
+      "title": "Kdenlive (LinuxServer.io)",
       "tagline": "A powerful free and open source cross-platform video editing program made by the KDE community. Feature rich and production ready.",
       "category": "Media",
       "categories": [
@@ -1998,11 +1998,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.kdenlive/assets/kdenlive-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.kdenlive/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.kdenlive/meta.json",
-      "content_hash": "9c7cd93d"
+      "content_hash": "03f18662"
     },
     {
       "id": "by-roket.linuxserver.keepassxc",
-      "title": "Keepassxc",
+      "title": "Keepassxc (LinuxServer.io)",
       "tagline": "A free and open-source password manager. It started as a community fork of KeePassX (itself a cross-platform port of KeePass).",
       "category": "Others",
       "categories": [
@@ -2018,12 +2018,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.keepassxc/assets/keepassxc-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.keepassxc/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.keepassxc/meta.json",
-      "content_hash": "df8745fd",
+      "content_hash": "3877e7e0",
       "version": "2.7.12"
     },
     {
       "id": "by-roket.linuxserver.kicad",
-      "title": "Kicad",
+      "title": "Kicad (LinuxServer.io)",
       "tagline": "A Cross Platform and Open Source Electronics Design Automation Suite.",
       "category": "Home",
       "categories": [
@@ -2039,12 +2039,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.kicad/assets/kicad-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.kicad/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.kicad/meta.json",
-      "content_hash": "76a0f6db",
+      "content_hash": "3a137886",
       "version": "10.0.3"
     },
     {
       "id": "by-roket.linuxserver.kimai",
-      "title": "Kimai",
+      "title": "Kimai (LinuxServer.io)",
       "tagline": "A professional grade time-tracking application, free and open-source. It handles use-cases of freelancers as well as companies with dozens or hundreds of users. Kimai was build to track your project times and ships with many advanced features, including but not limited to: JSON API, invoicing, data exports, multi-timer and punch-in punch-out mode, tagging, multi-user - multi-timezones - multi-language (over 30 translations existing. ), authentication via SAML/LDAP/Database, two-factor authentication (2FA) with TOTP, customizable role and team permissions, responsive design, user/customer/project specific rates, advanced search & filtering, money and time budgets, advanced reporting, support for plugins and so much more.",
       "category": "Developer",
       "categories": [
@@ -2060,12 +2060,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.kimai/assets/kimai-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.kimai/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.kimai/meta.json",
-      "content_hash": "2949ca79",
+      "content_hash": "01842272",
       "version": "2.65.0"
     },
     {
       "id": "by-roket.linuxserver.kometa",
-      "title": "Kometa",
+      "title": "Kometa (LinuxServer.io)",
       "tagline": "A powerful tool designed to give you complete control over your media libraries. With Kometa, you can take your customization to the next level, with granular control over metadata, collections, overlays, and much more.",
       "category": "Media",
       "categories": [
@@ -2081,12 +2081,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.kometa/assets/kometa-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.kometa/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.kometa/meta.json",
-      "content_hash": "eddea6b6",
+      "content_hash": "84f504e1",
       "version": "2.4.8"
     },
     {
       "id": "by-roket.linuxserver.krita",
-      "title": "Krita",
+      "title": "Krita (LinuxServer.io)",
       "tagline": "A professional FREE and open source painting program. It is made by artists that want to see affordable art tools for everyone.",
       "category": "Others",
       "categories": [
@@ -2101,12 +2101,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.krita/assets/krita-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.krita/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.krita/meta.json",
-      "content_hash": "f32960e9",
+      "content_hash": "aaf9a9bf",
       "version": "5.3.3"
     },
     {
       "id": "by-roket.linuxserver.lazylibrarian",
-      "title": "Lazylibrarian",
+      "title": "Lazylibrarian (LinuxServer.io)",
       "tagline": "A program to follow authors and grab metadata for all your digital reading needs. It uses a combination of Goodreads Librarything and optionally GoogleBooks as sources for author info and book info. This container is based on the DobyTang fork.",
       "category": "Productivity",
       "categories": [
@@ -2122,11 +2122,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.lazylibrarian/assets/lazylibrarian-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.lazylibrarian/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lazylibrarian/meta.json",
-      "content_hash": "5cb77313"
+      "content_hash": "f9cc80aa"
     },
     {
       "id": "by-roket.linuxserver.ldap-auth",
-      "title": "Ldap auth",
+      "title": "Ldap auth (LinuxServer.io)",
       "tagline": "Software is for authenticating users who request protected resources from servers proxied by nginx. It includes a daemon (ldap-auth) that communicates with an authentication server, and a webserver daemon that generates an authentication cookie based on the user’s credentials. The daemons are written in Python for use with a Lightweight Directory Access Protocol (LDAP) authentication server (OpenLDAP or Microsoft Windows Active Directory 2003 and 2012).",
       "category": "Networking",
       "categories": [
@@ -2142,12 +2142,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.ldap-auth/assets/ldap-auth-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.ldap-auth/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.ldap-auth/meta.json",
-      "content_hash": "51382110",
+      "content_hash": "42252fed",
       "version": "3.4.7"
     },
     {
       "id": "by-roket.linuxserver.libreoffice",
-      "title": "Libreoffice",
+      "title": "Libreoffice (LinuxServer.io)",
       "tagline": "A free and powerful office suite, and a successor to OpenOffice. Org (commonly known as OpenOffice). Its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity.",
       "category": "Productivity",
       "categories": [
@@ -2163,12 +2163,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.libreoffice/assets/libreoffice-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.libreoffice/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.libreoffice/meta.json",
-      "content_hash": "ec5a1102",
+      "content_hash": "83d25c4c",
       "version": "25.8.7"
     },
     {
       "id": "by-roket.linuxserver.librespeed",
-      "title": "Librespeed",
+      "title": "Librespeed (LinuxServer.io)",
       "tagline": "A very lightweight Speedtest implemented in Javascript, using XMLHttpRequest and Web Workers. No Flash, No Java, No Websocket, No Bullshit.",
       "category": "Networking",
       "categories": [
@@ -2184,12 +2184,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.librespeed/assets/logo3.webp",
       "compose_url": "/apps/by-roket.linuxserver.librespeed/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.librespeed/meta.json",
-      "content_hash": "42e1bd11",
+      "content_hash": "430194b0",
       "version": "6.2.1"
     },
     {
       "id": "by-roket.linuxserver.librewolf",
-      "title": "Librewolf",
+      "title": "Librewolf (LinuxServer.io)",
       "tagline": "A custom and independent version of Firefox, with the primary goals of privacy, security and user freedom. LibreWolf also aims to remove all the telemetry, data collection and annoyances, as well as disabling anti-freedom features like DRM.",
       "category": "Others",
       "categories": [
@@ -2205,12 +2205,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.librewolf/assets/librewolf-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.librewolf/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.librewolf/meta.json",
-      "content_hash": "803fa7ac",
+      "content_hash": "434fd9fc",
       "version": "154.0.1"
     },
     {
       "id": "by-roket.linuxserver.lidarr",
-      "title": "Lidarr",
+      "title": "Lidarr (LinuxServer.io)",
       "tagline": "A music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
       "category": "Media",
       "categories": [
@@ -2226,12 +2226,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.lidarr/assets/400.webp",
       "compose_url": "/apps/by-roket.linuxserver.lidarr/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lidarr/meta.json",
-      "content_hash": "ba07415b",
+      "content_hash": "95a4f1e4",
       "version": "3.1.0"
     },
     {
       "id": "by-roket.linuxserver.limnoria",
-      "title": "Limnoria",
+      "title": "Limnoria (LinuxServer.io)",
       "tagline": "A robust, full-featured, and user/programmer-friendly Python IRC bot, with many existing plugins. Successor of the well-known Supybot.",
       "category": "Others",
       "categories": [
@@ -2247,12 +2247,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.limnoria/assets/limnoria-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.limnoria/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.limnoria/meta.json",
-      "content_hash": "3053ca42",
+      "content_hash": "b383a4e4",
       "version": "2026.5.8"
     },
     {
       "id": "by-roket.linuxserver.lm-studio",
-      "title": "Lm studio",
+      "title": "Lm studio (LinuxServer.io)",
       "tagline": "Can run local AI models like gpt-oss, Llama, Gemma, Qwen, and DeepSeek privately on your computer.",
       "category": "Others",
       "categories": [
@@ -2267,11 +2267,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.lm-studio/assets/lmstudio-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.lm-studio/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lm-studio/meta.json",
-      "content_hash": "c34731fc"
+      "content_hash": "885160e0"
     },
     {
       "id": "by-roket.linuxserver.lollypop",
-      "title": "Lollypop",
+      "title": "Lollypop (LinuxServer.io)",
       "tagline": "A lightweight modern music player designed to work excellently on the GNOME desktop environment.",
       "category": "Media",
       "categories": [
@@ -2287,7 +2287,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.lollypop/assets/lollypop-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.lollypop/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lollypop/meta.json",
-      "content_hash": "60c30890",
+      "content_hash": "1129739d",
       "version": "1.4.45"
     },
     {
@@ -2311,7 +2311,7 @@
     },
     {
       "id": "by-roket.linuxserver.luanti",
-      "title": "Luanti",
+      "title": "Luanti (LinuxServer.io)",
       "tagline": "(formerly Minetest) is an open source voxel game-creation platform with easy modding and game creation",
       "category": "Others",
       "categories": [
@@ -2327,12 +2327,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.luanti/assets/minetest-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.luanti/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.luanti/meta.json",
-      "content_hash": "b2e9fdc2",
+      "content_hash": "63dbd152",
       "version": "5.17.0"
     },
     {
       "id": "by-roket.linuxserver.lychee",
-      "title": "Lychee",
+      "title": "Lychee (LinuxServer.io)",
       "tagline": "A free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
       "category": "Media",
       "categories": [
@@ -2348,12 +2348,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.lychee/assets/lychee-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.lychee/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lychee/meta.json",
-      "content_hash": "6aa04e73",
-      "version": "7.7.5"
+      "content_hash": "4211d6bf",
+      "version": "7.8.0"
     },
     {
       "id": "by-roket.linuxserver.mame",
-      "title": "Mame",
+      "title": "Mame (LinuxServer.io)",
       "tagline": "A free and open-source emulator designed to emulate the hardware of arcade games, video game consoles, old computers and other systems in software on modern personal computers.",
       "category": "Media",
       "categories": [
@@ -2369,11 +2369,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.mame/assets/mame-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.mame/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.mame/meta.json",
-      "content_hash": "5f792f53"
+      "content_hash": "56417d2a"
     },
     {
       "id": "by-roket.linuxserver.manyfold",
-      "title": "Manyfold",
+      "title": "Manyfold (LinuxServer.io)",
       "tagline": "An open source, self-hosted web application for managing a collection of 3D models, particularly focused on 3D printing.",
       "category": "Others",
       "categories": [
@@ -2389,12 +2389,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.manyfold/assets/manyfold-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.manyfold/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.manyfold/meta.json",
-      "content_hash": "5dbea83c",
+      "content_hash": "226fd2fb",
       "version": "0.148.0"
     },
     {
       "id": "by-roket.linuxserver.mariadb",
-      "title": "Mariadb",
+      "title": "Mariadb (LinuxServer.io)",
       "tagline": "One of the most popular database servers. Made by the original developers of MySQL.",
       "category": "Developer",
       "categories": [
@@ -2410,12 +2410,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.mariadb/assets/mariadb-git.webp",
       "compose_url": "/apps/by-roket.linuxserver.mariadb/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.mariadb/meta.json",
-      "content_hash": "080a5c82",
+      "content_hash": "abd15c65",
       "version": "11.8.8"
     },
     {
       "id": "by-roket.linuxserver.mastodon",
-      "title": "Mastodon",
+      "title": "Mastodon (LinuxServer.io)",
       "tagline": "A free, open-source social network server based on ActivityPub where users can follow friends and discover new ones. .",
       "category": "Networking",
       "categories": [
@@ -2431,12 +2431,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.mastodon/assets/mastodon-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.mastodon/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.mastodon/meta.json",
-      "content_hash": "ffb1365f",
+      "content_hash": "d6c14dc3",
       "version": "4.7.0"
     },
     {
       "id": "by-roket.linuxserver.mediaelch",
-      "title": "Mediaelch",
+      "title": "Mediaelch (LinuxServer.io)",
       "tagline": "A MediaManager for Kodi. Information about Movies, TV Shows, Concerts and Music are stored as nfo files. Fanarts are downloaded automatically from fanart. Tv. Using the nfo generator, MediaElch can be used with other MediaCenters as well.",
       "category": "Media",
       "categories": [
@@ -2451,12 +2451,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.mediaelch/assets/mediaelch-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.mediaelch/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.mediaelch/meta.json",
-      "content_hash": "4083f77a",
+      "content_hash": "33d00947",
       "version": "2.12.0"
     },
     {
       "id": "by-roket.linuxserver.medusa",
-      "title": "Medusa",
+      "title": "Medusa (LinuxServer.io)",
       "tagline": "An automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
       "category": "Media",
       "categories": [
@@ -2472,12 +2472,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.medusa/assets/medusa-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.medusa/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.medusa/meta.json",
-      "content_hash": "2d674680",
+      "content_hash": "a2e0d959",
       "version": "1.0.26"
     },
     {
       "id": "by-roket.linuxserver.melonds",
-      "title": "Melonds",
+      "title": "Melonds (LinuxServer.io)",
       "tagline": "Aims at providing fast and accurate Nintendo DS emulation.",
       "category": "Others",
       "categories": [
@@ -2493,7 +2493,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.melonds/assets/melonds-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.melonds/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.melonds/meta.json",
-      "content_hash": "2f51dc22",
+      "content_hash": "b40deff3",
       "version": "1.1.20260816"
     },
     {
@@ -2519,7 +2519,7 @@
     },
     {
       "id": "by-roket.linuxserver.minisatip",
-      "title": "Minisatip",
+      "title": "Minisatip (LinuxServer.io)",
       "tagline": "A multi-threaded satip server version 1. 2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.",
       "category": "Others",
       "categories": [
@@ -2535,12 +2535,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.minisatip/assets/minisatip-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.minisatip/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.minisatip/meta.json",
-      "content_hash": "eb9b1831",
+      "content_hash": "43160696",
       "version": "2.0.99"
     },
     {
       "id": "by-roket.linuxserver.modmanager",
-      "title": "Modmanager",
+      "title": "Modmanager (LinuxServer.io)",
       "tagline": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/modmanager for details.",
       "category": "Developer",
       "categories": [
@@ -2556,11 +2556,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.modmanager/assets/linuxserver-ls-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.modmanager/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.modmanager/meta.json",
-      "content_hash": "4fb462e8"
+      "content_hash": "acf1b37f"
     },
     {
       "id": "by-roket.linuxserver.modrinth",
-      "title": "Modrinth",
+      "title": "Modrinth (LinuxServer.io)",
       "tagline": "A unique, open source launcher that allows you to play your favorite mods, and keep them up to date, all in one neat little package.",
       "category": "Others",
       "categories": [
@@ -2575,7 +2575,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.modrinth/assets/modrinth-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.modrinth/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.modrinth/meta.json",
-      "content_hash": "3f748f07",
+      "content_hash": "5bbe7314",
       "version": "0.19.1"
     },
     {
@@ -2601,7 +2601,7 @@
     },
     {
       "id": "by-roket.linuxserver.msedge",
-      "title": "Msedge",
+      "title": "Msedge (LinuxServer.io)",
       "tagline": "A cross-platform web browser developed by Microsoft and based on Chromium.",
       "category": "Others",
       "categories": [
@@ -2616,12 +2616,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.msedge/assets/edge-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.msedge/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.msedge/meta.json",
-      "content_hash": "06254819",
+      "content_hash": "48a9da3f",
       "version": "152.0.4191"
     },
     {
       "id": "by-roket.linuxserver.mstream",
-      "title": "Mstream",
+      "title": "Mstream (LinuxServer.io)",
       "tagline": "A personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.",
       "category": "Media",
       "categories": [
@@ -2637,12 +2637,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.mstream/assets/mstream-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.mstream/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.mstream/meta.json",
-      "content_hash": "66e28f5b",
+      "content_hash": "acfe7eae",
       "version": "6.24.0"
     },
     {
       "id": "by-roket.linuxserver.mullvad-browser",
-      "title": "Mullvad browser",
+      "title": "Mullvad browser (LinuxServer.io)",
       "tagline": "The Mullvad Browser is a privacy-focused web browser developed in a collaboration between Mullvad VPN and the Tor Project. It’s designed to minimize tracking and fingerprinting. You could say it’s a Tor Browser to use without the Tor Network. Instead, you can use it with a trustworthy VPN.",
       "category": "Networking",
       "categories": [
@@ -2657,12 +2657,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.mullvad-browser/assets/mullvad-browser-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.mullvad-browser/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.mullvad-browser/meta.json",
-      "content_hash": "b2161790",
+      "content_hash": "970686b7",
       "version": "15.0.20"
     },
     {
       "id": "by-roket.linuxserver.mylar3",
-      "title": "Mylar3",
+      "title": "Mylar3 (LinuxServer.io)",
       "tagline": "An automated Comic Book downloader (cbr/cbz) for use with NZB and torrents written in python. It supports SABnzbd, NZBGET, and many torrent clients in addition to DDL.",
       "category": "Media",
       "categories": [
@@ -2678,12 +2678,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.mylar3/assets/mylar-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.mylar3/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.mylar3/meta.json",
-      "content_hash": "770e28e7",
+      "content_hash": "75ae2363",
       "version": "0.11.0"
     },
     {
       "id": "by-roket.linuxserver.mysql-workbench",
-      "title": "Mysql workbench",
+      "title": "Mysql workbench (LinuxServer.io)",
       "tagline": "A unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more.",
       "category": "Developer",
       "categories": [
@@ -2698,7 +2698,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.mysql-workbench/assets/mysql-workbench-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.mysql-workbench/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.mysql-workbench/meta.json",
-      "content_hash": "1ddedef6",
+      "content_hash": "bbb51785",
       "version": "8.0.47"
     },
     {
@@ -2768,7 +2768,7 @@
     },
     {
       "id": "by-roket.linuxserver.netbox",
-      "title": "Netbox",
+      "title": "Netbox (LinuxServer.io)",
       "tagline": "An IP address management (IPAM) and data center infrastructure management (DCIM) tool. Initially conceived by the network engineering team at DigitalOcean, NetBox was developed specifically to address the needs of network and infrastructure engineers. It is intended to function as a domain-specific source of truth for network operations.",
       "category": "Networking",
       "categories": [
@@ -2784,12 +2784,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.netbox/assets/netbox-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.netbox/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.netbox/meta.json",
-      "content_hash": "141c7d8b",
+      "content_hash": "9d95946f",
       "version": "4.6.9"
     },
     {
       "id": "by-roket.linuxserver.nextcloud",
-      "title": "Nextcloud",
+      "title": "Nextcloud (LinuxServer.io)",
       "tagline": "Gives you access to all your files wherever you are. Where are your photos and documents. With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices. Through Nextcloud you also access, sync and share your existing data on that FTP drive at the office, a Dropbox or a NAS you have at home.",
       "category": "Productivity",
       "categories": [
@@ -2805,12 +2805,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.nextcloud/assets/nextcloud-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.nextcloud/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.nextcloud/meta.json",
-      "content_hash": "57ee879c",
+      "content_hash": "6ceb9d21",
       "version": "34.0.3"
     },
     {
       "id": "by-roket.linuxserver.nginx",
-      "title": "Nginx",
+      "title": "Nginx (LinuxServer.io)",
       "tagline": "An HTTP web server, reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server.",
       "category": "Networking",
       "categories": [
@@ -2826,12 +2826,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.nginx/assets/nginx-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.nginx/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.nginx/meta.json",
-      "content_hash": "81b479de",
+      "content_hash": "3a69a1bd",
       "version": "1.30.4"
     },
     {
       "id": "by-roket.linuxserver.ngircd",
-      "title": "Ngircd",
+      "title": "Ngircd (LinuxServer.io)",
       "tagline": "A free, portable and lightweight Internet Relay Chat server for small or private networks, developed under the GNU General Public License (GPL). It is easy to configure, can cope with dynamic IP addresses, and supports IPv6, SSL-protected connections as well as PAM for authentication. It is written from scratch and not based on the original IRCd.",
       "category": "Social",
       "categories": [
@@ -2847,7 +2847,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.ngircd/assets/ngircd-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.ngircd/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.ngircd/meta.json",
-      "content_hash": "a57cd511"
+      "content_hash": "2cfe94ac"
     },
     {
       "id": "by-roket.linuxserver.nntp2nntp",
@@ -2872,7 +2872,7 @@
     },
     {
       "id": "by-roket.linuxserver.nzbget",
-      "title": "Nzbget",
+      "title": "Nzbget (LinuxServer.io)",
       "tagline": "A usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources.",
       "category": "Others",
       "categories": [
@@ -2888,12 +2888,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.nzbget/assets/nzbget-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.nzbget/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.nzbget/meta.json",
-      "content_hash": "c798aa94",
+      "content_hash": "22488a3a",
       "version": "26.3.20260827"
     },
     {
       "id": "by-roket.linuxserver.nzbhydra2",
-      "title": "Nzbhydra2",
+      "title": "Nzbhydra2 (LinuxServer.io)",
       "tagline": "A meta search application for NZB indexers, the spiritual successor to NZBmegasearcH, and an evolution of the original application NZBHydra. It provides easy access to a number of raw and newznab based indexers.",
       "category": "Others",
       "categories": [
@@ -2909,12 +2909,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.nzbhydra2/assets/hydra-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.nzbhydra2/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.nzbhydra2/meta.json",
-      "content_hash": "20b5d398",
+      "content_hash": "834de5cb",
       "version": "8.9.0"
     },
     {
       "id": "by-roket.linuxserver.obsidian",
-      "title": "Obsidian",
+      "title": "Obsidian (LinuxServer.io)",
       "tagline": "A note-taking app that lets you create, link, and organize your notes on your device, with hundreds of plugins and themes to customize your workflow. You can also publish your notes online, access them offline, and sync them securely with end-to-end encryption.",
       "category": "Productivity",
       "categories": [
@@ -2930,12 +2930,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.obsidian/assets/obsidian-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.obsidian/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.obsidian/meta.json",
-      "content_hash": "f1a1f9c7",
+      "content_hash": "f1bc4316",
       "version": "1.13.7"
     },
     {
       "id": "by-roket.linuxserver.ombi",
-      "title": "Ombi",
+      "title": "Ombi (LinuxServer.io)",
       "tagline": "Allows you to host your own Plex Request and user management system. If you are sharing your Plex server with other users, allow them to request new content using an easy to manage interface. Manage all your requests for Movies and TV with ease, leave notes for the user and get notification when a user requests something. Allow your users to post issues against their requests so you know there is a problem with the audio etc. Even automatically send them weekly newsletters of new content that has been added to your Plex server.",
       "category": "Media",
       "categories": [
@@ -2951,12 +2951,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.ombi/assets/ombi.webp",
       "compose_url": "/apps/by-roket.linuxserver.ombi/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.ombi/meta.json",
-      "content_hash": "f57c29b5",
+      "content_hash": "0e0ba9b3",
       "version": "4.53.10"
     },
     {
       "id": "by-roket.linuxserver.onlyoffice",
-      "title": "Onlyoffice",
+      "title": "Onlyoffice (LinuxServer.io)",
       "tagline": "Provides a full range of tools to create, edit and collaborate on text documents, spreadsheets, presentations, PDF forms and regular PDF files on web, desktop and mobile platforms.",
       "category": "Others",
       "categories": [
@@ -2971,12 +2971,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.onlyoffice/assets/onlyoffice-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.onlyoffice/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.onlyoffice/meta.json",
-      "content_hash": "2cb0f6fb",
+      "content_hash": "870a6d12",
       "version": "9.4.0"
     },
     {
       "id": "by-roket.linuxserver.openshot",
-      "title": "Openshot",
+      "title": "Openshot (LinuxServer.io)",
       "tagline": "Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world.",
       "category": "Media",
       "categories": [
@@ -2991,12 +2991,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.openshot/assets/openshot-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.openshot/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.openshot/meta.json",
-      "content_hash": "59334bc9",
+      "content_hash": "9ff6d259",
       "version": "3.5.1"
     },
     {
       "id": "by-roket.linuxserver.openssh-server",
-      "title": "Openssh server",
+      "title": "Openssh server (LinuxServer.io)",
       "tagline": "A sandboxed environment that allows ssh access without giving keys to the entire server. Giving ssh access via private key often means giving full access to the server. This container creates a limited and sandboxed environment that others can ssh into. The users only have access to the folders mapped and the processes running inside this container.",
       "category": "Networking",
       "categories": [
@@ -3012,7 +3012,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.openssh-server/assets/openssh-server-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.openssh-server/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.openssh-server/meta.json",
-      "content_hash": "916d417c"
+      "content_hash": "ed10eb4f"
     },
     {
       "id": "by-roket.linuxserver.openvscode-server",
@@ -3037,7 +3037,7 @@
     },
     {
       "id": "by-roket.linuxserver.opera",
-      "title": "Opera",
+      "title": "Opera (LinuxServer.io)",
       "tagline": "A multi-platform web browser developed by its namesake company Opera. The browser is based on Chromium, but distinguishes itself from other Chromium-based browsers (Chrome, Edge, etc. ) through its user interface and other features.",
       "category": "Others",
       "categories": [
@@ -3052,12 +3052,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.opera/assets/opera-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.opera/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.opera/meta.json",
-      "content_hash": "d49eec62",
+      "content_hash": "05c9ebfc",
       "version": "135.0.5973"
     },
     {
       "id": "by-roket.linuxserver.orcaslicer",
-      "title": "Orcaslicer",
+      "title": "Orcaslicer (LinuxServer.io)",
       "tagline": "An open source slicer for FDM printers. OrcaSlicer is fork of Bambu Studio, it was previously known as BambuStudio-SoftFever, Bambu Studio is forked from PrusaSlicer by Prusa Research, which is from Slic3r by Alessandro Ranellucci and the RepRap community",
       "category": "Others",
       "categories": [
@@ -3073,12 +3073,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.orcaslicer/assets/orcaslicer-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.orcaslicer/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.orcaslicer/meta.json",
-      "content_hash": "64c95cab",
+      "content_hash": "e4cc4f36",
       "version": "2.4.2"
     },
     {
       "id": "by-roket.linuxserver.oscam",
-      "title": "Oscam",
+      "title": "Oscam (LinuxServer.io)",
       "tagline": "An Open Source Conditional Access Module software used for descrambling DVB transmissions using smart cards. It's both a server and a client.",
       "category": "Others",
       "categories": [
@@ -3094,7 +3094,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.oscam/assets/oscam-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.oscam/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.oscam/meta.json",
-      "content_hash": "e0bf24d8"
+      "content_hash": "fd9ff839"
     },
     {
       "id": "by-roket.linuxserver.overseerr",
@@ -3119,7 +3119,7 @@
     },
     {
       "id": "by-roket.linuxserver.pairdrop",
-      "title": "Pairdrop",
+      "title": "Pairdrop (LinuxServer.io)",
       "tagline": "A sublime alternative to AirDrop that works on all platforms. Send images, documents or text via peer to peer connection to devices in the same local network/Wi-Fi or to paired devices.",
       "category": "Networking",
       "categories": [
@@ -3135,12 +3135,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.pairdrop/assets/android-chrome-512x512.webp",
       "compose_url": "/apps/by-roket.linuxserver.pairdrop/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.pairdrop/meta.json",
-      "content_hash": "b9e8e90b",
+      "content_hash": "6417383c",
       "version": "1.11.2"
     },
     {
       "id": "by-roket.linuxserver.pcsx2",
-      "title": "Pcsx2",
+      "title": "Pcsx2 (LinuxServer.io)",
       "tagline": "An open source PS2 Emulator.",
       "category": "Others",
       "categories": [
@@ -3155,12 +3155,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.pcsx2/assets/pcsx2-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.pcsx2/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.pcsx2/meta.json",
-      "content_hash": "a30a5ddf",
+      "content_hash": "06e9db7f",
       "version": "2.6.3"
     },
     {
       "id": "by-roket.linuxserver.pelorus",
-      "title": "Pelorus",
+      "title": "Pelorus (LinuxServer.io)",
       "tagline": "An AI navigator for Selkies-powered Linux desktops. Pelorus runs a FastAPI server that gives an LLM agent (Ollama, OpenAI-compatible, or Gemini) control over mouse, keyboard, screenshot, and window management via the Pixelflux computer-use backend, a Linux accessibility tree (AT-SPI), and optional KWin D-Bus integration.",
       "category": "AI",
       "categories": [
@@ -3175,12 +3175,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.pelorus/assets/pelorus-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.pelorus/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.pelorus/meta.json",
-      "content_hash": "eef1abfe",
+      "content_hash": "05714096",
       "version": "0.2.3"
     },
     {
       "id": "by-roket.linuxserver.phpmyadmin",
-      "title": "Phpmyadmin",
+      "title": "Phpmyadmin (LinuxServer.io)",
       "tagline": "A free software tool written in PHP, intended to handle the administration of MySQL over the Web. PhpMyAdmin supports a wide range of operations on MySQL and MariaDB.",
       "category": "Developer",
       "categories": [
@@ -3196,12 +3196,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.phpmyadmin/assets/phpmyadmin-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.phpmyadmin/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.phpmyadmin/meta.json",
-      "content_hash": "fcc97d1f",
+      "content_hash": "df7b141f",
       "version": "5.2.3"
     },
     {
       "id": "by-roket.linuxserver.pidgin",
-      "title": "Pidgin",
+      "title": "Pidgin (LinuxServer.io)",
       "tagline": "A chat program which lets you log into accounts on multiple chat networks simultaneously. This means that you can be chatting with friends on XMPP and sitting in an IRC channel at the same time.",
       "category": "Social",
       "categories": [
@@ -3217,12 +3217,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.pidgin/assets/pidgin-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.pidgin/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.pidgin/meta.json",
-      "content_hash": "4250261e",
+      "content_hash": "a49f2083",
       "version": "2.14.14"
     },
     {
       "id": "by-roket.linuxserver.piper",
-      "title": "Piper",
+      "title": "Piper (LinuxServer.io)",
       "tagline": "A fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4. This container provides a Wyoming protocol server for Piper.",
       "category": "Others",
       "categories": [
@@ -3238,12 +3238,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.piper/assets/piper-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.piper/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.piper/meta.json",
-      "content_hash": "20fb5510",
+      "content_hash": "65592578",
       "version": "2.4.2"
     },
     {
       "id": "by-roket.linuxserver.piwigo",
-      "title": "Piwigo",
+      "title": "Piwigo (LinuxServer.io)",
       "tagline": "A photo gallery software for the web that comes with powerful features to publish and manage your collection of pictures.",
       "category": "Media",
       "categories": [
@@ -3259,12 +3259,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.piwigo/assets/piwigo-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.piwigo/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.piwigo/meta.json",
-      "content_hash": "e808c466",
+      "content_hash": "16d63e8f",
       "version": "16.4.0"
     },
     {
       "id": "by-roket.linuxserver.planka",
-      "title": "Planka",
+      "title": "Planka (LinuxServer.io)",
       "tagline": "An elegant open source project tracking tool.",
       "category": "Others",
       "categories": [
@@ -3280,12 +3280,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.planka/assets/planka-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.planka/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.planka/meta.json",
-      "content_hash": "4581b3cc",
+      "content_hash": "db5bc7ea",
       "version": "2.2.1"
     },
     {
       "id": "by-roket.linuxserver.plex",
-      "title": "Plex",
+      "title": "Plex (LinuxServer.io)",
       "tagline": "Organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone Plex Media Server. Straightforward design and bulk actions mean getting things done faster.",
       "category": "Media",
       "categories": [
@@ -3301,7 +3301,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.plex/assets/plex-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.plex/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.plex/meta.json",
-      "content_hash": "59003f81",
+      "content_hash": "f2fd24e6",
       "version": "1.43.3"
     },
     {
@@ -3327,7 +3327,7 @@
     },
     {
       "id": "by-roket.linuxserver.ppsspp",
-      "title": "Ppsspp",
+      "title": "Ppsspp (LinuxServer.io)",
       "tagline": "A free and open-source PSP emulator for Windows, macOS, Linux, iOS, Android, Nintendo Wii U, Nintendo Switch, BlackBerry 10, MeeGo, Pandora, Xbox Series and Symbian with a focus on speed and portability.",
       "category": "Others",
       "categories": [
@@ -3342,12 +3342,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.ppsspp/assets/ppsspp-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.ppsspp/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.ppsspp/meta.json",
-      "content_hash": "e3a5cf52",
+      "content_hash": "ede3c0d6",
       "version": "1.20.4"
     },
     {
       "id": "by-roket.linuxserver.projectsend",
-      "title": "Projectsend",
+      "title": "Projectsend (LinuxServer.io)",
       "tagline": "A self-hosted application that lets you upload files and assign them to specific clients that you create yourself. Secure, private and easy. No more depending on external services or e-mail to send those files.",
       "category": "Others",
       "categories": [
@@ -3363,11 +3363,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.projectsend/assets/projectsend-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.projectsend/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.projectsend/meta.json",
-      "content_hash": "6e0d0146"
+      "content_hash": "2cd53778"
     },
     {
       "id": "by-roket.linuxserver.prowlarr",
-      "title": "Prowlarr",
+      "title": "Prowlarr (LinuxServer.io)",
       "tagline": "A indexer manager/proxy built on the popular arr. Net/reactjs base stack to integrate with your various PVR apps. Prowlarr supports both Torrent Trackers and Usenet Indexers. It integrates seamlessly with Sonarr, Radarr, Lidarr, and Readarr offering complete management of your indexers with no per app Indexer setup required (we do it all).",
       "category": "Media",
       "categories": [
@@ -3383,12 +3383,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.prowlarr/assets/prowlarr-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.prowlarr/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.prowlarr/meta.json",
-      "content_hash": "53b72ece",
+      "content_hash": "86c723ea",
       "version": "2.5.2"
     },
     {
       "id": "by-roket.linuxserver.pwndrop",
-      "title": "Pwndrop",
+      "title": "Pwndrop (LinuxServer.io)",
       "tagline": "A self-deployable file hosting service for sending out red teaming payloads or securely sharing your private files over HTTP and WebDAV.",
       "category": "Others",
       "categories": [
@@ -3404,12 +3404,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.pwndrop/assets/pwndrop-logo-512.webp",
       "compose_url": "/apps/by-roket.linuxserver.pwndrop/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.pwndrop/meta.json",
-      "content_hash": "e4a64a30",
+      "content_hash": "34ed2fc0",
       "version": "1.0.1"
     },
     {
       "id": "by-roket.linuxserver.pycharm",
-      "title": "Pycharm",
+      "title": "Pycharm (LinuxServer.io)",
       "tagline": "Offers out-of-the-box support for Python, databases, Jupyter, Git, Conda, PyTorch, TensorFlow, Hugging Face, Django, Flask, FastAPI, and more.",
       "category": "Developer",
       "categories": [
@@ -3424,12 +3424,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.pycharm/assets/pycharm-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.pycharm/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.pycharm/meta.json",
-      "content_hash": "b894f0f3",
+      "content_hash": "59c3a0b3",
       "version": "2026.2.1"
     },
     {
       "id": "by-roket.linuxserver.pydio-cells",
-      "title": "Pydio cells",
+      "title": "Pydio cells (LinuxServer.io)",
       "tagline": "The nextgen file sharing platform for organizations. It is a full rewrite of the Pydio project using the Go language following a micro-service architecture.",
       "category": "Others",
       "categories": [
@@ -3445,12 +3445,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.pydio-cells/assets/pydio-cells-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.pydio-cells/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.pydio-cells/meta.json",
-      "content_hash": "af95b050",
+      "content_hash": "fa3a212d",
       "version": "5.0.2"
     },
     {
       "id": "by-roket.linuxserver.pyload-ng",
-      "title": "Pyload ng",
+      "title": "Pyload ng (LinuxServer.io)",
       "tagline": "A Free and Open Source download manager written in Python and designed to be extremely lightweight, easily extensible and fully manageable via web.",
       "category": "Others",
       "categories": [
@@ -3466,7 +3466,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.pyload-ng/assets/pyload-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.pyload-ng/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.pyload-ng/meta.json",
-      "content_hash": "4e1a66f7",
+      "content_hash": "c92cc671",
       "version": "0.5.0"
     },
     {
@@ -3513,7 +3513,7 @@
     },
     {
       "id": "by-roket.linuxserver.qbittorrent",
-      "title": "Qbittorrent",
+      "title": "Qbittorrent (LinuxServer.io)",
       "tagline": "The Qbittorrent is a bittorrent client programmed in C++ / Qt that uses libtorrent (sometimes called libtorrent-rasterbar) by Arvid Norberg.",
       "category": "Others",
       "categories": [
@@ -3529,12 +3529,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.qbittorrent/assets/qbittorrent-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.qbittorrent/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.qbittorrent/meta.json",
-      "content_hash": "62970da4",
+      "content_hash": "8d7d3cf7",
       "version": "5.2.3"
     },
     {
       "id": "by-roket.linuxserver.qdirstat",
-      "title": "Qdirstat",
+      "title": "Qdirstat (LinuxServer.io)",
       "tagline": "Qt-based directory statistics: KDirStat without any KDE -- from the author of the original KDirStat.",
       "category": "Others",
       "categories": [
@@ -3550,12 +3550,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.qdirstat/assets/qdirstat-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.qdirstat/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.qdirstat/meta.json",
-      "content_hash": "bb140661",
+      "content_hash": "e586878d",
       "version": "2.0.20260825"
     },
     {
       "id": "by-roket.linuxserver.qemu-static",
-      "title": "Qemu static",
+      "title": "Qemu static (LinuxServer.io)",
       "tagline": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/qemu-static for details.",
       "category": "Developer",
       "categories": [
@@ -3571,7 +3571,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.qemu-static/assets/qemu-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.qemu-static/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.qemu-static/meta.json",
-      "content_hash": "7d6d7dc3",
+      "content_hash": "456d49b2",
       "version": "10.0.2"
     },
     {
@@ -3617,7 +3617,7 @@
     },
     {
       "id": "by-roket.linuxserver.radarr",
-      "title": "Radarr",
+      "title": "Radarr (LinuxServer.io)",
       "tagline": "A fork of Sonarr to work with movies à la Couchpotato.",
       "category": "Media",
       "categories": [
@@ -3633,12 +3633,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.radarr/assets/radarr.webp",
       "compose_url": "/apps/by-roket.linuxserver.radarr/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.radarr/meta.json",
-      "content_hash": "302e805f",
+      "content_hash": "94b29dc6",
       "version": "6.3.0"
     },
     {
       "id": "by-roket.linuxserver.raneto",
-      "title": "Raneto",
+      "title": "Raneto (LinuxServer.io)",
       "tagline": "is an open source Knowledgebase platform that uses static Markdown files to power your Knowledgebase.",
       "category": "Others",
       "categories": [
@@ -3654,12 +3654,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.raneto/assets/raneto-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.raneto/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.raneto/meta.json",
-      "content_hash": "12a58ddd",
+      "content_hash": "d2fba373",
       "version": "0.18.1"
     },
     {
       "id": "by-roket.linuxserver.rawtherapee",
-      "title": "Rawtherapee",
+      "title": "Rawtherapee (LinuxServer.io)",
       "tagline": "A free, cross-platform raw image processing program.",
       "category": "Others",
       "categories": [
@@ -3675,7 +3675,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.rawtherapee/assets/rawtherapee-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.rawtherapee/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.rawtherapee/meta.json",
-      "content_hash": "05397582",
+      "content_hash": "3acaedd9",
       "version": "5.13.20260823"
     },
     {
@@ -3720,7 +3720,7 @@
     },
     {
       "id": "by-roket.linuxserver.remmina",
-      "title": "Remmina",
+      "title": "Remmina (LinuxServer.io)",
       "tagline": "A remote desktop client written in GTK, aiming to be useful for system administrators and travellers, who need to work with lots of remote computers in front of either large or tiny screens. Remmina supports multiple network protocols, in an integrated and consistent user interface. Currently RDP, VNC, SPICE, SSH and EXEC are supported.",
       "category": "Networking",
       "categories": [
@@ -3736,7 +3736,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.remmina/assets/remmina-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.remmina/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.remmina/meta.json",
-      "content_hash": "f297d3cd",
+      "content_hash": "58273c45",
       "version": "1.4.43"
     },
     {
@@ -3763,7 +3763,7 @@
     },
     {
       "id": "by-roket.linuxserver.resilio-sync",
-      "title": "Resilio sync",
+      "title": "Resilio sync (LinuxServer.io)",
       "tagline": "(formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both. There is an official sync image but we created this one as it supports user mapping to simplify permissions for volumes.",
       "category": "Others",
       "categories": [
@@ -3779,12 +3779,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.resilio-sync/assets/resilio-sync-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.resilio-sync/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.resilio-sync/meta.json",
-      "content_hash": "14be6b0d",
+      "content_hash": "60261716",
       "version": "3.1.2"
     },
     {
       "id": "by-roket.linuxserver.retroarch",
-      "title": "Retroarch",
+      "title": "Retroarch (LinuxServer.io)",
       "tagline": "A frontend for emulators, game engines and media players. It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface.",
       "category": "Media",
       "categories": [
@@ -3800,12 +3800,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.retroarch/assets/retroarch-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.retroarch/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.retroarch/meta.json",
-      "content_hash": "85ba9588",
+      "content_hash": "0220bb1c",
       "version": "1.22.2"
     },
     {
       "id": "by-roket.linuxserver.rpcs3",
-      "title": "Rpcs3",
+      "title": "Rpcs3 (LinuxServer.io)",
       "tagline": "A multi-platform open-source Sony PlayStation 3 emulator and debugger written in C++ for Windows, Linux, macOS and FreeBSD.",
       "category": "Others",
       "categories": [
@@ -3821,11 +3821,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.rpcs3/assets/rpcs3-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.rpcs3/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.rpcs3/meta.json",
-      "content_hash": "b9f1fa1c"
+      "content_hash": "99c8c400"
     },
     {
       "id": "by-roket.linuxserver.rsnapshot",
-      "title": "Rsnapshot",
+      "title": "Rsnapshot (LinuxServer.io)",
       "tagline": "A filesystem snapshot utility based on rsync. Rsnapshot makes it easy to make periodic snapshots of local machines, and remote machines over ssh. The code makes extensive use of hard links whenever possible, to greatly reduce the disk space required.",
       "category": "Networking",
       "categories": [
@@ -3841,12 +3841,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.rsnapshot/assets/rsnapshot.webp",
       "compose_url": "/apps/by-roket.linuxserver.rsnapshot/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.rsnapshot/meta.json",
-      "content_hash": "03275aad",
+      "content_hash": "1a63bb7e",
       "version": "1.4.5"
     },
     {
       "id": "by-roket.linuxserver.rustdesk",
-      "title": "Rustdesk",
+      "title": "Rustdesk (LinuxServer.io)",
       "tagline": "A full-featured open source remote control alternative for self-hosting and security with minimal configuration.",
       "category": "Others",
       "categories": [
@@ -3862,12 +3862,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.rustdesk/assets/rustdesk-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.rustdesk/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.rustdesk/meta.json",
-      "content_hash": "802ea806",
+      "content_hash": "e4248018",
       "version": "1.4.9"
     },
     {
       "id": "by-roket.linuxserver.sabnzbd",
-      "title": "Sabnzbd",
+      "title": "Sabnzbd (LinuxServer.io)",
       "tagline": "Makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an. Nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
       "category": "Others",
       "categories": [
@@ -3883,12 +3883,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.sabnzbd/assets/sabnzbd-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.sabnzbd/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.sabnzbd/meta.json",
-      "content_hash": "c146d657",
+      "content_hash": "ec46d359",
       "version": "5.1.2"
     },
     {
       "id": "by-roket.linuxserver.scummvm",
-      "title": "Scummvm",
+      "title": "Scummvm (LinuxServer.io)",
       "tagline": "A program which allows you to run certain classic graphical adventure and role-playing games, provided you already have their data files. The clever part about this: ScummVM just replaces the executables shipped with the games, allowing you to play them on systems for which they were never designed. ScummVM is a complete rewrite of these games' executables and is not an emulator.",
       "category": "Others",
       "categories": [
@@ -3903,12 +3903,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.scummvm/assets/scummvm-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.scummvm/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.scummvm/meta.json",
-      "content_hash": "0f40b2c1",
+      "content_hash": "edfb6a21",
       "version": "2026.3.0"
     },
     {
       "id": "by-roket.linuxserver.sealskin",
-      "title": "Sealskin",
+      "title": "Sealskin (LinuxServer.io)",
       "tagline": "A self-hosted, client-server platform that enables users to run powerful, containerized desktop applications streamed directly to a web browser. It uses a browser extension to intercept user actions—such as clicking a link or downloading a file and redirects them to a secure, isolated application environment running on a remote server.",
       "category": "Others",
       "categories": [
@@ -3924,7 +3924,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.sealskin/assets/selkies-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.sealskin/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.sealskin/meta.json",
-      "content_hash": "575a1f01",
+      "content_hash": "69e1b061",
       "version": "0.1.39"
     },
     {
@@ -3950,7 +3950,7 @@
     },
     {
       "id": "by-roket.linuxserver.shadps4",
-      "title": "Shadps4",
+      "title": "Shadps4 (LinuxServer.io)",
       "tagline": "An early PlayStation 4 emulator for Windows, Linux and macOS written in C++.",
       "category": "Others",
       "categories": [
@@ -3965,11 +3965,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.shadps4/assets/shadps4-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.shadps4/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.shadps4/meta.json",
-      "content_hash": "3aade960"
+      "content_hash": "6af8dcfc"
     },
     {
       "id": "by-roket.linuxserver.shotcut",
-      "title": "Shotcut",
+      "title": "Shotcut (LinuxServer.io)",
       "tagline": "A free, open source, cross-platform video editor.",
       "category": "Media",
       "categories": [
@@ -3984,7 +3984,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.shotcut/assets/shotcut-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.shotcut/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.shotcut/meta.json",
-      "content_hash": "5a8bd217",
+      "content_hash": "2ff57ce0",
       "version": "26.8.1"
     },
     {
@@ -4010,7 +4010,7 @@
     },
     {
       "id": "by-roket.linuxserver.sickgear",
-      "title": "Sickgear",
+      "title": "Sickgear (LinuxServer.io)",
       "tagline": "Provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more. . For more information on SickGear visit their website and check it out: https://github. Com/SickGear/SickGear",
       "category": "Media",
       "categories": [
@@ -4026,12 +4026,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.sickgear/assets/sickgear-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.sickgear/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.sickgear/meta.json",
-      "content_hash": "d9d59064",
+      "content_hash": "ca2d7264",
       "version": "3.36.1"
     },
     {
       "id": "by-roket.linuxserver.signal",
-      "title": "Signal",
+      "title": "Signal (LinuxServer.io)",
       "tagline": "A messaging app with privacy at its core. It is free and easy to use, with strong end-to-end encryption that keeps your communication completely private.",
       "category": "Others",
       "categories": [
@@ -4046,12 +4046,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.signal/assets/signal-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.signal/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.signal/meta.json",
-      "content_hash": "bd0d137e",
+      "content_hash": "9ccb4636",
       "version": "8.25.0"
     },
     {
       "id": "by-roket.linuxserver.smokeping",
-      "title": "Smokeping",
+      "title": "Smokeping (LinuxServer.io)",
       "tagline": "Keeps track of your network latency. For a full example of what this application is capable of visit UCDavis.",
       "category": "Networking",
       "categories": [
@@ -4067,7 +4067,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.smokeping/assets/smokeping-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.smokeping/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.smokeping/meta.json",
-      "content_hash": "d6a90f58",
+      "content_hash": "07051c3b",
       "version": "2.9.0"
     },
     {
@@ -4113,7 +4113,7 @@
     },
     {
       "id": "by-roket.linuxserver.socket-proxy",
-      "title": "Socket proxy",
+      "title": "Socket proxy (LinuxServer.io)",
       "tagline": "This container needs special attention. Please check https://hub. Docker. Com/r/linuxserver/socket-proxy for details.",
       "category": "Networking",
       "categories": [
@@ -4129,12 +4129,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.socket-proxy/assets/docker-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.socket-proxy/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.socket-proxy/meta.json",
-      "content_hash": "e7ea0282",
-      "version": "3.4.3"
+      "content_hash": "f2e59314",
+      "version": "3.4.4"
     },
     {
       "id": "by-roket.linuxserver.sonarr",
-      "title": "Sonarr",
+      "title": "Sonarr (LinuxServer.io)",
       "tagline": "(formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
       "category": "Media",
       "categories": [
@@ -4150,12 +4150,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.sonarr/assets/sonarr-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.sonarr/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.sonarr/meta.json",
-      "content_hash": "f82cddb2",
+      "content_hash": "6ddeca6c",
       "version": "4.0.19"
     },
     {
       "id": "by-roket.linuxserver.speedtest-tracker",
-      "title": "Speedtest tracker",
+      "title": "Speedtest tracker (LinuxServer.io)",
       "tagline": "A self-hosted internet performance tracking application that runs speedtest checks against Ookla's Speedtest service.",
       "category": "Networking",
       "categories": [
@@ -4171,12 +4171,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.speedtest-tracker/assets/speedtest-tracker-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.speedtest-tracker/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.speedtest-tracker/meta.json",
-      "content_hash": "33edc33f",
+      "content_hash": "1fa39fb0",
       "version": "1.15.0"
     },
     {
       "id": "by-roket.linuxserver.spotube",
-      "title": "Spotube",
+      "title": "Spotube (LinuxServer.io)",
       "tagline": "An open source, cross-platform Spotify client compatible across multiple platforms utilizing Spotify's data API and YouTube, Piped. Video or JioSaavn as an audio source, eliminating the need for Spotify Premium",
       "category": "Media",
       "categories": [
@@ -4192,12 +4192,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.spotube/assets/spotube-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.spotube/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.spotube/meta.json",
-      "content_hash": "5d51847b",
+      "content_hash": "0d3f7608",
       "version": "5.1.2"
     },
     {
       "id": "by-roket.linuxserver.sqlitebrowser",
-      "title": "Sqlitebrowser",
+      "title": "Sqlitebrowser (LinuxServer.io)",
       "tagline": "A high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.",
       "category": "Developer",
       "categories": [
@@ -4213,12 +4213,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.sqlitebrowser/assets/sqlitebrowser-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.sqlitebrowser/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.sqlitebrowser/meta.json",
-      "content_hash": "8a47f268",
+      "content_hash": "d30c4a0c",
       "version": "3.13.1"
     },
     {
       "id": "by-roket.linuxserver.steam",
-      "title": "Steam",
+      "title": "Steam (LinuxServer.io)",
       "tagline": "The ultimate destination for playing, discussing, and creating games.",
       "category": "Others",
       "categories": [
@@ -4233,7 +4233,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.steam/assets/steam-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.steam/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.steam/meta.json",
-      "content_hash": "22f8bf70"
+      "content_hash": "31b3ce56"
     },
     {
       "id": "by-roket.linuxserver.steamos",
@@ -4256,7 +4256,7 @@
     },
     {
       "id": "by-roket.linuxserver.swag",
-      "title": "Swag",
+      "title": "Swag (LinuxServer.io)",
       "tagline": "SWAG - Secure Web Application Gateway (formerly known as letsencrypt, no relation to Let's Encrypt™) sets up an Nginx webserver and reverse proxy with php support and a built-in certbot client that automates free SSL server certificate generation and renewal processes (Let's Encrypt and ZeroSSL). It also contains fail2ban for intrusion prevention.",
       "category": "Networking",
       "categories": [
@@ -4272,12 +4272,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.swag/assets/swag.gif",
       "compose_url": "/apps/by-roket.linuxserver.swag/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.swag/meta.json",
-      "content_hash": "ede4d917",
+      "content_hash": "e6a9af66",
       "version": "5.7.0"
     },
     {
       "id": "by-roket.linuxserver.synclounge",
-      "title": "Synclounge",
+      "title": "Synclounge (LinuxServer.io)",
       "tagline": "A third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.",
       "category": "Media",
       "categories": [
@@ -4293,12 +4293,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.synclounge/assets/synclounge-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.synclounge/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.synclounge/meta.json",
-      "content_hash": "99473dfc",
+      "content_hash": "f92bc03b",
       "version": "5.2.35"
     },
     {
       "id": "by-roket.linuxserver.syncthing",
-      "title": "Syncthing",
+      "title": "Syncthing (LinuxServer.io)",
       "tagline": "Replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it's transmitted over the Internet.",
       "category": "Productivity",
       "categories": [
@@ -4314,12 +4314,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.syncthing/assets/syncthing-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.syncthing/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.syncthing/meta.json",
-      "content_hash": "7b349925",
+      "content_hash": "ea172354",
       "version": "2.1.3"
     },
     {
       "id": "by-roket.linuxserver.syslog-ng",
-      "title": "Syslog ng",
+      "title": "Syslog ng (LinuxServer.io)",
       "tagline": "Allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.",
       "category": "Others",
       "categories": [
@@ -4335,12 +4335,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.syslog-ng/assets/syslog-ng-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.syslog-ng/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.syslog-ng/meta.json",
-      "content_hash": "b9db5554",
+      "content_hash": "f584d9ab",
       "version": "4.11.0"
     },
     {
       "id": "by-roket.linuxserver.tautulli",
-      "title": "Tautulli",
+      "title": "Tautulli (LinuxServer.io)",
       "tagline": "A python based web application for monitoring, analytics and notifications for Plex Media Server.",
       "category": "Media",
       "categories": [
@@ -4356,12 +4356,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.tautulli/assets/tautulli-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.tautulli/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.tautulli/meta.json",
-      "content_hash": "f66230fc",
+      "content_hash": "aae27963",
       "version": "2.18.1"
     },
     {
       "id": "by-roket.linuxserver.telegram",
-      "title": "Telegram",
+      "title": "Telegram (LinuxServer.io)",
       "tagline": "A cloud-based mobile and desktop messaging app.",
       "category": "Productivity",
       "categories": [
@@ -4377,7 +4377,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.telegram/assets/telegram-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.telegram/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.telegram/meta.json",
-      "content_hash": "5ab1652f",
+      "content_hash": "88d8b634",
       "version": "7.0.9"
     },
     {
@@ -4401,7 +4401,7 @@
     },
     {
       "id": "by-roket.linuxserver.thelounge",
-      "title": "Thelounge",
+      "title": "Thelounge (LinuxServer.io)",
       "tagline": "(a fork of shoutIRC) is a web IRC client that you host on your own server.",
       "category": "Others",
       "categories": [
@@ -4417,12 +4417,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.thelounge/assets/linuxserver-ls-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.thelounge/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.thelounge/meta.json",
-      "content_hash": "be0ff901",
+      "content_hash": "3b156e88",
       "version": "4.5.2"
     },
     {
       "id": "by-roket.linuxserver.thunderbird",
-      "title": "Thunderbird",
+      "title": "Thunderbird (LinuxServer.io)",
       "tagline": "A free and open-source personal information manager primarily used as an e-mail client with a calendar and contactbook, as well as an RSS feed reader, chat client, and news client.",
       "category": "Productivity",
       "categories": [
@@ -4438,12 +4438,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.thunderbird/assets/thunderbird-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.thunderbird/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.thunderbird/meta.json",
-      "content_hash": "fdd345ad",
+      "content_hash": "ae951a2d",
       "version": "1140.13.0"
     },
     {
       "id": "by-roket.linuxserver.transmission",
-      "title": "Transmission",
+      "title": "Transmission (LinuxServer.io)",
       "tagline": "Designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
       "category": "Media",
       "categories": [
@@ -4459,12 +4459,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.transmission/assets/transmission.webp",
       "compose_url": "/apps/by-roket.linuxserver.transmission/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.transmission/meta.json",
-      "content_hash": "c6965988",
+      "content_hash": "d5a6f216",
       "version": "4.1.3"
     },
     {
       "id": "by-roket.linuxserver.tvheadend",
-      "title": "Tvheadend",
+      "title": "Tvheadend (LinuxServer.io)",
       "tagline": "Works as a proxy server: is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT>IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT>IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
       "category": "Media",
       "categories": [
@@ -4480,11 +4480,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.tvheadend/assets/tvheadend-big.webp",
       "compose_url": "/apps/by-roket.linuxserver.tvheadend/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.tvheadend/meta.json",
-      "content_hash": "24a55cd0"
+      "content_hash": "3c7d7f24"
     },
     {
       "id": "by-roket.linuxserver.ubooquity",
-      "title": "Ubooquity",
+      "title": "Ubooquity (LinuxServer.io)",
       "tagline": "A free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.",
       "category": "Others",
       "categories": [
@@ -4500,12 +4500,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.ubooquity/assets/ubooquity-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.ubooquity/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.ubooquity/meta.json",
-      "content_hash": "9e5dd0cc",
+      "content_hash": "5f666719",
       "version": "3.1.0"
     },
     {
       "id": "by-roket.linuxserver.ungoogled-chromium",
-      "title": "Ungoogled chromium",
+      "title": "Ungoogled chromium (LinuxServer.io)",
       "tagline": "Google Chromium, sans dependency on Google web services.",
       "category": "Others",
       "categories": [
@@ -4521,7 +4521,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.ungoogled-chromium/assets/ungoogled-chromium-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.ungoogled-chromium/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.ungoogled-chromium/meta.json",
-      "content_hash": "dff52c0a",
+      "content_hash": "4222e54c",
       "version": "151.0.7922"
     },
     {
@@ -4547,7 +4547,7 @@
     },
     {
       "id": "by-roket.linuxserver.unifi-network-application",
-      "title": "Unifi network-application",
+      "title": "Unifi network-application (LinuxServer.io)",
       "tagline": "The Unifi-network-application software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
       "category": "Networking",
       "categories": [
@@ -4563,7 +4563,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.unifi-network-application/assets/unifi-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.unifi-network-application/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.unifi-network-application/meta.json",
-      "content_hash": "c49f3d48",
+      "content_hash": "1caae1a1",
       "version": "10.6.101"
     },
     {
@@ -4589,7 +4589,7 @@
     },
     {
       "id": "by-roket.linuxserver.vivaldi",
-      "title": "Vivaldi",
+      "title": "Vivaldi (LinuxServer.io)",
       "tagline": "A Norwegian freeware, cross-platform web browser with a built-in email client developed by Vivaldi Technologies.",
       "category": "Others",
       "categories": [
@@ -4605,12 +4605,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.vivaldi/assets/vivaldi-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.vivaldi/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.vivaldi/meta.json",
-      "content_hash": "f8c4392c",
+      "content_hash": "a9ec8ab3",
       "version": "8.1.4087"
     },
     {
       "id": "by-roket.linuxserver.vlc",
-      "title": "Vlc",
+      "title": "Vlc (LinuxServer.io)",
       "tagline": "A free and open source cross-platform multimedia player and framework that delivers dependable performance across multiple devices.",
       "category": "Media",
       "categories": [
@@ -4626,12 +4626,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.vlc/assets/vlc-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.vlc/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.vlc/meta.json",
-      "content_hash": "92699404",
+      "content_hash": "1393023a",
       "version": "3.0.23"
     },
     {
       "id": "by-roket.linuxserver.vscode",
-      "title": "Vscode",
+      "title": "Vscode (LinuxServer.io)",
       "tagline": "An integrated development environment developed by Microsoft. This container runs the full desktop application, for a web native version see Code Server.",
       "category": "Developer",
       "categories": [
@@ -4647,12 +4647,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.vscode/assets/vscode-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.vscode/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.vscode/meta.json",
-      "content_hash": "3ec50154",
+      "content_hash": "bd83a699",
       "version": "1.134.0"
     },
     {
       "id": "by-roket.linuxserver.vscodium",
-      "title": "Vscodium",
+      "title": "Vscodium (LinuxServer.io)",
       "tagline": "A community-driven, freely-licensed binary distribution of Microsoft’s editor VS Code.",
       "category": "Developer",
       "categories": [
@@ -4668,11 +4668,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.vscodium/assets/vscodium-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.vscodium/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.vscodium/meta.json",
-      "content_hash": "55405a55"
+      "content_hash": "6cb24047"
     },
     {
       "id": "by-roket.linuxserver.vscodium-web",
-      "title": "Vscodium web",
+      "title": "Vscodium web (LinuxServer.io)",
       "tagline": "A community-driven, freely-licensed binary distribution of the remote host web component of Microsoft's editor VS Code.",
       "category": "Developer",
       "categories": [
@@ -4688,11 +4688,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.vscodium-web/assets/vscodium-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.vscodium-web/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.vscodium-web/meta.json",
-      "content_hash": "5344857e"
+      "content_hash": "b76e1dba"
     },
     {
       "id": "by-roket.linuxserver.webcord",
-      "title": "Webcord",
+      "title": "Webcord (LinuxServer.io)",
       "tagline": "Can be summarized as a pack of security and privacy hardenings, Discord features reimplementations, Electron / Chromium / Discord bugs workarounds, stylesheets, internal pages and wrapped https://discord. Com page, designed to conform with ToS as much as it is possible (or hide the changes that might violate it from Discord's eyes).",
       "category": "Others",
       "categories": [
@@ -4708,12 +4708,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.webcord/assets/webcord-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.webcord/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.webcord/meta.json",
-      "content_hash": "f65718da",
+      "content_hash": "96545676",
       "version": "4.14.0"
     },
     {
       "id": "by-roket.linuxserver.webgrabplus",
-      "title": "Webgrabplus",
+      "title": "Webgrabplus (LinuxServer.io)",
       "tagline": "A multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.",
       "category": "Media",
       "categories": [
@@ -4729,12 +4729,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.webgrabplus/assets/EPG_fading.webp",
       "compose_url": "/apps/by-roket.linuxserver.webgrabplus/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.webgrabplus/meta.json",
-      "content_hash": "ad4e38e0",
+      "content_hash": "ff1aab9b",
       "version": "5.6.0"
     },
     {
       "id": "by-roket.linuxserver.webstation",
-      "title": "Webstation",
+      "title": "Webstation (LinuxServer.io)",
       "tagline": "A web native emulation focused LXQt desktop based on Ubuntu.",
       "category": "Others",
       "categories": [
@@ -4749,12 +4749,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.webstation/assets/webstation-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.webstation/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.webstation/meta.json",
-      "content_hash": "95f41496",
+      "content_hash": "d6d78504",
       "version": "0.6.0-romm"
     },
     {
       "id": "by-roket.linuxserver.webtop",
-      "title": "Webtop",
+      "title": "Webtop (LinuxServer.io)",
       "tagline": "Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.",
       "category": "Others",
       "categories": [
@@ -4770,11 +4770,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.webtop/assets/webtop-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.webtop/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.webtop/meta.json",
-      "content_hash": "39efb8dd"
+      "content_hash": "1bcefbbe"
     },
     {
       "id": "by-roket.linuxserver.weixin",
-      "title": "Weixin",
+      "title": "Weixin (LinuxServer.io)",
       "tagline": "(WeChat) is an instant messaging, social media, and mobile payment app developed by Tencent.",
       "category": "Media",
       "categories": [
@@ -4790,11 +4790,11 @@
       "thumbnail": "/apps/by-roket.linuxserver.weixin/assets/weixin-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.weixin/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.weixin/meta.json",
-      "content_hash": "27821758"
+      "content_hash": "dcfa2e02"
     },
     {
       "id": "by-roket.linuxserver.wikijs",
-      "title": "Wikijs",
+      "title": "Wikijs (LinuxServer.io)",
       "tagline": "A modern, lightweight and powerful wiki app built on NodeJS.",
       "category": "Productivity",
       "categories": [
@@ -4810,12 +4810,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.wikijs/assets/wikijs-full.svg",
       "compose_url": "/apps/by-roket.linuxserver.wikijs/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.wikijs/meta.json",
-      "content_hash": "3288d0d9",
+      "content_hash": "4f0476de",
       "version": "2.5.314"
     },
     {
       "id": "by-roket.linuxserver.winegui",
-      "title": "Winegui",
+      "title": "Winegui (LinuxServer.io)",
       "tagline": "A user-interface friendly Wine manager that provides a graphical frontend for creating and managing Wine bottles.",
       "category": "Others",
       "categories": [
@@ -4830,12 +4830,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.winegui/assets/winegui-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.winegui/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.winegui/meta.json",
-      "content_hash": "29381b4c",
+      "content_hash": "39625a56",
       "version": "4.3.0"
     },
     {
       "id": "by-roket.linuxserver.wireguard",
-      "title": "Wireguard",
+      "title": "Wireguard (LinuxServer.io)",
       "tagline": "An extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN for running on embedded interfaces and super computers alike, fit for many different circumstances. Initially released for the Linux kernel, it is now cross-platform (Windows, macOS, BSD, iOS, Android) and widely deployable. It is currently under heavy development, but already it might be regarded as the most secure, easiest to use, and simplest VPN solution in the industry.",
       "category": "Networking",
       "categories": [
@@ -4851,12 +4851,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.wireguard/assets/wireguard.svg",
       "compose_url": "/apps/by-roket.linuxserver.wireguard/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.wireguard/meta.json",
-      "content_hash": "d3c9e0e5",
+      "content_hash": "ed067751",
       "version": "1.0.20260223"
     },
     {
       "id": "by-roket.linuxserver.wireshark",
-      "title": "Wireshark",
+      "title": "Wireshark (LinuxServer.io)",
       "tagline": "The world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.",
       "category": "Networking",
       "categories": [
@@ -4872,12 +4872,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.wireshark/assets/wireshark-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.wireshark/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.wireshark/meta.json",
-      "content_hash": "ede7f159",
+      "content_hash": "ed95aeb6",
       "version": "4.6.6"
     },
     {
       "id": "by-roket.linuxserver.wps-office",
-      "title": "Wps office",
+      "title": "Wps office (LinuxServer.io)",
       "tagline": "A lightweight, feature-rich comprehensive office suite with high compatibility. As a handy and professional office software, WPS Office allows you to edit files in Writer, Presentation, Spreadsheet, and PDF to improve your work efficiency.",
       "category": "Productivity",
       "categories": [
@@ -4892,12 +4892,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.wps-office/assets/wps-office-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.wps-office/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.wps-office/meta.json",
-      "content_hash": "5ec4316a",
+      "content_hash": "eb099492",
       "version": "11.1.0"
     },
     {
       "id": "by-roket.linuxserver.xbackbone",
-      "title": "Xbackbone",
+      "title": "Xbackbone (LinuxServer.io)",
       "tagline": "A simple, self-hosted, lightweight PHP file manager that support the instant sharing tool ShareX and *NIX systems. It supports uploading and displaying images, GIF, video, code, formatted text, and file downloading and uploading. Also have a web UI with multi user management, past uploads history and search support.",
       "category": "Media",
       "categories": [
@@ -4913,12 +4913,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.xbackbone/assets/xbackbone-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.xbackbone/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.xbackbone/meta.json",
-      "content_hash": "bc1c873e",
+      "content_hash": "56903a08",
       "version": "3.8.2"
     },
     {
       "id": "by-roket.linuxserver.xemu",
-      "title": "Xemu",
+      "title": "Xemu (LinuxServer.io)",
       "tagline": "A free and open-source application that emulates the original Microsoft Xbox game console, enabling people to play their original Xbox games on Windows, macOS, and Linux systems.",
       "category": "Others",
       "categories": [
@@ -4934,7 +4934,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.xemu/assets/xemu-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.xemu/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.xemu/meta.json",
-      "content_hash": "2485acb8",
+      "content_hash": "761bb81b",
       "version": "0.8.134"
     },
     {
@@ -4959,7 +4959,7 @@
     },
     {
       "id": "by-roket.linuxserver.yaak",
-      "title": "Yaak",
+      "title": "Yaak (LinuxServer.io)",
       "tagline": "A desktop API client for organizing and executing REST, GraphQL, and gRPC requests. It's built using Tauri, Rust, and ReactJS.",
       "category": "Others",
       "categories": [
@@ -4975,12 +4975,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.yaak/assets/yaak-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.yaak/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.yaak/meta.json",
-      "content_hash": "8d2f7c59",
+      "content_hash": "bd1a5130",
       "version": "2026.6.0"
     },
     {
       "id": "by-roket.linuxserver.your_spotify",
-      "title": "Your_spotify",
+      "title": "Your_spotify (LinuxServer.io)",
       "tagline": "A self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it. It's composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.",
       "category": "Others",
       "categories": [
@@ -4996,7 +4996,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.your_spotify/assets/your_spotify-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.your_spotify/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.your_spotify/meta.json",
-      "content_hash": "e2797e2a",
+      "content_hash": "97a5f7af",
       "version": "1.20.0"
     },
     {
@@ -5022,7 +5022,7 @@
     },
     {
       "id": "by-roket.linuxserver.zen",
-      "title": "Zen",
+      "title": "Zen (LinuxServer.io)",
       "tagline": "A free and open-source fork of Mozilla Firefox with a focus on privacy, customizability and design.",
       "category": "Others",
       "categories": [
@@ -5038,12 +5038,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.zen/assets/zen-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.zen/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.zen/meta.json",
-      "content_hash": "145259c5",
-      "version": "1.21.15"
+      "content_hash": "e5bebdae",
+      "version": "1.21.16"
     },
     {
       "id": "by-roket.linuxserver.znc",
-      "title": "Znc",
+      "title": "Znc (LinuxServer.io)",
       "tagline": "An IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
       "category": "Networking",
       "categories": [
@@ -5059,12 +5059,12 @@
       "thumbnail": "/apps/by-roket.linuxserver.znc/assets/znc-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.znc/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.znc/meta.json",
-      "content_hash": "19807277",
+      "content_hash": "f179494b",
       "version": "1.10.2"
     },
     {
       "id": "by-roket.linuxserver.zotero",
-      "title": "Zotero",
+      "title": "Zotero (LinuxServer.io)",
       "tagline": "A free, easy-to-use tool to help you collect, organize, annotate, cite, and share research.",
       "category": "Others",
       "categories": [
@@ -5079,7 +5079,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.zotero/assets/zotero-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.zotero/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.zotero/meta.json",
-      "content_hash": "e4227e94",
+      "content_hash": "20b155a5",
       "version": "10.0.1"
     }
   ]

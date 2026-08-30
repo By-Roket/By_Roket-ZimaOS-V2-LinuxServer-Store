@@ -26,8 +26,8 @@ x-casaos:
   main: sonarr
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sonarr/assets/icon.png
   title:
-    en_US: Sonarr
-  port_map: '8989'
+    en_US: Sonarr (LinuxServer.io)
   id: by-roket.linuxserver.sonarr
+  port_map: '8989'
   version: 4.0.19
   index: /

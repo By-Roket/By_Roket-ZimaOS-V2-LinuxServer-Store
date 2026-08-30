@@ -26,8 +26,8 @@ x-casaos:
   main: sabnzbd
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sabnzbd/assets/icon.png
   title:
-    en_US: Sabnzbd
-  port_map: '8080'
+    en_US: Sabnzbd (LinuxServer.io)
   id: by-roket.linuxserver.sabnzbd
+  port_map: '8080'
   version: 5.1.2
   index: /

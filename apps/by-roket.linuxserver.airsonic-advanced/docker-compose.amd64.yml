@@ -34,8 +34,8 @@ x-casaos:
   main: airsonic-advanced
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.airsonic-advanced/assets/icon.png
   title:
-    en_US: Airsonic advanced
-  port_map: '4040'
+    en_US: Airsonic advanced (LinuxServer.io)
   id: by-roket.linuxserver.airsonic-advanced
+  port_map: '4040'
   version: 11.1.4
   index: /

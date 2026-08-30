@@ -23,8 +23,8 @@ x-casaos:
   main: spotube
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.spotube/assets/icon.png
   title:
-    en_US: Spotube
-  port_map: '3000'
+    en_US: Spotube (LinuxServer.io)
   id: by-roket.linuxserver.spotube
+  port_map: '3000'
   version: 5.1.2
   index: /

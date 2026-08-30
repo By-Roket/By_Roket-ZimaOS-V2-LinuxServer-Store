@@ -23,8 +23,8 @@ x-casaos:
   main: intellij-idea
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.intellij-idea/assets/icon.png
   title:
-    en_US: Intellij idea
-  port_map: '3000'
+    en_US: Intellij idea (LinuxServer.io)
   id: by-roket.linuxserver.intellij-idea
+  port_map: '3000'
   version: 42026.2.0
   index: /

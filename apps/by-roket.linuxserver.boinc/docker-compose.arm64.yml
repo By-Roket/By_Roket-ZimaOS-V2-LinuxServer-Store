@@ -24,8 +24,8 @@ x-casaos:
   main: boinc
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.boinc/assets/icon.jpg
   title:
-    en_US: Boinc
-  port_map: '8080'
+    en_US: Boinc (LinuxServer.io)
   id: by-roket.linuxserver.boinc
+  port_map: '8080'
   version: 8.2.8
   index: /

@@ -23,8 +23,8 @@ x-casaos:
   main: filezilla
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.filezilla/assets/icon.png
   title:
-    en_US: Filezilla
-  port_map: '3000'
+    en_US: Filezilla (LinuxServer.io)
   id: by-roket.linuxserver.filezilla
+  port_map: '3000'
   version: 3.69.6
   index: /

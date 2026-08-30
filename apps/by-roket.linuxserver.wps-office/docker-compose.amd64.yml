@@ -23,8 +23,8 @@ x-casaos:
   main: wps-office
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.wps-office/assets/icon.png
   title:
-    en_US: Wps office
-  port_map: '3000'
+    en_US: Wps office (LinuxServer.io)
   id: by-roket.linuxserver.wps-office
+  port_map: '3000'
   version: 11.1.0
   index: /

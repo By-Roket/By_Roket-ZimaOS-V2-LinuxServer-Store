@@ -25,8 +25,8 @@ x-casaos:
   main: diskover
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.diskover/assets/icon.png
   title:
-    en_US: Diskover
-  port_map: '80'
+    en_US: Diskover (LinuxServer.io)
   id: by-roket.linuxserver.diskover
+  port_map: '80'
   version: 2.3.5
   index: /

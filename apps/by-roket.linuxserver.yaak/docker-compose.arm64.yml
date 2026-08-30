@@ -23,8 +23,8 @@ x-casaos:
   main: yaak
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.yaak/assets/icon.png
   title:
-    en_US: Yaak
-  port_map: '3000'
+    en_US: Yaak (LinuxServer.io)
   id: by-roket.linuxserver.yaak
+  port_map: '3000'
   version: 2026.6.0
   index: /

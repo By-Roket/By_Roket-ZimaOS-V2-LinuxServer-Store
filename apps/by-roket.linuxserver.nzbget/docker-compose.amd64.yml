@@ -25,8 +25,8 @@ x-casaos:
   main: nzbget
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nzbget/assets/icon.png
   title:
-    en_US: Nzbget
-  port_map: '6789'
+    en_US: Nzbget (LinuxServer.io)
   id: by-roket.linuxserver.nzbget
+  port_map: '6789'
   version: 26.3.20260827
   index: /

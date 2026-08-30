@@ -18,8 +18,8 @@ x-casaos:
   main: synclounge
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.synclounge/assets/icon.png
   title:
-    en_US: Synclounge
-  port_map: '8088'
+    en_US: Synclounge (LinuxServer.io)
   id: by-roket.linuxserver.synclounge
+  port_map: '8088'
   version: 5.2.35
   index: /

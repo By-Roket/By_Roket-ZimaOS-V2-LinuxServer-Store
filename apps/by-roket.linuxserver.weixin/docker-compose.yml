@@ -23,8 +23,8 @@ x-casaos:
   main: weixin
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.weixin/assets/icon.png
   title:
-    en_US: Weixin
-  port_map: '3000'
+    en_US: Weixin (LinuxServer.io)
   id: by-roket.linuxserver.weixin
+  port_map: '3000'
   version: version-93cea97f
   index: /

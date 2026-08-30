@@ -23,8 +23,8 @@ x-casaos:
   main: signal
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.signal/assets/icon.png
   title:
-    en_US: Signal
-  port_map: '3000'
+    en_US: Signal (LinuxServer.io)
   id: by-roket.linuxserver.signal
+  port_map: '3000'
   version: 8.25.0
   index: /

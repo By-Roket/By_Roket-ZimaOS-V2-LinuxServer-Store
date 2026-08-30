@@ -9,7 +9,7 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.ldap-auth/assets/ldap-auth-logo.webp",
   "category": "Networking",
-  "title": "Ldap auth",
+  "title": "Ldap auth (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.ldap-auth",
   "version": "3.4.7",

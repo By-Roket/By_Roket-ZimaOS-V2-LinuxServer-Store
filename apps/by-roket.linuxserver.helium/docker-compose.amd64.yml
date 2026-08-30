@@ -1,7 +1,7 @@
 name: linuxserver-helium
 services:
   helium:
-    image: linuxserver/helium:0.15.7@sha256:9562b6b07014b26e1cfbdff4e13a51024a3eb760a987166eee21fc2fd7fea96d
+    image: linuxserver/helium:0.16.2@sha256:dc15d2102d63f9a0680929320839f707e2be59c53e9dc9452f80d5c407d3eb50
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -24,8 +24,8 @@ x-casaos:
   main: helium
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.helium/assets/icon.png
   title:
-    en_US: Helium
-  port_map: '3000'
+    en_US: Helium (LinuxServer.io)
   id: by-roket.linuxserver.helium
-  version: 0.15.7
+  port_map: '3000'
+  version: 0.16.2
   index: /

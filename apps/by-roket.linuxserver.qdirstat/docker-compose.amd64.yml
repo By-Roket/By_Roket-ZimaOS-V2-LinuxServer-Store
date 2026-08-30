@@ -26,8 +26,8 @@ x-casaos:
   main: qdirstat
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.qdirstat/assets/icon.png
   title:
-    en_US: Qdirstat
-  port_map: '3000'
+    en_US: Qdirstat (LinuxServer.io)
   id: by-roket.linuxserver.qdirstat
+  port_map: '3000'
   version: 2.0.20260825
   index: /

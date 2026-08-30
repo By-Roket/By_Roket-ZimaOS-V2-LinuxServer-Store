@@ -33,8 +33,8 @@ x-casaos:
   main: kasm
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kasm/assets/icon.png
   title:
-    en_US: Kasm
-  port_map: '3000'
+    en_US: Kasm (LinuxServer.io)
   id: by-roket.linuxserver.kasm
+  port_map: '3000'
   version: 1.19.0
   index: /

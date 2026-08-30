@@ -23,8 +23,8 @@ x-casaos:
   main: kicad
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kicad/assets/icon.png
   title:
-    en_US: Kicad
-  port_map: '3000'
+    en_US: Kicad (LinuxServer.io)
   id: by-roket.linuxserver.kicad
+  port_map: '3000'
   version: 10.0.3
   index: /

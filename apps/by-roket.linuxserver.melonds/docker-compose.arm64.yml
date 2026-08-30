@@ -23,8 +23,8 @@ x-casaos:
   main: melonds
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.melonds/assets/icon.png
   title:
-    en_US: Melonds
-  port_map: '3000'
+    en_US: Melonds (LinuxServer.io)
   id: by-roket.linuxserver.melonds
+  port_map: '3000'
   version: 1.1.20260816
   index: /

@@ -23,8 +23,8 @@ x-casaos:
   main: duckstation
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.duckstation/assets/icon.png
   title:
-    en_US: Duckstation
-  port_map: '3000'
+    en_US: Duckstation (LinuxServer.io)
   id: by-roket.linuxserver.duckstation
+  port_map: '3000'
   version: version-latest
   index: /

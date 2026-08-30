@@ -1,7 +1,7 @@
 name: linuxserver-zen
 services:
   zen:
-    image: linuxserver/zen:1.21.15
+    image: linuxserver/zen:1.21.16
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -23,8 +23,8 @@ x-casaos:
   main: zen
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.zen/assets/icon.png
   title:
-    en_US: Zen
-  port_map: '3000'
+    en_US: Zen (LinuxServer.io)
   id: by-roket.linuxserver.zen
-  version: 1.21.15
+  port_map: '3000'
+  version: 1.21.16
   index: /

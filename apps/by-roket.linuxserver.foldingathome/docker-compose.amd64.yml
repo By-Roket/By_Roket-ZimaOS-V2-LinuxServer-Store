@@ -26,8 +26,8 @@ x-casaos:
   main: foldingathome
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.foldingathome/assets/icon.png
   title:
-    en_US: Foldingathome
-  port_map: '80'
+    en_US: Foldingathome (LinuxServer.io)
   id: by-roket.linuxserver.foldingathome
+  port_map: '80'
   version: 8.5.6
   index: /

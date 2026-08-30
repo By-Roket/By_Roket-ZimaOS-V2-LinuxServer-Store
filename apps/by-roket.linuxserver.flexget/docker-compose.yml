@@ -27,8 +27,8 @@ x-casaos:
   main: flexget
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.flexget/assets/icon.png
   title:
-    en_US: Flexget
-  port_map: '5050'
+    en_US: Flexget (LinuxServer.io)
   id: by-roket.linuxserver.flexget
+  port_map: '5050'
   version: 3.20.8
   index: /

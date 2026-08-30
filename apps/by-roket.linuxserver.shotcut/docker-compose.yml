@@ -23,8 +23,8 @@ x-casaos:
   main: shotcut
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.shotcut/assets/icon.png
   title:
-    en_US: Shotcut
-  port_map: '3000'
+    en_US: Shotcut (LinuxServer.io)
   id: by-roket.linuxserver.shotcut
+  port_map: '3000'
   version: 26.8.1
   index: /

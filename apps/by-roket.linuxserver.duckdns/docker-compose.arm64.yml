@@ -27,8 +27,8 @@ x-casaos:
   main: duckdns
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.duckdns/assets/icon.png
   title:
-    en_US: Duckdns
-  port_map: '80'
+    en_US: Duckdns (LinuxServer.io)
   id: by-roket.linuxserver.duckdns
+  port_map: '80'
   version: version-af6dcae5
   index: /

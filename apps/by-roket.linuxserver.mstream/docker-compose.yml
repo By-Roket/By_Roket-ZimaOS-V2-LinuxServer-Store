@@ -23,8 +23,8 @@ x-casaos:
   main: mstream
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mstream/assets/icon.png
   title:
-    en_US: Mstream
-  port_map: '3000'
+    en_US: Mstream (LinuxServer.io)
   id: by-roket.linuxserver.mstream
+  port_map: '3000'
   version: 6.24.0
   index: /

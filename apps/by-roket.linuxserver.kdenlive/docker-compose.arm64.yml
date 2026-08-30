@@ -23,8 +23,8 @@ x-casaos:
   main: kdenlive
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kdenlive/assets/icon.png
   title:
-    en_US: Kdenlive
-  port_map: '3000'
+    en_US: Kdenlive (LinuxServer.io)
   id: by-roket.linuxserver.kdenlive
+  port_map: '3000'
   version: 26.08.0
   index: /

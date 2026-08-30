@@ -26,8 +26,8 @@ x-casaos:
   main: bazarr
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.bazarr/assets/icon.png
   title:
-    en_US: Bazarr
-  port_map: '6767'
+    en_US: Bazarr (LinuxServer.io)
   id: by-roket.linuxserver.bazarr
+  port_map: '6767'
   version: 1.6.0
   index: /

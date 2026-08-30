@@ -23,8 +23,8 @@ x-casaos:
   main: pcsx2
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pcsx2/assets/icon.png
   title:
-    en_US: Pcsx2
-  port_map: '3000'
+    en_US: Pcsx2 (LinuxServer.io)
   id: by-roket.linuxserver.pcsx2
+  port_map: '3000'
   version: 2.6.3
   index: /

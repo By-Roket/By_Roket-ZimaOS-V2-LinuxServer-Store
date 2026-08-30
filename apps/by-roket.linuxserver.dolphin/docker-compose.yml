@@ -23,8 +23,8 @@ x-casaos:
   main: dolphin
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.dolphin/assets/icon.png
   title:
-    en_US: Dolphin
-  port_map: '3000'
+    en_US: Dolphin (LinuxServer.io)
   id: by-roket.linuxserver.dolphin
+  port_map: '3000'
   version: version-2606a
   index: /

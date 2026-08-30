@@ -1,7 +1,7 @@
 name: linuxserver-lychee
 services:
   lychee:
-    image: linuxserver/lychee:7.7.5
+    image: linuxserver/lychee:7.8.0
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -32,8 +32,8 @@ x-casaos:
   main: lychee
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lychee/assets/icon.png
   title:
-    en_US: Lychee
-  port_map: '80'
+    en_US: Lychee (LinuxServer.io)
   id: by-roket.linuxserver.lychee
-  version: 7.7.5
+  port_map: '80'
+  version: 7.8.0
   index: /

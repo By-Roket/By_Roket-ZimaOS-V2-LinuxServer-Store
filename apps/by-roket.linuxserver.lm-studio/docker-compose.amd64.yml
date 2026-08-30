@@ -1,7 +1,7 @@
 name: linuxserver-lm-studio
 services:
   lm-studio:
-    image: linuxserver/lm-studio:2026-08-21-ls23@sha256:62e4d135483461d4bbf33a7f145943bd372553f6da3473b4fb077c07f66a8d0a
+    image: linuxserver/lm-studio:version-2026-08-28@sha256:364f5a84033ac1a610f5107480affbcee431e778f36bdc03dac6a8368dbdabe4
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -23,8 +23,8 @@ x-casaos:
   main: lm-studio
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.lm-studio/assets/icon.png
   title:
-    en_US: Lm studio
-  port_map: '3000'
+    en_US: Lm studio (LinuxServer.io)
   id: by-roket.linuxserver.lm-studio
-  version: 2026-08-21-ls23
+  port_map: '3000'
+  version: version-2026-08-28
   index: /

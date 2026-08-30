@@ -23,8 +23,8 @@ x-casaos:
   main: pycharm
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pycharm/assets/icon.png
   title:
-    en_US: Pycharm
-  port_map: '3000'
+    en_US: Pycharm (LinuxServer.io)
   id: by-roket.linuxserver.pycharm
+  port_map: '3000'
   version: 2026.2.1
   index: /

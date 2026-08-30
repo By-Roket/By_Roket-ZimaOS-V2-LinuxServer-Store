@@ -23,8 +23,8 @@ x-casaos:
   main: krita
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.krita/assets/icon.png
   title:
-    en_US: Krita
-  port_map: '3000'
+    en_US: Krita (LinuxServer.io)
   id: by-roket.linuxserver.krita
+  port_map: '3000'
   version: 5.3.3
   index: /

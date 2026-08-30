@@ -23,8 +23,8 @@ x-casaos:
   main: webcord
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.webcord/assets/icon.png
   title:
-    en_US: Webcord
-  port_map: '3000'
+    en_US: Webcord (LinuxServer.io)
   id: by-roket.linuxserver.webcord
+  port_map: '3000'
   version: 4.14.0
   index: /

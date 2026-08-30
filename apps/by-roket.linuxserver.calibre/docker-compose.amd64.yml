@@ -28,8 +28,8 @@ x-casaos:
   main: calibre
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.calibre/assets/icon.png
   title:
-    en_US: Calibre
-  port_map: '8080'
+    en_US: Calibre (LinuxServer.io)
   id: by-roket.linuxserver.calibre
+  port_map: '8080'
   version: 9.14.0
   index: /

@@ -25,8 +25,8 @@ x-casaos:
   main: calibre-web
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.calibre-web/assets/icon.png
   title:
-    en_US: Calibre web
-  port_map: '8083'
+    en_US: Calibre web (LinuxServer.io)
   id: by-roket.linuxserver.calibre-web
+  port_map: '8083'
   version: 0.6.27
   index: /

@@ -29,8 +29,8 @@ x-casaos:
   main: librespeed
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.librespeed/assets/icon.png
   title:
-    en_US: Librespeed
-  port_map: '80'
+    en_US: Librespeed (LinuxServer.io)
   id: by-roket.linuxserver.librespeed
+  port_map: '80'
   version: 6.2.1
   index: /

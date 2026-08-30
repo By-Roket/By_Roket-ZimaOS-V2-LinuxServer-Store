@@ -23,8 +23,8 @@ x-casaos:
   main: gzdoom
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.gzdoom/assets/icon.png
   title:
-    en_US: Gzdoom
-  port_map: '3000'
+    en_US: Gzdoom (LinuxServer.io)
   id: by-roket.linuxserver.gzdoom
+  port_map: '3000'
   version: 4.14.2
   index: /

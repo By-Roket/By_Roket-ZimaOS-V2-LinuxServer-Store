@@ -24,8 +24,8 @@ x-casaos:
   main: chromium
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.chromium/assets/icon.png
   title:
-    en_US: Chromium
-  port_map: '3000'
+    en_US: Chromium (LinuxServer.io)
   id: by-roket.linuxserver.chromium
+  port_map: '3000'
   version: arm64v8-version-fc3ad042
   index: /

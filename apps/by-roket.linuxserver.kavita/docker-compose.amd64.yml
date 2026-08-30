@@ -1,7 +1,7 @@
 name: linuxserver-kavita
 services:
   kavita:
-    image: linuxserver/kavita:0.9.0@sha256:e0f5c64bb9ffb8ba91137b9700c4abacae08bf1048d7c4df89d75415bdc5aaf5
+    image: linuxserver/kavita:0.9.1@sha256:55683e8c8b5d6cb60acbd4b299b176a059e5b536a47a61c5b2562623de7a5869
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -23,8 +23,8 @@ x-casaos:
   main: kavita
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kavita/assets/icon.png
   title:
-    en_US: Kavita
-  port_map: '5000'
+    en_US: Kavita (LinuxServer.io)
   id: by-roket.linuxserver.kavita
-  version: 0.9.0
+  port_map: '5000'
+  version: 0.9.1
   index: /

@@ -22,8 +22,8 @@ x-casaos:
   main: changedetection-io
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.changedetection-io/assets/icon.png
   title:
-    en_US: Changedetection. Io
-  port_map: '5000'
+    en_US: Changedetection. Io (LinuxServer.io)
   id: by-roket.linuxserver.changedetection-io
+  port_map: '5000'
   version: 0.55.8
   index: /

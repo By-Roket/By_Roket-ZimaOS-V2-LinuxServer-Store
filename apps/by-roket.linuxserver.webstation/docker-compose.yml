@@ -23,8 +23,8 @@ x-casaos:
   main: webstation
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.webstation/assets/icon.png
   title:
-    en_US: Webstation
-  port_map: '3000'
+    en_US: Webstation (LinuxServer.io)
   id: by-roket.linuxserver.webstation
+  port_map: '3000'
   version: 0.6.0-romm
   index: /

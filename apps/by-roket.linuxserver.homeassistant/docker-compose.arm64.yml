@@ -20,8 +20,8 @@ x-casaos:
   main: homeassistant
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.homeassistant/assets/icon.png
   title:
-    en_US: Homeassistant
-  port_map: '8123'
+    en_US: Homeassistant (LinuxServer.io)
   id: by-roket.linuxserver.homeassistant
+  port_map: '8123'
   version: 2026.8.3
   index: /

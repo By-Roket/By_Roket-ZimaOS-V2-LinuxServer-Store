@@ -9,16 +9,16 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.jackett/assets/jackett-banner.webp",
   "category": "Media",
-  "title": "Jackett",
+  "title": "Jackett (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.jackett",
-  "version": "0.24.2486",
+  "version": "0.24.2489",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 81207820,
-    "arm64": 80134549
+    "amd64": 81207676,
+    "arm64": 80134552
   }
 }

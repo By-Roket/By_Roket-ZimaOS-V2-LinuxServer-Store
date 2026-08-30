@@ -23,8 +23,8 @@ x-casaos:
   main: github-desktop
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.github-desktop/assets/icon.png
   title:
-    en_US: Github desktop
-  port_map: '3000'
+    en_US: Github desktop (LinuxServer.io)
   id: by-roket.linuxserver.github-desktop
+  port_map: '3000'
   version: 3.4.13
   index: /

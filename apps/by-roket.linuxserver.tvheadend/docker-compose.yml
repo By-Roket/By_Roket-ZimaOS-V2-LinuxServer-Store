@@ -30,7 +30,7 @@ x-casaos:
   main: tvheadend
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.tvheadend/assets/icon.png
   title:
-    en_US: Tvheadend
+    en_US: Tvheadend (LinuxServer.io)
   id: by-roket.linuxserver.tvheadend
   version: version-fcd987f0
   index: /

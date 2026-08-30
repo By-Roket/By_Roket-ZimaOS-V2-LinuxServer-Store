@@ -20,8 +20,8 @@ x-casaos:
   main: limnoria
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.limnoria/assets/icon.png
   title:
-    en_US: Limnoria
-  port_map: '8080'
+    en_US: Limnoria (LinuxServer.io)
   id: by-roket.linuxserver.limnoria
+  port_map: '8080'
   version: 2026.5.8
   index: /

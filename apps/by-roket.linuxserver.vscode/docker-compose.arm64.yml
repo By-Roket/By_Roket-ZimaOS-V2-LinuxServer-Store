@@ -23,8 +23,8 @@ x-casaos:
   main: vscode
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.vscode/assets/icon.png
   title:
-    en_US: Vscode
-  port_map: '3000'
+    en_US: Vscode (LinuxServer.io)
   id: by-roket.linuxserver.vscode
+  port_map: '3000'
   version: 1.134.0
   index: /

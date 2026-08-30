@@ -24,8 +24,8 @@ x-casaos:
   main: bambustudio
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.bambustudio/assets/icon.png
   title:
-    en_US: Bambustudio
-  port_map: '3000'
+    en_US: Bambustudio (LinuxServer.io)
   id: by-roket.linuxserver.bambustudio
+  port_map: '3000'
   version: 02.08.02
   index: /

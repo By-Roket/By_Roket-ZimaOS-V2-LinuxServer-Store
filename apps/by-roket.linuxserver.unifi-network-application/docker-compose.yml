@@ -53,8 +53,8 @@ x-casaos:
   main: unifi-network-application
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.unifi-network-application/assets/icon.png
   title:
-    en_US: Unifi network-application
-  port_map: '8080'
+    en_US: Unifi network-application (LinuxServer.io)
   id: by-roket.linuxserver.unifi-network-application
+  port_map: '8080'
   version: 10.6.101
   index: /

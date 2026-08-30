@@ -23,8 +23,8 @@ x-casaos:
   main: darktable
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.darktable/assets/icon.png
   title:
-    en_US: Darktable
-  port_map: '3000'
+    en_US: Darktable (LinuxServer.io)
   id: by-roket.linuxserver.darktable
+  port_map: '3000'
   version: 25.6.0
   index: /

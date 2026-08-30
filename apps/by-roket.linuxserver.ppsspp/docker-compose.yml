@@ -23,8 +23,8 @@ x-casaos:
   main: ppsspp
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ppsspp/assets/icon.png
   title:
-    en_US: Ppsspp
-  port_map: '3000'
+    en_US: Ppsspp (LinuxServer.io)
   id: by-roket.linuxserver.ppsspp
+  port_map: '3000'
   version: 1.20.4
   index: /

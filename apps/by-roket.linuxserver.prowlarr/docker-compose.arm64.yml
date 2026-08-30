@@ -20,8 +20,8 @@ x-casaos:
   main: prowlarr
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.prowlarr/assets/icon.png
   title:
-    en_US: Prowlarr
-  port_map: '9696'
+    en_US: Prowlarr (LinuxServer.io)
   id: by-roket.linuxserver.prowlarr
+  port_map: '9696'
   version: 2.5.2
   index: /

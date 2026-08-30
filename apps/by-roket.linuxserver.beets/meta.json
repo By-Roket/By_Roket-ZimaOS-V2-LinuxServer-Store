@@ -9,7 +9,7 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.beets/assets/beets-icon.webp",
   "category": "Media",
-  "title": "Beets",
+  "title": "Beets (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.beets",
   "version": "2.13.1",

@@ -23,8 +23,8 @@ x-casaos:
   main: inkscape
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.inkscape/assets/icon.png
   title:
-    en_US: Inkscape
-  port_map: '3000'
+    en_US: Inkscape (LinuxServer.io)
   id: by-roket.linuxserver.inkscape
+  port_map: '3000'
   version: 1.4.2
   index: /

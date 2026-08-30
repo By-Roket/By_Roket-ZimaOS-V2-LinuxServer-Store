@@ -36,7 +36,7 @@ x-casaos:
   main: jellyfin
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.jellyfin/assets/icon.png
   title:
-    en_US: Jellyfin
+    en_US: Jellyfin (LinuxServer.io)
   id: by-roket.linuxserver.jellyfin
   version: 10.11.11
   index: /

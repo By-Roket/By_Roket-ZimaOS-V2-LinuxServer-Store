@@ -23,8 +23,8 @@ x-casaos:
   main: digikam
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.digikam/assets/icon.png
   title:
-    en_US: Digikam
-  port_map: '3000'
+    en_US: Digikam (LinuxServer.io)
   id: by-roket.linuxserver.digikam
+  port_map: '3000'
   version: 9.1.0
   index: /

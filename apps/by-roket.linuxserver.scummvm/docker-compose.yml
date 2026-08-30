@@ -23,8 +23,8 @@ x-casaos:
   main: scummvm
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.scummvm/assets/icon.png
   title:
-    en_US: Scummvm
-  port_map: '3000'
+    en_US: Scummvm (LinuxServer.io)
   id: by-roket.linuxserver.scummvm
+  port_map: '3000'
   version: 2026.3.0
   index: /

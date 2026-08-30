@@ -42,8 +42,8 @@ x-casaos:
   main: healthchecks
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.healthchecks/assets/icon.png
   title:
-    en_US: Healthchecks
-  port_map: '8000'
+    en_US: Healthchecks (LinuxServer.io)
   id: by-roket.linuxserver.healthchecks
+  port_map: '8000'
   version: 4.3.20260824
   index: /

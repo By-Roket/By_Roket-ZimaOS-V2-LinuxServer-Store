@@ -23,8 +23,8 @@ x-casaos:
   main: calligra
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.calligra/assets/icon.png
   title:
-    en_US: Calligra
-  port_map: '3000'
+    en_US: Calligra (LinuxServer.io)
   id: by-roket.linuxserver.calligra
+  port_map: '3000'
   version: 3.2.1
   index: /

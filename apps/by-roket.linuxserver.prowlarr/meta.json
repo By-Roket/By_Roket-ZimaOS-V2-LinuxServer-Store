@@ -9,7 +9,7 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.prowlarr/assets/prowlarr-banner.webp",
   "category": "Media",
-  "title": "Prowlarr",
+  "title": "Prowlarr (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.prowlarr",
   "version": "2.5.2",

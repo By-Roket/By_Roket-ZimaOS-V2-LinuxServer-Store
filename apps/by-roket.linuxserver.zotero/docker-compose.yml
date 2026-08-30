@@ -23,8 +23,8 @@ x-casaos:
   main: zotero
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.zotero/assets/icon.png
   title:
-    en_US: Zotero
-  port_map: '3000'
+    en_US: Zotero (LinuxServer.io)
   id: by-roket.linuxserver.zotero
+  port_map: '3000'
   version: 10.0.1
   index: /

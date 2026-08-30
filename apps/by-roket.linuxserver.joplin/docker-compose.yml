@@ -23,8 +23,8 @@ x-casaos:
   main: joplin
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.joplin/assets/icon.png
   title:
-    en_US: Joplin
-  port_map: '3000'
+    en_US: Joplin (LinuxServer.io)
   id: by-roket.linuxserver.joplin
+  port_map: '3000'
   version: 3.6.16
   index: /

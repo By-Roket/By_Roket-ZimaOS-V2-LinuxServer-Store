@@ -9,7 +9,7 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.syncthing/assets/syncthing-banner.webp",
   "category": "Productivity",
-  "title": "Syncthing",
+  "title": "Syncthing (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.syncthing",
   "version": "2.1.3",

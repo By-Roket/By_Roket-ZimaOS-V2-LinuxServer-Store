@@ -23,8 +23,8 @@ x-casaos:
   main: openshot
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.openshot/assets/icon.png
   title:
-    en_US: Openshot
-  port_map: '3000'
+    en_US: Openshot (LinuxServer.io)
   id: by-roket.linuxserver.openshot
+  port_map: '3000'
   version: 3.5.1
   index: /

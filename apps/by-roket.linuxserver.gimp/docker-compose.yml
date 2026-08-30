@@ -23,8 +23,8 @@ x-casaos:
   main: gimp
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.gimp/assets/icon.png
   title:
-    en_US: Gimp
-  port_map: '3000'
+    en_US: Gimp (LinuxServer.io)
   id: by-roket.linuxserver.gimp
+  port_map: '3000'
   version: version-22638545
   index: /

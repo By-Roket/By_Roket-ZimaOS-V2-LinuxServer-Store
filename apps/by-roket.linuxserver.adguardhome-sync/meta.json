@@ -9,7 +9,7 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.adguardhome-sync/assets/adguardhomesync-icon.webp",
   "category": "Networking",
-  "title": "Adguardhome sync",
+  "title": "Adguardhome sync (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.adguardhome-sync",
   "version": "0.9.2",

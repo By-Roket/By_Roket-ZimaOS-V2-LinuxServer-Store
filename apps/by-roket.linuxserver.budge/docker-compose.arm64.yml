@@ -23,8 +23,8 @@ x-casaos:
   main: budge
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.budge/assets/icon.png
   title:
-    en_US: Budge
-  port_map: '80'
+    en_US: Budge (LinuxServer.io)
   id: by-roket.linuxserver.budge
+  port_map: '80'
   version: 0.0.9
   index: /

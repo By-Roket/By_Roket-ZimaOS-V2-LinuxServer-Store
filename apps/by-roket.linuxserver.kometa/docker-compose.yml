@@ -25,8 +25,8 @@ x-casaos:
   main: kometa
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kometa/assets/icon.png
   title:
-    en_US: Kometa
-  port_map: '80'
+    en_US: Kometa (LinuxServer.io)
   id: by-roket.linuxserver.kometa
+  port_map: '80'
   version: 2.4.8
   index: /

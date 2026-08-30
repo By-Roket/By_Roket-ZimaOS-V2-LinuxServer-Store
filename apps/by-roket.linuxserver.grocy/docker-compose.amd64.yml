@@ -1,7 +1,7 @@
 name: linuxserver-grocy
 services:
   grocy:
-    image: linuxserver/grocy:4.6.0@sha256:0a35d507d1f6698fd74f2fb29d2212e0dcd8b81924e66550b3864c99bedec6dd
+    image: linuxserver/grocy:4.7.0@sha256:deb07d373a21430de2bf0e41af591066d5c012072945a655478d2f1021b9b073
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -20,8 +20,8 @@ x-casaos:
   main: grocy
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.grocy/assets/icon.png
   title:
-    en_US: Grocy
-  port_map: '80'
+    en_US: Grocy (LinuxServer.io)
   id: by-roket.linuxserver.grocy
-  version: 4.6.0
+  port_map: '80'
+  version: 4.7.0
   index: /

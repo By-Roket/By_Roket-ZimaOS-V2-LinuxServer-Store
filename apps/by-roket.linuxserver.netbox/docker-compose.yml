@@ -42,8 +42,8 @@ x-casaos:
   main: netbox
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.netbox/assets/icon.png
   title:
-    en_US: Netbox
-  port_map: '8000'
+    en_US: Netbox (LinuxServer.io)
   id: by-roket.linuxserver.netbox
+  port_map: '8000'
   version: 4.6.9
   index: /

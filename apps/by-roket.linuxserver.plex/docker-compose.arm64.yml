@@ -28,8 +28,8 @@ x-casaos:
   main: plex
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.plex/assets/icon.png
   title:
-    en_US: Plex
-  port_map: '80'
+    en_US: Plex (LinuxServer.io)
   id: by-roket.linuxserver.plex
+  port_map: '80'
   version: 1.43.3
   index: /

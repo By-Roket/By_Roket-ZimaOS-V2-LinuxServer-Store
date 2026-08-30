@@ -23,8 +23,8 @@ x-casaos:
   main: obsidian
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.obsidian/assets/icon.png
   title:
-    en_US: Obsidian
-  port_map: '3000'
+    en_US: Obsidian (LinuxServer.io)
   id: by-roket.linuxserver.obsidian
+  port_map: '3000'
   version: 1.13.7
   index: /

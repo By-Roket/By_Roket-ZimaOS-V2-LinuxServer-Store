@@ -9,16 +9,16 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.grocy/assets/grocy-logo.webp",
   "category": "Others",
-  "title": "Grocy",
+  "title": "Grocy (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.grocy",
-  "version": "4.6.0",
+  "version": "4.7.0",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 82508606,
-    "arm64": 83076914
+    "amd64": 86281272,
+    "arm64": 87151975
   }
 }

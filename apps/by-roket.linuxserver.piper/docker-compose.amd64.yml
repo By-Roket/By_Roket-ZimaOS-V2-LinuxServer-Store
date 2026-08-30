@@ -27,8 +27,8 @@ x-casaos:
   main: piper
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.piper/assets/icon.png
   title:
-    en_US: Piper
-  port_map: '10200'
+    en_US: Piper (LinuxServer.io)
   id: by-roket.linuxserver.piper
+  port_map: '10200'
   version: 2.4.2
   index: /

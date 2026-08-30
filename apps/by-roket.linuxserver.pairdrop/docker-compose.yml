@@ -24,8 +24,8 @@ x-casaos:
   main: pairdrop
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.pairdrop/assets/icon.png
   title:
-    en_US: Pairdrop
-  port_map: '3000'
+    en_US: Pairdrop (LinuxServer.io)
   id: by-roket.linuxserver.pairdrop
+  port_map: '3000'
   version: 1.11.2
   index: /

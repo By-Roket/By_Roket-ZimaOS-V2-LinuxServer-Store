@@ -9,7 +9,7 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.retroarch/assets/retroarch-logo.webp",
   "category": "Media",
-  "title": "Retroarch",
+  "title": "Retroarch (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.retroarch",
   "version": "1.22.2",

@@ -26,8 +26,8 @@ x-casaos:
   main: manyfold
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.manyfold/assets/icon.png
   title:
-    en_US: Manyfold
-  port_map: '3214'
+    en_US: Manyfold (LinuxServer.io)
   id: by-roket.linuxserver.manyfold
+  port_map: '3214'
   version: 0.148.0
   index: /

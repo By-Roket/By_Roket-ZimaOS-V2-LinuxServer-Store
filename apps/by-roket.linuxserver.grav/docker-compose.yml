@@ -20,8 +20,8 @@ x-casaos:
   main: grav
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.grav/assets/icon.png
   title:
-    en_US: Grav
-  port_map: '80'
+    en_US: Grav (LinuxServer.io)
   id: by-roket.linuxserver.grav
+  port_map: '80'
   version: 2.0.21
   index: /

@@ -24,8 +24,8 @@ x-casaos:
   main: vivaldi
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.vivaldi/assets/icon.png
   title:
-    en_US: Vivaldi
-  port_map: '3000'
+    en_US: Vivaldi (LinuxServer.io)
   id: by-roket.linuxserver.vivaldi
+  port_map: '3000'
   version: 8.1.4087
   index: /

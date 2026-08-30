@@ -9,16 +9,16 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.helium/assets/helium-logo.webp",
   "category": "Others",
-  "title": "Helium",
+  "title": "Helium (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.helium",
-  "version": "0.15.7",
+  "version": "0.16.2",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1177826962,
-    "arm64": 1147518984
+    "amd64": 1179039645,
+    "arm64": 1148748658
   }
 }

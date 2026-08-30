@@ -24,8 +24,8 @@ x-casaos:
   main: ungoogled-chromium
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ungoogled-chromium/assets/icon.png
   title:
-    en_US: Ungoogled chromium
-  port_map: '3000'
+    en_US: Ungoogled chromium (LinuxServer.io)
   id: by-roket.linuxserver.ungoogled-chromium
+  port_map: '3000'
   version: 151.0.7922
   index: /

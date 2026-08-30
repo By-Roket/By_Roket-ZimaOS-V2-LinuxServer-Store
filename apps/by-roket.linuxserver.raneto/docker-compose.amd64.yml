@@ -20,8 +20,8 @@ x-casaos:
   main: raneto
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.raneto/assets/icon.png
   title:
-    en_US: Raneto
-  port_map: '3000'
+    en_US: Raneto (LinuxServer.io)
   id: by-roket.linuxserver.raneto
+  port_map: '3000'
   version: 0.18.1
   index: /

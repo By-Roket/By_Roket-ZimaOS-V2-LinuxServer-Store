@@ -21,8 +21,8 @@ x-casaos:
   main: luanti
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.luanti/assets/icon.png
   title:
-    en_US: Luanti
-  port_map: '30000'
+    en_US: Luanti (LinuxServer.io)
   id: by-roket.linuxserver.luanti
+  port_map: '30000'
   version: 5.17.0
   index: /

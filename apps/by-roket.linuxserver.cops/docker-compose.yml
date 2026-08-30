@@ -26,8 +26,8 @@ x-casaos:
   main: cops
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.cops/assets/icon.png
   title:
-    en_US: Cops
-  port_map: '80'
+    en_US: Cops (LinuxServer.io)
   id: by-roket.linuxserver.cops
+  port_map: '80'
   version: 4.5.2
   index: /

@@ -26,8 +26,8 @@ x-casaos:
   main: radarr
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.radarr/assets/icon.png
   title:
-    en_US: Radarr
-  port_map: '7878'
+    en_US: Radarr (LinuxServer.io)
   id: by-roket.linuxserver.radarr
+  port_map: '7878'
   version: 6.3.0
   index: /

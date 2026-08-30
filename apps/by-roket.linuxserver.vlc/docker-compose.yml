@@ -24,8 +24,8 @@ x-casaos:
   main: vlc
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.vlc/assets/icon.png
   title:
-    en_US: Vlc
-  port_map: '3000'
+    en_US: Vlc (LinuxServer.io)
   id: by-roket.linuxserver.vlc
+  port_map: '3000'
   version: 3.0.23
   index: /

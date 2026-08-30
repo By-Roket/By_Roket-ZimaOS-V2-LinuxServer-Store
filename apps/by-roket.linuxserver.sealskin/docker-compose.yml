@@ -30,8 +30,8 @@ x-casaos:
   main: sealskin
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sealskin/assets/icon.png
   title:
-    en_US: Sealskin
-  port_map: '8000'
+    en_US: Sealskin (LinuxServer.io)
   id: by-roket.linuxserver.sealskin
+  port_map: '8000'
   version: 0.1.39
   index: /

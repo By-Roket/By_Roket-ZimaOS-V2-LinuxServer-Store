@@ -25,8 +25,8 @@ x-casaos:
   main: vscodium-web
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.vscodium-web/assets/icon.png
   title:
-    en_US: Vscodium web
-  port_map: '8000'
+    en_US: Vscodium web (LinuxServer.io)
   id: by-roket.linuxserver.vscodium-web
+  port_map: '8000'
   version: 1.126.04524
   index: /

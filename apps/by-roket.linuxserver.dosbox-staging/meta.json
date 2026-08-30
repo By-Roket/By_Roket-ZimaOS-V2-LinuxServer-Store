@@ -8,7 +8,7 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.dosbox-staging/assets/dosbox-logo.webp",
   "category": "Media",
-  "title": "Dosbox staging",
+  "title": "Dosbox staging (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.dosbox-staging",
   "version": "0.83.0",

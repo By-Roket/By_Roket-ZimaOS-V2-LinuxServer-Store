@@ -20,8 +20,8 @@ x-casaos:
   main: ddclient
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ddclient/assets/icon.png
   title:
-    en_US: Ddclient
-  port_map: '80'
+    en_US: Ddclient (LinuxServer.io)
   id: by-roket.linuxserver.ddclient
+  port_map: '80'
   version: 4.0.0
   index: /

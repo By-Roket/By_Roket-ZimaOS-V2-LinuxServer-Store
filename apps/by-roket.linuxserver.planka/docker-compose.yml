@@ -29,8 +29,8 @@ x-casaos:
   main: planka
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.planka/assets/icon.png
   title:
-    en_US: Planka
-  port_map: '1337'
+    en_US: Planka (LinuxServer.io)
   id: by-roket.linuxserver.planka
+  port_map: '1337'
   version: 2.2.1
   index: /

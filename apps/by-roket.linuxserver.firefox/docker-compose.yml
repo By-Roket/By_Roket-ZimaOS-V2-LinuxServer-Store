@@ -24,8 +24,8 @@ x-casaos:
   main: firefox
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.firefox/assets/icon.png
   title:
-    en_US: Firefox
-  port_map: '3000'
+    en_US: Firefox (LinuxServer.io)
   id: by-roket.linuxserver.firefox
+  port_map: '3000'
   version: 1154.0.1
   index: /

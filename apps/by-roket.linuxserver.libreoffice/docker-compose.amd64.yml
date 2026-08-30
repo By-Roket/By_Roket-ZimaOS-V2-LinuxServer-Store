@@ -23,8 +23,8 @@ x-casaos:
   main: libreoffice
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.libreoffice/assets/icon.png
   title:
-    en_US: Libreoffice
-  port_map: '3000'
+    en_US: Libreoffice (LinuxServer.io)
   id: by-roket.linuxserver.libreoffice
+  port_map: '3000'
   version: 25.8.7
   index: /

@@ -23,8 +23,8 @@ x-casaos:
   main: dogwalk
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.dogwalk/assets/icon.png
   title:
-    en_US: Dogwalk
-  port_map: '3000'
+    en_US: Dogwalk (LinuxServer.io)
   id: by-roket.linuxserver.dogwalk
+  port_map: '3000'
   version: e47ccf5d-ls52
   index: /

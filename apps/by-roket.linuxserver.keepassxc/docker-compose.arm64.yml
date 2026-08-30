@@ -23,8 +23,8 @@ x-casaos:
   main: keepassxc
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.keepassxc/assets/icon.png
   title:
-    en_US: Keepassxc
-  port_map: '3000'
+    en_US: Keepassxc (LinuxServer.io)
   id: by-roket.linuxserver.keepassxc
+  port_map: '3000'
   version: 2.7.12
   index: /

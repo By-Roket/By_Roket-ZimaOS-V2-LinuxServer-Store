@@ -32,7 +32,7 @@ x-casaos:
   main: emby
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.emby/assets/icon.png
   title:
-    en_US: Emby
+    en_US: Emby (LinuxServer.io)
   id: by-roket.linuxserver.emby
   version: 4.9.5
   index: /

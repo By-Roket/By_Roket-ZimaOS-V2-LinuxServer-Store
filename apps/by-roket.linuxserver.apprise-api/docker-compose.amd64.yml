@@ -24,8 +24,8 @@ x-casaos:
   main: apprise-api
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.apprise-api/assets/icon.png
   title:
-    en_US: Apprise api
-  port_map: '8000'
+    en_US: Apprise api (LinuxServer.io)
   id: by-roket.linuxserver.apprise-api
+  port_map: '8000'
   version: 1.5.2
   index: /

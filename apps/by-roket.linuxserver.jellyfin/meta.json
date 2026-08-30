@@ -9,7 +9,7 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.jellyfin/assets/jellyfin-logo.webp",
   "category": "Media",
-  "title": "Jellyfin",
+  "title": "Jellyfin (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.jellyfin",
   "version": "10.11.11",

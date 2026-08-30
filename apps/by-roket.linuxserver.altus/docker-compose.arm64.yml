@@ -23,8 +23,8 @@ x-casaos:
   main: altus
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.altus/assets/icon.png
   title:
-    en_US: Altus
-  port_map: '3000'
+    en_US: Altus (LinuxServer.io)
   id: by-roket.linuxserver.altus
+  port_map: '3000'
   version: 5.8.1
   index: /

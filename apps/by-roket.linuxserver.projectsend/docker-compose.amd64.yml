@@ -23,8 +23,8 @@ x-casaos:
   main: projectsend
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.projectsend/assets/icon.png
   title:
-    en_US: Projectsend
-  port_map: '80'
+    en_US: Projectsend (LinuxServer.io)
   id: by-roket.linuxserver.projectsend
+  port_map: '80'
   version: version-r2098
   index: /

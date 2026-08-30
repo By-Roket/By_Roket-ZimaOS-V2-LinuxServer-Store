@@ -23,8 +23,8 @@ x-casaos:
   main: sqlitebrowser
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sqlitebrowser/assets/icon.png
   title:
-    en_US: Sqlitebrowser
-  port_map: '3000'
+    en_US: Sqlitebrowser (LinuxServer.io)
   id: by-roket.linuxserver.sqlitebrowser
+  port_map: '3000'
   version: 3.13.1
   index: /

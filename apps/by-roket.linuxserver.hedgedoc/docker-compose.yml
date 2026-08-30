@@ -31,8 +31,8 @@ x-casaos:
   main: hedgedoc
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.hedgedoc/assets/icon.png
   title:
-    en_US: Hedgedoc
-  port_map: '3000'
+    en_US: Hedgedoc (LinuxServer.io)
   id: by-roket.linuxserver.hedgedoc
+  port_map: '3000'
   version: 1.12.0
   index: /

@@ -23,8 +23,8 @@ x-casaos:
   main: davos
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.davos/assets/icon.png
   title:
-    en_US: Davos
-  port_map: '8080'
+    en_US: Davos (LinuxServer.io)
   id: by-roket.linuxserver.davos
+  port_map: '8080'
   version: 2.2.2
   index: /

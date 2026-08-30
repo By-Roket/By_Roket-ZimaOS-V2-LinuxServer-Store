@@ -23,8 +23,8 @@ x-casaos:
   main: ardour
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ardour/assets/icon.png
   title:
-    en_US: Ardour
-  port_map: '3000'
+    en_US: Ardour (LinuxServer.io)
   id: by-roket.linuxserver.ardour
+  port_map: '3000'
   version: version-2026-06-19
   index: /

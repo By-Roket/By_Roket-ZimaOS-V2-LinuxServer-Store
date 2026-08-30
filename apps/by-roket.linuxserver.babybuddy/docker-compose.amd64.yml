@@ -21,8 +21,8 @@ x-casaos:
   main: babybuddy
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.babybuddy/assets/icon.png
   title:
-    en_US: Babybuddy
-  port_map: '8000'
+    en_US: Babybuddy (LinuxServer.io)
   id: by-roket.linuxserver.babybuddy
+  port_map: '8000'
   version: 2.10.0
   index: /

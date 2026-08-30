@@ -23,8 +23,8 @@ x-casaos:
   main: ferdium
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ferdium/assets/icon.png
   title:
-    en_US: Ferdium
-  port_map: '3000'
+    en_US: Ferdium (LinuxServer.io)
   id: by-roket.linuxserver.ferdium
+  port_map: '3000'
   version: 7.2.2
   index: /

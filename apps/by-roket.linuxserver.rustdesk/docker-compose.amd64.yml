@@ -23,8 +23,8 @@ x-casaos:
   main: rustdesk
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.rustdesk/assets/icon.png
   title:
-    en_US: Rustdesk
-  port_map: '3000'
+    en_US: Rustdesk (LinuxServer.io)
   id: by-roket.linuxserver.rustdesk
+  port_map: '3000'
   version: 1.4.9
   index: /

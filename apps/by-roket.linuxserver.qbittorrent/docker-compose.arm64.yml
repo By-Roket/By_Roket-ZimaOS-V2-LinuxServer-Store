@@ -31,8 +31,8 @@ x-casaos:
   main: qbittorrent
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.qbittorrent/assets/icon.png
   title:
-    en_US: Qbittorrent
-  port_map: '8080'
+    en_US: Qbittorrent (LinuxServer.io)
   id: by-roket.linuxserver.qbittorrent
+  port_map: '8080'
   version: 5.2.3
   index: /

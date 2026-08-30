@@ -1,7 +1,7 @@
 name: linuxserver-socket-proxy
 services:
   socket-proxy:
-    image: linuxserver/socket-proxy:3.4.3@sha256:cdaca83fb984439542783ec9e89a729e62083839ebae8569c0edaa46a62ee443
+    image: linuxserver/socket-proxy:3.4.4@sha256:51eb58d4082daf44c50b381c5739dd6f4b3e667e7f9e10f3d16d977894df969e
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -20,8 +20,8 @@ x-casaos:
   main: socket-proxy
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.socket-proxy/assets/icon.png
   title:
-    en_US: Socket proxy
-  port_map: '80'
+    en_US: Socket proxy (LinuxServer.io)
   id: by-roket.linuxserver.socket-proxy
-  version: 3.4.3
+  port_map: '80'
+  version: 3.4.4
   index: /

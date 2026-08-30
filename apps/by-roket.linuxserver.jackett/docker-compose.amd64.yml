@@ -1,7 +1,7 @@
 name: linuxserver-jackett
 services:
   jackett:
-    image: linuxserver/jackett:0.24.2486@sha256:5890f6445e357852c9e8e4a22795060753c0e2ad74fc428b8e22ac1ab1cb018b
+    image: linuxserver/jackett:0.24.2489@sha256:279025c8c3632b4c42510359a6565dcc33cd37f3cf90fd77a40830ac7813c324
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -25,8 +25,8 @@ x-casaos:
   main: jackett
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.jackett/assets/icon.png
   title:
-    en_US: Jackett
-  port_map: '9117'
+    en_US: Jackett (LinuxServer.io)
   id: by-roket.linuxserver.jackett
-  version: 0.24.2486
+  port_map: '9117'
+  version: 0.24.2489
   index: /

@@ -23,8 +23,8 @@ x-casaos:
   main: onlyoffice
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.onlyoffice/assets/icon.png
   title:
-    en_US: Onlyoffice
-  port_map: '3000'
+    en_US: Onlyoffice (LinuxServer.io)
   id: by-roket.linuxserver.onlyoffice
+  port_map: '3000'
   version: 9.4.0
   index: /

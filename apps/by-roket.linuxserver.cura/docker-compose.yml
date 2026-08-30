@@ -23,8 +23,8 @@ x-casaos:
   main: cura
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.cura/assets/icon.png
   title:
-    en_US: Cura
-  port_map: '3000'
+    en_US: Cura (LinuxServer.io)
   id: by-roket.linuxserver.cura
+  port_map: '3000'
   version: 5.13.0
   index: /

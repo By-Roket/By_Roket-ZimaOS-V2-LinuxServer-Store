@@ -26,8 +26,8 @@ x-casaos:
   main: sickgear
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.sickgear/assets/icon.png
   title:
-    en_US: Sickgear
-  port_map: '8081'
+    en_US: Sickgear (LinuxServer.io)
   id: by-roket.linuxserver.sickgear
+  port_map: '8081'
   version: 3.36.1
   index: /

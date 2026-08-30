@@ -20,8 +20,8 @@ x-casaos:
   main: modmanager
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.modmanager/assets/icon.png
   title:
-    en_US: Modmanager
-  port_map: '80'
+    en_US: Modmanager (LinuxServer.io)
   id: by-roket.linuxserver.modmanager
+  port_map: '80'
   version: version-b7faeafa
   index: /

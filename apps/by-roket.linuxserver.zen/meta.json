@@ -9,16 +9,16 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.zen/assets/zen-logo.webp",
   "category": "Others",
-  "title": "Zen",
+  "title": "Zen (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.zen",
-  "version": "1.21.15",
+  "version": "1.21.16",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1130135028,
-    "arm64": 1076911453
+    "amd64": 1130641324,
+    "arm64": 1077154286
   }
 }

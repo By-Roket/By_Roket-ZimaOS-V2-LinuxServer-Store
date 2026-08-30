@@ -29,7 +29,7 @@ x-casaos:
   main: resilio-sync
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.resilio-sync/assets/icon.png
   title:
-    en_US: Resilio sync
+    en_US: Resilio sync (LinuxServer.io)
   id: by-roket.linuxserver.resilio-sync
   version: 3.1.2
   index: /

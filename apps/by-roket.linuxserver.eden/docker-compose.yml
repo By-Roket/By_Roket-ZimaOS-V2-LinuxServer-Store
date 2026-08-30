@@ -23,8 +23,8 @@ x-casaos:
   main: eden
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.eden/assets/icon.png
   title:
-    en_US: Eden
-  port_map: '3000'
+    en_US: Eden (LinuxServer.io)
   id: by-roket.linuxserver.eden
+  port_map: '3000'
   version: 0.2.1
   index: /

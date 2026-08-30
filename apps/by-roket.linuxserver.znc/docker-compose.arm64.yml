@@ -20,8 +20,8 @@ x-casaos:
   main: znc
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.znc/assets/icon.png
   title:
-    en_US: Znc
-  port_map: '6501'
+    en_US: Znc (LinuxServer.io)
   id: by-roket.linuxserver.znc
+  port_map: '6501'
   version: 1.10.2
   index: /

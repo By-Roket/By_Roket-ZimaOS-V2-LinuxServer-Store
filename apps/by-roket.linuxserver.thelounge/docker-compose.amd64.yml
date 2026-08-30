@@ -20,8 +20,8 @@ x-casaos:
   main: thelounge
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.thelounge/assets/icon.png
   title:
-    en_US: Thelounge
-  port_map: '9000'
+    en_US: Thelounge (LinuxServer.io)
   id: by-roket.linuxserver.thelounge
+  port_map: '9000'
   version: 4.5.2
   index: /

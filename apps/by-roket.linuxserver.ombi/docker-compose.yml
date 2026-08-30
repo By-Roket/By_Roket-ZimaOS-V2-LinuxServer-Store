@@ -21,8 +21,8 @@ x-casaos:
   main: ombi
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.ombi/assets/icon.png
   title:
-    en_US: Ombi
-  port_map: '3579'
+    en_US: Ombi (LinuxServer.io)
   id: by-roket.linuxserver.ombi
+  port_map: '3579'
   version: 4.53.10
   index: /

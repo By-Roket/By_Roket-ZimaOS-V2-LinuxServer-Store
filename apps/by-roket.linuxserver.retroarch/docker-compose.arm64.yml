@@ -23,8 +23,8 @@ x-casaos:
   main: retroarch
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.retroarch/assets/icon.png
   title:
-    en_US: Retroarch
-  port_map: '3000'
+    en_US: Retroarch (LinuxServer.io)
   id: by-roket.linuxserver.retroarch
+  port_map: '3000'
   version: 1.22.2
   index: /

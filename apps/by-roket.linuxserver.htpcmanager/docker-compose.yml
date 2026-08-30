@@ -20,8 +20,8 @@ x-casaos:
   main: htpcmanager
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.htpcmanager/assets/icon.png
   title:
-    en_US: Htpcmanager
-  port_map: '8085'
+    en_US: Htpcmanager (LinuxServer.io)
   id: by-roket.linuxserver.htpcmanager
+  port_map: '8085'
   version: version-26a641bf
   index: /

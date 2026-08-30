@@ -23,8 +23,8 @@ x-casaos:
   main: kali-linux
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.kali-linux/assets/icon.png
   title:
-    en_US: Kali linux
-  port_map: '3000'
+    en_US: Kali linux (LinuxServer.io)
   id: by-roket.linuxserver.kali-linux
+  port_map: '3000'
   version: version-b6cbe11b
   index: /

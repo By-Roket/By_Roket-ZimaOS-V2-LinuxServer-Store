@@ -26,8 +26,8 @@ x-casaos:
   main: mariadb
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.mariadb/assets/icon.png
   title:
-    en_US: Mariadb
-  port_map: '3306'
+    en_US: Mariadb (LinuxServer.io)
   id: by-roket.linuxserver.mariadb
+  port_map: '3306'
   version: 11.8.8
   index: /

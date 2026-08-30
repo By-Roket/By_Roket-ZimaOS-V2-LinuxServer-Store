@@ -23,8 +23,8 @@ x-casaos:
   main: blender
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.blender/assets/icon.png
   title:
-    en_US: Blender
-  port_map: '3000'
+    en_US: Blender (LinuxServer.io)
   id: by-roket.linuxserver.blender
+  port_map: '3000'
   version: 5.2.1
   index: /

@@ -9,16 +9,16 @@
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.lychee/assets/lychee-icon.webp",
   "category": "Media",
-  "title": "Lychee",
+  "title": "Lychee (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.lychee",
-  "version": "7.7.5",
+  "version": "7.8.0",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 134853175,
-    "arm64": 132000966
+    "amd64": 137601640,
+    "arm64": 135034382
   }
 }
