@@ -1,7 +1,7 @@
 name: linuxserver-modmanager
 services:
   modmanager:
-    image: linuxserver/modmanager:version-b7faeafa
+    image: linuxserver/modmanager:version-8da40b7a
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -49,5 +49,5 @@ x-casaos:
   category: Developer
   id: by-roket.linuxserver.modmanager
   port_map: '80'
-  version: version-b7faeafa
+  version: version-8da40b7a
   index: /
