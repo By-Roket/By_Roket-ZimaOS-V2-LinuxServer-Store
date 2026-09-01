@@ -1,7 +1,7 @@
 name: linuxserver-flexget
 services:
   flexget:
-    image: linuxserver/flexget:3.20.8
+    image: linuxserver/flexget:3.20.9
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -67,5 +67,5 @@ x-casaos:
   category: Media
   id: by-roket.linuxserver.flexget
   port_map: '5050'
-  version: 3.20.8
+  version: 3.20.9
   index: /
