@@ -1,7 +1,7 @@
 name: linuxserver-darktable
 services:
   darktable:
-    image: linuxserver/darktable:25.6.0
+    image: linuxserver/darktable:25.6.1
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Darktable (LinuxServer.io)
   id: by-roket.linuxserver.darktable
   port_map: '3000'
-  version: 25.6.0
+  version: 25.6.1
   index: /

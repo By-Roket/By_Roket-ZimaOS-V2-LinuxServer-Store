@@ -1,7 +1,7 @@
 name: linuxserver-yaak
 services:
   yaak:
-    image: linuxserver/yaak:2026.6.0@sha256:af85f25adb4af4270c8af3d9e7c9a9c51c18879f3569de7c157a50a65e7c63d3
+    image: linuxserver/yaak:2026.7.0@sha256:6c0ec1b669490388e6f61e863ff7b36f0ea7bba423a89c47a44c0fb22b60e086
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Yaak (LinuxServer.io)
   id: by-roket.linuxserver.yaak
   port_map: '3000'
-  version: 2026.6.0
+  version: 2026.7.0
   index: /

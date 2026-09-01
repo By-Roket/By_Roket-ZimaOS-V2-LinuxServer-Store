@@ -1,7 +1,7 @@
 name: linuxserver-openssh-server
 services:
   openssh-server:
-    image: linuxserver/openssh-server:version-10.3_p1-r0@sha256:4e3054a3c64f19cf4ee28dcac64c030f3a722a4fe46a319f68f9e0952c7de074
+    image: linuxserver/openssh-server:version-10.3_p1-r1@sha256:85fa42da0475a71e1f51426439ebad63bf7ba3daaa7961430482759ea9ba562b
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -33,5 +33,5 @@ x-casaos:
     en_US: Openssh server (LinuxServer.io)
   id: by-roket.linuxserver.openssh-server
   port_map: '2222'
-  version: version-10.3_p1-r0
+  version: version-10.3_p1-r1
   index: /

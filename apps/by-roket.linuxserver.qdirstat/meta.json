@@ -12,13 +12,13 @@
   "title": "Qdirstat (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.qdirstat",
-  "version": "2.0.20260825",
+  "version": "2.0.20260831",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1010400658,
-    "arm64": 981643325
+    "amd64": 1002721180,
+    "arm64": 974585752
   }
 }

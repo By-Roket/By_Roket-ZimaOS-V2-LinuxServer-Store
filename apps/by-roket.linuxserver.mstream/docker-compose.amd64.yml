@@ -1,7 +1,7 @@
 name: linuxserver-mstream
 services:
   mstream:
-    image: linuxserver/mstream:6.24.0@sha256:5533f395a9af415d07fc9f1cde226abd5cf931f60514168f2bc701bf256178aa
+    image: linuxserver/mstream:6.25.0@sha256:9c96192b9dc31ce89cd02b10530556f5c761225dc95921234c42dbd191863c8f
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Mstream (LinuxServer.io)
   id: by-roket.linuxserver.mstream
   port_map: '3000'
-  version: 6.24.0
+  version: 6.25.0
   index: /

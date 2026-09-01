@@ -12,13 +12,13 @@
   "title": "Openssh server (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.openssh-server",
-  "version": "version-10.3_p1-r0",
+  "version": "version-10.3_p1-r1",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 15815774,
-    "arm64": 16761612
+    "amd64": 15818853,
+    "arm64": 16764724
   }
 }
