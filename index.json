@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-09-01T08:46:31Z",
+  "updated_at": "2026-09-02T08:00:36Z",
   "app_count": 246,
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "apps": [
@@ -125,8 +125,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.audacity/assets/audacity-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.audacity/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.audacity/meta.json",
-      "content_hash": "157f43a4",
-      "version": "3.7.8"
+      "content_hash": "ee558c75",
+      "version": "3.7.9"
     },
     {
       "id": "by-roket.linuxserver.azahar",
@@ -1357,8 +1357,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.flexget/assets/flexget-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.flexget/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.flexget/meta.json",
-      "content_hash": "3355b4dd",
-      "version": "3.20.9"
+      "content_hash": "4dbbb9ae",
+      "version": "3.20.10"
     },
     {
       "id": "by-roket.linuxserver.flycast",
@@ -1543,8 +1543,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.grav/assets/grav-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.grav/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.grav/meta.json",
-      "content_hash": "e49dc88c",
-      "version": "2.0.21"
+      "content_hash": "280acad9",
+      "version": "2.0.22"
     },
     {
       "id": "by-roket.linuxserver.grocy",
@@ -1667,8 +1667,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.healthchecks/assets/healthchecks-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.healthchecks/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.healthchecks/meta.json",
-      "content_hash": "542897c5",
-      "version": "4.3.20260824"
+      "content_hash": "dfe18e75",
+      "version": "4.4.20260901"
     },
     {
       "id": "by-roket.linuxserver.hedgedoc",
@@ -1854,8 +1854,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.jackett/assets/jackett-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.jackett/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.jackett/meta.json",
-      "content_hash": "138f3bd8",
-      "version": "0.24.2503"
+      "content_hash": "0e340ee4",
+      "version": "0.24.2508"
     },
     {
       "id": "by-roket.linuxserver.jellyfin",
@@ -2431,8 +2431,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.mastodon/assets/mastodon-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.mastodon/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.mastodon/meta.json",
-      "content_hash": "d6c14dc3",
-      "version": "4.7.0"
+      "content_hash": "472a75f0",
+      "version": "4.7.1"
     },
     {
       "id": "by-roket.linuxserver.mediaelch",
@@ -2575,8 +2575,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.modrinth/assets/modrinth-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.modrinth/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.modrinth/meta.json",
-      "content_hash": "5bbe7314",
-      "version": "0.19.1"
+      "content_hash": "6b4788a2",
+      "version": "0.19.2"
     },
     {
       "id": "by-roket.linuxserver.monica",
@@ -3155,8 +3155,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.pcsx2/assets/pcsx2-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.pcsx2/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.pcsx2/meta.json",
-      "content_hash": "06e9db7f",
-      "version": "2.6.3"
+      "content_hash": "26d343e4",
+      "version": "2.8.0"
     },
     {
       "id": "by-roket.linuxserver.pelorus",
@@ -3821,7 +3821,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.rpcs3/assets/rpcs3-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.rpcs3/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.rpcs3/meta.json",
-      "content_hash": "88ef1658"
+      "content_hash": "96268b9f"
     },
     {
       "id": "by-roket.linuxserver.rsnapshot",

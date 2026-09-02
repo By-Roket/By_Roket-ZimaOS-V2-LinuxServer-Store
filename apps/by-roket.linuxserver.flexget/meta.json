@@ -12,13 +12,13 @@
   "title": "Flexget (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.flexget",
-  "version": "3.20.9",
+  "version": "3.20.10",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 207236876,
-    "arm64": 204112652
+    "amd64": 207237014,
+    "arm64": 204114001
   }
 }

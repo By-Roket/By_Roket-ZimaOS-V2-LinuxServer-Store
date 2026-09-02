@@ -12,13 +12,13 @@
   "title": "Healthchecks (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.healthchecks",
-  "version": "4.3.20260824",
+  "version": "4.4.20260901",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 87129816,
-    "arm64": 87533360
+    "amd64": 87242794,
+    "arm64": 87661650
   }
 }
