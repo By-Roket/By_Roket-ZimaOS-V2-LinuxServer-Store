@@ -1,7 +1,7 @@
 name: linuxserver-chromium
 services:
   chromium:
-    image: linuxserver/chromium:arm64v8-version-fc3ad042
+    image: linuxserver/chromium:arm64v8-version-d39975b5
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -56,5 +56,5 @@ x-casaos:
   category: Others
   id: by-roket.linuxserver.chromium
   port_map: '3000'
-  version: arm64v8-version-fc3ad042
+  version: arm64v8-version-d39975b5
   index: /
