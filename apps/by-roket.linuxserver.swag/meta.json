@@ -12,13 +12,13 @@
   "title": "Swag (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.swag",
-  "version": "5.7.0",
+  "version": "5.8.0",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 166445053,
-    "arm64": 166380832
+    "amd64": 154457932,
+    "arm64": 154560276
   }
 }

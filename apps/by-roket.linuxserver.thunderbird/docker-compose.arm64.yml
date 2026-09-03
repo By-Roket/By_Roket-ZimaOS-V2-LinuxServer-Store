@@ -1,7 +1,7 @@
 name: linuxserver-thunderbird
 services:
   thunderbird:
-    image: linuxserver/thunderbird:1140.13.0@sha256:84968f02573ddad354c8dca4a756c5da8df28383147757aea19a6b25ff955d3d
+    image: linuxserver/thunderbird:1140.15.0@sha256:44100324698f01e868d9ec6cd6eafeae437108470910b3db6f83d33c1e99917b
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Thunderbird (LinuxServer.io)
   id: by-roket.linuxserver.thunderbird
   port_map: '3000'
-  version: 1140.13.0
+  version: 1140.15.0
   index: /

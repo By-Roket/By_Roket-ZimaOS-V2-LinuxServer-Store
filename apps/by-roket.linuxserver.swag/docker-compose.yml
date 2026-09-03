@@ -1,7 +1,7 @@
 name: linuxserver-swag
 services:
   swag:
-    image: linuxserver/swag:5.7.0
+    image: linuxserver/swag:5.8.0
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -43,5 +43,5 @@ x-casaos:
     en_US: Swag (LinuxServer.io)
   id: by-roket.linuxserver.swag
   port_map: '80'
-  version: 5.7.0
+  version: 5.8.0
   index: /
