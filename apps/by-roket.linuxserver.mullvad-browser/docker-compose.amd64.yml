@@ -1,7 +1,7 @@
 name: linuxserver-mullvad-browser
 services:
   mullvad-browser:
-    image: linuxserver/mullvad-browser:15.0.20@sha256:dd572173455528a905b35682c735a913d231b0ac499362c297133944233f0ab1
+    image: linuxserver/mullvad-browser:15.0.21@sha256:40c2d406c646379e5fcfd806881139033680a92fa3c87e42676f1184c93ce0c2
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -33,5 +33,5 @@ x-casaos:
     en_US: Mullvad browser (LinuxServer.io)
   id: by-roket.linuxserver.mullvad-browser
   port_map: '3000'
-  version: 15.0.20
+  version: 15.0.21
   index: /

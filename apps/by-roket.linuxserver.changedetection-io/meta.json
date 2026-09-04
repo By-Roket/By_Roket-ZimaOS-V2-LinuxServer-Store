@@ -12,13 +12,13 @@
   "title": "Changedetection. Io (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.changedetection-io",
-  "version": "0.55.8",
+  "version": "0.60.2",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 246225721,
-    "arm64": 240666077
+    "amd64": 258787486,
+    "arm64": 253806483
   }
 }

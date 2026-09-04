@@ -1,7 +1,7 @@
 name: linuxserver-brave
 services:
   brave:
-    image: linuxserver/brave:1.94.117@sha256:91d8c489f99d1d77db97c17cdc01cd9049ede93013b762a1476331b6696124b3
+    image: linuxserver/brave:1.94.119@sha256:fe6f636574c09c66d9eeaf133d5763d76754b73db47d977d1a4465a9b7f173d9
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Brave (LinuxServer.io)
   id: by-roket.linuxserver.brave
   port_map: '3000'
-  version: 1.94.117
+  version: 1.94.119
   index: /

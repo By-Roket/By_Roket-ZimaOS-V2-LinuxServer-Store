@@ -1,5 +1,6 @@
 {
   "architectures": [
+    "amd64",
     "arm64"
   ],
   "description": "Chromium is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.",
@@ -11,12 +12,13 @@
   "title": "Chromium (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.chromium",
-  "version": "arm64v8-version-d39975b5",
+  "version": "version-d39975b5",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
+    "amd64": 1178022090,
     "arm64": 1143775751
   }
 }

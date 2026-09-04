@@ -12,13 +12,13 @@
   "title": "Duplicati (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.duplicati",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 181269290,
-    "arm64": 177488203
+    "amd64": 198543447,
+    "arm64": 194665281
   }
 }

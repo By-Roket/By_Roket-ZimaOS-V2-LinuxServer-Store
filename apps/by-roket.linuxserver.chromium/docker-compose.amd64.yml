@@ -1,7 +1,7 @@
 name: linuxserver-chromium
 services:
   chromium:
-    image: linuxserver/chromium:version-d39975b5@sha256:e6d91233acf5fb0001c08d3ad673f23356f9f677cfe7312430f129644bf67574
+    image: linuxserver/chromium:version-d39975b5@sha256:f6b9a7898b3b64555d45663035721dfdb980bb75dbe965df79a77d68908b6594
     restart: unless-stopped
     environment:
       PUID: $PUID

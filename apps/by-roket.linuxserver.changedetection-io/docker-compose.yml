@@ -1,7 +1,7 @@
 name: linuxserver-changedetection-io
 services:
   changedetection-io:
-    image: linuxserver/changedetection.io:0.55.8
+    image: linuxserver/changedetection.io:0.60.2
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -25,5 +25,5 @@ x-casaos:
     en_US: Changedetection. Io (LinuxServer.io)
   id: by-roket.linuxserver.changedetection-io
   port_map: '5000'
-  version: 0.55.8
+  version: 0.60.2
   index: /

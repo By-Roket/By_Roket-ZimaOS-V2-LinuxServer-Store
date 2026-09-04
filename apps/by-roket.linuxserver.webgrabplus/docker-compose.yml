@@ -1,7 +1,7 @@
 name: linuxserver-webgrabplus
 services:
   webgrabplus:
-    image: linuxserver/webgrabplus:5.6.0
+    image: linuxserver/webgrabplus:5.6.1
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Webgrabplus (LinuxServer.io)
   id: by-roket.linuxserver.webgrabplus
   port_map: '80'
-  version: 5.6.0
+  version: 5.6.1
   index: /

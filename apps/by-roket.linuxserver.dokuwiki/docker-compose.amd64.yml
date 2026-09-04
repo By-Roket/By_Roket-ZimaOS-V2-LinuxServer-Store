@@ -1,7 +1,7 @@
 name: linuxserver-dokuwiki
 services:
   dokuwiki:
-    image: linuxserver/dokuwiki:version-2026-07-14b@sha256:899f2f1b50afc8bd8d803186ef24e38501a6142c9dfe41b192a072dec5cb7254
+    image: linuxserver/dokuwiki:version-2026-07-14c@sha256:d8d2979858c8784e6a517966b82a9d21a498e997a4b0bbd3ff5153c4ff991154
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Dokuwiki (LinuxServer.io)
   id: by-roket.linuxserver.dokuwiki
   port_map: '80'
-  version: version-2026-07-14b
+  version: version-2026-07-14c
   index: /

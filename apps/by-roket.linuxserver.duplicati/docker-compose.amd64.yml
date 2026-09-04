@@ -1,7 +1,7 @@
 name: linuxserver-duplicati
 services:
   duplicati:
-    image: linuxserver/duplicati:2.3.0@sha256:a8b607315cfb2b874664f4330f5d11bd5bad0eb2fdf77ac22c655456aa9781a9
+    image: linuxserver/duplicati:2.4.0@sha256:c5b910381cb21dd4175d8455f8684b07a74060ed7a69f2a2ef66e446da0116f7
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -32,5 +32,5 @@ x-casaos:
     en_US: Duplicati (LinuxServer.io)
   id: by-roket.linuxserver.duplicati
   port_map: '8200'
-  version: 2.3.0
+  version: 2.4.0
   index: /
