@@ -1,7 +1,7 @@
 name: linuxserver-doublecommander
 services:
   doublecommander:
-    image: linuxserver/doublecommander:version-cb6fb758
+    image: linuxserver/doublecommander:arm64v8-version-47f5ef2f
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -37,7 +37,6 @@ services:
     container_name: doublecommander-by-roket
 x-casaos:
   architectures:
-  - amd64
   - arm64
   main: doublecommander
   description:
@@ -56,5 +55,5 @@ x-casaos:
   category: Others
   id: by-roket.linuxserver.doublecommander
   port_map: '3000'
-  version: version-cb6fb758
+  version: arm64v8-version-47f5ef2f
   index: /
