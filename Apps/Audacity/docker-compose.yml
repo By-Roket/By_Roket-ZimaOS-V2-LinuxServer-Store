@@ -1,7 +1,7 @@
 name: linuxserver-audacity
 services:
   audacity:
-    image: linuxserver/audacity:3.7.9
+    image: linuxserver/audacity:4.0.0
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -51,5 +51,5 @@ x-casaos:
   category: Media
   id: by-roket.linuxserver.audacity
   port_map: '3000'
-  version: 3.7.9
+  version: 4.0.0
   index: /

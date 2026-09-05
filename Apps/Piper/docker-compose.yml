@@ -1,7 +1,7 @@
 name: linuxserver-piper
 services:
   piper:
-    image: linuxserver/piper:2.4.2
+    image: linuxserver/piper:2.4.3
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -84,5 +84,5 @@ x-casaos:
   category: Others
   id: by-roket.linuxserver.piper
   port_map: '10200'
-  version: 2.4.2
+  version: 2.4.3
   index: /
