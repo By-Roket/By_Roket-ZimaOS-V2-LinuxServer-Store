@@ -11,12 +11,12 @@
   "title": "Blade of-agony (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.blade-of-agony",
-  "version": "3.1.20260828",
+  "version": "3.1.20260903",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1774165451
+    "amd64": 1774385863
   }
 }

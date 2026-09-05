@@ -12,13 +12,13 @@
   "title": "Piper (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.piper",
-  "version": "2.4.2",
+  "version": "2.4.3",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 170127630,
-    "arm64": 167222885
+    "amd64": 172735777,
+    "arm64": 169919782
   }
 }

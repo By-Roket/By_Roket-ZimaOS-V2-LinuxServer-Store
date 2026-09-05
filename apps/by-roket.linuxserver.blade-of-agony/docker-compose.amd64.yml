@@ -1,7 +1,7 @@
 name: linuxserver-blade-of-agony
 services:
   blade-of-agony:
-    image: linuxserver/blade-of-agony:3.1.20260828@sha256:4c58f797a4d06b312489b0a07588a54a34d11f5871d6f22c8fb0b6f3b694d66d
+    image: linuxserver/blade-of-agony:3.1.20260903@sha256:f0db218ff3cd681ccd24a8701c50569502ac46e0e568fddeee520c76e21702bc
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Blade of-agony (LinuxServer.io)
   id: by-roket.linuxserver.blade-of-agony
   port_map: '3000'
-  version: 3.1.20260828
+  version: 3.1.20260903
   index: /

@@ -12,13 +12,13 @@
   "title": "Apprise api (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.apprise-api",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 65223387,
-    "arm64": 65992280
+    "amd64": 65729276,
+    "arm64": 66479269
   }
 }

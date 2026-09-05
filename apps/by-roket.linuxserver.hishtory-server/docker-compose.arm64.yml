@@ -1,7 +1,7 @@
 name: linuxserver-hishtory-server
 services:
   hishtory-server:
-    image: linuxserver/hishtory-server:0.335.20260821@sha256:d43c7ebe2ef79f0d9a8a9d0c0537a4400c286650b29cfabcbb7836ed6161f4b7
+    image: linuxserver/hishtory-server:0.335.20260904@sha256:6cb6df3d2a7c0b42bdcd03dea80adaa11c03a17aad7d297606983e600dc95acc
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -25,5 +25,5 @@ x-casaos:
     en_US: Hishtory server (LinuxServer.io)
   id: by-roket.linuxserver.hishtory-server
   port_map: '8080'
-  version: 0.335.20260821
+  version: 0.335.20260904
   index: /

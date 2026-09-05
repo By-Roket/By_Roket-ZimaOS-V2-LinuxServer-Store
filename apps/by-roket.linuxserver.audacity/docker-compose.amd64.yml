@@ -1,7 +1,7 @@
 name: linuxserver-audacity
 services:
   audacity:
-    image: linuxserver/audacity:3.7.9@sha256:bbd1bb0264ed2ca4cddfb76a177ced2d1f9cbf78f67aff107d6903e8b8ed896b
+    image: linuxserver/audacity:4.0.0@sha256:666e34e6fbd1cb17de4f07713cbfd039975a2ce9f9216f3f21f16a947d97c988
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Audacity (LinuxServer.io)
   id: by-roket.linuxserver.audacity
   port_map: '3000'
-  version: 3.7.9
+  version: 4.0.0
   index: /
