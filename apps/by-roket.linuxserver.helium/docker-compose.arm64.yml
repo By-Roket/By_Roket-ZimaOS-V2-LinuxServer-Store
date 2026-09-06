@@ -1,7 +1,7 @@
 name: linuxserver-helium
 services:
   helium:
-    image: linuxserver/helium:0.16.4@sha256:fe82cd9fe66822395a2edb2b6fe171d08940885b6e12338fb601d9ca1a454f6f
+    image: linuxserver/helium:0.16.5@sha256:b8672daad137555cab01e2367f9ad65c31c97939c34727a15a6046b1f7462a8b
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -27,5 +27,5 @@ x-casaos:
     en_US: Helium (LinuxServer.io)
   id: by-roket.linuxserver.helium
   port_map: '3000'
-  version: 0.16.4
+  version: 0.16.5
   index: /

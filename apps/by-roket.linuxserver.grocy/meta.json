@@ -12,13 +12,13 @@
   "title": "Grocy (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.grocy",
-  "version": "4.7.0",
+  "version": "4.7.1",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 86281272,
-    "arm64": 87151975
+    "amd64": 86279946,
+    "arm64": 87153562
   }
 }
