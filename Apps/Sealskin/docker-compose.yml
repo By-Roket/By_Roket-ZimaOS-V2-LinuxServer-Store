@@ -1,7 +1,7 @@
 name: linuxserver-sealskin
 services:
   sealskin:
-    image: linuxserver/sealskin:0.1.39
+    image: linuxserver/sealskin:0.3.0
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -70,5 +70,5 @@ x-casaos:
   category: Others
   id: by-roket.linuxserver.sealskin
   port_map: '8000'
-  version: 0.1.39
+  version: 0.3.0
   index: /

@@ -1,7 +1,7 @@
 name: linuxserver-librewolf
 services:
   librewolf:
-    image: linuxserver/librewolf:154.0.1
+    image: linuxserver/librewolf:155.0.1
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -61,5 +61,5 @@ x-casaos:
   category: Others
   id: by-roket.linuxserver.librewolf
   port_map: '3000'
-  version: 154.0.1
+  version: 155.0.1
   index: /
