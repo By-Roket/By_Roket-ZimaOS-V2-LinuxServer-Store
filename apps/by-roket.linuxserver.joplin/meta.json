@@ -11,12 +11,12 @@
   "title": "Joplin (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.joplin",
-  "version": "3.6.16",
+  "version": "3.7.16",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1151503265
+    "amd64": 1205400209
   }
 }

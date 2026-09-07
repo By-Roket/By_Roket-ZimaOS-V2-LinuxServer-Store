@@ -1,7 +1,7 @@
 name: linuxserver-kimai
 services:
   kimai:
-    image: linuxserver/kimai:2.65.0@sha256:beb26ee62914cc340c4b54a9839dcaf50c9b8accc2e11982a2def07c8efa8b2c
+    image: linuxserver/kimai:2.66.0@sha256:048747c7f2a0be211ec7b024fbc471e64216d38a0815db55e96260504aee55ad
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -30,5 +30,5 @@ x-casaos:
     en_US: Kimai (LinuxServer.io)
   id: by-roket.linuxserver.kimai
   port_map: '80'
-  version: 2.65.0
+  version: 2.66.0
   index: /

@@ -1,7 +1,7 @@
 name: linuxserver-weixin
 services:
   weixin:
-    image: linuxserver/weixin:version-e4e2f31c@sha256:953783c35fc7b8d404a4d33af1ad5dd2a4946d8e00ba846aabee4a38c9316a2e
+    image: linuxserver/weixin:version-7cc374df@sha256:cee7a3900770a2b0c7f1e4db8d1b4f3527fab621b92d658e5bbe55908612fc8c
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Weixin (LinuxServer.io)
   id: by-roket.linuxserver.weixin
   port_map: '3000'
-  version: version-e4e2f31c
+  version: version-7cc374df
   index: /

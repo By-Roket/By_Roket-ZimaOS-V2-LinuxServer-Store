@@ -1,7 +1,7 @@
 name: linuxserver-joplin
 services:
   joplin:
-    image: linuxserver/joplin:3.6.16
+    image: linuxserver/joplin:3.7.16
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Joplin (LinuxServer.io)
   id: by-roket.linuxserver.joplin
   port_map: '3000'
-  version: 3.6.16
+  version: 3.7.16
   index: /
