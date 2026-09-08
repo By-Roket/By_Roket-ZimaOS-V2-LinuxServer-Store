@@ -1,7 +1,7 @@
 name: linuxserver-intellij-idea
 services:
   intellij-idea:
-    image: linuxserver/intellij-idea:42026.2.0
+    image: linuxserver/intellij-idea:42026.2.2
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Intellij idea (LinuxServer.io)
   id: by-roket.linuxserver.intellij-idea
   port_map: '3000'
-  version: 42026.2.0
+  version: 42026.2.2
   index: /
