@@ -1,7 +1,7 @@
 name: linuxserver-beets
 services:
   beets:
-    image: linuxserver/beets:2.13.1
+    image: linuxserver/beets:2.14.0
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -57,5 +57,5 @@ x-casaos:
   category: Media
   id: by-roket.linuxserver.beets
   port_map: '8337'
-  version: 2.13.1
+  version: 2.14.0
   index: /

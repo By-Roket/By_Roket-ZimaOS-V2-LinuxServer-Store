@@ -1,7 +1,7 @@
 name: linuxserver-gimp
 services:
   gimp:
-    image: linuxserver/gimp:version-22638545
+    image: linuxserver/gimp:version-53539a3c
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -56,5 +56,5 @@ x-casaos:
   category: Others
   id: by-roket.linuxserver.gimp
   port_map: '3000'
-  version: version-22638545
+  version: version-53539a3c
   index: /
