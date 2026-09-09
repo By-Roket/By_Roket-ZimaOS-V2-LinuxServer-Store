@@ -1,7 +1,7 @@
 name: linuxserver-melonds
 services:
   melonds:
-    image: linuxserver/melonds:1.1.20260816@sha256:d1ea3750231f8d07cf86f1d90b44268c1cf197d1e4f1cff2c629026189cec523
+    image: linuxserver/melonds:1.1.20260907@sha256:3f04588c4734aad14b1fccfc0c4c859ca109fef7364100eaa7459de087b319e7
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Melonds (LinuxServer.io)
   id: by-roket.linuxserver.melonds
   port_map: '3000'
-  version: 1.1.20260816
+  version: 1.1.20260907
   index: /

@@ -1,7 +1,7 @@
 name: linuxserver-minisatip
 services:
   minisatip:
-    image: linuxserver/minisatip:2.0.101@sha256:759e5ab56c6567a80c8b5f41bdf1bf0730c2d489312176d49b0c7ef9f14fb422
+    image: linuxserver/minisatip:2.0.102@sha256:55b7b46332e3a335f96d3453775681f8bbd11944f8e2a562317fa36949dbdd8d
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -29,6 +29,6 @@ x-casaos:
   title:
     en_US: Minisatip (LinuxServer.io)
   id: by-roket.linuxserver.minisatip
-  version: 2.0.101
+  version: 2.0.102
   index: /
   port_map: '8875'

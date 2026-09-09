@@ -12,13 +12,13 @@
   "title": "Beets (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.beets",
-  "version": "2.13.1",
+  "version": "2.14.0",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 233747397,
-    "arm64": 224879090
+    "amd64": 236824764,
+    "arm64": 228021489
   }
 }

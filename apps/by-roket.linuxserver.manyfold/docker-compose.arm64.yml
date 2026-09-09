@@ -1,7 +1,7 @@
 name: linuxserver-manyfold
 services:
   manyfold:
-    image: linuxserver/manyfold:0.148.0@sha256:ed1414de168518e85e5a843555c1454f314380243458435dff9e94715985a2ed
+    image: linuxserver/manyfold:0.149.0@sha256:d50da252b2cfa677706c07f3b388c972ee340aa9f34edabba22f5a8ac7659604
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -29,5 +29,5 @@ x-casaos:
     en_US: Manyfold (LinuxServer.io)
   id: by-roket.linuxserver.manyfold
   port_map: '3214'
-  version: 0.148.0
+  version: 0.149.0
   index: /

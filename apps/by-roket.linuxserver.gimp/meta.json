@@ -12,13 +12,13 @@
   "title": "Gimp (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.gimp",
-  "version": "version-22638545",
+  "version": "version-53539a3c",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1118243885,
-    "arm64": 1076455618
+    "amd64": 1114825900,
+    "arm64": 1073503817
   }
 }

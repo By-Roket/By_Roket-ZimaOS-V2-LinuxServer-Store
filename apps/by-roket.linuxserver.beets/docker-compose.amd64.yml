@@ -1,7 +1,7 @@
 name: linuxserver-beets
 services:
   beets:
-    image: linuxserver/beets:2.13.1@sha256:36d94a2c33d6534b7016f1294dc3350393318451ec9a867d6b3c48c5c948c642
+    image: linuxserver/beets:2.14.0@sha256:f8d1b139b43a4010eaa4037ac26ef8807a9226ac5b3258e48d40ca617a4d4c13
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -29,5 +29,5 @@ x-casaos:
     en_US: Beets (LinuxServer.io)
   id: by-roket.linuxserver.beets
   port_map: '8337'
-  version: 2.13.1
+  version: 2.14.0
   index: /

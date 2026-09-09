@@ -1,7 +1,7 @@
 name: linuxserver-telegram
 services:
   telegram:
-    image: linuxserver/telegram:7.2.5@sha256:a800e677e19c3f0c7fc3400f80bf263796273f11a5f657c918b4c2422c1a6edf
+    image: linuxserver/telegram:7.2.7@sha256:c13d03f19f65172d435ada092a875072deb4a988c618585f68244430f053112b
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Telegram (LinuxServer.io)
   id: by-roket.linuxserver.telegram
   port_map: '3000'
-  version: 7.2.5
+  version: 7.2.7
   index: /
