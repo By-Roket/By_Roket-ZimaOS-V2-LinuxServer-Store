@@ -12,13 +12,13 @@
   "title": "Vscodium (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.vscodium",
-  "version": "1.126.04524",
+  "version": "1.135.06055",
   "categories": [
     "developer"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1427329933,
-    "arm64": 1389597285
+    "amd64": 1454556510,
+    "arm64": 1417127943
   }
 }

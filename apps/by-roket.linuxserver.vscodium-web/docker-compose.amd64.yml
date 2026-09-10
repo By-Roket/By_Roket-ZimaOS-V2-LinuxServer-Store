@@ -1,7 +1,7 @@
 name: linuxserver-vscodium-web
 services:
   vscodium-web:
-    image: linuxserver/vscodium-web:1.126.04524@sha256:2aabc4e662f95c769523a946012661b74a89cb4ac654708ad7d697b1e7c1a5db
+    image: linuxserver/vscodium-web:1.135.06055@sha256:6bbc044972177c34e4c224a15302e8594e88c529c7fb082d8bf1ff0ffc871638
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -28,5 +28,5 @@ x-casaos:
     en_US: Vscodium web (LinuxServer.io)
   id: by-roket.linuxserver.vscodium-web
   port_map: '8000'
-  version: 1.126.04524
+  version: 1.135.06055
   index: /

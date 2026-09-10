@@ -12,13 +12,13 @@
   "title": "Emby (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.emby",
-  "version": "4.9.5",
+  "version": "4.10.0",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 358889160,
-    "arm64": 209875853
+    "amd64": 443500929,
+    "arm64": 212217654
   }
 }

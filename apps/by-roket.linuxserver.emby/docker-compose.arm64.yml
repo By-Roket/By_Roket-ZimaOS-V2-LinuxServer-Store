@@ -1,7 +1,7 @@
 name: linuxserver-emby
 services:
   emby:
-    image: linuxserver/emby:4.9.5@sha256:80a27be46c1bc8357461314e25d541f8706c237a518971635ad56e787155aaf3
+    image: linuxserver/emby:4.10.0@sha256:9de51b5ed050c12d2ea4166d7bc2f455ab8a3b56f5ca570813fb14aac2fda4bc
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -34,6 +34,6 @@ x-casaos:
   title:
     en_US: Emby (LinuxServer.io)
   id: by-roket.linuxserver.emby
-  version: 4.9.5
+  version: 4.10.0
   index: /
   port_map: '8096'
