@@ -1,7 +1,7 @@
 name: linuxserver-nextcloud
 services:
   nextcloud:
-    image: linuxserver/nextcloud:34.0.3
+    image: linuxserver/nextcloud:34.0.4
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -64,5 +64,5 @@ x-casaos:
   category: Productivity
   id: by-roket.linuxserver.nextcloud
   port_map: '80'
-  version: 34.0.3
+  version: 34.0.4
   index: /
