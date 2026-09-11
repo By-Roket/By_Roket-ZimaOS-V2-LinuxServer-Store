@@ -1,7 +1,7 @@
 name: linuxserver-steam
 services:
   steam:
-    image: linuxserver/steam:version-e585948a@sha256:93c7e3d439e15486e129bf734a46abe7191b6c3d6af9cef8d11d2655088b453b
+    image: linuxserver/steam:version-0779c5e2@sha256:f7d15fe19689e9872bfa4612d33ed42e0cc1d4c11539df4ae490514dc1f1f6c3
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Steam (LinuxServer.io)
   id: by-roket.linuxserver.steam
   port_map: '3000'
-  version: version-e585948a
+  version: version-0779c5e2
   index: /

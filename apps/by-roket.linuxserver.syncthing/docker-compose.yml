@@ -1,7 +1,7 @@
 name: linuxserver-syncthing
 services:
   syncthing:
-    image: linuxserver/syncthing:2.1.3
+    image: linuxserver/syncthing:2.1.5
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -37,6 +37,6 @@ x-casaos:
   title:
     en_US: Syncthing (LinuxServer.io)
   id: by-roket.linuxserver.syncthing
-  version: 2.1.3
+  version: 2.1.5
   index: /
   port_map: '8384'

@@ -1,7 +1,7 @@
 name: linuxserver-kdenlive
 services:
   kdenlive:
-    image: linuxserver/kdenlive:26.08.0@sha256:5c7f240e33c6c1c9ded1bf23a349c85ab25ae42a19b9bf9ba46b92a71db3e7b1
+    image: linuxserver/kdenlive:26.08.1@sha256:7b35af1bcb84aefad5c7b49b6b1bb1c1f8bb5cb0b99f74c7ad3dd8e145061d67
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Kdenlive (LinuxServer.io)
   id: by-roket.linuxserver.kdenlive
   port_map: '3000'
-  version: 26.08.0
+  version: 26.08.1
   index: /
