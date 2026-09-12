@@ -1,7 +1,7 @@
 name: linuxserver-lazylibrarian
 services:
   lazylibrarian:
-    image: linuxserver/lazylibrarian:version-afe9b09e
+    image: linuxserver/lazylibrarian:version-7cc9350f
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -64,5 +64,5 @@ x-casaos:
   category: Productivity
   id: by-roket.linuxserver.lazylibrarian
   port_map: '5299'
-  version: version-afe9b09e
+  version: version-7cc9350f
   index: /

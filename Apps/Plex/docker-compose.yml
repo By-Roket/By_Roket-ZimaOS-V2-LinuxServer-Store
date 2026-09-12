@@ -1,7 +1,7 @@
 name: linuxserver-plex
 services:
   plex:
-    image: linuxserver/plex:1.43.3
+    image: linuxserver/plex:1.43.4
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -69,5 +69,5 @@ x-casaos:
   category: Media
   id: by-roket.linuxserver.plex
   port_map: '80'
-  version: 1.43.3
+  version: 1.43.4
   index: /
