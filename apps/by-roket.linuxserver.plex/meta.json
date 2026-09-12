@@ -12,13 +12,13 @@
   "title": "Plex (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.plex",
-  "version": "1.43.3",
+  "version": "1.43.4",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 187436439,
-    "arm64": 180034736
+    "amd64": 186332303,
+    "arm64": 178527837
   }
 }
