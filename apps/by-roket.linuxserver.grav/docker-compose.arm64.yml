@@ -1,7 +1,7 @@
 name: linuxserver-grav
 services:
   grav:
-    image: linuxserver/grav:2.0.26@sha256:b1dac084b9e00d32984b612cac4f0bc4c140f5ad4224f37edb70667c8171c1ed
+    image: linuxserver/grav:2.1.2@sha256:702a61b7d6e89637ce262325847e8563c846fd597e523ed6a289e8e17d8d2366
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -23,5 +23,5 @@ x-casaos:
     en_US: Grav (LinuxServer.io)
   id: by-roket.linuxserver.grav
   port_map: '80'
-  version: 2.0.26
+  version: 2.1.2
   index: /

@@ -1,7 +1,7 @@
 name: linuxserver-babybuddy
 services:
   babybuddy:
-    image: linuxserver/babybuddy:2.10.0@sha256:dba8d4cde86878ec9f06172b00ac72435b5607314d3e956db7813f8e48f4b1fb
+    image: linuxserver/babybuddy:2.10.1@sha256:a527f5dd3cd6dbad154ebf64494b395298989c62326ed1c2d7cb7a7e1c808eac
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -24,5 +24,5 @@ x-casaos:
     en_US: Babybuddy (LinuxServer.io)
   id: by-roket.linuxserver.babybuddy
   port_map: '8000'
-  version: 2.10.0
+  version: 2.10.1
   index: /
