@@ -12,13 +12,13 @@
   "title": "Tvheadend (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.tvheadend",
-  "version": "version-fcd987f0",
+  "version": "version-5ce3ff63",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 297581393,
-    "arm64": 281858544
+    "amd64": 300303861,
+    "arm64": 284577970
   }
 }

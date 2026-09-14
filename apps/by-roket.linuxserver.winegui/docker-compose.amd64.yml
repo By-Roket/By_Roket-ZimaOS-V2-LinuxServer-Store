@@ -1,7 +1,7 @@
 name: linuxserver-winegui
 services:
   winegui:
-    image: linuxserver/winegui:4.3.2@sha256:0b45a28b9bf8e889623923d89e80acc8aa546861965848842d54d301b4cecd4a
+    image: linuxserver/winegui:4.3.4@sha256:67a85d61295acb514a28bebfea22912f33bdfce360d864be8845824799c43d64
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Winegui (LinuxServer.io)
   id: by-roket.linuxserver.winegui
   port_map: '3000'
-  version: 4.3.2
+  version: 4.3.4
   index: /

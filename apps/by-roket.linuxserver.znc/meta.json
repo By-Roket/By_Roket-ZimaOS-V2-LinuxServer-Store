@@ -12,13 +12,13 @@
   "title": "Znc (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.znc",
-  "version": "1.10.2",
+  "version": "1.10.3",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 26383483,
-    "arm64": 27141689
+    "amd64": 26403554,
+    "arm64": 27158732
   }
 }

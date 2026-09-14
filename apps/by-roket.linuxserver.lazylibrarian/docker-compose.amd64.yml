@@ -1,7 +1,7 @@
 name: linuxserver-lazylibrarian
 services:
   lazylibrarian:
-    image: linuxserver/lazylibrarian:version-31bc5e56@sha256:f187bb690488eb8369110378b3bac5d7ace67c2d996013f0d56dd01665ec3f18
+    image: linuxserver/lazylibrarian:version-2dac7153@sha256:1eb3c9df7be0f53c211e6d1d5d59269aa180e930a74dc7be829137a5cd4a3c9c
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -30,5 +30,5 @@ x-casaos:
     en_US: Lazylibrarian (LinuxServer.io)
   id: by-roket.linuxserver.lazylibrarian
   port_map: '5299'
-  version: version-31bc5e56
+  version: version-2dac7153
   index: /

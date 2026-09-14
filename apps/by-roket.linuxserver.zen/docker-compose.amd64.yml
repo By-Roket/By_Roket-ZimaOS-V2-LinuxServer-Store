@@ -1,7 +1,7 @@
 name: linuxserver-zen
 services:
   zen:
-    image: linuxserver/zen:1.21.16@sha256:25be34b4fad99c1d8893946bdac0ab88cb0374b05978f0de4ec1acb682efc07c
+    image: linuxserver/zen:1.22.1@sha256:09c4ce39a4422a086352c8b2164272744e688228beccc4e823460299020b5380
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Zen (LinuxServer.io)
   id: by-roket.linuxserver.zen
   port_map: '3000'
-  version: 1.21.16
+  version: 1.22.1
   index: /
