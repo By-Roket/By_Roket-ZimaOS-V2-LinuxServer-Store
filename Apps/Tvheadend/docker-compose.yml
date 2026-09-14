@@ -1,7 +1,7 @@
 name: linuxserver-tvheadend
 services:
   tvheadend:
-    image: linuxserver/tvheadend:version-fcd987f0
+    image: linuxserver/tvheadend:version-5ce3ff63
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -69,6 +69,6 @@ x-casaos:
     en_US: Tvheadend (LinuxServer.io)
   category: Media
   id: by-roket.linuxserver.tvheadend
-  version: version-fcd987f0
+  version: version-5ce3ff63
   index: /
   port_map: '9981'
