@@ -1,7 +1,7 @@
 name: linuxserver-ungoogled-chromium
 services:
   ungoogled-chromium:
-    image: linuxserver/ungoogled-chromium:152.0.7977@sha256:897f46fdc74de39bc6a93862b801dd2ca82ae373291ac9b0202910a954cdf07d
+    image: linuxserver/ungoogled-chromium:153.0.8010@sha256:438ddb1f7fadfd439d92c3911c3c14ff3e09bf47cc3b2d8fbbcbee5c9c72f11f
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -27,5 +27,5 @@ x-casaos:
     en_US: Ungoogled chromium (LinuxServer.io)
   id: by-roket.linuxserver.ungoogled-chromium
   port_map: '3000'
-  version: 152.0.7977
+  version: 153.0.8010
   index: /

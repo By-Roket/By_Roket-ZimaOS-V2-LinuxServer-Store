@@ -12,13 +12,13 @@
   "title": "Bookstack (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.bookstack",
-  "version": "26.05.4",
+  "version": "26.05.5",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 114103709,
-    "arm64": 114561023
+    "amd64": 115271911,
+    "arm64": 115702664
   }
 }

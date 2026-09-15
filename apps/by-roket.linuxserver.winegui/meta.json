@@ -11,12 +11,12 @@
   "title": "Winegui (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.winegui",
-  "version": "4.3.4",
+  "version": "4.4.0",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1854302185
+    "amd64": 1854303499
   }
 }
