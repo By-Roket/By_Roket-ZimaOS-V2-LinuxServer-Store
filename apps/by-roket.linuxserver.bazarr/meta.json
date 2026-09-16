@@ -12,13 +12,13 @@
   "title": "Bazarr (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.bazarr",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 152901502,
-    "arm64": 148058197
+    "amd64": 155853657,
+    "arm64": 150977292
   }
 }

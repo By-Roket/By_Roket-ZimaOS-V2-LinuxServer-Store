@@ -1,7 +1,7 @@
 name: linuxserver-webstation
 services:
   webstation:
-    image: linuxserver/webstation:0.8.1-romm@sha256:1e8a52712912699815c3d51f66fafb3b36be32e735284807f385be20fd7820da
+    image: linuxserver/webstation:0.8.2-romm@sha256:c7f3808122ea916571ef5d75e553b118a5a8f842d821264cca978e32be9ba3e3
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Webstation (LinuxServer.io)
   id: by-roket.linuxserver.webstation
   port_map: '3000'
-  version: 0.8.1-romm
+  version: 0.8.2-romm
   index: /

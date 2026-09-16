@@ -1,7 +1,7 @@
 name: linuxserver-unifi-network-application
 services:
   unifi-network-application:
-    image: linuxserver/unifi-network-application:10.6.101@sha256:f770bd65f084556aa1660dd70ed13e0af7e074eca3044c4bbd4f32259687f168
+    image: linuxserver/unifi-network-application:10.6.106@sha256:63a1cb367f5c5fd2c381ea0645050d1512722c15e23d9a5ced038a6eff8dfcce
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -56,5 +56,5 @@ x-casaos:
     en_US: Unifi network-application (LinuxServer.io)
   id: by-roket.linuxserver.unifi-network-application
   port_map: '8080'
-  version: 10.6.101
+  version: 10.6.106
   index: /
