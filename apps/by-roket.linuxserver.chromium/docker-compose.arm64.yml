@@ -1,7 +1,7 @@
 name: linuxserver-chromium
 services:
   chromium:
-    image: linuxserver/chromium:version-9fde18d4@sha256:2ae519c5daab9c86e8d3c2146a8e08ad92a11860f23f68e2ff679e9bf1c2e14e
+    image: linuxserver/chromium:version-7ac003b2@sha256:abc7bd46e865d6b584ad58a52806c2e8ee457743fd3d74af74c87ecfca284c6c
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -27,5 +27,5 @@ x-casaos:
     en_US: Chromium (LinuxServer.io)
   id: by-roket.linuxserver.chromium
   port_map: '3000'
-  version: version-9fde18d4
+  version: version-7ac003b2
   index: /

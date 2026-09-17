@@ -1,7 +1,7 @@
 name: linuxserver-netbox
 services:
   netbox:
-    image: linuxserver/netbox:4.7.0@sha256:8ff9000880cfd322ccde0bef75fc78f3a59fa65a133a8b48fbe52a8c56d4a50d
+    image: linuxserver/netbox:4.7.1@sha256:91e994a7b62aff2b77a29c07ead5467158aee2b1bacd2dd1db6d69a057fea478
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -45,5 +45,5 @@ x-casaos:
     en_US: Netbox (LinuxServer.io)
   id: by-roket.linuxserver.netbox
   port_map: '8000'
-  version: 4.7.0
+  version: 4.7.1
   index: /

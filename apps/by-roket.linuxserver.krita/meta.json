@@ -11,12 +11,12 @@
   "title": "Krita (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.krita",
-  "version": "5.3.3",
+  "version": "5.3.4",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1418780043
+    "amd64": 1415907634
   }
 }
