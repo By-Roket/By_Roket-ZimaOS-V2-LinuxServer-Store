@@ -10,6 +10,7 @@
   "thumbnail": "/apps/by-roket.linuxserver.domoticz/assets/logo.webp",
   "category": "Developer",
   "project_url": "https://www.domoticz.com",
+  "website": "https://www.domoticz.com",
   "title": "Domoticz",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.domoticz",

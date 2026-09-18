@@ -8,13 +8,13 @@
   "developer": "LinuxServer.io",
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.kimai/assets/kimai-logo.webp",
-  "category": "Developer",
+  "category": "Media",
   "title": "Kimai (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.kimai",
   "version": "2.67.0",
   "categories": [
-    "developer"
+    "media"
   ],
   "min_memory": 0,
   "min_image_size": {

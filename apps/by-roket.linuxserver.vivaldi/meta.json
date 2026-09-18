@@ -12,13 +12,13 @@
   "title": "Vivaldi (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.vivaldi",
-  "version": "8.1.4087",
+  "version": "8.2.4133",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1186962637,
-    "arm64": 1153341269
+    "amd64": 1195097127,
+    "arm64": 1163224833
   }
 }

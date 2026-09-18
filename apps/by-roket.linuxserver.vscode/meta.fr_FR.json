@@ -1,0 +1,6 @@
+{
+  "id": "by-roket.linuxserver.vscode",
+  "title": "Vscode (LinuxServer.io)",
+  "tagline": "Un environnement de développement intégré développé par Microsoft. Ce conteneur exécute l'application de bureau complète ; pour une version web native, voir Code Server.",
+  "description": "VS Code est un environnement de développement intégré développé par Microsoft. Ce conteneur exécute l'application de bureau complète ; pour une version web native, voir Code Server."
+}

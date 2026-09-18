@@ -10,6 +10,7 @@
   "thumbnail": "/apps/by-roket.linuxserver.pylon/assets/screenshot02.webp",
   "category": "Developer",
   "project_url": "https://github.com/pylonide/pylon",
+  "website": "https://github.com/pylonide/pylon",
   "title": "Pylon",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.pylon",

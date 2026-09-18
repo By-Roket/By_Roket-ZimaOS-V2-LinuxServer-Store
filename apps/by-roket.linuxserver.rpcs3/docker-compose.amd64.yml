@@ -1,7 +1,7 @@
 name: linuxserver-rpcs3
 services:
   rpcs3:
-    image: linuxserver/rpcs3:version-build-2d103407f8715a4feff64012bd2d195878965822@sha256:869e5694c1abe4fb632fc838fb1de3fc1e19e2d3075f3bf06470df411dfedd99
+    image: linuxserver/rpcs3:version-build-8db660b185496f115701ef4c77c1ca2bef60e422@sha256:234a933c96e1d00ad429f4259e82ff77168b72e876a96250e43440e0495f9415
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -24,7 +24,33 @@ x-casaos:
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.rpcs3/assets/icon.png
   title:
     en_US: Rpcs3 (LinuxServer.io)
+    ca_ES: Rpcs3 (LinuxServer.io)
+    cs_CZ: Rpcs3 (LinuxServer.io)
+    da_DK: Rpcs3 (LinuxServer.io)
+    de_DE: Rpcs3 (LinuxServer.io)
+    el_GR: Rpcs3 (LinuxServer.io)
+    en_GB: Rpcs3 (LinuxServer.io)
+    es_ES: Rpcs3 (LinuxServer.io)
+    fr_FR: Rpcs3 (LinuxServer.io)
+    ga_IE: Rpcs3 (LinuxServer.io)
+    hr_HR: Rpcs3 (LinuxServer.io)
+    hu_HU: Rpcs3 (LinuxServer.io)
+    it_IT: Rpcs3 (LinuxServer.io)
+    ja_JP: Rpcs3 (LinuxServer.io)
+    ko_KR: Rpcs3 (LinuxServer.io)
+    ml_IN: Rpcs3 (LinuxServer.io)
+    nb_NO: Rpcs3 (LinuxServer.io)
+    nl_NL: Rpcs3 (LinuxServer.io)
+    pl_PL: Rpcs3 (LinuxServer.io)
+    pt_BR: Rpcs3 (LinuxServer.io)
+    ro_RO: Rpcs3 (LinuxServer.io)
+    ru_RU: Rpcs3 (LinuxServer.io)
+    sk_SK: Rpcs3 (LinuxServer.io)
+    sv_SE: Rpcs3 (LinuxServer.io)
+    tr_TR: Rpcs3 (LinuxServer.io)
+    zh_CN: Rpcs3（LinuxServer.io）
+    zh_TW: Rpcs3（LinuxServer.io）
   id: by-roket.linuxserver.rpcs3
   port_map: '3000'
-  version: version-build-2d103407f8715a4feff64012bd2d195878965822
+  version: version-build-8db660b185496f115701ef4c77c1ca2bef60e422
   index: /

@@ -8,14 +8,15 @@
   "developer": "LinuxServer.io",
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.booksonic-air/assets/booksonic-air.webp",
-  "category": "Developer",
+  "category": "Media",
   "project_url": "https://booksonic.org/",
+  "website": "https://booksonic.org/",
   "title": "Booksonic air",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.booksonic-air",
   "version": "2201.1.0",
   "categories": [
-    "developer"
+    "media"
   ],
   "min_memory": 0,
   "min_image_size": {

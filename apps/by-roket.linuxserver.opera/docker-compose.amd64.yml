@@ -1,7 +1,7 @@
 name: linuxserver-opera
 services:
   opera:
-    image: linuxserver/opera:135.0.5973@sha256:77aab92a9f8d7aee1f9b10de04d8db3c7d004bd649a92cc1ee03b8d111c7dd75
+    image: linuxserver/opera:136.0.6008@sha256:d5a060a8e6c18df82628ee75fef0e0c07f8c87d5aca0a451752aefd5b043d5f9
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -25,7 +25,33 @@ x-casaos:
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.opera/assets/icon.png
   title:
     en_US: Opera (LinuxServer.io)
+    ca_ES: Opera (LinuxServer.io)
+    cs_CZ: Opera (LinuxServer.io)
+    da_DK: Opera (LinuxServer.io)
+    de_DE: Opera (LinuxServer.io)
+    el_GR: Opera (LinuxServer.io)
+    en_GB: Opera (LinuxServer.io)
+    es_ES: Opera (LinuxServer.io)
+    fr_FR: Opera (LinuxServer.io)
+    ga_IE: Opera (LinuxServer.io)
+    hr_HR: Opera (LinuxServer.io)
+    hu_HU: Opera (LinuxServer.io)
+    it_IT: Opera (LinuxServer.io)
+    ja_JP: Opera (LinuxServer.io)
+    ko_KR: Opera (LinuxServer.io)
+    ml_IN: Opera (LinuxServer.io)
+    nb_NO: Opera (LinuxServer.io)
+    nl_NL: Opera (LinuxServer.io)
+    pl_PL: Opera (LinuxServer.io)
+    pt_BR: Opera (LinuxServer.io)
+    ro_RO: Opera (LinuxServer.io)
+    ru_RU: Opera (LinuxServer.io)
+    sk_SK: Opera (LinuxServer.io)
+    sv_SE: Opera (LinuxServer.io)
+    tr_TR: Opera (LinuxServer.io)
+    zh_CN: Opera（LinuxServer.io）
+    zh_TW: Opera（LinuxServer.io）
   id: by-roket.linuxserver.opera
   port_map: '3000'
-  version: 135.0.5973
+  version: 136.0.6008
   index: /

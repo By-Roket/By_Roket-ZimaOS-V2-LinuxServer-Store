@@ -10,6 +10,7 @@
   "thumbnail": "/apps/by-roket.linuxserver.embystat/assets/embystat-logo.webp",
   "category": "Media",
   "project_url": "https://github.com/mregni/EmbyStat",
+  "website": "https://github.com/mregni/EmbyStat",
   "title": "Embystat",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.embystat",

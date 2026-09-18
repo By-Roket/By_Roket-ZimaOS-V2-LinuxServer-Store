@@ -1,7 +1,7 @@
 name: linuxserver-jellyfin
 services:
   jellyfin:
-    image: linuxserver/jellyfin:10.11.11@sha256:a412f14d2c5b6e967f4e6cc91be0985e62d006503432eff1e4acca509e41d664
+    image: linuxserver/jellyfin:12.1ubu2604-ls50@sha256:b9ba8924e018919d7bbc354e1f3d99afa1183c6d5334d8ada3c455c8675cd854
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -37,7 +37,33 @@ x-casaos:
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.jellyfin/assets/icon.png
   title:
     en_US: Jellyfin (LinuxServer.io)
+    ca_ES: Jellyfin (LinuxServer.io)
+    cs_CZ: Jellyfin (LinuxServer.io)
+    da_DK: Jellyfin (LinuxServer.io)
+    de_DE: Jellyfin (LinuxServer.io)
+    el_GR: Jellyfin (LinuxServer.io)
+    en_GB: Jellyfin (LinuxServer.io)
+    es_ES: Jellyfin (LinuxServer.io)
+    fr_FR: Jellyfin (LinuxServer.io)
+    ga_IE: Jellyfin (LinuxServer.io)
+    hr_HR: Jellyfin (LinuxServer.io)
+    hu_HU: Jellyfin (LinuxServer.io)
+    it_IT: Jellyfin (LinuxServer.io)
+    ja_JP: Jellyfin (LinuxServer.io)
+    ko_KR: Jellyfin (LinuxServer.io)
+    ml_IN: Jellyfin (LinuxServer.io)
+    nb_NO: Jellyfin (LinuxServer.io)
+    nl_NL: Jellyfin (LinuxServer.io)
+    pl_PL: Jellyfin (LinuxServer.io)
+    pt_BR: Jellyfin (LinuxServer.io)
+    ro_RO: Jellyfin (LinuxServer.io)
+    ru_RU: Jellyfin (LinuxServer.io)
+    sk_SK: Jellyfin (LinuxServer.io)
+    sv_SE: Jellyfin (LinuxServer.io)
+    tr_TR: Jellyfin (LinuxServer.io)
+    zh_CN: Jellyfin（LinuxServer.io）
+    zh_TW: Jellyfin（LinuxServer.io）
   id: by-roket.linuxserver.jellyfin
-  version: 10.11.11
+  version: 12.1ubu2604-ls50
   index: /
   port_map: '8096'

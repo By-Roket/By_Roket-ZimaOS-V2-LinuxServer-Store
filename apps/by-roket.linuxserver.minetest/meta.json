@@ -10,6 +10,7 @@
   "thumbnail": "/apps/by-roket.linuxserver.minetest/assets/minetest-icon.webp",
   "category": "Developer",
   "project_url": "http://www.minetest.net/",
+  "website": "http://www.minetest.net/",
   "title": "Minetest",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.minetest",

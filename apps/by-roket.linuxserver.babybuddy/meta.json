@@ -8,13 +8,13 @@
   "developer": "LinuxServer.io",
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.babybuddy/assets/babybuddy-logo.webp",
-  "category": "Others",
+  "category": "Media",
   "title": "Babybuddy (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.babybuddy",
   "version": "2.10.1",
   "categories": [
-    "others"
+    "media"
   ],
   "min_memory": 0,
   "min_image_size": {

@@ -10,6 +10,7 @@
   "thumbnail": "/apps/by-roket.linuxserver.unifi-controller/assets/unifi-banner.webp",
   "category": "Developer",
   "project_url": "https://www.ui.com/software/",
+  "website": "https://www.ui.com/software/",
   "title": "Unifi controller",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.unifi-controller",

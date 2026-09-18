@@ -24,6 +24,32 @@ x-casaos:
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.freetube/assets/icon.png
   title:
     en_US: Freetube
+    zh_CN: Freetube
+    ca_ES: Freetube
+    cs_CZ: Freetube
+    da_DK: Freetube
+    de_DE: Freetube
+    el_GR: Freetube
+    en_GB: Freetube
+    es_ES: Freetube
+    fr_FR: Freetube
+    ga_IE: Freetube
+    hr_HR: Freetube
+    hu_HU: Freetube
+    it_IT: Freetube
+    ja_JP: Freetube
+    ko_KR: Freetube
+    ml_IN: Freetube
+    nb_NO: Freetube
+    nl_NL: Freetube
+    pl_PL: Freetube
+    pt_BR: Freetube
+    ro_RO: Freetube
+    ru_RU: Freetube
+    sk_SK: Freetube
+    sv_SE: Freetube
+    tr_TR: Freetube
+    zh_TW: Freetube
   id: by-roket.linuxserver.freetube
   version: version-190523148
   index: /

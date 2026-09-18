@@ -1,7 +1,7 @@
 name: linuxserver-helium
 services:
   helium:
-    image: linuxserver/helium:0.17.0@sha256:8391855f51317f42b624a121dd30f0749b37bd750df4491638db3e889348e2ca
+    image: linuxserver/helium:0.17.1@sha256:0973ac5cb6b01a03a50a5b0890caf3e1370831c9be07a29017230d0a4aa1f75d
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -25,7 +25,33 @@ x-casaos:
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.helium/assets/icon.png
   title:
     en_US: Helium (LinuxServer.io)
+    ca_ES: Helium (LinuxServer.io)
+    cs_CZ: Helium (LinuxServer.io)
+    da_DK: Helium (LinuxServer.io)
+    de_DE: Helium (LinuxServer.io)
+    el_GR: Helium (LinuxServer.io)
+    en_GB: Helium (LinuxServer.io)
+    es_ES: Helium (LinuxServer.io)
+    fr_FR: Helium (LinuxServer.io)
+    ga_IE: Helium (LinuxServer.io)
+    hr_HR: Helium (LinuxServer.io)
+    hu_HU: Helium (LinuxServer.io)
+    it_IT: Helium (LinuxServer.io)
+    ja_JP: Helium (LinuxServer.io)
+    ko_KR: Helium (LinuxServer.io)
+    ml_IN: Helium (LinuxServer.io)
+    nb_NO: Helium (LinuxServer.io)
+    nl_NL: Helium (LinuxServer.io)
+    pl_PL: Helium (LinuxServer.io)
+    pt_BR: Helium (LinuxServer.io)
+    ro_RO: Helium (LinuxServer.io)
+    ru_RU: Helium (LinuxServer.io)
+    sk_SK: Helium (LinuxServer.io)
+    sv_SE: Helium (LinuxServer.io)
+    tr_TR: Helium (LinuxServer.io)
+    zh_CN: Helium（LinuxServer.io）
+    zh_TW: Helium（LinuxServer.io）
   id: by-roket.linuxserver.helium
   port_map: '3000'
-  version: 0.17.0
+  version: 0.17.1
   index: /

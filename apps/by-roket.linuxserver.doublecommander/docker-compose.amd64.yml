@@ -1,0 +1,59 @@
+name: linuxserver-doublecommander
+services:
+  doublecommander:
+    image: linuxserver/doublecommander:version-8143f818@sha256:8528863cfa9ed6171cdfd670aab1da5f96be848e006ad39b92b2235a43f10ae8
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+      - type: bind
+        source: /DATA/AppData/$AppID/data
+        target: /data
+    container_name: doublecommander-by-roket
+x-casaos:
+  main: doublecommander
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.doublecommander/assets/icon.png
+  title:
+    en_US: Doublecommander (LinuxServer.io)
+    ca_ES: Doublecommander (LinuxServer.io)
+    cs_CZ: Doublecommander (LinuxServer.io)
+    da_DK: Doublecommander (LinuxServer.io)
+    de_DE: Doublecommander (LinuxServer.io)
+    el_GR: Doublecommander (LinuxServer.io)
+    en_GB: Doublecommander (LinuxServer.io)
+    es_ES: Doublecommander (LinuxServer.io)
+    fr_FR: Doublecommander (LinuxServer.io)
+    ga_IE: Doublecommander (LinuxServer.io)
+    hr_HR: Doublecommander (LinuxServer.io)
+    hu_HU: Doublecommander (LinuxServer.io)
+    it_IT: Doublecommander (LinuxServer.io)
+    ja_JP: Doublecommander (LinuxServer.io)
+    ko_KR: Doublecommander (LinuxServer.io)
+    ml_IN: Doublecommander (LinuxServer.io)
+    nb_NO: Doublecommander (LinuxServer.io)
+    nl_NL: Doublecommander (LinuxServer.io)
+    pl_PL: Doublecommander (LinuxServer.io)
+    pt_BR: Doublecommander (LinuxServer.io)
+    ro_RO: Doublecommander (LinuxServer.io)
+    ru_RU: Doublecommander (LinuxServer.io)
+    sk_SK: Doublecommander (LinuxServer.io)
+    sv_SE: Doublecommander (LinuxServer.io)
+    tr_TR: Doublecommander (LinuxServer.io)
+    zh_CN: Doublecommander（LinuxServer.io）
+    zh_TW: Doublecommander（LinuxServer.io）
+  id: by-roket.linuxserver.doublecommander
+  port_map: '3000'
+  version: version-8143f818
+  index: /

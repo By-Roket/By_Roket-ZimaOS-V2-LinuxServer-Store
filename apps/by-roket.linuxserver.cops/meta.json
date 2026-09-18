@@ -12,13 +12,13 @@
   "title": "Cops (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.cops",
-  "version": "4.5.2",
+  "version": "4.5.4",
   "categories": [
     "developer"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 67053475,
-    "arm64": 67538590
+    "amd64": 74586612,
+    "arm64": 75068658
   }
 }

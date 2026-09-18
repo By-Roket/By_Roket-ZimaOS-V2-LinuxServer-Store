@@ -15,6 +15,32 @@ x-casaos:
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.tester/assets/icon
   title:
     en_US: Tester
+    zh_CN: Tester
+    ca_ES: Tester
+    cs_CZ: Tester
+    da_DK: Tester
+    de_DE: Tester
+    el_GR: Tester
+    en_GB: Tester
+    es_ES: Tester
+    fr_FR: Tester
+    ga_IE: Tester
+    hr_HR: Tester
+    hu_HU: Tester
+    it_IT: Tester
+    ja_JP: Tester
+    ko_KR: Tester
+    ml_IN: Tester
+    nb_NO: Tester
+    nl_NL: Tester
+    pl_PL: Tester
+    pt_BR: Tester
+    ro_RO: Tester
+    ru_RU: Tester
+    sk_SK: Tester
+    sv_SE: Tester
+    tr_TR: Tester
+    zh_TW: Tester
   id: by-roket.linuxserver.tester
   version: version-66f677b0
   index: /

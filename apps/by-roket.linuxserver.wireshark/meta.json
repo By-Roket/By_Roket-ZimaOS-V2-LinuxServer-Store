@@ -8,13 +8,13 @@
   "developer": "LinuxServer.io",
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.wireshark/assets/wireshark-icon.webp",
-  "category": "Networking",
+  "category": "Media",
   "title": "Wireshark (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.wireshark",
   "version": "4.6.6",
   "categories": [
-    "networking"
+    "media"
   ],
   "min_memory": 0,
   "min_image_size": {

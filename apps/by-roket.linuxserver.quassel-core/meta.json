@@ -8,14 +8,15 @@
   "developer": "LinuxServer.io",
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.quassel-core/assets/Apps-quassel-icon.webp",
-  "category": "Developer",
+  "category": "Media",
   "project_url": "http://quassel-irc.org/",
+  "website": "http://quassel-irc.org/",
   "title": "Quassel core",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.quassel-core",
   "version": "0.14.0",
   "categories": [
-    "developer"
+    "media"
   ],
   "min_memory": 0,
   "min_image_size": {

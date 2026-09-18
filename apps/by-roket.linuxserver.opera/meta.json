@@ -11,12 +11,12 @@
   "title": "Opera (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.opera",
-  "version": "135.0.5973",
+  "version": "136.0.6008",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1204585888
+    "amd64": 1203337170
   }
 }

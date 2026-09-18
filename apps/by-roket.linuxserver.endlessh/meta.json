@@ -10,6 +10,7 @@
   "thumbnail": "/apps/by-roket.linuxserver.endlessh/assets/openssh-server-logo.webp",
   "category": "Networking",
   "project_url": "https://github.com/skeeto/endlessh",
+  "website": "https://github.com/skeeto/endlessh",
   "title": "Endlessh",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.endlessh",

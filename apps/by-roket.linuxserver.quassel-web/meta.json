@@ -10,6 +10,7 @@
   "thumbnail": "/apps/by-roket.linuxserver.quassel-web/assets/quassel-web-banner.webp",
   "category": "Developer",
   "project_url": "https://github.com/magne4000/quassel-webserver",
+  "website": "https://github.com/magne4000/quassel-webserver",
   "title": "Quassel web",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.quassel-web",

@@ -8,13 +8,13 @@
   "developer": "LinuxServer.io",
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.calligra/assets/calligra-logo.webp",
-  "category": "Productivity",
+  "category": "Developer",
   "title": "Calligra (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.calligra",
   "version": "3.2.1",
   "categories": [
-    "productivity"
+    "developer"
   ],
   "min_memory": 0,
   "min_image_size": {

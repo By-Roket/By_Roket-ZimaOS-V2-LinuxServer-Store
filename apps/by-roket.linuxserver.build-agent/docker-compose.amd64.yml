@@ -18,9 +18,35 @@ services:
     container_name: build-agent-by-roket
 x-casaos:
   main: build-agent
-  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.build-agent/assets/icon.png
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.build-agent/assets/icon.svg
   title:
     en_US: Build agent
+    zh_CN: Build agent
+    ca_ES: Build agent
+    cs_CZ: Build agent
+    da_DK: Build agent
+    de_DE: Build agent
+    el_GR: Build agent
+    en_GB: Build agent
+    es_ES: Build agent
+    fr_FR: Build agent
+    ga_IE: Build agent
+    hr_HR: Build agent
+    hu_HU: Build agent
+    it_IT: Build agent
+    ja_JP: Build agent
+    ko_KR: Build agent
+    ml_IN: Build agent
+    nb_NO: Build agent
+    nl_NL: Build agent
+    pl_PL: Build agent
+    pt_BR: Build agent
+    ro_RO: Build agent
+    ru_RU: Build agent
+    sk_SK: Build agent
+    sv_SE: Build agent
+    tr_TR: Build agent
+    zh_TW: Build agent
   port_map: '80'
   id: by-roket.linuxserver.build-agent
   version: version-0296acb5

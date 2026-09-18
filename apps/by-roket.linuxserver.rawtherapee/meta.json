@@ -8,13 +8,13 @@
   "developer": "LinuxServer.io",
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.rawtherapee/assets/rawtherapee-logo.webp",
-  "category": "Others",
+  "category": "Media",
   "title": "Rawtherapee (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.rawtherapee",
   "version": "5.13.20260913",
   "categories": [
-    "others"
+    "media"
   ],
   "min_memory": 0,
   "min_image_size": {

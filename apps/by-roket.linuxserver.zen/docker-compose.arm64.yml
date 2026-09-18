@@ -1,7 +1,7 @@
 name: linuxserver-zen
 services:
   zen:
-    image: linuxserver/zen:1.22.1@sha256:b5754ae912e7099f500e8f5d5e5d674e5155a3a180406bfc60a35298ce5cd761
+    image: linuxserver/zen:1.22.2@sha256:40af8e26ac8c0100a3bf95476e9ca64fc070af300a2a730cd9b5b9df5c1d05b2
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -24,7 +24,33 @@ x-casaos:
   icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.zen/assets/icon.png
   title:
     en_US: Zen (LinuxServer.io)
+    ca_ES: Zen (LinuxServer.io)
+    cs_CZ: Zen (LinuxServer.io)
+    da_DK: Zen (LinuxServer.io)
+    de_DE: Zen (LinuxServer.io)
+    el_GR: Zen (LinuxServer.io)
+    en_GB: Zen (LinuxServer.io)
+    es_ES: Zen (LinuxServer.io)
+    fr_FR: Zen (LinuxServer.io)
+    ga_IE: Zen (LinuxServer.io)
+    hr_HR: Zen (LinuxServer.io)
+    hu_HU: Zen (LinuxServer.io)
+    it_IT: Zen (LinuxServer.io)
+    ja_JP: Zen (LinuxServer.io)
+    ko_KR: Zen (LinuxServer.io)
+    ml_IN: Zen (LinuxServer.io)
+    nb_NO: Zen (LinuxServer.io)
+    nl_NL: Zen (LinuxServer.io)
+    pl_PL: Zen (LinuxServer.io)
+    pt_BR: Zen (LinuxServer.io)
+    ro_RO: Zen (LinuxServer.io)
+    ru_RU: Zen (LinuxServer.io)
+    sk_SK: Zen (LinuxServer.io)
+    sv_SE: Zen (LinuxServer.io)
+    tr_TR: Zen (LinuxServer.io)
+    zh_CN: Zen（LinuxServer.io）
+    zh_TW: Zen（LinuxServer.io）
   id: by-roket.linuxserver.zen
   port_map: '3000'
-  version: 1.22.1
+  version: 1.22.2
   index: /

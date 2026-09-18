@@ -8,14 +8,15 @@
   "developer": "LinuxServer.io",
   "author": "WisdomSky",
   "thumbnail": "/apps/by-roket.linuxserver.nntp2nntp/assets/nntp2nntp.webp",
-  "category": "Networking",
+  "category": "Media",
   "project_url": "https://github.com/linuxserver/nntp2nntp",
+  "website": "https://github.com/linuxserver/nntp2nntp",
   "title": "Nntp2nntp",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.nntp2nntp",
   "version": "0.3.20230704",
   "categories": [
-    "networking"
+    "media"
   ],
   "min_memory": 0,
   "min_image_size": {
