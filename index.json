@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-09-18T08:23:19Z",
+  "updated_at": "2026-09-19T08:10:30Z",
   "app_count": 246,
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "apps": [
@@ -433,8 +433,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.calibre/assets/calibre-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.calibre/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.calibre/meta.json",
-      "content_hash": "c5d2a950",
-      "version": "9.14.0"
+      "content_hash": "09c891ad",
+      "version": "9.15.0"
     },
     {
       "id": "by-roket.linuxserver.calibre-web",
@@ -1855,8 +1855,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.jackett/assets/jackett-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.jackett/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.jackett/meta.json",
-      "content_hash": "6a98cfa2",
-      "version": "0.24.2605"
+      "content_hash": "8d704750",
+      "version": "0.24.2619"
     },
     {
       "id": "by-roket.linuxserver.jellyfin",
@@ -2122,7 +2122,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.lazylibrarian/assets/lazylibrarian-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.lazylibrarian/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lazylibrarian/meta.json",
-      "content_hash": "66eec1e4"
+      "content_hash": "17549e40"
     },
     {
       "id": "by-roket.linuxserver.ldap-auth",
@@ -2348,8 +2348,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.lychee/assets/lychee-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.lychee/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lychee/meta.json",
-      "content_hash": "dc0430b6",
-      "version": "7.8.4"
+      "content_hash": "e84a8616",
+      "version": "7.8.5"
     },
     {
       "id": "by-roket.linuxserver.mame",
@@ -4848,10 +4848,10 @@
         "arm64"
       ],
       "icon": "/apps/by-roket.linuxserver.wireguard/assets/icon.svg",
-      "thumbnail": "/apps/by-roket.linuxserver.wireguard/assets/default-icon.svg",
+      "thumbnail": "/apps/by-roket.linuxserver.wireguard/assets/wireguard.svg",
       "compose_url": "/apps/by-roket.linuxserver.wireguard/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.wireguard/meta.json",
-      "content_hash": "4170f319",
+      "content_hash": "b58464c1",
       "version": "1.0.20260223"
     },
     {
