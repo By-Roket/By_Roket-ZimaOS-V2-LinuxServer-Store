@@ -11,12 +11,12 @@
   "title": "Bambustudio (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.bambustudio",
-  "version": "02.08.02",
+  "version": "02.08.03",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1601342117
+    "amd64": 1614205804
   }
 }
