@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-09-20T08:44:10Z",
+  "updated_at": "2026-09-21T09:06:39Z",
   "app_count": 246,
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "apps": [
@@ -166,8 +166,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.babybuddy/assets/babybuddy-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.babybuddy/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.babybuddy/meta.json",
-      "content_hash": "70607cdd",
-      "version": "2.10.1"
+      "content_hash": "5ec07160",
+      "version": "2.11.0"
     },
     {
       "id": "by-roket.linuxserver.bambustudio",
@@ -615,8 +615,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.code-server/assets/code-server-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.code-server/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.code-server/meta.json",
-      "content_hash": "c442a51b",
-      "version": "4.137.0"
+      "content_hash": "3a7d0733",
+      "version": "4.138.0"
     },
     {
       "id": "by-roket.linuxserver.cops",
@@ -864,7 +864,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.dogwalk/assets/dogwalk-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.dogwalk/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.dogwalk/meta.json",
-      "content_hash": "65dac448"
+      "content_hash": "7c299e4a"
     },
     {
       "id": "by-roket.linuxserver.dokuwiki",
@@ -1358,8 +1358,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.flexget/assets/flexget-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.flexget/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.flexget/meta.json",
-      "content_hash": "a4887162",
-      "version": "3.21.0"
+      "content_hash": "16b473ec",
+      "version": "3.21.1"
     },
     {
       "id": "by-roket.linuxserver.flycast",
@@ -1855,8 +1855,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.jackett/assets/jackett-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.jackett/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.jackett/meta.json",
-      "content_hash": "8c484fc2",
-      "version": "0.24.2624"
+      "content_hash": "f18bb4c9",
+      "version": "0.24.2627"
     },
     {
       "id": "by-roket.linuxserver.jellyfin",
@@ -2122,7 +2122,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.lazylibrarian/assets/lazylibrarian-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.lazylibrarian/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lazylibrarian/meta.json",
-      "content_hash": "368df258"
+      "content_hash": "2cd1b3a8"
     },
     {
       "id": "by-roket.linuxserver.ldap-auth",
@@ -2535,8 +2535,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.minisatip/assets/minisatip-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.minisatip/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.minisatip/meta.json",
-      "content_hash": "ac0e9bcd",
-      "version": "2.0.105"
+      "content_hash": "66567025",
+      "version": "2.0.106"
     },
     {
       "id": "by-roket.linuxserver.modmanager",
@@ -2556,7 +2556,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.modmanager/assets/linuxserver-ls-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.modmanager/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.modmanager/meta.json",
-      "content_hash": "04b4f81a"
+      "content_hash": "1549ffe2"
     },
     {
       "id": "by-roket.linuxserver.modrinth",
@@ -2909,8 +2909,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.nzbhydra2/assets/hydra-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.nzbhydra2/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.nzbhydra2/meta.json",
-      "content_hash": "e89f6d87",
-      "version": "9.0.1"
+      "content_hash": "ef30003e",
+      "version": "9.0.2"
     },
     {
       "id": "by-roket.linuxserver.obsidian",
@@ -4790,7 +4790,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.weixin/assets/weixin-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.weixin/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.weixin/meta.json",
-      "content_hash": "e06b8fcf"
+      "content_hash": "cdc94481"
     },
     {
       "id": "by-roket.linuxserver.wikijs",

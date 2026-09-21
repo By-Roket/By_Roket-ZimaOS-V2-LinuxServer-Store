@@ -12,13 +12,13 @@
   "title": "Babybuddy (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.babybuddy",
-  "version": "2.10.1",
+  "version": "2.11.0",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 134258299,
-    "arm64": 134454293
+    "amd64": 128506524,
+    "arm64": 128678788
   }
 }

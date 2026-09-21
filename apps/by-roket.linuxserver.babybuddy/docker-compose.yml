@@ -1,7 +1,7 @@
 name: linuxserver-babybuddy
 services:
   babybuddy:
-    image: linuxserver/babybuddy:2.10.1
+    image: linuxserver/babybuddy:2.11.0
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -50,5 +50,5 @@ x-casaos:
     zh_TW: Babybuddy（LinuxServer.io）
   id: by-roket.linuxserver.babybuddy
   port_map: '8000'
-  version: 2.10.1
+  version: 2.11.0
   index: /
