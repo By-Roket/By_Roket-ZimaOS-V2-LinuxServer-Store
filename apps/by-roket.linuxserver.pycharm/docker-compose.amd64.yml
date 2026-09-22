@@ -1,7 +1,7 @@
 name: linuxserver-pycharm
 services:
   pycharm:
-    image: linuxserver/pycharm:2026.2.1@sha256:0c1f0fc48d9ab21ca9697e6601769303a4b3f0fbca1b3778e8b03a938d4c4aaa
+    image: linuxserver/pycharm:2026.2.2@sha256:f720edd285caeaeed5e053397a2f488b7669cce95be3b5f3700f3980353e7b97
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Pycharm（LinuxServer.io）
   id: by-roket.linuxserver.pycharm
   port_map: '3000'
-  version: 2026.2.1
+  version: 2026.2.2
   index: /

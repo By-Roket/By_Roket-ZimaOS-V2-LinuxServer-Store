@@ -11,12 +11,12 @@
   "title": "Lm studio (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.lm-studio",
-  "version": "version-2026-09-12",
+  "version": "version-2026-09-18",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 8864646715
+    "amd64": 9042281531
   }
 }

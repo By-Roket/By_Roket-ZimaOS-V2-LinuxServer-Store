@@ -12,13 +12,13 @@
   "title": "Wikijs (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.wikijs",
-  "version": "2.5.314",
+  "version": "2.5.315",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 138143880,
-    "arm64": 138273358
+    "amd64": 140143327,
+    "arm64": 140293817
   }
 }
