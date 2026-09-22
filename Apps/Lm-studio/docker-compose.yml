@@ -1,7 +1,7 @@
 name: linuxserver-lm-studio
 services:
   lm-studio:
-    image: linuxserver/lm-studio:version-2026-09-12
+    image: linuxserver/lm-studio:version-2026-09-18
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -174,5 +174,5 @@ x-casaos:
   category: Others
   id: by-roket.linuxserver.lm-studio
   port_map: '3000'
-  version: version-2026-09-12
+  version: version-2026-09-18
   index: /
