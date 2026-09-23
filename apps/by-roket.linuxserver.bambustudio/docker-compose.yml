@@ -1,7 +1,7 @@
 name: linuxserver-bambustudio
 services:
   bambustudio:
-    image: linuxserver/bambustudio:02.08.03
+    image: linuxserver/bambustudio:02.08.04
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -53,5 +53,5 @@ x-casaos:
     zh_TW: Bambustudio（LinuxServer.io）
   id: by-roket.linuxserver.bambustudio
   port_map: '3000'
-  version: 02.08.03
+  version: 02.08.04
   index: /

@@ -11,12 +11,12 @@
   "title": "Mullvad browser (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.mullvad-browser",
-  "version": "15.0.21",
+  "version": "15.0.23",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1121195383
+    "amd64": 1124066112
   }
 }
