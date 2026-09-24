@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-09-23T08:42:48Z",
+  "updated_at": "2026-09-24T08:36:23Z",
   "app_count": 246,
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "apps": [
@@ -517,8 +517,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.chrome/assets/chrome-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.chrome/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.chrome/meta.json",
-      "content_hash": "b9f3be4e",
-      "version": "153.0.8010"
+      "content_hash": "43dc4aab",
+      "version": "154.0.8037"
     },
     {
       "id": "by-roket.linuxserver.chromium",
@@ -538,7 +538,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.chromium/assets/chromium-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.chromium/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.chromium/meta.json",
-      "content_hash": "bf6a19a5"
+      "content_hash": "8aa4ca66"
     },
     {
       "id": "by-roket.linuxserver.ci",
@@ -1544,8 +1544,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.grav/assets/grav-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.grav/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.grav/meta.json",
-      "content_hash": "9959cbd5",
-      "version": "2.1.9"
+      "content_hash": "900432a2",
+      "version": "2.1.10"
     },
     {
       "id": "by-roket.linuxserver.grocy",
@@ -1855,8 +1855,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.jackett/assets/jackett-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.jackett/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.jackett/meta.json",
-      "content_hash": "64f6ab5d",
-      "version": "0.24.2644"
+      "content_hash": "3c0f2191",
+      "version": "0.24.2651"
     },
     {
       "id": "by-roket.linuxserver.jellyfin",
@@ -2122,7 +2122,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.lazylibrarian/assets/lazylibrarian-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.lazylibrarian/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lazylibrarian/meta.json",
-      "content_hash": "da7c9706"
+      "content_hash": "b13e400c"
     },
     {
       "id": "by-roket.linuxserver.ldap-auth",
@@ -2205,8 +2205,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.librewolf/assets/librewolf-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.librewolf/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.librewolf/meta.json",
-      "content_hash": "2f0f73ef",
-      "version": "155.0.1"
+      "content_hash": "ba65fe0b",
+      "version": "156.0.1"
     },
     {
       "id": "by-roket.linuxserver.lidarr",
@@ -2389,8 +2389,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.manyfold/assets/manyfold-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.manyfold/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.manyfold/meta.json",
-      "content_hash": "71233349",
-      "version": "0.149.0"
+      "content_hash": "0fa3beaa",
+      "version": "0.150.0"
     },
     {
       "id": "by-roket.linuxserver.mariadb",
@@ -2535,8 +2535,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.minisatip/assets/minisatip-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.minisatip/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.minisatip/meta.json",
-      "content_hash": "e33f313f",
-      "version": "2.0.108"
+      "content_hash": "9d049707",
+      "version": "2.0.111"
     },
     {
       "id": "by-roket.linuxserver.modmanager",
@@ -2575,8 +2575,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.modrinth/assets/modrinth-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.modrinth/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.modrinth/meta.json",
-      "content_hash": "75164a9e",
-      "version": "0.21.4"
+      "content_hash": "28803c80",
+      "version": "0.21.5"
     },
     {
       "id": "by-roket.linuxserver.monica",
@@ -3445,8 +3445,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.pydio-cells/assets/pydio-cells-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.pydio-cells/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.pydio-cells/meta.json",
-      "content_hash": "4102a7b7",
-      "version": "5.0.2"
+      "content_hash": "898b8df6",
+      "version": "5.0.3"
     },
     {
       "id": "by-roket.linuxserver.pyload-ng",
@@ -3821,7 +3821,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.rpcs3/assets/rpcs3-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.rpcs3/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.rpcs3/meta.json",
-      "content_hash": "50772742"
+      "content_hash": "07b4bfe1"
     },
     {
       "id": "by-roket.linuxserver.rsnapshot",
@@ -4647,8 +4647,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.vscode/assets/vscode-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.vscode/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.vscode/meta.json",
-      "content_hash": "c50a3d57",
-      "version": "1.137.0"
+      "content_hash": "00b42239",
+      "version": "1.138.0"
     },
     {
       "id": "by-roket.linuxserver.vscodium",
@@ -4848,10 +4848,10 @@
         "arm64"
       ],
       "icon": "/apps/by-roket.linuxserver.wireguard/assets/icon.svg",
-      "thumbnail": "/apps/by-roket.linuxserver.wireguard/assets/default-icon.svg",
+      "thumbnail": "/apps/by-roket.linuxserver.wireguard/assets/wireguard.svg",
       "compose_url": "/apps/by-roket.linuxserver.wireguard/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.wireguard/meta.json",
-      "content_hash": "4170f319",
+      "content_hash": "b58464c1",
       "version": "1.0.20260223"
     },
     {
@@ -5038,8 +5038,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.zen/assets/zen-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.zen/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.zen/meta.json",
-      "content_hash": "9911ef39",
-      "version": "1.22.2"
+      "content_hash": "c465d0f1",
+      "version": "1.22.3"
     },
     {
       "id": "by-roket.linuxserver.znc",

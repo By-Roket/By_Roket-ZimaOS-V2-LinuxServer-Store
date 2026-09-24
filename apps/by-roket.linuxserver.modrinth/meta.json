@@ -11,12 +11,12 @@
   "title": "Modrinth (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.modrinth",
-  "version": "0.21.4",
+  "version": "0.21.5",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1094889757
+    "amd64": 1096054603
   }
 }

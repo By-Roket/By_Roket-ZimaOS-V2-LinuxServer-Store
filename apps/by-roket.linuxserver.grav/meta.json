@@ -12,13 +12,13 @@
   "title": "Grav (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.grav",
-  "version": "2.1.9",
+  "version": "2.1.10",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 61959039,
-    "arm64": 62553997
+    "amd64": 61969464,
+    "arm64": 62569194
   }
 }

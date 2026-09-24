@@ -12,13 +12,13 @@
   "title": "Pydio cells (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.pydio-cells",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 152892313,
-    "arm64": 145293558
+    "amd64": 154560453,
+    "arm64": 146712673
   }
 }

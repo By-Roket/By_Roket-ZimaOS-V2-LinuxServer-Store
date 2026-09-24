@@ -12,13 +12,13 @@
   "title": "Zen (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.zen",
-  "version": "1.22.2",
+  "version": "1.22.3",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1143906522,
-    "arm64": 1090758779
+    "amd64": 1143887539,
+    "arm64": 1090727180
   }
 }
