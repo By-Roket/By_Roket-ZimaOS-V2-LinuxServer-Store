@@ -1,7 +1,7 @@
 name: linuxserver-zen
 services:
   zen:
-    image: linuxserver/zen:1.22.2
+    image: linuxserver/zen:1.22.3
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -176,5 +176,5 @@ x-casaos:
   category: Others
   id: by-roket.linuxserver.zen
   port_map: '3000'
-  version: 1.22.2
+  version: 1.22.3
   index: /
