@@ -1,7 +1,7 @@
 name: linuxserver-vscode
 services:
   vscode:
-    image: linuxserver/vscode:1.138.0
+    image: linuxserver/vscode:1.139.0
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -210,5 +210,5 @@ x-casaos:
   category: Developer
   id: by-roket.linuxserver.vscode
   port_map: '3000'
-  version: 1.138.0
+  version: 1.139.0
   index: /
