@@ -11,12 +11,12 @@
   "title": "Dogwalk (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.dogwalk",
-  "version": "version-d668f92e",
+  "version": "version-6fe917ff",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1784963887
+    "amd64": 1783786430
   }
 }

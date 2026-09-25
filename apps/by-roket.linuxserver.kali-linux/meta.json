@@ -12,13 +12,13 @@
   "title": "Kali linux (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.kali-linux",
-  "version": "version-2a2dd17e",
+  "version": "version-3ed8e88f",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 4714728182,
-    "arm64": 3959419040
+    "amd64": 4950872528,
+    "arm64": 4195034830
   }
 }
