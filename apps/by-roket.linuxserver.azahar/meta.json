@@ -11,12 +11,12 @@
   "title": "Azahar (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.azahar",
-  "version": "12126.1.1",
+  "version": "12126.1.2",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1810237617
+    "amd64": 1801619133
   }
 }

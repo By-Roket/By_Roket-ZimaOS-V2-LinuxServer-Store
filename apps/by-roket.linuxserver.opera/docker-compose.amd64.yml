@@ -1,7 +1,7 @@
 name: linuxserver-opera
 services:
   opera:
-    image: linuxserver/opera:136.0.6008@sha256:d5a060a8e6c18df82628ee75fef0e0c07f8c87d5aca0a451752aefd5b043d5f9
+    image: linuxserver/opera:135.0.5973@sha256:77aab92a9f8d7aee1f9b10de04d8db3c7d004bd649a92cc1ee03b8d111c7dd75
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -53,5 +53,5 @@ x-casaos:
     zh_TW: Opera（LinuxServer.io）
   id: by-roket.linuxserver.opera
   port_map: '3000'
-  version: 136.0.6008
+  version: 135.0.5973
   index: /

@@ -12,13 +12,13 @@
   "title": "Ungoogled chromium (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.ungoogled-chromium",
-  "version": "153.0.8010",
+  "version": "154.0.8037",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1292380354,
-    "arm64": 1246077766
+    "amd64": 1289415515,
+    "arm64": 1236756647
   }
 }
