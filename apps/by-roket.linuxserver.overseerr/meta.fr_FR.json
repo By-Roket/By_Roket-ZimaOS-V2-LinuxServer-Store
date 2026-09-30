@@ -1,6 +1,6 @@
 {
   "id": "by-roket.linuxserver.overseerr",
   "title": "Overseerr",
-  "tagline": "Un outil de gestion des requêtes et de découverte de médias conçu pour fonctionner avec votre écosystème Plex existant.",
-  "description": "Consultez la page d'accueil : https://github.com/orgs/linuxserver/packages/container/package/overseaerr"
+  "description": "Consultez la page d'accueil : https://github.com/orgs/linuxserver/packages/container/package/overseaerr",
+  "tagline": "Un outil de gestion des requêtes et de découverte de médias conçu pour fonctionner avec votre écosystème Plex existant."
 }

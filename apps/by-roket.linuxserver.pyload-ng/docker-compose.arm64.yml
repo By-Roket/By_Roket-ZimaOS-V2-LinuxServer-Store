@@ -1,7 +1,7 @@
 name: linuxserver-pyload-ng
 services:
   pyload-ng:
-    image: linuxserver/pyload-ng:0.5.0@sha256:881e5bd97524a6174952a42b4cd39356f6038524819afaa6bff0981bd65f6420
+    image: linuxserver/pyload-ng:0.5.0@sha256:e96047643ef3c4f21dd70a137b0653646437ca0408a9e0997815b22c166fc21e
     restart: unless-stopped
     environment:
       PUID: $PUID

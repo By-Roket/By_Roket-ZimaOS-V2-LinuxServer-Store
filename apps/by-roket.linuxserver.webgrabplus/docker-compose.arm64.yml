@@ -1,7 +1,7 @@
 name: linuxserver-webgrabplus
 services:
   webgrabplus:
-    image: linuxserver/webgrabplus:5.6.1@sha256:a1d0ee4089cffc22c12198a19b3947fead4823c6824e77b821ccd403081cba89
+    image: linuxserver/webgrabplus:5.6.1@sha256:b052b7f7ace86d4014057b91ccc937d5a984b2b205c1d70956be03cf14e089f6
     restart: unless-stopped
     environment:
       PUID: $PUID

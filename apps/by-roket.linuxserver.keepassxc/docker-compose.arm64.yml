@@ -1,7 +1,7 @@
 name: linuxserver-keepassxc
 services:
   keepassxc:
-    image: linuxserver/keepassxc:2.7.12@sha256:f2f0e0777a21f8050c675baa797c89d071f83e8ccd2080a72ff4a3097c3d2bfa
+    image: linuxserver/keepassxc:2.7.12@sha256:a7a914f202f54c927d9cd34b3c28423d2970249d935a605bb74906ede11f85aa
     restart: unless-stopped
     environment:
       PUID: $PUID

@@ -1,7 +1,7 @@
 name: linuxserver-freshrss
 services:
   freshrss:
-    image: linuxserver/freshrss:1.30.0@sha256:1f091c020521d511b95198172ef47c707868b68cc72007b3eeff7df7351ea044
+    image: linuxserver/freshrss:1.30.0@sha256:d37b60409d2eba22a2a6c360041952a4203f86ad891dd8fda4c29074bcef76fa
     restart: unless-stopped
     environment:
       PUID: $PUID

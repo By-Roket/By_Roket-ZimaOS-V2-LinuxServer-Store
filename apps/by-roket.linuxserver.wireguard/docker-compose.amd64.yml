@@ -1,7 +1,7 @@
 name: linuxserver-wireguard
 services:
   wireguard:
-    image: linuxserver/wireguard:1.0.20260223@sha256:917277d4b3f490d96120c56279c3fd2bdd1f8081e631921bb7c3fec02d3a0d1b
+    image: linuxserver/wireguard:1.0.20260223@sha256:d92cd1a8c17161b7f40297aa9dcad52ff92732ac79cd442dde67dcd1835cfdf7
     restart: unless-stopped
     environment:
       PUID: $PUID

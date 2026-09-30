@@ -1,7 +1,7 @@
 name: linuxserver-your_spotify
 services:
   your_spotify:
-    image: linuxserver/your_spotify:1.20.0@sha256:4b1c5960d846813860e8bfbea0c64da2e432bd0751428f75911c1a18ac42a4ed
+    image: linuxserver/your_spotify:1.20.0@sha256:439452bc145995b881a2e569a0ee5c580f6beccde6445f040556296961156c92
     restart: unless-stopped
     environment:
       PUID: $PUID

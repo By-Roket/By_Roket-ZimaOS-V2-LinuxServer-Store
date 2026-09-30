@@ -1,7 +1,7 @@
 name: linuxserver-mullvad-browser
 services:
   mullvad-browser:
-    image: linuxserver/mullvad-browser:15.0.23@sha256:a0ae344c920cbf241cc1af6a9bace88f882a6263def48f14b7132520950bf772
+    image: linuxserver/mullvad-browser:15.0.23@sha256:bf9dcafa77d6b15298c6c0864598f8e93d19bb406c35133456cf3b685bd32686
     restart: unless-stopped
     environment:
       PUID: $PUID

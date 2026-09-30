@@ -1,7 +1,7 @@
 name: linuxserver-limnoria
 services:
   limnoria:
-    image: linuxserver/limnoria:2026.5.8@sha256:eaead8e684c3768d1b1a5441b796b89d88d319dc0fd8a5e82fa5c15a233c58ed
+    image: linuxserver/limnoria:2026.5.8@sha256:56c9c3faf8d5489eba5486dd64b6ac098d4e0a3df7733ed73ed4492d02a6cdf0
     restart: unless-stopped
     environment:
       PUID: $PUID

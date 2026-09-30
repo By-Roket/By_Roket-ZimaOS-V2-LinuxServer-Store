@@ -1,7 +1,7 @@
 name: linuxserver-doplarr_rs
 services:
   doplarr_rs:
-    image: linuxserver/doplarr_rs:4.6.0@sha256:16ce821f92665bfc177e4fc32a517b9cfa407f5c5475536360b0955a69b63130
+    image: linuxserver/doplarr_rs:4.6.0@sha256:6e43ad86351bc9c3f08b722e2f0f3971a7bddb99185c0cc67d2d39bee4e74b9e
     restart: unless-stopped
     environment:
       PUID: $PUID

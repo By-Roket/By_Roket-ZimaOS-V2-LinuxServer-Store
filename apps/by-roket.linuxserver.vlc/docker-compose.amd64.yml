@@ -1,7 +1,7 @@
 name: linuxserver-vlc
 services:
   vlc:
-    image: linuxserver/vlc:3.0.23@sha256:acd0d34cfee8e92858b4849617a7baaa1213cbcf468c5f62bd2c0d22cecbb60c
+    image: linuxserver/vlc:3.0.23@sha256:058162d12d582effdec15996be0e3fec8055954fbbbc6f755e3143ac7b688808
     restart: unless-stopped
     environment:
       PUID: $PUID

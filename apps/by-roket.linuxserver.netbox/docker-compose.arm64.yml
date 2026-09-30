@@ -1,7 +1,7 @@
 name: linuxserver-netbox
 services:
   netbox:
-    image: linuxserver/netbox:4.7.1@sha256:80ecda8a447073c86fcd412908dc9f6a148e8d942599a1b6361faf2817a304f7
+    image: linuxserver/netbox:4.7.1@sha256:0c0749737fd402e3f04439ce1132b729c0940c4d6c7f4153c0cf8b4dbf8d9ed1
     restart: unless-stopped
     environment:
       PUID: $PUID
