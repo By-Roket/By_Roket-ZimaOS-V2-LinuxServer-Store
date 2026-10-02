@@ -11,12 +11,12 @@
   "title": "Openshot (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.openshot",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1326059825
+    "amd64": 1253822143
   }
 }

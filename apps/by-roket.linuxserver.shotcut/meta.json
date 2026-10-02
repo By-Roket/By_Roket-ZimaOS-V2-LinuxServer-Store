@@ -11,12 +11,12 @@
   "title": "Shotcut (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.shotcut",
-  "version": "26.8.1",
+  "version": "26.9.27",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1227285035
+    "amd64": 1213055624
   }
 }
