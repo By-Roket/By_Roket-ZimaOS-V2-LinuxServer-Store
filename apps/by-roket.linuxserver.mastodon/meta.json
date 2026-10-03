@@ -12,13 +12,13 @@
   "title": "Mastodon (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.mastodon",
-  "version": "4.7.2",
+  "version": "4.7.3",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 255758699,
-    "arm64": 255607167
+    "amd64": 259053166,
+    "arm64": 255663854
   }
 }
