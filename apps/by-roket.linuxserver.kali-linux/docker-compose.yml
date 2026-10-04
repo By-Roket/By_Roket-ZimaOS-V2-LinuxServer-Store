@@ -1,7 +1,7 @@
 name: linuxserver-kali-linux
 services:
   kali-linux:
-    image: linuxserver/kali-linux:version-cafeb949
+    image: linuxserver/kali-linux:version-772c7013
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Kali linux（LinuxServer.io）
   id: by-roket.linuxserver.kali-linux
   port_map: '3000'
-  version: version-cafeb949
+  version: version-772c7013
   index: /
