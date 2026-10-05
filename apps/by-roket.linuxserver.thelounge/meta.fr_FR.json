@@ -1,6 +1,6 @@
 {
   "id": "by-roket.linuxserver.thelounge",
   "title": "Thelounge (LinuxServer.io)",
-  "tagline": "(une version dérivée de shoutIRC) est un client IRC web que vous hébergez sur votre propre serveur.",
-  "description": "Thelounge (une version dérivée de shoutIRC) est un client IRC web que vous hébergez sur votre propre serveur."
+  "description": "Thelounge (une version dérivée de shoutIRC) est un client IRC web que vous hébergez sur votre propre serveur.",
+  "tagline": "(une version dérivée de shoutIRC) est un client IRC web que vous hébergez sur votre propre serveur."
 }
