@@ -1,7 +1,7 @@
 name: linuxserver-apprise-api
 services:
   apprise-api:
-    image: linuxserver/apprise-api:2.0.0
+    image: linuxserver/apprise-api:2.0.1
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -373,5 +373,5 @@ x-casaos:
   category: Networking
   id: by-roket.linuxserver.apprise-api
   port_map: '8000'
-  version: 2.0.0
+  version: 2.0.1
   index: /
