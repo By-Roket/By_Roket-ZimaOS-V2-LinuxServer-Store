@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-05T10:39:05Z",
+  "updated_at": "2026-10-06T10:31:19Z",
   "app_count": 246,
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "apps": [
@@ -1026,7 +1026,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.duckdns/assets/duckdns.webp",
       "compose_url": "/apps/by-roket.linuxserver.duckdns/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.duckdns/meta.json",
-      "content_hash": "c5360ef8"
+      "content_hash": "197db441"
     },
     {
       "id": "by-roket.linuxserver.duckstation",
@@ -1378,8 +1378,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.flycast/assets/flycast-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.flycast/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.flycast/meta.json",
-      "content_hash": "a855eff6",
-      "version": "2.7.20260927"
+      "content_hash": "45f33e0c",
+      "version": "2.7.20261004"
     },
     {
       "id": "by-roket.linuxserver.foldingathome",
@@ -1855,8 +1855,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.jackett/assets/jackett-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.jackett/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.jackett/meta.json",
-      "content_hash": "8b872d5e",
-      "version": "0.24.2788"
+      "content_hash": "a4491ad7",
+      "version": "0.24.2793"
     },
     {
       "id": "by-roket.linuxserver.jellyfin",
@@ -2122,7 +2122,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.lazylibrarian/assets/lazylibrarian-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.lazylibrarian/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lazylibrarian/meta.json",
-      "content_hash": "59ccf040"
+      "content_hash": "1bb848c7"
     },
     {
       "id": "by-roket.linuxserver.ldap-auth",
@@ -2535,8 +2535,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.minisatip/assets/minisatip-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.minisatip/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.minisatip/meta.json",
-      "content_hash": "d13c8811",
-      "version": "2.0.120"
+      "content_hash": "adc5cf88",
+      "version": "2.0.122"
     },
     {
       "id": "by-roket.linuxserver.modmanager",
@@ -2637,8 +2637,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.mstream/assets/mstream-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.mstream/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.mstream/meta.json",
-      "content_hash": "dfdb5754",
-      "version": "6.30.0"
+      "content_hash": "2e0ad29d",
+      "version": "6.31.1"
     },
     {
       "id": "by-roket.linuxserver.mullvad-browser",
@@ -3821,7 +3821,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.rpcs3/assets/rpcs3-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.rpcs3/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.rpcs3/meta.json",
-      "content_hash": "2e8a149b"
+      "content_hash": "fb00d7fe"
     },
     {
       "id": "by-roket.linuxserver.rsnapshot",
@@ -4789,7 +4789,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.weixin/assets/weixin-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.weixin/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.weixin/meta.json",
-      "content_hash": "7c3dd1f6"
+      "content_hash": "04941473"
     },
     {
       "id": "by-roket.linuxserver.wikijs",
@@ -4847,10 +4847,10 @@
         "arm64"
       ],
       "icon": "/apps/by-roket.linuxserver.wireguard/assets/icon.svg",
-      "thumbnail": "/apps/by-roket.linuxserver.wireguard/assets/default-icon.svg",
+      "thumbnail": "/apps/by-roket.linuxserver.wireguard/assets/wireguard.svg",
       "compose_url": "/apps/by-roket.linuxserver.wireguard/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.wireguard/meta.json",
-      "content_hash": "228dc51f",
+      "content_hash": "f72c5f42",
       "version": "1.0.20260223"
     },
     {
