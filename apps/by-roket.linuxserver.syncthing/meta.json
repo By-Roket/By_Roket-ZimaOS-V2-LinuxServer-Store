@@ -12,13 +12,13 @@
   "title": "Syncthing (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.syncthing",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 25554941,
-    "arm64": 25759458
+    "amd64": 25565435,
+    "arm64": 25766183
   }
 }
