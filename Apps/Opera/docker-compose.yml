@@ -1,7 +1,7 @@
 name: linuxserver-opera
 services:
   opera:
-    image: linuxserver/opera:136.0.6008
+    image: linuxserver/opera:137.0.6036
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -260,5 +260,5 @@ x-casaos:
   category: Others
   id: by-roket.linuxserver.opera
   port_map: '3000'
-  version: 136.0.6008
+  version: 137.0.6036
   index: /
