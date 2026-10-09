@@ -1,7 +1,7 @@
 name: linuxserver-homeassistant
 services:
   homeassistant:
-    image: linuxserver/homeassistant:2026.9.4@sha256:f34ea538c6ffc0c7752cf8032356c9c91d9ba2dd67ddc0666394210d89780b53
+    image: linuxserver/homeassistant:2026.10.0@sha256:719ec1a90b4b01f37e901e13e13f84fa354f87e286ca528d0477770368e8ada6
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -49,5 +49,5 @@ x-casaos:
     zh_TW: Homeassistant（LinuxServer.io）
   id: by-roket.linuxserver.homeassistant
   port_map: '8123'
-  version: 2026.9.4
+  version: 2026.10.0
   index: /
