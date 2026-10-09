@@ -1,7 +1,7 @@
 name: linuxserver-steam
 services:
   steam:
-    image: linuxserver/steam:version-6267e561
+    image: linuxserver/steam:version-6b41d51c
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -135,5 +135,5 @@ x-casaos:
   category: Others
   id: by-roket.linuxserver.steam
   port_map: '3000'
-  version: version-6267e561
+  version: version-6b41d51c
   index: /
