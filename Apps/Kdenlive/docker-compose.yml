@@ -1,7 +1,7 @@
 name: linuxserver-kdenlive
 services:
   kdenlive:
-    image: linuxserver/kdenlive:26.08.1
+    image: linuxserver/kdenlive:26.08.2
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -200,5 +200,5 @@ x-casaos:
   category: Media
   id: by-roket.linuxserver.kdenlive
   port_map: '3000'
-  version: 26.08.1
+  version: 26.08.2
   index: /
