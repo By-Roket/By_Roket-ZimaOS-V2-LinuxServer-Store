@@ -12,13 +12,13 @@
   "title": "Calibre (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.calibre",
-  "version": "9.15.0",
+  "version": "9.16.0",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1293440074,
-    "arm64": 1250506433
+    "amd64": 1303043071,
+    "arm64": 1260229208
   }
 }
