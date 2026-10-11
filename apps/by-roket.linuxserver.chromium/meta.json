@@ -12,13 +12,13 @@
   "title": "Chromium (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.chromium",
-  "version": "version-627c19be",
+  "version": "version-d2f5e718",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1168894599,
-    "arm64": 1128794277
+    "amd64": 1170555679,
+    "arm64": 1130281373
   }
 }
