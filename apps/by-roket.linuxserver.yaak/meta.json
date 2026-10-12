@@ -12,13 +12,13 @@
   "title": "Yaak (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.yaak",
-  "version": "2026.8.1",
+  "version": "2026.9.0",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1112355171,
-    "arm64": 1076452601
+    "amd64": 1112292918,
+    "arm64": 1076503614
   }
 }
