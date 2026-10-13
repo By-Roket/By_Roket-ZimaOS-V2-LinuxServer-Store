@@ -1,7 +1,7 @@
 name: linuxserver-vlc
 services:
   vlc:
-    image: linuxserver/vlc:3.0.23
+    image: linuxserver/vlc:3.0.24
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -187,5 +187,5 @@ x-casaos:
   category: Media
   id: by-roket.linuxserver.vlc
   port_map: '3000'
-  version: 3.0.23
+  version: 3.0.24
   index: /
