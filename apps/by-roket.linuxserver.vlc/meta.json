@@ -12,13 +12,13 @@
   "title": "Vlc (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.vlc",
-  "version": "3.0.23",
+  "version": "3.0.24",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1348564297,
-    "arm64": 1405834370
+    "amd64": 1356132782,
+    "arm64": 1414806932
   }
 }
