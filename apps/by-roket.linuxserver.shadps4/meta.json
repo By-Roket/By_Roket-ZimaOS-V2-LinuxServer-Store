@@ -11,12 +11,12 @@
   "title": "Shadps4 (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.shadps4",
-  "version": "version-shadPS4QtLauncher-2026-10-10-df4b6ebffd4829c3bdbcd765ea44cf5a814970e8",
+  "version": "version-shadPS4QtLauncher-2026-10-14-d585d56cdef7e376aa8526d52616398cbdd6f91e",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1043957261
+    "amd64": 1043956498
   }
 }

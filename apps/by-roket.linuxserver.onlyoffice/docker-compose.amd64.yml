@@ -1,7 +1,7 @@
 name: linuxserver-onlyoffice
 services:
   onlyoffice:
-    image: linuxserver/onlyoffice:9.4.0@sha256:85e5373ba781dac10a4ed4f356579fc61591ae25ad906abf7577ec979d61e8ae
+    image: linuxserver/onlyoffice:10.0.0@sha256:f9a4d875e13fdd03aaf4698cb2e52c0c33dcdb1a8e43b8e101d1c4aa05a0b61f
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Onlyoffice（LinuxServer.io）
   id: by-roket.linuxserver.onlyoffice
   port_map: '3000'
-  version: 9.4.0
+  version: 10.0.0
   index: /
