@@ -1,0 +1,30 @@
+name: linuxserver-nomacs
+services:
+  nomacs:
+    image: linuxserver/nomacs:3.22.4
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+    container_name: nomacs-by-roket
+x-casaos:
+  main: nomacs
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.nomacs/assets/icon.png
+  title:
+    en_US: Nomacs (LinuxServer.io)
+  id: by-roket.linuxserver.nomacs
+  port_map: '3000'
+  version: 3.22.4
+  index: /

@@ -1,0 +1,30 @@
+name: linuxserver-craft-apps
+services:
+  craft-apps:
+    image: linuxserver/craft-apps:0.9.0
+    restart: unless-stopped
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+      TZ: $TZ
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+      - target: 3001
+        published: 3001
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/config
+        target: /config
+    container_name: craft-apps-by-roket
+x-casaos:
+  main: craft-apps
+  icon: https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store/apps/by-roket.linuxserver.craft-apps/assets/icon.png
+  title:
+    en_US: Craft apps (LinuxServer.io)
+  id: by-roket.linuxserver.craft-apps
+  port_map: '3000'
+  version: 0.9.0
+  index: /

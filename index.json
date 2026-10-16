@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "updated_at": "2026-10-15T08:28:17Z",
-  "app_count": 246,
+  "updated_at": "2026-10-16T08:20:30Z",
+  "app_count": 249,
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "apps": [
     {
@@ -127,6 +127,27 @@
       "meta_url": "/apps/by-roket.linuxserver.audacity/meta.json",
       "content_hash": "a1941eaf",
       "version": "4.0.1"
+    },
+    {
+      "id": "by-roket.linuxserver.audiosilo",
+      "title": "Audiosilo (LinuxServer.io)",
+      "tagline": "A self-hosted audiobook server. Point it at your audiobook folders and listen from the built-in web player or the AudioSilo apps for iOS and Android, with listening progress synced across devices.",
+      "category": "Others",
+      "categories": [
+        "others"
+      ],
+      "author": "WisdomSky",
+      "developer": "LinuxServer.io",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/by-roket.linuxserver.audiosilo/assets/icon.png",
+      "thumbnail": "/apps/by-roket.linuxserver.audiosilo/assets/audiosilo-logo.webp",
+      "compose_url": "/apps/by-roket.linuxserver.audiosilo/docker-compose.yml",
+      "meta_url": "/apps/by-roket.linuxserver.audiosilo/meta.json",
+      "content_hash": "f3af84eb",
+      "version": "2.3.1"
     },
     {
       "id": "by-roket.linuxserver.azahar",
@@ -371,8 +392,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.brave/assets/brave-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.brave/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.brave/meta.json",
-      "content_hash": "830ae2ab",
-      "version": "1.97.56"
+      "content_hash": "fcd55c9e",
+      "version": "1.97.57"
     },
     {
       "id": "by-roket.linuxserver.budge",
@@ -638,6 +659,27 @@
       "meta_url": "/apps/by-roket.linuxserver.cops/meta.json",
       "content_hash": "633db38a",
       "version": "4.5.4"
+    },
+    {
+      "id": "by-roket.linuxserver.craft-apps",
+      "title": "Craft apps (LinuxServer.io)",
+      "tagline": "A suite of open source creative applications written in Rust. This image bundles PhotoCraft (image editor), VectorCraft (vector illustration), FilmCraft (video editor), LightCraft (photo library and raw developer), PdfCraft (PDF workbench), EffectCraft (motion graphics and VFX compositor) and DesignCraft (page layout and publishing) in a single desktop.",
+      "category": "Media",
+      "categories": [
+        "media"
+      ],
+      "author": "WisdomSky",
+      "developer": "LinuxServer.io",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/by-roket.linuxserver.craft-apps/assets/icon.png",
+      "thumbnail": "/apps/by-roket.linuxserver.craft-apps/assets/artcraft-logo.webp",
+      "compose_url": "/apps/by-roket.linuxserver.craft-apps/docker-compose.yml",
+      "meta_url": "/apps/by-roket.linuxserver.craft-apps/meta.json",
+      "content_hash": "90a40b34",
+      "version": "0.9.0"
     },
     {
       "id": "by-roket.linuxserver.cura",
@@ -1544,8 +1586,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.grav/assets/grav-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.grav/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.grav/meta.json",
-      "content_hash": "d9555100",
-      "version": "2.2.8"
+      "content_hash": "d7727191",
+      "version": "2.2.9"
     },
     {
       "id": "by-roket.linuxserver.grocy",
@@ -1731,8 +1773,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.helium/assets/helium-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.helium/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.helium/meta.json",
-      "content_hash": "615b538c",
-      "version": "0.19.2"
+      "content_hash": "ea358dbf",
+      "version": "0.19.3"
     },
     {
       "id": "by-roket.linuxserver.hishtory-server",
@@ -1855,8 +1897,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.jackett/assets/jackett-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.jackett/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.jackett/meta.json",
-      "content_hash": "e87ddd01",
-      "version": "0.24.2830"
+      "content_hash": "544446a8",
+      "version": "0.24.2856"
     },
     {
       "id": "by-roket.linuxserver.jellyfin",
@@ -2535,8 +2577,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.minisatip/assets/minisatip-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.minisatip/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.minisatip/meta.json",
-      "content_hash": "c245b2e2",
-      "version": "2.0.154"
+      "content_hash": "8c9ce3ed",
+      "version": "2.0.159"
     },
     {
       "id": "by-roket.linuxserver.modmanager",
@@ -2657,8 +2699,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.mullvad-browser/assets/mullvad-browser-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.mullvad-browser/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.mullvad-browser/meta.json",
-      "content_hash": "f086f2fb",
-      "version": "15.0.24"
+      "content_hash": "edb03b89",
+      "version": "15.0.25"
     },
     {
       "id": "by-roket.linuxserver.mylar3",
@@ -2805,8 +2847,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.nextcloud/assets/nextcloud-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.nextcloud/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.nextcloud/meta.json",
-      "content_hash": "e89bd632",
-      "version": "35.0.1"
+      "content_hash": "bf281173",
+      "version": "35.0.2"
     },
     {
       "id": "by-roket.linuxserver.nginx",
@@ -2869,6 +2911,27 @@
       "meta_url": "/apps/by-roket.linuxserver.nntp2nntp/meta.json",
       "content_hash": "7e98ab5d",
       "version": "0.3.20230704"
+    },
+    {
+      "id": "by-roket.linuxserver.nomacs",
+      "title": "Nomacs (LinuxServer.io)",
+      "tagline": "A free, open source image viewer, which supports multiple platforms. You can use it for viewing all common image formats including RAW and psd images.",
+      "category": "Others",
+      "categories": [
+        "others"
+      ],
+      "author": "WisdomSky",
+      "developer": "LinuxServer.io",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/by-roket.linuxserver.nomacs/assets/icon.png",
+      "thumbnail": "/apps/by-roket.linuxserver.nomacs/assets/nomacs-logo.webp",
+      "compose_url": "/apps/by-roket.linuxserver.nomacs/docker-compose.yml",
+      "meta_url": "/apps/by-roket.linuxserver.nomacs/meta.json",
+      "content_hash": "fe8ca9c9",
+      "version": "3.22.4"
     },
     {
       "id": "by-roket.linuxserver.nzbget",
@@ -3821,7 +3884,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.rpcs3/assets/rpcs3-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.rpcs3/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.rpcs3/meta.json",
-      "content_hash": "31013777"
+      "content_hash": "6d85c73f"
     },
     {
       "id": "by-roket.linuxserver.rsnapshot",
@@ -3903,8 +3966,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.scummvm/assets/scummvm-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.scummvm/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.scummvm/meta.json",
-      "content_hash": "267ed5d8",
-      "version": "2026.3.0"
+      "content_hash": "87a0b12f",
+      "version": "2026.4.0"
     },
     {
       "id": "by-roket.linuxserver.sealskin",
@@ -4233,7 +4296,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.steam/assets/steam-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.steam/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.steam/meta.json",
-      "content_hash": "d8f29164"
+      "content_hash": "0530bbf6"
     },
     {
       "id": "by-roket.linuxserver.steamos",
