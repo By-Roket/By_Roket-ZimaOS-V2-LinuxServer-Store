@@ -1,7 +1,7 @@
 name: linuxserver-socket-proxy
 services:
   socket-proxy:
-    image: linuxserver/socket-proxy:3.4.6@sha256:5d3e27c2672c97e730f13dbc1e53ddcbbb7be6240a1d78535d1d6b9484e20b68
+    image: linuxserver/socket-proxy:3.4.7@sha256:75fe933f6d93eb5c9b291a1b19f0c9d3352e33ba8f03fb87bc3fa1cff241ab12
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -49,5 +49,5 @@ x-casaos:
     zh_TW: Socket proxy（LinuxServer.io）
   id: by-roket.linuxserver.socket-proxy
   port_map: '80'
-  version: 3.4.6
+  version: 3.4.7
   index: /

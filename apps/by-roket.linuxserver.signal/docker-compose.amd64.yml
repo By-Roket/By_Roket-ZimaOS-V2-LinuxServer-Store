@@ -1,7 +1,7 @@
 name: linuxserver-signal
 services:
   signal:
-    image: linuxserver/signal:8.30.0@sha256:4a9a2afb9bf44f36959a76109184009e340c4697e69901a90c64ce5731691f16
+    image: linuxserver/signal:8.31.0@sha256:e417f6666e43d824ba0c054a845afc4890e4971ed3167e280cb20abdb62046e5
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Signal（LinuxServer.io）
   id: by-roket.linuxserver.signal
   port_map: '3000'
-  version: 8.30.0
+  version: 8.31.0
   index: /
