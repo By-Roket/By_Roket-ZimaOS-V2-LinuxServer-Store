@@ -1,7 +1,7 @@
 name: linuxserver-craft-apps
 services:
   craft-apps:
-    image: linuxserver/craft-apps:0.9.0@sha256:acb4dfdab7447c4455773aa85dd059875797452b996d320e546e7998292b8189
+    image: linuxserver/craft-apps:0.10.0@sha256:90a662fdcc6dba0db346b735ab2ec805286da892daeab37deeb3360737103217
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Craft apps (LinuxServer.io)
   id: by-roket.linuxserver.craft-apps
   port_map: '3000'
-  version: 0.9.0
+  version: 0.10.0
   index: /

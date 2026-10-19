@@ -12,13 +12,13 @@
   "title": "Luanti (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.luanti",
-  "version": "5.17.0",
+  "version": "5.18.0",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 31027835,
-    "arm64": 31781244
+    "amd64": 31678646,
+    "arm64": 32411209
   }
 }

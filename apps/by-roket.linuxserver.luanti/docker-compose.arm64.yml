@@ -1,7 +1,7 @@
 name: linuxserver-luanti
 services:
   luanti:
-    image: linuxserver/luanti:5.17.0@sha256:4a1f74fddcff6363cd2546a8832b8a46a4bd3f5fcd889d194b99142a1cf40b7d
+    image: linuxserver/luanti:5.18.0@sha256:9cce9656276ba534745aacfc1d288a41cbeb2783a24c20612f10095c7b0ab628
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -50,5 +50,5 @@ x-casaos:
     zh_TW: Luanti（LinuxServer.io）
   id: by-roket.linuxserver.luanti
   port_map: '30000'
-  version: 5.17.0
+  version: 5.18.0
   index: /

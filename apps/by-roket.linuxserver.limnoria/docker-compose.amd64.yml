@@ -1,7 +1,7 @@
 name: linuxserver-limnoria
 services:
   limnoria:
-    image: linuxserver/limnoria:2026.5.8@sha256:70e30128d4f84a1876f9b6c96676113e3b5d01096ddd0d806169a151094f9308
+    image: linuxserver/limnoria:2026.10.4@sha256:7c85c0d2080144ecd67e9938f6ffc7d157fac06089b0a8ed7843e63bef92e0ed
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -49,5 +49,5 @@ x-casaos:
     zh_TW: Limnoria（LinuxServer.io）
   id: by-roket.linuxserver.limnoria
   port_map: '8080'
-  version: 2026.5.8
+  version: 2026.10.4
   index: /
