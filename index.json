@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-19T09:04:40Z",
+  "updated_at": "2026-10-20T08:42:31Z",
   "app_count": 249,
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "apps": [
@@ -663,7 +663,7 @@
     {
       "id": "by-roket.linuxserver.craft-apps",
       "title": "Craft apps (LinuxServer.io)",
-      "tagline": "A suite of open source creative applications written in Rust. This image bundles PhotoCraft (image editor), VectorCraft (vector illustration), FilmCraft (video editor), LightCraft (photo library and raw developer), PdfCraft (PDF workbench), EffectCraft (motion graphics and VFX compositor) and DesignCraft (page layout and publishing) in a single desktop.",
+      "tagline": "A suite of open source creative applications written in Rust. This image bundles PhotoCraft (image editor), VectorCraft (vector illustration), FilmCraft (video editor), LightCraft (photo library and raw developer), PdfCraft (PDF workbench), EffectCraft (motion graphics and VFX compositor), DesignCraft (page layout and publishing) and FigCraft (interface design and prototyping) in a single desktop.",
       "category": "Media",
       "categories": [
         "media"
@@ -678,7 +678,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.craft-apps/assets/artcraft-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.craft-apps/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.craft-apps/meta.json",
-      "content_hash": "b92c0ce3",
+      "content_hash": "80b990ac",
       "version": "0.10.0"
     },
     {
@@ -1420,8 +1420,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.flycast/assets/flycast-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.flycast/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.flycast/meta.json",
-      "content_hash": "45f33e0c",
-      "version": "2.7.20261004"
+      "content_hash": "fbaf7449",
+      "version": "2.7.20261018"
     },
     {
       "id": "by-roket.linuxserver.foldingathome",
@@ -1897,8 +1897,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.jackett/assets/jackett-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.jackett/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.jackett/meta.json",
-      "content_hash": "6aabb6b0",
-      "version": "0.24.2867"
+      "content_hash": "a9811ff2",
+      "version": "0.24.2875"
     },
     {
       "id": "by-roket.linuxserver.jellyfin",
@@ -2164,7 +2164,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.lazylibrarian/assets/lazylibrarian-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.lazylibrarian/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lazylibrarian/meta.json",
-      "content_hash": "56eab867"
+      "content_hash": "cf720e6b"
     },
     {
       "id": "by-roket.linuxserver.ldap-auth",
@@ -2514,8 +2514,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.medusa/assets/medusa-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.medusa/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.medusa/meta.json",
-      "content_hash": "8d62279e",
-      "version": "1.0.26"
+      "content_hash": "bd47e9da",
+      "version": "1.0.27"
     },
     {
       "id": "by-roket.linuxserver.melonds",
@@ -3613,8 +3613,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.qdirstat/assets/qdirstat-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.qdirstat/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.qdirstat/meta.json",
-      "content_hash": "cf461d0b",
-      "version": "2.0.20261012"
+      "content_hash": "0ef8ab52",
+      "version": "2.0.20261018"
     },
     {
       "id": "by-roket.linuxserver.qemu-static",
@@ -3884,7 +3884,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.rpcs3/assets/rpcs3-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.rpcs3/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.rpcs3/meta.json",
-      "content_hash": "4b1db167"
+      "content_hash": "5e159608"
     },
     {
       "id": "by-roket.linuxserver.rsnapshot",
@@ -4028,7 +4028,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.shadps4/assets/shadps4-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.shadps4/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.shadps4/meta.json",
-      "content_hash": "2309880a"
+      "content_hash": "6c3bfefe"
     },
     {
       "id": "by-roket.linuxserver.shotcut",

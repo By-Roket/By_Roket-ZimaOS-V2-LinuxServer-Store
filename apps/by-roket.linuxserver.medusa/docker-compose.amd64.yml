@@ -1,7 +1,7 @@
 name: linuxserver-medusa
 services:
   medusa:
-    image: linuxserver/medusa:1.0.26@sha256:a5089ed42d6ca2a48c5cb42f0781c4591458f876f6a28338677b6e62f51ffa44
+    image: linuxserver/medusa:1.0.27@sha256:1732129bfe012570a49aecdfc9c984e597b2659d53dc9fd39b4892da7966acf2
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -55,5 +55,5 @@ x-casaos:
     zh_TW: Medusa（LinuxServer.io）
   id: by-roket.linuxserver.medusa
   port_map: '8081'
-  version: 1.0.26
+  version: 1.0.27
   index: /

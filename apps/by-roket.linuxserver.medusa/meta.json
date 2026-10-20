@@ -12,13 +12,13 @@
   "title": "Medusa (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.medusa",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 140309816,
-    "arm64": 138080701
+    "amd64": 141040274,
+    "arm64": 138815986
   }
 }
