@@ -12,13 +12,13 @@
   "title": "Kimai (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.kimai",
-  "version": "2.69.0",
+  "version": "2.70.0",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 133667705,
-    "arm64": 134270884
+    "amd64": 133780701,
+    "arm64": 134384899
   }
 }
