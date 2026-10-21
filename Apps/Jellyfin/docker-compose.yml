@@ -1,7 +1,7 @@
 name: linuxserver-jellyfin
 services:
   jellyfin:
-    image: linuxserver/jellyfin:12.2ubu2604-ls54
+    image: linuxserver/jellyfin:12.2ubu2604-ls55
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -470,6 +470,6 @@ x-casaos:
     zh_TW: Jellyfin（LinuxServer.io）
   category: Media
   id: by-roket.linuxserver.jellyfin
-  version: 12.2ubu2604-ls54
+  version: 12.2ubu2604-ls55
   index: /
   port_map: '8096'
