@@ -1,7 +1,7 @@
 name: linuxserver-emby
 services:
   emby:
-    image: linuxserver/emby:4.10.1
+    image: linuxserver/emby:4.10.2
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -254,6 +254,6 @@ x-casaos:
     zh_TW: Emby（LinuxServer.io）
   category: Media
   id: by-roket.linuxserver.emby
-  version: 4.10.1
+  version: 4.10.2
   index: /
   port_map: '8096'

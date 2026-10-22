@@ -1,7 +1,7 @@
 name: linuxserver-mariadb
 services:
   mariadb:
-    image: linuxserver/mariadb:11.8.8
+    image: linuxserver/mariadb:11.8.9
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -203,5 +203,5 @@ x-casaos:
   category: Developer
   id: by-roket.linuxserver.mariadb
   port_map: '3306'
-  version: 11.8.8
+  version: 11.8.9
   index: /
