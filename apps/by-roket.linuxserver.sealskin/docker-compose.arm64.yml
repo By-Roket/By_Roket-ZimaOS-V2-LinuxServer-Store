@@ -1,7 +1,7 @@
 name: linuxserver-sealskin
 services:
   sealskin:
-    image: linuxserver/sealskin:0.3.2@sha256:09a80b65fe686e2a5eab8e455ca4602ef1ceced394bbf935cfbd46e7c41f55be
+    image: linuxserver/sealskin:0.4.0@sha256:412880f73f3c0b29aba4cdfd300e804d8459613cfbbc59d66840e647d99e5531
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -14,6 +14,9 @@ services:
         protocol: tcp
       - target: 8000
         published: 8000
+        protocol: tcp
+      - target: 8444
+        published: 8444
         protocol: tcp
     volumes:
       - type: bind
@@ -59,5 +62,5 @@ x-casaos:
     zh_TW: Sealskin（LinuxServer.io）
   id: by-roket.linuxserver.sealskin
   port_map: '8000'
-  version: 0.3.2
+  version: 0.4.0
   index: /

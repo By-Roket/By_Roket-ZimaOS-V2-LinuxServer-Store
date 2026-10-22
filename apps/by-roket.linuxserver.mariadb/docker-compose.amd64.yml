@@ -1,7 +1,7 @@
 name: linuxserver-mariadb
 services:
   mariadb:
-    image: linuxserver/mariadb:11.8.8@sha256:b193db7f98fdbd46671408660abe3cffd1f474eafe1aad0717efe9186365367f
+    image: linuxserver/mariadb:11.8.9@sha256:2e6a148c7f7ac5ff1a18004b5d1fcc1ead4eceb17757453026c8f107e507072e
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -55,5 +55,5 @@ x-casaos:
     zh_TW: Mariadb（LinuxServer.io）
   id: by-roket.linuxserver.mariadb
   port_map: '3306'
-  version: 11.8.8
+  version: 11.8.9
   index: /

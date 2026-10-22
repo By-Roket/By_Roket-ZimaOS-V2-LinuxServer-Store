@@ -1,7 +1,7 @@
 name: linuxserver-plex
 services:
   plex:
-    image: linuxserver/plex:1.43.4@sha256:b0153e21fe6b9b02a275d5fd79c6a7a0bf0c570f2b7d41752647f921786a02b4
+    image: linuxserver/plex:1.43.5@sha256:564dc251ce38994e46a2060b62d0c9bc482ca4fb4a9053ae6f2dee72c992b116
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -57,5 +57,5 @@ x-casaos:
     zh_TW: Plex（LinuxServer.io）
   id: by-roket.linuxserver.plex
   port_map: '80'
-  version: 1.43.4
+  version: 1.43.5
   index: /

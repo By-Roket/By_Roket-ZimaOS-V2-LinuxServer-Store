@@ -1,7 +1,7 @@
 name: linuxserver-librewolf
 services:
   librewolf:
-    image: linuxserver/librewolf:157.0.1@sha256:d649af4bf3d5acedd8fda7219d366695603d82314cc0e3dd37d0f4aa69916130
+    image: linuxserver/librewolf:158.0.1@sha256:d4eda5927d5ea6faa84b58e610850926ecaa2874271531958f89c6619e8dd3d4
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -53,5 +53,5 @@ x-casaos:
     zh_TW: Librewolf（LinuxServer.io）
   id: by-roket.linuxserver.librewolf
   port_map: '3000'
-  version: 157.0.1
+  version: 158.0.1
   index: /

@@ -12,13 +12,13 @@
   "title": "Mariadb (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.mariadb",
-  "version": "11.8.8",
+  "version": "11.8.9",
   "categories": [
     "developer"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 110462308,
-    "arm64": 108354797
+    "amd64": 132763411,
+    "arm64": 129310344
   }
 }
