@@ -1,7 +1,7 @@
 name: linuxserver-telegram
 services:
   telegram:
-    image: linuxserver/telegram:7.3.2
+    image: linuxserver/telegram:7.3.3
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -144,5 +144,5 @@ x-casaos:
   category: Productivity
   id: by-roket.linuxserver.telegram
   port_map: '3000'
-  version: 7.3.2
+  version: 7.3.3
   index: /
