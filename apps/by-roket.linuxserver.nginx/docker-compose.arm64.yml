@@ -1,7 +1,7 @@
 name: linuxserver-nginx
 services:
   nginx:
-    image: linuxserver/nginx:1.30.4@sha256:a35886708acf496d634ec676554ad3076216a2187dfb9f92316243f5c2de842c
+    image: linuxserver/nginx:1.30.6@sha256:683e95fdfd3fc447f68ac404ec5b5b68382d394412386600e96943f2f05705de
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -54,5 +54,5 @@ x-casaos:
     zh_TW: Nginx（LinuxServer.io）
   id: by-roket.linuxserver.nginx
   port_map: '80'
-  version: 1.30.4
+  version: 1.30.6
   index: /

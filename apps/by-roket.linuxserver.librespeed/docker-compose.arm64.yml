@@ -1,7 +1,7 @@
 name: linuxserver-librespeed
 services:
   librespeed:
-    image: linuxserver/librespeed:6.3.0@sha256:4f68cf501cb51568220a100ee81eeabae79dd9681510e1fe6475bafa33e4400d
+    image: linuxserver/librespeed:6.3.1@sha256:56d33a78fb5c28db4b19d6c55c4ef6310ba7dfcf5a1ca80b33e57b283d666451
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -58,5 +58,5 @@ x-casaos:
     zh_TW: Librespeed（LinuxServer.io）
   id: by-roket.linuxserver.librespeed
   port_map: '80'
-  version: 6.3.0
+  version: 6.3.1
   index: /

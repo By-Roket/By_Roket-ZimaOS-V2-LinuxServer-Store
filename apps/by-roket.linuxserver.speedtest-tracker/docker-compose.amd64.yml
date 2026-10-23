@@ -1,7 +1,7 @@
 name: linuxserver-speedtest-tracker
 services:
   speedtest-tracker:
-    image: linuxserver/speedtest-tracker:1.15.0@sha256:6e78c3549a751814bbd796a8a28967b2b9ee48d3a5b903d843e47cb574134910
+    image: linuxserver/speedtest-tracker:1.15.1@sha256:9f8f8ea1c58679553fa52bf24e84c8fc1fa196b63a7fe17bad0b9eb5667ea33c
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -61,5 +61,5 @@ x-casaos:
     zh_TW: Speedtest tracker（LinuxServer.io）
   id: by-roket.linuxserver.speedtest-tracker
   port_map: '80'
-  version: 1.15.0
+  version: 1.15.1
   index: /

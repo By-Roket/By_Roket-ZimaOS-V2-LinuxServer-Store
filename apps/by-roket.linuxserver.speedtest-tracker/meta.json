@@ -12,13 +12,13 @@
   "title": "Speedtest tracker (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.speedtest-tracker",
-  "version": "1.15.0",
+  "version": "1.15.1",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 65944545,
-    "arm64": 66482679
+    "amd64": 66967382,
+    "arm64": 67497231
   }
 }

@@ -12,13 +12,13 @@
   "title": "Freshrss (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.freshrss",
-  "version": "1.30.2",
+  "version": "1.30.4",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 40803900,
-    "arm64": 41507441
+    "amd64": 40842142,
+    "arm64": 41542342
   }
 }

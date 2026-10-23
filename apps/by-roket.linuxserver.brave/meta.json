@@ -12,13 +12,13 @@
   "title": "Brave (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.brave",
-  "version": "1.97.59",
+  "version": "1.98.60",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1195562667,
-    "arm64": 1152814516
+    "amd64": 1189415018,
+    "arm64": 1146328874
   }
 }
