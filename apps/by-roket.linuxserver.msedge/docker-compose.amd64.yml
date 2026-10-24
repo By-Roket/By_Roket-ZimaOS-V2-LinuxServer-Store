@@ -1,7 +1,7 @@
 name: linuxserver-msedge
 services:
   msedge:
-    image: linuxserver/msedge:155.0.4283@sha256:454bdb0bc9cb0efd5f474bb90693cb2f361ba392a9bc8c4e320fc48e37aa9711
+    image: linuxserver/msedge:156.0.4314@sha256:a647bc339748d8b6d73cacad2c66ae406397a7657ba7f93fd9dd6defc7abd9e5
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -53,5 +53,5 @@ x-casaos:
     zh_TW: Msedge（LinuxServer.io）
   id: by-roket.linuxserver.msedge
   port_map: '3000'
-  version: 155.0.4283
+  version: 156.0.4314
   index: /

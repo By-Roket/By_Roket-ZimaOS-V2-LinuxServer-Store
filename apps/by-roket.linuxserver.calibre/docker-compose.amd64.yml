@@ -1,7 +1,7 @@
 name: linuxserver-calibre
 services:
   calibre:
-    image: linuxserver/calibre:9.16.0@sha256:8bff661d2509d8c2dc006c40064ccd440da769af2f667350e7b9c13499468b7f
+    image: linuxserver/calibre:9.17.0@sha256:be76ea1ea3ea5887fe010673992beb267e25f2fb0e9138643d252345c6520811
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -57,5 +57,5 @@ x-casaos:
     zh_TW: Calibre（LinuxServer.io）
   id: by-roket.linuxserver.calibre
   port_map: '8080'
-  version: 9.16.0
+  version: 9.17.0
   index: /
