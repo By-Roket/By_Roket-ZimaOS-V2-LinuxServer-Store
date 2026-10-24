@@ -1,7 +1,7 @@
 name: linuxserver-lazylibrarian
 services:
   lazylibrarian:
-    image: linuxserver/lazylibrarian:arm64v8-version-312bab80
+    image: linuxserver/lazylibrarian:version-81368287
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -42,6 +42,7 @@ services:
     container_name: lazylibrarian-by-roket
 x-casaos:
   architectures:
+  - amd64
   - arm64
   main: lazylibrarian
   description:
@@ -282,5 +283,5 @@ x-casaos:
   category: Productivity
   id: by-roket.linuxserver.lazylibrarian
   port_map: '5299'
-  version: arm64v8-version-312bab80
+  version: version-81368287
   index: /
