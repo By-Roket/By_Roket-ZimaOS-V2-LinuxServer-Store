@@ -12,13 +12,13 @@
   "title": "Unifi network-application (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.unifi-network-application",
-  "version": "10.6.106",
+  "version": "10.6.109",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 314914154,
-    "arm64": 313499334
+    "amd64": 310295146,
+    "arm64": 308832234
   }
 }

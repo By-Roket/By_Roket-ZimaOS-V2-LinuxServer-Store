@@ -12,13 +12,13 @@
   "title": "Adguardhome sync (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.adguardhome-sync",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 26981991,
-    "arm64": 26311022
+    "amd64": 27014802,
+    "arm64": 26337937
   }
 }
