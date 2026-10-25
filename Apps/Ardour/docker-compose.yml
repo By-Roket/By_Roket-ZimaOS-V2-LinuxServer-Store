@@ -1,7 +1,7 @@
 name: linuxserver-ardour
 services:
   ardour:
-    image: linuxserver/ardour:version-2026-10-19
+    image: linuxserver/ardour:version-2026-10-23
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -181,5 +181,5 @@ x-casaos:
   category: Others
   id: by-roket.linuxserver.ardour
   port_map: '3000'
-  version: version-2026-10-19
+  version: version-2026-10-23
   index: /
