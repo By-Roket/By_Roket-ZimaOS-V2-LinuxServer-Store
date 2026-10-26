@@ -12,13 +12,13 @@
   "title": "Minisatip (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.minisatip",
-  "version": "2.0.169",
+  "version": "2.0.170",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 52033063,
-    "arm64": 51815630
+    "amd64": 52049774,
+    "arm64": 51835808
   }
 }

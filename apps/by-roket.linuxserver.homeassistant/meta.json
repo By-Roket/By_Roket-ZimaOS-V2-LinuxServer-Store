@@ -12,13 +12,13 @@
   "title": "Homeassistant (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.homeassistant",
-  "version": "2026.10.2",
+  "version": "2026.10.4",
   "categories": [
     "home"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 720867134,
-    "arm64": 708123309
+    "amd64": 716029307,
+    "arm64": 703488758
   }
 }
