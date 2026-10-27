@@ -1,7 +1,7 @@
 name: linuxserver-duckdns
 services:
   duckdns:
-    image: linuxserver/duckdns:version-8d8f7eba@sha256:fc25fe4579df24970592d38a7d8f9e7d28c5404f28a1abc9f748d05bf1b0c924
+    image: linuxserver/duckdns:version-8aabc87c@sha256:062fd8490b81a43e23ca0fafdd75027744575c448fb855969fa8b827d0033d51
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -56,5 +56,5 @@ x-casaos:
     zh_TW: Duckdns（LinuxServer.io）
   id: by-roket.linuxserver.duckdns
   port_map: '80'
-  version: version-8d8f7eba
+  version: version-8aabc87c
   index: /

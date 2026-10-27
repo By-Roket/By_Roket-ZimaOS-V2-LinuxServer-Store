@@ -12,13 +12,13 @@
   "title": "Lidarr (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.lidarr",
-  "version": "3.1.0",
+  "version": "3.1.6",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 122712173,
-    "arm64": 118393417
+    "amd64": 121338289,
+    "arm64": 117009548
   }
 }

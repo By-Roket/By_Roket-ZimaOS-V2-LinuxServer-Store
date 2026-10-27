@@ -1,7 +1,7 @@
 name: linuxserver-lidarr
 services:
   lidarr:
-    image: linuxserver/lidarr:3.1.0@sha256:4d769f18f49b89f89f21dc06808305b2f9aea21175a932dc686f593a78493cff
+    image: linuxserver/lidarr:3.1.6@sha256:32d576b97dadac6ea045fa884e7bf3db24428c4c9e3c2f7a6ac9fef4b4a16462
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -55,5 +55,5 @@ x-casaos:
     zh_TW: Lidarr（LinuxServer.io）
   id: by-roket.linuxserver.lidarr
   port_map: '8686'
-  version: 3.1.0
+  version: 3.1.6
   index: /
