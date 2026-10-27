@@ -1,7 +1,7 @@
 name: linuxserver-lidarr
 services:
   lidarr:
-    image: linuxserver/lidarr:3.1.0
+    image: linuxserver/lidarr:3.1.6
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -318,5 +318,5 @@ x-casaos:
   category: Media
   id: by-roket.linuxserver.lidarr
   port_map: '8686'
-  version: 3.1.0
+  version: 3.1.6
   index: /
