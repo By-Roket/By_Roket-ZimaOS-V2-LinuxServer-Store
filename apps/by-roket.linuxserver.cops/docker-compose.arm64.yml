@@ -1,7 +1,7 @@
 name: linuxserver-cops
 services:
   cops:
-    image: linuxserver/cops:4.5.4@sha256:56b9eedc14fc26a9b9d9d5bef3f8020a8be9a0594635248aeefcad48a3aa79e3
+    image: linuxserver/cops:4.6.1@sha256:7a2f30b8a8fbd4fadc7d22ee96f69156556b86762c5c74a216076229f01c29fa
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -55,5 +55,5 @@ x-casaos:
     zh_TW: Cops（LinuxServer.io）
   id: by-roket.linuxserver.cops
   port_map: '80'
-  version: 4.5.4
+  version: 4.6.1
   index: /
