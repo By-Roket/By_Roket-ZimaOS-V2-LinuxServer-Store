@@ -1,6 +1,7 @@
 {
   "architectures": [
-    "amd64"
+    "amd64",
+    "arm64"
   ],
   "description": "Kometa is a powerful tool designed to give you complete control over your media libraries. With Kometa, you can take your customization to the next level, with granular control over metadata, collections, overlays, and much more.",
   "tagline": "A powerful tool designed to give you complete control over your media libraries. With Kometa, you can take your customization to the next level, with granular control over metadata, collections, overlays, and much more.",
@@ -11,12 +12,13 @@
   "title": "Kometa (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.kometa",
-  "version": "amd64-2.5.3",
+  "version": "2.5.3",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 315646735
+    "amd64": 315641978,
+    "arm64": 314896092
   }
 }

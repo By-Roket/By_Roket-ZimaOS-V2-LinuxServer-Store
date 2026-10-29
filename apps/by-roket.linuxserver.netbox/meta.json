@@ -12,13 +12,13 @@
   "title": "Netbox (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.netbox",
-  "version": "4.7.3",
+  "version": "4.7.4",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 146693576,
-    "arm64": 146239936
+    "amd64": 131472749,
+    "arm64": 131108883
   }
 }

@@ -1,7 +1,7 @@
 name: linuxserver-prowlarr
 services:
   prowlarr:
-    image: linuxserver/prowlarr:2.6.5@sha256:7b50747630bd51c47e2530cd282dddca3addff97600ec0ce331ae6d5d6223e40
+    image: linuxserver/prowlarr:2.7.0@sha256:7b3a2b8580f7aaeef2fed00946e903b2ac4897a1737e5eca4e78c773c5c63f7a
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -49,5 +49,5 @@ x-casaos:
     zh_TW: Prowlarr（LinuxServer.io）
   id: by-roket.linuxserver.prowlarr
   port_map: '9696'
-  version: 2.6.5
+  version: 2.7.0
   index: /

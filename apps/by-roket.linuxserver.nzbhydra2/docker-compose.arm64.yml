@@ -1,7 +1,7 @@
 name: linuxserver-nzbhydra2
 services:
   nzbhydra2:
-    image: linuxserver/nzbhydra2:9.1.1@sha256:ad6f8e464c06547c7b9cc2115182f89825be02b483a7242e88cf7bfd2c6dc4f4
+    image: linuxserver/nzbhydra2:9.2.0@sha256:5dbe60f9741ccf38cff4b91f93692dded6c6eed67ece16f5094998ba84ae0084
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Nzbhydra2（LinuxServer.io）
   id: by-roket.linuxserver.nzbhydra2
   port_map: '5076'
-  version: 9.1.1
+  version: 9.2.0
   index: /
