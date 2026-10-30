@@ -1,7 +1,7 @@
 name: linuxserver-doublecommander
 services:
   doublecommander:
-    image: linuxserver/doublecommander:version-94a19f35
+    image: linuxserver/doublecommander:version-bb4442e7
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -55,5 +55,5 @@ x-casaos:
     zh_TW: Doublecommander（LinuxServer.io）
   id: by-roket.linuxserver.doublecommander
   port_map: '3000'
-  version: version-94a19f35
+  version: version-bb4442e7
   index: /
