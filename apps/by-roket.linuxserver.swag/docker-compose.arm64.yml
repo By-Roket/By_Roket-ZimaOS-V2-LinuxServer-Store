@@ -1,7 +1,7 @@
 name: linuxserver-swag
 services:
   swag:
-    image: linuxserver/swag:5.8.0@sha256:c71b3653d5b2db45f5026e5cf77ed5e6a70a410867a2ef657012739e10e1586f
+    image: linuxserver/swag:5.9.0@sha256:61e2196500141b2ea66bf8a4ea5ce6dad67626d63ad74e5469e5577951e34abb
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -69,5 +69,5 @@ x-casaos:
     zh_TW: Swag（LinuxServer.io）
   id: by-roket.linuxserver.swag
   port_map: '80'
-  version: 5.8.0
+  version: 5.9.0
   index: /

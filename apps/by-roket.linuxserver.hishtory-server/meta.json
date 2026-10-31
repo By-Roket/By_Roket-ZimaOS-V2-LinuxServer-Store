@@ -12,13 +12,13 @@
   "title": "Hishtory server (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.hishtory-server",
-  "version": "0.335.20261023",
+  "version": "0.335.20261030",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 50045437,
-    "arm64": 48566146
+    "amd64": 50045515,
+    "arm64": 48566419
   }
 }

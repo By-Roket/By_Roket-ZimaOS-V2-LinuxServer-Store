@@ -1,6 +1,6 @@
 {
   "id": "by-roket.linuxserver.quassel-web",
   "title": "Quassel web",
-  "tagline": "Client web pour Quassel. Veuillez noter qu'une instance Quassel-Core est requise ; un conteneur est disponible ici.",
-  "description": "Visitez la page d'accueil : https://hub.docker.com/r/linuxserver/quassel-web/"
+  "description": "Visitez la page d'accueil : https://hub.docker.com/r/linuxserver/quassel-web/",
+  "tagline": "Client web pour Quassel. Veuillez noter qu'une instance Quassel-Core est requise ; un conteneur est disponible ici."
 }

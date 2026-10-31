@@ -1,7 +1,7 @@
 name: linuxserver-audiosilo
 services:
   audiosilo:
-    image: linuxserver/audiosilo:2.5.0
+    image: linuxserver/audiosilo:2.5.1
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -26,5 +26,5 @@ x-casaos:
     en_US: Audiosilo (LinuxServer.io)
   id: by-roket.linuxserver.audiosilo
   port_map: '8080'
-  version: 2.5.0
+  version: 2.5.1
   index: /

@@ -1,7 +1,7 @@
 name: linuxserver-transmission
 services:
   transmission:
-    image: linuxserver/transmission:4.1.3@sha256:90193748b07ab2d0014c7b3cbc5310dec88c599aee477c50eac6c6ab0687f9cb
+    image: linuxserver/transmission:4.1.4@sha256:48ef9dd6e3d7e48de55d43cc1e16fd6e9ea269a2f06c0593a3ecbd74755fd387
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -66,6 +66,6 @@ x-casaos:
     zh_CN: Transmission（LinuxServer.io）
     zh_TW: Transmission（LinuxServer.io）
   id: by-roket.linuxserver.transmission
-  version: 4.1.3
+  version: 4.1.4
   index: /
   port_map: '9091'

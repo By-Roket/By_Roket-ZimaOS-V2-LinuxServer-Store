@@ -1,7 +1,7 @@
 name: linuxserver-heimdall
 services:
   heimdall:
-    image: linuxserver/heimdall:2.8.3@sha256:c6c8652e82513c6f5c2c157419629ed77719901b56f187abb7adc3a64aa1b779
+    image: linuxserver/heimdall:2.8.4@sha256:2d7521b2d4111e3a06475f19e2f54ddb7ce6bc73d5e772253fa2436ddb300a27
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -53,5 +53,5 @@ x-casaos:
     zh_TW: Heimdall（LinuxServer.io）
   id: by-roket.linuxserver.heimdall
   port_map: '80'
-  version: 2.8.3
+  version: 2.8.4
   index: /
