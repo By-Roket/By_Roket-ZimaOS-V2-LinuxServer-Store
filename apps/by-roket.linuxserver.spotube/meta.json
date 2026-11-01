@@ -12,13 +12,13 @@
   "title": "Spotube (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.spotube",
-  "version": "5.1.2",
+  "version": "6.0.0",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1155576796,
-    "arm64": 1108263755
+    "amd64": 1159393351,
+    "arm64": 1114720426
   }
 }
