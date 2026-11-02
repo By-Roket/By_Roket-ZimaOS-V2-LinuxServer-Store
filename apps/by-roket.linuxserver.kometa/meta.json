@@ -12,13 +12,13 @@
   "title": "Kometa (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.kometa",
-  "version": "2.5.3",
+  "version": "2.5.4",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 315641978,
-    "arm64": 314896092
+    "amd64": 317862374,
+    "arm64": 317278219
   }
 }
