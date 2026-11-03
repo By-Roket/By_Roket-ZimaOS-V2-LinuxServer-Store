@@ -12,13 +12,13 @@
   "title": "Mstream (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.mstream",
-  "version": "6.32.1",
+  "version": "6.32.2",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 401698342,
-    "arm64": 403195558
+    "amd64": 401921890,
+    "arm64": 403410547
   }
 }

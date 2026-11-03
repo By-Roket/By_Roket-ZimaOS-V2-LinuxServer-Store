@@ -12,13 +12,13 @@
   "title": "Duckdns (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.duckdns",
-  "version": "version-8aabc87c",
+  "version": "version-aad9dc1f",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 15719174,
-    "arm64": 16834195
+    "amd64": 15724255,
+    "arm64": 16841934
   }
 }

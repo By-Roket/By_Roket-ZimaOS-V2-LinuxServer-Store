@@ -1,7 +1,7 @@
 name: linuxserver-openshot
 services:
   openshot:
-    image: linuxserver/openshot:4.0.1@sha256:921984a46ac4b29d14717c00debcb8a2b884c212e5823e34861aab2c7bd644cf
+    image: linuxserver/openshot:4.1.0@sha256:713e481e836f3bda5c560f5a4c9d36181ce36f59c773e7d5859ee9ef394804ad
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Openshot（LinuxServer.io）
   id: by-roket.linuxserver.openshot
   port_map: '3000'
-  version: 4.0.1
+  version: 4.1.0
   index: /
