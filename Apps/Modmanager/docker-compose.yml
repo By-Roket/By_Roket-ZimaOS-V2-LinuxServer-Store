@@ -1,7 +1,7 @@
 name: linuxserver-modmanager
 services:
   modmanager:
-    image: linuxserver/modmanager:arm64v8-version-53dba8d3
+    image: linuxserver/modmanager:version-53dba8d3
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -31,6 +31,7 @@ services:
     container_name: modmanager-by-roket
 x-casaos:
   architectures:
+  - amd64
   - arm64
   main: modmanager
   description:
@@ -171,5 +172,5 @@ x-casaos:
   category: Developer
   id: by-roket.linuxserver.modmanager
   port_map: '80'
-  version: arm64v8-version-53dba8d3
+  version: version-53dba8d3
   index: /
