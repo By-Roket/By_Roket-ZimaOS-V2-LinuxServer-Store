@@ -12,13 +12,13 @@
   "title": "Jellyfin (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.jellyfin",
-  "version": "12.4ubu2604-ls57",
+  "version": "12.4ubu2604-ls58",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 342394785,
-    "arm64": 305873215
+    "amd64": 341749854,
+    "arm64": 305019798
   }
 }

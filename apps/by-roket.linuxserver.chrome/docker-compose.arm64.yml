@@ -1,7 +1,7 @@
 name: linuxserver-chrome
 services:
   chrome:
-    image: linuxserver/chrome:156.0.8078@sha256:ce776a5cdcd0e010b82394cdcbb29fd1361910ab45671e789e74c2f78b0c39e3
+    image: linuxserver/chrome:157.0.8103@sha256:dfe99eca9ce8562a4fd3cdbfaf83fc533d1aa0b9cd155ecaca2b775a4a1fa87d
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -53,5 +53,5 @@ x-casaos:
     zh_TW: Chrome（LinuxServer.io）
   id: by-roket.linuxserver.chrome
   port_map: '3000'
-  version: 156.0.8078
+  version: 157.0.8103
   index: /

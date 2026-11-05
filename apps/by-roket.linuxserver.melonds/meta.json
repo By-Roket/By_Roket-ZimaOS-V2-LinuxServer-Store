@@ -12,13 +12,13 @@
   "title": "Melonds (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.melonds",
-  "version": "1.1.20261026",
+  "version": "1.1.20261103",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1002862973,
-    "arm64": 966206345
+    "amd64": 948114027,
+    "arm64": 911497981
   }
 }
