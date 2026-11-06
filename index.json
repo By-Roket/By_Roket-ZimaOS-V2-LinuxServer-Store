@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-11-05T11:09:45Z",
+  "updated_at": "2026-11-06T11:07:01Z",
   "app_count": 249,
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "apps": [
@@ -4460,7 +4460,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.tester/assets/12324908.webp",
       "compose_url": "/apps/by-roket.linuxserver.tester/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.tester/meta.json",
-      "content_hash": "16404b24"
+      "content_hash": "23cb651b"
     },
     {
       "id": "by-roket.linuxserver.thelounge",
