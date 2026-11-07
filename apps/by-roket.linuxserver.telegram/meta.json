@@ -12,13 +12,13 @@
   "title": "Telegram (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.telegram",
-  "version": "7.3.3",
+  "version": "7.3.5",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1663047403,
-    "arm64": 1728103922
+    "amd64": 1686257167,
+    "arm64": 1751031393
   }
 }

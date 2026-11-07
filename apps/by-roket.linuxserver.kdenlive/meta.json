@@ -12,13 +12,13 @@
   "title": "Kdenlive (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.kdenlive",
-  "version": "26.08.2",
+  "version": "26.08.3",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1644684918,
-    "arm64": 1669377568
+    "amd64": 1657532046,
+    "arm64": 1689254138
   }
 }

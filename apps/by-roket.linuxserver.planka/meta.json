@@ -12,13 +12,13 @@
   "title": "Planka (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.planka",
-  "version": "2.2.1",
+  "version": "2.3.1",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 126229938,
-    "arm64": 127028611
+    "amd64": 118659362,
+    "arm64": 119163318
   }
 }

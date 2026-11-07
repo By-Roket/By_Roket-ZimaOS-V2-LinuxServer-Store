@@ -12,13 +12,13 @@
   "title": "Helium (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.helium",
-  "version": "0.20.3",
+  "version": "0.21.1",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1150247239,
-    "arm64": 1114487321
+    "amd64": 1101982620,
+    "arm64": 1065750354
   }
 }

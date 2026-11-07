@@ -1,7 +1,7 @@
 name: linuxserver-wireshark
 services:
   wireshark:
-    image: linuxserver/wireshark:4.6.6@sha256:9dae267f4f74002947c3c12035f5f6bc1c39d458b57e7260264dff86cfedb7f6
+    image: linuxserver/wireshark:4.6.9@sha256:7f12124688681621aada601ebf74e7938b84e3708eeae7680dd2bd3a61b013cf
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -55,5 +55,5 @@ x-casaos:
     zh_TW: Wireshark（LinuxServer.io）
   id: by-roket.linuxserver.wireshark
   port_map: '80'
-  version: 4.6.6
+  version: 4.6.9
   index: /

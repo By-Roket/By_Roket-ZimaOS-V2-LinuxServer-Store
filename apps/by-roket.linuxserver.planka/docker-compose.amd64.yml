@@ -1,7 +1,7 @@
 name: linuxserver-planka
 services:
   planka:
-    image: linuxserver/planka:2.2.1@sha256:6d405c870d2caff5bc71dfa3ff0b370e8fb354b941b9974eadae07bc69aba5bb
+    image: linuxserver/planka:2.3.1@sha256:ed54296acd90dceee276d32a99e1075bdcf9b923a5134adc9ca928d0bfe35255
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -58,5 +58,5 @@ x-casaos:
     zh_TW: Planka（LinuxServer.io）
   id: by-roket.linuxserver.planka
   port_map: '1337'
-  version: 2.2.1
+  version: 2.3.1
   index: /

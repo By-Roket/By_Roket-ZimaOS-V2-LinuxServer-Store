@@ -1,7 +1,7 @@
 name: linuxserver-vivaldi
 services:
   vivaldi:
-    image: linuxserver/vivaldi:8.2.4133@sha256:d85b0ffd088a9145c956fa4323173e1ce6210a003a1cb4dafe8bc29b489d1dcf
+    image: linuxserver/vivaldi:8.3.4191@sha256:7ab76538aafc712ab6b6feeadd73db58e84cf9647fa69218c02c8b27d0258749
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -53,5 +53,5 @@ x-casaos:
     zh_TW: Vivaldi（LinuxServer.io）
   id: by-roket.linuxserver.vivaldi
   port_map: '3000'
-  version: 8.2.4133
+  version: 8.3.4191
   index: /

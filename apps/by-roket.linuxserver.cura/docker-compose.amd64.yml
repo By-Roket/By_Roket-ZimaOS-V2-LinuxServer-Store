@@ -1,7 +1,7 @@
 name: linuxserver-cura
 services:
   cura:
-    image: linuxserver/cura:5.13.0@sha256:8629974b0012bfd4d2644d4e39cd69cf365eaf9b233e6e65b7215e183e59ea27
+    image: linuxserver/cura:5.14.0@sha256:fe13be205a227668b470dc0822524443417dda83d3b17d216c51aa435311b04d
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Cura（LinuxServer.io）
   id: by-roket.linuxserver.cura
   port_map: '3000'
-  version: 5.13.0
+  version: 5.14.0
   index: /
