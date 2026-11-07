@@ -1,7 +1,7 @@
 name: linuxserver-craft-apps
 services:
   craft-apps:
-    image: linuxserver/craft-apps:0.20.1
+    image: linuxserver/craft-apps:0.20.2
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -42,15 +42,17 @@ x-casaos:
       This image bundles PhotoCraft (image editor), VectorCraft (vector illustration),
       FilmCraft (video editor), LightCraft (photo library and raw developer), PdfCraft
       (PDF workbench), EffectCraft (motion graphics and VFX compositor), DesignCraft
-      (page layout and publishing) and FigCraft (interface design and prototyping)
-      in a single desktop.
+      (page layout and publishing), FigCraft (interface design and prototyping), TextureCraft
+      (3D texture painting) and MaterialCraft (node-based material design) in a single
+      desktop.
   tagline:
     en_US: A suite of open source creative applications written in Rust. This image
       bundles PhotoCraft (image editor), VectorCraft (vector illustration), FilmCraft
       (video editor), LightCraft (photo library and raw developer), PdfCraft (PDF
       workbench), EffectCraft (motion graphics and VFX compositor), DesignCraft (page
-      layout and publishing) and FigCraft (interface design and prototyping) in a
-      single desktop.
+      layout and publishing), FigCraft (interface design and prototyping), TextureCraft
+      (3D texture painting) and MaterialCraft (node-based material design) in a single
+      desktop.
   developer: LinuxServer.io
   author: WisdomSky
   icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/artcraft-logo.png
@@ -60,5 +62,5 @@ x-casaos:
   category: Media
   id: by-roket.linuxserver.craft-apps
   port_map: '3000'
-  version: 0.20.1
+  version: 0.20.2
   index: /

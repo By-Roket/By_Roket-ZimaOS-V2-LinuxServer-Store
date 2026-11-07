@@ -1,7 +1,7 @@
 name: linuxserver-winegui
 services:
   winegui:
-    image: linuxserver/winegui:4.5.1
+    image: linuxserver/winegui:4.5.2
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -175,5 +175,5 @@ x-casaos:
   category: Others
   id: by-roket.linuxserver.winegui
   port_map: '3000'
-  version: 4.5.1
+  version: 4.5.2
   index: /
