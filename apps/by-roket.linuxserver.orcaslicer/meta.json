@@ -12,13 +12,13 @@
   "title": "Orcaslicer (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.orcaslicer",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1737711994,
-    "arm64": 1661308586
+    "amd64": 1742838025,
+    "arm64": 1667879527
   }
 }

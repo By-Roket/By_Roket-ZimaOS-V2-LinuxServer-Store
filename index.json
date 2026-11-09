@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-11-07T10:26:44Z",
+  "updated_at": "2026-11-09T11:48:41Z",
   "app_count": 249,
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "apps": [
@@ -85,8 +85,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.apprise-api/assets/logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.apprise-api/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.apprise-api/meta.json",
-      "content_hash": "43daeece",
-      "version": "2.0.2"
+      "content_hash": "2377c46b",
+      "version": "2.1.0"
     },
     {
       "id": "by-roket.linuxserver.ardour",
@@ -106,7 +106,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.ardour/assets/ardour-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.ardour/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.ardour/meta.json",
-      "content_hash": "78362c68"
+      "content_hash": "845cf1b3"
     },
     {
       "id": "by-roket.linuxserver.audacity",
@@ -146,8 +146,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.audiosilo/assets/audiosilo-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.audiosilo/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.audiosilo/meta.json",
-      "content_hash": "9863686a",
-      "version": "2.5.1"
+      "content_hash": "4335cd88",
+      "version": "2.6.0"
     },
     {
       "id": "by-roket.linuxserver.azahar",
@@ -269,7 +269,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.bitcoin-knots/assets/bitcoin-knots-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.bitcoin-knots/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.bitcoin-knots/meta.json",
-      "content_hash": "f530c608"
+      "content_hash": "a4053a43"
     },
     {
       "id": "by-roket.linuxserver.blade-of-agony",
@@ -636,8 +636,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.code-server/assets/code-server-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.code-server/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.code-server/meta.json",
-      "content_hash": "63d62f97",
-      "version": "4.145.0"
+      "content_hash": "f4a54c4a",
+      "version": "4.145.2"
     },
     {
       "id": "by-roket.linuxserver.cops",
@@ -678,8 +678,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.craft-apps/assets/artcraft-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.craft-apps/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.craft-apps/meta.json",
-      "content_hash": "6347bc0b",
-      "version": "0.20.2"
+      "content_hash": "aadd3389",
+      "version": "0.21.0"
     },
     {
       "id": "by-roket.linuxserver.cura",
@@ -906,7 +906,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.dogwalk/assets/dogwalk-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.dogwalk/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.dogwalk/meta.json",
-      "content_hash": "778758de"
+      "content_hash": "9eba130f"
     },
     {
       "id": "by-roket.linuxserver.dokuwiki",
@@ -1358,8 +1358,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.firefox/assets/firefox-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.firefox/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.firefox/meta.json",
-      "content_hash": "c4c71fa1",
-      "version": "1.2404.1"
+      "content_hash": "e7b39a3b",
+      "version": "1159.0.1"
     },
     {
       "id": "by-roket.linuxserver.fleet",
@@ -1586,8 +1586,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.grav/assets/grav-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.grav/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.grav/meta.json",
-      "content_hash": "06d144b4",
-      "version": "2.2.26"
+      "content_hash": "ac947a21",
+      "version": "2.2.28"
     },
     {
       "id": "by-roket.linuxserver.grocy",
@@ -1897,8 +1897,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.jackett/assets/jackett-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.jackett/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.jackett/meta.json",
-      "content_hash": "d4dc4896",
-      "version": "0.24.3021"
+      "content_hash": "898e8202",
+      "version": "0.24.3030"
     },
     {
       "id": "by-roket.linuxserver.jellyfin",
@@ -2164,7 +2164,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.lazylibrarian/assets/lazylibrarian-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.lazylibrarian/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lazylibrarian/meta.json",
-      "content_hash": "d17f0200"
+      "content_hash": "78f77399"
     },
     {
       "id": "by-roket.linuxserver.ldap-auth",
@@ -2309,7 +2309,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.lm-studio/assets/lmstudio-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.lm-studio/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lm-studio/meta.json",
-      "content_hash": "5feee79f"
+      "content_hash": "77a270ab"
     },
     {
       "id": "by-roket.linuxserver.lollypop",
@@ -2390,8 +2390,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.lychee/assets/lychee-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.lychee/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.lychee/meta.json",
-      "content_hash": "8b1e0b75",
-      "version": "7.12.1"
+      "content_hash": "0e85b9b6",
+      "version": "7.12.2"
     },
     {
       "id": "by-roket.linuxserver.mame",
@@ -2577,8 +2577,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.minisatip/assets/minisatip-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.minisatip/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.minisatip/meta.json",
-      "content_hash": "d68e7789",
-      "version": "2.0.189"
+      "content_hash": "cf83f54b",
+      "version": "2.0.190"
     },
     {
       "id": "by-roket.linuxserver.modmanager",
@@ -2679,8 +2679,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.mstream/assets/mstream-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.mstream/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.mstream/meta.json",
-      "content_hash": "385cb085",
-      "version": "6.32.3"
+      "content_hash": "b9ac391b",
+      "version": "6.33.1"
     },
     {
       "id": "by-roket.linuxserver.mullvad-browser",
@@ -2951,8 +2951,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.nzbget/assets/nzbget-banner.webp",
       "compose_url": "/apps/by-roket.linuxserver.nzbget/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.nzbget/meta.json",
-      "content_hash": "915595a2",
-      "version": "26.3.20261030"
+      "content_hash": "65671f31",
+      "version": "26.3.20261106"
     },
     {
       "id": "by-roket.linuxserver.nzbhydra2",
@@ -3136,8 +3136,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.orcaslicer/assets/orcaslicer-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.orcaslicer/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.orcaslicer/meta.json",
-      "content_hash": "12621437",
-      "version": "2.4.2"
+      "content_hash": "67e2ca93",
+      "version": "2.5.0"
     },
     {
       "id": "by-roket.linuxserver.oscam",
@@ -3884,7 +3884,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.rpcs3/assets/rpcs3-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.rpcs3/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.rpcs3/meta.json",
-      "content_hash": "10f3d3ff"
+      "content_hash": "1c812422"
     },
     {
       "id": "by-roket.linuxserver.rsnapshot",
@@ -3987,8 +3987,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.sealskin/assets/sealskin-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.sealskin/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.sealskin/meta.json",
-      "content_hash": "fe067cbd",
-      "version": "0.4.1"
+      "content_hash": "af37c751",
+      "version": "0.4.2"
     },
     {
       "id": "by-roket.linuxserver.series-troxide",
@@ -4440,8 +4440,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.telegram/assets/telegram-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.telegram/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.telegram/meta.json",
-      "content_hash": "72db3ed1",
-      "version": "7.3.5"
+      "content_hash": "1eafee79",
+      "version": "7.4.1"
     },
     {
       "id": "by-roket.linuxserver.tester",
@@ -4814,8 +4814,7 @@
       "thumbnail": "/apps/by-roket.linuxserver.webstation/assets/webstation-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.webstation/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.webstation/meta.json",
-      "content_hash": "8795c842",
-      "version": "0.15.3-romm"
+      "content_hash": "dc1aa816"
     },
     {
       "id": "by-roket.linuxserver.webtop",
@@ -5103,8 +5102,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.zen/assets/zen-logo.webp",
       "compose_url": "/apps/by-roket.linuxserver.zen/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.zen/meta.json",
-      "content_hash": "10cf094b",
-      "version": "1.23.4"
+      "content_hash": "872a00b1",
+      "version": "1.24.1"
     },
     {
       "id": "by-roket.linuxserver.znc",
@@ -5144,8 +5143,8 @@
       "thumbnail": "/apps/by-roket.linuxserver.zotero/assets/zotero-icon.webp",
       "compose_url": "/apps/by-roket.linuxserver.zotero/docker-compose.yml",
       "meta_url": "/apps/by-roket.linuxserver.zotero/meta.json",
-      "content_hash": "8c08350a",
-      "version": "10.0.7"
+      "content_hash": "267c373b",
+      "version": "10.0.8"
     }
   ]
 }

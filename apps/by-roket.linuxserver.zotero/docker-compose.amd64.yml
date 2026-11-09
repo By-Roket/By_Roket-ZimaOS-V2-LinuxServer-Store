@@ -1,7 +1,7 @@
 name: linuxserver-zotero
 services:
   zotero:
-    image: linuxserver/zotero:10.0.7@sha256:c951da85c4c9876f57b183c1d4793cd1d41be8b8ac99ec41efe2e1503c3a6950
+    image: linuxserver/zotero:10.0.8@sha256:452627130960748cdd88dba387f025f19b0782d1bd70af3e7c7845def3f17187
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Zotero（LinuxServer.io）
   id: by-roket.linuxserver.zotero
   port_map: '3000'
-  version: 10.0.7
+  version: 10.0.8
   index: /
