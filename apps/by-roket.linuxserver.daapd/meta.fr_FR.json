@@ -1,6 +1,6 @@
 {
   "id": "by-roket.linuxserver.daapd",
   "title": "Daapd",
-  "description": "Visitez la page d'accueil : https://hub.docker.com/r/linuxserver/daapd/",
-  "tagline": "Serveur multimédia (iTunes) prenant en charge les appareils AirPlay, Apple Remote (et compatibles), Chromecast, MPD et la radio Internet."
+  "tagline": "Serveur multimédia (iTunes) prenant en charge les appareils AirPlay, Apple Remote (et compatibles), Chromecast, MPD et la radio Internet.",
+  "description": "Visitez la page d'accueil : https://hub.docker.com/r/linuxserver/daapd/"
 }

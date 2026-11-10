@@ -1,7 +1,7 @@
 name: linuxserver-weixin
 services:
   weixin:
-    image: linuxserver/weixin:version-791ee7a4
+    image: linuxserver/weixin:version-2375497e
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: 微信（LinuxServer.io）
   id: by-roket.linuxserver.weixin
   port_map: '3000'
-  version: version-791ee7a4
+  version: version-2375497e
   index: /

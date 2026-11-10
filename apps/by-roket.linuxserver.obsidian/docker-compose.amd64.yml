@@ -1,7 +1,7 @@
 name: linuxserver-obsidian
 services:
   obsidian:
-    image: linuxserver/obsidian:1.14.5@sha256:0bf1a3caea94802cbe9fd61dbd241f66e6f8b179f8bbacc222dd5ed92699d758
+    image: linuxserver/obsidian:1.15.0@sha256:8211daea90b75fd172469e2a19a14f80eec4473fb86c669382cd6d70628926cd
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Obsidian（LinuxServer.io）
   id: by-roket.linuxserver.obsidian
   port_map: '3000'
-  version: 1.14.5
+  version: 1.15.0
   index: /
