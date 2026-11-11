@@ -12,13 +12,13 @@
   "title": "Craft apps (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.craft-apps",
-  "version": "0.21.0",
+  "version": "0.22.0",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 2112970885,
-    "arm64": 2051025649
+    "amd64": 2141382502,
+    "arm64": 2077562865
   }
 }

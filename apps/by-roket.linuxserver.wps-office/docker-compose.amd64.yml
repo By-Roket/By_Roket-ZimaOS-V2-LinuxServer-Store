@@ -1,7 +1,7 @@
 name: linuxserver-wps-office
 services:
   wps-office:
-    image: linuxserver/wps-office:11.1.0@sha256:43b82d6155a79a1df68dd92ec5914fb414b67dd69f204e82704a7409d71fc617
+    image: linuxserver/wps-office:12.1.2@sha256:0073872fbd0a15e9d93e33bdab815137f0b00117a39b0d88f3eefe1066c474fc
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Wps office（LinuxServer.io）
   id: by-roket.linuxserver.wps-office
   port_map: '3000'
-  version: 11.1.0
+  version: 12.1.2
   index: /

@@ -12,13 +12,13 @@
   "title": "Piwigo (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.piwigo",
-  "version": "16.4.0",
+  "version": "16.5.0",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 126353164,
-    "arm64": 124511004
+    "amd64": 136304722,
+    "arm64": 132933688
   }
 }
