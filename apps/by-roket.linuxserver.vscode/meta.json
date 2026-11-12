@@ -12,13 +12,13 @@
   "title": "Vscode (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.vscode",
-  "version": "1.144.1",
+  "version": "1.145.3",
   "categories": [
     "developer"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1521737765,
-    "arm64": 1457307677
+    "amd64": 1526893145,
+    "arm64": 1462099848
   }
 }

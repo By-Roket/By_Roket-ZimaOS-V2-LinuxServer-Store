@@ -1,7 +1,7 @@
 name: linuxserver-tautulli
 services:
   tautulli:
-    image: linuxserver/tautulli:2.18.2@sha256:46c69c102ae5fb203efc83283cd05d95f43d10d539d5047aad3acc2ea87fe9ff
+    image: linuxserver/tautulli:2.19.1@sha256:7183f2705ac34aa5c4eb603f2ec56decc39d7ef5817261d0d6bac5a9a51e17aa
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -49,5 +49,5 @@ x-casaos:
     zh_TW: Tautulli（LinuxServer.io）
   id: by-roket.linuxserver.tautulli
   port_map: '8181'
-  version: 2.18.2
+  version: 2.19.1
   index: /
