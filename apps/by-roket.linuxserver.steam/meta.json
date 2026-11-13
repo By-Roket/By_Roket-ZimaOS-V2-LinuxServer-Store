@@ -11,12 +11,12 @@
   "title": "Steam (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.steam",
-  "version": "version-fc2eead3",
+  "version": "version-0007b177",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1164776153
+    "amd64": 1161590411
   }
 }

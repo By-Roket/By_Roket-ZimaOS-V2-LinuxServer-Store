@@ -11,12 +11,12 @@
   "title": "Intellij idea (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.intellij-idea",
-  "version": "2026.3.20261111",
+  "version": "2026.3.20261112",
   "categories": [
     "developer"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 2473150667
+    "amd64": 2473176274
   }
 }

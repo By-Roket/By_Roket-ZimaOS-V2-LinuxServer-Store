@@ -1,7 +1,7 @@
 name: linuxserver-sabnzbd
 services:
   sabnzbd:
-    image: linuxserver/sabnzbd:5.2.0-unstable@sha256:f2a9489bcbcba271080e9cd4509fe7165f7f3f350920e9263374c09fc1deef74
+    image: linuxserver/sabnzbd:5.1.3@sha256:9ea64fc8cde8de93640037f1e15e5207feea89a3b88de2f2db3c76e01097db24
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -55,5 +55,5 @@ x-casaos:
     zh_TW: Sabnzbd（LinuxServer.io）
   id: by-roket.linuxserver.sabnzbd
   port_map: '8080'
-  version: 5.2.0-unstable
+  version: 5.1.3
   index: /
