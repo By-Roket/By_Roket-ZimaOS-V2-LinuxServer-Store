@@ -1,7 +1,7 @@
 name: linuxserver-piper
 services:
   piper:
-    image: linuxserver/piper:2.5.2@sha256:353e1f5d9d4f1b0373751eedea3823ef4f9d6c29facc32fbc03ef6affa89c06c
+    image: linuxserver/piper:2.5.3@sha256:a95d46e38d7a03bc92ade10da0115ad1feb06cccad5de707dae01b01a4228a80
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -56,5 +56,5 @@ x-casaos:
     zh_TW: Piper（LinuxServer.io）
   id: by-roket.linuxserver.piper
   port_map: '10200'
-  version: 2.5.2
+  version: 2.5.3
   index: /

@@ -12,13 +12,13 @@
   "title": "Jackett (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.jackett",
-  "version": "0.24.3053",
+  "version": "0.24.3055",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 81359617,
-    "arm64": 80281098
+    "amd64": 81364888,
+    "arm64": 80289834
   }
 }
