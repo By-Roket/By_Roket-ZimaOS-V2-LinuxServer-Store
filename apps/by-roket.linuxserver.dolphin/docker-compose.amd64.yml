@@ -1,7 +1,7 @@
 name: linuxserver-dolphin
 services:
   dolphin:
-    image: linuxserver/dolphin:version-2609a@sha256:f0f922541389a3a5d45549725de0483d576ffdb8a604a0e1ac549af8d71ab858
+    image: linuxserver/dolphin:version-2609b@sha256:599b43aa3b9a4e95a94aa5331bfbbf161f1a9b5fa87aa85b2199864d79671a73
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Dolphin（LinuxServer.io）
   id: by-roket.linuxserver.dolphin
   port_map: '3000'
-  version: version-2609a
+  version: version-2609b
   index: /

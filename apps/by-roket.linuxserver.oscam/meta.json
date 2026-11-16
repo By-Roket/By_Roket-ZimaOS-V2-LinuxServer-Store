@@ -12,13 +12,13 @@
   "title": "Oscam (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.oscam",
-  "version": "version-11978",
+  "version": "version-11985",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 21425769,
-    "arm64": 22302374
+    "amd64": 21424430,
+    "arm64": 22301422
   }
 }
