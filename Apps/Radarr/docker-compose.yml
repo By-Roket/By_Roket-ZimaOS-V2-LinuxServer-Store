@@ -1,7 +1,7 @@
 name: linuxserver-radarr
 services:
   radarr:
-    image: linuxserver/radarr:6.4.4
+    image: linuxserver/radarr:7.0.3
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -144,5 +144,5 @@ x-casaos:
   category: Media
   id: by-roket.linuxserver.radarr
   port_map: '7878'
-  version: 6.4.4
+  version: 7.0.3
   index: /
