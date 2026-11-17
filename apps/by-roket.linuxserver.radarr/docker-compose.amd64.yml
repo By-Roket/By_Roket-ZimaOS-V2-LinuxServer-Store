@@ -1,7 +1,7 @@
 name: linuxserver-radarr
 services:
   radarr:
-    image: linuxserver/radarr:6.4.4@sha256:31ae4abc0dbf5f89b4d039f305c5b953e24d890b9305ea1b4f005c5f43a32b37
+    image: linuxserver/radarr:7.0.3@sha256:ff1b1f21a200e19f52017bd1544031143715b1ab262b823a9dcb916a71da0956
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -55,5 +55,5 @@ x-casaos:
     zh_TW: Radarr（LinuxServer.io）
   id: by-roket.linuxserver.radarr
   port_map: '7878'
-  version: 6.4.4
+  version: 7.0.3
   index: /

@@ -12,13 +12,13 @@
   "title": "Manyfold (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.manyfold",
-  "version": "0.150.0",
+  "version": "0.154.1",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 358896221,
-    "arm64": 353107502
+    "amd64": 429935507,
+    "arm64": 422569981
   }
 }

@@ -12,13 +12,13 @@
   "title": "Radarr (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.radarr",
-  "version": "6.4.4",
+  "version": "7.0.3",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 90138221,
-    "arm64": 88545747
+    "amd64": 97059059,
+    "arm64": 94755174
   }
 }
