@@ -1,7 +1,7 @@
 name: linuxserver-shotcut
 services:
   shotcut:
-    image: linuxserver/shotcut:26.9.27@sha256:55e38b082051754844fcf21c12735ec8ac5a5bd227ddc6c50f8756ee22039cc1
+    image: linuxserver/shotcut:26.11.15@sha256:452ef948cd7b6a749faae848baabe4738e4cb190e1b1c53ceb416d9a8b1906b5
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Shotcut（LinuxServer.io）
   id: by-roket.linuxserver.shotcut
   port_map: '3000'
-  version: 26.9.27
+  version: 26.11.15
   index: /
