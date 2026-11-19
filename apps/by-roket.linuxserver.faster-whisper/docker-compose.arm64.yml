@@ -1,7 +1,7 @@
 name: linuxserver-faster-whisper
 services:
   faster-whisper:
-    image: linuxserver/faster-whisper:3.8.1@sha256:7b82c615d1825c9c171553a1cc7b58899858ab47c7d4d067b640da27aa91f1df
+    image: linuxserver/faster-whisper:3.9.0@sha256:ca9d90a2ad8351c40a8055afb4142b224ca0d5ac293e6c96d381adcc2a9ea569
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -54,5 +54,5 @@ x-casaos:
     zh_TW: Faster whisper（LinuxServer.io）
   id: by-roket.linuxserver.faster-whisper
   port_map: '10300'
-  version: 3.8.1
+  version: 3.9.0
   index: /

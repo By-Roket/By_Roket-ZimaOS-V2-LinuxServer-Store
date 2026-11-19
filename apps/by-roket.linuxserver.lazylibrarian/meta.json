@@ -12,13 +12,13 @@
   "title": "Lazylibrarian (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.lazylibrarian",
-  "version": "version-184c8bd2",
+  "version": "version-806f0479",
   "categories": [
     "productivity"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 243535915,
-    "arm64": 238957406
+    "amd64": 237462647,
+    "arm64": 232872751
   }
 }

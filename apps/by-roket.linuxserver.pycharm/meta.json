@@ -11,12 +11,12 @@
   "title": "Pycharm (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.pycharm",
-  "version": "2026.3.20261116",
+  "version": "2026.3.20261117",
   "categories": [
     "developer"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1874308027
+    "amd64": 1886121154
   }
 }
