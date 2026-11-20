@@ -12,13 +12,13 @@
   "title": "Doublecommander (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.doublecommander",
-  "version": "version-9d9541b7",
+  "version": "version-8426aaaf",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 973737734,
-    "arm64": 928896031
+    "amd64": 965466682,
+    "arm64": 921027089
   }
 }

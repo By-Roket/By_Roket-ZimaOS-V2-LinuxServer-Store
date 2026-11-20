@@ -1,7 +1,7 @@
 name: linuxserver-mastodon
 services:
   mastodon:
-    image: linuxserver/mastodon:4.7.5@sha256:f6b5ad0259a795d231e9ef4fa4f88638f617943bd1a097101e0e1b9c4867f554
+    image: linuxserver/mastodon:4.7.6@sha256:a5da5939e33badab3557fdc782af89c36be65d09cca810fb0789905196f97ea6
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -93,5 +93,5 @@ x-casaos:
     zh_TW: Mastodon（LinuxServer.io）
   id: by-roket.linuxserver.mastodon
   port_map: '80'
-  version: 4.7.5
+  version: 4.7.6
   index: /
