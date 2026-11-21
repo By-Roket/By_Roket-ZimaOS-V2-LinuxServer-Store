@@ -12,13 +12,13 @@
   "title": "Nzbhydra2 (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.nzbhydra2",
-  "version": "9.3.2",
+  "version": "9.3.3",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 173150923,
-    "arm64": 170197251
+    "amd64": 173168904,
+    "arm64": 170198287
   }
 }

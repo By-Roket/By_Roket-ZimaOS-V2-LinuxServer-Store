@@ -1,6 +1,6 @@
 {
   "id": "by-roket.linuxserver.readme-sync",
   "title": "Readme sync",
-  "tagline": "Ce conteneur nécessite une attention particulière. Veuillez consulter https://hub.docker.com/r/linuxserver/readme-sync pour plus de détails.",
-  "description": "Ce conteneur nécessite une attention particulière. Veuillez consulter https://hub.docker.com/r/linuxserver/readme-sync pour plus de détails."
+  "description": "Ce conteneur nécessite une attention particulière. Veuillez consulter https://hub.docker.com/r/linuxserver/readme-sync pour plus de détails.",
+  "tagline": "Ce conteneur nécessite une attention particulière. Veuillez consulter https://hub.docker.com/r/linuxserver/readme-sync pour plus de détails."
 }
