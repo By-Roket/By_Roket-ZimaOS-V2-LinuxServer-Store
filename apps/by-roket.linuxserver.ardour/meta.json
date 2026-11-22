@@ -12,13 +12,13 @@
   "title": "Ardour (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.ardour",
-  "version": "version-2026-11-13",
+  "version": "version-2026-11-20",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1311351894,
-    "arm64": 1356204882
+    "amd64": 1315697714,
+    "arm64": 1364088597
   }
 }

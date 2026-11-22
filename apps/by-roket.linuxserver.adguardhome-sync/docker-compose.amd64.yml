@@ -1,7 +1,7 @@
 name: linuxserver-adguardhome-sync
 services:
   adguardhome-sync:
-    image: linuxserver/adguardhome-sync:0.9.6@sha256:a651fdfda749459791acfba6defb5fb6874af260517b5d405c12b6731d78566a
+    image: linuxserver/adguardhome-sync:0.10.0@sha256:6a8437af15d8d703c8fbd14e07ca5df95558370591d9e21d2982ae106a51fc5c
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -50,5 +50,5 @@ x-casaos:
     zh_TW: Adguardhome sync（LinuxServer.io）
   id: by-roket.linuxserver.adguardhome-sync
   port_map: '8080'
-  version: 0.9.6
+  version: 0.10.0
   index: /
