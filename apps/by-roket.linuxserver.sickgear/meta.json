@@ -12,13 +12,13 @@
   "title": "Sickgear (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.sickgear",
-  "version": "3.36.15",
+  "version": "3.36.16",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 72316018,
-    "arm64": 71188570
+    "amd64": 72315584,
+    "arm64": 71189374
   }
 }

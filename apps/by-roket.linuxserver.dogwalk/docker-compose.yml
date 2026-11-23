@@ -1,7 +1,7 @@
 name: linuxserver-dogwalk
 services:
   dogwalk:
-    image: linuxserver/dogwalk:version-2508f138
+    image: linuxserver/dogwalk:version-95d4032a
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Dogwalk（LinuxServer.io）
   id: by-roket.linuxserver.dogwalk
   port_map: '3000'
-  version: version-2508f138
+  version: version-95d4032a
   index: /

@@ -1,7 +1,7 @@
 name: linuxserver-apprise-api
 services:
   apprise-api:
-    image: linuxserver/apprise-api:2.1.0@sha256:7fcfc6ee1a981e0225f5f05436e7cbb0871ec2b8d7c2c1a4c0ceff1be0e77fd5
+    image: linuxserver/apprise-api:2.2.0@sha256:64735740800ff6017b8824a8528f289f8812a6dcdeea47e71be853c534297f11
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -53,5 +53,5 @@ x-casaos:
     zh_TW: Apprise api（LinuxServer.io）
   id: by-roket.linuxserver.apprise-api
   port_map: '8000'
-  version: 2.1.0
+  version: 2.2.0
   index: /
