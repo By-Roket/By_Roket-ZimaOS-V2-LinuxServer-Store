@@ -21,6 +21,9 @@ services:
         description:
           en_US: specify a timezone to use, see this list.
     ports:
+    - target: 3000
+      published: 3000
+      protocol: tcp
     - target: 3001
       published: 3001
       protocol: tcp
@@ -34,11 +37,11 @@ x-casaos:
   - amd64
   main: pelorus
   description:
-    en_US: Pelorus is an AI navigator for Selkies-powered Linux desktops. Pelorus
-      runs a FastAPI server that gives an LLM agent (Ollama, OpenAI-compatible, or
-      Gemini) control over mouse, keyboard, screenshot, and window management via
-      the Pixelflux computer-use backend, a Linux accessibility tree (AT-SPI), and
-      optional KWin D-Bus integration.
+    en_US: Pelorus is the AI agent interface built into Selkies. It describes the
+      desktop to an LLM as text, the windows the Selkies window manager places and
+      the controls applications expose over the Linux accessibility tree (AT-SPI),
+      and drives it with mouse, keyboard, window and screenshot actions from a chat.
+      This image runs Pelorus on the Selkies desktop with a split pane web interface.
     ca_ES: Pelorus és un navegador d'IA per a escriptoris Linux basats en Selkies.
       Pelorus executa un servidor FastAPI que dóna a un agent LLM (Ollama, compatible
       amb OpenAI o Gemini) control sobre el ratolí, el teclat, les captures de pantalla
@@ -168,10 +171,11 @@ x-casaos:
       相容介面或 Gemini 的大語言模型代理，透過 Pixelflux 計算機操作後端、Linux 無障礙樹（AT-SPI）和可選的 KWin D-Bus
       整合，控制滑鼠、鍵盤、截圖和視窗管理。
   tagline:
-    en_US: An AI navigator for Selkies-powered Linux desktops. Pelorus runs a FastAPI
-      server that gives an LLM agent (Ollama, OpenAI-compatible, or Gemini) control
-      over mouse, keyboard, screenshot, and window management via the Pixelflux computer-use
-      backend, a Linux accessibility tree (AT-SPI), and optional KWin D-Bus integration.
+    en_US: Pelorus is the AI agent interface built into Selkies. It describes the
+      desktop to an LLM as text, the windows the Selkies window manager places and
+      the controls applications expose over the Linux accessibility tree (AT-SPI),
+      and drives it with mouse, keyboard, window and screenshot actions from a chat.
+      This image runs Pelorus on the Selkies desktop with a split pane web interface.
     ca_ES: Un navegador d'IA per a escriptoris Linux amb tecnologia Selkies. Pelorus
       executa un servidor FastAPI que dóna a un agent LLM (Ollama, compatible amb
       OpenAI o Gemini) control sobre el ratolí, el teclat, les captures de pantalla
@@ -323,6 +327,6 @@ x-casaos:
     zh_TW: Pelorus（LinuxServer.io）
   category: AI
   id: by-roket.linuxserver.pelorus
-  port_map: '3001'
+  port_map: '3000'
   version: 0.2.4
   index: /
