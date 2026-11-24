@@ -12,13 +12,13 @@
   "title": "Modmanager (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.modmanager",
-  "version": "version-c8a9fb60",
+  "version": "version-f1ed0aaa",
   "categories": [
     "developer"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 23570486,
-    "arm64": 23585064
+    "amd64": 23570810,
+    "arm64": 23585315
   }
 }

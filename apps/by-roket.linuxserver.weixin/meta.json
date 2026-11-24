@@ -12,13 +12,13 @@
   "title": "Weixin (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.weixin",
-  "version": "version-80cf79b7",
+  "version": "version-d87de7e4",
   "categories": [
     "media"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 1476386308,
-    "arm64": 1429577257
+    "amd64": 1467851254,
+    "arm64": 1421564092
   }
 }

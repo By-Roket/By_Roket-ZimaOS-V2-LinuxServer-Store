@@ -1,7 +1,7 @@
 name: linuxserver-freshrss
 services:
   freshrss:
-    image: linuxserver/freshrss:1.30.4@sha256:8f3819ab2d789475803ba05fe0ab8e6e65f04ce5b0bfd1ce2d623a54944697ec
+    image: linuxserver/freshrss:1.31.0@sha256:285502b2a244a0f7a51640f8cd733cd89452ef1ac718d26a6afb0982a174f5c0
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -49,5 +49,5 @@ x-casaos:
     zh_TW: Freshrss（LinuxServer.io）
   id: by-roket.linuxserver.freshrss
   port_map: '80'
-  version: 1.30.4
+  version: 1.31.0
   index: /
