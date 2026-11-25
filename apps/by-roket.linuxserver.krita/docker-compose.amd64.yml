@@ -1,7 +1,7 @@
 name: linuxserver-krita
 services:
   krita:
-    image: linuxserver/krita:5.3.4@sha256:2de7ebf8e6b6aeda44fd4ee0855d0bc23f2a10066e1ad629110f16630b4c3de2
+    image: linuxserver/krita:5.3.5@sha256:a87841fc5470ca21a179fa9771d47895e38204ea5ecfb85af98749d07292e0ab
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Krita（LinuxServer.io）
   id: by-roket.linuxserver.krita
   port_map: '3000'
-  version: 5.3.4
+  version: 5.3.5
   index: /
