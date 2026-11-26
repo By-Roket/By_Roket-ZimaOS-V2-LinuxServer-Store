@@ -1,7 +1,7 @@
 name: linuxserver-qbittorrent
 services:
   qbittorrent:
-    image: linuxserver/qbittorrent:5.3.0@sha256:418f46791df4f3e2e830a5afb3bea8064ea2616c1ceee616053d3bad955e945c
+    image: linuxserver/qbittorrent:5.3.1@sha256:d7adbb759b71623001cc7d7e00590dba3f2c6a2b2a9b0ed4559bd606cf31eaff
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -60,5 +60,5 @@ x-casaos:
     zh_TW: Qbittorrent（LinuxServer.io）
   id: by-roket.linuxserver.qbittorrent
   port_map: '8080'
-  version: 5.3.0
+  version: 5.3.1
   index: /
