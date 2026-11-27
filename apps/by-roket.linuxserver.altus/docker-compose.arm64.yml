@@ -1,7 +1,7 @@
 name: linuxserver-altus
 services:
   altus:
-    image: linuxserver/altus:5.8.3@sha256:dd31cecaa1c9bb3e12c92c34ace01305e840ee375fb96daf916d5fc61051f264
+    image: linuxserver/altus:5.8.4@sha256:052ce47e7b31cedd38562d5b8bf68933f0e1d3eceac643703690991a65f547b5
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Altus（LinuxServer.io）
   id: by-roket.linuxserver.altus
   port_map: '3000'
-  version: 5.8.3
+  version: 5.8.4
   index: /

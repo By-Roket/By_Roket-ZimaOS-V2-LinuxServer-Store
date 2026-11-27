@@ -12,13 +12,13 @@
   "title": "Sealskin (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.sealskin",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "categories": [
     "others"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 91666892,
-    "arm64": 89661282
+    "amd64": 91942612,
+    "arm64": 89927276
   }
 }

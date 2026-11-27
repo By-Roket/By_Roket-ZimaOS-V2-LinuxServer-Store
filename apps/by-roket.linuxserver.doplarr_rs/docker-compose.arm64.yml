@@ -1,7 +1,7 @@
 name: linuxserver-doplarr_rs
 services:
   doplarr_rs:
-    image: linuxserver/doplarr_rs:4.6.0@sha256:c3c18115c57914e9ae7ca18a9ce2b2aed897765d2f33e7a2e35d8478ad1b6f5a
+    image: linuxserver/doplarr_rs:4.7.0@sha256:577bb18d858f94977b6a4e6a0fb7f5159518da20725d392c98a8c322f652b574
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -49,5 +49,5 @@ x-casaos:
     zh_TW: Doplarr_rs（LinuxServer.io）
   id: by-roket.linuxserver.doplarr_rs
   port_map: '80'
-  version: 4.6.0
+  version: 4.7.0
   index: /
