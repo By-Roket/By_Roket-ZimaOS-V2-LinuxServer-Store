@@ -12,13 +12,13 @@
   "title": "Pairdrop (LinuxServer.io)",
   "base_url": "https://by-roket.github.io/By_Roket-ZimaOS-V2-LinuxServer-Store",
   "id": "by-roket.linuxserver.pairdrop",
-  "version": "1.11.2",
+  "version": "1.11.3",
   "categories": [
     "networking"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 53276577,
-    "arm64": 53510927
+    "amd64": 53340987,
+    "arm64": 53577583
   }
 }

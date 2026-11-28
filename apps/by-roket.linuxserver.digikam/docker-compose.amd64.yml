@@ -1,7 +1,7 @@
 name: linuxserver-digikam
 services:
   digikam:
-    image: linuxserver/digikam:9.1.0@sha256:ed52c707330cc8c21bfdee155b4a084f083814e6f25254375baf76bb1dda0dd0
+    image: linuxserver/digikam:9.2.0@sha256:0010f7ea8d5bbec2199d06299d0bbd1e7665b1728838e78393f13b996afb203e
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -52,5 +52,5 @@ x-casaos:
     zh_TW: Digikam（LinuxServer.io）
   id: by-roket.linuxserver.digikam
   port_map: '3000'
-  version: 9.1.0
+  version: 9.2.0
   index: /

@@ -1,7 +1,7 @@
 name: linuxserver-pairdrop
 services:
   pairdrop:
-    image: linuxserver/pairdrop:1.11.2@sha256:a39632324b2fefd4ed4908ab2e76446dcd39094a81283b108ff75b767e1a3fd1
+    image: linuxserver/pairdrop:1.11.3@sha256:8781c0cc10995b5ab5223f9fa8524274079e37d9ce58b8a61caf5147b2da80c0
     restart: unless-stopped
     environment:
       PUID: $PUID
@@ -53,5 +53,5 @@ x-casaos:
     zh_TW: Pairdrop（LinuxServer.io）
   id: by-roket.linuxserver.pairdrop
   port_map: '3000'
-  version: 1.11.2
+  version: 1.11.3
   index: /
